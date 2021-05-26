@@ -2,9 +2,6 @@
 
 ---
 
-Some informations about DevOps ? 
-* [Azure DevOps](docs/cloud/azure_devops.md)
-
 # Activer la journalisation à l’aide d’Azure CLI
 
 La version actuelle d’Azure CLI ne vous permet pas de gérer la journalisation des applications dans Stockage Blob. 
