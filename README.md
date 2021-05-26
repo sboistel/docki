@@ -1,6 +1,6 @@
 # Welcome to the docki wiki!
 
-Welcome to the **docki** **Github** page
+Welcome to the [**docki Github**](https://github.com/sboistel/docki) page
 
 What do U mean about **knowledge transfert** ?
 
