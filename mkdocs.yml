@@ -9,15 +9,15 @@ nav:
                 - cloud/Cloud-Platformes.md
                 - cloud/Google-Cloud-Platform.md
                 - cloud/Microsoft-Azure.md
-                - Oracle-Cloud-Infrastructure.md
+                - cloud/Oracle-Cloud-Infrastructure.md
         - Development:
                 - Code:
                         - dev/code/Git.md
                         - dev/code/Perl.md
                         - dev/code/Python.md
                 - Containers:
-                        - containers/Conteneurisation.md
-                        - containers/Docker-&-Kubernetes.md
+                        - dev/containers/Conteneurisation.md
+                        - dev/containers/Docker-&-Kubernetes.md
                 - dev/Ansible.md
                 - dev/Terraform.md
         - Monitoring:
@@ -28,7 +28,7 @@ nav:
         - Operating System:
                 - Linux:
                         - os/linux/Desktop-Environement.md
-                        - os/linux/Linux
+                        - os/linux/Linux.md
                 - Windaub:
                         - os/windows/Windows.md
         - About: about.md
