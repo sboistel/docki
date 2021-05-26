@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Linux - Dockimentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../../css/theme.css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Linux";
+    var mkdocs_page_input_path = "os/linux/Linux.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Dockimentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Database</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../bdd/Mysql/">Mysql</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../bdd/Oracle/">Oracle</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Cloud</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Amazon-Web-Services/">Amazon Web Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Cloud-Platformes/">Cloud Platformes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Google-Cloud-Platform/">Google Cloud Platform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Microsoft-Azure/">Microsoft Azure</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Oracle-Cloud-Infrastructure/">Oracle Cloud Infrastructure</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Development</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../dev/Ansible/">Ansible</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../dev/Terraform/">Terraform</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Code</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../dev/code/Git/">Git</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../dev/code/Perl/">Perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../dev/code/Python/">Python</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Containers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../dev/containers/Conteneurisation/">Conteneurisation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../dev/containers/Docker-%26-Kubernetes/">Docker & Kubernetes</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Monitoring</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Centreon/">Centreon</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/ELK/">ELK</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/KVM/">KVM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Proxmox-VE/">Proxmox VE</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Linux</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Desktop-Environement/">Desktop Environement</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Linux</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#packages">Packages</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Windaub</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../windows/Windows/">Windows</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../about/">About</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Dockimentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Linux &raquo;</li>
+        
+      
+    
+    <li>Linux</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>[[<em>TOC</em>]]</p>
+<hr />
+<p>Here are somes linux/unix tips &amp; tricks</p>
+<h2 id="rpm">RPM</h2>
+<h3 id="packages">Packages</h3>
+<p>How to force installation without depedency.</p>
+<pre><code class="language-BASH">rpm -Uvh --nodeps $(repoquery --location centreon-plugins)
+</code></pre>
+<h2 id="system">SYSTEM</h2>
+<h2 id="cpu">CPU</h2>
+<p>Lister le nombre de processeur :</p>
+<pre><code class="language-BASH">nproc
+</code></pre>
+<h3 id="processus">Processus</h3>
+<p>Comment utiliser ps ?</p>
+<p>Lister tout les processus :
+- a : Ayant un terminal de contrôle
+- u : Lancés par l'/es utilisateur(s)
+- x : N'ayant pas de terminal de contrôle (TTY)
+- e : Tout les processe
+- d : Tout les processes sauf ceux de la session courante
+- f : Full format</p>
+<pre><code class="language-BASH">ps aux
+</code></pre>
+<p>Liste de paramètres :
+- l : Liste longue
+- f : Full -&gt; Avoir le nom complet du processus</p>
+<h3 id="sar">Sar</h3>
+<p>On trouvera les fichier de log de l'outil <strong>sysstat</strong> dans : <code>/var/log/sysstat/</code>
+Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.</p>
+<p>Liste des paramètres :
+- S : swap
+- r : RAM
+- R : Caches
+- u : Utilisateur</p>
+<h2 id="lvm">Lvm</h2>
+<p>Extend volumes.</p>
+<pre><code class="language-BASH">lvextend -L+&lt;&lt;&gt;&gt;G /dev/mapper/VOLUME
+</code></pre>
+<p>Apply modifications. </p>
+<pre><code class="language-BASH">resize2fs /dev/mapper/VOLUME
+</code></pre>
+<h2 id="swap">Swap</h2>
+<p>Desativation :</p>
+<pre><code class="language-BASH">swapoff -v /dev/mapper/volume
+</code></pre>
+<p>Re-formater le volume swap :</p>
+<pre><code class="language-BASH">mkswap /dev/mapper/volume
+</code></pre>
+<p>Activate logical volume ;</p>
+<pre><code class="language-BASH">swapon -va
+</code></pre>
+<h2 id="ram">RAM</h2>
+<p>List detailes.</p>
+<pre><code class="language-BASH">ps axo rss, comm,pid,command | cat
+</code></pre>
+<p>On OCI :</p>
+<blockquote>
+<p>sync &amp;&amp; echo 3 &gt; /proc/sys/vm/drop_caches</p>
+</blockquote>
+<h2 id="systemctl">Systemctl</h2>
+<p>How to list enabled unit-file.</p>
+<blockquote>
+<p>systemctl list-unit-files | grep enabled</p>
+</blockquote>
+<h2 id="load">Load</h2>
+<p>Check the load average fixed by the system:</p>
+<blockquote>
+<p>cat /proc/loadavg</p>
+</blockquote>
+<p>Verify time since the system is up:</p>
+<blockquote>
+<p>uptime</p>
+</blockquote>
+<p>You could check your system processes by top/htop or glances and more one else:</p>
+<blockquote>
+<p>top</p>
+</blockquote>
+<p>You can folow your CPU in real time by this command:</p>
+<blockquote>
+<p>vmstat -w 1</p>
+</blockquote>
+<h2 id="logrotate">Logrotate</h2>
+<p>Check :</p>
+<blockquote>
+<p>logrotate -d /etc/logrotate.d/httpd</p>
+</blockquote>
+<p>Apply :</p>
+<blockquote>
+<p>logrotate -vf /etc/logrotate.d/httpd</p>
+</blockquote>
+<h2 id="analyse">Analyse</h2>
+<p>Check last user connection :</p>
+<blockquote>
+<p>last -15 -aFw</p>
+</blockquote>
+<p>For DEB packages only :</p>
+<blockquote>
+<p>cat /var/log/auth.log</p>
+</blockquote>
+<h1 id="network">Network</h1>
+<h2 id="ip-adress">iP Adress</h2>
+<p>Public iP :</p>
+<blockquote>
+<p>curl ifconfig.me </p>
+</blockquote>
+<p>or</p>
+<blockquote>
+<p>curl ifconfig.co</p>
+</blockquote>
+<p>Private iP :</p>
+<blockquote>
+<p>hostname -i</p>
+</blockquote>
+<h3 id="apt">APT :</h3>
+<p>File : /etc/network/interfaces :</p>
+<pre><code class="language-BASH">   # This file describes the network interfaces available on your system
+   # and how to activate them. For more information, see interfaces(5).
+
+   # The loopback network interface
+   auto lo
+   iface lo inet loopback
+
+   # The primary network interface
+   auto eth0
+   iface eth0 inet static
+       address 10.0.0.41
+       netmask 24
+       gateway 10.0.0.0
+       dns-nameservers 10.0.0.1 8.8.8.8
+</code></pre>
+<h1 id="blank-screen">Blank Screen</h1>
+<p>Retirer la mise en veille lors de la fermeture du capot de l’ordinateur portable.</p>
+<pre><code class="language-BASH">   setterm-powersave off -blank 0
+   systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+</code></pre>
+<h1 id="sudoers">Sudoers</h1>
+<p>Autorisation de l’utilisateur max de supprimer dans le dossier. </p>
+<blockquote>
+<p>max ALL=NOPASSWD:/bin/rm -rf $CHEMIN_de_DOSSIER/*</p>
+</blockquote>
+<p>Autorisation pour l’utilisateur matry_mc_fly de lire les fichiers dans le dossier.</p>
+<blockquote>
+<p>marty_mc_fly ALL=NOPASSWD:/usr/bin/cat /var/log/mariadb/*</p>
+</blockquote>
+<h2 id="clock">Clock</h2>
+<p>How to mod sys clock ?</p>
+<pre><code class="language-BASH">   mv /etc/localtime /etc/localtime.backup
+   ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
+
+   echo &quot;Europe/Paris&quot; | tee /etc/timezone
+   timedatectl set-timezone Europe/Paris
+   hwclock -s
+</code></pre>
+<h1 id="command">Command</h1>
+<h2 id="back-commande">Back Commande</h2>
+<p>Contient le nom du script tel qu'il a été invoqué: </p>
+<blockquote>
+<p>$0</p>
+</blockquote>
+<p>L'ensembles des paramètres sous la forme d'un seul argument:</p>
+<blockquote>
+<p>$*</p>
+</blockquote>
+<p>L'ensemble des arguments, un argument par paramètre:</p>
+<blockquote>
+<p>$@</p>
+</blockquote>
+<p>Le nombre de paramètres passés au script:</p>
+<blockquote>
+<p>$#</p>
+</blockquote>
+<p>Le code retour de la dernière commande::</p>
+<blockquote>
+<p>$?</p>
+</blockquote>
+<p>Le PID su shell qui exécute le script:</p>
+<blockquote>
+<p>$$</p>
+</blockquote>
+<p>Le PID du dernier processus lancé en arrière-plan:</p>
+<blockquote>
+<p>$!</p>
+</blockquote>
+<h2 id="grep">Grep</h2>
+<p>L'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.</p>
+<pre><code class="language-BASH">grep infos fichiers.txt
+grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
+</code></pre>
+<h2 id="sed-tr">Sed &amp; TR</h2>
+<p>Remove saut de ligne.</p>
+<blockquote>
+<p>sed '/^$/d'</p>
+</blockquote>
+<p>or </p>
+<blockquote>
+<p>sed '/^[[:space:]]*$/d'</p>
+</blockquote>
+<p>Dans vim : <code>:%s /foo/newfoo/g</code></p>
+<p>Ajout d'élèment à une ligne certaine.</p>
+<blockquote>
+<p>sed -i '20 a nouvel élèment' FICHIER</p>
+</blockquote>
+<p>Remove space.</p>
+<blockquote>
+<p>tr -d '[:blank:]'</p>
+</blockquote>
+<h2 id="awk">AWK</h2>
+<p>Awk command :</p>
+<ul>
+<li>
+<p>"grp" /word/ :</p>
+<blockquote>
+<p>awk '/data/ {gsub("\"",""); print $2}'</p>
+</blockquote>
+</li>
+<li>
+<p>"gsub" thing to remove:</p>
+<blockquote>
+<p>awk '{gsub("\"",""); print $2}'</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="vim">VIM</h2>
+<p>Flêches directionnelles :
+- j -&gt; descendre
+- k -&gt; monter
+- l -&gt; droite
+- h -&gt; droite</p>
+<p>Début ou fin de fichier :
+- Go to the top :</p>
+<blockquote>
+<p>gg
+- Go to the buttom :
+G
+- Descendre à la ligne 34 :
+34 G</p>
+</blockquote>
+<p>Début ou fin de ligne :
+- Fin de la ligne où se trouve le dernier carractère :</p>
+<blockquote>
+<p>$ 
+- Début de la ligne où se trouve le premier carractère :
+0 (shift+à)</p>
+</blockquote>
+<p>Supprimer les dernières actions "CRTL+Z" :
+- Undo :</p>
+<blockquote>
+<p>u</p>
+</blockquote>
+<p>Keymap utils :</p>
+<ul>
+<li>Début du mot | si '/||.||--||...' alors utiliser B :<blockquote>
+<p>b</p>
+</blockquote>
+</li>
+<li>Début du dexième mot en partant du mot d'origin :<blockquote>
+<p>3B</p>
+</blockquote>
+</li>
+<li>Fin du mot suivant :<blockquote>
+<p>e</p>
+</blockquote>
+</li>
+<li>Mot suivant :<blockquote>
+<p>w</p>
+</blockquote>
+</li>
+<li>Replace :<blockquote>
+<p>r</p>
+</blockquote>
+</li>
+<li>Supprimer carractère par carractère :<blockquote>
+<p>x</p>
+</blockquote>
+</li>
+<li>Supprimer à reculon carractère par carractère :<blockquote>
+<p>x</p>
+</blockquote>
+</li>
+<li>Changer (ce -&gt; changer jusqu'à la fin du mot ) :
+    &gt; c</li>
+<li>Enregister les modifications :
+    &gt; ZZ</li>
+<li>Enregistrer les modifications et quiter le fichier :<blockquote>
+<p>ZQ</p>
+</blockquote>
+</li>
+</ul>
+<p>Répeter la dernière actions effectuée : </p>
+<blockquote>
+<p>.</p>
+</blockquote>
+<p>Faire du sed : <code>:%s /foo/newfoo/g</code></p>
+<p>Faire une recherche :
+- Du ahut vers le bas :</p>
+<blockquote>
+<p>/
+- Du bas vers le haut :
+?
+- Mot sur lequel je suis :
+*</p>
+</blockquote>
+<p>Retirer le surlignage : <code>:noh</code></p>
+<h2 id="compressed-files">Compressed files</h2>
+<p>Compresser des fichiers :</p>
+<blockquote>
+<p>tar -czvf nom-de-l-archive.tar.gz /chemin/vers/répertoire-ou-fichier</p>
+</blockquote>
+<p>Voici le détail des options :
+- c : crée un archive.
+- z : compresse l’archive avec gzip.
+- v : mode verbeux, affiche la progression.
+- f : permet de spécifier le nom du fichier d’archive.</p>
+<p>Pour décompresser le rar avec son passwd :</p>
+<pre><code class="language-BASH">rar x -hP{MOT DE PASSE} {FICHIER.RAR}
+rar x -hPTEST test2.rar
+</code></pre>
+<h2 id="lamp">lamp</h2>
+<p>Apache check config :</p>
+<pre><code class="language-BASH">/opt/lampp/bin/httpd -t
+</code></pre>
+<p>Apache restart :</p>
+<pre><code class="language-BASH">/opt/lampp/bin/httpd -k restart
+</code></pre>
+<h3 id="pem-key">PEM Key</h3>
+<p>Create pem key :</p>
+<pre><code class="language-BASH">Puttygen mykey.ppk -O private-openssh -o mykey.pem
+</code></pre>
+<h2 id="mail">Mail</h2>
+<p>Basic postfix configuration <code>/etc/postfix/main.cf</code> :</p>
+<pre><code class="language-BASH">relayhost = [smtp.gmail.com]:587
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+</code></pre>
+<h2 id="useradd">Useradd</h2>
+<p>How to adding user ?</p>
+<pre><code class="language-BASH">useradd -s /sbin/nologin -G $GRP
+useradd -m -G wheel -s /bin/bash $account
+</code></pre>
+<h3 id="dd">DD</h3>
+<p>dd nécessite de droits super utilisateur :</p>
+<pre><code class="language-BASH">sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk &amp;&amp; sync
+</code></pre>
+<h2 id="find">Find</h2>
+<p>Trouver tout fichier depuis l’endroit que vous souhaitez portant le nom de jacquet :</p>
+<pre><code class="language-BASH">find $DEPUIS_QUEL_ENDROIT -name &quot;jacquet&quot;
+</code></pre>
+<p>Trouver dans le dossier httpd tout fichier plus vieux de 90 jours puis les supprimer :</p>
+<pre><code class="language-BASH">find /var/log/httpd/ -type f -name &quot;*&quot; -mtime +90 -exec rm -f {} \;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Le « {} » est le résultat de la recherche du find !</td>
+</tr>
+</tbody>
+</table>
+<h1 id="apt_1">APT</h1>
+<h2 id="bpytop">bpytop</h2>
+<p>How to isntall bpytop :</p>
+<pre><code class="language-BASH">apt install python3-pip
+pip3 install psutil
+pip3 install bpytop
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../windows/Windows/" class="btn btn-neutral float-right" title="Windows">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Desktop-Environement/" class="btn btn-neutral" title="Desktop Environement"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Desktop-Environement/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../windows/Windows/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
