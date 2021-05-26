@@ -1,12 +1,6 @@
 # Welcome to the docki wiki!
 
-Welcome to the [**docki Github**](https://github.com/sboistel/docki) page
-
-What do U mean about **knowledge transfert** ?
-
-Let's having fun, and ``#RTFM`` !
-
-May U have to check the [wiki](https://sboistel.github.io/docki/) page first ;)
+May you searching the [wiki](https://sboistel.github.io/docki/) page ;)
 
 # Mkdocs
 
@@ -27,3 +21,14 @@ From the root of docki repo :
 ```bash
 mkdocs build
 ```
+
+## Mkdocs Publish
+How to publishing changes into the `site` directory ?
+
+From the root of docki repo :
+
+```bash
+mkdocs gh-deploy
+```
+
+:warning: If U've don't commit any changes, take care on it first
