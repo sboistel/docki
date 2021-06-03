@@ -105,13 +105,52 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Proxmox-VE/">Proxmox VE</a>
                     </li>
                 </ul>
+                <p class="caption"><span class="caption-text">Application</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../application/openvpn/">OpenVPN</a>
+                    </li>
+                </ul>
                 <p class="caption"><span class="caption-text">Linux</span></p>
                 <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../Desktop-Environement/">Desktop Environement</a>
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Linux</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#packages">Packages</a>
+    <li class="toctree-l2"><a class="reference internal" href="#rpm">RPM</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#packages">Packages</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#apt">APT</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#bpytop">bpytop</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#system">SYSTEM</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#cpu">CPU</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#processus">Processus</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sar">Sar</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lvm">Lvm</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#swap">Swap</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ram">RAM</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#systemctl">Systemctl</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#load">Load</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#logrotate">Logrotate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#analyse">Analyse</a>
     </li>
     </ul>
                     </li>
@@ -161,18 +200,24 @@
           <div role="main">
             <div class="section">
               
-                <p>[[<em>TOC</em>]]</p>
-<hr />
+                <h1 id="linux">Linux</h1>
 <p>Here are somes linux/unix tips &amp; tricks</p>
 <h2 id="rpm">RPM</h2>
 <h3 id="packages">Packages</h3>
 <p>How to force installation without depedency.</p>
-<pre><code class="language-BASH">rpm -Uvh --nodeps $(repoquery --location centreon-plugins)
+<pre><code class="language-bash">rpm -Uvh --nodeps $(repoquery --location centreon-plugins)
+</code></pre>
+<h2 id="apt">APT</h2>
+<h3 id="bpytop">bpytop</h3>
+<p>How to isntall bpytop :</p>
+<pre><code class="language-bash">apt install python3-pip
+pip3 install psutil
+pip3 install bpytop
 </code></pre>
 <h2 id="system">SYSTEM</h2>
 <h2 id="cpu">CPU</h2>
 <p>Lister le nombre de processeur :</p>
-<pre><code class="language-BASH">nproc
+<pre><code class="language-bash">nproc
 </code></pre>
 <h3 id="processus">Processus</h3>
 <p>Comment utiliser ps ?</p>
@@ -183,7 +228,7 @@
 - e : Tout les processe
 - d : Tout les processes sauf ceux de la session courante
 - f : Full format</p>
-<pre><code class="language-BASH">ps aux
+<pre><code class="language-bash">ps aux
 </code></pre>
 <p>Liste de paramètres :
 - l : Liste longue
@@ -198,24 +243,24 @@ Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.
 - u : Utilisateur</p>
 <h2 id="lvm">Lvm</h2>
 <p>Extend volumes.</p>
-<pre><code class="language-BASH">lvextend -L+&lt;&lt;&gt;&gt;G /dev/mapper/VOLUME
+<pre><code class="language-bash">lvextend -L+&lt;&lt;&gt;&gt;G /dev/mapper/VOLUME
 </code></pre>
 <p>Apply modifications. </p>
-<pre><code class="language-BASH">resize2fs /dev/mapper/VOLUME
+<pre><code class="language-bash">resize2fs /dev/mapper/VOLUME
 </code></pre>
 <h2 id="swap">Swap</h2>
 <p>Desativation :</p>
-<pre><code class="language-BASH">swapoff -v /dev/mapper/volume
+<pre><code class="language-bash">swapoff -v /dev/mapper/volume
 </code></pre>
 <p>Re-formater le volume swap :</p>
-<pre><code class="language-BASH">mkswap /dev/mapper/volume
+<pre><code class="language-bash">mkswap /dev/mapper/volume
 </code></pre>
 <p>Activate logical volume ;</p>
-<pre><code class="language-BASH">swapon -va
+<pre><code class="language-bash">swapon -va
 </code></pre>
 <h2 id="ram">RAM</h2>
 <p>List detailes.</p>
-<pre><code class="language-BASH">ps axo rss, comm,pid,command | cat
+<pre><code class="language-bash">ps axo rss, comm,pid,command | cat
 </code></pre>
 <p>On OCI :</p>
 <blockquote>
@@ -275,9 +320,9 @@ Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.
 <blockquote>
 <p>hostname -i</p>
 </blockquote>
-<h3 id="apt">APT :</h3>
+<h3 id="apt_1">APT :</h3>
 <p>File : /etc/network/interfaces :</p>
-<pre><code class="language-BASH">   # This file describes the network interfaces available on your system
+<pre><code class="language-bash">   # This file describes the network interfaces available on your system
    # and how to activate them. For more information, see interfaces(5).
 
    # The loopback network interface
@@ -292,12 +337,12 @@ Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.
        gateway 10.0.0.0
        dns-nameservers 10.0.0.1 8.8.8.8
 </code></pre>
-<h1 id="blank-screen">Blank Screen</h1>
+<h2 id="blank-screen">Blank Screen</h2>
 <p>Retirer la mise en veille lors de la fermeture du capot de l’ordinateur portable.</p>
-<pre><code class="language-BASH">   setterm-powersave off -blank 0
+<pre><code class="language-bash">   setterm-powersave off -blank 0
    systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 </code></pre>
-<h1 id="sudoers">Sudoers</h1>
+<h2 id="sudoers">Sudoers</h2>
 <p>Autorisation de l’utilisateur max de supprimer dans le dossier. </p>
 <blockquote>
 <p>max ALL=NOPASSWD:/bin/rm -rf $CHEMIN_de_DOSSIER/*</p>
@@ -308,15 +353,15 @@ Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.
 </blockquote>
 <h2 id="clock">Clock</h2>
 <p>How to mod sys clock ?</p>
-<pre><code class="language-BASH">   mv /etc/localtime /etc/localtime.backup
+<pre><code class="language-bash">   mv /etc/localtime /etc/localtime.backup
    ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
    echo &quot;Europe/Paris&quot; | tee /etc/timezone
    timedatectl set-timezone Europe/Paris
    hwclock -s
 </code></pre>
-<h1 id="command">Command</h1>
-<h2 id="back-commande">Back Commande</h2>
+<h2 id="command">Command</h2>
+<h3 id="back-commande">Back Commande</h3>
 <p>Contient le nom du script tel qu'il a été invoqué: </p>
 <blockquote>
 <p>$0</p>
@@ -347,7 +392,7 @@ Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.
 </blockquote>
 <h2 id="grep">Grep</h2>
 <p>L'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.</p>
-<pre><code class="language-BASH">grep infos fichiers.txt
+<pre><code class="language-bash">grep infos fichiers.txt
 grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 </code></pre>
 <h2 id="sed-tr">Sed &amp; TR</h2>
@@ -397,19 +442,15 @@ grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 - Go to the buttom :
 G
 - Descendre à la ligne 34 :
-34 G</p>
-</blockquote>
-<p>Début ou fin de ligne :
-- Fin de la ligne où se trouve le dernier carractère :</p>
-<blockquote>
-<p>$ 
+34 G
+Début ou fin de ligne :
+- Fin de la ligne où se trouve le dernier carractère :
+$ 
 - Début de la ligne où se trouve le premier carractère :
-0 (shift+à)</p>
-</blockquote>
-<p>Supprimer les dernières actions "CRTL+Z" :
-- Undo :</p>
-<blockquote>
-<p>u</p>
+0 (shift+à)
+Supprimer les dernières actions "CRTL+Z" :
+- Undo :
+u</p>
 </blockquote>
 <p>Keymap utils :</p>
 <ul>
@@ -476,42 +517,42 @@ G
 - v : mode verbeux, affiche la progression.
 - f : permet de spécifier le nom du fichier d’archive.</p>
 <p>Pour décompresser le rar avec son passwd :</p>
-<pre><code class="language-BASH">rar x -hP{MOT DE PASSE} {FICHIER.RAR}
+<pre><code class="language-bash">rar x -hP{MOT DE PASSE} {FICHIER.RAR}
 rar x -hPTEST test2.rar
 </code></pre>
 <h2 id="lamp">lamp</h2>
 <p>Apache check config :</p>
-<pre><code class="language-BASH">/opt/lampp/bin/httpd -t
+<pre><code class="language-bash">/opt/lampp/bin/httpd -t
 </code></pre>
 <p>Apache restart :</p>
-<pre><code class="language-BASH">/opt/lampp/bin/httpd -k restart
+<pre><code class="language-bash">/opt/lampp/bin/httpd -k restart
 </code></pre>
 <h3 id="pem-key">PEM Key</h3>
 <p>Create pem key :</p>
-<pre><code class="language-BASH">Puttygen mykey.ppk -O private-openssh -o mykey.pem
+<pre><code class="language-bash">Puttygen mykey.ppk -O private-openssh -o mykey.pem
 </code></pre>
 <h2 id="mail">Mail</h2>
 <p>Basic postfix configuration <code>/etc/postfix/main.cf</code> :</p>
-<pre><code class="language-BASH">relayhost = [smtp.gmail.com]:587
+<pre><code class="language-bash">relayhost = [smtp.gmail.com]:587
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options = noanonymous
 </code></pre>
 <h2 id="useradd">Useradd</h2>
 <p>How to adding user ?</p>
-<pre><code class="language-BASH">useradd -s /sbin/nologin -G $GRP
+<pre><code class="language-bash">useradd -s /sbin/nologin -G $GRP
 useradd -m -G wheel -s /bin/bash $account
 </code></pre>
 <h3 id="dd">DD</h3>
 <p>dd nécessite de droits super utilisateur :</p>
-<pre><code class="language-BASH">sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk &amp;&amp; sync
+<pre><code class="language-bash">sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk &amp;&amp; sync
 </code></pre>
 <h2 id="find">Find</h2>
 <p>Trouver tout fichier depuis l’endroit que vous souhaitez portant le nom de jacquet :</p>
-<pre><code class="language-BASH">find $DEPUIS_QUEL_ENDROIT -name &quot;jacquet&quot;
+<pre><code class="language-bash">find $DEPUIS_QUEL_ENDROIT -name &quot;jacquet&quot;
 </code></pre>
 <p>Trouver dans le dossier httpd tout fichier plus vieux de 90 jours puis les supprimer :</p>
-<pre><code class="language-BASH">find /var/log/httpd/ -type f -name &quot;*&quot; -mtime +90 -exec rm -f {} \;
+<pre><code class="language-bash">find /var/log/httpd/ -type f -name &quot;*&quot; -mtime +90 -exec rm -f {} \;
 </code></pre>
 <table>
 <thead>
@@ -525,13 +566,6 @@ useradd -m -G wheel -s /bin/bash $account
 </tr>
 </tbody>
 </table>
-<h1 id="apt_1">APT</h1>
-<h2 id="bpytop">bpytop</h2>
-<p>How to isntall bpytop :</p>
-<pre><code class="language-BASH">apt install python3-pip
-pip3 install psutil
-pip3 install bpytop
-</code></pre>
               
             </div>
           </div>

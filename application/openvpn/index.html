@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Microsoft Azure - Dockimentation</title>
+  <title>OpenVPN - Dockimentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Microsoft Azure";
-    var mkdocs_page_input_path = "cloud/Microsoft-Azure.md";
+    var mkdocs_page_name = "OpenVPN";
+    var mkdocs_page_input_path = "application/openvpn.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -59,18 +59,16 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Cloud</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../Amazon-Web-Services/">Amazon Web Services</a>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Amazon-Web-Services/">Amazon Web Services</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Cloud-Platformes/">Cloud Platformes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Cloud-Platformes/">Cloud Platformes</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Google-Cloud-Platform/">Google Cloud Platform</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Google-Cloud-Platform/">Google Cloud Platform</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Microsoft Azure</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Microsoft-Azure/">Microsoft Azure</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Oracle-Cloud-Infrastructure/">Oracle Cloud Infrastructure</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Oracle-Cloud-Infrastructure/">Oracle Cloud Infrastructure</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Development</span></p>
@@ -108,8 +106,14 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Application</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../application/openvpn/">OpenVPN</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">OpenVPN</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#install-via-repository">Install via repository</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Linux</span></p>
@@ -149,11 +153,11 @@
     
       
         
-          <li>Cloud &raquo;</li>
+          <li>Application &raquo;</li>
         
       
     
-    <li>Microsoft Azure</li>
+    <li>OpenVPN</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -164,27 +168,19 @@
           <div role="main">
             <div class="section">
               
-                <p>[[<em>TOC</em>]]</p>
-<hr />
-<h1 id="activer-la-journalisation-a-laide-dazure-cli">Activer la journalisation à l’aide d’Azure CLI</h1>
-<p>La version actuelle d’Azure CLI ne vous permet pas de gérer la journalisation des applications dans Stockage Blob. </p>
-<p>Pour activer la journalisation des applications dans le système de fichiers, exécutez cette commande :</p>
-<blockquote>
-<p>az webapp log config --application-logging true --level verbose --name <app-name> --resource-group <resource-group-name></p>
-</blockquote>
-<p>Par exemple, pour activer la journalisation dans le système de fichiers pour une application appelée contosofashions123 en capturant tous les messages, exécutez cette commande.</p>
-<blockquote>
-<p>az webapp log config --application-logging true --level verbose --name contosofashions123 --resource-group contosofashionsRG</p>
-</blockquote>
-<p>Il n’existe actuellement aucun moyen de désactiver la journalisation des applications à l’aide de commandes Azure CLI.
-Toutefois, la commande suivante permet de réinitialiser la journalisation dans le système de fichiers au niveau erreur simplement.</p>
-<blockquote>
-<p>az webapp log config --application-logging false --name <app-name> --resource-group <resource-group-name></p>
-</blockquote>
-<p>Pour connaître l’état actuel de la journalisation d’une application, utilisez cette commande.</p>
-<blockquote>
-<p>az webapp log show --name <app-name> --resource-group <resource-group-name></p>
-</blockquote>
+                <h1 id="openvpn">OpenVPN</h1>
+<h2 id="install-via-repository">Install via repository</h2>
+<p><em>(recommended)</em> *<a href="https://openvpn.net/vpn-software-packages/">LINK</a></p>
+<p>The recommended method to install the OpenVPN Access Server is to use the official OpenVPN Access Server software repository. </p>
+<p>You will need to be logged on to your Linux system either on the console or via SSH, and have root privileges. Then copy and paste the commands below to add the repository to your system, and install the OpenVPN Access Server client bundle and the OpenVPN Access Server package itself. </p>
+<p>Installing the package 'openvpn-as' will automatically pull in the required client bundle as well.</p>
+<pre><code class="language-bash">apt update &amp;&amp; apt -y install ca-certificates wget net-tools gnupg
+wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg | apt-key add -
+echo &quot;deb http://as-repository.openvpn.net/as/debian buster main&quot;&gt;/etc/apt/sources.list.d/openvpn-as-repo.list
+apt update &amp;&amp; apt -y install openvpn-as
+</code></pre>
+<h2 id="configuration">Configuration</h2>
+<p>Follow theses steps : <a href="https://openvpn.net/vpn-server-resources/finishing-configuration-of-access-server/">OpenVPN Website</a></p>
               
             </div>
           </div>
@@ -192,10 +188,10 @@ Toutefois, la commande suivante permet de réinitialiser la journalisation dans 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Oracle-Cloud-Infrastructure/" class="btn btn-neutral float-right" title="Oracle Cloud Infrastructure">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../os/linux/Desktop-Environement/" class="btn btn-neutral float-right" title="Desktop Environement">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Google-Cloud-Platform/" class="btn btn-neutral" title="Google Cloud Platform"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../monitoring/Proxmox-VE/" class="btn btn-neutral" title="Proxmox VE"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -221,10 +217,10 @@ Toutefois, la commande suivante permet de réinitialiser la journalisation dans 
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Google-Cloud-Platform/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../monitoring/Proxmox-VE/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../Oracle-Cloud-Infrastructure/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../os/linux/Desktop-Environement/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
