@@ -1,30 +1,39 @@
-[[_TOC_]]
-
----
-
+# Linux
 Here are somes linux/unix tips & tricks
 
-##RPM
+## RPM
 
-###Packages
+###  Packages
 
 How to force installation without depedency.
 
-```BASH
+```bash
 rpm -Uvh --nodeps $(repoquery --location centreon-plugins)
 ```
 
-##SYSTEM
+## APT
+
+### bpytop
+
+How to isntall bpytop :
+
+```bash
+apt install python3-pip
+pip3 install psutil
+pip3 install bpytop
+```
+
+## SYSTEM
 
 ## CPU
 
 Lister le nombre de processeur :
 
-```BASH
+```bash
 nproc
 ```
 
-###Processus
+### Processus
 
 Comment utiliser ps ?
 
@@ -36,7 +45,7 @@ Lister tout les processus :
 - d : Tout les processes sauf ceux de la session courante
 - f : Full format
 
-```BASH
+```bash
 ps aux
 ```
 
@@ -44,7 +53,7 @@ Liste de paramètres :
 - l : Liste longue
 - f : Full -> Avoir le nom complet du processus
 
-###Sar
+### Sar
 
 On trouvera les fichier de log de l'outil **sysstat** dans : ``/var/log/sysstat/``
 Chacun des fichier dans ce dossier sera normé par ``sa$JOUR_DU_MOIS``.
@@ -59,13 +68,13 @@ Liste des paramètres :
 
 Extend volumes.
 
-```BASH
+```bash
 lvextend -L+<<>>G /dev/mapper/VOLUME
 ```
 
 Apply modifications. 
 
-```BASH
+```bash
 resize2fs /dev/mapper/VOLUME
 ```
 
@@ -73,19 +82,19 @@ resize2fs /dev/mapper/VOLUME
 
 Desativation :
 
-```BASH
+```bash
 swapoff -v /dev/mapper/volume
 ```
 
 Re-formater le volume swap :
 
-```BASH
+```bash
 mkswap /dev/mapper/volume
 ```
 
 Activate logical volume ;
 
-```BASH
+```bash
 swapon -va
 ```
 
@@ -93,7 +102,7 @@ swapon -va
 
 List detailes.
 
-```BASH
+```bash
 ps axo rss, comm,pid,command | cat
 ```
 
@@ -148,7 +157,7 @@ Private iP :
 
 File : /etc/network/interfaces :
 
-```BASH
+```bash
    # This file describes the network interfaces available on your system
    # and how to activate them. For more information, see interfaces(5).
 
@@ -165,15 +174,15 @@ File : /etc/network/interfaces :
        dns-nameservers 10.0.0.1 8.8.8.8
 ```
 
-# Blank Screen
+## Blank Screen
 Retirer la mise en veille lors de la fermeture du capot de l’ordinateur portable.
 
-```BASH
+```bash
    setterm-powersave off -blank 0
    systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
 
-# Sudoers
+## Sudoers
 Autorisation de l’utilisateur max de supprimer dans le dossier. 
 > max ALL=NOPASSWD:/bin/rm -rf $CHEMIN_de_DOSSIER/*
  
@@ -183,7 +192,7 @@ Autorisation pour l’utilisateur matry_mc_fly de lire les fichiers dans le doss
 ## Clock
 How to mod sys clock ?
 
-```BASH
+```bash
    mv /etc/localtime /etc/localtime.backup
    ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
@@ -192,8 +201,8 @@ How to mod sys clock ?
    hwclock -s
 ```
 
-# Command
-## Back Commande
+## Command
+### Back Commande
 Contient le nom du script tel qu'il a été invoqué: 
 > $0
 
@@ -218,7 +227,7 @@ Le PID du dernier processus lancé en arrière-plan:
 ## Grep
 L'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.
 
-```BASH
+```bash
 grep infos fichiers.txt
 grep -A $NUMBER_OF_LINE "INFOS QU'ON CHERCHE" -B $NUMBER_OF_LINE
 ```
@@ -231,7 +240,7 @@ or
 
 > sed '/^[[:space:]]*$/d'
 
-Dans vim : ``:%s /foo/newfoo/g``
+Dans vim : `:%s /foo/newfoo/g`
 
 Ajout d'élèment à une ligne certaine.
 > sed -i '20 a nouvel élèment' FICHIER
@@ -262,13 +271,11 @@ Début ou fin de fichier :
    > G
 - Descendre à la ligne 34 :
    > 34 G
-
 Début ou fin de ligne :
 - Fin de la ligne où se trouve le dernier carractère :
    > $ 
 - Début de la ligne où se trouve le premier carractère :
    > 0 (shift+à)
-
 Supprimer les dernières actions "CRTL+Z" :
 - Undo :
    > u
@@ -326,7 +333,7 @@ Voici le détail des options :
 
 Pour décompresser le rar avec son passwd :
 
-```BASH
+```bash
 rar x -hP{MOT DE PASSE} {FICHIER.RAR}
 rar x -hPTEST test2.rar
 ```
@@ -335,21 +342,21 @@ rar x -hPTEST test2.rar
 
 Apache check config :
 
-```BASH
+```bash
 /opt/lampp/bin/httpd -t
 ```
 
 Apache restart :
 
-```BASH
+```bash
 /opt/lampp/bin/httpd -k restart
 ```
 
-### PEM Key
+###  PEM Key
 
 Create pem key :
 
-```BASH
+```bash
 Puttygen mykey.ppk -O private-openssh -o mykey.pem
 ```
 
@@ -357,7 +364,7 @@ Puttygen mykey.ppk -O private-openssh -o mykey.pem
 
 Basic postfix configuration ``/etc/postfix/main.cf`` :
 
-```BASH
+```bash
 relayhost = [smtp.gmail.com]:587
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
@@ -368,16 +375,16 @@ smtp_sasl_security_options = noanonymous
 
 How to adding user ?
 
-```BASH
+```bash
 useradd -s /sbin/nologin -G $GRP
 useradd -m -G wheel -s /bin/bash $account
 ```
 
-### DD
+###  DD
 
 dd nécessite de droits super utilisateur :
 
-```BASH
+```bash
 sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk && sync
 ```
 
@@ -385,28 +392,16 @@ sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk && sync
 
 Trouver tout fichier depuis l’endroit que vous souhaitez portant le nom de jacquet :
 
-```BASH
+```bash
 find $DEPUIS_QUEL_ENDROIT -name "jacquet"
 ```
 
 Trouver dans le dossier httpd tout fichier plus vieux de 90 jours puis les supprimer :
 
-```BASH
+```bash
 find /var/log/httpd/ -type f -name "*" -mtime +90 -exec rm -f {} \;
 ```
 
 | Note |
 |-|
 | Le « {} » est le résultat de la recherche du find ! |
-
-# APT
-
-## bpytop
-
-How to isntall bpytop :
-
-```BASH
-apt install python3-pip
-pip3 install psutil
-pip3 install bpytop
-```
