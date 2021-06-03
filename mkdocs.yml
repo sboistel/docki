@@ -25,6 +25,8 @@ nav:
                 - monitoring/ELK.md
                 - monitoring/KVM.md
                 - monitoring/Proxmox-VE.md
+        - Application:
+                - application/openvpn.md
         - Linux:
                 - os/linux/Desktop-Environement.md
                 - os/linux/Linux.md
