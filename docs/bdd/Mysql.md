@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Mysql
 
 Here are somes SQL tips & tricks
 

@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Amazon Web Services
 
 Here are somes aws tips & tricks
 

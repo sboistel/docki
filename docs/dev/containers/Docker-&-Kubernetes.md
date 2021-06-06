@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Docker & K8S
 
 Here are somes containers tips & tricks
 

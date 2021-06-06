@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Oracle Cloud Infrastructure
 
 Here are somes oci tips & tricks
 

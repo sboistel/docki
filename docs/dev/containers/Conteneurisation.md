@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Containers
 
 Here are somes container tips & tricks
 

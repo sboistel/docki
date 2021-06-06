@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Desktop environnement
  
 Here are somes Desktop Environement tips & tricks
 

@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Terraform
 
 Here are somes tf tips & tricks
 

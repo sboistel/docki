@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Centreon
 
 Here are somes Centreon tips & tricks
 

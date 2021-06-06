@@ -1,8 +1,4 @@
-[[_TOC_]]
-
----
-
-Elasticsearch, Logstash, Kibana
+# Elasticsearch, Logstash, Kibana
 
 ## Elasticsearch
 

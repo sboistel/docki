@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Python
 
 Python tips & tricks
 

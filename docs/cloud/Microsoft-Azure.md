@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Microsoft Azure 
 
 # Activer la journalisation à l’aide d’Azure CLI
 

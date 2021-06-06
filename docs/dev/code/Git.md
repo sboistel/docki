@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Git
 
 Here are somes git tips & tricks
 

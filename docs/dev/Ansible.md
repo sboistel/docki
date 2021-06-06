@@ -1,7 +1,4 @@
-[[_TOC_]]
-
----
-
+# Ansible
 Here are somes ansible tips & tricks
 
 ## Pense bête

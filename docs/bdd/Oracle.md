@@ -1,6 +1,4 @@
-[[_TOC_]]
-
----
+# Oracle
 
 Here are somes Oracle tips & tricks
 
