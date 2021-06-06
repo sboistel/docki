@@ -62,9 +62,9 @@
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../cloud/Amazon-Web-Services/">Amazon Web Services</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Cloud-Platformes/">Cloud Platformes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Cloud-Platformes/">Cloud platformes</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Google-Cloud-Platform/">Google Cloud Platform</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Google-Cloud-Platform/">Google Cloud Platformes</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../cloud/Microsoft-Azure/">Microsoft Azure</a>
                     </li>
@@ -75,6 +75,124 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Ansible</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#pense-bete">Pense bête</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lexique">Léxique</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#action">Action</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ad-hoc">Ad Hoc</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#async">Async</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#callback-plugin">Callback Plugin</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#check-mode">Check Mode</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#plugin-de-connexion">Plugin de connexion</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#conditionals">Conditionals</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#declaratif">Déclaratif</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mode-diff">Mode Diff</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#executor">Executor</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#facts">Facts</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#plugin-de-filtrage">Plugin de filtrage</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#forks">Forks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#gather-facts-booleen">Gather Facts (booléen)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#globbing">Globbing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#groupe-dinventaire">Groupe d’inventaire</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#group-vars">Group Vars</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#handlers">Handlers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#hote-host">Hôte (Host)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#host-specifier">Host Specifier</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#host-vars">Host Vars</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#idempotence">Idempotence</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#includes">Includes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#inventaire">Inventaire</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#script-dinventaire">Script d’inventaire</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#jinja2">Jinja2</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#json">JSON</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lazy-evaluation">Lazy Evaluation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#library">Library</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#limit-groups">Limit Groups</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#local-action">Local Action</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#local-connection">Local Connection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#plugin-de-recherche">Plugin de recherche</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#loops">Loops</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#multi-tier">Multi-Tier</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#notify">Notify</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#orchestration">Orchestration</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#paramiko">Paramiko</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#livres-de-jeux">Livres de jeux</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#jeux-plays">Jeux (Plays)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mode-pull-traction">Mode Pull (traction)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mode-push">Mode Push</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#register-variable">Register Variable</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modele-de-ressources">Modèle de ressources</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#roles">Rôles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mise-a-jour-continue-rolling-updates">Mise à jour continue (Rolling Updates)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#become">Become</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ssh-native">SSH (Native)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tags">Tags</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tache">Tâche</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modeles-jinja2">Modèles Jinja2</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#transport">Transport</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#when">When</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vars-variables">Vars (Variables)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#yaml">YAML</a>
+    </li>
+        </ul>
+    </li>
     </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Terraform/">Terraform</a>
@@ -91,20 +209,20 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Containers</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../containers/Conteneurisation/">Conteneurisation</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../containers/Conteneurisation/">Containers</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../containers/Docker-%26-Kubernetes/">Docker & Kubernetes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../containers/Docker-%26-Kubernetes/">Docker & K8S</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Monitoring</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../monitoring/Centreon/">Centreon</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/ELK/">ELK</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/ELK/">Elasticsearch, Logstash, Kibana</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../monitoring/KVM/">KVM</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/Proxmox-VE/">Proxmox VE</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/Proxmox-VE/">Proxmox Virtual Environnement</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Application</span></p>
@@ -114,14 +232,14 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Linux</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../os/linux/Desktop-Environement/">Desktop Environement</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../os/linux/Desktop-Environement/">Desktop environnement</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../os/linux/Linux/">Linux</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Windaub</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../os/windows/Windows/">Windows</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../os/windows/Windows/">VINT D'EAU</a>
                     </li>
                 </ul>
                 <ul>
@@ -164,8 +282,7 @@
           <div role="main">
             <div class="section">
               
-                <p>[[<em>TOC</em>]]</p>
-<hr />
+                <h1 id="ansible">Ansible</h1>
 <p>Here are somes ansible tips &amp; tricks</p>
 <h2 id="pense-bete">Pense bête</h2>
 <p>List d'argument :

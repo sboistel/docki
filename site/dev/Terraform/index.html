@@ -62,9 +62,9 @@
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../cloud/Amazon-Web-Services/">Amazon Web Services</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Cloud-Platformes/">Cloud Platformes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Cloud-Platformes/">Cloud platformes</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Google-Cloud-Platform/">Google Cloud Platform</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Google-Cloud-Platform/">Google Cloud Platformes</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../cloud/Microsoft-Azure/">Microsoft Azure</a>
                     </li>
@@ -77,7 +77,21 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Terraform</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#exemple">Exemple :</a>
+    <li class="toctree-l2"><a class="reference internal" href="#syntaxe">Syntaxe</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exemple">Exemple :</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tfstate">tfstate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tester-et-appliquer">Tester et appliquer</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#tester">Tester</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#appliquer">Appliquer</a>
+    </li>
+        </ul>
     </li>
     </ul>
                     </li>
@@ -93,20 +107,20 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Containers</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../containers/Conteneurisation/">Conteneurisation</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../containers/Conteneurisation/">Containers</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../containers/Docker-%26-Kubernetes/">Docker & Kubernetes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../containers/Docker-%26-Kubernetes/">Docker & K8S</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Monitoring</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../monitoring/Centreon/">Centreon</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/ELK/">ELK</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/ELK/">Elasticsearch, Logstash, Kibana</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../monitoring/KVM/">KVM</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/Proxmox-VE/">Proxmox VE</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/Proxmox-VE/">Proxmox Virtual Environnement</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Application</span></p>
@@ -116,14 +130,14 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Linux</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../os/linux/Desktop-Environement/">Desktop Environement</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../os/linux/Desktop-Environement/">Desktop environnement</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../os/linux/Linux/">Linux</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Windaub</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../os/windows/Windows/">Windows</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../os/windows/Windows/">VINT D'EAU</a>
                     </li>
                 </ul>
                 <ul>
@@ -166,8 +180,7 @@
           <div role="main">
             <div class="section">
               
-                <p>[[<em>TOC</em>]]</p>
-<hr />
+                <h1 id="terraform">Terraform</h1>
 <p>Here are somes tf tips &amp; tricks</p>
 <h2 id="syntaxe">Syntaxe</h2>
 <p>Travaillons sur un fichier ''main.tf''</p>
