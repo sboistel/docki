@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Docker & Kubernetes - Dockimentation</title>
+  <title>Docker & K8S - Dockimentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Docker & Kubernetes";
+    var mkdocs_page_name = "Docker & K8S";
     var mkdocs_page_input_path = "dev/containers/Docker-&-Kubernetes.md";
     var mkdocs_page_url = null;
   </script>
@@ -62,9 +62,9 @@
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Amazon-Web-Services/">Amazon Web Services</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Cloud-Platformes/">Cloud Platformes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Cloud-Platformes/">Cloud platformes</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Google-Cloud-Platform/">Google Cloud Platform</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Google-Cloud-Platform/">Google Cloud Platformes</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Microsoft-Azure/">Microsoft Azure</a>
                     </li>
@@ -89,10 +89,46 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Containers</span></p>
                 <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../Conteneurisation/">Conteneurisation</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../Conteneurisation/">Containers</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Docker & Kubernetes</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Docker & K8S</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#docker">Docker</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#images">Images</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#commit">Commit</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dockerfile">DockerFile</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#champs">Champs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bash">Bash</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#attache-non-attache">Attaché / Non Attaché</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#inspecter-un-conteneur">Inspecter un conteneur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#agregation-de-recherche">Agrégation de recherche</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#filtres">Filtres</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#formater-laffichage">Formater l'affichage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#import-export">Import / Export</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#export">Export</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#import">Import</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#arguments">Arguments</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -100,11 +136,11 @@
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Centreon/">Centreon</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/ELK/">ELK</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/ELK/">Elasticsearch, Logstash, Kibana</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/KVM/">KVM</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Proxmox-VE/">Proxmox VE</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Proxmox-VE/">Proxmox Virtual Environnement</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Application</span></p>
@@ -114,14 +150,14 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Linux</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../os/linux/Desktop-Environement/">Desktop Environement</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../os/linux/Desktop-Environement/">Desktop environnement</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../../os/linux/Linux/">Linux</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Windaub</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../os/windows/Windows/">Windows</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../os/windows/Windows/">VINT D'EAU</a>
                     </li>
                 </ul>
                 <ul>
@@ -153,7 +189,7 @@
         
       
     
-    <li>Docker & Kubernetes</li>
+    <li>Docker & K8S</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -164,8 +200,7 @@
           <div role="main">
             <div class="section">
               
-                <p>[[<em>TOC</em>]]</p>
-<hr />
+                <h1 id="docker-k8s">Docker &amp; K8S</h1>
 <p>Here are somes containers tips &amp; tricks</p>
 <h2 id="docker">Docker</h2>
 <p>Lister les processus en cours :</p>
@@ -353,7 +388,7 @@ docker build -t mon_image:v1.0
         <a href="../../../monitoring/Centreon/" class="btn btn-neutral float-right" title="Centreon">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Conteneurisation/" class="btn btn-neutral" title="Conteneurisation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Conteneurisation/" class="btn btn-neutral" title="Containers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   

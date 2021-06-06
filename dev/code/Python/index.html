@@ -62,9 +62,9 @@
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Amazon-Web-Services/">Amazon Web Services</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Cloud-Platformes/">Cloud Platformes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Cloud-Platformes/">Cloud platformes</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Google-Cloud-Platform/">Google Cloud Platform</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Google-Cloud-Platform/">Google Cloud Platformes</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../../cloud/Microsoft-Azure/">Microsoft Azure</a>
                     </li>
@@ -86,27 +86,55 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Python</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#coding">Coding</a>
+    <li class="toctree-l2"><a class="reference internal" href="#syntaxe">Syntaxe</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#coding">Coding</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#librairy">Librairy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#import-de-librairie">Import de librairie</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#interpollation">Interpollation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#verifications">Vérifications</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tkinter">TKinter</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#personnalisation-de-la-fenetre">Personnalisation de la fenêtre</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#widget">Widget</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#case-a-cocher">Case à cocher</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#champs-de-saisie">Champs de saisie</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#barre-de-menu">Barre de menu</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
     </li>
     </ul>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Containers</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../containers/Conteneurisation/">Conteneurisation</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/Conteneurisation/">Containers</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../containers/Docker-%26-Kubernetes/">Docker & Kubernetes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/Docker-%26-Kubernetes/">Docker & K8S</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Monitoring</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Centreon/">Centreon</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/ELK/">ELK</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/ELK/">Elasticsearch, Logstash, Kibana</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/KVM/">KVM</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Proxmox-VE/">Proxmox VE</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../monitoring/Proxmox-VE/">Proxmox Virtual Environnement</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Application</span></p>
@@ -116,14 +144,14 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Linux</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../os/linux/Desktop-Environement/">Desktop Environement</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../os/linux/Desktop-Environement/">Desktop environnement</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../../os/linux/Linux/">Linux</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Windaub</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../../os/windows/Windows/">Windows</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../../os/windows/Windows/">VINT D'EAU</a>
                     </li>
                 </ul>
                 <ul>
@@ -166,8 +194,7 @@
           <div role="main">
             <div class="section">
               
-                <p>[[<em>TOC</em>]]</p>
-<hr />
+                <h1 id="python">Python</h1>
 <p>Python tips &amp; tricks</p>
 <h2 id="syntaxe">Syntaxe</h2>
 <h3 id="coding">Coding</h3>
@@ -264,7 +291,7 @@ menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../containers/Conteneurisation/" class="btn btn-neutral float-right" title="Conteneurisation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../containers/Conteneurisation/" class="btn btn-neutral float-right" title="Containers">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../Perl/" class="btn btn-neutral" title="Perl"><span class="icon icon-circle-arrow-left"></span> Previous</a>
