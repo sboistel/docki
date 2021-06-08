@@ -11,15 +11,11 @@ Thanks to HTML5, once Guacamole is installed on a server, **all you need to acce
 
 ### Requiere depedences
 * APT:DEB/Ubuntu
-    ```bash
-    apt install libcairo2-dev libtool-bin libossp-uuid-dev
-    ```
+	> apt install libcairo2-dev libtool-bin libossp-uuid-dev
 
 ### Optional depedences
 * APT:DEB/Ubuntu
-    ``` bash
-    apt install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev  libtelnet-dev libvncserver-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev 
-    ```
+	> apt install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev  libtelnet-dev libvncserver-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev 
 
 ### Obtain code
 * APT:DEB/Ubuntu
@@ -54,9 +50,9 @@ ldconfig
 
 # Requierement 
 * APT:DEB/Ubuntu
-	```apt install git maven ```
+	> apt install git maven 
 * RPM:Fedora/Centos/Rhel:
-	```yum install git maven ```
+	> yum install git maven 
 
 Donwload the guacamole client repository
 ```bash
