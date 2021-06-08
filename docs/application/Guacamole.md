@@ -19,9 +19,7 @@ Thanks to HTML5, once Guacamole is installed on a server, **all you need to acce
 
 ### Obtain code
 * APT:DEB/Ubuntu
-    ```bash
-    apt install git
-    ```
+	> apt install git
 
 Donwload the guacamole server repository:
 ```bash
