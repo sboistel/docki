@@ -192,31 +192,22 @@ Thanks to HTML5, once Guacamole is installed on a server, <strong>all you need t
 <h2 id="server">Server</h2>
 <h3 id="requiere-depedences">Requiere depedences</h3>
 <ul>
-<li>
-<p>APT:DEB/Ubuntu</p>
-<blockquote>
-<p>apt install libcairo2-dev libtool-bin libossp-uuid-dev</p>
-</blockquote>
-</li>
+<li>APT:DEB/Ubuntu</li>
 </ul>
+<pre><code class="language-bash">apt install libcairo2-dev libtool-bin libossp-uuid-dev
+</code></pre>
 <h3 id="optional-depedences">Optional depedences</h3>
 <ul>
-<li>
-<p>APT:DEB/Ubuntu</p>
-<blockquote>
-<p>apt install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev  libtelnet-dev libvncserver-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev</p>
-</blockquote>
-</li>
+<li>APT:DEB/Ubuntu</li>
 </ul>
+<pre><code class="language-bash">apt install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev  libtelnet-dev libvncserver-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev
+</code></pre>
 <h3 id="obtain-code">Obtain code</h3>
 <ul>
-<li>
-<p>APT:DEB/Ubuntu</p>
-<blockquote>
-<p>apt install git</p>
-</blockquote>
-</li>
+<li>APT:DEB/Ubuntu</li>
 </ul>
+<pre><code class="language-bash">apt install git
+</code></pre>
 <p>Donwload the guacamole server repository:</p>
 <pre><code class="language-bash">git clone git://github.com/apache/guacamole-server.git
 </code></pre>
@@ -234,19 +225,15 @@ ldconfig
 <h2 id="guest-agent">Guest agent</h2>
 <h1 id="requierement">Requierement</h1>
 <ul>
-<li>
-<p>APT:DEB/Ubuntu</p>
-<blockquote>
-<p>apt install git maven </p>
-</blockquote>
-</li>
-<li>
-<p>RPM:Fedora/Centos/Rhel:</p>
-<blockquote>
-<p>yum install git maven </p>
-</blockquote>
-</li>
+<li>APT:DEB/Ubuntu</li>
 </ul>
+<pre><code class="language-bash">apt install git maven 
+</code></pre>
+<ul>
+<li>RPM:Fedora/Centos/Rhel:</li>
+</ul>
+<pre><code class="language-bash">yum install git maven 
+</code></pre>
 <p>Donwload the guacamole client repository</p>
 <pre><code class="language-bash">git clone git://github.com/apache/guacamole-client.git
 mvn package
