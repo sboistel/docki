@@ -27,7 +27,7 @@ nav:
                 - monitoring/Proxmox-VE.md
         - Application:
                 - application/openvpn.md
-		- application/Guacamole.md
+		- application/guacamole.md
         - Linux:
                 - os/linux/Desktop-Environement.md
                 - os/linux/Linux.md
