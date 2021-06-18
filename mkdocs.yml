@@ -29,8 +29,13 @@ nav:
                 - application/openvpn.md
                 - application/guacamole.md
         - Linux:
-                - os/linux/Desktop-Environement.md
                 - os/linux/Linux.md
+                - os/linux/system.md
+                - os/linux/Desktop-Environement.md
+                - os/linux/packages.md
+                - os/linux/analyse.md
+                - os/linux/regular-parsing.md
+                - os/linux/vim.md
         - Windaub:
                 - os/windows/Windows.md
         - About: about.md
