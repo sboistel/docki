@@ -7,14 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  
   <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>OpenVPN - Dockimentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="../../css/theme.css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
@@ -25,7 +24,7 @@
   
   <script src="../../js/jquery-2.1.1.min.js" defer></script>
   <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
@@ -36,7 +35,6 @@
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href="../.." class="icon icon-home"> Dockimentation</a>
         <div role="search">
@@ -47,95 +45,211 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Database</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../bdd/Mysql/">Mysql</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../bdd/Oracle/">Oracle</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Cloud</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Amazon-Web-Services/">Amazon Web Services</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Cloud-Platformes/">Cloud platformes</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Google-Cloud-Platform/">Google Cloud Platformes</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Microsoft-Azure/">Microsoft Azure</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../cloud/Oracle-Cloud-Infrastructure/">Oracle Cloud Infrastructure</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Development</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../dev/Ansible/">Ansible</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../dev/Terraform/">Terraform</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Code</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../dev/code/Git/">Git</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../dev/code/Perl/">Perl</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../dev/code/Python/">Python</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Containers</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../dev/containers/Conteneurisation/">Containers</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../dev/containers/Docker-%26-Kubernetes/">Docker & K8S</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Monitoring</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/Centreon/">Centreon</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/ELK/">Elasticsearch, Logstash, Kibana</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/KVM/">KVM</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../monitoring/Proxmox-VE/">Proxmox Virtual Environnement</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Application</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">OpenVPN</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#install-via-repository">Install via repository</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a>
-    </li>
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Database</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../bdd/Mysql/">Mysql</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bdd/Oracle/">Oracle</a>
+                </li>
     </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../guacamole/">Guacamole</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Linux</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../os/linux/Desktop-Environement/">Desktop environnement</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../os/linux/Linux/">Linux</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Windaub</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../os/windows/Windows/">VINT D'EAU</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
-                    </li>
-                </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Cloud</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../cloud/Amazon-Web-Services/">Amazon Web Services</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../cloud/Cloud-Platformes/">Cloud platformes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../cloud/Google-Cloud-Platform/">Google Cloud Platformes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../cloud/Microsoft-Azure/">Microsoft Azure</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../cloud/Oracle-Cloud-Infrastructure/">Oracle Cloud Infrastructure</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Development</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dev/Ansible/">Ansible</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/Terraform/">Terraform</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Code</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Git/">Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Perl/">Perl</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Python/">Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Containers</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dev/containers/Conteneurisation/">Containers</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/containers/Docker-&-Kubernetes/">Docker & K8S</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Monitoring</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../monitoring/Centreon/">Centreon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/ELK/">Elasticsearch, Logstash, Kibana</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/KVM/">KVM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/Proxmox-VE/">Proxmox Virtual Environnement</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Application</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">OpenVPN</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#openvpn">OpenVPN</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#install-via-repository">Install via repository</a></li>
+        
+            <li><a class="toctree-l4" href="#configuration">Configuration</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../guacamole/">Guacamole</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Linux</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../os/linux/Linux/">Linux</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../os/linux/system/">SYSTEM</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../os/linux/Desktop-Environement/">Desktop environnement</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../os/linux/packages/">Packages</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../os/linux/analyse/">Analyse</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../os/linux/regular-parsing/">Regular parsing</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../os/linux/vim/">VIM</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Windaub</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../os/windows/Windows/">VINT D'EAU</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../about/">About</a>
+	    </li>
+          
+        </ul>
       </div>
-    </div>
+      &nbsp;
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -164,7 +278,6 @@
       
     </li>
   </ul>
-  
   <hr/>
 </div>
           <div role="main">
@@ -176,11 +289,12 @@
 <p>The recommended method to install the OpenVPN Access Server is to use the official OpenVPN Access Server software repository. </p>
 <p>You will need to be logged on to your Linux system either on the console or via SSH, and have root privileges. Then copy and paste the commands below to add the repository to your system, and install the OpenVPN Access Server client bundle and the OpenVPN Access Server package itself. </p>
 <p>Installing the package 'openvpn-as' will automatically pull in the required client bundle as well.</p>
-<pre><code class="language-bash">apt update &amp;&amp; apt -y install ca-certificates wget net-tools gnupg
+<pre><code class="bash">apt update &amp;&amp; apt -y install ca-certificates wget net-tools gnupg
 wget -qO - https://as-repository.openvpn.net/as-repo-public.gpg | apt-key add -
 echo &quot;deb http://as-repository.openvpn.net/as/debian buster main&quot;&gt;/etc/apt/sources.list.d/openvpn-as-repo.list
 apt update &amp;&amp; apt -y install openvpn-as
 </code></pre>
+
 <h2 id="configuration">Configuration</h2>
 <p>Follow theses steps : <a href="https://openvpn.net/vpn-server-resources/finishing-configuration-of-access-server/">OpenVPN Website</a></p>
               
@@ -205,7 +319,7 @@ apt update &amp;&amp; apt -y install openvpn-as
     
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
         </div>
@@ -215,7 +329,7 @@ apt update &amp;&amp; apt -y install openvpn-as
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" role="note" style="cursor: pointer">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -229,11 +343,6 @@ apt update &amp;&amp; apt -y install openvpn-as
     <script>var base_url = '../..';</script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        };
-    </script>
 
 </body>
 </html>
