@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Python - Dockimentation</title>
+  <title>VIM - Dockimentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Python";
-    var mkdocs_page_input_path = "dev/code/Python.md";
+    var mkdocs_page_name = "VIM";
+    var mkdocs_page_input_path = "os/linux/vim.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -101,11 +101,11 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Ansible/">Ansible</a>
+    <a class="" href="../../../dev/Ansible/">Ansible</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../Terraform/">Terraform</a>
+    <a class="" href="../../../dev/Terraform/">Terraform</a>
                 </li>
     </ul>
 	    </li>
@@ -116,37 +116,15 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../Git/">Git</a>
+    <a class="" href="../../../dev/code/Git/">Git</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../Perl/">Perl</a>
+    <a class="" href="../../../dev/code/Perl/">Perl</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Python</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#python">Python</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#syntaxe">Syntaxe</a></li>
-        
-            <li><a class="toctree-l4" href="#librairy">Librairy</a></li>
-        
-            <li><a class="toctree-l4" href="#import-de-librairie">Import de librairie</a></li>
-        
-            <li><a class="toctree-l4" href="#interpollation">Interpollation</a></li>
-        
-            <li><a class="toctree-l4" href="#verifications">Vérifications</a></li>
-        
-            <li><a class="toctree-l4" href="#tkinter">TKinter</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../../../dev/code/Python/">Python</a>
                 </li>
     </ul>
 	    </li>
@@ -157,11 +135,11 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../containers/Conteneurisation/">Containers</a>
+    <a class="" href="../../../dev/containers/Conteneurisation/">Containers</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../containers/Docker-&-Kubernetes/">Docker & K8S</a>
+    <a class="" href="../../../dev/containers/Docker-&-Kubernetes/">Docker & K8S</a>
                 </li>
     </ul>
 	    </li>
@@ -210,31 +188,58 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../../os/linux/Linux/">Linux</a>
+    <a class="" href="../Linux/">Linux</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/system/">SYSTEM</a>
+    <a class="" href="../system/">SYSTEM</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/Desktop-Environement/">Desktop environnement</a>
+    <a class="" href="../Desktop-Environement/">Desktop environnement</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/packages/">Packages</a>
+    <a class="" href="../packages/">Packages</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/analyse/">Analyse</a>
+    <a class="" href="../analyse/">Analyse</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/regular-parsing/">Regular parsing</a>
+    <a class="" href="../regular-parsing/">Regular parsing</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../../os/linux/vim/">VIM</a>
+    <a class="current" href="./">VIM</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#vim">VIM</a></li>
+    
+
+    <li class="toctree-l3"><a href="#navigation">Navigation</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#vi">VI</a></li>
+        
+            <li><a class="toctree-l4" href="#vim_1">VIM</a></li>
+        
+            <li><a class="toctree-l4" href="#keymap">Keymap</a></li>
+        
+            <li><a class="toctree-l4" href="#sed">Sed</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#search">Search</a></li>
+    
+
+    <li class="toctree-l3"><a href="#highlithing">Highlithing</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -245,7 +250,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../../os/windows/Windows/">VINT D'EAU</a>
+    <a class="" href="../../windows/Windows/">VINT D'EAU</a>
                 </li>
     </ul>
 	    </li>
@@ -277,11 +282,11 @@
     
       
         
-          <li>Code &raquo;</li>
+          <li>Linux &raquo;</li>
         
       
     
-    <li>Python</li>
+    <li>VIM</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -291,103 +296,90 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="python">Python</h1>
-<p>Python tips &amp; tricks</p>
-<h2 id="syntaxe">Syntaxe</h2>
-<h3 id="coding">Coding</h3>
-<p>Format UTF-8 : <code># -*- coding:Utf-8 -*-</code></p>
-<h2 id="librairy">Librairy</h2>
-<h2 id="import-de-librairie">Import de librairie</h2>
-<p>On peut importer un seul module d'une librairie :</p>
+                <h1 id="vim">VIM</h1>
+<h1 id="navigation">Navigation</h1>
+<h2 id="vi">VI</h2>
+<p>Flêches directionnelles :
+- j -&gt; descendre
+- k -&gt; monter
+- l -&gt; droite
+- h -&gt; droite</p>
+<h2 id="vim_1">VIM</h2>
+<p>Début ou fin de fichier :
+- Go to the top :</p>
 <blockquote>
-<p>from LIBRAIRIE import module</p>
+<p>gg
+- Go to the buttom :
+G
+- Descendre à la ligne 34 :
+34 G
+Début ou fin de ligne :
+- Fin de la ligne où se trouve le dernier carractère :
+$ 
+- Début de la ligne où se trouve le premier carractère :
+0 (shift+à)
+Supprimer les dernières actions "CRTL+Z" :
+- Undo :
+u</p>
 </blockquote>
-<p>On peut aussi importer la librairie complette : </p>
+<h2 id="keymap">Keymap</h2>
+<p>Liste :</p>
+<ul>
+<li>Début du mot | si '/||.||--||...' alors utiliser B :<blockquote>
+<p>b</p>
+</blockquote>
+</li>
+<li>Début du dexième mot en partant du mot d'origin :<blockquote>
+<p>3B</p>
+</blockquote>
+</li>
+<li>Fin du mot suivant :<blockquote>
+<p>e</p>
+</blockquote>
+</li>
+<li>Mot suivant :<blockquote>
+<p>w</p>
+</blockquote>
+</li>
+<li>Replace :<blockquote>
+<p>r</p>
+</blockquote>
+</li>
+<li>Supprimer carractère par carractère :<blockquote>
+<p>x</p>
+</blockquote>
+</li>
+<li>Supprimer à reculon carractère par carractère :<blockquote>
+<p>x</p>
+</blockquote>
+</li>
+<li>Changer (ce -&gt; changer jusqu'à la fin du mot ) :
+    &gt; c</li>
+<li>Enregister les modifications :
+    &gt; ZZ</li>
+<li>Enregistrer les modifications et quiter le fichier :<blockquote>
+<p>ZQ</p>
+</blockquote>
+</li>
+</ul>
+<p>Répeter la dernière actions effectuée : </p>
 <blockquote>
-<p>from LIBRAIRIE import *</p>
+<p>.</p>
 </blockquote>
-<p>Ou depuis un autre fichier.Py :</p>
+<h2 id="sed">Sed</h2>
+<p>Faire du sed : <code>:%s /foo/newfoo/g</code></p>
+<h1 id="search">Search</h1>
+<p>Faire une recherche :
+- Du ahut vers le bas :</p>
 <blockquote>
-<p>from fichier import classe</p>
+<p>/
+- Du bas vers le haut :
+?
+- Mot sur lequel je suis :
+*</p>
 </blockquote>
-<h2 id="interpollation">Interpollation</h2>
-<p>Divers techniques existe afin de sortir un clef d'une liste:</p>
-<pre><code class="PYTHON">print(&quot;Je m'appel %s !&quot; % liste_nom['nom']) 
-print(&quot;Je m'appel %(nom)s !&quot; % d)
-print(&quot;Je m'appel {0} !&quot;.format(d['nom']))
-</code></pre>
-
-<h2 id="verifications">Vérifications</h2>
-<p>Vérifier si un block est correct avec 'try' :</p>
-<pre><code class="PYTHON">try: # Vérifier ce bloc
-    file = open('infos.txt', 'r')
-    print(file.read())
-except: # Si erreur se trouve dans try
-    print(&quot;erreur&quot;)
-finally: # Qui s'éxecutera quoi qu'il arrive des blocs précédents
-    file.close
-</code></pre>
-
-<p>La vérification peut se traduire par plusieur méthodes :</p>
-<pre><code class="PYTHON">execpt IOError # Pour se qui concerne les fichier ou élèments en dur
-except ValueError # Qui concernera les érreurs de conversions
-</code></pre>
-
-<p>La méthode la plus sûr reste l'option 'with':</p>
-<pre><code class="PYTHON">try: # Vérifier ce bloc
-with open('infox.txt', 'r') as file: # Avec le fichier, l'ouvrir en var file
-    for line in file.readlines():
-        print(int(line.strip()))
-except IOError as err:
-    print(&quot;Erreur de fichier&quot;, err)
-except ValueError:
-    print(&quot;Erreur de conversion&quot;)
-except:
-    print(&quot;Erreur inconnue, tous aux abris.&quot;)
-else:
-    print(&quot;Fichier connue de tous wallah&quot;)
-</code></pre>
-
-<h2 id="tkinter">TKinter</h2>
-<p>TKinter est une librairie permettant de génerer des fenêtre sur le code Python.</p>
-<p>Exemple de code :</p>
-<pre><code class="PYTHON">from Tkinter import *
-fenetre = Tk()
-label = Label(fenetre, text=&quot;Exmple de coprs de fenêtre&quot;)
-label.pack()
-fenetre.mainloop()
-</code></pre>
-
-<h3 id="personnalisation-de-la-fenetre">Personnalisation de la fenêtre</h3>
-<p>Liste d'élèments permettant de personnaliser une fenêtre (ici : <em>window = Tk()</em>):
-- window.title("<strong>My application</strong>")
-- window.geometry("720x480")
-- window.minsize(700, 300)
-- window.iconbitmap("image.ico")
-- window.config(background='#CC0000')</p>
-<h3 id="widget">Widget</h3>
-<h4 id="case-a-cocher">Case à cocher</h4>
-<p>Liste de case à cocher :</p>
-<pre><code class="PYTHON">caseACocher1 = Checkbutton(window, text=&quot;Case N°1&quot;).pack()
-caseACocher2 = Checkbutton(window, text=&quot;Case N°2&quot;).pack()
-...
-</code></pre>
-
-<h4 id="champs-de-saisie">Champs de saisie</h4>
-<p>Champs de saisie :</p>
-<pre><code class="PYTHON">value = StringVar()
-value.set(&quot;Zonne de text&quot;)
-entree = Entry(window, textvariable=value, width=30)
-entree.pack()
-</code></pre>
-
-<h4 id="barre-de-menu">Barre de menu</h4>
-<p>Menu ''fichier'' :</p>
-<pre><code class="PYTHON">file_menu = Menu(menu_bar, tearoff=0)
-file_menu.add_command(label=&quot;Nouveau&quot;, command=generate_password)
-file_menu.add_command(label=&quot;Quitter&quot;, command=window.quit)
-menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
-</code></pre>
+<h1 id="highlithing">Highlithing</h1>
+<p>Retirer le surlignage : <code>:noh</code></p>
               
             </div>
           </div>
@@ -395,10 +387,10 @@ menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../containers/Conteneurisation/" class="btn btn-neutral float-right" title="Containers">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../windows/Windows/" class="btn btn-neutral float-right" title="VINT D'EAU">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Perl/" class="btn btn-neutral" title="Perl"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../regular-parsing/" class="btn btn-neutral" title="Regular parsing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -424,10 +416,10 @@ menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Perl/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../regular-parsing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../containers/Conteneurisation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../windows/Windows/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

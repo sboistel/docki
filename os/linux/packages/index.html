@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Python - Dockimentation</title>
+  <title>Packages - Dockimentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Python";
-    var mkdocs_page_input_path = "dev/code/Python.md";
+    var mkdocs_page_name = "Packages";
+    var mkdocs_page_input_path = "os/linux/packages.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -101,11 +101,11 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Ansible/">Ansible</a>
+    <a class="" href="../../../dev/Ansible/">Ansible</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../Terraform/">Terraform</a>
+    <a class="" href="../../../dev/Terraform/">Terraform</a>
                 </li>
     </ul>
 	    </li>
@@ -116,37 +116,15 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../Git/">Git</a>
+    <a class="" href="../../../dev/code/Git/">Git</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../Perl/">Perl</a>
+    <a class="" href="../../../dev/code/Perl/">Perl</a>
                 </li>
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Python</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#python">Python</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#syntaxe">Syntaxe</a></li>
-        
-            <li><a class="toctree-l4" href="#librairy">Librairy</a></li>
-        
-            <li><a class="toctree-l4" href="#import-de-librairie">Import de librairie</a></li>
-        
-            <li><a class="toctree-l4" href="#interpollation">Interpollation</a></li>
-        
-            <li><a class="toctree-l4" href="#verifications">Vérifications</a></li>
-        
-            <li><a class="toctree-l4" href="#tkinter">TKinter</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../../../dev/code/Python/">Python</a>
                 </li>
     </ul>
 	    </li>
@@ -157,11 +135,11 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../containers/Conteneurisation/">Containers</a>
+    <a class="" href="../../../dev/containers/Conteneurisation/">Containers</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../containers/Docker-&-Kubernetes/">Docker & K8S</a>
+    <a class="" href="../../../dev/containers/Docker-&-Kubernetes/">Docker & K8S</a>
                 </li>
     </ul>
 	    </li>
@@ -210,31 +188,52 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../../os/linux/Linux/">Linux</a>
+    <a class="" href="../Linux/">Linux</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/system/">SYSTEM</a>
+    <a class="" href="../system/">SYSTEM</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/Desktop-Environement/">Desktop environnement</a>
+    <a class="" href="../Desktop-Environement/">Desktop environnement</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Packages</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#packages">Packages</a></li>
+    
+
+    <li class="toctree-l3"><a href="#index">Index</a></li>
+    
+
+    <li class="toctree-l3"><a href="#rpm">RPM</a></li>
+    
+
+    <li class="toctree-l3"><a href="#apt">APT</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#bpytop">bpytop</a></li>
+        
+        </ul>
+    
+
+    </ul>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/packages/">Packages</a>
+    <a class="" href="../analyse/">Analyse</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/analyse/">Analyse</a>
+    <a class="" href="../regular-parsing/">Regular parsing</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../../os/linux/regular-parsing/">Regular parsing</a>
-                </li>
-                <li class="">
-                    
-    <a class="" href="../../../os/linux/vim/">VIM</a>
+    <a class="" href="../vim/">VIM</a>
                 </li>
     </ul>
 	    </li>
@@ -245,7 +244,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../../os/windows/Windows/">VINT D'EAU</a>
+    <a class="" href="../../windows/Windows/">VINT D'EAU</a>
                 </li>
     </ul>
 	    </li>
@@ -277,11 +276,11 @@
     
       
         
-          <li>Code &raquo;</li>
+          <li>Linux &raquo;</li>
         
       
     
-    <li>Python</li>
+    <li>Packages</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -291,102 +290,25 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="python">Python</h1>
-<p>Python tips &amp; tricks</p>
-<h2 id="syntaxe">Syntaxe</h2>
-<h3 id="coding">Coding</h3>
-<p>Format UTF-8 : <code># -*- coding:Utf-8 -*-</code></p>
-<h2 id="librairy">Librairy</h2>
-<h2 id="import-de-librairie">Import de librairie</h2>
-<p>On peut importer un seul module d'une librairie :</p>
-<blockquote>
-<p>from LIBRAIRIE import module</p>
-</blockquote>
-<p>On peut aussi importer la librairie complette : </p>
-<blockquote>
-<p>from LIBRAIRIE import *</p>
-</blockquote>
-<p>Ou depuis un autre fichier.Py :</p>
-<blockquote>
-<p>from fichier import classe</p>
-</blockquote>
-<h2 id="interpollation">Interpollation</h2>
-<p>Divers techniques existe afin de sortir un clef d'une liste:</p>
-<pre><code class="PYTHON">print(&quot;Je m'appel %s !&quot; % liste_nom['nom']) 
-print(&quot;Je m'appel %(nom)s !&quot; % d)
-print(&quot;Je m'appel {0} !&quot;.format(d['nom']))
+                <h1 id="packages">Packages</h1>
+<h1 id="index">Index</h1>
+<ul>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#rpm">RPM</a></li>
+<li><a href="#apt">APT</a></li>
+<li><a href="#bpytop">bpytop</a></li>
+</ul>
+<h1 id="rpm">RPM</h1>
+<p>How to force installation without depedency.</p>
+<pre><code class="bash">rpm -Uvh --nodeps $(repoquery --location centreon-plugins)
 </code></pre>
 
-<h2 id="verifications">Vérifications</h2>
-<p>Vérifier si un block est correct avec 'try' :</p>
-<pre><code class="PYTHON">try: # Vérifier ce bloc
-    file = open('infos.txt', 'r')
-    print(file.read())
-except: # Si erreur se trouve dans try
-    print(&quot;erreur&quot;)
-finally: # Qui s'éxecutera quoi qu'il arrive des blocs précédents
-    file.close
-</code></pre>
-
-<p>La vérification peut se traduire par plusieur méthodes :</p>
-<pre><code class="PYTHON">execpt IOError # Pour se qui concerne les fichier ou élèments en dur
-except ValueError # Qui concernera les érreurs de conversions
-</code></pre>
-
-<p>La méthode la plus sûr reste l'option 'with':</p>
-<pre><code class="PYTHON">try: # Vérifier ce bloc
-with open('infox.txt', 'r') as file: # Avec le fichier, l'ouvrir en var file
-    for line in file.readlines():
-        print(int(line.strip()))
-except IOError as err:
-    print(&quot;Erreur de fichier&quot;, err)
-except ValueError:
-    print(&quot;Erreur de conversion&quot;)
-except:
-    print(&quot;Erreur inconnue, tous aux abris.&quot;)
-else:
-    print(&quot;Fichier connue de tous wallah&quot;)
-</code></pre>
-
-<h2 id="tkinter">TKinter</h2>
-<p>TKinter est une librairie permettant de génerer des fenêtre sur le code Python.</p>
-<p>Exemple de code :</p>
-<pre><code class="PYTHON">from Tkinter import *
-fenetre = Tk()
-label = Label(fenetre, text=&quot;Exmple de coprs de fenêtre&quot;)
-label.pack()
-fenetre.mainloop()
-</code></pre>
-
-<h3 id="personnalisation-de-la-fenetre">Personnalisation de la fenêtre</h3>
-<p>Liste d'élèments permettant de personnaliser une fenêtre (ici : <em>window = Tk()</em>):
-- window.title("<strong>My application</strong>")
-- window.geometry("720x480")
-- window.minsize(700, 300)
-- window.iconbitmap("image.ico")
-- window.config(background='#CC0000')</p>
-<h3 id="widget">Widget</h3>
-<h4 id="case-a-cocher">Case à cocher</h4>
-<p>Liste de case à cocher :</p>
-<pre><code class="PYTHON">caseACocher1 = Checkbutton(window, text=&quot;Case N°1&quot;).pack()
-caseACocher2 = Checkbutton(window, text=&quot;Case N°2&quot;).pack()
-...
-</code></pre>
-
-<h4 id="champs-de-saisie">Champs de saisie</h4>
-<p>Champs de saisie :</p>
-<pre><code class="PYTHON">value = StringVar()
-value.set(&quot;Zonne de text&quot;)
-entree = Entry(window, textvariable=value, width=30)
-entree.pack()
-</code></pre>
-
-<h4 id="barre-de-menu">Barre de menu</h4>
-<p>Menu ''fichier'' :</p>
-<pre><code class="PYTHON">file_menu = Menu(menu_bar, tearoff=0)
-file_menu.add_command(label=&quot;Nouveau&quot;, command=generate_password)
-file_menu.add_command(label=&quot;Quitter&quot;, command=window.quit)
-menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
+<h1 id="apt">APT</h1>
+<h2 id="bpytop">bpytop</h2>
+<p>How to isntall bpytop :</p>
+<pre><code class="bash">apt install python3-pip
+pip3 install psutil
+pip3 install bpytop
 </code></pre>
               
             </div>
@@ -395,10 +317,10 @@ menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../containers/Conteneurisation/" class="btn btn-neutral float-right" title="Containers">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../analyse/" class="btn btn-neutral float-right" title="Analyse">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Perl/" class="btn btn-neutral" title="Perl"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Desktop-Environement/" class="btn btn-neutral" title="Desktop environnement"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -424,10 +346,10 @@ menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../Perl/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../Desktop-Environement/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../containers/Conteneurisation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../analyse/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
