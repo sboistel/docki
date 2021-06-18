@@ -2,9 +2,9 @@
 Here are somes linux/unix tips & tricks
 
 # Linux
-* [Linux](linux.md#linux)
-* [Packages](linux.md#packages)
-* [Network](linux.md#network)
+* [Linux](Linux.md#linux)
+* [Packages](Linux.md#packages)
+* [Network](Linux.md#network)
 
 # System
 * [SYSTEM](system.md#system)
