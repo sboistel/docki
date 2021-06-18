@@ -23,7 +23,7 @@ Here are somes linux/unix tips & tricks
 
 
 # Desktop Environnement
-* [Desktop environnement](Desktop-Enironnement.md#desktop-environnement)
+* [Desktop environnement](Desktop-Enironement.md#desktop-environnement)
 
 # Packages
 * [Packages](packages.md#packages)
