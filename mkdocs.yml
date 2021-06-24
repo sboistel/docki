@@ -28,6 +28,7 @@ nav:
         - Application:
                 - application/openvpn.md
                 - application/guacamole.md
+                - application/vnc.md
         - Linux:
                 - os/linux/Linux.md
                 - os/linux/system.md
