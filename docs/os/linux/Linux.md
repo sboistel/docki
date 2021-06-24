@@ -2,7 +2,6 @@
 Here are somes linux/unix tips & tricks
 
 # Linux
-* [Linux](Linux.md#linux)
 * [Packages](Linux.md#packages)
 * [Network](Linux.md#network)
 
@@ -20,7 +19,6 @@ Here are somes linux/unix tips & tricks
 * [Screen](system.md#screen)
 * [Account](system.md#account)
 * [Time/Date](system.md#timedate)
-
 
 # Desktop Environnement
 * [Desktop environnement](Desktop-Environement.md#desktop-environnement)
