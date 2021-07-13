@@ -39,5 +39,6 @@ nav:
                 - os/linux/vim.md
         - Windaub:
                 - os/windows/Windows.md
+                - os/windows/account.md
         - About: about.md
 theme: readthedocs
