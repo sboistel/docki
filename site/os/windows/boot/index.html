@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../../img/favicon.ico">
+  <title>Windows Boot - Dockimentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Windows Boot";
+    var mkdocs_page_input_path = "os/windows/boot.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../../.." class="icon icon-home"> Dockimentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../bdd/readme/">Database</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../cloud/readme/">Cloud</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../dev/readme/">DevOPS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../dev/containers/readme/">Containers</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../monitoring/readme/">Monitoring</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../application/readme/">Application</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../linux/readme/">Linux</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../readme/">Windaub</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../..">Dockimentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Windows Boot</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="windows-boot">Windows Boot</h1>
+<h2 id="how-to-restore-windows-10-mbr">How to restore Windows 10 MBR</h2>
+<p>La démarche consiste à remplacer le MBR qui permet d'amorcer GRUB en lui substituant un MBR pointant sur le lanceur de Windows.</p>
+<p>Le remplacement du MBR est réalisé à partir du disque de restauration Windows ou du CD d'installation.</p>
+<p>Booter depuis le CD d'installation et choisir "Réparer ou récupérer une installation de Windows". 
+On sélectionnera ensuite l'installation de Windows dans la liste des choix proposés et on saisira le mot de passe administrateur. </p>
+<p>Au prompt, taper :</p>
+<pre><code class="POWERSHELL">C:\WINDOWS&gt; fixboot
+C:\WINDOWS&gt; fixmbr
+</code></pre>
+
+<p>La surface disque utilisée par Fedora n'est pas automatiquement ré-allouée . 
+C'est l'affaire de fdsik. </p>
+<p>La réallocation consiste en un nouveau formatage, sous le format vfat ou ntfs ou autre, selon le choix - si l'on souhaite ré-allouer les partitions au profit de Windows. On pourra ainsi modifier le format de tout ou partie des partitions et notamment les fusionner. fdisk existe dans l'environnement Windows (ou un programme équivalent).
+On redémarrera par la commande :</p>
+<pre><code class="POWERSHELL">C:\WINDOWS&gt; exit
+</code></pre>
+
+<table>
+<thead>
+<tr>
+<th>Restauration Grub</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Si les partitions Linux n'ont pas été ré-allouées, il est toujours possible de restaurer GRUB (et ainsi le boot sur Fedora ou Windows).</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+
+</body>
+</html>
