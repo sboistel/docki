@@ -1,6 +1,19 @@
 # Python
-
 Python tips & tricks
+
+# Index
+* [Syntaxe](#syntaxe)
+   * [Coding](#coding)
+* [Librairy](#librairy)
+* [Import de librairie](#import-de-librairie)
+* [Interpollation](#interpollation)
+* [Vérifications](#vérifications)
+* [TKinter](#tkinter)
+   * [Personnalisation de la fenêtre](#personnalisation-de-la-fenêtre)
+   * [Widget](#widget)
+      * [Case à cocher](#case-à-cocher)
+      * [Champs de saisie](#champs-de-saisie)
+      * [Barre de menu](#barre-de-menu)
 
 ## Syntaxe
 

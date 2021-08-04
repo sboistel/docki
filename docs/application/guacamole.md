@@ -70,3 +70,43 @@ Donwload the guacamole client repository
 git clone git://github.com/apache/guacamole-client.git
 mvn package
 ```
+
+---
+
+Source : https://kifarunix.com/install-apache-guacamole-on-ubuntu-21-04/
+
+# Server Installation
+
+Update :
+```bash
+apt update
+```
+
+Software needed :
+```bash
+apt install build-essential libcairo2-dev libpng-dev libtool-bin libossp-uuid-dev libavcodec-dev libavformat-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev libvncserver-dev libtelnet-dev libssl-dev libvorbis-dev libwebp-dev
+```
+
+---
+
+# Guacamole Server 
+
+## Downlaod
+```bash
+cd /usr/src/
+wget https://downloads.apache.org/guacamole/1.3.0/source/guacamole-server-1.3.0.tar.gz
+tar xzvf guacamole-server-1.3.0.tar.gz
+```
+
+## Configuration
+For more configure options, run, `./configure --help`
+
+### Verifying if anything is missing
+```bash
+cd guacamole-server-1.3.0
+./configure --with-init-dir=/etc/init.d
+```
+
+# Installation
+
+## Compiling files

@@ -1,5 +1,9 @@
 # Microsoft Azure 
 
+# Index
+* [Microsoft Azure](#microsoft-azure)
+* [Activer la journalisation à l’aide d’Azure CLI](#activer-la-journalisation-à-laide-dazure-cli)
+
 # Activer la journalisation à l’aide d’Azure CLI
 
 La version actuelle d’Azure CLI ne vous permet pas de gérer la journalisation des applications dans Stockage Blob. 

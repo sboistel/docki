@@ -2,6 +2,14 @@
 
 Here are somes tf tips & tricks
 
+# Index
+* [Syntaxe](#syntaxe)
+   * [Exemple :](#exemple-)
+* [tfstate](#tfstate)
+* [Tester et appliquer](#tester-et-appliquer)
+   * [Tester](#tester)
+   * [Appliquer](#appliquer)
+
 ## Syntaxe
 
 Travaillons sur un fichier ''main.tf''

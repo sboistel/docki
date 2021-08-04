@@ -11,7 +11,9 @@ nav:
                 - cloud/Microsoft-Azure.md
                 - cloud/Oracle-Cloud-Infrastructure.md
         - Development:
-                - dev/Ansible.md
+                - dev/Ansible/ansible.md
+                - dev/Ansible/cfg.md
+                - dev/Ansible/lexique.md
                 - dev/Terraform.md
         - Code:
                 - dev/code/Git.md
@@ -29,6 +31,7 @@ nav:
                 - application/openvpn.md
                 - application/guacamole.md
                 - application/vnc.md
+                - application/idm.md
         - Linux:
                 - os/linux/Linux.md
                 - os/linux/system.md
@@ -39,6 +42,11 @@ nav:
                 - os/linux/vim.md
         - Windaub:
                 - os/windows/Windows.md
+                - os/windows/boot.md
+                - os/windows/dsk.md
+                - os/windows/sys.md
+                - os/windows/wsl.md
                 - os/windows/account.md
+                - os/windows/chrome.md
         - About: about.md
 theme: readthedocs

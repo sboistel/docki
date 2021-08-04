@@ -1,5 +1,9 @@
 # Cloud platformes 
 
+# Index
+* [Cloud platformes](#cloud-platformes)
+   * [Cas d'usage](#cas-dusage)
+
 ## Cas d'usage
 
 Il éxiste en réalisté divers type de platformes dans le cloud.

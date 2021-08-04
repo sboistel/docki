@@ -1,6 +1,16 @@
 # Git
-
 Here are somes git tips & tricks
+
+# Index
+* [Config](#config)
+  * [Username](#username)
+  * [Mail](#mail)
+  * [Credentials](#credentials)
+  * [Branches](#branches)
+  * [Checkout](#checkout)
+  * [Push](#push)
+  * [Merge](#merge)
+  * [Stash](#stash)
 
 ## Config
 
