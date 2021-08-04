@@ -1,52 +1,13 @@
 site_name: Dockimentation
 nav:
         - Home: README.md
-        - Database: 
-                - bdd/Mysql.md
-                - bdd/Oracle.md
-        - Cloud:
-                - cloud/Amazon-Web-Services.md
-                - cloud/Cloud-Platformes.md
-                - cloud/Google-Cloud-Platform.md
-                - cloud/Microsoft-Azure.md
-                - cloud/Oracle-Cloud-Infrastructure.md
-        - Development:
-                - dev/Ansible/ansible.md
-                - dev/Ansible/cfg.md
-                - dev/Ansible/lexique.md
-                - dev/Terraform.md
-        - Code:
-                - dev/code/Git.md
-                - dev/code/Perl.md
-                - dev/code/Python.md
-        - Containers:
-                - dev/containers/Conteneurisation.md
-                - dev/containers/Docker-&-Kubernetes.md
-        - Monitoring:
-                - monitoring/Centreon.md
-                - monitoring/ELK.md
-                - monitoring/KVM.md
-                - monitoring/Proxmox-VE.md
-        - Application:
-                - application/openvpn.md
-                - application/guacamole.md
-                - application/vnc.md
-                - application/idm.md
-        - Linux:
-                - os/linux/Linux.md
-                - os/linux/system.md
-                - os/linux/Desktop-Environement.md
-                - os/linux/packages.md
-                - os/linux/analyse.md
-                - os/linux/regular-parsing.md
-                - os/linux/vim.md
-        - Windaub:
-                - os/windows/Windows.md
-                - os/windows/boot.md
-                - os/windows/dsk.md
-                - os/windows/sys.md
-                - os/windows/wsl.md
-                - os/windows/account.md
-                - os/windows/chrome.md
+        - Database: bdd/readme.md
+        - Cloud: cloud/readme.md
+        - DevOPS: dev/readme.md
+        - Containers: dev/containers/readme.md
+        - Monitoring: monitoring/readme.md
+        - Application: application/readme.md
+        - Linux: os/linux/readme.md
+        - Windaub: os/windows/readme.md
         - About: about.md
 theme: readthedocs
