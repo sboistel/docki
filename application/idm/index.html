@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Centreon - Dockimentation</title>
+  <title>IDM: Red Hat Identity Manager - Dockimentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,8 +17,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Centreon";
-    var mkdocs_page_input_path = "monitoring/Centreon.md";
+    var mkdocs_page_name = "IDM: Red Hat Identity Manager";
+    var mkdocs_page_input_path = "application/idm.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -156,36 +156,21 @@
 		
     <span class="caption-text">Monitoring</span>
     <ul class="subnav">
-                <li class=" current">
+                <li class="">
                     
-    <a class="current" href="./">Centreon</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l3"><a href="#centreon">Centreon</a></li>
-    
-
-    <li class="toctree-l3"><a href="#index">Index</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l4" href="#analyse">Analyse</a></li>
-        
-        </ul>
-    
-
-    </ul>
+    <a class="" href="../../monitoring/Centreon/">Centreon</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../ELK/">Elasticsearch, Logstash, Kibana</a>
+    <a class="" href="../../monitoring/ELK/">Elasticsearch, Logstash, Kibana</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../KVM/">KVM</a>
+    <a class="" href="../../monitoring/KVM/">KVM</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../Proxmox-VE/">Proxmox Virtual Environnement</a>
+    <a class="" href="../../monitoring/Proxmox-VE/">Proxmox Virtual Environnement</a>
                 </li>
     </ul>
 	    </li>
@@ -196,19 +181,25 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../application/openvpn/">OpenVPN</a>
+    <a class="" href="../openvpn/">OpenVPN</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../application/guacamole/">Guacamole</a>
+    <a class="" href="../guacamole/">Guacamole</a>
                 </li>
                 <li class="">
                     
-    <a class="" href="../../application/vnc/">VNC Server</a>
+    <a class="" href="../vnc/">VNC Server</a>
                 </li>
-                <li class="">
+                <li class=" current">
                     
-    <a class="" href="../../application/idm/">IDM: Red Hat Identity Manager</a>
+    <a class="current" href="./">IDM: Red Hat Identity Manager</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#idm-red-hat-identity-manager">IDM: Red Hat Identity Manager</a></li>
+    
+
+    </ul>
                 </li>
     </ul>
 	    </li>
@@ -310,11 +301,11 @@
     
       
         
-          <li>Monitoring &raquo;</li>
+          <li>Application &raquo;</li>
         
       
     
-    <li>Centreon</li>
+    <li>IDM: Red Hat Identity Manager</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -324,61 +315,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="centreon">Centreon</h1>
-<p>Here are somes Centreon tips &amp; tricks</p>
-<h1 id="index">Index</h1>
-<ul>
-<li><a href="#analyse">Analyse</a></li>
-<li><a href="#poller">Poller</a><ul>
-<li><a href="#stats">Stats</a></li>
-<li><a href="#yellow-state">Yellow state</a></li>
-</ul>
-</li>
-<li><a href="#commandes">Commandes</a><ul>
-<li><a href="#plugin">Plugin</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="analyse">Analyse</h2>
-<p>Vérifier les connexions tentées :</p>
-<pre><code class="BASH">/var/log/centreon/login.log
-</code></pre>
-
-<h3 id="poller">Poller</h3>
-<p>List storage from poller :</p>
-<pre><code class="BASH">/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl --plugin=os::linux::snmp::plugin --mode=list-storages --hostname=$HOST | grep /
-</code></pre>
-
-<h4 id="stats">Stats</h4>
-<p>Voir les stats du poller :</p>
-<pre><code class="BASH">/usr/sbin/centenginestats
-</code></pre>
-
-<table>
-<thead>
-<tr>
-<th>Répertoire du log</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>tail -f /var/log/centreon-broker/poller-module.log</code></td>
-</tr>
-</tbody>
-</table>
-<h4 id="yellow-state">Yellow state</h4>
-<p>Last update yellow ?</p>
-<p>Lors d'une migration de poller, s'assurer que l'adresse du central soit bien mensionnée dans le broker du poller.</p>
-<h3 id="commandes">Commandes</h3>
-<p>Liste de commandes centreons à garder en tête</p>
-<h4 id="plugin">Plugin</h4>
-<p>Commande du plugin centreon :</p>
-<pre><code class="BASH">/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl
-</code></pre>
-
-<p>Lister les FS :</p>
-<p>On va utiliser le mode <strong>list-storages</strong> :</p>
-<pre><code class="BASH">/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl --plugin=os::linux::snmp::plugin --mode=list-storages --hostname=${iP}
+                <h1 id="idm-red-hat-identity-manager">IDM: Red Hat Identity Manager</h1>
+<pre><code class="bash">ipa user-show monuser --all
 </code></pre>
               
             </div>
@@ -387,10 +325,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../ELK/" class="btn btn-neutral float-right" title="Elasticsearch, Logstash, Kibana">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../os/linux/Linux/" class="btn btn-neutral float-right" title="Linux">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../dev/containers/Docker-&-Kubernetes/" class="btn btn-neutral" title="Docker & K8S"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../vnc/" class="btn btn-neutral" title="VNC Server"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -416,10 +354,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../dev/containers/Docker-&-Kubernetes/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../vnc/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../ELK/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../os/linux/Linux/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>VINT D'EAU - Dockimentation</title>
+  <title>Windows - Dockimentation</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../../css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "VINT D'EAU";
+    var mkdocs_page_name = "Windows";
     var mkdocs_page_input_path = "os/windows/Windows.md";
     var mkdocs_page_url = null;
   </script>
@@ -101,7 +101,15 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../../dev/Ansible/">Ansible</a>
+    <a class="" href="../../../dev/Ansible/ansible/">Ansible</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../dev/Ansible/cfg/">Configuration</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../../dev/Ansible/lexique/">Ansible</a>
                 </li>
                 <li class="">
                     
@@ -183,6 +191,10 @@
                     
     <a class="" href="../../../application/vnc/">VNC Server</a>
                 </li>
+                <li class="">
+                    
+    <a class="" href="../../../application/idm/">IDM: Red Hat Identity Manager</a>
+                </li>
     </ul>
 	    </li>
           
@@ -227,25 +239,46 @@
     <ul class="subnav">
                 <li class=" current">
                     
-    <a class="current" href="./">VINT D'EAU</a>
+    <a class="current" href="./">Windows</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#vint-deau">VINT D'EAU</a></li>
+    <li class="toctree-l3"><a href="#windows">Windows</a></li>
     
-        <ul>
-        
-            <li><a class="toctree-l4" href="#system">System</a></li>
-        
-            <li><a class="toctree-l4" href="#chrome">Chrome</a></li>
-        
-        </ul>
+
+    <li class="toctree-l3"><a href="#system">System</a></li>
+    
+
+    <li class="toctree-l3"><a href="#user-managment">User managment</a></li>
+    
+
+    <li class="toctree-l3"><a href="#software">Software</a></li>
     
 
     </ul>
                 </li>
                 <li class="">
                     
+    <a class="" href="../boot/">Windows Boot</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dsk/">Filesystem {H,S}D</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../sys/">System</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../wsl/">Windows Subsystem Linux</a>
+                </li>
+                <li class="">
+                    
     <a class="" href="../account/">Account</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../chrome/">Google Chrome</a>
                 </li>
     </ul>
 	    </li>
@@ -281,7 +314,7 @@
         
       
     
-    <li>VINT D'EAU</li>
+    <li>Windows</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -291,77 +324,22 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="vint-deau">VINT D'EAU</h1>
-<h2 id="system">System</h2>
-<p>Here are somes DOS tips &amp; tricks</p>
-<h3 id="systeminfo">Systeminfo</h3>
-<p>Trouver la date d’installation Windows.</p>
-<pre><code class="POWERSHELL">systeminfo | find &quot;installation&quot;
-</code></pre>
-
-<p>Se rendre rapidement sur la page de gestion des software: 
-Éxécuter la commande suivante (dans invite de commande ou executer ou menu démarré)</p>
-<pre><code class="POWERSHELL">Appwiz.cpl
-</code></pre>
-
-<h3 id="kill-task">Kill task</h3>
-<p>How to force killing task? </p>
-<pre><code class="POWERSHELL">taskkill /F /IM OpenWith.exe /T
-</code></pre>
-
-<h3 id="hosts-file">Hosts file</h3>
-<p>Hosts file configuration location :</p>
-<blockquote>
-<p>C:\windows\system32\drivers\etc\</p>
-</blockquote>
-<h3 id="wsl">WSL</h3>
-<p>How to enable Windows Subsystem for Linux? </p>
-<pre><code class="POWERSHELL">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-</code></pre>
-
-<h3 id="how-to-change-drive-icon">How to change Drive icon ?</h3>
-<p>Open regedit as administrator :
-- Go to <code>Ordinateur\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\DriveIcons</code>
-- Create a new key as the correspond lettre of your drive.
-- Create a new sub key as <code>Defaulticon</code> :</p>
-<pre><code class="POWERSHELL">Ordinateur\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\DriveIcons\D\Defaulticon
-</code></pre>
-
-<p>Mod the chaine containned in Defaulticon key with the full path of your <code>ico</code> file.</p>
-<h3 id="how-to-restore-windows-10-mbr">How to restore Windows 10 MBR</h3>
-<p>La démarche consiste à remplacer le MBR qui permet d'amorcer GRUB en lui substituant un MBR pointant sur le lanceur de Windows.</p>
-<p>Le remplacement du MBR est réalisé à partir du disque de restauration Windows ou du CD d'installation.</p>
-<p>Booter depuis le CD d'installation et choisir "Réparer ou récupérer une installation de Windows". 
-On sélectionnera ensuite l'installation de Windows dans la liste des choix proposés et on saisira le mot de passe administrateur. </p>
-<p>Au prompt, taper :</p>
-<pre><code class="POWERSHELL">C:\WINDOWS&gt; fixboot
-C:\WINDOWS&gt; fixmbr
-</code></pre>
-
-<p>La surface disque utilisée par Fedora n'est pas automatiquement ré-allouée . 
-C'est l'affaire de fdsik. </p>
-<p>La réallocation consiste en un nouveau formatage, sous le format vfat ou ntfs ou autre, selon le choix - si l'on souhaite ré-allouer les partitions au profit de Windows. On pourra ainsi modifier le format de tout ou partie des partitions et notamment les fusionner. fdisk existe dans l'environnement Windows (ou un programme équivalent).
-On redémarrera par la commande :</p>
-<pre><code class="POWERSHELL">C:\WINDOWS&gt; exit
-</code></pre>
-
-<table>
-<thead>
-<tr>
-<th>Restauration Grub</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Si les partitions Linux n'ont pas été ré-allouées, il est toujours possible de restaurer GRUB (et ainsi le boot sur Fedora ou Windows).</td>
-</tr>
-</tbody>
-</table>
-<h2 id="chrome">Chrome</h2>
-<h3 id="kiosk">kiosk</h3>
-<p>Ouvrir une page web avec Google Chrome dans une page détachée: </p>
-<pre><code class="POWERSHELL">Chrome.exe --app=http://
-</code></pre>
+                <h1 id="windows">Windows</h1>
+<p>Here are some windows tips &amp; tricks</p>
+<h1 id="system">System</h1>
+<ul>
+<li><a href="../boot/">Boot</a></li>
+<li><a href="../sys/">System</a></li>
+<li><a href="../dsk/">Filesystem</a></li>
+</ul>
+<h1 id="user-managment">User managment</h1>
+<ul>
+<li><a href="../account/">Account</a></li>
+</ul>
+<h1 id="software">Software</h1>
+<ul>
+<li><a href="../wsl/">WSL</a></li>
+</ul>
               
             </div>
           </div>
@@ -369,7 +347,7 @@ On redémarrera par la commande :</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../account/" class="btn btn-neutral float-right" title="Account">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../boot/" class="btn btn-neutral float-right" title="Windows Boot">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../../linux/vim/" class="btn btn-neutral" title="VIM"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -401,7 +379,7 @@ On redémarrera par la commande :</p>
         <span><a href="../../linux/vim/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../account/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../boot/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
