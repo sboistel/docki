@@ -49,7 +49,7 @@ nav:
                         - System: os/linux/system.md
                         - Packages: os/linux/packages.md
                         - Analyses: os/linux/analyse.md
-                        - Regular Parsing: os/linux/regular.parsing.md
+                        - Regular Parsing: os/linux/regular-parsing.md
                         - Application:
                                 - VIM: os/linux/vim.md
 
