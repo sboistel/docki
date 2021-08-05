@@ -1,12 +1,5 @@
 # Elasticsearch, Logstash, Kibana
 
-# Index
-* [Elasticsearch](#elasticsearch)
-* [LOGSTASH](#logstash)
-* [KIBANA](#kibana)
-    * [X-PACK](#x-pack)
-* [BEATS](#beats)
-
 ## Elasticsearch
 
 Elasticsearch is composed by :

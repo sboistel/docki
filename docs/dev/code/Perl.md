@@ -1,36 +1,6 @@
 # Perl
 Perl tips & tricks
 
-# Index
-* [Variable](#variable)
-   * [Scalaire](#scalaire)
-   * [Liste](#liste)
-   * [Hashs](#hashs)
-* [Fonctions](#fonctions)
-* [split](#split)
-* [join](#join)
-   * [Pragma](#pragma)
-* [strict](#strict)
-* [warning](#warning)
-* [Sucre de syntaxe](#sucre-de-syntaxe)
-   * [Guillement](#guillement)
-   * [Guillement Simple](#guillement-simple)
-   * [Liste](#liste-1)
-   * [Here string](#here-string)
-* [Vérifications](#vérifications)
-   * [Prédica 'if'](#prédica-if)
-* [Rendre son script intératif](#rendre-son-script-intératif)
-   * [Standard input](#standard-input)
-* [Boucles](#boucles)
-   * [For || Foreach](#for--foreach)
-   * [while](#while)
-   * [pseaudo case](#pseaudo-case)
-* [Fichier](#fichier)
-   * [Ouvrir un Fichier](#ouvrir-un-fichier)
-* [Librairies](#librairies)
-* [REST](#rest)
-   * [CLIENT](#client)
-
 ## Variable
 
 ### Scalaire

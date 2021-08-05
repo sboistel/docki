@@ -1,12 +1,5 @@
 #  Packages
 
-# Index
-
-* [Packages](#packages)
-* [RPM](#rpm)
-* [APT](#apt)
-   * [bpytop](#bpytop)
-
 # RPM
 
 How to force installation without depedency.

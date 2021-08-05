@@ -2,14 +2,6 @@
 
 Here are somes Centreon tips & tricks
 
-# Index
-* [Analyse](#analyse)
-   * [Poller](#poller)
-      * [Stats](#stats)
-      * [Yellow state](#yellow-state)
-   * [Commandes](#commandes)
-      * [Plugin](#plugin)
-
 ## Analyse
 
 Vérifier les connexions tentées :

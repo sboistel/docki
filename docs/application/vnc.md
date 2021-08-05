@@ -1,13 +1,5 @@
 # VNC Server
 
-# Index
-
-* [VNC Session](#vnc-session)
-   * [Change the VNCpassword](#change-the-vncpassword)
-   * [Directory](#directory)
-   * [Session file](#session-file)
-   * [Service](#service)
-
 # VNC Session
 How to create new VNC Session ?
 

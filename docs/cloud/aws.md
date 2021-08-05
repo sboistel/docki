@@ -1,13 +1,6 @@
 # Amazon Web Services
 Here are somes aws tips & tricks
 
-# Index
-* [Amazon Web Services](#amazon-web-services)
-   * [Léxique :](#léxique-)
-* [DevOps Implementing Development Processes](#devops-implementing-development-processes)
-   * [What is devOPS ?](#what-is-devops-)
-   * [Products suite](#products-suite
-
 ## Léxique :
  - AMI : Amazon Machine Images (template)
 

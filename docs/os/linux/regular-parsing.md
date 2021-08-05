@@ -1,11 +1,5 @@
 # Regular parsing
 
-* [Regular parsing](#regular-parsing)
-   * [Grep](#grep)
-   * [Sed &amp; TR](#sed--tr)
-   * [AWK](#awk)
-   * [Find](#find)
-   
 ## Grep
 
 'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.

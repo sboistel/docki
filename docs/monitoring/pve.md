@@ -1,10 +1,5 @@
 # Proxmox Virtual Environnement
 
-# Index
-* [Subscription](#subscription)
-   * [Change to Active](#change-to-active)
-   * [Restart service](#restart-service)
-
 ## Subscription
 
 How to remove Proxmox proxy subscription pop up ?

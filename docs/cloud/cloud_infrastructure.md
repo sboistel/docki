@@ -1,9 +1,5 @@
-# 1.[AWS](Amazon-Web-Services.md)
-# 2.[CGP](Google-Cloud-Platform.md)
-# 3.[OCI](Oracle-Cloud-Infrastructure.md)
-# 4.[Microsoft Azure](Microsoft-Azure.md)
-
 # Cloud Infrastructure
+
 ## Cas d'usage
 
 Il éxiste en réalisté divers type de platformes dans le cloud.

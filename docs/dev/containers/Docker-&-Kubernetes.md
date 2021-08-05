@@ -1,29 +1,31 @@
 # Docker & K8S
 Here are somes containers tips & tricks
 
-# Index
-* [Docker & K8S](#-Docker-&-K8S)
-   * [Docker](#docker)
-   * [Images](#images)
-   * [Commit](#commit)
-   * [DockerFile](#dockerfile)
-      * [Champs](#champs)
-   * [Bash](#bash)
-   * [Attaché / Non Attaché](#attaché--non-attaché)
-   * [Inspecter un conteneur](#inspecter-un-conteneur)
-   * [Agrégation de recherche](#agrégation-de-recherche)
-      * [Filtres](#filtres)
-   * [Formater l'affichage](#formater-laffichage)
-   * [Import / Export](#import--export)
-      * [Export](#export)
-      * [Import](#import)
-   * [Arguments](#arguments)
-* [Kubernetes](#kubernetes)
-   * [Lexique](#lexique)
-   * [Cluster](#cluster)
-   * [Pods](#pods)
-   * [Service](#service)
-   * [Nodes](#nodes)
+
+# Containers
+Here are somes container tips & tricks
+
+## Qu'est-ce que la conteneurisation ?
+
+L'objectif de la conteneurisation est de faire en sorte qu'un ensemble logiciel cohérent puisse fonctionner au sein d'un **conteneur**.
+
+Pour qu'une application puisse tourner au sein d'un conteneur, elle doit être **empaquetée**, c'est à dire qu'on la met à l'intérieur d'un paquet (une image dans la terminologie des conteneurs) avec ses dépendances. 
+
+Il existe d'ailleurs des images officielles, sur le Hub Docker par exemple, permettant de faire tourner tout type de logiciel (MySQL, Java 8, wordpresse, etc).
+
+## Type de système
+
+Il y a plusieurs type de système de conteneurisation.
+
+Dotcloud plus connu sous le nom de Docker sera de moins en moins utilisé car tant à le déprécier.
+
+On trouvera aussi :
+- CoreOS
+- Mesos
+- LXC
+- OpenVZ
+- Containerd
+- etc ...
 
 ## Docker
 

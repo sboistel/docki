@@ -1,14 +1,5 @@
 # Account
 
-# Index
-
-   * [1.How to change user account](#1how-to-change-user-account)
-      * [1.1. Get Logical Volume inforations](#11-get-logical-volume-inforations)
-      * [1.2 Utilman](#12-utilman)
-      * [1.3 Change user password](#13-change-user-password)
-         * [1.3.1 Change password](#131-change-password)
-         * [1.3.2 Active user](#132-active-user)
-
 ## 1.How to change user account
 
 Let's take a look to how to change user password without any access through Windows ISO.

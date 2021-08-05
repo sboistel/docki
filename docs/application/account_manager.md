@@ -1,5 +1,4 @@
-# IDM: Red Hat Identity Manager
-
+# Red Hat Identity Manager (IDM)
 ```bash
 ipa user-show monuser --all
 ```

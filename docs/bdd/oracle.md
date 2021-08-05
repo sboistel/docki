@@ -1,40 +1,6 @@
 # Oracle
 Here are somes Oracle tips & tricks
 
-# Index
-* [Spfile](#spfile)
-* [Control file](#control-file)
-* [Redolog](#redolog)
-* [Data base file](#data-base-file)
-* [Archive log](#archive-log)
-* [Informations](#informations)
-* [Diag Tunning](#diag-tunning)
-   * [Check](#check)
-* [Bring impdp](#bring-impdp)
-* [Global Prefs](#global-prefs)
-* [LSNRCTL](#lsnrctl)
-* [ODACLI](#odacli)
-* [OSWBBA](#oswbba)
-* [Ressources](#ressources)
-* [Processes](#processes)
-* [Transactions](#transactions)
-   * [Vérifier les paramètres](#vérifier-les-paramètres)
-* [Account](#account)
-* [SQLPLUS](#sqlplus)
-   * [linesize](#linesize)
-   * [col](#col)
-   * [set pause on](#set-pause-on)
-   * [spool](#spool)
-* [STATSPACK](#statspack)
-   * [Analyser](#analyser)
-   * [Corriger](#corriger)
-      * [1. Purge STATSPACK](#1-purge-statspack)
-      * [2. Move table](#2-move-table)
-      * [3. Rebuild Index](#3-rebuild-index)
-* [TNSNAME](#tnsname)
-   * [Configuration:](#configuration)
-* [Tablespace](#tablespace)
-
 ## Spfile
 
 SPFILE (Fichier de paramètres persistant) est un fichier binaire recherché automatiquement au démarrage de l’instance.
