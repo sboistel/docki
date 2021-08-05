@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Amazon Web Services - Dockimentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Amazon Web Services";
+    var mkdocs_page_input_path = "cloud/aws.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Dockimentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Database</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../bdd/cloudera/">Cloudera</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bdd/hadoop/">Hadoop</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bdd/mysql/">MySQL</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bdd/oracle/">Oracle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Cloud</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../cloud_infrastructure/">Cloud Infrastructure</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Amazon Web Services</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#amazon-web-services">Amazon Web Services</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#lexique">Léxique :</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#devops-implementing-development-processes">DevOps Implementing Development Processes</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#what-is-devops">What is devOPS ?</a></li>
+        
+            <li><a class="toctree-l4" href="#products-suite">Products suite</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../gcp/">Google Cloud Platform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../mz/">Microsoft Azure</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../oci/">Oracle Cloud Infrastructure</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">DevOPS</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dev/Ansible/ansible/">Ansible</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/containers/terraform/">Terraform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/containers/Docker-&-Kubernetes/">Containers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Code</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Git/">Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Perl/">Perl</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Python/">Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Supervision</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../monitoring/centreon/">Centreon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/nagios/">Nagios</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/elk/">ELK</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Hypervision</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../monitoring/pve/">Proxmox-VE</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/kvm/">KVM</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Application</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../application/account_manager/">Account Manager</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../application/guacamole/">Guacamole</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Automation</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../application/ui-path/">UI-Path</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Remote</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../application/vnc/">VNC</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Network</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../application/openvpn/">OpenVPN</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Operating System</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <span class="caption-text">Linux</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/system/">System</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/desktop-environement/">Desktop environement</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/packages/">Packages</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/analyse/">Analyses</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/regular-parsing/">Regular Parsing</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">Application</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/linux/vim/">VIM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Windaub</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/windows/account/">Account</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">System</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/sys/">System</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/boot/">boot</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/dsk/">Disk</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">Application & Features</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/wsl/">WSL</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/chrome/">Google Chrome</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Dockimentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Cloud &raquo;</li>
+        
+      
+    
+    <li>Amazon Web Services</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="amazon-web-services">Amazon Web Services</h1>
+<p>Here are somes aws tips &amp; tricks</p>
+<h2 id="lexique">Léxique :</h2>
+<ul>
+<li>AMI : Amazon Machine Images (template)</li>
+</ul>
+<p><em>in progress..</em></p>
+<h1 id="devops-implementing-development-processes">DevOps Implementing Development Processes</h1>
+<h2 id="what-is-devops">What is devOPS ?</h2>
+<p>"DevOps is the unions of people, process and products to enable continuous of value to end users." -<em>Donovan Brown</em></p>
+<h2 id="products-suite">Products suite</h2>
+<p>Azure DevOps is a suite of products that allows any organization to do better DevOps :</p>
+<ul>
+<li>
+<p>Azure Board</p>
+<ul>
+<li>Deliver Value to your users daster using proven agile tools to plan, and discuss work across your teams.</li>
+</ul>
+</li>
+<li>
+<p>Azure Pipelines</p>
+<ul>
+<li>Build, test, and deploy with <strong>CI/CD</strong> that works with any language, platform, and cloud. Connect to GitHub or any other Git provider and deploy continously</li>
+</ul>
+</li>
+<li>
+<p>Azure Repos</p>
+<ul>
+<li>Get unlimited, cloud-hosted private Git repos and collaborate to build better code with pull requests and advanced file management.</li>
+</ul>
+</li>
+<li>
+<p>Azure Test Plans</p>
+<ul>
+<li>Test and ship with confidence using manual and exploratory testing tools.</li>
+</ul>
+</li>
+<li>
+<p>Azure Artifacts</p>
+<ul>
+<li>Create, host and share packages with your team, and add artifacts to your CI/CD pipelines with a single click.</li>
+</ul>
+</li>
+<li>
+<p>Extensions Marketplace</p>
+<ul>
+<li>Access extensions from Slack to SonarCloud to 1,000 other apps and services – built by the community.</li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../gcp/" class="btn btn-neutral float-right" title="Google Cloud Platform">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../cloud_infrastructure/" class="btn btn-neutral" title="Cloud Infrastructure"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../cloud_infrastructure/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../gcp/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

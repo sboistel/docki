@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Cloud Infrastructure - Dockimentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Cloud Infrastructure";
+    var mkdocs_page_input_path = "cloud/cloud_infrastructure.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Dockimentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Database</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../bdd/cloudera/">Cloudera</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bdd/hadoop/">Hadoop</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bdd/mysql/">MySQL</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../bdd/oracle/">Oracle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Cloud</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Cloud Infrastructure</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#cloud-infrastructure">Cloud Infrastructure</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#cas-dusage">Cas d'usage</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../aws/">Amazon Web Services</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../gcp/">Google Cloud Platform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../mz/">Microsoft Azure</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../oci/">Oracle Cloud Infrastructure</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">DevOPS</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dev/Ansible/ansible/">Ansible</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/containers/terraform/">Terraform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/containers/Docker-&-Kubernetes/">Containers</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Code</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Git/">Git</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Perl/">Perl</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../dev/code/Python/">Python</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Supervision</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../monitoring/centreon/">Centreon</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/nagios/">Nagios</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/elk/">ELK</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Hypervision</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../monitoring/pve/">Proxmox-VE</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../monitoring/kvm/">KVM</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Application</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../application/account_manager/">Account Manager</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../application/guacamole/">Guacamole</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Automation</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../application/ui-path/">UI-Path</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Remote</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../application/vnc/">VNC</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Network</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../application/openvpn/">OpenVPN</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Operating System</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <span class="caption-text">Linux</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/system/">System</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/desktop-environement/">Desktop environement</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/packages/">Packages</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/analyse/">Analyses</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/linux/regular-parsing/">Regular Parsing</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">Application</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/linux/vim/">VIM</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Windaub</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../os/windows/account/">Account</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">System</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/sys/">System</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/boot/">boot</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/dsk/">Disk</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">Application & Features</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/wsl/">WSL</a>
+                </li>
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../os/windows/chrome/">Google Chrome</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Dockimentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Cloud &raquo;</li>
+        
+      
+    
+    <li>Cloud Infrastructure</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="cloud-infrastructure">Cloud Infrastructure</h1>
+<h2 id="cas-dusage">Cas d'usage</h2>
+<p>Il éxiste en réalisté divers type de platformes dans le cloud.</p>
+<p>Chacune d'entre elle on leur spécificitées.</p>
+<p>On trouvera différents type de platformes :
+- <em><em>IAAS</em># 1.</em>(Infrastructure en tant que service)*
+   Il contient les blocs de construction fondamentaux de l'informatique dans le cloud et donne habituellement accès à des fonctionnalités de mise en réseau, à des ordinateurs (virtuels ou sur du matériel dédié) et à de l'espace de stockage de données. 
+   Le service IaaS offre le niveau le plus élevé de flexibilité et de contrôle de gestion en ce qui concerne les ressources informatiques.
+   Ce services est très similaire aux ressources informatiques existantes avec lesquelles les services informatiques et les développeurs sont aujourd'hui familiarisés.</p>
+<ul>
+<li>
+<p><em><em>PAAS</em># 1.</em>(Plate-forme en tant que service)*
+   Grâce au service PaaS, les entreprises n'ont plus besoin de gérer l'infrastructure sous-jacente (en règle générale, le matériel et les systèmes d'exploitation) et vous pouvez vous concentrer sur le déploiement et la gestion de vos applications. 
+   Vous êtes ainsi plus efficace, car vous n'avez pas à vous soucier de l'approvisionnement des ressources, de la planification des capacités, de la maintenance logicielle, de l'application de correctifs ou de toute autre charge indifférenciée liée à l'exécution de votre application.</p>
+</li>
+<li>
+<p><em><em>SAAS</em># 1.</em>(Logiciel en tant que service )*
+   Le logiciel en tant que service offre un produit final qui est exécuté et géré par le prestataire de services. Dans la plupart des cas, les personnes qui font référence au service Saas pensent aux applications des utilisateurs finaux. 
+   Avec une offre SaaS, vous n'avez pas à vous soucier de la gestion du service ou de celle de l'infrastructure sous-jacente. 
+   Vous devez juste réfléchir à l'utilisation de ce logiciel spécifique. 
+   Une messagerie Web dans laquelle vous pouvez envoyer et recevoir des e-mails sans avoir à gérer des ajouts de fonctionnalités ni à effectuer la maintenance des serveurs et des systèmes d'exploitation sur lesquels elle s'exécute est un exemple courant d'application SaaS.</p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../aws/" class="btn btn-neutral float-right" title="Amazon Web Services">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../bdd/oracle/" class="btn btn-neutral" title="Oracle"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../bdd/oracle/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../aws/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
