@@ -47,6 +47,7 @@ nav:
         - Operating System:
                 - Linux: 
                         - System: os/linux/system.md
+                        - Desktop environement: os/linux/desktop-environement.md
                         - Packages: os/linux/packages.md
                         - Analyses: os/linux/analyse.md
                         - Regular Parsing: os/linux/regular-parsing.md
