@@ -37,6 +37,8 @@ nav:
                 - Guacamole: application/guacamole.md
                 - Automation: 
                         - UI-Path: application/ui-path.md
+                - Bareos: application/bareos.md
+                - Netbox: application/netbox.md
 
         - Remote:
                 - VNC: application/vnc.md
