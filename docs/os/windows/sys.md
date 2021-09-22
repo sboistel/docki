@@ -28,3 +28,10 @@ How to force killing task?
 ```POWERSHELL
 taskkill /F /IM OpenWith.exe /T
 ```
+
+## License
+Temps restant disponible à la license en cours
+
+```powershell
+slmgr -dlv
+```
