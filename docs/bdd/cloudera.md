@@ -29,3 +29,17 @@ select cpu_user_rate / getHostFact(numCores, 1) * 100, cpu_system_rate / getHost
 ```sql
 select swap_used, physical_memory_used, physical_memory_total WHERE hostname RLIKE ".*data.*"
 ```
+
+# User Repository
+
+```bash
+*kinit* $USER
+```
+
+```bash
+hdfs dfs -ls /user/
+```
+
+```bash
+hdfs dfs -getfacl /user/JohnDoe
+```
