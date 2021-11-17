@@ -245,6 +245,13 @@
 <h2 id="ram">RAM</h2>
 <pre><code class="language-sql">select swap_used, physical_memory_used, physical_memory_total WHERE hostname RLIKE &quot;.*data.*&quot;
 </code></pre>
+<h1 id="user-repository">User Repository</h1>
+<pre><code class="language-bash">*kinit* $USER
+</code></pre>
+<pre><code class="language-bash">hdfs dfs -ls /user/
+</code></pre>
+<pre><code class="language-bash">hdfs dfs -getfacl /user/JohnDoe
+</code></pre>
               
             </div>
           </div>

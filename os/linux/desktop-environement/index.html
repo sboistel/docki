@@ -146,6 +146,12 @@
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Desktop environement</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#gnome">Gnome</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-une-application-existante">Modifier une application éxistante</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#desktop-manager">Desktop Manager</a>
         <ul>
@@ -242,7 +248,7 @@
                 <h1 id="desktop-environnement">Desktop environnement</h1>
 <p>Here are somes Desktop Environement tips &amp; tricks</p>
 <h2 id="gnome">Gnome</h2>
-<p>Ajouter une application dans gnom shell.</p>
+<h3 id="ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</h3>
 <p>Ajouter un fichier .desktop dans /usr/share/appliations/MONAPPLI.desktop :</p>
 <pre><code class="language-BASH">[Desktop Entry]
 Name=MonAppli
@@ -254,6 +260,14 @@ Type=Application
 Encoding=UTF-8
 Categories=Network;Application
 </code></pre>
+<h3 id="modifier-une-application-existante">Modifier une application éxistante</h3>
+<p>Trouver le fichier de l'application choisie, ici <code>VirtualBox</code></p>
+<p>Un soucis connu sur Gnome et virtualbox est que l'interface soit broken. On vient alors corrigé ceci en  changeant le style de celui-ci via la commande :</p>
+<blockquote>
+<p>VirtualBox -style Adwaita</p>
+</blockquote>
+<p>On vient alors modifier le fichier <code>/usr/share/applications/virtualbox.desktop</code></p>
+<p>On remplace la ligne 10 <code>Exec=VirtualBox %U</code> par <code>Exec=VirtualBox -style Adwaita</code>.</p>
 <h2 id="desktop-manager">Desktop Manager</h2>
 <h3 id="lightdm">Lightdm</h3>
 <h4 id="autologin">Autologin</h4>
