@@ -4,7 +4,7 @@ Here are somes Desktop Environement tips & tricks
 
 ## Gnome
 
-Ajouter une application dans gnom shell.
+### Ajouter une application dans gnom shell
 
 Ajouter un fichier .desktop dans /usr/share/appliations/MONAPPLI.desktop :
 
@@ -19,6 +19,19 @@ Type=Application
 Encoding=UTF-8
 Categories=Network;Application
 ```
+
+### Modifier une application éxistante
+
+Trouver le fichier de l'application choisie, ici `VirtualBox`
+
+Un soucis connu sur Gnome et virtualbox est que l'interface soit broken. On vient alors corrigé ceci en  changeant le style de celui-ci via la commande :
+
+> VirtualBox -style Adwaita
+
+On vient alors modifier le fichier `/usr/share/applications/virtualbox.desktop`
+
+On remplace la ligne 10 `Exec=VirtualBox %U` par `Exec=VirtualBox -style Adwaita`.
+
 
 ## Desktop Manager
 
