@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../../img/favicon.ico">
-  <title>Desktop environement - Dockimentation</title>
+  <title>Volumes - Dockimentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Desktop environement";
-    var mkdocs_page_input_path = "os/linux/desktop-environement.md";
+    var mkdocs_page_name = "Volumes";
+    var mkdocs_page_input_path = "os/linux/vol.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -141,31 +141,17 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href="#">Linux</a>
     <ul class="current">
-                <li class="toctree-l2"><a class="reference internal" href="#">System</a>
-    <ul>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">System</a>
+    <ul class="current">
                 <li class="toctree-l3"><a class="reference internal" href="../system/">System</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../vol/">Volumes</a>
-                </li>
-    </ul>
-                </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Desktop environement</a>
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">Volumes</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#gnome">Gnome</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#modifier-une-application-existante">Modifier une application éxistante</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#desktop-manager">Desktop Manager</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#lightdm">Lightdm</a>
-    </li>
-        </ul>
-    </li>
     </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../desktop-environement/">Desktop environement</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../packages/">Packages</a>
                 </li>
@@ -238,8 +224,12 @@
           <li>Linux &raquo;</li>
         
       
+        
+          <li>System &raquo;</li>
+        
+      
     
-    <li>Desktop environement</li>
+    <li>Volumes</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -251,36 +241,61 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="desktop-environnement">Desktop environnement</h1>
-<p>Here are somes Desktop Environement tips &amp; tricks</p>
-<h2 id="gnome">Gnome</h2>
-<h3 id="ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</h3>
-<p>Ajouter un fichier .desktop dans /usr/share/appliations/MONAPPLI.desktop :</p>
-<pre><code class="language-BASH">[Desktop Entry]
-Name=MonAppli
-Comment=Descritpion de l'appli
-Exec=MonAppli.sh %U
-Icon=/usr/share/icons/monappli.svg
-Terminal=false
-Type=Application
-Encoding=UTF-8
-Categories=Network;Application
+                <h1 id="volumes">Volumes</h1>
+<h1 id="compressed-files">Compressed files</h1>
+<p>Compresser des fichiers :</p>
+<pre><code class="language-bash">tar -czvf nom-de-l-archive.tar.gz /chemin/vers/répertoire-ou-fichier
 </code></pre>
-<h3 id="modifier-une-application-existante">Modifier une application éxistante</h3>
-<p>Trouver le fichier de l'application choisie, ici <code>VirtualBox</code></p>
-<p>Un soucis connu sur Gnome et virtualbox est que l'interface soit broken. On vient alors corrigé ceci en  changeant le style de celui-ci via la commande :</p>
+<p>Voici le détail des options :
+- c : crée un archive.
+- z : compresse l’archive avec gzip.
+- v : mode verbeux, affiche la progression.
+- f : permet de spécifier le nom du fichier d’archive.</p>
+<p>Pour décompresser le rar avec son passwd :</p>
+<pre><code class="language-bash">rar x -hP{MOT DE PASSE} {FICHIER.RAR}
+rar x -hPTEST test2.rar
+</code></pre>
+<h2 id="dd">DD</h2>
+<p>dd nécessite de droits super utilisateur :</p>
+<pre><code class="language-bash">sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk &amp;&amp; sync
+</code></pre>
+<h1 id="memory">Memory</h1>
+<h2 id="ram">RAM</h2>
+<p>List detailes :</p>
+<pre><code class="language-bash">ps axo rss, comm,pid,command | cat
+</code></pre>
+<p>On OCI :</p>
+<pre><code class="language-bash">sync &amp;&amp; echo 3 &gt; /proc/sys/vm/drop_caches
+</code></pre>
+<h2 id="lvm">LVM</h2>
+<p><strong>L</strong>ogical <strong>V</strong>olume <strong>M</strong>anager</p>
+<p>Extend volumes.</p>
+<pre><code class="language-bash">lvextend -L+&lt;&lt;&gt;&gt;G /dev/mapper/VOLUME
+</code></pre>
+<p>Apply modifications. </p>
+<pre><code class="language-bash">resize2fs /dev/mapper/VOLUME
+</code></pre>
+<h2 id="reducing-an-lvm2-swap-logical-volume">Reducing an LVM2 Swap Logical Volume</h2>
+<p>Disable swapping for the associated logical volume:</p>
 <blockquote>
-<p>VirtualBox -style Adwaita</p>
+<p>swapoff -v /dev/VolGroup00/LogVol01</p>
 </blockquote>
-<p>On vient alors modifier le fichier <code>/usr/share/applications/virtualbox.desktop</code></p>
-<p>On remplace la ligne 10 <code>Exec=VirtualBox %U</code> par <code>Exec=VirtualBox -style Adwaita</code>.</p>
-<h2 id="desktop-manager">Desktop Manager</h2>
-<h3 id="lightdm">Lightdm</h3>
-<h4 id="autologin">Autologin</h4>
-<p>Editer le fichier de configuration suivant : <code>/etc/lightdm/lightdm.conf</code></p>
-<p>Compléter les informations attendues :</p>
-<pre><code class="language-BASH">autologin-user=sboistel
-</code></pre>
+<p>Reduce the LVM2 logical volume by 512 MB:</p>
+<blockquote>
+<p>lvreduce /dev/VolGroup00/LogVol01 -L -512M</p>
+</blockquote>
+<p>Format the new swap space:</p>
+<blockquote>
+<p>mkswap /dev/VolGroup00/LogVol01</p>
+</blockquote>
+<p>Activate swap on the logical volume:</p>
+<blockquote>
+<p>swapon -v /dev/VolGroup00/LogVol01</p>
+</blockquote>
+<p>To test if the swap logical volume was successfully reduced, inspect active swap space:</p>
+<blockquote>
+<p>cat /proc/swaps</p>
+</blockquote>
               
             </div>
           </div>
@@ -288,10 +303,10 @@ Categories=Network;Application
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../packages/" class="btn btn-neutral float-right" title="Packages">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../desktop-environement/" class="btn btn-neutral float-right" title="Desktop environement">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../vol/" class="btn btn-neutral" title="Volumes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../system/" class="btn btn-neutral" title="System"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -317,10 +332,10 @@ Categories=Network;Application
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../vol/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../system/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../packages/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../desktop-environement/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

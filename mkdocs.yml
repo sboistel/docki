@@ -49,7 +49,9 @@ nav:
 
         - Operating System:
                 - Linux: 
-                        - System: os/linux/system.md
+                        - System:
+                                - System: os/linux/system.md
+                                - Volumes: os/linux/vol.md
                         - Desktop environement: os/linux/desktop-environement.md
                         - Packages: os/linux/packages.md
                         - Analyses: os/linux/analyse.md
