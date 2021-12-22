@@ -6,24 +6,20 @@ nav:
                 - Hadoop: bdd/hadoop.md
                 - MySQL: bdd/mysql.md
                 - Oracle: bdd/oracle.md
-
         - Cloud: 
                 - cloud/cloud_infrastructure.md
                 - Amazon Web Services: cloud/aws.md
                 - Google Cloud Platform: cloud/gcp.md
                 - Microsoft Azure: cloud/mz.md
                 - Oracle Cloud Infrastructure: cloud/oci.md
-
         - DevOPS: 
                 - Ansible: dev/Ansible/ansible.md
                 - Terraform: dev/containers/terraform.md
                 - Containers: dev/containers/Docker-&-Kubernetes.md
-        
         - Code:
                 - Git: dev/code/Git.md
                 - Perl: dev/code/Perl.md
                 - Python: dev/code/Python.md
- 
         - Supervision:
                 - Centreon: monitoring/centreon.md
                 - Nagios: monitoring/nagios.md
@@ -32,7 +28,6 @@ nav:
                 - Proxmox-VE: monitoring/pve.md
                 - KVM: monitoring/kvm.md
                 - VMware ESXi: monitoring/esxi.md
-
         - Application:
                 - Account Manager: application/account_manager.md
                 - Guacamole: application/guacamole.md
@@ -58,7 +53,6 @@ nav:
                         - Regular Parsing: os/linux/regular-parsing.md
                         - Application:
                                 - VIM: os/linux/vim.md
-
                 - Windaub: 
                         - Account: os/windows/account.md
                         - System:
@@ -68,7 +62,6 @@ nav:
                         - Application & Features:
                                 - WSL: os/windows/wsl.md
                                 - Google Chrome: os/windows/chrome.md
-        
         - About: about.md
 theme: readthedocs
 navigation_depth: -1
