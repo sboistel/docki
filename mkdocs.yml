@@ -68,7 +68,7 @@ nav:
                         - Application & Features:
                                 - WSL: os/windows/wsl.md
                                 - Google Chrome: os/windows/chrome.md
-                        
         
         - About: about.md
 theme: readthedocs
+navigation_depth: -1
