@@ -418,6 +418,21 @@ echo &quot;Europe/Paris&quot; | tee /etc/timezone
 timedatectl set-timezone Europe/Paris
 hwclock -s
 </code></pre>
+<h1 id="touchscreen">Touchscreen</h1>
+<p>How to disable touchscreen at start ?</p>
+<p>Create a new file as <code>/etc/X11/xorg.conf.d/01-no_touchscreen.conf</code> as 664 :</p>
+<pre><code class="language-bash"># Written by systemd-localed(8), read by systemd-localed and Xorg. Its
+# probably wise not to edit this file manually. use localectl(1) to
+# instruct systemd-localed to update it
+Section &quot;InputClass&quot;
+    Identifier &quot;Raydium catchall&quot;
+    MatchIsTouchscreen &quot;on&quot;
+    Option &quot;Ignore&quot; &quot;on&quot;
+EndSection
+</code></pre>
+<p>Using command line :</p>
+<pre><code class="language-bash">xinput disable $(xinput list | awk '/Touchscreen/ {print $5}' | cut -d &quot;=&quot; -f2)
+</code></pre>
               
             </div>
           </div>
