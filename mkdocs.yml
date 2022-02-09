@@ -1,66 +1,53 @@
 site_name: Dockimentation
 nav:
         - Home: README.md
-        - Database: 
-                - Cloudera: bdd/cloudera.md
-                - Hadoop: bdd/hadoop.md
-                - MySQL: bdd/mysql.md
-                - Oracle: bdd/oracle.md
-        - Cloud: 
-                - cloud/cloud_infrastructure.md
-                - Amazon Web Services: cloud/aws.md
-                - Google Cloud Platform: cloud/gcp.md
-                - Microsoft Azure: cloud/mz.md
-                - Oracle Cloud Infrastructure: cloud/oci.md
-        - DevOPS: 
-                - Ansible: dev/Ansible/ansible.md
-                - Terraform: dev/containers/terraform.md
-                - Containers: dev/containers/Docker-&-Kubernetes.md
-        - Code:
-                - Git: dev/code/Git.md
-                - Perl: dev/code/Perl.md
-                - Python: dev/code/Python.md
-        - Supervision:
-                - Centreon: monitoring/centreon.md
-                - Nagios: monitoring/nagios.md
-                - ELK: monitoring/elk.md
-        - Hypervision:
-                - Proxmox-VE: monitoring/pve.md
-                - KVM: monitoring/kvm.md
-                - VMware ESXi: monitoring/esxi.md
-        - Application:
-                - Account Manager: application/account_manager.md
-                - Guacamole: application/guacamole.md
-                - Automation: 
-                        - UI-Path: application/ui-path.md
-                - Bareos: application/bareos.md
-                - Netbox: application/netbox.md
+        - Linux:
+                - Linux/Linux.md
+                - Linux/Account.md
+                - Linux/Analyse.md
+                - Linux/Applications.md
+                - Linux/Desktop_Environement.md
+                - Linux/Storage.md
+                - Linux/System.md
+                - Linux/Tools_&_Packages.md
+        - Windows:
+                - Windows/Windows.md
+                - Windows/account.md
+                - Windows/Applications.md
+                - Windows/boot.md
+                - Windows/Storage.md
+                - Windows/System.md
 
-        - Remote:
-                - VNC: application/vnc.md
+        - Amazon_Web_Services.md
+        - Ansible_Engine.md
+        - Azure_Cloud.md
+        - Bareos.md
+        - Centreon_Central.md
+        - Cloudera.md
+        - Cloud_Infrastructure.md
+        - Docker.md
+        - ELastiK.md
+        - Git.md
+        - Google_Cloud_Platforme.md
+        - Guacamole.md
+        - Hadoop.md
+        - IPAM_-_Netbox.md
+        - Kubernetes.md
+        - Monitoring.md
+        - MySQL.md
+        - Nagios.md
+        - OpenVPN.md
+        - Oracle_Cloud_Infrastructure.md
+        - Oracle.md
+        - Perl.md
+        - Proxmox-VE.md
+        - Python.md
+        - QEMU-KVM.md
+        - Rhel_IDM.md
+        - Terraform.md
+        - UI-path.md
+        - VMware.md
+        - VNC_Tiger.md
 
-        - Network: 
-                - OpenVPN: application/openvpn.md
-
-        - Operating System:
-                - Linux: 
-                        - System:
-                                - System: os/linux/system.md
-                                - Volumes: os/linux/vol.md
-                        - Desktop environement: os/linux/desktop-environement.md
-                        - Packages: os/linux/packages.md
-                        - Analyses: os/linux/analyse.md
-                        - Regular Parsing: os/linux/regular-parsing.md
-                        - Application:
-                                - VIM: os/linux/vim.md
-                - Windaub: 
-                        - Account: os/windows/account.md
-                        - System:
-                                - System: os/windows/sys.md
-                                - boot: os/windows/boot.md
-                                - Disk: os/windows/dsk.md
-                        - Application & Features:
-                                - WSL: os/windows/wsl.md
-                                - Google Chrome: os/windows/chrome.md
         - About: about.md
 theme: readthedocs
