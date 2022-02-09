@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>System - Dockimentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "System";
+    var mkdocs_page_input_path = "Linux/System.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Dockimentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Linux</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Account/">Account</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Analyse/">Analyse</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Applications/">Applications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Desktop_Environement/">Desktop Environement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Storage/">Storage</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">System</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Tools_%26_Packages/">Tools & Packages</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Windows</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Windows/account/">Account</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Windows/Applications/">Applications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Windows/boot/">Windows Boot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Windows/Storage/">Storage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Windows/System/">System</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Cloud</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Cloud_Infrastructure/">Cloud Infrastructure</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Amazon_Web_Services/">Amazon Web Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Azure_Cloud/">Microsoft Azure</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Google_Cloud_Platforme/">Google Cloud Platforme</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Oracle_Cloud_Infrastructure/">Oracle Cloud Infrastructure</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Hypervisor</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Monitoring/">Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../VMware/">VMware</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Proxmox-VE/">Proxmox-VE</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../QEMU-KVM/">QEMU-KVM</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tools</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Centreon_Central/">Centreon Central</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Nagios/">Nagios</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../IPAM_-_Netbox/">IPAM - Netbox</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Rhel_IDM/">Rhel IDM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Guacamole/">Guacamole</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../UI-path/">UI-path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../VNC_Tiger/">VNC Tiger</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../OpenVPN/">OpenVPN</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Storage</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Bareos/">Bareos</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">BDD/BigData</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Cloudera/">Cloudera</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Hadoop/">Hadoop</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Oracle/">Oracle</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../MySQL/">MySQL</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">DevOPS</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Ansible_Engine/">Ansible Engine</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Docker/">Docker</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../ELastiK/">Elasticsearch / Logstash / Kibana</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Terraform/">Terraform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Kubernetes/">Kubernetes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Git/">Git</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Perl/">Perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Python/">Python</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../../about.md">About</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Dockimentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Linux &raquo;</li>
+        
+      
+    
+    <li>System</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="system">System</h1>
+<h1 id="exit-codes">Exit codes</h1>
+<ul>
+<li>Contient le nom du script tel qu'il a été invoqué: <ul>
+<li>
+<blockquote>
+<p>$0</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>L'ensembles des paramètres sous la forme d'un seul argument:<ul>
+<li>
+<blockquote>
+<p>$*</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>L'ensemble des arguments, un argument par paramètre:<ul>
+<li>
+<blockquote>
+<p>$@</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Le nombre de paramètres passés au script:<ul>
+<li>
+<blockquote>
+<p>$#</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Le code retour de la dernière commande::<ul>
+<li>
+<blockquote>
+<p>$?</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Le PID su shell qui exécute le script:<ul>
+<li>
+<blockquote>
+<p>$$</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Le PID du dernier processus lancé en arrière-plan:<ul>
+<li>
+<blockquote>
+<p>$!</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="emergency">Emergency</h1>
+<h2 id="grub">Grub</h2>
+<ol>
+<li>Reach the grub and chose the first line</li>
+<li>Use 'e' to edit</li>
+<li>Go to the "vmlinux" line to add '<strong>rd.break'</strong> at the end (This change is temporary)</li>
+<li>Press 'CTRL+x' to exit an run it</li>
+</ol>
+<h2 id="rescure">Rescure</h2>
+<p>This prompt spawn: </p>
+<blockquote>
+<p>switch_root:/#.</p>
+</blockquote>
+<p>Mount sysroot :</p>
+<blockquote>
+<p>mount -o remount rw <a href="file:///home/sboistel/Documents/Cliford/Zbook/sysroot">/sysroot</a></p>
+</blockquote>
+<p>Chroot into sysroot :</p>
+<blockquote>
+<p>chroot <a href="file:///home/sboistel/Documents/Cliford/Zbook/sysroot">/sysroot</a></p>
+</blockquote>
+<p>You are now able to reset root password, or edit linux things.</p>
+<h3 id="selinux">Selinux</h3>
+<p>⚠ Make sure SELinux allows the file changed </p>
+<blockquote>
+<p>touch <a href="file:///home/sboistel/Documents/Cliford/Zbook/.autorelabel">/.autorelabel</a>
+<em>This will signal SELinux on the next reboot that the filesystem has changed (the changed password) and allow the change to be loaded.</em></p>
+</blockquote>
+<p>Type 'exit' then 'reboot'</p>
+<h1 id="network">Network</h1>
+<h2 id="base-on-aptdeb">Base on APT/DEB</h2>
+<p>File : <code>/etc/network/interfaces</code> :</p>
+<pre><code class="language-bash"># This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth0
+iface eth0 inet static
+address 10.0.0.41
+netmask 24
+gateway 10.0.0.0
+dns-nameservers 10.0.0.1 8.8.8.8
+</code></pre>
+<h1 id="process">Process</h1>
+<p>Lister tout les processus :</p>
+<ul>
+<li>a : Ayant un terminal de contrôle</li>
+<li>u : Lancés par l'/es utilisateur(s)</li>
+<li>x : N'ayant pas de terminal de contrôle (TTY)</li>
+<li>e : Tout les processe</li>
+<li>d : Tout les processes sauf ceux de la session courante</li>
+<li>l : Liste longue</li>
+<li>f : Full -&gt; Avoir le nom complet du processus</li>
+</ul>
+<h2 id="cpu">CPU</h2>
+<p>Lister le nombre de processeur :</p>
+<pre><code class="language-bash">nproc
+</code></pre>
+<h1 id="load">Load</h1>
+<p>Check the load average fixed by the system:</p>
+<blockquote>
+<p>cat /proc/loadavg</p>
+</blockquote>
+<p>Verify time since the system is up:</p>
+<pre><code class="language-bash">uptime
+</code></pre>
+<p>You could check your system processes by top/htop or glances and more one else:</p>
+<pre><code class="language-bash">top
+</code></pre>
+<p>You can folow your CPU in real time by this command:</p>
+<pre><code class="language-bash">vmstat -w 1
+</code></pre>
+<h1 id="service">Service</h1>
+<h2 id="systemctl">Systemctl</h2>
+<p>How to list enabled unit-file.</p>
+<pre><code class="language-bash">systemctl list-unit-files | grep enabled
+</code></pre>
+<h1 id="timedate">Time/Date</h1>
+<h2 id="clock">Clock</h2>
+<p>How to mod sys clock ?</p>
+<pre><code class="language-bash">mv /etc/localtime /etc/localtime.backup
+ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
+
+echo &quot;Europe/Paris&quot; | tee /etc/timezone
+timedatectl set-timezone Europe/Paris
+hwclock -s
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Tools_%26_Packages/" class="btn btn-neutral float-right" title="Tools & Packages">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Storage/" class="btn btn-neutral" title="Storage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Storage/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Tools_%26_Packages/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
