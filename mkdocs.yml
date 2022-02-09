@@ -2,7 +2,6 @@ site_name: Dockimentation
 nav:
         - Home: README.md
         - Linux:
-                - Linux/Linux.md
                 - Linux/Account.md
                 - Linux/Analyse.md
                 - Linux/Applications.md
@@ -11,43 +10,53 @@ nav:
                 - Linux/System.md
                 - Linux/Tools_&_Packages.md
         - Windows:
-                - Windows/Windows.md
                 - Windows/account.md
                 - Windows/Applications.md
                 - Windows/boot.md
                 - Windows/Storage.md
                 - Windows/System.md
 
-        - Amazon_Web_Services.md
-        - Ansible_Engine.md
-        - Azure_Cloud.md
-        - Bareos.md
-        - Centreon_Central.md
-        - Cloudera.md
-        - Cloud_Infrastructure.md
-        - Docker.md
-        - ELastiK.md
-        - Git.md
-        - Google_Cloud_Platforme.md
-        - Guacamole.md
-        - Hadoop.md
-        - IPAM_-_Netbox.md
-        - Kubernetes.md
-        - Monitoring.md
-        - MySQL.md
-        - Nagios.md
-        - OpenVPN.md
-        - Oracle_Cloud_Infrastructure.md
-        - Oracle.md
-        - Perl.md
-        - Proxmox-VE.md
-        - Python.md
-        - QEMU-KVM.md
-        - Rhel_IDM.md
-        - Terraform.md
-        - UI-path.md
-        - VMware.md
-        - VNC_Tiger.md
+        - Cloud:
+                - Cloud_Infrastructure.md
+                - Amazon_Web_Services.md
+                - Azure_Cloud.md
+                - Google_Cloud_Platforme.md
+                - Oracle_Cloud_Infrastructure.md
+        
+        - Hypervisor:
+                - Monitoring.md
+                - VMware.md
+                - Proxmox-VE.md
+                - QEMU-KVM.md
+        
+        - Tools:
+                - Centreon_Central.md
+                - Nagios.md
+                - IPAM_-_Netbox.md
+                - Rhel_IDM.md
+                - Guacamole.md
+                - UI-path.md
+                - VNC_Tiger.md
+                - OpenVPN.md
+        
+        - Storage:
+                - Bareos.md
+        
+        - BDD/BigData:
+                - Cloudera.md
+                - Hadoop.md
+                - Oracle.md
+                - MySQL.md
+        
+        - DevOPS:
+                - Ansible_Engine.md
+                - Docker.md
+                - ELastiK.md
+                - Terraform.md
+                - Kubernetes.md
+                - Git.md
+                - Perl.md
+                - Python.md
 
         - About: about.md
 theme: readthedocs
