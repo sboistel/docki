@@ -1,6 +1,6 @@
 # OpenVPN
-Install via repository
-----------------------
+
+## Install via repository
 *(recommended)* *[LINK](<https://openvpn.net/vpn-software-packages/>)
 
 The recommended method to install the OpenVPN Access Server is to use the official OpenVPN Access Server software repository. 
@@ -16,8 +16,7 @@ echo "deb <http://as-repository.openvpn.net/as/debian> buster main">/etc/apt/sou
 apt update && apt -y install openvpn-as
 ```
 
-Configuration
--------------
+## Configuration
 
 Follow theses steps : [OpenVPN Website](<https://openvpn.net/vpn-server-resources/finishing-configuration-of-access-server/>)
 
