@@ -32,12 +32,13 @@ nav:
         - Tools:
                 - Centreon_Central.md
                 - Nagios.md
-                - IPAM_-_Netbox.md
+                - Netbox.md
                 - Rhel_IDM.md
                 - Guacamole.md
                 - UI-path.md
                 - VNC_Tiger.md
                 - OpenVPN.md
+                - Markdown.md
         
         - Storage:
                 - Bareos.md
