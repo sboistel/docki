@@ -32,7 +32,7 @@ pip download module_name
 
 Requierements
 
-You have to fill the module name wished to the `py/requierements.txt` file. 
+You have to fill the module name wished to the `requierements.txt` file. 
 This file is used to build your envirement
 
 ```bash
