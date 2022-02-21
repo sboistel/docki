@@ -249,26 +249,26 @@
 <p>Also known as <code>venv</code></p>
 <p>A virtual environement ne require to have any permission (<strong>rootless ..</strong>)</p>
 <h3 id="how-to">How to ?</h3>
-<ol>
+<ul>
 <li>Create python working directory :</li>
-</ol>
+</ul>
 <pre><code class="language-sh">mkdir py
 </code></pre>
-<ol>
+<ul>
 <li>Create python venv (here name <code>pyvenv</code>)</li>
-</ol>
+</ul>
 <pre><code class="language-sh">cd py
 python3 -m venv pyvenv
 </code></pre>
-<ol>
+<ul>
 <li>Download module</li>
-</ol>
+</ul>
 <pre><code class="language-sh">mkdir module; cd module
 pip download module_name
 </code></pre>
-<ol>
+<ul>
 <li>Install virtual environement </li>
-</ol>
+</ul>
 <p>You have to fill the module name you donwloaded to the <code>py/requierements.txt</code> file </p>
 <p>Go back to py directory,</p>
 <pre><code class="language-sh">echo &quot;module_name&quot; &gt;&gt; requirements.txt
