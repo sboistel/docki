@@ -13,19 +13,23 @@ How to ?
 
 1. Create python working directory :
 
-> mkdir py
+```sh
+mkdir py
+```
 
 2. Create python venv (here name `pyvenv`)
 
-> cd py
-
-> python3 -m venv pyvenv
+```sh
+cd py
+python3 -m venv pyvenv
+```
 
 3. Download module
 
-> mkdir module; cd module
-
-> pip download module_name
+```sh
+mkdir module; cd module
+pip download module_name
+```
 
 4. Install virtual environement 
 
@@ -33,11 +37,11 @@ You have to fill the module name you donwloaded to the `py/requierements.txt` fi
 
 Go back to py directory,
 
-> echo "module_name" >> requirements.txt
-
-> source pyvenv/bin/active
-
-> pip install --no-index --find-links module/ -r requirements.txt
+```sh
+echo "module_name" >> requirements.txt
+source pyvenv/bin/active
+pip install --no-index --find-links module/ -r requirements.txt
+```
 
 Syntaxe
 =======
@@ -54,19 +58,28 @@ Import de librairie
 -------------------
 
 On peut importer un seul module d'une librairie :
-> from LIBRAIRIE import module
+
+```python
+from LIBRAIRIE import module
+```
 
 On peut aussi importer la librairie complette : 
-> from LIBRAIRIE import *
+
+```python
+from LIBRAIRIE import *
+```
 
 Ou depuis un autre fichier.Py :
-> from fichier import classe
+
+```python
+from fichier import classe
+```
 
 Interpollation
 ==============
 Divers techniques existe afin de sortir un clef d'une liste:
 
-```PYTHON
+```python
 print("Je m'appel %s !" % liste_nom['nom']) 
 print("Je m'appel %(nom)s !" % d)
 print("Je m'appel {0} !".format(d['nom']))
@@ -76,7 +89,7 @@ Vérifications
 =============
 Vérifier si un block est correct avec 'try' :
 
-```PYTHON
+```python
 try: # Vérifier ce bloc
 file = open('infos.txt', 'r')
 print(file.read())
@@ -88,13 +101,13 @@ file.close
 
 La vérification peut se traduire par plusieur méthodes :
 
-```PYTHON
+```python
 execpt IOError # Pour se qui concerne les fichier ou élèments en dur
 except ValueError # Qui concernera les érreurs de conversions
 ```
 La méthode la plus sûr reste l'option 'with':
 
-```PYTHON
+```python
 try: # Vérifier ce bloc
 with open('infox.txt', 'r') as file: # Avec le fichier, l'ouvrir en var file
 for line in file.readlines():
@@ -114,7 +127,7 @@ TKinter
 TKinter est une librairie permettant de génerer des fenêtre sur le code Python.
 Exemple de code :
 
-```PYTHON
+```python
 from Tkinter import *
 fenetre = Tk()
 label = Label(fenetre, text="Exmple de coprs de fenêtre")
@@ -137,7 +150,7 @@ Widget
 ### Case à cocher
 Liste de case à cocher :
 
-```PYTHON
+```python
 caseACocher1 = Checkbutton(window, text="Case N°1").pack()
 caseACocher2 = Checkbutton(window, text="Case N°2").pack()
 ...
@@ -146,7 +159,7 @@ caseACocher2 = Checkbutton(window, text="Case N°2").pack()
 ### Champs de saisie
 Champs de saisie :
 
-```PYTHON
+```python
 value = StringVar()
 value.set("Zonne de text")
 entree = Entry(window, textvariable=value, width=30)
@@ -157,7 +170,7 @@ entree.pack()
 
 Menu fichier :
 
-```PYTHON
+```python
 file_menu = Menu(menu_bar, tearoff=0)
 file_menu.add_command(label="Nouveau", command=generate_password)
 file_menu.add_command(label="Quitter", command=window.quit)
