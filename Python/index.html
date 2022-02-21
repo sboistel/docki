@@ -247,33 +247,26 @@
 <p>Python tips &amp; tricks</p>
 <h2 id="virtual-env">Virtual Env</h2>
 <p>Also known as <code>venv</code></p>
-<p>A virtual environement ne require to have any permission (<strong>rootless ..</strong>)</p>
+<p>That is better to use venv to allow using multiple versions</p>
+<p><em>A virtual environement ne require privileges</em></p>
 <h3 id="how-to">How to ?</h3>
-<ul>
-<li>Create python working directory :</li>
-</ul>
-<pre><code class="language-sh">mkdir py
+<p>Create python venv (here name <code>pyvenv</code>)</p>
+<pre><code class="language-sh">python3 -m venv pyvenv
 </code></pre>
-<ul>
-<li>Create python venv (here name <code>pyvenv</code>)</li>
-</ul>
-<pre><code class="language-sh">cd py
-python3 -m venv pyvenv
+<p>Source it</p>
+<pre><code class="language-bash">source pyvenv/bin/active
 </code></pre>
-<ul>
-<li>Download module</li>
-</ul>
+<p>Download module</p>
 <pre><code class="language-sh">mkdir module; cd module
 pip download module_name
 </code></pre>
-<ul>
-<li>Install virtual environement </li>
-</ul>
-<p>You have to fill the module name you donwloaded to the <code>py/requierements.txt</code> file </p>
-<p>Go back to py directory,</p>
-<pre><code class="language-sh">echo &quot;module_name&quot; &gt;&gt; requirements.txt
-source pyvenv/bin/active
-pip install --no-index --find-links module/ -r requirements.txt
+<p>Requierements</p>
+<p>You have to fill the module name wished to the <code>py/requierements.txt</code> file. 
+This file is used to build your envirement</p>
+<pre><code class="language-bash">echo &quot;module_name&quot; &gt;&gt; requirements.txt
+</code></pre>
+<p>Install virtual environement </p>
+<pre><code class="language-sh">pip install --no-index --find-links module/ -r requirements.txt
 </code></pre>
 <h2 id="syntaxe">Syntaxe</h2>
 <h3 id="coding">Coding</h3>
