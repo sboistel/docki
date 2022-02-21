@@ -4,16 +4,18 @@
 Basic table Code :
 
 ```markdown
-| column1 | column2 |
-|-|-|
-|entry1|entry2|
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
 ```
 
 Result :
 
-| column1 | column2 |
-|-|-|
-|entry1|entry2|
+| Syntax      | Description | Test Text     |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
 
 # Images
 ## Position
