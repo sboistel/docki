@@ -212,59 +212,52 @@
 <ol>
 <li>Create python working directory :</li>
 </ol>
-<blockquote>
-<p>mkdir py</p>
-</blockquote>
+<pre><code class="language-sh">mkdir py
+</code></pre>
 <ol>
 <li>Create python venv (here name <code>pyvenv</code>)</li>
 </ol>
-<blockquote>
-<p>cd py</p>
-<p>python3 -m venv pyvenv</p>
-</blockquote>
+<pre><code class="language-sh">cd py
+python3 -m venv pyvenv
+</code></pre>
 <ol>
 <li>Download module</li>
 </ol>
-<blockquote>
-<p>mkdir module; cd module</p>
-<p>pip download module_name</p>
-</blockquote>
+<pre><code class="language-sh">mkdir module; cd module
+pip download module_name
+</code></pre>
 <ol>
 <li>Install virtual environement </li>
 </ol>
 <p>You have to fill the module name you donwloaded to the <code>py/requierements.txt</code> file </p>
 <p>Go back to py directory,</p>
-<blockquote>
-<p>echo "module_name" &gt;&gt; requirements.txt</p>
-<p>source pyvenv/bin/active</p>
-<p>pip install --no-index --find-links module/ -r requirements.txt</p>
-</blockquote>
+<pre><code class="language-sh">echo &quot;module_name&quot; &gt;&gt; requirements.txt
+source pyvenv/bin/active
+pip install --no-index --find-links module/ -r requirements.txt
+</code></pre>
 <h1 id="syntaxe">Syntaxe</h1>
 <h2 id="coding">Coding</h2>
 <p>Format UTF-8 : <code># -*- coding:Utf-8 -*-</code></p>
 <h1 id="librairy">Librairy</h1>
 <h2 id="import-de-librairie">Import de librairie</h2>
 <p>On peut importer un seul module d'une librairie :</p>
-<blockquote>
-<p>from LIBRAIRIE import module</p>
-</blockquote>
+<pre><code class="language-python">from LIBRAIRIE import module
+</code></pre>
 <p>On peut aussi importer la librairie complette : </p>
-<blockquote>
-<p>from LIBRAIRIE import *</p>
-</blockquote>
+<pre><code class="language-python">from LIBRAIRIE import *
+</code></pre>
 <p>Ou depuis un autre fichier.Py :</p>
-<blockquote>
-<p>from fichier import classe</p>
-</blockquote>
+<pre><code class="language-python">from fichier import classe
+</code></pre>
 <h1 id="interpollation">Interpollation</h1>
 <p>Divers techniques existe afin de sortir un clef d'une liste:</p>
-<pre><code class="language-PYTHON">print(&quot;Je m'appel %s !&quot; % liste_nom['nom']) 
+<pre><code class="language-python">print(&quot;Je m'appel %s !&quot; % liste_nom['nom']) 
 print(&quot;Je m'appel %(nom)s !&quot; % d)
 print(&quot;Je m'appel {0} !&quot;.format(d['nom']))
 </code></pre>
 <h1 id="verifications">Vérifications</h1>
 <p>Vérifier si un block est correct avec 'try' :</p>
-<pre><code class="language-PYTHON">try: # Vérifier ce bloc
+<pre><code class="language-python">try: # Vérifier ce bloc
 file = open('infos.txt', 'r')
 print(file.read())
 except: # Si erreur se trouve dans try
@@ -273,11 +266,11 @@ finally: # Qui s'éxecutera quoi qu'il arrive des blocs précédents
 file.close
 </code></pre>
 <p>La vérification peut se traduire par plusieur méthodes :</p>
-<pre><code class="language-PYTHON">execpt IOError # Pour se qui concerne les fichier ou élèments en dur
+<pre><code class="language-python">execpt IOError # Pour se qui concerne les fichier ou élèments en dur
 except ValueError # Qui concernera les érreurs de conversions
 </code></pre>
 <p>La méthode la plus sûr reste l'option 'with':</p>
-<pre><code class="language-PYTHON">try: # Vérifier ce bloc
+<pre><code class="language-python">try: # Vérifier ce bloc
 with open('infox.txt', 'r') as file: # Avec le fichier, l'ouvrir en var file
 for line in file.readlines():
 print(int(line.strip()))
@@ -293,7 +286,7 @@ print(&quot;Fichier connue de tous wallah&quot;)
 <h1 id="tkinter">TKinter</h1>
 <p>TKinter est une librairie permettant de génerer des fenêtre sur le code Python.
 Exemple de code :</p>
-<pre><code class="language-PYTHON">from Tkinter import *
+<pre><code class="language-python">from Tkinter import *
 fenetre = Tk()
 label = Label(fenetre, text=&quot;Exmple de coprs de fenêtre&quot;)
 label.pack()
@@ -309,20 +302,20 @@ fenetre.mainloop()
 <h2 id="widget">Widget</h2>
 <h3 id="case-a-cocher">Case à cocher</h3>
 <p>Liste de case à cocher :</p>
-<pre><code class="language-PYTHON">caseACocher1 = Checkbutton(window, text=&quot;Case N°1&quot;).pack()
+<pre><code class="language-python">caseACocher1 = Checkbutton(window, text=&quot;Case N°1&quot;).pack()
 caseACocher2 = Checkbutton(window, text=&quot;Case N°2&quot;).pack()
 ...
 </code></pre>
 <h3 id="champs-de-saisie">Champs de saisie</h3>
 <p>Champs de saisie :</p>
-<pre><code class="language-PYTHON">value = StringVar()
+<pre><code class="language-python">value = StringVar()
 value.set(&quot;Zonne de text&quot;)
 entree = Entry(window, textvariable=value, width=30)
 entree.pack()
 </code></pre>
 <h3 id="barre-de-menu">Barre de menu</h3>
 <p>Menu fichier :</p>
-<pre><code class="language-PYTHON">file_menu = Menu(menu_bar, tearoff=0)
+<pre><code class="language-python">file_menu = Menu(menu_bar, tearoff=0)
 file_menu.add_command(label=&quot;Nouveau&quot;, command=generate_password)
 file_menu.add_command(label=&quot;Quitter&quot;, command=window.quit)
 menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
