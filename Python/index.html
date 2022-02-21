@@ -205,6 +205,40 @@
               
                 <h1 id="python">Python</h1>
 <p>Python tips &amp; tricks</p>
+<h1 id="virtual-env">Virtual Env</h1>
+<p>Also known as <code>venv</code></p>
+<p>A virtual environement ne require to have any permission (<strong>rootless ..</strong>)</p>
+<h2 id="how-to">How to ?</h2>
+<ol>
+<li>Create python working directory :</li>
+</ol>
+<blockquote>
+<p>mkdir py</p>
+</blockquote>
+<ol>
+<li>Create python venv (here name <code>pyvenv</code>)</li>
+</ol>
+<blockquote>
+<p>cd py</p>
+<p>python3 -m venv pyvenv</p>
+</blockquote>
+<ol>
+<li>Download module</li>
+</ol>
+<blockquote>
+<p>mkdir module; cd module</p>
+<p>pip download module_name</p>
+</blockquote>
+<ol>
+<li>Install virtual environement </li>
+</ol>
+<p>You have to fill the module name you donwloaded to the <code>py/requierements.txt</code> file </p>
+<p>Go back to py directory,</p>
+<blockquote>
+<p>echo "module_name" &gt;&gt; requirements.txt</p>
+<p>source pyvenv/bin/active</p>
+<p>pip install --no-index --find-links module/ -r requirements.txt</p>
+</blockquote>
 <h1 id="syntaxe">Syntaxe</h1>
 <h2 id="coding">Coding</h2>
 <p>Format UTF-8 : <code># -*- coding:Utf-8 -*-</code></p>
