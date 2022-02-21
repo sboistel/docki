@@ -9,27 +9,27 @@ A virtual environement ne require to have any permission (**rootless ..**)
 
 ### How to ?
 
-1. Create python working directory :
+- Create python working directory :
 
 ```sh
 mkdir py
 ```
 
-2. Create python venv (here name `pyvenv`)
+- Create python venv (here name `pyvenv`)
 
 ```sh
 cd py
 python3 -m venv pyvenv
 ```
 
-3. Download module
+- Download module
 
 ```sh
 mkdir module; cd module
 pip download module_name
 ```
 
-4. Install virtual environement 
+- Install virtual environement 
 
 You have to fill the module name you donwloaded to the `py/requierements.txt` file 
 
