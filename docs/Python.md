@@ -1,15 +1,13 @@
 # Python
 Python tips & tricks
 
-Virtual Env
-===========
+# Virtual Env
 
 Also known as `venv`
 
 A virtual environement ne require to have any permission (**rootless ..**)
 
-How to ?
---------
+## How to ?
 
 1. Create python working directory :
 
@@ -43,19 +41,15 @@ source pyvenv/bin/active
 pip install --no-index --find-links module/ -r requirements.txt
 ```
 
-Syntaxe
-=======
+# Syntaxe
 
-Coding
-------
+## Coding
 
 Format UTF-8 : ``# -*- coding:Utf-8 -*-``
 
-Librairy
-========
+# Librairy
 
-Import de librairie
--------------------
+## Import de librairie
 
 On peut importer un seul module d'une librairie :
 
@@ -75,8 +69,8 @@ Ou depuis un autre fichier.Py :
 from fichier import classe
 ```
 
-Interpollation
-==============
+# Interpollation
+
 Divers techniques existe afin de sortir un clef d'une liste:
 
 ```python
@@ -85,8 +79,8 @@ print("Je m'appel %(nom)s !" % d)
 print("Je m'appel {0} !".format(d['nom']))
 ```
 
-Vérifications
-=============
+## Vérifications
+
 Vérifier si un block est correct avec 'try' :
 
 ```python
@@ -122,8 +116,8 @@ else:
 print("Fichier connue de tous wallah")
 ```
 
-TKinter
-=======
+# TKinter
+
 TKinter est une librairie permettant de génerer des fenêtre sur le code Python.
 Exemple de code :
 
@@ -135,8 +129,8 @@ label.pack()
 fenetre.mainloop()
 ```
 
-Personnalisation de la fenêtre
-------------------------------
+## Personnalisation de la fenêtre
+
 Liste d'élèments permettant de personnaliser une fenêtre (ici : *window = Tk()*):
 - window.title("**My application**")
 - window.geometry("720x480")
@@ -144,8 +138,7 @@ Liste d'élèments permettant de personnaliser une fenêtre (ici : *window = Tk(
 - window.iconbitmap("image.ico")
 - window.config(background='#CC0000')
 
-Widget
-------
+## Widget
 
 ### Case à cocher
 Liste de case à cocher :
@@ -176,4 +169,3 @@ file_menu.add_command(label="Nouveau", command=generate_password)
 file_menu.add_command(label="Quitter", command=window.quit)
 menu_bar.add_cascade(label="Fichier", menu=file_menu)
 ```
-
