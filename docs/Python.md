@@ -1,13 +1,13 @@
 # Python
 Python tips & tricks
 
-# Virtual Env
+## Virtual Env
 
 Also known as `venv`
 
 A virtual environement ne require to have any permission (**rootless ..**)
 
-## How to ?
+### How to ?
 
 1. Create python working directory :
 
@@ -41,15 +41,15 @@ source pyvenv/bin/active
 pip install --no-index --find-links module/ -r requirements.txt
 ```
 
-# Syntaxe
+## Syntaxe
 
-## Coding
+### Coding
 
-Format UTF-8 : ``# -*- coding:Utf-8 -*-``
+Format UTF-8 : ``## -*- coding:Utf-8 -*-``
 
-# Librairy
+## Librairy
 
-## Import de librairie
+### Import de librairie
 
 On peut importer un seul module d'une librairie :
 
@@ -69,7 +69,7 @@ Ou depuis un autre fichier.Py :
 from fichier import classe
 ```
 
-# Interpollation
+## Interpollation
 
 Divers techniques existe afin de sortir un clef d'une liste:
 
@@ -79,31 +79,31 @@ print("Je m'appel %(nom)s !" % d)
 print("Je m'appel {0} !".format(d['nom']))
 ```
 
-## Vérifications
+### Vérifications
 
 Vérifier si un block est correct avec 'try' :
 
 ```python
-try: # Vérifier ce bloc
+try: ## Vérifier ce bloc
 file = open('infos.txt', 'r')
 print(file.read())
-except: # Si erreur se trouve dans try
+except: ## Si erreur se trouve dans try
 print("erreur")
-finally: # Qui s'éxecutera quoi qu'il arrive des blocs précédents
+finally: ## Qui s'éxecutera quoi qu'il arrive des blocs précédents
 file.close
 ```
 
 La vérification peut se traduire par plusieur méthodes :
 
 ```python
-execpt IOError # Pour se qui concerne les fichier ou élèments en dur
-except ValueError # Qui concernera les érreurs de conversions
+execpt IOError ## Pour se qui concerne les fichier ou élèments en dur
+except ValueError ## Qui concernera les érreurs de conversions
 ```
 La méthode la plus sûr reste l'option 'with':
 
 ```python
-try: # Vérifier ce bloc
-with open('infox.txt', 'r') as file: # Avec le fichier, l'ouvrir en var file
+try: ## Vérifier ce bloc
+with open('infox.txt', 'r') as file: ## Avec le fichier, l'ouvrir en var file
 for line in file.readlines():
 print(int(line.strip()))
 except IOError as err:
@@ -116,7 +116,7 @@ else:
 print("Fichier connue de tous wallah")
 ```
 
-# TKinter
+## TKinter
 
 TKinter est une librairie permettant de génerer des fenêtre sur le code Python.
 Exemple de code :
@@ -129,7 +129,7 @@ label.pack()
 fenetre.mainloop()
 ```
 
-## Personnalisation de la fenêtre
+### Personnalisation de la fenêtre
 
 Liste d'élèments permettant de personnaliser une fenêtre (ici : *window = Tk()*):
 - window.title("**My application**")
@@ -138,9 +138,9 @@ Liste d'élèments permettant de personnaliser une fenêtre (ici : *window = Tk(
 - window.iconbitmap("image.ico")
 - window.config(background='#CC0000')
 
-## Widget
+### Widget
 
-### Case à cocher
+#### Case à cocher
 Liste de case à cocher :
 
 ```python
@@ -149,7 +149,7 @@ caseACocher2 = Checkbutton(window, text="Case N°2").pack()
 ...
 ```
 
-### Champs de saisie
+#### Champs de saisie
 Champs de saisie :
 
 ```python
@@ -159,7 +159,7 @@ entree = Entry(window, textvariable=value, width=30)
 entree.pack()
 ```
 
-### Barre de menu
+#### Barre de menu
 
 Menu fichier :
 
