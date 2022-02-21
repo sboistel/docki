@@ -1,6 +1,44 @@
 # Python
 Python tips & tricks
 
+Virtual Env
+===========
+
+Also known as `venv`
+
+A virtual environement ne require to have any permission (**rootless ..**)
+
+How to ?
+--------
+
+1. Create python working directory :
+
+> mkdir py
+
+2. Create python venv (here name `pyvenv`)
+
+> cd py
+
+> python3 -m venv pyvenv
+
+3. Download module
+
+> mkdir module; cd module
+
+> pip download module_name
+
+4. Install virtual environement 
+
+You have to fill the module name you donwloaded to the `py/requierements.txt` file 
+
+Go back to py directory,
+
+> echo "module_name" >> requirements.txt
+
+> source pyvenv/bin/active
+
+> pip install --no-index --find-links module/ -r requirements.txt
+
 Syntaxe
 =======
 
