@@ -5,39 +5,43 @@ Python tips & tricks
 
 Also known as `venv`
 
-A virtual environement ne require to have any permission (**rootless ..**)
+That is better to use venv to allow using multiple versions
+
+*A virtual environement ne require privileges*
 
 ### How to ?
 
-- Create python working directory :
+Create python venv (here name `pyvenv`)
 
 ```sh
-mkdir py
-```
-
-- Create python venv (here name `pyvenv`)
-
-```sh
-cd py
 python3 -m venv pyvenv
 ```
 
-- Download module
+Source it
+
+```bash
+source pyvenv/bin/active
+```
+
+Download module
 
 ```sh
 mkdir module; cd module
 pip download module_name
 ```
 
-- Install virtual environement 
+Requierements
 
-You have to fill the module name you donwloaded to the `py/requierements.txt` file 
+You have to fill the module name wished to the `py/requierements.txt` file. 
+This file is used to build your envirement
 
-Go back to py directory,
+```bash
+echo "module_name" >> requirements.txt
+```
+
+Install virtual environement 
 
 ```sh
-echo "module_name" >> requirements.txt
-source pyvenv/bin/active
 pip install --no-index --find-links module/ -r requirements.txt
 ```
 
