@@ -2,7 +2,9 @@
 
 Welcome to the [**docki Github**](https://github.com/sboistel/docki) page
 
-What do U mean about **knowledge transfert*# ?
+Go back to [**docki.io**](https://sboistel.github.io/docki/) page
+
+What do U mean about **knowledge transfert** ?
 
 Let's having fun, and ``#RTFM`` !
 
