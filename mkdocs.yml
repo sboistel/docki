@@ -41,6 +41,7 @@ nav:
                 - Hadoop.md
                 - Oracle.md
                 - MySQL.md
+                - db2.md
         
         - DevOPS:
                 - Ansible_Engine.md
