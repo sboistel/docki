@@ -1,14 +1,7 @@
 site_name: Dockimentation
 nav:
         - Home: README.md
-        - Linux:
-                - Linux/Account.md
-                - Linux/Analyse.md
-                - Linux/Applications.md
-                - Linux/Desktop_Environement.md
-                - Linux/Storage.md
-                - Linux/System.md
-                - Linux/Tools_&_Packages.md
+        - Linux: linux.md
         - Windows:
                 - Windows/account.md
                 - Windows/Applications.md
