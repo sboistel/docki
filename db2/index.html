@@ -202,27 +202,23 @@
 <h2 id="installation">Installation</h2>
 <p>As root</p>
 <p>Untar the archive file</p>
-<blockquote>
-<p>tar -xvf linuxx64_client.tar.gz</p>
-</blockquote>
+<pre><code class="language-bash">tar -xvf linuxx64_client.tar.gz
+</code></pre>
 <p>Install db2</p>
-<blockquote>
-<p>./client/db2_install  -b /opt/db/v11.5</p>
-</blockquote>
+<pre><code class="language-bash">./client/db2_install  -b /opt/db/v11.5
+</code></pre>
 <h2 id="create-user-client">Create user client</h2>
-<blockquote>
-<p>/opt/ibm/db2/v11.5/instance/db2icrt -s client lully</p>
-</blockquote>
+<pre><code class="language-bash">/opt/ibm/db2/v11.5/instance/db2icrt -s client lully
+</code></pre>
 <h2 id="migration">Migration</h2>
 <p>As root</p>
-<blockquote>
-<p>db2cfexp db2cfexp.log template</p>
-</blockquote>
+<pre><code class="language-bash">db2cfexp db2cfexp.log template
+</code></pre>
 <p>As instance user</p>
 <p>db2cfimp export.log</p>
 <h1 id="check-directories">Check directories</h1>
 <p>db2 </p>
-<pre><code class="language-sql">list db directory
+<pre><code>list db directory
 list node directory
 </code></pre>
               
