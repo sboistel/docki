@@ -5,7 +5,7 @@ Rescan Storage
 ==============
 How to rescan storage ?
 
-![](./VMware/pasted_image.png)
+![](./img/vmware/pasted_image.png)
 
 USB Datastore
 =============
