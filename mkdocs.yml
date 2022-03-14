@@ -3,8 +3,8 @@ nav:
         - Home: README.md
 
         - Operating System: 
-                - linux.md
-                - windows.md
+                - Linux.md
+                - Windows.md
         
         - Cloud:
                 - Cloud_Infrastructure.md
@@ -29,6 +29,7 @@ nav:
                 - VNC_Tiger.md
                 - OpenVPN.md
                 - Markdown.md
+                - Ngrok.md
         
         - Storage:
                 - Bareos.md
@@ -44,6 +45,7 @@ nav:
                 - Ansible_Engine.md
                 - Docker.md
                 - ELastiK.md
+                - FreeIPA.md
                 - Terraform.md
                 - Kubernetes.md
                 - Git.md
