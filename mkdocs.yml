@@ -1,6 +1,6 @@
 site_name: Dockimentation
-nav_style: dark
-navigation_depth: 1
+site_description: Docki wiki github pages
+author: @boistelsam
 nav:
         - Home: README.md
 
@@ -55,4 +55,7 @@ nav:
                 - Python.md
 
         - About: about.md
-theme: readthedocs
+theme: 
+  name: readthedocs
+  nav_style: dark
+  navigation_depth: 2
