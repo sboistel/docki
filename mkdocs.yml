@@ -1,14 +1,11 @@
 site_name: Dockimentation
 nav:
         - Home: README.md
-        - Linux: linux.md
-        - Windows:
-                - Windows/account.md
-                - Windows/Applications.md
-                - Windows/boot.md
-                - Windows/Storage.md
-                - Windows/System.md
 
+        - Operating System: 
+                - linux.md
+                - windows.md
+        
         - Cloud:
                 - Cloud_Infrastructure.md
                 - Amazon_Web_Services.md
