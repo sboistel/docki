@@ -53,3 +53,16 @@ partedUtil setptbl /dev/disks/mpx.vmhba32:C0:T0:L0 gpt "1 2048 ${NUMBER} AA31E02
 vmkfstools -C vmfs6 -S USB-Datastore /dev/disks/mpx.vmhba32:C0:T0:L0:1
 ```
 
+## License
+
+### Removing License
+
+> rm -r /etc/vmware/license.cfg
+
+### Get a new trial license
+
+> cp /etc/vmware/.#license.cfg /etc/vmware/license.cfg
+
+### Restarting VPXA
+
+> /etc/init.d/vpxa restart
