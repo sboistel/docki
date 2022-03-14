@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Linux - Dockimentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Linux";
+    var mkdocs_page_input_path = "linux.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Dockimentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Linux</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#system">System</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#exit-codes">Exit codes</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#emergency">Emergency</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#grub">Grub</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#rescure">Rescure</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#selinux">Selinux</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#network">Network</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#base-on-aptdeb">Base on APT/DEB</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#process">Process</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cpu">CPU</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#load">Load</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#service">Service</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#systemctl">Systemctl</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#timedate">Time/Date</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#clock">Clock</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#account">Account</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#useradd">Useradd</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#lock-unlock">Lock / Unlock</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unlock">Unlock</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lock">Lock</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#time-life-password">Time life password</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sudoers">Sudoers</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#key">Key</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#pem-key">PEM Key</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#applications">Applications</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#screen">Screen</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#touchscreen">Touchscreen</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#blank-screen">Blank Screen</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lamp">lamp</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#postfix">Postfix</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#logrotate">Logrotate</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#check">Check</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#apply">Apply</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tools-packages">Tools &amp; Packages</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#rpm">RPM</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#debian">Debian</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#repository">Repository</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#bpytop">bpytop</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vim">VIM</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#keymap">Keymap</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sed">Sed</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#highlithing">Highlithing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#grep">Grep</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sed_1">Sed</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#remove-saut-de-ligne">Remove saut de ligne.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vim_1">VIM</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tr">TR</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#awk">AWK</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#find">Find</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#storage">Storage</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#compressed-files">Compressed files</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#compresser">Compresser</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#decompresser">Décompresser</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dd">DD</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#memory">Memory</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#oracle-cloud-infrastructure">Oracle cloud infrastructure</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ram">RAM</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lvm-logical-volume-manager">LVM - Logical Volume Manager</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#extend-partition">Extend partition</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#make-fs">Make FS</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#scan-disk">Scan Disk</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#create-1-file-heavy-as-1g">Create 1 file heavy as 1G</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#extend-volumes">Extend volumes</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#apply-modifications">Apply modifications</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#reducing-an-lvm2-swap-logical-volume">Reducing an LVM2 Swap Logical Volume</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#analyse">Analyse</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sar">SAR</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#connection">Connection</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#user">User</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#desktop-environement">Desktop Environement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#gnome">Gnome</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#modifier-une-application-existante">Modifier une application éxistante</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#desktop-manager">Desktop Manager</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#lightdm">Lightdm</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Windows</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Windows/account/">Account</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Windows/Applications/">Applications</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Windows/boot/">Windows Boot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Windows/Storage/">Storage</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Windows/System/">System</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Cloud</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Cloud_Infrastructure/">Cloud Infrastructure</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Amazon_Web_Services/">Amazon Web Services</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Azure_Cloud/">Microsoft Azure</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Google_Cloud_Platforme/">Google Cloud Platforme</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Oracle_Cloud_Infrastructure/">Oracle Cloud Infrastructure</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Hypervisor</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Monitoring/">Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../VMware/">VMware</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Proxmox-VE/">Proxmox-VE</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../QEMU-KVM/">QEMU-KVM</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Tools</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Centreon_Central/">Centreon Central</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Nagios/">Nagios</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Netbox/">IPAM - Netbox</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Rhel_IDM/">Rhel IDM</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Guacamole/">Guacamole</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../UI-path/">UI-path</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../VNC_Tiger/">VNC Tiger</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../OpenVPN/">OpenVPN</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Markdown/">Markdown</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Storage</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Bareos/">Bareos</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">BDD/BigData</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Cloudera/">Cloudera</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hadoop/">Hadoop</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Oracle/">Oracle</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../MySQL/">MySQL</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">DevOPS</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Ansible_Engine/">Ansible Engine</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Docker/">Docker</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ELastiK/">Elasticsearch / Logstash / Kibana</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Terraform/">Terraform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Kubernetes/">Kubernetes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Git/">Git</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Perl/">Perl</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Python/">Python</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="../about.md">About</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Dockimentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Linux</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="linux">Linux</h1>
+<h2 id="system">System</h2>
+<h3 id="exit-codes">Exit codes</h3>
+<ul>
+<li>Contient le nom du script tel qu'il a été invoqué: <ul>
+<li>
+<blockquote>
+<p>$0</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>L'ensembles des paramètres sous la forme d'un seul argument:<ul>
+<li>
+<blockquote>
+<p>$*</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>L'ensemble des arguments, un argument par paramètre:<ul>
+<li>
+<blockquote>
+<p>$@</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Le nombre de paramètres passés au script:<ul>
+<li>
+<blockquote>
+<p>$#</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Le code retour de la dernière commande::<ul>
+<li>
+<blockquote>
+<p>$?</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Le PID su shell qui exécute le script:<ul>
+<li>
+<blockquote>
+<p>$$</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Le PID du dernier processus lancé en arrière-plan:<ul>
+<li>
+<blockquote>
+<p>$!</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="emergency">Emergency</h3>
+<h4 id="grub">Grub</h4>
+<ol>
+<li>Reach the grub and chose the first line</li>
+<li>Use 'e' to edit</li>
+<li>Go to the "vmlinux" line to add '<strong>rd.break'</strong> at the end (This change is temporary)</li>
+<li>Press 'CTRL+x' to exit an run it</li>
+</ol>
+<h4 id="rescure">Rescure</h4>
+<p>This prompt spawn:</p>
+<blockquote>
+<p>switch_root:/#.</p>
+</blockquote>
+<p>Mount sysroot :</p>
+<blockquote>
+<p>mount -o remount rw sysroot</p>
+</blockquote>
+<p>Chroot into sysroot :</p>
+<blockquote>
+<p>chroot sysroot</p>
+</blockquote>
+<p>You are now able to reset root password, or edit linux things.</p>
+<h4 id="selinux">Selinux</h4>
+<p>⚠ Make sure SELinux allows the file changed </p>
+<blockquote>
+<p>touch .autorelabel
+<em>This will signal SELinux on the next reboot that the filesystem has changed (the changed password) and allow the change to be loaded.</em></p>
+</blockquote>
+<p>Type 'exit' then 'reboot'</p>
+<h3 id="network">Network</h3>
+<h4 id="base-on-aptdeb">Base on APT/DEB</h4>
+<p>File : <code>/etc/network/interfaces</code> :</p>
+<pre><code class="language-bash"># This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth0
+iface eth0 inet static
+address 10.0.0.41
+netmask 24
+gateway 10.0.0.0
+dns-nameservers 10.0.0.1 8.8.8.8
+</code></pre>
+<h3 id="process">Process</h3>
+<p>Lister tout les processus :</p>
+<ul>
+<li>a : Ayant un terminal de contrôle</li>
+<li>u : Lancés par l'/es utilisateur(s)</li>
+<li>x : N'ayant pas de terminal de contrôle (TTY)</li>
+<li>e : Tout les processe</li>
+<li>d : Tout les processes sauf ceux de la session courante</li>
+<li>l : Liste longue</li>
+<li>f : Full -&gt; Avoir le nom complet du processus</li>
+</ul>
+<h3 id="cpu">CPU</h3>
+<p>Lister le nombre de processeur :</p>
+<pre><code class="language-bash">nproc
+</code></pre>
+<h4 id="load">Load</h4>
+<p>Check the load average fixed by the system:</p>
+<blockquote>
+<p>cat /proc/loadavg</p>
+</blockquote>
+<p>Verify time since the system is up:</p>
+<pre><code class="language-bash">uptime
+</code></pre>
+<p>You could check your system processes by top/htop or glances and more one else:</p>
+<pre><code class="language-bash">top
+</code></pre>
+<p>You can folow your CPU in real time by this command:</p>
+<pre><code class="language-bash">vmstat -w 1
+</code></pre>
+<h3 id="service">Service</h3>
+<h4 id="systemctl">Systemctl</h4>
+<p>How to list enabled unit-file.</p>
+<pre><code class="language-bash">systemctl list-unit-files | grep enabled
+</code></pre>
+<h3 id="timedate">Time/Date</h3>
+<h4 id="clock">Clock</h4>
+<p>How to mod sys clock ?</p>
+<pre><code class="language-bash">mv /etc/localtime /etc/localtime.backup
+ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
+
+echo &quot;Europe/Paris&quot; | tee /etc/timezone
+timedatectl set-timezone Europe/Paris
+hwclock -s
+</code></pre>
+<h2 id="account">Account</h2>
+<p>Created Tuesday 25 January 2022</p>
+<p>List account :</p>
+<pre><code class="language-bash">find /home -maxdepth 1 -type d -group users | cut -d '/' -f3
+</code></pre>
+<h3 id="useradd">Useradd</h3>
+<p>How to adding user ?</p>
+<pre><code class="language-bash">useradd -s /sbin/nologin -G $GRP
+useradd -m -G wheel -s /bin/bash $account
+</code></pre>
+<h4 id="lock-unlock">Lock / Unlock</h4>
+<p>Check password status :</p>
+<pre><code class="language-bash">passwd -S $USER
+</code></pre>
+<p>Status list :</p>
+<ul>
+<li>LK: Password locked</li>
+<li>NP: No password</li>
+<li>PS: Password set</li>
+</ul>
+<h3 id="unlock">Unlock</h3>
+<p>Use the <code>-u</code> to unlock account</p>
+<pre><code class="language-bash">passwd -u $USER
+</code></pre>
+<h3 id="lock">Lock</h3>
+<p>Use the <code>-L</code> to lock account</p>
+<pre><code class="language-bash">passwd -L $USER
+</code></pre>
+<h3 id="time-life-password">Time life password</h3>
+<p>Show the account password information</p>
+<pre><code class="language-bash">chage -l $USER
+</code></pre>
+<p>Set minimum day</p>
+<pre><code class="language-bash">chage -m ${NOMBER OF DAY} ${USER}
+</code></pre>
+<h3 id="sudoers">Sudoers</h3>
+<p>Autorisation de l’utilisateur max de supprimer dans le dossier. </p>
+<pre><code class="language-bash">max ALL=NOPASSWD:/bin/rm -rf $CHEMIN_de_DOSSIER/*
+</code></pre>
+<p>Autorisation pour l’utilisateur matry_mc_fly de lire les fichiers dans le dossier.</p>
+<pre><code class="language-bash">marty_mc_fly ALL=NOPASSWD:/usr/bin/cat /var/log/mariadb/*
+</code></pre>
+<h2 id="key">Key</h2>
+<h3 id="pem-key">PEM Key</h3>
+<p>Create pem key :</p>
+<pre><code class="language-bash">Puttygen mykey.ppk -O private-openssh -o mykey.pem
+</code></pre>
+<h2 id="applications">Applications</h2>
+<p>Created Wednesday 26 January 2022</p>
+<h3 id="screen">Screen</h3>
+<h4 id="touchscreen">Touchscreen</h4>
+<p>How to disable touchscreen at start ?
+Create a new file as <code>/etc/X11/xorg.conf.d/01-no_touchscreen.conf</code> as 664 :</p>
+<pre><code class="language-bash"># Written by systemd-localed(8), read by systemd-localed and Xorg. Its
+# probably wise not to edit this file manually. use localectl(1) to
+# instruct systemd-localed to update it
+Section &quot;InputClass&quot;
+Identifier &quot;Raydium catchall&quot;
+MatchIsTouchscreen &quot;on&quot;
+Option &quot;Ignore&quot; &quot;on&quot;
+EndSection
+</code></pre>
+<p>Using command line :</p>
+<pre><code class="language-bash">xinput disable $(xinput list | awk '/Touchscreen/ {print $5}' | cut -d &quot;=&quot; -f2)
+</code></pre>
+<h4 id="blank-screen">Blank Screen</h4>
+<p>Retirer la mise en veille lors de la fermeture du capot de l’ordinateur portable.</p>
+<pre><code class="language-bash">   setterm-powersave off -blank 0
+   systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+</code></pre>
+<h3 id="lamp">lamp</h3>
+<p>Apache check config :</p>
+<pre><code class="language-bash">/opt/lampp/bin/httpd -t
+</code></pre>
+<p>Apache restart :</p>
+<pre><code class="language-bash">/opt/lampp/bin/httpd -k restart
+</code></pre>
+<h3 id="postfix">Postfix</h3>
+<p>Basic postfix configuration <code>/etc/postfix/main.cf</code> :</p>
+<pre><code class="language-bash">relayhost = [smtp.gmail.com]:587
+smtp_sasl_auth_enable = yes
+smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
+smtp_sasl_security_options = noanonymous
+</code></pre>
+<h3 id="logrotate">Logrotate</h3>
+<h4 id="check">Check</h4>
+<pre><code class="language-bash">logrotate -d /etc/logrotate.d/httpd
+</code></pre>
+<h4 id="apply">Apply</h4>
+<pre><code class="language-bash">logrotate -vf /etc/logrotate.d/httpd
+</code></pre>
+<h2 id="tools-packages">Tools &amp; Packages</h2>
+<h3 id="rpm">RPM</h3>
+<p>How to force installation without depedency.</p>
+<pre><code class="language-bash">rpm -Uvh 
+</code></pre>
+<h3 id="debian">Debian</h3>
+<h4 id="repository">Repository</h4>
+<p>bullseye 11 sources.list</p>
+<pre><code class="language-bash">deb http://deb.debian.org/debian bullseye main
+deb-src http://deb.debian.org/debian bullseye main
+
+deb http://deb.debian.org/debian-security/ bullseye-security main
+deb-src http://deb.debian.org/debian-security/ bullseye-security main
+
+deb http://deb.debian.org/debian bullseye-updates main
+deb-src http://deb.debian.org/debian bullseye-updates main
+</code></pre>
+<h4 id="bpytop">bpytop</h4>
+<p>How to isntall bpytop based on APT :</p>
+<pre><code class="language-bash">apt install python3-pip
+pip3 install psutil
+pip3 install bpytop
+</code></pre>
+<h3 id="vim">VIM</h3>
+<p>Début ou fin de fichier :</p>
+<ul>
+<li>Go to the top : <code>gg</code></li>
+<li>Go to the buttom : <code>G</code></li>
+<li>Descendre à la ligne 34 : <code>34 G</code></li>
+</ul>
+<p>Début ou fin de ligne :</p>
+<ul>
+<li>Fin de la ligne où se trouve le dernier carractère : <code>$</code> </li>
+<li>Début de la ligne où se trouve le premier carractère : <code>0</code> <em>(shift+à)</em></li>
+</ul>
+<h3 id="keymap">Keymap</h3>
+<p>Liste:</p>
+<ul>
+<li>Début du mot : <code>b</code></li>
+<li>Début du dexième mot en partant du mot d'origin : <code>3B</code></li>
+<li>Fin du mot suivant : <code>e</code></li>
+<li>Mot suivant : <code>w</code></li>
+<li>Replace : <code>r</code></li>
+<li>Supprimer carractère par carractère : <code>x</code></li>
+<li>Supprimer à reculon carractère par carractère : <code>c</code></li>
+<li>Changer (ce -&gt; changer jusqu'à la fin du mot ) : <code>c</code></li>
+<li>Enregister les modifications : <code>ZZ</code></li>
+<li>Enregistrer les modifications et quiter le fichier : <code>ZQ</code></li>
+</ul>
+<p>Répeter la dernière actions effectuée : <code>.</code></p>
+<h3 id="sed">Sed</h3>
+<p>Faire du sed : <code>:%s /foo/newfoo/g</code></p>
+<h3 id="highlithing">Highlithing</h3>
+<p>Retirer le surlignage : <code>:noh</code></p>
+<h3 id="grep">Grep</h3>
+<p>L'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.</p>
+<pre><code class="language-bash">grep infos fichiers.txt
+grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
+</code></pre>
+<h3 id="sed_1">Sed</h3>
+<p>Ajout d'élèment à une ligne certaine.</p>
+<pre><code class="language-bash">sed -i '20 a nouvel élèment' FICHIER
+</code></pre>
+<h4 id="remove-saut-de-ligne">Remove saut de ligne.</h4>
+<pre><code class="language-bash">sed '/^$/d'
+</code></pre>
+<pre><code class="language-bash">sed '/^:space:*$/d'
+</code></pre>
+<h3 id="vim_1">VIM</h3>
+<p>Dans vim : <code>:%s /foo/newfoo/g</code></p>
+<h3 id="tr">TR</h3>
+<p>Remove space :</p>
+<pre><code class="language-bash">tr -d '[:blank:]'
+</code></pre>
+<h3 id="awk">AWK</h3>
+<p>Awk command :</p>
+<ul>
+<li><code>grep</code> /word/ :</li>
+<li>
+<p>awk '/data/ {gsub("\"",""); print $2}'</p>
+</li>
+<li>
+<p><code>gsub</code> thing to remove:</p>
+</li>
+<li>awk '{gsub("\"",""); print $2}'</li>
+</ul>
+<h3 id="find">Find</h3>
+<p>Trouver tout fichier depuis l’endroit que vous souhaitez portant le nom de jacquet :</p>
+<pre><code class="language-bash">find $DEPUIS_QUEL_ENDROIT -name &quot;jacquet&quot;
+</code></pre>
+<p>Trouver dans le dossier httpd tout fichier plus vieux de 90 jours puis les supprimer :</p>
+<pre><code class="language-bash">find /var/log/httpd/ -type f -name &quot;*&quot; -mtime +90 -exec rm -f {} \;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Le « {} » est le résultat de la recherche du find !</td>
+</tr>
+</tbody>
+</table>
+<h2 id="storage">Storage</h2>
+<h3 id="compressed-files">Compressed files</h3>
+<p>Voici le détail des options :</p>
+<ul>
+<li>c : crée un archive.</li>
+<li>z : compresse l’archive avec gzip.</li>
+<li>v : mode verbeux, affiche la progression.</li>
+<li>f : permet de spécifier le nom du fichier d’archive.</li>
+</ul>
+<h4 id="compresser">Compresser</h4>
+<p>Compresser des fichiers :</p>
+<pre><code class="language-bash">tar -czvf nom-de-l-archive.tar.gz /chemin/vers/répertoire-ou-fichier
+</code></pre>
+<h4 id="decompresser">Décompresser</h4>
+<p>Pour décompresser le rar avec son passwd :</p>
+<pre><code class="language-bash">rar x -hP{MOT DE PASSE} {FICHIER.RAR}
+rar x -hPTEST test2.rar
+</code></pre>
+<h3 id="dd">DD</h3>
+<p>dd nécessite de droits super utilisateur :</p>
+<pre><code class="language-bash">sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk &amp;&amp; sync
+</code></pre>
+<h3 id="memory">Memory</h3>
+<h4 id="oracle-cloud-infrastructure">Oracle cloud infrastructure</h4>
+<pre><code class="language-bash">sync &amp;&amp; echo 3 &gt; /proc/sys/vm/drop_caches
+</code></pre>
+<h4 id="ram">RAM</h4>
+<p>List detailes :</p>
+<pre><code class="language-bash">ps axo rss, comm,pid,command | cat
+</code></pre>
+<h3 id="lvm-logical-volume-manager">LVM - Logical Volume Manager</h3>
+<h4 id="extend-partition">Extend partition</h4>
+<pre><code class="language-bash">fdisk [/dev/sdX](file:///home/sboistel/Documents/Cliford/Zbook/dev/sdX)
+</code></pre>
+<pre><code class="language-bash">echo 1 &gt; /sys/block/sdX/device/rescan
+</code></pre>
+<pre><code class="language-bash">pvresize /dev/sdX2
+</code></pre>
+<h4 id="make-fs">Make FS</h4>
+<pre><code class="language-bash">mkfs.xfs -d su=64k,sw=4 /dev/mapper/
+</code></pre>
+<h4 id="scan-disk">Scan Disk</h4>
+<p>Rescan disk</p>
+<pre><code class="language-bash">echo 1 &gt; /sys/class/scsi_disk/1\[:TAB:]/device/rescan
+</code></pre>
+<h4 id="create-1-file-heavy-as-1g">Create 1 file heavy as 1G</h4>
+<pre><code class="language-bash">dd if=/dev/urandom of=tempfile bs=1M count=1024
+</code></pre>
+<h4 id="extend-volumes">Extend volumes</h4>
+<pre><code class="language-bash">lvextend -L+&lt;&lt;&gt;&gt;G /dev/mapper/VOLUME
+</code></pre>
+<h4 id="apply-modifications">Apply modifications</h4>
+<pre><code class="language-bash">resize2fs /dev/mapper/VOLUME
+</code></pre>
+<h4 id="reducing-an-lvm2-swap-logical-volume">Reducing an LVM2 Swap Logical Volume</h4>
+<p>Disable swapping for the associated logical volume:</p>
+<pre><code class="language-bash">swapoff -v /dev/VolGroup00/LogVol01
+</code></pre>
+<p>Reduce the LVM2 logical volume by 512 MB:</p>
+<pre><code class="language-bash">lvreduce /dev/VolGroup00/LogVol01 -L -512M
+</code></pre>
+<p>Format the new swap space:</p>
+<pre><code class="language-bash">mkswap /dev/VolGroup00/LogVol01
+</code></pre>
+<p>Activate swap on the logical volume:</p>
+<pre><code class="language-bash">swapon -v /dev/VolGroup00/LogVol01
+</code></pre>
+<p>To test if the swap logical volume was successfully reduced, inspect active swap space:</p>
+<pre><code class="language-bash">cat /proc/swaps
+</code></pre>
+<h2 id="analyse">Analyse</h2>
+<h3 id="sar">SAR</h3>
+<p>On trouvera les fichier de log de l'outil <strong>sysstat</strong> dans : <code>/var/log/sysstat/</code>
+Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.</p>
+<p>Liste des paramètres :</p>
+<ul>
+<li>S : swap</li>
+<li>r : RAM</li>
+<li>R : Caches</li>
+<li>u : Utilisateur</li>
+</ul>
+<h3 id="connection">Connection</h3>
+<h4 id="user">User</h4>
+<p>Check last user connection :</p>
+<pre><code class="language-bash">last -15 -aFw
+</code></pre>
+<p>For DEB packages only :</p>
+<pre><code class="language-bash">cat /var/log/auth.log
+</code></pre>
+<h2 id="desktop-environement">Desktop Environement</h2>
+<p>Here are somes Desktop Environement tips &amp; tricks</p>
+<h3 id="gnome">Gnome</h3>
+<h4 id="ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</h4>
+<p>Ajouter un fichier .desktop dans /usr/share/appliations/MONAPPLI.desktop :</p>
+<pre><code class="language-bash">[Desktop Entry]
+Name=MonAppli
+Comment=Descritpion de l'appli
+Exec=MonAppli.sh %U
+Icon=/usr/share/icons/monappli.svg
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Network;Application
+</code></pre>
+<h4 id="modifier-une-application-existante">Modifier une application éxistante</h4>
+<p>Trouver le fichier de l'application choisie, ici <code>VirtualBox</code>
+Un soucis connu sur Gnome et virtualbox est que l'interface soit broken. On vient alors corrigé ceci en  changeant le style de celui-ci via la commande :</p>
+<pre><code class="language-bash">VirtualBox -style Adwaita
+</code></pre>
+<p>On vient alors modifier le fichier <code>/usr/share/applications/virtualbox.desktop</code>
+On remplace la ligne 10 <code>Exec=VirtualBox %U</code> par <code>Exec=VirtualBox -style Adwaita</code>.</p>
+<h3 id="desktop-manager">Desktop Manager</h3>
+<h4 id="lightdm">Lightdm</h4>
+<h5 id="autologin">Autologin</h5>
+<p>Editer le fichier de configuration suivant : <code>/etc/lightdm/lightdm.conf</code>
+Compléter les informations attendues :</p>
+<pre><code class="language-BASH">autologin-user=jdoe
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Windows/account/" class="btn btn-neutral float-right" title="Account">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Windows/account/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
