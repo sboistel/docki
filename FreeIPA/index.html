@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>MySQL - Dockimentation</title>
+  <title>Free IPA - Dockimentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,8 +18,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "MySQL";
-    var mkdocs_page_input_path = "MySQL.md";
+    var mkdocs_page_name = "Free IPA";
+    var mkdocs_page_input_path = "FreeIPA.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -110,29 +110,55 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">BDD/BigData</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../Cloudera/">Cloudera</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Hadoop/">Hadoop</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Oracle/">Oracle</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">MySQL</a>
-    <ul class="current">
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../MySQL/">MySQL</a>
                     </li>
                     <li class="toctree-l1"><a class="" href="../db2.md">None</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">DevOPS</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../Ansible_Engine/">Ansible Engine</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Docker/">Docker</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../ELastiK/">Elasticsearch / Logstash / Kibana</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../FreeIPA/">Free IPA</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Free IPA</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#hostname">Hostname</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#firewall">Firewall</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#freeipa-servdns-packages">FreeIPA serv{dns} packages</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#freeipa-setup">FreeIPA setup</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#autau-create-home-directory">Autau create home directory</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#check-access">Check access</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#kerebros-token-admin">Kerebros token : admin</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1">1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2">2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3">3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4">4</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5">5</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6">6</a>
+    </li>
+    </ul>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Terraform/">Terraform</a>
                     </li>
@@ -170,11 +196,11 @@
     
       
         
-          <li>BDD/BigData &raquo;</li>
+          <li>DevOPS &raquo;</li>
         
       
     
-    <li>MySQL</li>
+    <li>Free IPA</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -186,13 +212,70 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="mysql">MySQL</h1>
-<p>Here are somes SQL tips &amp; tricks</p>
-<h1 id="format">Format</h1>
-<h2 id="pager">Pager</h2>
-<p>Set page print as infinit :</p>
-<pre><code class="language-SQL">pager less -SFIX;
+                <h1 id="free-ipa">Free IPA</h1>
+<h2 id="hostname">Hostname</h2>
+<blockquote>
+<p>echo "ldap{01,02}.home.test ldap{1,2}" &gt; /etc/hostname</p>
+</blockquote>
+<h2 id="firewall">Firewall</h2>
+<blockquote>
+<p>firewall-cmd --add-service=freeipa-ldap{,s} --permanent
+firewall-cmd --reload</p>
+</blockquote>
+<h2 id="freeipa-servdns-packages">FreeIPA serv{dns} packages</h2>
+<blockquote>
+<p>yum install ipa-server ipa-server-dns</p>
+</blockquote>
+<h2 id="freeipa-setup">FreeIPA setup</h2>
+<blockquote>
+<p>ipa-server-install</p>
+</blockquote>
+<p>ou</p>
+<pre><code class="language-bash">ipa-server-install -U -p user -a password --ip-address=ip -n fqdn -r FQDN --hostname=${hostname -f} --setup-dns --auto-reverse
 </code></pre>
+<h2 id="autau-create-home-directory">Autau create home directory</h2>
+<blockquote>
+<p>authconfig --enablemkhomedir --update</p>
+</blockquote>
+<h2 id="check-access">Check access</h2>
+<blockquote>
+<p>ipactl status</p>
+</blockquote>
+<h2 id="kerebros-token-admin">Kerebros token : admin</h2>
+<blockquote>
+<p>kinit admin
+klist</p>
+</blockquote>
+<h2 id="1">1</h2>
+<blockquote>
+<p>nmtui -&gt; hostname ldap0{1,2}.ipa.test</p>
+</blockquote>
+<h2 id="2">2</h2>
+<blockquote>
+<p>echo "$(hostname -I) $(hostname -f) ldap0{1,2}" &gt;&gt; /etc/hosts</p>
+</blockquote>
+<h2 id="3">3</h2>
+<blockquote>
+<p>firewall-cmd --add-service=freeipa-ldap{,s} --permanent
+firewall-cmd --reload</p>
+</blockquote>
+<h2 id="4">4</h2>
+<blockquote>
+<p>yum install freeipa-server ipa-server-dns</p>
+</blockquote>
+<h2 id="5">5</h2>
+<blockquote>
+<p>ipa-server-install</p>
+</blockquote>
+<h2 id="6">6</h2>
+<blockquote>
+<p>kinit admin
+ipa user-add
+ipa passwrd
+yum install ipa-server
+hostnamctl set-hostname freeipa.sboistel.lan
+ipa-server-install --setup-dns</p>
+</blockquote>
               
             </div>
           </div>
@@ -200,10 +283,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Ansible_Engine/" class="btn btn-neutral float-right" title="Ansible Engine">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../Terraform/" class="btn btn-neutral float-right" title="Terraform">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../Oracle/" class="btn btn-neutral" title="Oracle"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ELastiK/" class="btn btn-neutral" title="Elasticsearch / Logstash / Kibana"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -229,10 +312,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../Oracle/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ELastiK/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../Ansible_Engine/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../Terraform/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
