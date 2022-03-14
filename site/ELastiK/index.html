@@ -52,9 +52,9 @@
                 </ul>
                 <p class="caption"><span class="caption-text">Operating System</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../linux/">Linux</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../Linux/">Linux</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../windows/">Microsoft Windows</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../Windows/">Microsoft Windows</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Cloud</span></p>
@@ -101,6 +101,8 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Markdown/">Markdown</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Ngrok/">ngrok</a>
+                    </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Storage</span></p>
                 <ul>
@@ -117,7 +119,7 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../MySQL/">MySQL</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../db2/">IBM DB2</a>
+                    <li class="toctree-l1"><a class="" href="../db2.md">None</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">DevOPS</span></p>
@@ -128,7 +130,11 @@
                     </li>
                     <li class="toctree-l1 current"><a class="reference internal current" href="./">Elasticsearch / Logstash / Kibana</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#presentation">Présentation</a>
+    </li>
     </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../FreeIPA/">Free IPA</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../Terraform/">Terraform</a>
                     </li>
@@ -183,7 +189,41 @@
             <div class="section">
               
                 <h1 id="elasticsearch-logstash-kibana">Elasticsearch / Logstash / Kibana</h1>
-<h1 id="elasticsearch">Elasticsearch</h1>
+<h2 id="presentation">Présentation</h2>
+<p>Description de stack ELK
+Déploiement et savoir faire</p>
+<p>Mise en place de réccupération des métrics ?
+    -&gt; Audite</p>
+<h1 id="prerequis">Prerequis :</h1>
+<ul>
+<li>Centos 7</li>
+<li>4G RAM</li>
+<li>2 CPU</li>
+</ul>
+<p>https://www.elastic.co/guide/en/cloud-enterprise/2.1/ece-prereqs.html</p>
+<p>https://grokdebug.herokuapp.com/</p>
+<h6 id="_1"></h6>
+<blockquote>
+<p>/usr/share/elasticsearch/bin/elasticsearch-setup-passwords interactive</p>
+<p>curl -X PUT "localhost:9200/elk-001?pretty"</p>
+</blockquote>
+<h2 id="ssh-port-forward-list">SSH Port Forward list :</h2>
+<blockquote>
+<p>ssh -L 127.0.0.1:8080:local_ip:80 user@ip #centreon
+ssh -L 127.0.0.1:5601:local_ip:5601 user@ip #kibana
+ssh -L 127.0.0.1:9200:local_ip:9200 user@ip #elasticsearch</p>
+</blockquote>
+<h2 id="filebeat">FileBeat :</h2>
+<blockquote>
+<p>curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.11.1-x86_64.rpm
+rpm -vi filebeat-7.11.1-x86_64.rpm</p>
+</blockquote>
+<h2 id="metricbeat">MetricBeat :</h2>
+<blockquote>
+<p>curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.11.1-x86_64.rpm
+rpm -vi metricbeat-7.11.1-x86_64.rpm</p>
+</blockquote>
+<h2 id="elasticsearch">Elasticsearch</h2>
 <p>Elasticsearch is composed by :</p>
 <ul>
 <li>LOGSTASH</li>
@@ -191,12 +231,12 @@
 <li>X-PACK</li>
 <li>BEATS</li>
 </ul>
-<h1 id="logstash">LOGSTASH</h1>
+<h2 id="logstash">LOGSTASH</h2>
 <p>Logstash is an event processing pipeline</p>
-<h1 id="kibana">KIBANA</h1>
+<h2 id="kibana">KIBANA</h2>
 <p>Kibana is a monitoring analyse platforme which allow human to easly read elasticsearch datas
 We can call Kibana as the elasticsearch's dashboard</p>
-<h2 id="x-pack">X-PACK</h2>
+<h3 id="x-pack">X-PACK</h3>
 <p>Is a packe of features for Kibana</p>
 <ul>
 <li>Security</li>
@@ -209,7 +249,7 @@ We can call Kibana as the elasticsearch's dashboard</p>
 <li>Graph</li>
 <li>Elasticsearch SQL</li>
 </ul>
-<h1 id="beats">BEATS</h1>
+<h2 id="beats">BEATS</h2>
 <p>Beats farm data for logstash</p>
               
             </div>
@@ -218,7 +258,7 @@ We can call Kibana as the elasticsearch's dashboard</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../Terraform/" class="btn btn-neutral float-right" title="Terraform">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../FreeIPA/" class="btn btn-neutral float-right" title="Free IPA">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../Docker/" class="btn btn-neutral" title="Docker"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -250,7 +290,7 @@ We can call Kibana as the elasticsearch's dashboard</p>
       <span><a href="../Docker/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../Terraform/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../FreeIPA/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
