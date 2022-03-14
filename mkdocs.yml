@@ -1,4 +1,6 @@
 site_name: Dockimentation
+nav_style: dark
+navigation_depth: 1
 nav:
         - Home: README.md
 
@@ -39,7 +41,7 @@ nav:
                 - Hadoop.md
                 - Oracle.md
                 - MySQL.md
-                - db2.md
+                - DB2.md
         
         - DevOPS:
                 - Ansible_Engine.md
