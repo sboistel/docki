@@ -50,21 +50,8 @@
                     <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Linux</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Linux/Account/">Account</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Linux/Analyse/">Analyse</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Linux/Applications/">Applications</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Linux/Desktop_Environement/">Desktop Environement</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Linux/Storage/">Storage</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Linux/System/">System</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Linux/Tools_%26_Packages/">Tools & Packages</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../linux/">Linux</a>
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Windows</span></p>
@@ -230,6 +217,19 @@
 <h3 id="last-step">Last step</h3>
 <pre><code class="language-bash">vmkfstools -C vmfs6 -S USB-Datastore /dev/disks/mpx.vmhba32:C0:T0:L0:1
 </code></pre>
+<h2 id="license">License</h2>
+<h3 id="removing-license">Removing License</h3>
+<blockquote>
+<p>rm -r /etc/vmware/license.cfg</p>
+</blockquote>
+<h3 id="get-a-new-trial-license">Get a new trial license</h3>
+<blockquote>
+<p>cp /etc/vmware/.#license.cfg /etc/vmware/license.cfg</p>
+</blockquote>
+<h3 id="restarting-vpxa">Restarting VPXA</h3>
+<blockquote>
+<p>/etc/init.d/vpxa restart</p>
+</blockquote>
               
             </div>
           </div>
