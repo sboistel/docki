@@ -55,7 +55,6 @@ nav:
                 - Perl.md
                 - Python.md
 
-        - About: README.md
 theme: 
   name: readthedocs
   navigation_depth: 2
