@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="BOISTEL Samuel" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
     <title>Linux - Dockimentation</title>
     <link rel="stylesheet" href="../css/theme.css" />
@@ -55,14 +55,6 @@
     <li class="toctree-l2"><a class="reference internal" href="#key">Key</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#applications">Applications</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tools-packages">Tools &amp; Packages</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#storage">Storage</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#analyse">Analyse</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#desktop-environement">Desktop Environement</a>
     </li>
     </ul>
                   </li>
@@ -156,7 +148,7 @@
                   </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="" href="../about.md">About</a>
+                <li class="toctree-l1"><a class="reference internal" href="..">About</a>
                 </li>
               </ul>
       </div>
@@ -401,6 +393,37 @@ EndSection
 <pre><code class="language-bash">xinput disable $(xinput list | awk '/Touchscreen/ {print $5}' | cut -d &quot;=&quot; -f2)
 </code></pre>
 <h4 id="blank-screen">Blank Screen</h4>
+<p>logind est le composant en charge de la gestion des sessions sur les systèmes avec systemd.</p>
+<p>Il détermine le comportement d’un ordinateur portable lorsque l’on ferme l’écran (Lid Switch) via la variable <code>HandleLidSwitch</code> de son fichier de configuration :  <code>/etc/systemd/logind.conf</code> .</p>
+<p>Sa valeur par défaut est suspend (mise en veille).</p>
+<p>Les valeurs acceptées pour la variable HandleLidSwitch:</p>
+<ul>
+<li>ignore (ne fait rien)</li>
+<li>poweroff (arrêt)</li>
+<li>reboot (redémarrage)</li>
+<li>halt (arrêt)</li>
+<li>kexec</li>
+<li>suspend (veille, le comportement par défaut)</li>
+<li>hibernate (hibernation)</li>
+<li>hybrid-sleep (hibernation avec conservation des données en mémoire)</li>
+<li>lock (Verrouille de la session)</li>
+</ul>
+<p>Donc si je souhaite que mon portable reste actif lorsque l’écran est fermé:</p>
+<blockquote>
+<p>vim  /etc/systemd/logind.conf</p>
+</blockquote>
+<p>Puis on modifie le paramètre HandleLidSwitch de cette façon:</p>
+<blockquote>
+<h1 id="handlelidswitchsuspend">HandleLidSwitch=suspend</h1>
+</blockquote>
+<p>devient</p>
+<blockquote>
+<p>HandleLidSwitch=ignore</p>
+</blockquote>
+<p>Et on termine par un petit redémarrage:</p>
+<blockquote>
+<p>reboot</p>
+</blockquote>
 <p>Retirer la mise en veille lors de la fermeture du capot de l’ordinateur portable.</p>
 <pre><code class="language-bash">   setterm-powersave off -blank 0
    systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
