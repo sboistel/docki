@@ -1,6 +1,6 @@
 site_name: Dockimentation
 site_description: Docki wiki github pages
-author: BOISTEL Samuel
+site_author: BOISTEL Samuel
 
 nav:
         - Home: README.md
@@ -55,7 +55,7 @@ nav:
                 - Perl.md
                 - Python.md
 
-        - About: about.md
+        - About: README.md
 theme: 
   name: readthedocs
   navigation_depth: 2
