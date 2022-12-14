@@ -1,10 +1,6 @@
-# Linux
+# System
 
-wesh
-
-## System
-
-### Exit codes
+## Exit codes
 
 * Contient le nom du script tel qu'il a été invoqué: 
 	* > $0
@@ -17,22 +13,20 @@ wesh
 * Le code retour de la dernière commande::
 	* > $?
 * Le PID su shell qui exécute le script:
-	* > $$
+	* > `$$`
 * Le PID du dernier processus lancé en arrière-plan:
-	* > $!
+	* > `$!`
 
+# Emergency
 
-### Emergency
-
-#### Grub
+## Grub
 
 1. Reach the grub and chose the first line
 2. Use 'e' to edit
 3. Go to the "vmlinux" line to add '**rd.break'** at the end (This change is temporary)
 4. Press 'CTRL+x' to exit an run it
 
-
-#### Rescure
+## Rescure
 This prompt spawn:
 > switch_root:/#.
 
@@ -51,9 +45,9 @@ You are now able to reset root password, or edit linux things.
 
 Type 'exit' then 'reboot'
 
-### Network
+# Network
 
-#### Base on APT/DEB
+## Base on APT/DEB
 File : `/etc/network/interfaces` :
 
 ```bash
@@ -73,7 +67,7 @@ gateway 10.0.0.0
 dns-nameservers 10.0.0.1 8.8.8.8
 ```
 
-### Process
+# Process
 Lister tout les processus :
 
 * a : Ayant un terminal de contrôle
@@ -85,14 +79,14 @@ Lister tout les processus :
 * f : Full -> Avoir le nom complet du processus
 
 
-### CPU
+## CPU
 Lister le nombre de processeur :
 
 ```bash
 nproc
 ```
 
-#### Load
+## Load
 Check the load average fixed by the system:
 > cat /proc/loadavg
 
@@ -114,18 +108,18 @@ You can folow your CPU in real time by this command:
 vmstat -w 1
 ```
 
-### Service
+# Service
 
-#### Systemctl
+## Systemctl
 How to list enabled unit-file.
 
 ```bash
 systemctl list-unit-files | grep enabled
 ```
 
-### Time/Date
+# Time/Date
 
-#### Clock
+## Clock
 How to mod sys clock ?
 
 ```bash
@@ -137,7 +131,7 @@ timedatectl set-timezone Europe/Paris
 hwclock -s
 ```
 
-## Account
+# Account
 Created Tuesday 25 January 2022
 
 List account :
@@ -145,7 +139,7 @@ List account :
 find /home -maxdepth 1 -type d -group users | cut -d '/' -f3
 ```
 
-### Useradd
+## Useradd
 How to adding user ?
 
 ```bash
@@ -153,7 +147,7 @@ useradd -s /sbin/nologin -G $GRP
 useradd -m -G wheel -s /bin/bash $account
 ```
 
-#### Lock / Unlock
+## Lock / Unlock
 Check password status :
 ```bash
 passwd -S $USER
@@ -166,19 +160,19 @@ Status list :
 * PS: Password set
 
 
-### Unlock
+## Unlock
 Use the `-u` to unlock account
 ```bash
 passwd -u $USER
 ```
 
-### Lock
+## Lock
 Use the `-L` to lock account
 ```bash
 passwd -L $USER
 ```
 
-### Time life password
+## Time life password
 
 Show the account password information
 ```bash
@@ -190,7 +184,7 @@ Set minimum day
 chage -m ${NOMBER OF DAY} ${USER}
 ```
 
-### Sudoers
+# Sudoers
 Autorisation de l’utilisateur max de supprimer dans le dossier. 
 
 ```bash
@@ -203,21 +197,20 @@ Autorisation pour l’utilisateur matry_mc_fly de lire les fichiers dans le doss
 marty_mc_fly ALL=NOPASSWD:/usr/bin/cat /var/log/mariadb/*
 ```
 
-## Key
+# Key
 
-### PEM Key
+## PEM Key
 Create pem key :
 
 ```bash
 Puttygen mykey.ppk -O private-openssh -o mykey.pem
 ```
 
-## Applications
-Created Wednesday 26 January 2022
+# Applications
 
-### Screen
+## Screen
 
-#### Touchscreen
+### Touchscreen
 How to disable touchscreen at start ?
 Create a new file as `/etc/X11/xorg.conf.d/01-no_touchscreen.conf` as 664 :
 
@@ -238,7 +231,7 @@ Using command line :
 xinput disable $(xinput list | awk '/Touchscreen/ {print $5}' | cut -d "=" -f2)
 ```
 
-#### Blank Screen
+## Blank Screen
 
 logind est le composant en charge de la gestion des sessions sur les systèmes avec systemd.
 
@@ -281,7 +274,7 @@ Retirer la mise en veille lors de la fermeture du capot de l’ordinateur portab
    systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
 
-### lamp
+## lamp
 Apache check config :
 
 ```bash
@@ -294,7 +287,7 @@ Apache restart :
 /opt/lampp/bin/httpd -k restart
 ```
 
-### Postfix
+## Postfix
 Basic postfix configuration `/etc/postfix/main.cf` :
 
 ```bash
@@ -304,22 +297,22 @@ smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options = noanonymous
 ```
 
-### Logrotate
+## Logrotate
 
-#### Check
+### Check
 
 ```bash
 logrotate -d /etc/logrotate.d/httpd
 ```
 
-#### Apply
+### Apply
 ```bash
 logrotate -vf /etc/logrotate.d/httpd
 ```
 
-## Tools & Packages
+# Tools & Packages
 
-### RPM
+## RPM
 
 How to force installation without depedency.
 
@@ -327,9 +320,9 @@ How to force installation without depedency.
 rpm -Uvh 
 ```
 
-### Debian
+## Debian
 
-#### Repository
+### Repository
 
 bullseye 11 sources.list
 
@@ -344,7 +337,7 @@ deb http://deb.debian.org/debian bullseye-updates main
 deb-src http://deb.debian.org/debian bullseye-updates main
 ```
 
-#### bpytop
+## bpytop
 
 How to isntall bpytop based on APT :
 
@@ -353,21 +346,6 @@ apt install python3-pip
 pip3 install psutil
 pip3 install bpytop
 ```
-
-### VIM
-
-Début ou fin de fichier :
-
-* Go to the top : `gg`
-* Go to the buttom : `G`
-* Descendre à la ligne 34 : `34 G`
-
-
-Début ou fin de ligne :
-
-* Fin de la ligne où se trouve le dernier carractère : `$` 
-* Début de la ligne où se trouve le premier carractère : `0` *(shift+à)*
-
 
 ### Keymap
 
@@ -386,15 +364,15 @@ Liste:
 
 Répeter la dernière actions effectuée : `.`
 
-### Sed
+## Sed
 
 Faire du sed : ``:%s /foo/newfoo/g``
 
-### Highlithing
+## Highlithing
 
 Retirer le surlignage : ``:noh``
 
-### Grep
+## Grep
 
 L'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.
 
@@ -403,7 +381,7 @@ grep infos fichiers.txt
 grep -A $NUMBER_OF_LINE "INFOS QU'ON CHERCHE" -B $NUMBER_OF_LINE
 ```
 
-### Sed
+## Sed
 
 Ajout d'élèment à une ligne certaine.
 ```bash
@@ -420,11 +398,23 @@ sed '/^$/d'
 sed '/^:space:*$/d'
 ```
 
-### VIM
+## VIM
+
+Début ou fin de fichier :
+
+* Go to the top : `gg`
+* Go to the buttom : `G`
+* Descendre à la ligne 34 : `34 G`
+
+
+Début ou fin de ligne :
+
+* Fin de la ligne où se trouve le dernier carractère : `$` 
+* Début de la ligne où se trouve le premier carractère : `0` *(shift+à)*
 
 Dans vim : `:%s /foo/newfoo/g`
 
-### TR
+## TR
 
 Remove space :
 
@@ -432,7 +422,7 @@ Remove space :
 tr -d '[:blank:]'
 ```
 
-### AWK
+## AWK
 
 Awk command :
 
@@ -444,7 +434,7 @@ Awk command :
 * awk '{gsub("\"",""); print $2}'
 
 
-### Find
+## Find
 
 Trouver tout fichier depuis l’endroit que vous souhaitez portant le nom de jacquet :
 
@@ -459,13 +449,13 @@ find /var/log/httpd/ -type f -name "*" -mtime +90 -exec rm -f {} \;
 ```
 
 
-| Note                                                |
-| - |
+| Note |
+|  - |
 | Le « {} » est le résultat de la recherche du find ! |
 
-## Storage
+# Storage
 
-### Compressed files
+## Compressed files
 Voici le détail des options :
 
 * c : crée un archive.
@@ -474,14 +464,14 @@ Voici le détail des options :
 * f : permet de spécifier le nom du fichier d’archive.
 
 
-#### Compresser
+### Compresser
 Compresser des fichiers :
 
 ```bash
 tar -czvf nom-de-l-archive.tar.gz /chemin/vers/répertoire-ou-fichier
 ```
 
-#### Décompresser
+### Décompresser
 Pour décompresser le rar avec son passwd :
 
 ```bash
@@ -489,30 +479,30 @@ rar x -hP{MOT DE PASSE} {FICHIER.RAR}
 rar x -hPTEST test2.rar
 ```
 
-### DD
+## DD
 dd nécessite de droits super utilisateur :
 
 ```bash
 sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk && sync
 ```
 
-### Memory
+## Memory
 
 #### Oracle cloud infrastructure
 ```bash
 sync && echo 3 > /proc/sys/vm/drop_caches
 ```
 
-#### RAM
+### RAM
 List detailes :
 
 ```bash
 ps axo rss, comm,pid,command | cat
 ```
 
-### LVM - Logical Volume Manager
+## LVM - Logical Volume Manager
 
-#### Extend partition
+### Extend partition
 ```bash
 fdisk [/dev/sdX](file:///home/sboistel/Documents/Cliford/Zbook/dev/sdX)
 ```
@@ -526,33 +516,33 @@ pvresize /dev/sdX2
 ```
 
 
-#### Make FS
+## Make FS
 ```bash
 mkfs.xfs -d su=64k,sw=4 /dev/mapper/
 ```
 
-#### Scan Disk
+## Scan Disk
 Rescan disk
 ```bash
 echo 1 > /sys/class/scsi_disk/1\[:TAB:]/device/rescan
 ```
 
-#### Create 1 file heavy as 1G
+### Create 1 file heavy as 1G
 ```bash
 dd if=/dev/urandom of=tempfile bs=1M count=1024
 ```
 
-#### Extend volumes
+### Extend volumes
 ```bash
 lvextend -L+<<>>G /dev/mapper/VOLUME
 ```
 
-#### Apply modifications
+### Apply modifications
 ```bash
 resize2fs /dev/mapper/VOLUME
 ```
 
-#### Reducing an LVM2 Swap Logical Volume
+### Reducing an LVM2 Swap Logical Volume
 Disable swapping for the associated logical volume:
 ```bash
 swapoff -v /dev/VolGroup00/LogVol01
@@ -578,8 +568,8 @@ To test if the swap logical volume was successfully reduced, inspect active swap
 cat /proc/swaps
 ```
 
-## Analyse
-### SAR
+# Analyse
+## SAR
 On trouvera les fichier de log de l'outil **sysstat** dans : ``/var/log/sysstat/``
 Chacun des fichier dans ce dossier sera normé par ``sa$JOUR_DU_MOIS``.
 
@@ -591,9 +581,9 @@ Liste des paramètres :
 * u : Utilisateur
 
 
-### Connection
+## Connection
 
-#### User
+### User
 Check last user connection :
 
 ```bash
@@ -606,10 +596,10 @@ For DEB packages only :
 cat /var/log/auth.log
 ```
 
-## Desktop Environement
+# Desktop Environement
 Here are somes Desktop Environement tips & tricks
 
-### Gnome
+## Gnome
 
 #### Ajouter une application dans gnom shell
 Ajouter un fichier .desktop dans /usr/share/appliations/MONAPPLI.desktop :
@@ -637,14 +627,61 @@ VirtualBox -style Adwaita
 On vient alors modifier le fichier `/usr/share/applications/virtualbox.desktop`
 On remplace la ligne 10 `Exec=VirtualBox %U` par `Exec=VirtualBox -style Adwaita`.
 
-### Desktop Manager
+# Desktop Manager
 
-#### Lightdm
+## Lightdm
 
-##### Autologin
+### Autologin
 Editer le fichier de configuration suivant : ``/etc/lightdm/lightdm.conf``
 Compléter les informations attendues :
 
 ```BASH
 autologin-user=jdoe
 ```
+
+# cron
+
+A CRON expression is simply a string consisting of six fields that each define a specific unit of time. 
+
+They are written in the following format:
+
+```
+{second} {minute} {hour} {day} {month} {day of the week}
+```
+
+## Values
+
+The following values are allowed within each date/time unit placeholder.
+
+| Field | Allowed Values | Description |
+|---|---|---|
+| {second} | 0-59 | Trigger every {second} second(s) |
+| {minute} | 0-59 | Trigger every {minute} minute(s) | 
+| {hour} | 0-23 | Trigger every {hour} hour(s) |
+| {day} | 1-31 | Trigger every {day} day(s) of month |
+| {month} | 1-12 | Trigger every {month} month(s) |
+| {day of week} | 0-6 | MON-SUN Trigger on specific {day of week} |
+
+## Special Characters
+
+Additionally you can also use the following special characters to build more advanced expressions:
+
+| Special Character | Description |
+|---|---|
+| `*` | Trigger on tick of every time unit |
+| `,` | List separator |
+|`–` | Specifies a range |
+| `/` | Defines an increment |
+
+---
+## Examples
+
+`0 * * * * *` - Executes every minute
+`0 0 * * * *` - Executes every hour
+`0 0 0 * * *` - Executes every day
+`0 0 0 0 * *` - Executes every month
+`0 0 0 1 1 *` - Executes on first day of Jan each year
+`30 20 * * SAT` - Executes at 08:30pm every Saturday
+`30 20 * * 6` - Executes at 08:30pm every Saturday
+`0 */5 * * * *` - Executes every five minutes
+`0 0 8-10/1 * * *` - Executes every hour between 8am and 10am
