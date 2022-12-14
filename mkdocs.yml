@@ -5,9 +5,12 @@ site_author: BOISTEL Samuel
 nav:
         - Home: README.md
 
-        - Operating System: 
-                - Linux.md
+        - Linux: Linux
+
+        - Windows:
                 - Windows.md
+                - Windows-Terminal.md
+                - wsl.md
         
         - Cloud:
                 - Cloud_Infrastructure.md
@@ -15,6 +18,9 @@ nav:
                 - Azure_Cloud.md
                 - Google_Cloud_Platforme.md
                 - Oracle_Cloud_Infrastructure.md
+
+        - Networking:
+                - CertManager.md
         
         - Hypervisor:
                 - Monitoring.md
@@ -43,6 +49,7 @@ nav:
                 - Oracle.md
                 - MySQL.md
                 - DB2.md
+                - MariaDB.md
         
         - DevOPS:
                 - Ansible_Engine.md
@@ -56,5 +63,5 @@ nav:
                 - Python.md
 
 theme: 
-  name: readthedocs
+  name: material
   navigation_depth: 2
