@@ -7,7 +7,7 @@ Déploiement et savoir faire
 Mise en place de réccupération des métrics ?
 	-> Audite
 
-# Prerequis :
+## Prerequis :
  - Centos 7
  - 4G RAM
  - 2 CPU
@@ -16,7 +16,7 @@ Mise en place de réccupération des métrics ?
 
  https://grokdebug.herokuapp.com/
 
-#########################################################
+---
 
 > /usr/share/elasticsearch/bin/elasticsearch-setup-passwords interactive
 

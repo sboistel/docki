@@ -10,19 +10,19 @@ Il aura plusieurs notions :
 - Gestion des mots de passe (secrets)
 - RBAC (Role base acces controler) "IAM"
 
-Lexique
-=======
+## Lexique
+
 
 * Kubelet : Deamond s'éxécutant dans les workers
 
 
-Cluster
-=======
+## Cluster
+
 Un cluster c'est quoi ?
 Un ensemble de noeud de type linux ou windows
 
-Pods
-----
+### Pods
+
 Un cluster éxecute des pods, mais de quoi s'agit-il ?
 Il s'agit d'un ensemble de conteneurs se partageant les ressources.
 
@@ -44,12 +44,11 @@ Réccupérer les élèments d'un pod :
 kubectl describe po/POD_NAME
 ```
 
-Service
-=======
+## Service
+
 Les service exposent les ports d'un pod
 
-Nodes
-=====
+## Nodes
 
 Deux types de noeud :
 Que font les Master ?

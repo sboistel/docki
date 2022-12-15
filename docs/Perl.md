@@ -1,21 +1,21 @@
 # Perl
+
 Perl tips & tricks
 
-Variable
-========
+## Variable
 
-Scalaire
---------
+### Scalaire
+
 Contenant une seule valeure :
 > $
 
-Liste
------
+## Liste
+
 Example : ('Toto', 'Titi', 'Tata')
 > @
 
-Hashs
------
+## Hashs
+
 Le type de la variable hashs 
 > %
 
@@ -29,39 +29,38 @@ Python => 'Génial'
 print ($liste{Python});
 ```
 
-Fonctions
-=========
+## Fonctions
 
-split
------
+### split
+
 La fonction split permet de retirer un élèment séparateur :
 > my @liste = split ' ', $liste_d_element
 
-join
-====
+## join
+
 La fonction join permet d'insérer un ou plusieurs élèment séparateur dans une liste d'élèment :
 > my @liste = join '; ', @liste_d_element
 
-Pragma
-------
+### Pragma
+
 Utiliser les pragma pour sécuriser son script.
 
-strict
-======
+## strict
+
 Erreur de syntaxe, avoir un code propre
 > use strict;
 
-warning
-=======
+## warning
+
 Avertissement d'erreur de syntaxe 
 > use warning;
 
-Sucre de syntaxe
-================
+## Sucre de syntaxe
+
 Afin d'éviter d'avoir un code illisible avec nos "" ou '', deux méthodes sont applicables dans chacun des cas.
 
-Guillemet
----------
+### Guillemet
+
 Pour substituer "" :
 > qq/Chaine de carractère/
 
@@ -69,13 +68,13 @@ Pour substituer "" :
 Pour substituer '' :
 > q/Chaine de carractère/
 
-Liste
------
+### Liste
+
 Pour substituer une liste (ex : ('Toto', 'Titi', 'Tata')) :
 > qw/Toto Titi Tata/
 
-Here string
------------
+### Here string
+
 OEF signifiant fin de ligne permet d'englober un parragraphe de données :
 
 ```PERL
@@ -86,11 +85,11 @@ ligne 2 de données
 EOF
 ```
 
-Vérifications
-=============
+## Vérifications
 
-Prédica 'if'
-------------
+
+### Prédica 'if'
+
 Vérification de l'éxistance d'un élèment.
 
 ```PERL
@@ -118,11 +117,11 @@ print "Haskell n'est pas défini !\n";
 }
 ```
 
-Rendre son script intératif
-===========================
+## Rendre son script intératif
 
-Standard input
---------------
+
+### Standard input
+
 Chop retire le dernier carractère
 Chomp retire le dernier carractère seulement si celui-ci est un '\n'
 Noté ``STDIN``, il sert à poser une question à l'utilisateur:
@@ -146,11 +145,10 @@ print ("$response est $langages{$response} !\n")
 if exists $langages{$response} or die "$response n'éxiste pas !\n";
 ```
 
-Boucles
-=======
+## Boucles
 
-For || Foreach
---------------
+### For || Foreach
+
 For ou Foreach on la même signification
 
 ```PERL
@@ -168,8 +166,8 @@ C      => 'bof,
 print "Element : $_\n" for (sort keys %langages);
 ```
 
-while
------
+### while
+
 Tant que quoi ?
 
 ```PERL
@@ -180,8 +178,8 @@ print "coucou $_";
 }
 ```
 
-pseaudo case
-------------
+### pseaudo case
+
 La fonction case n'éxiste pas mais un bricolage est possible :
 
 ```PERL
@@ -195,11 +193,9 @@ $_ == 3 && print "C'est trois\n"
 }
 ```
 
-Fichier
-=======
+## Fichier
 
-Ouvrir un Fichier
------------------
+### Ouvrir un Fichier
 
 'FILE' en majuscule -> Convention de Perl
 - '<' = read only
@@ -213,14 +209,11 @@ Ouvrir un fichier avec :
 open FILE, '<'
 
 
-Librairies
-==========
+## Librairies
 
-REST
-====
+### REST
 
-CLIENT
-------
+### CLIENT
 
 Comment afficher le token géneré :
 

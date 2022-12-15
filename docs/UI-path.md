@@ -18,18 +18,16 @@ Deux type d'automation :
  - Attended 
  - Unattended
 
-IDE
----
+## IDE
+
 
 UiPath Studio Pro
 
-Language
---------
+## Language
 
 List of project language :
 
- - VB
- - VB.Net
- - C++
- - C#w
-
+* VB
+* VB.Net
+* C++
+* C#w

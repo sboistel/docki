@@ -1,24 +1,24 @@
 # Centreon Central
 Here are somes Centreon tips & tricks
 
-Analyse
-=======
+## Analyse
+
 Vérifier les connexions tentées :
 
 ```BASH
 /var/log/centreon/login.log
 ```
 
-Poller
-======
+## Poller
+
 List storage from poller :
 
 ```BASH
 /usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl --plugin=os::linux::snmp::plugin --mode=list-storages --hostname=$HOST | grep /
 ```
 
-Stats
------
+### Stats
+
 Voir les stats du poller :
 
 ```BASH
@@ -34,12 +34,12 @@ Voir les stats du poller :
 Last update yellow ?
 Lors d'une migration de poller, s'assurer que l'adresse du central soit bien mensionnée dans le broker du poller.
 
-Commandes
-=========
+## Commandes
+
 Liste de commandes centreons à garder en tête
 
-Plugin
-------
+## Plugin
+
 Commande du plugin centreon :
 
 ```BASH

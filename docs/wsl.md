@@ -1,4 +1,4 @@
-# WSL Cheat-Sheet
+# WSL 
 ## Backup and Restore WSL
 
 ### Listing Running Distros

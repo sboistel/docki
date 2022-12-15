@@ -1,21 +1,19 @@
 # Amazon Web Services
 Here are somes aws tips & tricks
 
-Léxique :
----------
+## Léxique :
  - AMI : Amazon Machine Images (template)
 
 *in progress..*
 
-DevOps Implementing Development Processes
-=========================================
+## DevOps Implementing Development Processes
 
-What is devOPS ?
-----------------
+
+## What is devOPS ?
+
 "DevOps is the unions of people, process and products to enable continuous of value to end users." -*Donovan Brown*
 
-Products suite
---------------
+## Products suite
 
 Azure DevOps is a suite of products that allows any organization to do better DevOps :
 

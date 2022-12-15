@@ -29,8 +29,8 @@ As instance user
 
 db2cfimp export.log
 
-# Check directories
-db2 
+## Check directories
+Run db2 cmd as user sourced profile
 
 ```
 list db directory

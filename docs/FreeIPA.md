@@ -29,23 +29,26 @@ ipa-server-install -U -p user -a password --ip-address=ip -n fqdn -r FQDN --host
 > kinit admin
 > klist
 
-## 1
+---
+## Steps
+
+### 1
 > nmtui -> hostname ldap0{1,2}.ipa.test
 
-## 2
+### 2
 > echo "$(hostname -I) $(hostname -f) ldap0{1,2}" >> /etc/hosts
 
-## 3
+### 3
 > firewall-cmd --add-service=freeipa-ldap{,s} --permanent
 > firewall-cmd --reload
 
-## 4
+### 4
 > yum install freeipa-server ipa-server-dns
 
-## 5
+###5
 > ipa-server-install
 
-## 6 
+### 6 
 > kinit admin
 > ipa user-add
 > ipa passwrd

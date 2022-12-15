@@ -1,18 +1,17 @@
 # VMware
 Created Tuesday 25 January 2022
 
-Rescan Storage
-==============
+## Rescan Storage
+
 How to rescan storage ?
 
 ![](./img/vmware/pasted_image.png)
 
-USB Datastore
-=============
+## USB Datastore
+
 How to add an USB hard drive as Datastore ?
 
-Disabling usb arbitrator service
---------------------------------
+### Disabling usb arbitrator service
 
 ### Stopping :
 
@@ -26,8 +25,8 @@ Disabling usb arbitrator service
 chkconfig usbarbitrator off
 ```
 
-Labeling
---------
+### Labeling
+
 
 ```bash
 partedUtil mklabel /dev/disks/mpx.vmhba32:C0:T0:L0 gpt

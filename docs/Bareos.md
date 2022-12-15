@@ -1,6 +1,7 @@
 # Bareos
-Job
-===
+
+## Job
+
 How do job command works ?
 
 | Mean                                | Command                                |
@@ -19,10 +20,20 @@ How do job command works ?
 | Statistics about last jobs  | list jobtotal       |
 | Which files were backed up? | list files jobid=xx |
 
+### Level list
+- Base
+- Catalog
+- Data
+- Differential
+- DiskToCatalog
+- Full
+- Incremental
+- InitCatalog
+- Since
+- VirtualFull
+- VolumeToCatalog
 
-Status
-------
-Table view of jobs status :
+### Status table view
 
 | Status | means                                     |
 |--------|-------------------------------------------|
@@ -46,21 +57,4 @@ Table view of jobs status :
 | t      | Waiting for Start Time                    |
 | p      | Waiting for higher priority job to finish |
 | W      | Terminated with warnings                  |
-
-
-Level
------
-
-### Level list of jobs
-- Base
-- Catalog
-- Data
-- Differential
-- DiskToCatalog
-- Full
-- Incremental
-- InitCatalog
-- Since
-- VirtualFull
-- VolumeToCatalog
 

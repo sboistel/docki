@@ -1,6 +1,5 @@
 # SMTP
 
-
 ## Troubleshooting
 
 ### TLS

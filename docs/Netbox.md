@@ -10,10 +10,9 @@ NetBox is an infrastructure resource modeling (IRM) application designed to empo
 - Secrets - Encrypted storage of sensitive credentials
 
 
-How to install netbox
-=====================
+## How to install netbox
 
-Requieste
----------
-yum install git
+### Requieste
+
+> yum install git
 

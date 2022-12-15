@@ -1,13 +1,15 @@
 # MySQL
+
 Here are somes SQL tips & tricks
 
-Format
-======
+## Format
 
-Pager
------
+
+### Pager
+
 Set page print as infinit :
-```SQL
+
+```sql
 pager less -SFIX;
 ```
 

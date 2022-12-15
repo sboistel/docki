@@ -1,14 +1,14 @@
 # Terraform
 Here are somes tf tips & tricks
 
-Syntaxe
-=======
+## Syntaxe
+
 Travaillons sur un fichier ``main.tf``
 
-Exemple :
----------
+## Exemple :
 
-```BASH
+
+```bash
 output "VAR" {
 value = "Hello World! "
 }
@@ -16,30 +16,29 @@ value = "Hello World! "
 
 #### Sortie :
 
-```BASH
+```bash
 Ouptus : 
 VAR = Hello World!
 ```
 
-tfstate
-=======
+## tfstate
+
 Le fichier **tfstate** permet de visualiser les actions entreprises (pareil à un fichier de log).
 On pourra externaliser (remote state) le fichier tfstate.
 
-Tester et appliquer
--------------------
+### Tester et appliquer
+
 
 ### Tester
 Tester les actions à entreprendre :
 
-```BASH
+```bash
 terraform plan
 ```
 
 ### Appliquer
 Appliquer les modifications souhaitée :
 
-```BASH
+```bash
 terraform apply
 ```
-

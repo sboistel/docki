@@ -1,110 +1,67 @@
 # Docker
-Here are somes containers tips & tricks
-
-Arguments
-=========
-List d'arguments :
-
-* P : Mapper les ports réseau du conteneur
-
-
-Containers
-==========
-Here are somes container tips & tricks
-
-Qu'est-ce que la conteneurisation ?
------------------------------------
-
-L'objectif de la conteneurisation est de faire en sorte qu'un ensemble logiciel cohérent puisse fonctionner au sein d'un conteneur.
-
-Pour qu'une application puisse tourner au sein d'un conteneur, elle doit être empaquetée, c'est à dire qu'on la met à l'intérieur d'un paquet (une image dans la terminologie des conteneurs) avec ses dépendances. 
-
-Il existe d'ailleurs des images officielles, sur le Hub Docker par exemple, permettant de faire tourner tout type de logiciel (MySQL, Java 8, wordpresse, etc).
-
-Type de système
-===============
-
-Il y a plusieurs type de système de conteneurisation.
-Dotcloud plus connu sous le nom de Docker sera de moins en moins utilisé car tant à le déprécier.
-
-On trouvera aussi :
-
-* CoreOS
-* Mesos
-* LXC
-* OpenVZ
-* Containerd
-* etc ...
-
-
-Docker
-======
 
 Lister les processus en cours :
 >    docker ps -a
 
-Images
-------
+### Images
 
 Chaque processus dépendera d'une image pareil à une iso + son appli pour une vm.
 Chercher une image :
 
-```BASH
+```bash
 docker search nginx
 ```
 
 Télécharger une image : 
 
-```BASH
+```bash
 docker pull nginx
 ```
 
 Lister les images téléchargées :
 
-```BASH
+```bash
 docker images
 ```
 
 ou
 
-```BASH
+```bash
 docker image ls
 ```
 
 Supprimer une image :
 
-```BASH
+```bash
 docker rmi nginx
 ```
 
 ⚠ Si une image est sur le disque mais nous est impossible de supprimer (on parlera d'une image souvent testé à l'installation de docker)
 Nous allons devoir forcer sa suppression :
 
-```BASH
+```bash
 docker rmi -f hello-world
 ```
 
 Voir l'historique de son image :
 
-```BASH
+```bash
 docker history sboistel/image:verison(1.1)
 ```
 
-Commit
-======
+## Commit
 
 Après avoir fait des changements sur une image, comment enregister tout ça ?
 
-```BASH
+```bash
 docker commit mycentos01 sboistel/mycentos:1.0
 ```
 
-DockerFile
-==========
+## DockerFile
 
-Créer un docker file : vim dockerfile
+Créer un docker file : `vim dockerfile`
 
-```YAML
+```yml
 FROM centos
 RPM yum install -y wget
 RPM yum install yum-utils
@@ -113,13 +70,13 @@ RPM yum install yum-utils
 ⚠ Attention, plus il y aura de nombre de ligne dans le dockerfile, plus le nombre de couche sera important et engedra les performences.
 Construire l'image :
 
-```BASH
+```bash
 docker build -t sboistel/mycentos:1.0
 docker build -t mon_image:v1.0
 ```
 
-Champs
-------
+### Champs
+
 Liste des différents champs complétable :
 
 * FROM : Pour les images vierge seuelement !
@@ -132,145 +89,163 @@ Liste des différents champs complétable :
 * WORKDIR : Emplacement de travail
 * ...
 
+## Run / Exec
 
-bash
-====
 Plusieurs arguments serrons ici utilisés :
 
 * t : Avoir un terminal en sortie
 * i : Interactif 
 
-
 ### Exemple :
 
-```BASH
+```bash
 docker run -ti ubuntu
 ```
 
 Exécuter une commande dans l'environnement Bash :
 
-```BASH
+```bash
 docker run -ti ubuntu ps
 ```
 
 Exécuter une commande dans un conteneur détaché en cours d'éxécution :
-```BASH
+```bash
 docker exec -name=container01 -hostname=host01 centos ping 127.0.0.1
 ```
 
-Attaché / Non Attaché
-=====================
+## Attaché / Non Attaché
+
 Exécuter l'image ubuntu avec des paramètres d'attachements :
 
-```BASH
+```bash
 docker run --name=container01 --hostname=host01 -it ubuntu
 ```
 
 Exécuter l'image ubuntu avec des paramètres de détachement :
 
-```BASH
+```bash
 docker run -d -it centos ping 127.0.0.1
 ```
 
 Du coup, où se passes les informations du conteneur détaché ? :
 
-```BASH
+```bash
 docker logs ID_DU_CONTAINER
 ```
 
 Rappel pour avoir l'id du conteneur : 
 
-```BASH
+```bash
 docker ps 
 ```
 
 Afin de réccupérer la main sur la session du conteneur détaché :
 
-```BASH
+```bash
 docker attache ID_DU_CONTAINER
 ```
 
 Revenir au mode détaché, faire la combinaison suivante : ``CTRL + Q ``
 
-Inspecter un conteneur
-======================
+## Inspecter un conteneur
+
 Avoir les informations du conteneur en format json :
 
-```BASH
+```bash
 docker inspect container01
 ```
 
-Agrégation de recherche
-=======================
+## Agrégation de recherche
+
 Récolter seulement ce qui nous intérèsse ? 
  - Avoir un status
-   ```BASH
+   ```bash
    docker inspect --format='![](./Docker/.State.Status)' container01
    ```
 
  - Avoir l'iP du container01 
-   ```BASH
+   ```bash
    docker inspect --format='![](./Docker/.NetworkSettings.IPAddress)' container01
    ```
 
 Réccolter le tableau State :
 
-```BASH
+```bash
 docker inspect --format='![](./Docker/json .State)' container01
 ```
 
-Filtres
--------
+### Filtres
+
 Filtrer tout les conteneur ayant comme nom web :
 
-```BASH
+```bash
 docker ps -a --filter name=web
 ```
 
 Filtrer tout les conteneurs ayant un status fermé :
 
-```BASH
+```bash
 docker ps -a --filter status=exited
 ```
 
 
-Formater l'affichage
-====================
+## Formater l'affichage
+
 Formater la sortie :
 
-```BASH
+```bash
 docker ps -a --format "![](./Docker/.Names) : ![](./Docker/.Status)"
 ```
 
-Import / Export
-===============
+## Import / Export
 
-Export
-------
+### Export
+
 Comment exporter son image ? 
 
-```BASH
+```bash
 docker export -o mycentos01.tar mycentos
 ```
 
 Vérifier son export :
 
-```BASH
+```bash
 tar tvf mycentos01.tar
 ```
 
 Tout est ok, je compresse :
 
-```BASH
+```bash
 gzip mycentos01.tar
 ```
 
-### Import
+#### Import
 Comment import une image exportée ? :
 
-```BASH
+```bash
 docker import mycentos.tar.gz mycentos:1.0
 ```
 
+## Containers
+
+L'objectif de la conteneurisation est de faire en sorte qu'un ensemble logiciel cohérent puisse fonctionner au sein d'un conteneur.
+
+Pour qu'une application puisse tourner au sein d'un conteneur, elle doit être empaquetée, c'est à dire qu'on la met à l'intérieur d'un paquet (une image dans la terminologie des conteneurs) avec ses dépendances. 
+
+Il existe d'ailleurs des images officielles, sur le Hub Docker par exemple, permettant de faire tourner tout type de logiciel (MySQL, Java 8, wordpresse, etc).
+
+## Type de système
+
+Il y a plusieurs type de système de conteneurisation.
+Dotcloud plus connu sous le nom de Docker sera de moins en moins utilisé car tant à le déprécier.
+
+On trouvera aussi :
+
+* CoreOS
+* Mesos
+* LXC
+* OpenVZ
+* Containerd
+* etc ...
 
 

@@ -1,7 +1,6 @@
 # Ansible Engine
-List d'argument
-===============
 
+## List d'argument
 
 * -i : Spécifier le fichier d'inventaire
 * -C,--check : Vérifier la.es action.s qui sera.ont réalisée.s
@@ -11,22 +10,27 @@ List d'argument
 * -b,--become : Éxécuter en tant que **su** (*admin)
 
 
-Configuration
-=============
+## Configuration
 
-ansible.cgf parameters
-----------------------
+
+### ansible
+file : `ansible.cgf`
+
+```bash
 host_key_checking = False
 inventory = pve.inventory
+```
 
 
-Inventory parameters
---------------------
+### Inventory
+file : `inventory`
+
+```bash
 [Groups]
 ansible ansible_hosts=iP
 
 [Groups:vars]
 ansible_user = John Doe
 ansible_password = jdoe
-
+```
 

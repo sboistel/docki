@@ -1,11 +1,10 @@
 # Cloudera
-How to identify if NUMA is enabled
-----------------------------------
+
+## How to identify if NUMA is enabled
 
 NUMA has to enabled in the BIOS. If dmesg does not have records of numa initialization during bootup, then it is possible that NUMA related messages in the kernel ring buffer might have been overwritten.
 
-NUMA Enabled Systems
---------------------
+## NUMA Enabled Systems
 
 If NUMA is enabled on BIOS, then execute the command ‘numactl –hardware‘ to list inventory of available nodes on the system. Below is example output of numactl –hardware on a system which has NUMA.
 
@@ -24,8 +23,8 @@ node   0   1
   1:  20  10
 ```
 
-NUMA Disabled Systems
----------------------
+## NUMA Disabled Systems
+
 
 ### 1. If NUMA is disabled on BIOS, then the command ‘numactl –show‘ does not show multiple nodes.
 
@@ -66,8 +65,7 @@ $ grep acpi=off /proc/cmdline
 
 
 
-Charts Building
-===============
+## Charts Building
 
 ### Health
 ```SQL
@@ -83,8 +81,7 @@ select health_good_rate * 100 as "good health" where entityName="hdfs:$node-ha"
 select dfs_capacity as "HDFS",(dfs_capacity_used+dfs_capacity_used_non_hdfs) as "Used" where entityName="hdfs:$node-ha"
 ```
 
-System
-------
+## System
 
 ### CPU
 ```sql
@@ -96,18 +93,18 @@ select cpu_user_rate / getHostFact(numCores, 1) * 100, cpu_system_rate / getHost
 select swap_used, physical_memory_used, physical_memory_total WHERE hostname RLIKE ".*data.*"
 ```
 
-User Repository
----------------
+## User Repository
 
-```bash
-*kinit* $USER
-```
+List user home directories :
 
 ```bash
 hdfs dfs -ls /user/
 ```
 
+Get user home directory acl as example :
 ```bash
 hdfs dfs -getfacl /user/JohnDoe
 ```
+
+cf [Hadoop cheat-sheet](Hadoop.md)
 

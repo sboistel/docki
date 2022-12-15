@@ -1,10 +1,10 @@
 # Windows Terminal
 
-# Install Windows Terminal
+## Install Windows Terminal
 
 Windows Store: [Windows Terminal](https://aka.ms/terminal)
 
-# Keyboard Shortcuts
+## Keyboard Shortcuts
 
 1. Applic­ation commands
     - ALT - F4: Close window

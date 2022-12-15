@@ -1,13 +1,15 @@
-# Environment Variables in Windows
+# Windows
 
-## How to use them in PowerShell
+## Environment Variables in Windows
+
+### How to use them in PowerShell
 Environment Varaibles can be used in PowerShell ([[powershell]]) with the prefix `$env:`.
 
 **Example***:
 *Variable:*  `%APPDATA%`
 *In Powershell:* `$env:APPDATA`
 
-## List of environment variables
+### List of environment variables
 Variable | Description
 ---|---
 `%ALLUSERSPROFILE%`|C:\ProgramData
@@ -55,17 +57,17 @@ Variable | Description
 `%OS%`|Windows_NT
 
 
-# Microsoft Windows 
+## Microsoft Windows 
 
-## Account
+### Account
 
-### How to change user account
+#### How to change user account
 
 Let's take a look to how to change user password without any access through Windows ISO.
 Boot on Windows 10 ISO
 On the language screen, chose your language and hit **SHIFT+F10**
 
-#### 1.1. Get Logical Volume inforations
+##### 1.1. Get Logical Volume inforations
 When the cmd terminal is oppened, list Diske Caption and Volume Name :
 
 ```powershell
@@ -84,7 +86,7 @@ Go to the system32 folder
 cd windows\system32
 ```
 
-#### Utilman
+##### Utilman
 Use utilman despite off cmd.exe
 
 ```powershell
@@ -97,10 +99,10 @@ Reboot
 wpeutil reboot
 ```
 
-### Change user password
+#### Change user password
 After rebooting, clic on accessibility icon
 
-#### Change password
+##### Change password
 Change the user password
 
 ```powershell
@@ -110,7 +112,7 @@ net user admin root
 net user $USER pass
 ```
 
-#### Active user
+##### Active user
 Active user
 
 ```powershell
@@ -130,19 +132,19 @@ ren utilman.exe cmd.exe
 ren utilman.exe.bak utilman.exe
 ```
 
-## Applications
+### Applications
 Created Tuesday 25 January 2022
 
-### Google Chrome
+#### Google Chrome
 
-#### kiosk mode
+##### kiosk mode
 Ouvrir une page web avec Google Chrome dans une page détachée: 
 
 ```POWERSHELL
 Chrome.exe --app=http://
 ```
 
-### Windows Subsystem Linux
+#### Windows Subsystem Linux
 
 ⚠️ This action requires a system restart
 
@@ -152,9 +154,9 @@ How to enable Windows Subsystem for Linux using powershell as **admin** ?
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
-## Windows Boot
+### Windows Boot
 
-### How to restore Windows 10 MBR
+#### How to restore Windows 10 MBR
 
 La démarche consiste à remplacer le MBR qui permet d'amorcer GRUB en lui substituant un MBR pointant sur le lanceur de Windows.
 
@@ -184,9 +186,9 @@ C:\WINDOWS> exit
 |-|
 | Si les partitions Linux n'ont pas été ré-allouées, il est toujours possible de restaurer GRUB (et ainsi le boot sur Fedora ou Windows). |
 
-## Storage
+### Storage
 
-### How to change device drive icon ?
+#### How to change device drive icon ?
 
 Open regedit as administrator :
 
@@ -201,10 +203,10 @@ Ordinateur\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\E   xplo
 
 Mod the chaine containned in Defaulticon key with the full path of your ``ico`` file.
 
-## System
+### System
 Here are somes DOS tips & tricks
 
-### Systeminfo
+#### Systeminfo
 
 Trouver la date d’installation Windows.
 
@@ -219,7 +221,7 @@ Se rendre rapidement sur la page de gestion des software:
 Appwiz.cpl
 ```
 
-### Hosts file
+#### Hosts file
 
 Hosts file configuration location :
 
@@ -227,7 +229,7 @@ Hosts file configuration location :
 C:\windows\system32\drivers\etc\
 ```
 
-### Kill task
+#### Kill task
 
 How to force killing task? 
 
@@ -235,7 +237,7 @@ How to force killing task?
 taskkill /F /IM OpenWith.exe /T
 ```
 
-### License
+#### License
 
 Temps restant disponible à la license en cours
 
@@ -246,17 +248,17 @@ slmgr.vbs /ipk LICENCE #"Force" || Dism /Online /Set-Edition:ServerDatacenter /A
 slmgr.vbs /dlv #Check
 ```
 
-# Windows Updates
+## Windows Updates
 
-## PowerShell
+### PowerShell
 
-### Install Windows Update
+#### Install Windows Update
 
 ```powershell
 Install-Module -Name PSWindowsUpdate
 ```
 
-### List all Commands
+#### List all Commands
 
 ```powershell
 Get-Command -module PSWindowsUpdate
@@ -266,16 +268,16 @@ Get-Command -module PSWindowsUpdate
 Get-WUInstall
 ```
 
-# Environment Variables in Windows
+## Environment Variables in Windows
 
-## How to use them in PowerShell
+### How to use them in PowerShell
 Environment Varaibles can be used in PowerShell ([[powershell]]) with the prefix `$env:`.
 
 **Example***:
 *Variable:*  `%APPDATA%`
 *In Powershell:* `$env:APPDATA`
 
-## List of environment variables
+### List of environment variables
 Variable | Description
 ---|---
 `%ALLUSERSPROFILE%`|C:\ProgramData

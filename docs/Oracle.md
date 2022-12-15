@@ -1,16 +1,15 @@
 # Oracle
 Here are somes Oracle tips & tricks
 
-Spfile
-======
+## Spfile
 
 SPFILE (Fichier de paramètres persistant) est un fichier binaire recherché automatiquement au démarrage de l’instance.
-Son nom par défaut est spfile<SID>.ora.
+Son nom par défaut est spfile<`SID`>.ora.
 Il est situé dans $ORACLE_HOME/dbs/.
 Le fichier SPFILE est recommandé par Oracle en raison de la possibilité de géré dynamiquement de nombreux paramètres d’initialisation. Il est modifié par le moteur Oracle.
 PFILE (Fichier de paramètres statique) est un fichier texte recherché automatiquement au démarrage de l’instance en l’absence du fichier SPFILE.
 Il est modifié manuellement par le DBA.
-Son nom par défaut est : init<SID>.ora et il est situé dans $ORACLE_HOME/dbs.
+Son nom par défaut est : init<`SID`>.ora et il est situé dans $ORACLE_HOME/dbs.
 Les modifications prennent effet qu’après le redémarrage de l’instance.
 CRÉER UN SPFILE A PARTIR D’UN PFILE
 Vous pouvez créer un fichier SPFILE à partir d’un fichier PFILE via la commande suivante (instance démarrée ou non) et ou le nom d’instance est DBA01 : 
@@ -19,8 +18,7 @@ Vous pouvez créer un fichier SPFILE à partir d’un fichier PFILE via la comma
 CREATE SPFILE = ‘$ORACLE_HOME/dbs/spfileDBA01.ora’ FROM PFILE = ‘$ORACLE_HOME/dbs/initDBA01.ora‘
 ```
 
-Control file
-============
+## Control file
 
 Le fichier de contrôle est un fichier binaire, il contient des informations sur la structure physique de la base. Il est créé pendant la création de la base et il est modifié en permanence.
 Ce fichier doit être toujours disponible car il est consulté; et modifié fréquemment par le serveur oracle. Et il est indispensable pour la restauration de la base.
@@ -31,18 +29,18 @@ SHOW PARAMETER CONTROL_FILES
 SELECT VALUE FROM V$PARAMETER WHERE NAME='control_files';
 ```
 
-Redolog
-=======
+## Redolog
+
 Les fichiers Redo Logs servent à enregistrer toutes les modifications commitées effectuées sur le base de données.
 Ils servent à protéger la base de données dans le cas d’un échec d’instance.
 En cas de restauration de la base de données, on utilise les redo logs pour ‘rejouer’ les modifications qui ont eu lieu, les transactions validées (commit à la fin de la transaction) sont enregistrées dans les fichiers de données Oracle et les transactions non validées, s’il y en a, sont effacées des fichiers de données.
 
-Data base file
---------------
+## Data base file
+
 Les fichiers physiques d’une base Oracle permettent de stocker de manière persistante les données manipulées par Oracle.
 
-Archive log
------------
+### Archive log
+
 Quand la base est en mode NOARCHIVELOG, l’archivage des fichiers redo est désactivé.
 Le fichier de contrôle indique que les groupes des fichiers redo pleins ne sont plus nécessaires.
 Dès qu’ils sont inactifs après un log switch, le groupe sera disponible pour une réutilisation par la LGWR . → (lgwr écrit toutes les entrées refaites qui ont été copiées dans le tampon depuis la dernière fois.)
@@ -53,13 +51,13 @@ Quand la base est en mode ARCHIVELOG, l’archivage des fichiers redo est activ�
 Le fichier de contrôle de la base signale que les groupes contenant des fichiers redo pleins ne peuvent pas être utilisés par le process LGWR tant que les groupes n’ont pas été archivés.
 Vérifier s’il y a présence d’Archive log :
 
-```SQL 
+```sql
 archive log list
 ```
 
 Connaître la destination de chacune d’entre-elles :
 
-```SQL
+```sql
 show parameter log_archive_dest
 ```
 
@@ -99,8 +97,8 @@ Savoir si la base tourne ou non en SQL :
 SELECT INSTANCE_NAME, STATUS, DATABASE_STATUS FROM V$INSTANCE;
 ```
 
-Diag Tunning
-------------
+## Diag Tunning
+
 
 | Name        |                                                       |            |                        |
 |-------------|-------------------------------------------------------|------------|------------------------|
@@ -150,8 +148,7 @@ SELECT DBMS_STATS.get_prefs('CONCURRENT') FROM dual;
 | False              | ``` DBMS_STATS.SET_GLOBAL_PREFS('CONCURRENT','FALSE'); ``` |
 
 
-LSNRCTL
--------
+## LSNRCTL
 
 L’utilitaire de contrôle d’écoute vous permet d’administrer des listeners.
 Vous pouvez utiliser ses commandes pour exécuter des fonctions de gestion de base sur un ou plusieurs listeners.
@@ -178,8 +175,7 @@ Il se peut que celuic-ci ne se nomme pas LISTENER, il s’agit des paramètres p
 
 > lsnrctl status LISTENER
 
-ODACLI
-------
+## ODACLI
 
 Répertorier toutes les bases de données de l’appliance :
 > odacli list-databases
@@ -201,20 +197,19 @@ Réseau :
 > odacli describe-ntwork -i $identifiants_réseau
 
 
-OSWBBA
-------
+## OSWBBA
 
 ```JAVA 
 java -jar /opt/oracle/oak/oswbb/oswbba.jar -i /opt/oracle/oak/oswbb/archive -b Mar 18 00:00:00 2019 -e Mar 19 00:00:00 
 ```
 
-Ressources
-----------
+### Ressources
+
 Afin de vérifier l’état du paramètre SESSIONS :
 > SHOW parameter sessions
 
-Processes
----------
+### Processes
+
 PROCESSES spécifie le nombre maximal de processus utilisateur du système d’exploitation pouvant se connecter simultanément à Oracle.
 Sa valeur doit autoriser tous les processus d’arrière-plan tels que les verrous, les processus de file d’attente de travaux et les processus d’exécution parallèles.
 Les valeurs par défaut des paramètres SESSIONS et TRANSACTIONS sont dérivées de ce paramètre.
@@ -225,8 +220,8 @@ Afin de vérifier l’état du paramètre PROCESSES :
 Application du paramètre :
 > ALTER SYSTEM SET processes=[VALUE AS INTEGER] SCOPE=SPFILE ;
 
-Transactions
-------------
+### Transactions
+
 TRANSACTIONS spécifie le nombre maximal de transactions simultanées.
 Des valeurs plus élevées augmentent la taille du SGA et peuvent augmenter le nombre de segments de restauration alloués.
 La valeur par défaut est supérieure à SESSIONS (et à son tour, PROCESSES) pour permettre les transactions récursives.
@@ -246,8 +241,8 @@ shutdown immediate
 startup
 ```
 
-Account
--------
+### Account
+
 Débloquer des compte vérouillé :
 
 ```SQL
@@ -259,8 +254,8 @@ SQL> ALTER USER $USER IDENTIFIED BY ******** account UNLOCK;
 USER altered.
 ```
 
-SQLPLUS
--------
+## SQLPLUS
+
 Paramétrage de l’interface sqlplus :
 
 ### linesize
@@ -284,8 +279,8 @@ Permet une attente de RETURN pour faire défiler les lignes suivantes ( comme la
 La sortie standard et d’erreur est redirigée dans le fichier indiqué dans la commande. La commande “spool off” ferme le fichier.
 Utiliser la commande ```SQL **start** or **@** ``` pour effectuer les script tel que .sql
 
-STATSPACK
----------
+## STATSPACK
+
 
 ### Analyser
 Mise en forme du resultat :
@@ -325,8 +320,8 @@ How to rebuild dba_indexes :
 select 'alter index '||owner||'.'||index_name||' rebuild;' from dba_indexes where status = 'UNUSABLE';
 ```
 
-TNSNAME
--------
+## TNSNAME
+
 Comment la vérifier :
 
 ```SQL
@@ -351,8 +346,8 @@ Voici un exemple de configuration :
 )
 ```
 
-Tablespace
-----------
+## Tablespace
+
 Know the tablesapces size :
 
 ```SQL

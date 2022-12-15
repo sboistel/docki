@@ -1,10 +1,11 @@
 # Proxmox-VE
-Subscription
-============
+
+## Subscription
+
 How to remove Proxmox proxy subscription pop up ?
 
-Change to Active
-----------------
+### Change to Active
+
 Situated at the line ~120
 Change the status to ``Active`` :
 
