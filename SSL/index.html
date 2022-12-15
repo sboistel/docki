@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="BOISTEL Samuel" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>SSL Certificates - Dockimentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SSL Certificates";
+        var mkdocs_page_input_path = "SSL.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Dockimentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Linux/">Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../smtp/">SMTP</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Windows/">Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Windows-Terminal/">Windows Terminal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../wsl/">WSL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MacOS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../MacOS/">MacOS keyboard shortcuts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../iterm2/">iTerm2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Code</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Perl/">Perl</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Python/">Python</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">DevOPS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ansible_Engine/">Ansible Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Docker/">Docker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ELastiK/">Elasticsearch / Logstash / Kibana</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Terraform/">Terraform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Kubernetes/">Kubernetes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Git/">Git</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Centreon_Central/">Centreon Central</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Nagios/">Nagios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Netbox/">IPAM - Netbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Rhel_idM/">Red Hat Identity Management (IdM)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FreeIPA/">Free IPA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Guacamole/">Guacamole</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UI-path/">UI-path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../VNC_Tiger/">VNC Tiger</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenVPN/">OpenVPN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Markdown/">Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ngrok/">ngrok</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vscode/">VSCode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../color-codes/">256 Color Codes Cheat-Sheet</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Web & Networking</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../CertManager/">Cert-Manager</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">SSL Certificates</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#self-signed-certificates">Self-Signed Certificates</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#certificate-formats">Certificate Formats</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#verify-certificates">Verify Certificates</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#install-the-ca-cert-as-a-trusted-root-ca">Install the CA Cert as a trusted root CA</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../http-status/">HTTP Status Codes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hypervisor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../VMware/">VMware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Proxmox-VE/">Proxmox-VE</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../QEMU-KVM/">QEMU-KVM</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Storage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Bareos/">Bareos</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Cloud</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Cloud_Infrastructure/">Cloud Infrastructure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Amazon_Web_Services/">Amazon Web Services</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Azure_Cloud/">Microsoft Azure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Google_Cloud_Platforme/">Google Cloud Platforme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Oracle_Cloud_Infrastructure/">Oracle Cloud Infrastructure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">BDD/BigData</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Cloudera/">Cloudera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Hadoop/">Hadoop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Oracle/">Oracle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MySQL/">MySQL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DB2/">IBM DB2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MariaDB/">MariaDB</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Dockimentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Web & Networking &raquo;</li>
+      <li>SSL Certificates</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="ssl-certificates">SSL Certificates</h1>
+<p>X.509 is an ITU standard defining the format of public key certificates. X.509 are used in TLS/SSL, which is the basis for HTTPS. An X.509 certificate binds an identity to a public key using a digital signature. A certificate contains an identity (hostname, organization, etc.) and a public key (RSA, DSA, ECDSA, ed25519, etc.), and is either signed by a Certificate Authority or is Self-Signed.</p>
+<h2 id="self-signed-certificates">Self-Signed Certificates</h2>
+<h3 id="generate-ca">Generate CA</h3>
+<ol>
+<li>Generate RSA</li>
+</ol>
+<pre><code class="language-bash">openssl genrsa -aes256 -out ca-key.pem 4096
+</code></pre>
+<ol>
+<li>Generate a public CA Cert</li>
+</ol>
+<pre><code class="language-bash">openssl req -new -x509 -sha256 -days 365 -key ca-key.pem -out ca.pem
+</code></pre>
+<h3 id="generate-certificate">Generate Certificate</h3>
+<ol>
+<li>Create a RSA key</li>
+</ol>
+<pre><code class="language-bash">openssl genrsa -out cert-key.pem 4096
+</code></pre>
+<ol>
+<li>Create a Certificate Signing Request (CSR)</li>
+</ol>
+<pre><code class="language-bash">openssl req -new -sha256 -subj &quot;/CN=yourcn&quot; -key cert-key.pem -out cert.csr
+</code></pre>
+<ol>
+<li>Create a <code>extfile</code> with all the alternative names</li>
+</ol>
+<pre><code class="language-bash">echo &quot;subjectAltName=DNS:your-dns.record,IP:257.10.10.1&quot; &gt;&gt; extfile.cnf
+</code></pre>
+<pre><code class="language-bash"># optional
+echo extendedKeyUsage = serverAuth &gt;&gt; extfile.cnf
+</code></pre>
+<ol>
+<li>Create the certificate</li>
+</ol>
+<pre><code class="language-bash">openssl x509 -req -sha256 -days 365 -in cert.csr -CA ca.pem -CAkey ca-key.pem -out cert.pem -extfile extfile.cnf -CAcreateserial
+</code></pre>
+<h2 id="certificate-formats">Certificate Formats</h2>
+<p>X.509 Certificates exist in Base64 Formats <strong>PEM (.pem, .crt, .ca-bundle)</strong>, <strong>PKCS#7 (.p7b, p7s)</strong> and Binary Formats <strong>DER (.der, .cer)</strong>, <strong>PKCS#12 (.pfx, p12)</strong>.</p>
+<h3 id="convert-certs">Convert Certs</h3>
+<table>
+<thead>
+<tr>
+<th>COMMAND</th>
+<th>CONVERSION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>openssl x509 -outform der -in cert.pem -out cert.der</code></td>
+<td>PEM to DER</td>
+</tr>
+<tr>
+<td><code>openssl x509 -inform der -in cert.der -out cert.pem</code></td>
+<td>DER to PEM</td>
+</tr>
+<tr>
+<td><code>openssl pkcs12 -in cert.pfx -out cert.pem -nodes</code></td>
+<td>PFX to PEM</td>
+</tr>
+</tbody>
+</table>
+<h2 id="verify-certificates">Verify Certificates</h2>
+<p><code>openssl verify -CAfile ca.pem -verbose cert.pem</code></p>
+<h2 id="install-the-ca-cert-as-a-trusted-root-ca">Install the CA Cert as a trusted root CA</h2>
+<h3 id="on-debian-derivatives">On Debian &amp; Derivatives</h3>
+<ul>
+<li>Move the CA certificate (<code>ca.pem</code>) into <code>/usr/local/share/ca-certificates/ca.crt</code>.</li>
+<li>Update the Cert Store with:</li>
+</ul>
+<pre><code class="language-bash">sudo update-ca-certificates
+</code></pre>
+<p>Refer the documentation <a href="https://wiki.debian.org/Self-Signed_Certificate">here</a> and <a href="https://manpages.debian.org/buster/ca-certificates/update-ca-certificates.8.en.html">here.</a></p>
+<h3 id="on-fedora">On Fedora</h3>
+<ul>
+<li>Move the CA certificate (<code>ca.pem</code>) to <code>/etc/pki/ca-trust/source/anchors/ca.pem</code> or <code>/usr/share/pki/ca-trust-source/anchors/ca.pem</code></li>
+<li>Now run (with sudo if necessary):</li>
+</ul>
+<pre><code class="language-bash">update-ca-trust
+</code></pre>
+<p>Refer the documentation <a href="https://docs.fedoraproject.org/en-US/quick-docs/using-shared-system-certificates/">here.</a></p>
+<h3 id="on-arch">On Arch</h3>
+<p>System-wide – Arch(p11-kit)
+(From arch wiki)
+- Run (As root)</p>
+<pre><code class="language-bash">trust anchor --store myCA.crt
+</code></pre>
+<ul>
+<li>The certificate will be written to /etc/ca-certificates/trust-source/myCA.p11-kit and the "legacy" directories automatically updated.</li>
+<li>If you get "no configured writable location" or a similar error, import the CA manually:</li>
+<li>Copy the certificate to the /etc/ca-certificates/trust-source/anchors directory.</li>
+<li>and then</li>
+</ul>
+<pre><code class="language-bash">update-ca-trust
+</code></pre>
+<p>wiki page  <a href="https://wiki.archlinux.org/title/User:Grawity/Adding_a_trusted_CA_certificate">here</a></p>
+<h3 id="on-windows">On Windows</h3>
+<p>Assuming the path to your generated CA certificate as <code>C:\ca.pem</code>, run:</p>
+<pre><code class="language-powershell">Import-Certificate -FilePath &quot;C:\ca.pem&quot; -CertStoreLocation Cert:\LocalMachine\Root
+</code></pre>
+<ul>
+<li>Set <code>-CertStoreLocation</code> to <code>Cert:\CurrentUser\Root</code> in case you want to trust certificates only for the logged in user.</li>
+</ul>
+<p>OR</p>
+<p>In Command Prompt, run:</p>
+<pre><code class="language-sh">certutil.exe -addstore root C:\ca.pem
+</code></pre>
+<ul>
+<li><code>certutil.exe</code> is a built-in tool (classic <code>System32</code> one) and adds a system-wide trust anchor.</li>
+</ul>
+<h3 id="on-android">On Android</h3>
+<p>The exact steps vary device-to-device, but here is a generalised guide:
+1. Open Phone Settings
+2. Locate <code>Encryption and Credentials</code> section. It is generally found under <code>Settings &gt; Security &gt; Encryption and Credentials</code>
+3. Choose <code>Install a certificate</code>
+4. Choose <code>CA Certificate</code>
+5. Locate the certificate file <code>ca.pem</code> on your SD Card/Internal Storage using the file manager.
+6. Select to load it.
+7. Done!</p>
+<hr />
+<h1 id="ssl-security-cheat-sheet">SSL Security Cheat-Sheet</h1>
+<p>... TBD</p>
+<h2 id="tls-version-and-ciphers">TLS Version and Ciphers</h2>
+<p>Scanning for TLS Version and supported Ciphers: <code>nmap --script ssl-enum-ciphers &lt;target&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Link</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qualys SSL Labs</td>
+<td>https://www.ssllabs.com/projects/index.html</td>
+<td>SSL Security Tools by Qualys</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../CertManager/" class="btn btn-neutral float-left" title="Cert-Manager"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../http-status/" class="btn btn-neutral float-right" title="HTTP Status Codes">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../CertManager/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../http-status/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,1080 +1,226 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="BOISTEL Samuel" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Linux - Dockimentation</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Linux";
+        var mkdocs_page_input_path = "Linux.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-        <meta name="description" content="Docki wiki github pages">
-      
-      
-        <meta name="author" content="BOISTEL Samuel">
-      
-      
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
-    
-    
-      
-        <title>System - Dockimentation</title>
-      
-    
-    
-      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
-      
-        
-        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
-        
-      
-      
+<body class="wy-body-for-nav" role="document">
 
-    
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
-  
-    
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#system" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Dockimentation" class="md-header__button md-logo" aria-label="Dockimentation" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
-            Dockimentation
-          </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              System
-            
-          </span>
-        </div>
-      </div>
-    </div>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Dockimentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
 </div>
-    
-    
-  </nav>
-  
-</header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
+      </div>
 
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Dockimentation" class="md-nav__button md-logo" aria-label="Dockimentation" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    Dockimentation
-  </label>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        Home
-      </a>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Linux</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#system">System</a>
     </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="." class="md-nav__link">
-        Linux
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#emergency">Emergency</a>
     </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_3">
-          Windows
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Windows" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Windows
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Windows/" class="md-nav__link">
-        Environment Variables in Windows
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#network">Network</a>
     </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Windows-Terminal/" class="md-nav__link">
-        Windows Terminal
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#process">Process</a>
     </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../wsl/" class="md-nav__link">
-        WSL Cheat-Sheet
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#service">Service</a>
     </li>
-  
-
-            
-          
-        </ul>
-      </nav>
+    <li class="toctree-l2"><a class="reference internal" href="#timedate">Time/Date</a>
     </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_4">
-          Cloud
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Cloud" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
-          <span class="md-nav__icon md-icon"></span>
-          Cloud
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Cloud_Infrastructure/" class="md-nav__link">
-        Cloud Infrastructure
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#account">Account</a>
     </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Amazon_Web_Services/" class="md-nav__link">
-        Amazon Web Services
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#sudoers">Sudoers</a>
     </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Azure_Cloud/" class="md-nav__link">
-        Microsoft Azure
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#key">Key</a>
     </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Google_Cloud_Platforme/" class="md-nav__link">
-        Google Cloud Platforme
-      </a>
+    <li class="toctree-l2"><a class="reference internal" href="#applications">Applications</a>
     </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Oracle_Cloud_Infrastructure/" class="md-nav__link">
-        Oracle Cloud Infrastructure
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
-          Networking
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Networking" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
-          <span class="md-nav__icon md-icon"></span>
-          Networking
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../CertManager/" class="md-nav__link">
-        Cert-Manager
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
-          Hypervisor
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Hypervisor" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          Hypervisor
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Monitoring/" class="md-nav__link">
-        Monitoring
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../VMware/" class="md-nav__link">
-        VMware
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Proxmox-VE/" class="md-nav__link">
-        Proxmox-VE
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../QEMU-KVM/" class="md-nav__link">
-        QEMU-KVM
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Tools
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Tools" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Tools
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Centreon_Central/" class="md-nav__link">
-        Centreon Central
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Nagios/" class="md-nav__link">
-        Nagios
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Netbox/" class="md-nav__link">
-        IPAM - Netbox
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Rhel_IDM/" class="md-nav__link">
-        Rhel IDM
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Guacamole/" class="md-nav__link">
-        Guacamole
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../UI-path/" class="md-nav__link">
-        UI-path
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../VNC_Tiger/" class="md-nav__link">
-        VNC Tiger
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../OpenVPN/" class="md-nav__link">
-        OpenVPN
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Markdown/" class="md-nav__link">
-        Markdown
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Ngrok/" class="md-nav__link">
-        ngrok
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8" type="checkbox" id="__nav_8" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_8">
-          Storage
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Storage" data-md-level="1">
-        <label class="md-nav__title" for="__nav_8">
-          <span class="md-nav__icon md-icon"></span>
-          Storage
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Bareos/" class="md-nav__link">
-        Bareos
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_9">
-          BDD/BigData
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="BDD/BigData" data-md-level="1">
-        <label class="md-nav__title" for="__nav_9">
-          <span class="md-nav__icon md-icon"></span>
-          BDD/BigData
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Cloudera/" class="md-nav__link">
-        Cloudera
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Hadoop/" class="md-nav__link">
-        Hadoop
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Oracle/" class="md-nav__link">
-        Oracle
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../MySQL/" class="md-nav__link">
-        MySQL
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../DB2/" class="md-nav__link">
-        IBM DB2
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../MariaDB.md" class="md-nav__link">
-        None
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_10">
-          DevOPS
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="DevOPS" data-md-level="1">
-        <label class="md-nav__title" for="__nav_10">
-          <span class="md-nav__icon md-icon"></span>
-          DevOPS
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Ansible_Engine/" class="md-nav__link">
-        Ansible Engine
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Docker/" class="md-nav__link">
-        Docker
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ELastiK/" class="md-nav__link">
-        Elasticsearch / Logstash / Kibana
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FreeIPA/" class="md-nav__link">
-        Free IPA
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Terraform/" class="md-nav__link">
-        Terraform
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Kubernetes/" class="md-nav__link">
-        Kubernetes
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Git/" class="md-nav__link">
-        Git
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Perl/" class="md-nav__link">
-        Perl
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../Python/" class="md-nav__link">
-        Python
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-  </ul>
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#exit-codes" class="md-nav__link">
-    Exit codes
-  </a>
-  
-</li>
-      
     </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../smtp/">SMTP</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Windows/">Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Windows-Terminal/">Windows Terminal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../wsl/">WSL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MacOS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../MacOS/">MacOS keyboard shortcuts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../iterm2/">iTerm2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Code</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Perl/">Perl</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Python/">Python</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">DevOPS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ansible_Engine/">Ansible Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Docker/">Docker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ELastiK/">Elasticsearch / Logstash / Kibana</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Terraform/">Terraform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Kubernetes/">Kubernetes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Git/">Git</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Centreon_Central/">Centreon Central</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Nagios/">Nagios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Netbox/">IPAM - Netbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Rhel_idM/">Red Hat Identity Management (IdM)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../FreeIPA/">Free IPA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Guacamole/">Guacamole</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../UI-path/">UI-path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../VNC_Tiger/">VNC Tiger</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../OpenVPN/">OpenVPN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Markdown/">Markdown</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Ngrok/">ngrok</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vscode/">VSCode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../color-codes/">256 Color Codes Cheat-Sheet</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Web & Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../CertManager/">Cert-Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../SSL/">SSL Certificates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../http-status/">HTTP Status Codes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Hypervisor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../VMware/">VMware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Proxmox-VE/">Proxmox-VE</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../QEMU-KVM/">QEMU-KVM</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Storage</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Bareos/">Bareos</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Cloud</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Cloud_Infrastructure/">Cloud Infrastructure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Amazon_Web_Services/">Amazon Web Services</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Azure_Cloud/">Microsoft Azure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Google_Cloud_Platforme/">Google Cloud Platforme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Oracle_Cloud_Infrastructure/">Oracle Cloud Infrastructure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">BDD/BigData</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Cloudera/">Cloudera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Hadoop/">Hadoop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Oracle/">Oracle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MySQL/">MySQL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../DB2/">IBM DB2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../MariaDB/">MariaDB</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
 
-
-<h1 id="system">System</h1>
-<h2 id="exit-codes">Exit codes</h2>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Dockimentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Linux &raquo;</li>
+      <li>Linux</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="linux">Linux</h1>
+<h2 id="system">System</h2>
+<h3 id="exit-codes">Exit codes</h3>
 <ul>
 <li>Contient le nom du script tel qu'il a été invoqué: <ul>
 <li>
@@ -1133,15 +279,15 @@
 </ul>
 </li>
 </ul>
-<h1 id="emergency">Emergency</h1>
-<h2 id="grub">Grub</h2>
+<h2 id="emergency">Emergency</h2>
+<h3 id="grub">Grub</h3>
 <ol>
 <li>Reach the grub and chose the first line</li>
 <li>Use 'e' to edit</li>
 <li>Go to the "vmlinux" line to add '<strong>rd.break'</strong> at the end (This change is temporary)</li>
 <li>Press 'CTRL+x' to exit an run it</li>
 </ol>
-<h2 id="rescure">Rescure</h2>
+<h3 id="rescure">Rescure</h3>
 <p>This prompt spawn:</p>
 <blockquote>
 <p>switch_root:/#.</p>
@@ -1155,24 +301,24 @@
 <p>chroot sysroot</p>
 </blockquote>
 <p>You are now able to reset root password, or edit linux things.</p>
-<h4 id="selinux">Selinux</h4>
+<h5 id="selinux">Selinux</h5>
 <p>⚠ Make sure SELinux allows the file changed </p>
 <blockquote>
 <p>touch .autorelabel
 <em>This will signal SELinux on the next reboot that the filesystem has changed (the changed password) and allow the change to be loaded.</em></p>
 </blockquote>
 <p>Type 'exit' then 'reboot'</p>
-<h1 id="network">Network</h1>
-<h2 id="base-on-aptdeb">Base on APT/DEB</h2>
+<h2 id="network">Network</h2>
+<h3 id="base-on-aptdeb">Base on APT/DEB</h3>
 <p>File : <code>/etc/network/interfaces</code> :</p>
-<pre><code class="language-bash"># This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
+<pre><code class="language-bash">## This file describes the network interfaces available on your system
+## and how to activate them. For more information, see interfaces(5).
 
-# The loopback network interface
+## The loopback network interface
 auto lo
 iface lo inet loopback
 
-# The primary network interface
+## The primary network interface
 auto eth0
 iface eth0 inet static
 address 10.0.0.41
@@ -1180,7 +326,7 @@ netmask 24
 gateway 10.0.0.0
 dns-nameservers 10.0.0.1 8.8.8.8
 </code></pre>
-<h1 id="process">Process</h1>
+<h2 id="process">Process</h2>
 <p>Lister tout les processus :</p>
 <ul>
 <li>a : Ayant un terminal de contrôle</li>
@@ -1191,11 +337,11 @@ dns-nameservers 10.0.0.1 8.8.8.8
 <li>l : Liste longue</li>
 <li>f : Full -&gt; Avoir le nom complet du processus</li>
 </ul>
-<h2 id="cpu">CPU</h2>
+<h3 id="cpu">CPU</h3>
 <p>Lister le nombre de processeur :</p>
 <pre><code class="language-bash">nproc
 </code></pre>
-<h2 id="load">Load</h2>
+<h3 id="load">Load</h3>
 <p>Check the load average fixed by the system:</p>
 <blockquote>
 <p>cat /proc/loadavg</p>
@@ -1209,13 +355,13 @@ dns-nameservers 10.0.0.1 8.8.8.8
 <p>You can folow your CPU in real time by this command:</p>
 <pre><code class="language-bash">vmstat -w 1
 </code></pre>
-<h1 id="service">Service</h1>
-<h2 id="systemctl">Systemctl</h2>
+<h2 id="service">Service</h2>
+<h3 id="systemctl">Systemctl</h3>
 <p>How to list enabled unit-file.</p>
 <pre><code class="language-bash">systemctl list-unit-files | grep enabled
 </code></pre>
-<h1 id="timedate">Time/Date</h1>
-<h2 id="clock">Clock</h2>
+<h2 id="timedate">Time/Date</h2>
+<h3 id="clock">Clock</h3>
 <p>How to mod sys clock ?</p>
 <pre><code class="language-bash">mv /etc/localtime /etc/localtime.backup
 ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
@@ -1224,17 +370,17 @@ echo &quot;Europe/Paris&quot; | tee /etc/timezone
 timedatectl set-timezone Europe/Paris
 hwclock -s
 </code></pre>
-<h1 id="account">Account</h1>
+<h2 id="account">Account</h2>
 <p>Created Tuesday 25 January 2022</p>
 <p>List account :</p>
 <pre><code class="language-bash">find /home -maxdepth 1 -type d -group users | cut -d '/' -f3
 </code></pre>
-<h2 id="useradd">Useradd</h2>
+<h3 id="useradd">Useradd</h3>
 <p>How to adding user ?</p>
 <pre><code class="language-bash">useradd -s /sbin/nologin -G $GRP
 useradd -m -G wheel -s /bin/bash $account
 </code></pre>
-<h2 id="lock-unlock">Lock / Unlock</h2>
+<h3 id="lock-unlock">Lock / Unlock</h3>
 <p>Check password status :</p>
 <pre><code class="language-bash">passwd -S $USER
 </code></pre>
@@ -1244,41 +390,41 @@ useradd -m -G wheel -s /bin/bash $account
 <li>NP: No password</li>
 <li>PS: Password set</li>
 </ul>
-<h2 id="unlock">Unlock</h2>
+<h3 id="unlock">Unlock</h3>
 <p>Use the <code>-u</code> to unlock account</p>
 <pre><code class="language-bash">passwd -u $USER
 </code></pre>
-<h2 id="lock">Lock</h2>
+<h3 id="lock">Lock</h3>
 <p>Use the <code>-L</code> to lock account</p>
 <pre><code class="language-bash">passwd -L $USER
 </code></pre>
-<h2 id="time-life-password">Time life password</h2>
+<h3 id="time-life-password">Time life password</h3>
 <p>Show the account password information</p>
 <pre><code class="language-bash">chage -l $USER
 </code></pre>
 <p>Set minimum day</p>
 <pre><code class="language-bash">chage -m ${NOMBER OF DAY} ${USER}
 </code></pre>
-<h1 id="sudoers">Sudoers</h1>
+<h2 id="sudoers">Sudoers</h2>
 <p>Autorisation de l’utilisateur max de supprimer dans le dossier. </p>
 <pre><code class="language-bash">max ALL=NOPASSWD:/bin/rm -rf $CHEMIN_de_DOSSIER/*
 </code></pre>
 <p>Autorisation pour l’utilisateur matry_mc_fly de lire les fichiers dans le dossier.</p>
 <pre><code class="language-bash">marty_mc_fly ALL=NOPASSWD:/usr/bin/cat /var/log/mariadb/*
 </code></pre>
-<h1 id="key">Key</h1>
-<h2 id="pem-key">PEM Key</h2>
+<h2 id="key">Key</h2>
+<h3 id="pem-key">PEM Key</h3>
 <p>Create pem key :</p>
 <pre><code class="language-bash">Puttygen mykey.ppk -O private-openssh -o mykey.pem
 </code></pre>
-<h1 id="applications">Applications</h1>
-<h2 id="screen">Screen</h2>
-<h3 id="touchscreen">Touchscreen</h3>
+<h2 id="applications">Applications</h2>
+<h3 id="screen">Screen</h3>
+<h4 id="touchscreen">Touchscreen</h4>
 <p>How to disable touchscreen at start ?
 Create a new file as <code>/etc/X11/xorg.conf.d/01-no_touchscreen.conf</code> as 664 :</p>
-<pre><code class="language-bash"># Written by systemd-localed(8), read by systemd-localed and Xorg. Its
-# probably wise not to edit this file manually. use localectl(1) to
-# instruct systemd-localed to update it
+<pre><code class="language-bash">## Written by systemd-localed(8), read by systemd-localed and Xorg. Its
+## probably wise not to edit this file manually. use localectl(1) to
+## instruct systemd-localed to update it
 Section &quot;InputClass&quot;
 Identifier &quot;Raydium catchall&quot;
 MatchIsTouchscreen &quot;on&quot;
@@ -1288,7 +434,7 @@ EndSection
 <p>Using command line :</p>
 <pre><code class="language-bash">xinput disable $(xinput list | awk '/Touchscreen/ {print $5}' | cut -d &quot;=&quot; -f2)
 </code></pre>
-<h2 id="blank-screen">Blank Screen</h2>
+<h3 id="blank-screen">Blank Screen</h3>
 <p>logind est le composant en charge de la gestion des sessions sur les systèmes avec systemd.</p>
 <p>Il détermine le comportement d’un ordinateur portable lorsque l’on ferme l’écran (Lid Switch) via la variable <code>HandleLidSwitch</code> de son fichier de configuration :  <code>/etc/systemd/logind.conf</code> .</p>
 <p>Sa valeur par défaut est suspend (mise en veille).</p>
@@ -1324,34 +470,34 @@ EndSection
 <pre><code class="language-bash">   setterm-powersave off -blank 0
    systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 </code></pre>
-<h2 id="lamp">lamp</h2>
+<h3 id="lamp">lamp</h3>
 <p>Apache check config :</p>
 <pre><code class="language-bash">/opt/lampp/bin/httpd -t
 </code></pre>
 <p>Apache restart :</p>
 <pre><code class="language-bash">/opt/lampp/bin/httpd -k restart
 </code></pre>
-<h2 id="postfix">Postfix</h2>
+<h3 id="postfix">Postfix</h3>
 <p>Basic postfix configuration <code>/etc/postfix/main.cf</code> :</p>
 <pre><code class="language-bash">relayhost = [smtp.gmail.com]:587
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
 smtp_sasl_security_options = noanonymous
 </code></pre>
-<h2 id="logrotate">Logrotate</h2>
-<h3 id="check">Check</h3>
+<h3 id="logrotate">Logrotate</h3>
+<h4 id="check">Check</h4>
 <pre><code class="language-bash">logrotate -d /etc/logrotate.d/httpd
 </code></pre>
-<h3 id="apply">Apply</h3>
+<h4 id="apply">Apply</h4>
 <pre><code class="language-bash">logrotate -vf /etc/logrotate.d/httpd
 </code></pre>
-<h1 id="tools-packages">Tools &amp; Packages</h1>
-<h2 id="rpm">RPM</h2>
+<h2 id="tools-packages">Tools &amp; Packages</h2>
+<h3 id="rpm">RPM</h3>
 <p>How to force installation without depedency.</p>
 <pre><code class="language-bash">rpm -Uvh 
 </code></pre>
-<h2 id="debian">Debian</h2>
-<h3 id="repository">Repository</h3>
+<h3 id="debian">Debian</h3>
+<h4 id="repository">Repository</h4>
 <p>bullseye 11 sources.list</p>
 <pre><code class="language-bash">deb http://deb.debian.org/debian bullseye main
 deb-src http://deb.debian.org/debian bullseye main
@@ -1362,13 +508,13 @@ deb-src http://deb.debian.org/debian-security/ bullseye-security main
 deb http://deb.debian.org/debian bullseye-updates main
 deb-src http://deb.debian.org/debian bullseye-updates main
 </code></pre>
-<h2 id="bpytop">bpytop</h2>
+<h3 id="bpytop">bpytop</h3>
 <p>How to isntall bpytop based on APT :</p>
 <pre><code class="language-bash">apt install python3-pip
 pip3 install psutil
 pip3 install bpytop
 </code></pre>
-<h3 id="keymap">Keymap</h3>
+<h4 id="keymap">Keymap</h4>
 <p>Liste:</p>
 <ul>
 <li>Début du mot : <code>b</code></li>
@@ -1383,25 +529,25 @@ pip3 install bpytop
 <li>Enregistrer les modifications et quiter le fichier : <code>ZQ</code></li>
 </ul>
 <p>Répeter la dernière actions effectuée : <code>.</code></p>
-<h2 id="sed">Sed</h2>
+<h3 id="sed">Sed</h3>
 <p>Faire du sed : <code>:%s /foo/newfoo/g</code></p>
-<h2 id="highlithing">Highlithing</h2>
+<h3 id="highlithing">Highlithing</h3>
 <p>Retirer le surlignage : <code>:noh</code></p>
-<h2 id="grep">Grep</h2>
+<h3 id="grep">Grep</h3>
 <p>L'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.</p>
 <pre><code class="language-bash">grep infos fichiers.txt
 grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 </code></pre>
-<h2 id="sed_1">Sed</h2>
+<h3 id="sed_1">Sed</h3>
 <p>Ajout d'élèment à une ligne certaine.</p>
 <pre><code class="language-bash">sed -i '20 a nouvel élèment' FICHIER
 </code></pre>
-<h4 id="remove-saut-de-ligne">Remove saut de ligne.</h4>
+<h5 id="remove-saut-de-ligne">Remove saut de ligne.</h5>
 <pre><code class="language-bash">sed '/^$/d'
 </code></pre>
 <pre><code class="language-bash">sed '/^:space:*$/d'
 </code></pre>
-<h2 id="vim">VIM</h2>
+<h3 id="vim">VIM</h3>
 <p>Début ou fin de fichier :</p>
 <ul>
 <li>Go to the top : <code>gg</code></li>
@@ -1414,11 +560,11 @@ grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 <li>Début de la ligne où se trouve le premier carractère : <code>0</code> <em>(shift+à)</em></li>
 </ul>
 <p>Dans vim : <code>:%s /foo/newfoo/g</code></p>
-<h2 id="tr">TR</h2>
+<h3 id="tr">TR</h3>
 <p>Remove space :</p>
 <pre><code class="language-bash">tr -d '[:blank:]'
 </code></pre>
-<h2 id="awk">AWK</h2>
+<h3 id="awk">AWK</h3>
 <p>Awk command :</p>
 <ul>
 <li><code>grep</code> /word/ :</li>
@@ -1430,7 +576,7 @@ grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 </li>
 <li>awk '{gsub("\"",""); print $2}'</li>
 </ul>
-<h2 id="find">Find</h2>
+<h3 id="find">Find</h3>
 <p>Trouver tout fichier depuis l’endroit que vous souhaitez portant le nom de jacquet :</p>
 <pre><code class="language-bash">find $DEPUIS_QUEL_ENDROIT -name &quot;jacquet&quot;
 </code></pre>
@@ -1449,8 +595,8 @@ grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 </tr>
 </tbody>
 </table>
-<h1 id="storage">Storage</h1>
-<h2 id="compressed-files">Compressed files</h2>
+<h2 id="storage">Storage</h2>
+<h3 id="compressed-files">Compressed files</h3>
 <p>Voici le détail des options :</p>
 <ul>
 <li>c : crée un archive.</li>
@@ -1458,52 +604,52 @@ grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 <li>v : mode verbeux, affiche la progression.</li>
 <li>f : permet de spécifier le nom du fichier d’archive.</li>
 </ul>
-<h3 id="compresser">Compresser</h3>
+<h4 id="compresser">Compresser</h4>
 <p>Compresser des fichiers :</p>
 <pre><code class="language-bash">tar -czvf nom-de-l-archive.tar.gz /chemin/vers/répertoire-ou-fichier
 </code></pre>
-<h3 id="decompresser">Décompresser</h3>
+<h4 id="decompresser">Décompresser</h4>
 <p>Pour décompresser le rar avec son passwd :</p>
 <pre><code class="language-bash">rar x -hP{MOT DE PASSE} {FICHIER.RAR}
 rar x -hPTEST test2.rar
 </code></pre>
-<h2 id="dd">DD</h2>
+<h3 id="dd">DD</h3>
 <p>dd nécessite de droits super utilisateur :</p>
 <pre><code class="language-bash">sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk &amp;&amp; sync
 </code></pre>
-<h2 id="memory">Memory</h2>
-<h4 id="oracle-cloud-infrastructure">Oracle cloud infrastructure</h4>
+<h3 id="memory">Memory</h3>
+<h5 id="oracle-cloud-infrastructure">Oracle cloud infrastructure</h5>
 <pre><code class="language-bash">sync &amp;&amp; echo 3 &gt; /proc/sys/vm/drop_caches
 </code></pre>
-<h3 id="ram">RAM</h3>
+<h4 id="ram">RAM</h4>
 <p>List detailes :</p>
 <pre><code class="language-bash">ps axo rss, comm,pid,command | cat
 </code></pre>
-<h2 id="lvm-logical-volume-manager">LVM - Logical Volume Manager</h2>
-<h3 id="extend-partition">Extend partition</h3>
+<h3 id="lvm-logical-volume-manager">LVM - Logical Volume Manager</h3>
+<h4 id="extend-partition">Extend partition</h4>
 <pre><code class="language-bash">fdisk [/dev/sdX](file:///home/sboistel/Documents/Cliford/Zbook/dev/sdX)
 </code></pre>
 <pre><code class="language-bash">echo 1 &gt; /sys/block/sdX/device/rescan
 </code></pre>
 <pre><code class="language-bash">pvresize /dev/sdX2
 </code></pre>
-<h2 id="make-fs">Make FS</h2>
+<h3 id="make-fs">Make FS</h3>
 <pre><code class="language-bash">mkfs.xfs -d su=64k,sw=4 /dev/mapper/
 </code></pre>
-<h2 id="scan-disk">Scan Disk</h2>
+<h3 id="scan-disk">Scan Disk</h3>
 <p>Rescan disk</p>
 <pre><code class="language-bash">echo 1 &gt; /sys/class/scsi_disk/1\[:TAB:]/device/rescan
 </code></pre>
-<h3 id="create-1-file-heavy-as-1g">Create 1 file heavy as 1G</h3>
+<h4 id="create-1-file-heavy-as-1g">Create 1 file heavy as 1G</h4>
 <pre><code class="language-bash">dd if=/dev/urandom of=tempfile bs=1M count=1024
 </code></pre>
-<h3 id="extend-volumes">Extend volumes</h3>
+<h4 id="extend-volumes">Extend volumes</h4>
 <pre><code class="language-bash">lvextend -L+&lt;&lt;&gt;&gt;G /dev/mapper/VOLUME
 </code></pre>
-<h3 id="apply-modifications">Apply modifications</h3>
+<h4 id="apply-modifications">Apply modifications</h4>
 <pre><code class="language-bash">resize2fs /dev/mapper/VOLUME
 </code></pre>
-<h3 id="reducing-an-lvm2-swap-logical-volume">Reducing an LVM2 Swap Logical Volume</h3>
+<h4 id="reducing-an-lvm2-swap-logical-volume">Reducing an LVM2 Swap Logical Volume</h4>
 <p>Disable swapping for the associated logical volume:</p>
 <pre><code class="language-bash">swapoff -v /dev/VolGroup00/LogVol01
 </code></pre>
@@ -1519,8 +665,8 @@ rar x -hPTEST test2.rar
 <p>To test if the swap logical volume was successfully reduced, inspect active swap space:</p>
 <pre><code class="language-bash">cat /proc/swaps
 </code></pre>
-<h1 id="analyse">Analyse</h1>
-<h2 id="sar">SAR</h2>
+<h2 id="analyse">Analyse</h2>
+<h3 id="sar">SAR</h3>
 <p>On trouvera les fichier de log de l'outil <strong>sysstat</strong> dans : <code>/var/log/sysstat/</code>
 Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.</p>
 <p>Liste des paramètres :</p>
@@ -1530,18 +676,18 @@ Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.
 <li>R : Caches</li>
 <li>u : Utilisateur</li>
 </ul>
-<h2 id="connection">Connection</h2>
-<h3 id="user">User</h3>
+<h3 id="connection">Connection</h3>
+<h4 id="user">User</h4>
 <p>Check last user connection :</p>
 <pre><code class="language-bash">last -15 -aFw
 </code></pre>
 <p>For DEB packages only :</p>
 <pre><code class="language-bash">cat /var/log/auth.log
 </code></pre>
-<h1 id="desktop-environement">Desktop Environement</h1>
+<h2 id="desktop-environement">Desktop Environement</h2>
 <p>Here are somes Desktop Environement tips &amp; tricks</p>
-<h2 id="gnome">Gnome</h2>
-<h4 id="ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</h4>
+<h3 id="gnome">Gnome</h3>
+<h5 id="ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</h5>
 <p>Ajouter un fichier .desktop dans /usr/share/appliations/MONAPPLI.desktop :</p>
 <pre><code class="language-bash">[Desktop Entry]
 Name=MonAppli
@@ -1553,26 +699,26 @@ Type=Application
 Encoding=UTF-8
 Categories=Network;Application
 </code></pre>
-<h4 id="modifier-une-application-existante">Modifier une application éxistante</h4>
+<h5 id="modifier-une-application-existante">Modifier une application éxistante</h5>
 <p>Trouver le fichier de l'application choisie, ici <code>VirtualBox</code>
 Un soucis connu sur Gnome et virtualbox est que l'interface soit broken. On vient alors corrigé ceci en  changeant le style de celui-ci via la commande :</p>
 <pre><code class="language-bash">VirtualBox -style Adwaita
 </code></pre>
 <p>On vient alors modifier le fichier <code>/usr/share/applications/virtualbox.desktop</code>
 On remplace la ligne 10 <code>Exec=VirtualBox %U</code> par <code>Exec=VirtualBox -style Adwaita</code>.</p>
-<h1 id="desktop-manager">Desktop Manager</h1>
-<h2 id="lightdm">Lightdm</h2>
-<h3 id="autologin">Autologin</h3>
+<h2 id="desktop-manager">Desktop Manager</h2>
+<h3 id="lightdm">Lightdm</h3>
+<h4 id="autologin">Autologin</h4>
 <p>Editer le fichier de configuration suivant : <code>/etc/lightdm/lightdm.conf</code>
 Compléter les informations attendues :</p>
 <pre><code class="language-BASH">autologin-user=jdoe
 </code></pre>
-<h1 id="cron">cron</h1>
+<h2 id="cron">cron</h2>
 <p>A CRON expression is simply a string consisting of six fields that each define a specific unit of time. </p>
 <p>They are written in the following format:</p>
 <pre><code>{second} {minute} {hour} {day} {month} {day of the week}
 </code></pre>
-<h2 id="values">Values</h2>
+<h3 id="values">Values</h3>
 <p>The following values are allowed within each date/time unit placeholder.</p>
 <table>
 <thead>
@@ -1615,7 +761,7 @@ Compléter les informations attendues :</p>
 </tr>
 </tbody>
 </table>
-<h2 id="special-characters">Special Characters</h2>
+<h3 id="special-characters">Special Characters</h3>
 <p>Additionally you can also use the following special characters to build more advanced expressions:</p>
 <table>
 <thead>
@@ -1644,7 +790,7 @@ Compléter les informations attendues :</p>
 </tbody>
 </table>
 <hr />
-<h2 id="examples">Examples</h2>
+<h3 id="examples">Examples</h3>
 <p><code>0 * * * * *</code> - Executes every minute
 <code>0 0 * * * *</code> - Executes every hour
 <code>0 0 0 * * *</code> - Executes every day
@@ -1654,49 +800,50 @@ Compléter les informations attendues :</p>
 <code>30 20 * * 6</code> - Executes at 08:30pm every Saturday
 <code>0 */5 * * * *</code> - Executes every five minutes
 <code>0 0 8-10/1 * * *</code> - Executes every hour between 8am and 10am</p>
-
-
-
-
-
-                
-              </article>
+              
             </div>
-          
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../smtp/" class="btn btn-neutral float-right" title="SMTP">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
           
         </div>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
-    </div>
+      </div>
+
+    </section>
+
   </div>
-</footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
-      
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-  </body>
+      <span><a href="../smtp/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
 </html>
