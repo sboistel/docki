@@ -1,3 +1,6 @@
+# 256 Color Codes Cheat-Sheet
+Colors 0-15 are Xterm system colors.
+
 |Xterm Number|COL Xterm Name|HEX|RGB|HSL|
 | - | - | - | - | - |
 |0|![](https://via.placeholder.com/15/000000/000000?text=+)  Black |`#000000`|rgb(0,0,0)|hsl(0,0%,0%)|
