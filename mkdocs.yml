@@ -5,43 +5,65 @@ site_author: BOISTEL Samuel
 nav:
         - Home: README.md
 
-        - Linux: Linux
-
+        - Linux: 
+                - Linux.md
+                - smtp.md
         - Windows:
                 - Windows.md
                 - Windows-Terminal.md
                 - wsl.md
-        
-        - Cloud:
-                - Cloud_Infrastructure.md
-                - Amazon_Web_Services.md
-                - Azure_Cloud.md
-                - Google_Cloud_Platforme.md
-                - Oracle_Cloud_Infrastructure.md
+        - MacOS:
+                - MacOS.md
+                - iterm2.md
 
-        - Networking:
-                - CertManager.md
-        
-        - Hypervisor:
-                - Monitoring.md
-                - VMware.md
-                - Proxmox-VE.md
-                - QEMU-KVM.md
-        
+        - Code :
+                - Perl.md
+                - Python.md
+
+        - DevOPS:
+                - Ansible_Engine.md
+                - Docker.md
+                - ELastiK.md
+                - Terraform.md
+                - Kubernetes.md
+                - Git.md
+
         - Tools:
                 - Centreon_Central.md
                 - Nagios.md
                 - Netbox.md
-                - Rhel_IDM.md
+                - Rhel_idM.md
+                - FreeIPA.md
                 - Guacamole.md
                 - UI-path.md
                 - VNC_Tiger.md
                 - OpenVPN.md
                 - Markdown.md
                 - Ngrok.md
+                - vscode.md
+
+        - miscellaneous:
+                - color-codes.md  
+
+        - Web & Networking:
+                - CertManager.md
+                - SSL.md
+                - http-status.md    
+        
+        - Hypervisor:
+                - VMware.md
+                - Proxmox-VE.md
+                - QEMU-KVM.md
         
         - Storage:
                 - Bareos.md
+
+        - Cloud:
+                - Cloud_Infrastructure.md
+                - Amazon_Web_Services.md
+                - Azure_Cloud.md
+                - Google_Cloud_Platforme.md
+                - Oracle_Cloud_Infrastructure.md
         
         - BDD/BigData:
                 - Cloudera.md
@@ -50,18 +72,8 @@ nav:
                 - MySQL.md
                 - DB2.md
                 - MariaDB.md
-        
-        - DevOPS:
-                - Ansible_Engine.md
-                - Docker.md
-                - ELastiK.md
-                - FreeIPA.md
-                - Terraform.md
-                - Kubernetes.md
-                - Git.md
-                - Perl.md
-                - Python.md
 
 theme: 
-  name: material
+  name: readthedocs
   navigation_depth: 2
+  style_external_links: true
