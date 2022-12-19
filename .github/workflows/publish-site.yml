@@ -1,0 +1,55 @@
+name: publish-site
+on:
+  push:
+    branches:
+    - main
+    - master
+jobs:
+# Lints markdown content
+  lint-code:
+    runs-on: ubuntu-latest
+# Lightweight linter - not allowed by Kyndryl
+#    steps:
+#    - name: markdownlint-cli
+#      uses: nosborn/github-action-markdown-cli@v3.0.1
+#      with:
+#        files: docs/*
+# Heavy super-linter - all languages
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Lint Code Base
+      # Uses the slim image
+        uses: github/super-linter/slim@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_NATURAL_LANGUAGE: false
+          DEFAULT_BRANCH: master
+          VALIDATE_ARM: false
+          VALIDATE_CPP: false
+          VALIDATE_CLANG_FORMAT: false
+          VALIDATE_CLOJURE: false
+          VALIDATE_CLOUDFORMATION: false
+          VALIDATE_LATEX: false
+          VALIDATE_LUA: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# Publish site by using mkdocs to generate it
+  publish-site:
+    needs: [lint-code]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Mkdocs
+        run: pip install mkdocs
+      - name: Install markdown_extensions
+        run: pip install mdx_truly_sane_lists
+      # adding extension install for emoticons
+      - name: Install markdown_extensions_2
+        run: pip install mkdocs-material
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Get latest changes
+        run: git pull
+      - name: Deploy site
+        run: mkdocs gh-deploy
