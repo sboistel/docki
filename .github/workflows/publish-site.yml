@@ -15,20 +15,27 @@ jobs:
     # doc : https://github.com/marketplace/actions/markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v3.2.0
       with:
+        files: mkdocs.yml
+
+    - name: markdownlint-cli
+    # doc : https://github.com/marketplace/actions/markdownlint-cli
+      uses: nosborn/github-action-markdown-cli@v3.2.0
+      with:
         files: docs/*
 
   publish-site:
     needs: [lint-code]
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Install Mkdocs
-        run: pip install mkdocs
-
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: Get latest changes
-        run: git pull
-
-      - name: Deploy site
-        run: mkdocs gh-deploy
+    - name: Install Mkdocs
+      run: pip install mkdocs
+    
+    - name: Checkout Code
+      uses: actions/checkout@v3
+    
+    - name: Get latest changes
+      run: git pull
+    
+    - name: Deploy site
+      run: mkdocs gh-deploy
