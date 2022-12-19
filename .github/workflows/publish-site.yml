@@ -11,6 +11,9 @@ jobs:
    # Lightweight linter
    
     steps:
+    - name: markdown lint cli
+      run: npm install -g markdownlint-cli
+
     - name: markdownlint-cli
     # doc : https://github.com/marketplace/actions/markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v3.2.0
@@ -24,7 +27,7 @@ jobs:
     steps:
     - name: Install Mkdocs
       run: pip install mkdocs
-    
+
     - name: Checkout Code
       uses: actions/checkout@v3
     
