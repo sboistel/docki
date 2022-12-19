@@ -5,11 +5,12 @@ Cert-manager adds certificates and certificate issuers as resource types in **Ku
 Documentation & Project Homepage: [Cert-Manager Docs](https://cert-manager.io/docs/)
 
 ---
+
 ## Self-Signed Certificates
 
 ### Upload existing CA.key and CA.crt files (Option 1)
 
-1. Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)
+#### 1. Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)
 
 (ca.key)
 
@@ -23,13 +24,13 @@ openssl genrsa -out ca.key 4096
 openssl req -new -x509 -sha256 -days 365 -key ca.key -out ca.crt
 ```
 
-2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)
+#### 2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)
 
 ```shell
 cat ca.key | base64 -w 0
 ```
 
-3. Create a new ssl secret object using the strings
+#### 3. Create a new ssl secret object using the strings
 
 ```yaml
 apiVersion: v1
@@ -45,7 +46,7 @@ data:
   tls.key: <base64-decoded-string>
 ```
 
-4. Create a new ClusterIssuer or Issuer object by using the ssl secret
+#### 4. Create a new ClusterIssuer or Issuer object by using the ssl secret
 
 ```yaml
 apiVersion: cert-manager.io/v1
