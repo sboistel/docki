@@ -214,15 +214,15 @@
 <li>Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)</li>
 </ol>
 <p>(ca.key)</p>
-<pre><code class="language-bash">openssl genrsa -out ca.key 4096
+<pre><code class="language-shell">openssl genrsa -out ca.key 4096
 </code></pre>
 <p>(ca.crt)</p>
-<pre><code class="language-bash">openssl req -new -x509 -sha256 -days 365 -key ca.key -out ca.crt
+<pre><code class="language-shell">openssl req -new -x509 -sha256 -days 365 -key ca.key -out ca.crt
 </code></pre>
 <ol>
 <li>Convert the files to a one line base64 decoded string (only works on Linux base64 tool)</li>
 </ol>
-<pre><code class="language-bash">cat ca.key | base64 -w 0
+<pre><code class="language-shell">cat ca.key | base64 -w 0
 </code></pre>
 <ol>
 <li>Create a new ssl secret object using the strings</li>
