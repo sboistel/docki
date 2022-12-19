@@ -52,7 +52,6 @@ nav:
     - VNC_Tiger.md
     - OpenVPN.md
     - Ngrok.md
-    - vscode.md      
   - Web & Networking:
     - CertManager.md
     - SSL.md
@@ -75,5 +74,6 @@ nav:
     - DB2.md
     - MariaDB.md
   - Miscellaneous:
+    - vscode.md      
     - color-codes.md    
     - Markdown.md     
