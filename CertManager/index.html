@@ -116,6 +116,16 @@
     <li class="toctree-l2"><a class="reference internal" href="#self-signed-certificates">Self-Signed Certificates</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#upload-existing-cakey-and-cacrt-files-option-1">Upload existing CA.key and CA.crt files (Option 1)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate">1. Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool">2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3-create-a-new-ssl-secret-object-using-the-strings">3. Create a new ssl secret object using the strings</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret">4. Create a new ClusterIssuer or Issuer object by using the ssl secret</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#create-ca-through-cert-manager-option-2">Create CA through Cert-manager (Option 2)</a>
     </li>
@@ -210,23 +220,17 @@
 <hr />
 <h2 id="self-signed-certificates">Self-Signed Certificates</h2>
 <h3 id="upload-existing-cakey-and-cacrt-files-option-1">Upload existing CA.key and CA.crt files (Option 1)</h3>
-<ol>
-<li>Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)</li>
-</ol>
+<h4 id="1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate">1. Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)</h4>
 <p>(ca.key)</p>
 <pre><code class="language-shell">openssl genrsa -out ca.key 4096
 </code></pre>
 <p>(ca.crt)</p>
 <pre><code class="language-shell">openssl req -new -x509 -sha256 -days 365 -key ca.key -out ca.crt
 </code></pre>
-<ol>
-<li>Convert the files to a one line base64 decoded string (only works on Linux base64 tool)</li>
-</ol>
+<h4 id="2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool">2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)</h4>
 <pre><code class="language-shell">cat ca.key | base64 -w 0
 </code></pre>
-<ol>
-<li>Create a new ssl secret object using the strings</li>
-</ol>
+<h4 id="3-create-a-new-ssl-secret-object-using-the-strings">3. Create a new ssl secret object using the strings</h4>
 <pre><code class="language-yaml">apiVersion: v1
 kind: Secret
 metadata:
@@ -239,9 +243,7 @@ data:
   tls.crt: &lt;base64-decoded-string&gt;
   tls.key: &lt;base64-decoded-string&gt;
 </code></pre>
-<ol>
-<li>Create a new ClusterIssuer or Issuer object by using the ssl secret</li>
-</ol>
+<h4 id="4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret">4. Create a new ClusterIssuer or Issuer object by using the ssl secret</h4>
 <pre><code class="language-yaml">apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
