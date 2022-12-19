@@ -12,18 +12,20 @@ Documentation & Project Homepage: [Cert-Manager Docs](https://cert-manager.io/do
 1. Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)
 
 (ca.key)
-```bash
+
+```shell
 openssl genrsa -out ca.key 4096
 ```
 
 (ca.crt)
-```bash
+
+```shell
 openssl req -new -x509 -sha256 -days 365 -key ca.key -out ca.crt
 ```
 
 2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)
 
-```bash
+```shell
 cat ca.key | base64 -w 0
 ```
 
@@ -71,7 +73,8 @@ spec:
   selfSigned: {}
 ```
 
---- 
+---
+
 ## Troubleshooting
 
 ### Common Errors

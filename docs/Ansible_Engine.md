@@ -9,11 +9,10 @@
 * -K : Demander le mot de passe **root**
 * -b,--become : Éxécuter en tant que **su** (*admin)
 
-
 ## Configuration
 
-
 ### ansible
+
 file : `ansible.cgf`
 
 ```bash
@@ -21,8 +20,8 @@ host_key_checking = False
 inventory = pve.inventory
 ```
 
-
 ### Inventory
+
 file : `inventory`
 
 ```bash
@@ -33,4 +32,3 @@ ansible ansible_hosts=iP
 ansible_user = John Doe
 ansible_password = jdoe
 ```
-

@@ -21,17 +21,18 @@ How do job command works ?
 | Which files were backed up? | list files jobid=xx |
 
 ### Level list
-- Base
-- Catalog
-- Data
-- Differential
-- DiskToCatalog
-- Full
-- Incremental
-- InitCatalog
-- Since
-- VirtualFull
-- VolumeToCatalog
+
+* Base
+* Catalog
+* Data
+* Differential
+* DiskToCatalog
+* Full
+* Incremental
+* InitCatalog
+* Since
+* VirtualFull
+* VolumeToCatalog
 
 ### Status table view
 
@@ -57,4 +58,3 @@ How do job command works ?
 | t      | Waiting for Start Time                    |
 | p      | Waiting for higher priority job to finish |
 | W      | Terminated with warnings                  |
-

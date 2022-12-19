@@ -1,4 +1,5 @@
 # Centreon Central
+
 Here are somes Centreon tips & tricks
 
 ## Analyse
@@ -52,4 +53,3 @@ On va utiliser le mode **list-storages** :
 ```BASH
 /usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl --plugin=os::linux::snmp::plugin --mode=list-storages --hostname=${iP}
 ```
-
