@@ -16,7 +16,6 @@ copyright: Copyright &copy; 2022 sboistel
 # Theme
 theme:
   name: readthedocs
-  # navigation_depth: 2
   style_external_links: true
 
 # Page tree
@@ -31,16 +30,16 @@ nav:
     - wsl.md
   - MacOS:
     - MacOS.md
-    - iterm2.md      
+    - iterm2.md
   - Code & DevOPS:
     - Perl.md
-    - Python.md      
+    - Python.md
     - Ansible_Engine.md
     - Docker.md
     - ELastiK.md
     - Terraform.md
     - Kubernetes.md
-    - Git.md         
+    - Git.md
   - Tools:
     - Centreon_Central.md
     - Nagios.md
@@ -52,6 +51,7 @@ nav:
     - VNC_Tiger.md
     - OpenVPN.md
     - Ngrok.md
+    - vscode.md
   - Web & Networking:
     - CertManager.md
     - SSL.md
@@ -66,7 +66,7 @@ nav:
     - Proxmox-VE.md
     - QEMU-KVM.md
   - Storage & BDD & BigData:
-    - Bareos.md      
+    - Bareos.md
     - Cloudera.md
     - Hadoop.md
     - Oracle.md
@@ -74,6 +74,5 @@ nav:
     - DB2.md
     - MariaDB.md
   - Miscellaneous:
-    - vscode.md 
-    - color-codes.md    
-    - Markdown.md     
+    - color-codes.md
+    - Markdown.md
