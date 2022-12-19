@@ -12,7 +12,8 @@ jobs:
    
     steps:
     - name: markdownlint-cli
-      uses: nosborn/github-action-markdown-cli@v3.0.1
+    # doc : https://github.com/marketplace/actions/markdownlint-cli
+      uses: nosborn/github-action-markdown-cli@v3.2.0
       with:
         files: docs/*
 
