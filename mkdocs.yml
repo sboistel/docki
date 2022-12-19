@@ -13,83 +13,34 @@ repo_url: https://github.com/sboistel/docki
 # Copyright
 copyright: Copyright &copy; 2022 sboistel
 
+# Theme
 theme:
-  name: material
+  name: readthedocs
   # navigation_depth: 2
   style_external_links: true
-  custom_dir: material/.overrides
-
-  features:
-    # - announce.dismiss
-    - content.code.annotate
-    # - content.tabs.link
-    - content.tooltips
-    # - header.autohide
-    - navigation.expand
-    - navigation.indexes
-    # - navigation.instant
-    # - navigation.prune
-    - navigation.sections
-    - navigation.tabs
-    # - navigation.tabs.sticky
-    - navigation.top
-    - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
-    # - toc.integrate
-
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
 
 # Page tree
 nav:
-  - Home: README.md
-  - Operating System:
-    - Linux:
-      - Linux.md
-      - smtp.md
-    - Windows:
-      - Windows.md
-      - Windows-Terminal.md
-      - wsl.md
-    - MacOS:
-      - MacOS.md
-      - iterm2.md      
-  - Code :
+  - README.md
+  - Linux:
+    - Linux.md
+    - smtp.md
+  - Windows:
+    - Windows.md
+    - Windows-Terminal.md
+    - wsl.md
+  - MacOS:
+    - MacOS.md
+    - iterm2.md      
+  - Code & DevOPS:
     - Perl.md
     - Python.md      
-    - DevOPS:
-      - Ansible_Engine.md
-      - Docker.md
-      - ELastiK.md
-      - Terraform.md
-      - Kubernetes.md
-      - Git.md         
-  - Cloud:
-    - Cloud_Infrastructure.md
-    - Amazon_Web_Services.md
-    - Azure_Cloud.md
-    - Google_Cloud_Platforme.md
-    - Oracle_Cloud_Infrastructure.md
+    - Ansible_Engine.md
+    - Docker.md
+    - ELastiK.md
+    - Terraform.md
+    - Kubernetes.md
+    - Git.md         
   - Tools:
     - Centreon_Central.md
     - Nagios.md
@@ -102,23 +53,27 @@ nav:
     - OpenVPN.md
     - Ngrok.md
     - vscode.md      
-    - Miscellaneous:
-      - color-codes.md    
-      - Markdown.md     
-    - Web & Networking:
-      - CertManager.md
-      - SSL.md
-      - http-status.md    
-  - Hypervisor:
+  - Web & Networking:
+    - CertManager.md
+    - SSL.md
+    - http-status.md
+  - Cloud & Hypervisor:
+    - Cloud_Infrastructure.md
+    - Amazon_Web_Services.md
+    - Azure_Cloud.md
+    - Google_Cloud_Platforme.md
+    - Oracle_Cloud_Infrastructure.md
     - VMware.md
     - Proxmox-VE.md
     - QEMU-KVM.md
-  - Storage:
+  - Storage & BDD & BigData:
     - Bareos.md      
-  - BDD/BigData:
     - Cloudera.md
     - Hadoop.md
     - Oracle.md
     - MySQL.md
     - DB2.md
     - MariaDB.md
+  - Miscellaneous:
+    - color-codes.md    
+    - Markdown.md     
