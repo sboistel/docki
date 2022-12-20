@@ -1,8 +1,10 @@
 name: publish-site
 on:
   push:
-    branches:
-    - master
+    branches-ignore: [master, main]
+    # Remove the line above to run when pushing to master
+  pull_request:
+    branches: [master, main]
 
 jobs:
   # Lints markdown content
@@ -11,13 +13,8 @@ jobs:
    # Lightweight linter
    
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        ref: master
-
-    # - name: markdown lint cli
-    #   run: npm install -g markdownlint-cli
+    - name: markdown lint cli
+      run: npm install -g markdownlint-cli
 
     - name: markdownlint-cli
     # doc : https://github.com/marketplace/actions/markdownlint-cli
@@ -33,8 +30,13 @@ jobs:
     - name: Install Mkdocs
       run: pip install mkdocs
 
-    - name: Checkout Code
+    # - name: Checkout Code
+    #   uses: actions/checkout@v3
+    
+    - name: Checkout
       uses: actions/checkout@v3
+      with:
+        ref: master
     
     - name: Get latest changes
       run: git pull
