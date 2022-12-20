@@ -1,35 +1,35 @@
-name: publish-site
+name: publish site
+# on:
+#   push:
+#     branches:
+#     - master
+
 on:
   push:
-    branches:
-    - master
+    branches-ignore: [master, main]
+    # Remove the line above to run when pushing to master
+  pull_request:
+    branches: [master, main]
 
 jobs:
 
 # Lints markdown content
   lint-code:
     runs-on: ubuntu-latest
-   # Lightweight linter
    
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
       with:
+        # Full git history is needed to get a proper
+        # list of changed files within `super-linter`
         fetch-depth: 0
+
     - name: Lint Code Base
-    # Uses the slim image
-      uses: github/super-linter/slim@v4
+      uses: github/super-linter@v4
       env:
         VALIDATE_ALL_CODEBASE: false
-        VALIDATE_NATURAL_LANGUAGE: false
         DEFAULT_BRANCH: master
-        VALIDATE_ARM: false
-        VALIDATE_CPP: false
-        VALIDATE_CLANG_FORMAT: false
-        VALIDATE_CLOJURE: false
-        VALIDATE_CLOUDFORMATION: false
-        VALIDATE_LATEX: false
-        VALIDATE_LUA: false
 
     # - name: markdown lint cli
     #   run: npm install -g markdownlint-cli
