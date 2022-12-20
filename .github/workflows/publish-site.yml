@@ -5,12 +5,18 @@ on:
     - master
 
 jobs:
-  # Lints markdown content
+
+# Lints markdown content
   lint-code:
     runs-on: ubuntu-latest
    # Lightweight linter
    
     steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
     - name: markdown lint cli
       run: npm install -g markdownlint-cli
 
@@ -20,6 +26,7 @@ jobs:
       with:
         files: docs/*
 
+# Publish site by using mkdocs to generate it
   publish-site:
     needs: [lint-code]
     runs-on: ubuntu-latest
