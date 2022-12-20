@@ -14,17 +14,31 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
-    #   with:
-    #     fetch-depth: 0
-
-    - name: markdown lint cli
-      run: npm install -g markdownlint-cli
-
-    - name: markdownlint-cli
-    # doc : https://github.com/marketplace/actions/markdownlint-cli
-      uses: nosborn/github-action-markdown-cli@v3.2.0
       with:
-        files: docs/*
+        fetch-depth: 0
+    - name: Lint Code Base
+    # Uses the slim image
+      uses: github/super-linter/slim@v4
+      env:
+        VALIDATE_ALL_CODEBASE: false
+        VALIDATE_NATURAL_LANGUAGE: false
+        DEFAULT_BRANCH: master
+        VALIDATE_ARM: false
+        VALIDATE_CPP: false
+        VALIDATE_CLANG_FORMAT: false
+        VALIDATE_CLOJURE: false
+        VALIDATE_CLOUDFORMATION: false
+        VALIDATE_LATEX: false
+        VALIDATE_LUA: false
+
+    # - name: markdown lint cli
+    #   run: npm install -g markdownlint-cli
+
+    # - name: markdownlint-cli
+    # # doc : https://github.com/marketplace/actions/markdownlint-cli
+    #   uses: nosborn/github-action-markdown-cli@v3.2.0
+    #   with:
+    #     files: docs/*
 
 # Publish site by using mkdocs to generate it
   publish-site:
