@@ -1,42 +1,30 @@
 name: publish-site
-
 on:
   push:
-    branches-ignore: [master, main]
-    # Remove the line above to run when pushing to master
-  pull_request:
-    branches: [master, main]
+    branches:
+    - master
 
 jobs:
-
-# Lints markdown content
+  # Lints markdown content
   lint-code:
     runs-on: ubuntu-latest
+   # Lightweight linter
    
     steps:
-    - name: Checkout Code
+    - name: Checkout
       uses: actions/checkout@v3
       with:
-        # Full git history is needed to get a proper
-        # list of changed files within `super-linter`
-        fetch-depth: 0
+        ref: master
 
-    - name: Lint Code Base
-      uses: github/super-linter@v4
-      env:
-        VALIDATE_ALL_CODEBASE: false
-        DEFAULT_BRANCH: master
+    - name: markdown lint cli
+      run: npm install -g markdownlint-cli
 
-    # - name: markdown lint cli
-    #   run: npm install -g markdownlint-cli
+    - name: markdownlint-cli
+    # doc : https://github.com/marketplace/actions/markdownlint-cli
+      uses: nosborn/github-action-markdown-cli@v3.2.0
+      with:
+        files: docs/*
 
-    # - name: markdownlint-cli
-    # # doc : https://github.com/marketplace/actions/markdownlint-cli
-    #   uses: nosborn/github-action-markdown-cli@v3.2.0
-    #   with:
-    #     files: docs/*
-
-# Publish site by using mkdocs to generate it
   publish-site:
     needs: [lint-code]
     runs-on: ubuntu-latest
@@ -45,8 +33,8 @@ jobs:
     - name: Install Mkdocs
       run: pip install mkdocs
 
-    # - name: Checkout Code
-    #   uses: actions/checkout@v3
+    - name: Checkout Code
+      uses: actions/checkout@v3
     
     - name: Get latest changes
       run: git pull
