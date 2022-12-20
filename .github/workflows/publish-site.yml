@@ -16,8 +16,8 @@ jobs:
       with:
         ref: master
 
-    - name: markdown lint cli
-      run: npm install -g markdownlint-cli
+    # - name: markdown lint cli
+    #   run: npm install -g markdownlint-cli
 
     - name: markdownlint-cli
     # doc : https://github.com/marketplace/actions/markdownlint-cli
