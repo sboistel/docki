@@ -1,8 +1,4 @@
 name: publish-site
-# on:
-#   push:
-#     branches:
-#     - master
 
 on:
   push:
@@ -49,8 +45,8 @@ jobs:
     - name: Install Mkdocs
       run: pip install mkdocs
 
-    - name: Checkout Code
-      uses: actions/checkout@v3
+    # - name: Checkout Code
+    #   uses: actions/checkout@v3
     
     - name: Get latest changes
       run: git pull
