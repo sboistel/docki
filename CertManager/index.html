@@ -112,8 +112,36 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Web & Networking</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="" href="../CertManager.md - mkcert.md">None</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Cert-Manager</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#self-signed-certificates">Self-Signed Certificates</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#upload-existing-cakey-and-cacrt-files-option-1">Upload existing CA.key and CA.crt files (Option 1)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate">1. Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool">2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3-create-a-new-ssl-secret-object-using-the-strings">3. Create a new ssl secret object using the strings</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret">4. Create a new ClusterIssuer or Issuer object by using the ssl secret</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#create-ca-through-cert-manager-option-2">Create CA through Cert-manager (Option 2)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#common-errors">Common Errors</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mkcert/">Certificate Generator</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../SSL/">SSL Certificates</a>
                   </li>
@@ -177,6 +205,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Web & Networking &raquo;</li>
       <li>Cert-Manager</li>
     <li class="wy-breadcrumbs-aside">
           <a href="https://github.com/sboistel/docki/edit/master/docs/CertManager.md">Edit on docki</a>
@@ -247,6 +276,10 @@ The error, <code>Failed to determine a valid solver configuration for the set of
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../vscode/" class="btn btn-neutral float-left" title="VSCode"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mkcert/" class="btn btn-neutral float-right" title="Certificate Generator">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -269,6 +302,10 @@ The error, <code>Failed to determine a valid solver configuration for the set of
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
+      <span><a href="../vscode/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mkcert/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
