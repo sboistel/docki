@@ -1,10 +1,8 @@
 name: publish-site
 on:
   push:
-    branches-ignore: [master, main]
-    # Remove the line above to run when pushing to master
-  pull_request:
-    branches: [master, main]
+    branches:
+    - master
 
 jobs:
   # Lints markdown content
@@ -13,9 +11,7 @@ jobs:
    # Lightweight linter
    
     steps:
-    - name: markdown lint cli
-      run: npm install -g markdownlint-cli
-
+    
     - name: markdownlint-cli
     # doc : https://github.com/marketplace/actions/markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v3.2.0
@@ -25,21 +21,15 @@ jobs:
   publish-site:
     needs: [lint-code]
     runs-on: ubuntu-latest
-    
     steps:
-    - name: Install Mkdocs
-      run: pip install mkdocs
+      - name: Install Mkdocs
+        run: pip install mkdocs
 
-    # - name: Checkout Code
-    #   uses: actions/checkout@v3
-    
-    - name: Checkout
-      uses: actions/checkout@v3
-      with:
-        ref: master
-    
-    - name: Get latest changes
-      run: git pull
-    
-    - name: Deploy site
-      run: mkdocs gh-deploy
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Get latest changes
+        run: git pull
+
+      - name: Deploy site
+        run: mkdocs gh-deploy
