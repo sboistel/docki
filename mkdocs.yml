@@ -54,7 +54,7 @@ nav:
     - vscode.md
   - Web & Networking:
     - CertManager.md
-      - mkcert.md
+    - mkcert.md
     - SSL.md
     - http-status.md
   - Cloud & Hypervisor:
