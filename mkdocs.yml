@@ -17,6 +17,7 @@ copyright: Copyright &copy; 2022 sboistel
 theme:
   name: readthedocs
   style_external_links: true
+  navigation_depth: 5
 
 # Page tree
 nav:
