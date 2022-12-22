@@ -15,8 +15,8 @@ jobs:
     - name: markdownlint-cli
     # doc : https://github.com/marketplace/actions/markdownlint-cli
       uses: nosborn/github-action-markdown-cli@v3.2.0
-      # with:
-      #   files: docs/
+      with:
+        files: docs/
 
   publish-site:
     needs: [lint-code]
