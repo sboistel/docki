@@ -21,8 +21,6 @@
 
 _- On Windows keyboards use the Alt key instead of ⌥ + , and the Windows logo key instead of ⌘ + ._
 
-
-
 ## Cut, copy, paste, and other common shortcuts
 
 | keys          | description                                                                                                   |
