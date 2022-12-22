@@ -1,3 +1,4 @@
 site/
 .DS_Store
 .obsidian/
+mkdeploy.sh #auto deploy via script bash
