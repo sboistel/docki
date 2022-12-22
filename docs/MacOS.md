@@ -1,15 +1,7 @@
 # MacOS keyboard shortcuts
 
-# Table of contents
-- [MacOS keyboard shortcuts](#macos-keyboard-shortcuts)
-- [Table of contents](#table-of-contents)
-  - [Mac Keyboard Modifier keys](#mac-keyboard-modifier-keys)
-  - [Cut, copy, paste, and other common shortcuts](#cut-copy-paste-and-other-common-shortcuts)
-  - [Sleep, log out, and shut down shortcuts](#sleep-log-out-and-shut-down-shortcuts)
-  - [Finder and system shortcuts](#finder-and-system-shortcuts)
-  - [Document shortcuts](#document-shortcuts)
-
 ## Mac Keyboard Modifier keys
+
 | key  | description    |
 | :--- | :------------- |
 | ⌘    | ⌘ +  / Cmd     |
@@ -57,8 +49,8 @@ _- On Windows keyboards use the Alt key instead of ⌥ + , and the Windows logo 
 | ⇧ + ⌘ + n     | Create a new folder in the Finder                                                                             |
 | ⌘ + ,         | Open preferences for the front app                                                                            |
 
-
 ## Sleep, log out, and shut down shortcuts
+
 _* You might need to press and hold some of these shortcuts for slightly longer than other shortcuts. This helps you to avoid using them unintentionally._
 
 | keys              | description                                                                         |
@@ -80,8 +72,8 @@ _* You might need to press and hold some of these shortcuts for slightly longer 
 | ⇧ + ⌘ + q         | Log out of your macOS user account. You will be asked to confirm                    |
 | ⌥ + ⇧ + ⌘ + q     | Log out immediately without confirming                                              |
 
-
 ## Finder and system shortcuts
+
 | keys                            | description                                                                                |
 | :------------------------------ | :----------------------------------------------------------------------------------------- |
 | ⌘ + d                           | Duplicate the selected files                                                               |
@@ -155,9 +147,9 @@ _* You might need to press and hold some of these shortcuts for slightly longer 
 | ⌥ + click a disclosure triangle | Open all folders within the selected folder. This works only when in list view             |
 | ⌘ + click a window title        | See the folders that contain the current folder                                            |
 
-
 ## Document shortcuts
-_*The behavior of these shortcuts may vary with the app you're using_
+
+***The behavior of these shortcuts may vary with the app you're using**
 
 | keys          | description                                                                                                                        |
 | :------------ | :--------------------------------------------------------------------------------------------------------------------------------- |

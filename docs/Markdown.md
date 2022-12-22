@@ -7,9 +7,9 @@ RFC: [RFC 7763](https://www.rfc-editor.org/rfc/rfc7763)
 GitHub Documentation: [Writing Markdown on GitHub](https://docs.github.com/en/get-started/writing-on-github)
 
 ---
-## Cheat-Sheet
 
-### Headings
+## Headings
+
 ```markdown
 # Heading 1
 ## Heading 2
@@ -21,7 +21,8 @@ GitHub Documentation: [Writing Markdown on GitHub](https://docs.github.com/en/ge
 
 Here is a heading: `# Heading`, **don't do this:** `#Heading` 
 
-### Emphasis
+## Emphasis
+
 ```markdown
 Emphasis, aka italics, with *asterisks* or _underscores_.
 
@@ -32,41 +33,46 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 
-### Line Breaks
+## Line Breaks
 ```markdown
 First line with two spaces after.  
 And the next line.
 ```
 
-### Lists
+## Lists
 
-#### Ordered Lists
+## Ordered Lists
+
 ```markdown
 1. First item
 2. Second item
 3. Third item
 ```
 
-#### Unordered Lists
+## Unordered Lists
+
 ```markdown
 - First item
 - Second item
 - Third item
 ```
 
-### Links
+## Links
+
 ```markdown
 Link with text: [link-text](https://www.google.com)
 ```
 
-### Images
+## Images
+
 ```markdown
 Image with alt text: ![alt-text](https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067)
 
 Image without alt text: ![](https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067)
 ```
 
-#### Position
+## Position
+
 List of avail positions :
 
 |   Name    | 	Description     |
@@ -82,7 +88,8 @@ List of avail positions :
 </p>}
 ```
 
-#### Size
+## Size
+
 Use as `%` `width="1..100%"`
 ```html
 <p align="center">
@@ -90,37 +97,40 @@ Use as `%` `width="1..100%"`
 </p>
 ```
 
-### Code Blocks
+## Code Blocks
 
-#### Inline Code Block
+## Inline Code Block
+
 ```markdown
 Inline `code` has `back-ticks around` it.
 ```
 
-#### Blocks of Code
+## Blocks of Code
+
 <pre>
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
- 
+
 ```python
 s = "Python syntax highlighting"
 print s
 ```
- 
+
 ```
 No language indicated, so no syntax highlighting. 
 But let's throw in a <b>tag</b>.
 ```
 </pre>
 
-### Tables
+## Tables
 
 There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily.
 
 Basic table Code :
+
 ```markdown
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
@@ -134,7 +144,7 @@ Result :
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
 
-### Task list
+## Task list
 
 To create a task list start line with square brackets with an empty space.
 Ex: [ <space> ] and add text for task.
