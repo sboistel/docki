@@ -54,6 +54,8 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#regular-expression">Regular Expression</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#emergency">Emergency</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#grub">Grub</a>
@@ -331,6 +333,129 @@
 </ul>
 </li>
 </ul>
+<h2 id="regular-expression">Regular Expression</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.</td>
+<td>The period (.) matches any single character.</td>
+</tr>
+<tr>
+<td>?</td>
+<td>The preceding item is optional and will be matched at most once.</td>
+</tr>
+<tr>
+<td>*</td>
+<td>The preceding item will be matched zero or more times.</td>
+</tr>
+<tr>
+<td>+</td>
+<td>The preceding item will be matched one or more times.</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>The preceding item is matched exactly n times.</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>The preceding item is matched n or more times.</td>
+</tr>
+<tr>
+<td>{,m}</td>
+<td>The preceding item is matched at most m times.</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>The preceding item is matched at least n times, but not more than m times.</td>
+</tr>
+<tr>
+<td>[:alnum:]</td>
+<td>Alphanumeric characters: '[:alpha:]' and '[:digit:]'; in the 'C' locale and ASCII character encoding, this is the same as '[0-9A-Za-z]'.</td>
+</tr>
+<tr>
+<td>[:alpha:]</td>
+<td>Alphabetic characters: '[:lower:]' and '[:upper:]'; in the 'C' locale and ASCII character encoding, this is the same as '[A-Za-z]'.</td>
+</tr>
+<tr>
+<td>[:blank:]</td>
+<td>Blank characters: space and tab.</td>
+</tr>
+<tr>
+<td>[:cntrl:]</td>
+<td>Control characters. In ASCII, these characters have octal codes 000 through 037, and 177 (DEL). In other character sets, these are the equivalent characters, if any.</td>
+</tr>
+<tr>
+<td>[:digit:]</td>
+<td>Digits: 0 1 2 3 4 5 6 7 8 9.</td>
+</tr>
+<tr>
+<td>[:graph:]</td>
+<td>Graphical characters: '[:alnum:]' and '[:punct:]'.</td>
+</tr>
+<tr>
+<td>[:lower:]</td>
+<td>Lower-case letters; in the 'C' locale and ASCII character encoding, this is a b c d e f g h i j k l m n o p q r s t u v w x y z.</td>
+</tr>
+<tr>
+<td>[:print:]</td>
+<td>Printable characters: '[:alnum:]', '[:punct:]', and space.</td>
+</tr>
+<tr>
+<td>[:punct:]</td>
+<td>Punctuation characters; in the 'C' locale and ASCII character encoding, this is! " # $ % &amp; ' ( ) * + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ ' {</td>
+</tr>
+<tr>
+<td>[:space:]</td>
+<td>Space characters: in the 'C' locale, this is tab, newline, vertical tab, form feed,carriage return, and space.</td>
+</tr>
+<tr>
+<td>[:upper:]</td>
+<td>Upper-case letters: in the 'C' locale and ASCII character encoding, this is A B C D E F G H I J K L M N O P Q R S T U V W X Y Z.</td>
+</tr>
+<tr>
+<td>[:xdigit:]</td>
+<td>Hexadecimal digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F a b c d e f.</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>Match the empty string at the edge of a word.</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>Match the empty string provided it is not at the edge of a word.</td>
+</tr>
+<tr>
+<td>\&lt;</td>
+<td>Match the empty string at the beginning of word.</td>
+</tr>
+<tr>
+<td>></td>
+<td>Match the empty string at the end of word.</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>Match word constituent. Synonym for '[_[:alnum:]]'.</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>Match non-word constituent. Synonym for '[\^_[:alnum:]]'.</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>Match white space. Synonym for '[[:space:]]'.</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>Match non-whitespace. Synonym for '[^[:space:]]'.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="emergency">Emergency</h2>
 <h3 id="grub">Grub</h3>
 <ol>
