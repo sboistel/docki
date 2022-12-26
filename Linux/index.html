@@ -276,61 +276,47 @@
 <h2 id="system">System</h2>
 <h3 id="exit-codes">Exit codes</h3>
 <ul>
-<li>Contient le nom du script tel qu'il a été invoqué: <ul>
+<li>Contient le nom du script tel qu'il a été invoqué:</li>
 <li>
 <blockquote>
 <p>$0</p>
 </blockquote>
 </li>
-</ul>
-</li>
-<li>L'ensembles des paramètres sous la forme d'un seul argument:<ul>
+<li>L'ensembles des paramètres sous la forme d'un seul argument:</li>
 <li>
 <blockquote>
 <p>$*</p>
 </blockquote>
 </li>
-</ul>
-</li>
-<li>L'ensemble des arguments, un argument par paramètre:<ul>
+<li>L'ensemble des arguments, un argument par paramètre:</li>
 <li>
 <blockquote>
 <p>$@</p>
 </blockquote>
 </li>
-</ul>
-</li>
-<li>Le nombre de paramètres passés au script:<ul>
+<li>Le nombre de paramètres passés au script:</li>
 <li>
 <blockquote>
 <p>$#</p>
 </blockquote>
 </li>
-</ul>
-</li>
-<li>Le code retour de la dernière commande::<ul>
+<li>Le code retour de la dernière commande::</li>
 <li>
 <blockquote>
 <p>$?</p>
 </blockquote>
 </li>
-</ul>
-</li>
-<li>Le PID su shell qui exécute le script:<ul>
+<li>Le PID su shell qui exécute le script:</li>
 <li>
 <blockquote>
 <p><code>$$</code></p>
 </blockquote>
 </li>
-</ul>
-</li>
-<li>Le PID du dernier processus lancé en arrière-plan:<ul>
+<li>Le PID du dernier processus lancé en arrière-plan:</li>
 <li>
 <blockquote>
 <p><code>$!</code></p>
 </blockquote>
-</li>
-</ul>
 </li>
 </ul>
 <h2 id="regular-expression">Regular Expression</h2>
@@ -478,8 +464,8 @@
 <p>chroot sysroot</p>
 </blockquote>
 <p>You are now able to reset root password, or edit linux things.</p>
-<h5 id="selinux">Selinux</h5>
-<p>⚠ Make sure SELinux allows the file changed </p>
+<h4 id="selinux">Selinux</h4>
+<p>⚠ Make sure SELinux allows the file changed</p>
 <blockquote>
 <p>touch .autorelabel
 <em>This will signal SELinux on the next reboot that the filesystem has changed (the changed password) and allow the change to be loaded.</em></p>
@@ -568,22 +554,22 @@ useradd -m -G wheel -s /bin/bash $account
 <li>PS: Password set</li>
 </ul>
 <h3 id="unlock">Unlock</h3>
-<p>Use the <code>-u</code> to unlock account</p>
+<p>Use the <code>-u</code> to unlock account:</p>
 <pre><code class="language-bash">passwd -u $USER
 </code></pre>
 <h3 id="lock">Lock</h3>
-<p>Use the <code>-L</code> to lock account</p>
+<p>Use the <code>-L</code> to lock account:</p>
 <pre><code class="language-bash">passwd -L $USER
 </code></pre>
 <h3 id="time-life-password">Time life password</h3>
-<p>Show the account password information</p>
+<p>Show the account password information:</p>
 <pre><code class="language-bash">chage -l $USER
 </code></pre>
-<p>Set minimum day</p>
+<p>Set minimum day:</p>
 <pre><code class="language-bash">chage -m ${NOMBER OF DAY} ${USER}
 </code></pre>
 <h2 id="sudoers">Sudoers</h2>
-<p>Autorisation de l’utilisateur max de supprimer dans le dossier. </p>
+<p>Autorisation de l’utilisateur max de supprimer dans le dossier.</p>
 <pre><code class="language-bash">max ALL=NOPASSWD:/bin/rm -rf $CHEMIN_de_DOSSIER/*
 </code></pre>
 <p>Autorisation pour l’utilisateur matry_mc_fly de lire les fichiers dans le dossier.</p>
@@ -719,7 +705,7 @@ grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 <p>Ajout d'élèment à une ligne certaine.</p>
 <pre><code class="language-bash">sed -i '20 a nouvel élèment' FICHIER
 </code></pre>
-<h5 id="remove-saut-de-ligne">Remove saut de ligne.</h5>
+<h4 id="remove-saut-de-ligne">Remove saut de ligne</h4>
 <pre><code class="language-bash">sed '/^$/d'
 </code></pre>
 <pre><code class="language-bash">sed '/^:space:*$/d'
@@ -733,7 +719,7 @@ grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
 </ul>
 <p>Début ou fin de ligne :</p>
 <ul>
-<li>Fin de la ligne où se trouve le dernier carractère : <code>$</code> </li>
+<li>Fin de la ligne où se trouve le dernier carractère : <code>$</code></li>
 <li>Début de la ligne où se trouve le premier carractère : <code>0</code> <em>(shift+à)</em></li>
 </ul>
 <p>Dans vim : <code>:%s /foo/newfoo/g</code></p>
@@ -864,7 +850,7 @@ Chacun des fichier dans ce dossier sera normé par <code>sa$JOUR_DU_MOIS</code>.
 <h2 id="desktop-environement">Desktop Environement</h2>
 <p>Here are somes Desktop Environement tips &amp; tricks</p>
 <h3 id="gnome">Gnome</h3>
-<h5 id="ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</h5>
+<h4 id="ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</h4>
 <p>Ajouter un fichier .desktop dans /usr/share/appliations/MONAPPLI.desktop :</p>
 <pre><code class="language-bash">[Desktop Entry]
 Name=MonAppli
@@ -891,7 +877,7 @@ Compléter les informations attendues :</p>
 <pre><code class="language-BASH">autologin-user=jdoe
 </code></pre>
 <h2 id="cron">cron</h2>
-<p>A CRON expression is simply a string consisting of six fields that each define a specific unit of time. </p>
+<p>A CRON expression is simply a string consisting of six fields that each define a specific unit of time.</p>
 <p>They are written in the following format:</p>
 <pre><code>{second} {minute} {hour} {day} {month} {day of the week}
 </code></pre>
