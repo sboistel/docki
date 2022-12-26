@@ -437,23 +437,30 @@
 <li>Press 'CTRL+x' to exit an run it</li>
 </ol>
 <h3 id="rescure">Rescure</h3>
-<p>This prompt spawn:</p>
-<blockquote>
-<p>switch_root:/#.</p>
-</blockquote>
-<p>Mount sysroot :</p>
-<blockquote>
-<p>mount -o remount rw sysroot</p>
-</blockquote>
-<p>Chroot into sysroot :</p>
-<blockquote>
-<p>chroot sysroot</p>
-</blockquote>
-<p>You are now able to reset root password, or edit linux things.</p>
-<p>Don't forget to autorelabel :</p>
-<blockquote>
-<p>touch /.autorelabel</p>
-</blockquote>
+<p>Send a Ctrl+Alt+Del to your system using the relevant button or menu entry.</p>
+<p>When the boot-loader menu appears, press any key to interrupt the countdown, except Enter.</p>
+<p>Use the cursor keys to highlight the default boot loader entry.</p>
+<p>Press e to edit the current entry.</p>
+<p>Use the cursor keys to navigate to the line that starts with linux.</p>
+<p>Press End to move the cursor to the end of the line.</p>
+<p>Append <em>rd.break</em> to the end of the line.</p>
+<p>Press Ctrl+x to boot using the modified configuration.</p>
+<p>At the switch_root prompt, remount the /sysroot file system read/write, then use chroot to go into a chroot jail at /sysroot.</p>
+<pre><code class="language-shell">switch_root:/# mount -o remount,rw /sysroot
+switch_root:/# chroot /sysroot
+</code></pre>
+<p>Set the root password to redhat.</p>
+<pre><code class="language-shell">sh-4.4# passwd root
+Changing password for user root.
+New password: redhat
+BAD PASSWORD: The password is shorter than 8 characters
+Retype new password: redhat
+passwd: all authentication tokens updated successfully.
+</code></pre>
+<p>Configure the system to automatically perform a full SELinux relabel after boot.</p>
+<pre><code class="language-shell">sh-4.4# touch /.autorelabel
+</code></pre>
+<p>Type exit twice to continue booting your system. The system fails to boot because of an issue you resolve in the next step. </p>
 <h4 id="selinux">Selinux</h4>
 <p>⚠ Make sure SELinux allows the file changed</p>
 <blockquote>
