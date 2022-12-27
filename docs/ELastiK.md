@@ -23,9 +23,9 @@ Mise en place de réccupération des métrics ?
 > curl -X PUT "localhost:9200/elk-001?pretty"
 
 ## SSH Port Forward list :
-> ssh -L 127.0.0.1:8080:local_ip:80 user@ip #centreon
-> ssh -L 127.0.0.1:5601:local_ip:5601 user@ip #kibana
-> ssh -L 127.0.0.1:9200:local_ip:9200 user@ip #elasticsearch
+> ssh -L 127.0.0.1:8080:local_ip:80 user@ip # centreon
+> ssh -L 127.0.0.1:5601:local_ip:5601 user@ip # kibana
+> ssh -L 127.0.0.1:9200:local_ip:9200 user@ip # elasticsearch
 
 ## FileBeat :
 > curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.11.1-x86_64.rpm

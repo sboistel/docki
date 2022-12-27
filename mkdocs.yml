@@ -15,22 +15,58 @@ copyright: Copyright &copy; 2022 sboistel
 
 # Theme
 theme:
-  name: readthedocs
+  name: material
   style_external_links: true
   navigation_depth: 5
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
 
 # Page tree
 nav:
-  - README.md
-  - Linux: linux/linux.md
-  - Windows:
-    - Windows.md
-    - Windows-Terminal.md
-    - wsl.md
-  - MacOS:
-    - MacOS.md
-    - iterm2.md
-  - Code & DevOPS:
+  - Operating System:
+    - Linux: 
+      - linux/account.md
+      - linux/apps.md
+      - linux/cron.md
+      - linux/desktop.md
+      - linux/disk.md
+      - linux/exit-codes.md
+      - linux/firewalld.md
+      - linux/gawk.md
+      - linux/keymaps.md
+      - linux/logfile.md
+      - linux/memory.md
+      - linux/network.md
+      - linux/package-manager.md
+      - linux/proc.md
+      - linux/regular-expressions.md
+      - linux/root-rescue.md
+      - linux/sar.md
+      - linux/screen.md
+      - linux/selinux.md
+      - linux/service.md
+      - linux/smtp.md
+      - linux/stratis.md
+      - linux/time.md
+      - linux/vim.md
+      - linux/web.md
+      - linux/where.md
+    - Windows:
+      - windows/account.md
+      - windows/apps.md
+      - windows/powershell.md
+      - windows/storage.md
+      - windows/terminal.md
+      - windows/vars-env.md
+      - windows/windows-boot.md
+      - windows/windows-system.md
+      - windows/wsl.md
+    - MacOS:
+      - MacOS.md
+      - iterm2.md
+  - DevOPS:
     - Perl.md
     - Python.md
     - Ansible_Engine.md
@@ -65,7 +101,7 @@ nav:
     - VMware.md
     - Proxmox-VE.md
     - QEMU-KVM.md
-  - Storage & BDD & BigData:
+  - Storage & BDD:
     - Bareos.md
     - Cloudera.md
     - Hadoop.md

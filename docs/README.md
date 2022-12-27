@@ -1,4 +1,4 @@
-# Welcome to the docki wiki!
+# HOME
 
 Welcome to the [**docki Github**](https://github.com/sboistel/docki) page
 

@@ -4,7 +4,7 @@ How to disable touchscreen at start ?
 
 Create a new file as `/etc/X11/xorg.conf.d/01-no_touchscreen.conf` as 664 :
 
-```bash
+```shell
 ## Written by systemd-localed(8), read by systemd-localed and Xorg. Its
 ## probably wise not to edit this file manually. use localectl(1) to
 ## instruct systemd-localed to update it
@@ -17,7 +17,7 @@ EndSection
 
 Using command line :
 
-```bash
+```shell
 xinput disable $(xinput list | awk '/Touchscreen/ {print $5}' | cut -d "=" -f2)
 ```
 
@@ -43,19 +43,27 @@ Les valeurs acceptées pour la variable HandleLidSwitch:
 
 Donc si je souhaite que mon portable reste actif lorsque l’écran est fermé:
 
-> vim  /etc/systemd/logind.conf
+```shell
+vim  /etc/systemd/logind.conf
+```
 
 Puis on modifie le paramètre HandleLidSwitch de cette façon:
 
-> #HandleLidSwitch=suspend
+```shell
+#HandleLidSwitch=suspend
+```
 
 devient
 
-> HandleLidSwitch=ignore
+```shell
+HandleLidSwitch=ignore
+```
 
 Et on termine par un petit redémarrage:
 
-> reboot
+```shell
+reboot
+```
 
 Retirer la mise en veille lors de la fermeture du capot de l’ordinateur portable.
 
