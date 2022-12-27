@@ -142,9 +142,9 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#disabling-usb-arbitrator-service">Disabling usb arbitrator service</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#stopping">Stopping :</a>
+    <li class="toctree-l3"><a class="reference internal" href="#stopping">Stopping</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#disabling">Disabling :</a>
+    <li class="toctree-l3"><a class="reference internal" href="#disabling">Disabling</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#labeling">Labeling</a>
     </li>
@@ -221,24 +221,23 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="vmware">VMware</h1>
-<p>Created Tuesday 25 January 2022</p>
 <h2 id="rescan-storage">Rescan Storage</h2>
 <p>How to rescan storage ?</p>
-<p><img alt="" src="../img/vmware/pasted_image.png" /></p>
+<p><img alt="demo" src="../img/vmware/pasted_image.png" /></p>
 <h2 id="usb-datastore">USB Datastore</h2>
 <p>How to add an USB hard drive as Datastore ?</p>
 <h3 id="disabling-usb-arbitrator-service">Disabling usb arbitrator service</h3>
-<h3 id="stopping">Stopping :</h3>
+<h3 id="stopping">Stopping</h3>
 <pre><code class="language-bash">/etc/init.d/usbarbitrator stop
 </code></pre>
-<h3 id="disabling">Disabling :</h3>
+<h3 id="disabling">Disabling</h3>
 <pre><code class="language-bash">chkconfig usbarbitrator off
 </code></pre>
 <h3 id="labeling">Labeling</h3>
 <pre><code class="language-bash">partedUtil mklabel /dev/disks/mpx.vmhba32:C0:T0:L0 gpt
 </code></pre>
 <h3 id="get-the-partition-table">Get the partition table</h3>
-<p>:warning: This command will bring you a number :</p>
+<p>⚠️ This command will bring you a number :</p>
 <pre><code class="language-bash">eval expr $(partedUtil getptbl /dev/disks/mpx.vmhba32:C0:T0:L0 | tail -1 | awk '{print $1 &quot; \\* &quot; $2 &quot; \\* &quot; $3}') - 1
 </code></pre>
 <p>Dont forget to fill the number found :</p>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="BOISTEL Samuel" /><link rel="canonical" href="https://sboistel.github.io/docki/linux/stratis/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Describing the Architecture of Stratis - Dockimentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Describing the Architecture of Stratis";
+        var mkdocs_page_input_path = "linux/stratis.md";
+        var mkdocs_page_url = "/docki/linux/stratis/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Dockimentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the docki wiki!</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Linux/">Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../smtp/">SMTP</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/">Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows-Terminal/">Windows Terminal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../wsl/">WSL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MacOS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MacOS/">MacOS keyboard shortcuts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../iterm2/">iTerm2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Code & DevOPS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Perl/">Perl</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Python/">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ansible_Engine/">Ansible Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Docker/">Docker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ELastiK/">Elasticsearch / Logstash / Kibana</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Terraform/">Terraform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Kubernetes/">Kubernetes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Git/">Git</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Centreon_Central/">Centreon Central</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Nagios/">Nagios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Netbox/">IPAM - Netbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Rhel_idM/">Red Hat Identity Management (IdM)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../FreeIPA/">Free IPA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Guacamole/">Guacamole</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UI-path/">UI-path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../VNC_Tiger/">VNC Tiger</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../OpenVPN/">OpenVPN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ngrok/">ngrok</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../vscode/">VSCode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Web & Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CertManager/">Cert-Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mkcert/">Certificate Generator</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../SSL/">SSL Certificates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../http-status/">HTTP Status Codes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Cloud & Hypervisor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Cloud_Infrastructure/">Cloud Infrastructure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Amazon_Web_Services/">Amazon Web Services</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Azure_Cloud/">Microsoft Azure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Google_Cloud_Platforme/">Google Cloud Platforme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Oracle_Cloud_Infrastructure/">Oracle Cloud Infrastructure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../VMware/">VMware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Proxmox-VE/">Proxmox-VE</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../QEMU-KVM/">QEMU-KVM</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Storage & BDD & BigData</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bareos/">Bareos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Cloudera/">Cloudera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hadoop/">Hadoop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Oracle/">Oracle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MySQL/">MySQL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../DB2/">IBM DB2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MariaDB/">MariaDB</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../color-codes/">256 Color Codes Cheat-Sheet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Dockimentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+      <li>Describing the Architecture of Stratis</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/sboistel/docki/edit/master/docs/linux/stratis.md">Edit on docki</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="describing-the-architecture-of-stratis">Describing the Architecture of Stratis</h1>
+<p>Stratis is a new local storage-management solution for Linux. Stratis is designed to make it easier to perform initial configuration of storage, make changes to the storage configuration, and use advanced storage features.</p>
+<p>Stratis runs as a service that manages pools of physical storage devices and transparently creates and manages volumes for the newly created file systems.</p>
+<p>In Stratis, file systems are built from shared <strong>pools</strong> of <em>disk devices</em> using a concept known as thin provisioning.</p>
+<p>You can create multiple pools from different storage devices. From each pool, you can create one or more file systems. Currently, you can create up to 224 file systems per pool.</p>
+<p>The components that make up a Stratis-managed file system are built from standard Linux components. Internally, Stratis is implemented using the Device Mapper infrastructure that is also used to implement <em>LVM</em>, and Stratis-managed file systems are formatted using <strong>XFS</strong>.</p>
+<p>The following diagram illustrates how the elements of the Stratis storage management solution are assembled. Block storage devices such as hard disks or SSDs are assigned to pools, each contributing some physical storage to the pool. File systems are created from the pools, and physical storage is mapped to each file system as it is needed.</p>
+<p><img alt="Elements of Stratis" src="../ressources/stratis_element-storage-modern.svg" /></p>
+<h2 id="working-with-stratis-storage">Working with Stratis Storage</h2>
+<p>To manage file systems with the Stratis storage management solution, install theses packages :</p>
+<ul>
+<li>stratis-cli</li>
+<li>stratisd packages</li>
+</ul>
+<p>The <strong>stratis-cli</strong> package provides the stratis command, which sends reconfiguration requests to the stratisd system daemon.</p>
+<p>The <strong>stratisd</strong> package provides the stratisd service, which handles reconfiguration requests and manages and monitors block devices, pools, and file systems that Stratis uses.</p>
+<h2 id="installing-and-enabling-stratis">Installing and Enabling Stratis</h2>
+<p>To use Stratis, make sure that the software is installed and the stratisd service is running.</p>
+<ul>
+<li>Install stratis-cli and stratisd using the yum install command</li>
+</ul>
+<pre><code class="language-shell">[root@host ~]# yum install stratis-cli stratisd
+...output omitted...
+Is this ok [y/N]: y
+...output omitted...
+Complete!
+</code></pre>
+<ul>
+<li>Activate the stratisd service using the systemctl command.</li>
+</ul>
+<pre><code class="language-shell">[root@host ~]# systemctl enable --now stratisd
+</code></pre>
+<h2 id="assembling-block-storage-into-stratis-pools">Assembling Block Storage into Stratis Pools</h2>
+<p>The following are common management operations performed using the Stratis storage management solution.</p>
+<ul>
+<li>Create pools of one or more block devices using the stratis pool create command.</li>
+</ul>
+<pre><code class="language-shell">[root@host ~]# stratis pool create pool1 /dev/vdb
+</code></pre>
+<p>Each pool is a subdirectory under the <strong>/stratis</strong> directory.</p>
+<ul>
+<li>Use the stratis pool list command to view the list of available pools.</li>
+</ul>
+<pre><code class="language-shell">[root@host ~]# stratis pool list
+Name     Total Physical Size  Total Physical Used
+pool1                  5 GiB               52 MiB
+</code></pre>
+<p>⚠️ Warning
+    The stratis pool list command is very important because it shows you how much storage space is in use (and therefore how much is still available) in the pools.
+    If a pool runs out of storage, further data written to file systems belonging to that pool is quietly lost.</p>
+<ul>
+<li>Use the stratis pool add-data command to add additional block devices to a pool.</li>
+</ul>
+<pre><code class="language-shell">[root@host ~]# stratis pool add-data pool1 /dev/vdc
+</code></pre>
+<ul>
+<li>Use the stratis blockdev list command to view the block devices of a pool.</li>
+</ul>
+<pre><code class="language-shell">[root@host ~]# stratis blockdev list pool1
+Pool Name  Device Node    Physical Size   State  Tier
+pool1      /dev/vdb               5 GiB  In-use  Data
+pool1      /dev/vdc               5 GiB  In-use  Data
+</code></pre>
+<h2 id="managing-stratis-file-systems">Managing Stratis File Systems</h2>
+<ul>
+<li>Use the stratis filesystem create command to create a file system from a pool.</li>
+</ul>
+<pre><code class="language-shell">[root@host ~]# stratis filesystem create pool1 fs1
+</code></pre>
+<p>The links to the Stratis file systems are in the /stratis/pool1 directory.</p>
+<ul>
+<li>Use the stratis filesystem list command to view the list of available file systems.</li>
+</ul>
+<pre><code class="language-shell">[root@host ~]# stratis filesystem list
+Pool Name  Name  Used     Created            Device              UUID
+pool1      fs1   546 MiB  Sep 23 2020 13:11  /stratis/pool1/fs1  31b9363badd...
+</code></pre>
+<p>Use stratis pool list to monitor the remaining real storage available to the Stratis pools.</p>
+<ul>
+<li>You can create a snapshot of a Stratis-managed file system with the stratis filesystem snapshot command</li>
+</ul>
+<p>Snapshots are independent of the source file systems.</p>
+<pre><code class="language-shell">[root@host ~]# stratis filesystem snapshot pool1 fs1 snapshot1
+</code></pre>
+<h2 id="persistently-mounting-stratis-file-systems">Persistently Mounting Stratis File Systems</h2>
+<p>To ensure that the Stratis file systems are persistently mounted, edit <strong>/etc/fstab</strong> and specify the details of the file system.</p>
+<p>The following command displays the <strong>UUID</strong> of the file system that you should use in /etc/fstab to identify the file system.</p>
+<pre><code class="language-shell">[root@host ~]# lsblk --output=UUID /stratis/pool1/fs1
+UUID
+31b9363.................478c55
+</code></pre>
+<p>The following is an example entry in the /etc/fstab file to persistently mount a Stratis file system. This example entry is a single long line in the file.</p>
+<pre><code class="language-shell">UUID=31b9363b-add8-4b46-a4bf-c199cd478c55 /dir1 xfs defaults,x-systemd.requires=stratisd.service 0 0
+</code></pre>
+<p>The <code>x-systemd.requires=stratisd.service</code> mount option <strong>delays</strong> mounting the file system until after systemd starts the stratisd.service during the boot process.</p>
+<hr />
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://rol.redhat.com/rol/app/courses/rh134-8.2/pages/ch08">Red Hat System Administration II</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2022 sboistel</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
