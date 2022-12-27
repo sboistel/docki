@@ -28,3 +28,8 @@ Avec une offre SaaS, vous n'avez pas à vous soucier de la gestion du service ou
 Vous devez juste réfléchir à l'utilisation de ce logiciel spécifique. 
 Une messagerie Web dans laquelle vous pouvez envoyer et recevoir des e-mails sans avoir à gérer des ajouts de fonctionnalités ni à effectuer la maintenance des serveurs et des systèmes d'exploitation sur lesquels elle s'exécute est un exemple courant d'application SaaS.
 
+## Memory
+
+```bash
+sync && echo 3 > /proc/sys/vm/drop_caches
+```
