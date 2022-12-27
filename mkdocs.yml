@@ -64,8 +64,8 @@ nav:
       - windows/windows-system.md
       - windows/wsl.md
     - MacOS:
-      - MacOS.md
-      - iterm2.md
+      - mac/shurtcuts
+      - mac/iterm2.md
   - DevOPS:
     - Perl.md
     - Python.md
