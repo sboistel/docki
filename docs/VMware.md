@@ -1,11 +1,10 @@
 # VMware
-Created Tuesday 25 January 2022
 
 ## Rescan Storage
 
 How to rescan storage ?
 
-![](./img/vmware/pasted_image.png)
+![demo](img/vmware/pasted_image.png)
 
 ## USB Datastore
 
@@ -13,13 +12,13 @@ How to add an USB hard drive as Datastore ?
 
 ### Disabling usb arbitrator service
 
-### Stopping :
+### Stopping
 
 ```bash
 /etc/init.d/usbarbitrator stop
 ```
 
-### Disabling :
+### Disabling
 
 ```bash
 chkconfig usbarbitrator off
@@ -27,14 +26,13 @@ chkconfig usbarbitrator off
 
 ### Labeling
 
-
 ```bash
 partedUtil mklabel /dev/disks/mpx.vmhba32:C0:T0:L0 gpt
 ```
 
 ### Get the partition table
 
-:warning: This command will bring you a number :
+⚠️ This command will bring you a number :
 
 ```bash
 eval expr $(partedUtil getptbl /dev/disks/mpx.vmhba32:C0:T0:L0 | tail -1 | awk '{print $1 " \\* " $2 " \\* " $3}') - 1
