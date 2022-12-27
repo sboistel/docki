@@ -23,8 +23,32 @@ theme:
 nav:
   - README.md
   - Linux:
-    - Linux.md
-    - smtp.md
+    - linux/linux.md
+    - linux/account.md
+    - linux/apps.md
+    - linux/cron.md
+    - linux/desktop.md
+    - linux/disk.md
+    - linux/firewalld.md
+    - linux/gawk.md
+    - linux/linux.md
+    - linux/logfile.md
+    - linux/memory.md
+    - linux/network.md
+    - linux/smtp.md
+    - linux/package-manager.md
+    - linux/proc.md
+    - linux/regular-expressions.md
+    - linux/root-rescue.md
+    - linux/sar.md
+    - linux/screen.md
+    - linux/selinux.md
+    - linux/service.md
+    - linux/stratis.md
+    - linux/time.md
+    - linux/vim.md
+    - linux/web.md
+    - linux/where.md
   - Windows:
     - Windows.md
     - Windows-Terminal.md
