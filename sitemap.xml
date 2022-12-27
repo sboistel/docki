@@ -161,11 +161,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/Rhel_IDM/</loc>
-         <lastmod>2022-12-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sboistel.github.io/docki/Rhel_idM/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
@@ -196,16 +191,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/Windows-Terminal/</loc>
-         <lastmod>2022-12-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sboistel.github.io/docki/Windows/</loc>
-         <lastmod>2022-12-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sboistel.github.io/docki/color-codes/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
@@ -227,11 +212,6 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/vscode/</loc>
-         <lastmod>2022-12-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sboistel.github.io/docki/wsl/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -261,6 +241,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/linux/exit-codes/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/linux/firewalld/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
@@ -271,7 +256,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/linux/linux/</loc>
+         <loc>https://sboistel.github.io/docki/linux/keymaps/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -357,6 +342,51 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/where/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/account/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/apps/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/powershell/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/storage/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/terminal/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/vars-env/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/windows-boot/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/windows-system/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/wsl/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
