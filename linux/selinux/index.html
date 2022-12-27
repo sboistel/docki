@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="BOISTEL Samuel" /><link rel="canonical" href="https://sboistel.github.io/docki/linux/selinux/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Selinux - Dockimentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Selinux";
+        var mkdocs_page_input_path = "linux/selinux.md";
+        var mkdocs_page_url = "/docki/linux/selinux/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Dockimentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the docki wiki!</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Linux</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../linux/">None</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../account/">Account</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../apps/">Apps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cron/">cron</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../desktop/">Desktop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../disk/">Storage</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../firewalld/">Firewall</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gawk/">GWAK</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../linux/">Linux</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../logfile/">Logfile</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../memory/">RAM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../network/">Network</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../smtp/">SMTP</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../package-manager/">Package manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../proc/">Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../regular-expressions/">Regular Expression</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../root-rescue/">Emergency</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../sar/">SAR</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../screen/">Touchscreen</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Selinux</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#basic-selinux-security-concepts">Basic SELinux security concepts</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#setting-the-default-selinux-mode">Setting the default SELinux mode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#changing-the-current-selinux-mode">Changing the current SELinux mode</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#basic-file-context-operations">Basic file context operations</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../service/">Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../stratis/">Describing the Architecture of Stratis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../time/">Clock</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vim/">VIM</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../web/">Web</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../where/">How to find</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Windows</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows/">Windows</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Windows-Terminal/">Windows Terminal</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../wsl/">WSL</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">MacOS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MacOS/">MacOS keyboard shortcuts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../iterm2/">iTerm2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Code & DevOPS</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Perl/">Perl</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Python/">Python</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ansible_Engine/">Ansible Engine</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Docker/">Docker</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ELastiK/">Elasticsearch / Logstash / Kibana</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Terraform/">Terraform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Kubernetes/">Kubernetes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Git/">Git</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Tools</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Centreon_Central/">Centreon Central</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Nagios/">Nagios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Netbox/">IPAM - Netbox</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Rhel_idM/">Red Hat Identity Management (IdM)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../FreeIPA/">Free IPA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Guacamole/">Guacamole</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UI-path/">UI-path</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../VNC_Tiger/">VNC Tiger</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../OpenVPN/">OpenVPN</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Ngrok/">ngrok</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../vscode/">VSCode</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Web & Networking</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../CertManager/">Cert-Manager</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../mkcert/">Certificate Generator</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../SSL/">SSL Certificates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../http-status/">HTTP Status Codes</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Cloud & Hypervisor</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Cloud_Infrastructure/">Cloud Infrastructure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Amazon_Web_Services/">Amazon Web Services</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Azure_Cloud/">Microsoft Azure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Google_Cloud_Platforme/">Google Cloud Platforme</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Oracle_Cloud_Infrastructure/">Oracle Cloud Infrastructure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../VMware/">VMware</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Proxmox-VE/">Proxmox-VE</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../QEMU-KVM/">QEMU-KVM</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Storage & BDD & BigData</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Bareos/">Bareos</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Cloudera/">Cloudera</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Hadoop/">Hadoop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Oracle/">Oracle</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MySQL/">MySQL</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../DB2/">IBM DB2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../MariaDB/">MariaDB</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../color-codes/">256 Color Codes Cheat-Sheet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Markdown/">Markdown</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Dockimentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Linux &raquo;</li>
+      <li>Selinux</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/sboistel/docki/edit/master/docs/linux/selinux.md">Edit on docki</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="selinux">Selinux</h1>
+<h2 id="basic-selinux-security-concepts">Basic SELinux security concepts</h2>
+<p>SELinux is a set of security rules that determine which process can access which files, directories, and ports.</p>
+<p>Every file, process, directory, and port has a special security label called an SELinux context.</p>
+<p>A <strong>context</strong> is a name used by the <em>SELinux policy</em> to determine whether a process can access a file, directory, or port. </p>
+<p>By default, the policy <strong>does not allow any interaction</strong> unless an explicit rule grants access. If there is no allow rule, no access is allowed.</p>
+<p>SELinux labels have several contexts: </p>
+<ul>
+<li>user</li>
+<li>role</li>
+<li>type</li>
+<li>sensitivity </li>
+</ul>
+<p>The targeted policy, which is the default policy enabled in Red Hat Enterprise Linux, bases its rules on the third context: the type context usually named end <strong>with _t</strong>.</p>
+<p><img alt="SELinux File Context" src="../ressources/selinux_context.png" /></p>
+<h2 id="setting-the-default-selinux-mode">Setting the default SELinux mode</h2>
+<p>You can also configure SELinux persistently using the /etc/selinux/config file. In the example below (the default configuration), the configuration file sets SELinux to enforcing. The comments also show the other valid values: permissive and disabled.</p>
+<pre><code class="language-shell"># This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=enforcing
+# SELINUXTYPE= can take one of these two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes
+#               are protected.
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+</code></pre>
+<p>The system reads this file at boot time and configures SELinux as shown.
+Kernel arguments (<em>selinux=0|1 and enforcing=0|1</em>) override this configuration.</p>
+<h2 id="changing-the-current-selinux-mode">Changing the current SELinux mode</h2>
+<p>The SELinux subsystem provides tools to display and change modes. To determine the current SELinux mode, run the getenforce command. To set SELinux to a different mode, use the setenforce command:</p>
+<pre><code class="language-shell">[user@host ~]# getenforce
+Enforcing
+[user@host ~]# setenforce
+usage:  setenforce [ Enforcing | Permissive | 1 | 0 ]
+[user@host ~]# setenforce 0
+[user@host ~]# getenforce
+Permissive
+[user@host ~]# setenforce Enforcing
+[user@host ~]# getenforce
+Enforcing
+</code></pre>
+<p>Alternatively, you can set the SELinux mode at boot time by passing a parameter to the kernel: the kernel argument of enforcing=0 boots the system into permissive mode; a value of enforcing=1 sets enforcing mode. 
+You can also disable SELinux completely by passing on the kernel parameter selinux=0. A value of selinux=1 enables SELinux.</p>
+<h2 id="basic-file-context-operations">Basic file context operations</h2>
+<p>To ensure that you have the tools to manage SELinux contexts, install these packages : </p>
+<ul>
+<li>policycoreutils</li>
+<li>policycoreutils-python</li>
+</ul>
+<p>These contain the <strong>restorecon</strong> command and <strong>semanage</strong> command, respectively.</p>
+<p>To ensure that all files in a directory have the correct file context run the <code>semanage fcontext -l</code> followed by the restorecon command.</p>
+<p>In the following example, note the file context of each file before and after the semanage and restorecon commands run.</p>
+<pre><code class="language-shell">[root@host ~]# ls -Z /var/www/html/file*
+unconfined_u:object_r:user_tmp_t:s0 /var/www/html/file1  unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/file2  
+</code></pre>
+<pre><code class="language-shell">[root@host ~]# semanage fcontext -l
+...output omitted...
+/var/www(/.*)?       all files    system_u:object_r:httpd_sys_content_t:s0
+...output omitted... 
+</code></pre>
+<pre><code class="language-shell">[root@host; ~]# restorecon -Rv /var/www/
+Relabeled /var/www/html/file1 from unconfined_u:object_r:user_tmp_t:s0 to unconfined_u:object_r:httpd_sys_content_t:s0
+[root@host ~]# ls -Z /var/www/html/file*
+unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/file1  unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/file2
+</code></pre>
+<p>The following example shows how to use semanage to add a context for a new directory.</p>
+<pre><code class="language-shell">[root@host ~]# mkdir /virtual
+[root@host ~]# touch /virtual/index.html
+[root@host ~]# ls -Zd /virtual/
+drwxr-xr-x. root root unconfined_u:object_r:default_t:s0 /virtual/ 
+</code></pre>
+<pre><code class="language-shell">[root@host ~]# ls -Z /virtual/
+-rw-r--r--. root root unconfined_u:object_r:default_t:s0 index.html
+[root@host ~]# semanage fcontext -a -t httpd_sys_content_t '/virtual(/.*)?'
+[root@host ~]# restorecon -RFvv /virtual
+[root@host ~]# ls -Zd /virtual/
+drwxr-xr-x. root root system_u:object_r:httpd_sys_content_t:s0 /virtual/
+[root@host ~]# ls -Z /virtual/
+-rw-r--r--. root root system_u:object_r:httpd_sys_content_t:s0 index.html
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../screen/" class="btn btn-neutral float-left" title="Touchscreen"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../service/" class="btn btn-neutral float-right" title="Service">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright &copy; 2022 sboistel</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../screen/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../service/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
