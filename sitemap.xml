@@ -91,11 +91,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/Linux/</loc>
-         <lastmod>2022-12-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sboistel.github.io/docki/MacOS/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
@@ -227,11 +222,6 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mkcert/</loc>
-         <lastmod>2022-12-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sboistel.github.io/docki/smtp/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
