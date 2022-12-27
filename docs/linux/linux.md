@@ -2,30 +2,55 @@
 
 ## TOC
 
-[## account](account.md)
-[## apps](apps.md)
-[## cron](cron.md)
-[## desktop](desktop.md)
-[## disk](disk.md)
-[## firewalld](firewalld.md)
-[## gawk](gawk.md)
-[## logfile](logfile.md)
-[## memory](memory.md)
-[## network](network.md)
-[## package-manager](package-manager.md)
-[## proc](proc.md)
-[## regular-expressions](regular-expressions.md)
-[## root-rescue](root-rescue.md)
-[## sar](sar.md)
-[## screen](screen.md)
-[## selinux](selinux.md)
-[## service](service.md)
-[## smtp](smtp.md)
-[## stratis](stratis.md)
-[## time](time.md)
-[## vim](vim.md)
-[## web](web.md)
-[## where](where.md)
+[## smtp.md](smtp.md)
+
+[## vim.md](vim.md)
+
+[## network.md](network.md)
+
+[## logfile.md](logfile.md)
+
+[## root-rescue.md](root-rescue.md)
+
+[## gawk.md](gawk.md)
+
+[## desktop.md](desktop.md)
+
+[## account.md](account.md)
+
+[## linux.md](linux.md)
+
+[## stratis.md](stratis.md)
+
+[## package-manager.md](package-manager.md)
+
+[## sar.md](sar.md)
+
+[## memory.md](memory.md)
+
+[## proc.md](proc.md)
+
+[## selinux.md](selinux.md)
+
+[## time.md](time.md)
+
+[## screen.md](screen.md)
+
+[## web.md](web.md)
+
+[## disk.md](disk.md)
+
+[## service.md](service.md)
+
+[## apps.md](apps.md)
+
+[## firewalld.md](firewalld.md)
+
+[## regular-expressions.md](regular-expressions.md)
+
+[## cron.md](cron.md)
+
+[## where.md](where.md)
 
 ## Exit codes
 
