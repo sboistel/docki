@@ -31,7 +31,6 @@ nav:
     - linux/disk.md
     - linux/firewalld.md
     - linux/gawk.md
-    - linux/linux.md
     - linux/logfile.md
     - linux/memory.md
     - linux/network.md
