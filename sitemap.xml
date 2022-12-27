@@ -91,11 +91,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/MacOS/</loc>
-         <lastmod>2022-12-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sboistel.github.io/docki/MariaDB/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
@@ -197,11 +192,6 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/http-status/</loc>
-         <lastmod>2022-12-27</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sboistel.github.io/docki/iterm2/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -342,6 +332,16 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/where/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/mac/iterm2/</loc>
+         <lastmod>2022-12-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/mac/shurtcuts/</loc>
          <lastmod>2022-12-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
