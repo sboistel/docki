@@ -2,31 +2,30 @@
 
 ## TOC
 
-* account.md
-* apps.md
-* cron.md
-* desktop.md
-* disk.md
-* firewalld.md
-* gawk.md
-* linux.md
-* logfile.md
-* memory.md
-* network.md
-* package-manager.md
-* proc.md
-* regular-expressions.md
-* root-rescue.md
-* sar.md
-* screen.md
-* selinux.md
-* service.md
-* smtp.md
-* stratis.md
-* time.md
-* vim.md
-* web.md
-* where.md
+* [account.md](account.md)
+* [apps.md](apps.md)
+* [cron.md](cron.md)
+* [desktop.md](desktop.md)
+* [disk.md](disk.md)
+* [firewalld.md](firewalld.md)
+* [gawk.md](gawk.md)
+* [logfile.md](logfile.md)
+* [memory.md](memory.md)
+* [network.md](network.md)
+* [package-manager.md](package-manager.md)
+* [proc.md](proc.md)
+* [regular-expressions.md](regular-expressions.md)
+* [root-rescue.md](root-rescue.md)
+* [sar.md](sar.md)
+* [screen.md](screen.md)
+* [selinux.md](selinux.md)
+* [service.md](service.md)
+* [smtp.md](smtp.md)
+* [stratis.md](stratis.md)
+* [time.md](time.md)
+* [vim.md](vim.md)
+* [web.md](web.md)
+* [where.md](where.md)
 
 ## Exit codes
 
