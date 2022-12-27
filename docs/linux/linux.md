@@ -2,55 +2,55 @@
 
 ## TOC
 
-[## smtp.md](smtp.md)
+[## smtp](smtp.md)
 
-[## vim.md](vim.md)
+[## vim](vim.md)
 
-[## network.md](network.md)
+[## network](network.md)
 
-[## logfile.md](logfile.md)
+[## logfile](logfile.md)
 
-[## root-rescue.md](root-rescue.md)
+[## root-rescue](root-rescue.md)
 
-[## gawk.md](gawk.md)
+[## gawk](gawk.md)
 
-[## desktop.md](desktop.md)
+[## desktop](desktop.md)
 
-[## account.md](account.md)
+[## account](account.md)
 
-[## linux.md](linux.md)
+[## linux](linux.md)
 
-[## stratis.md](stratis.md)
+[## stratis](stratis.md)
 
-[## package-manager.md](package-manager.md)
+[## package-manager](package-manager.md)
 
-[## sar.md](sar.md)
+[## sar](sar.md)
 
-[## memory.md](memory.md)
+[## memory](memory.md)
 
-[## proc.md](proc.md)
+[## proc](proc.md)
 
-[## selinux.md](selinux.md)
+[## selinux](selinux.md)
 
-[## time.md](time.md)
+[## time](time.md)
 
-[## screen.md](screen.md)
+[## screen](screen.md)
 
-[## web.md](web.md)
+[## web](web.md)
 
-[## disk.md](disk.md)
+[## disk](disk.md)
 
-[## service.md](service.md)
+[## service](service.md)
 
-[## apps.md](apps.md)
+[## apps](apps.md)
 
-[## firewalld.md](firewalld.md)
+[## firewalld](firewalld.md)
 
-[## regular-expressions.md](regular-expressions.md)
+[## regular-expressions](regular-expressions.md)
 
-[## cron.md](cron.md)
+[## cron](cron.md)
 
-[## where.md](where.md)
+[## where](where.md)
 
 ## Exit codes
 
