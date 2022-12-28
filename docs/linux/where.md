@@ -18,7 +18,7 @@ find /var/log/httpd/ -type f -name "*" -mtime +90 -exec rm -f {} \;
 |  - |
 | Le « {} » est le résultat de la recherche du find ! |
 
-### Grep
+## Grep
 
 L'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.
 
