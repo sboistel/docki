@@ -38,12 +38,14 @@ Additionally you can also use the following special characters to build more adv
 
 ## Examples
 
-`0 * * * * *` - Executes every minute
-`0 0 * * * *` - Executes every hour
-`0 0 0 * * *` - Executes every day
-`0 0 0 0 * *` - Executes every month
-`0 0 0 1 1 *` - Executes on first day of Jan each year
-`30 20 * * SAT` - Executes at 08:30pm every Saturday
-`30 20 * * 6` - Executes at 08:30pm every Saturday
-`0 */5 * * * *` - Executes every five minutes
-`0 0 8-10/1 * * *` - Executes every hour between 8am and 10am
+| Scheduel | Description |
+| - | - |
+| `0 * * * * *` | Executes every minute |
+| `0 0 * * * *` | Executes every hour |
+| `0 0 0 * * *` | Executes every day |
+| `0 0 0 0 * *` | Executes every month |
+| `0 0 0 1 1 *` | Executes on first day of Jan each year |
+| `30 20 * * SAT` | Executes at 08:30pm every Saturday |
+| `30 20 * * 6` | Executes at 08:30pm every Saturday |
+| `0 */5 * * * *` | Executes every five minutes |
+| `0 0 8-10/1 * * *` | Executes every hour between 8am and 10am |
