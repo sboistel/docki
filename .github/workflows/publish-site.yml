@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Mkdocs
-        run: pip install mkdocs
+        run: pip install mkdocs mkdocs-material
 
       - name: Checkout Code
         uses: actions/checkout@v3
