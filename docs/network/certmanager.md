@@ -1,6 +1,6 @@
 # Cert-Manager
 
-Cert-manager adds certificates and certificate issuers as resource types in **Kubernetes ([[_docs/Kubernetes]])** clusters, and simplifies the process of obtaining, renewing and using those certificates.
+Cert-manager adds certificates and certificate issuers as resource types in **Kubernetes** clusters, and simplifies the process of obtaining, renewing and using those certificates.
 
 Documentation & Project Homepage: [Cert-Manager Docs](https://cert-manager.io/docs/)
 
@@ -10,7 +10,7 @@ Documentation & Project Homepage: [Cert-Manager Docs](https://cert-manager.io/do
 
 ### Upload existing CA.key and CA.crt files (Option 1)
 
-#### 1. Create a self-signed CA ([[ssl-certs]]) creating a ca.key (private-key) and ca.crt (certificate)
+#### 1. Create a self-signed CA (ssl-certs) creating a ca.key (private-key) and ca.crt (certificate)
 
 (ca.key)
 
