@@ -44,25 +44,7 @@ theme:
 
 # Page tree
 nav:
-  cloud:
-    - cloud/aws.md
-    - cloud/azure.md
-    - cloud/cgp.md
-    - cloud/kvm.md
-    - cloud/oci.md
-    - cloud/pve.md
-    - cloud/readme.md
-    - cloud/vmware.md
-  dev:
-    - dev/ansible.md
-    - dev/docker.md
-    - dev/elastik.md
-    - dev/git.md
-    - dev/kubernetes.md
-    - dev/perl.md
-    - dev/python.md
-    - dev/terraform.md
-  linux:
+  - Linux: 
     - linux/account.md
     - linux/apps.md
     - linux/cron.md
@@ -90,46 +72,7 @@ nav:
     - linux/vim.md
     - linux/web.md
     - linux/where.md
-  mac:
-    - mac/cheatsheet.md
-    - mac/clipboard-manager.md
-    - mac/iterm2.md
-    - mac/package-manager.md
-    - mac/remote-session.md
-    - mac/screenshots.md
-    - mac/shurtcuts.md
-    - mac/vmachines.md
-    - mac/windows-tilling.md
-  misc:
-    - misc/color-codes.md
-    - misc/markdown.md
-  monitoring:
-    - monitoring/centreon.md
-    - monitoring/nagios.md
-  network:
-    - network/certmanager.md
-    - network/http-status.md
-    - network/mkcert.md
-    - network/ngrok.md
-    - network/openvpn.md
-    - network/ssl.md
-  storage:
-    - storage/bareos.md
-    - storage/cloudera.md
-    - storage/db2.md
-    - storage/hadoop.md
-    - storage/mariadb.md
-    - storage/mysql.md
-    - storage/oracle.md
-  tool:
-    - tool/freeipa.md
-    - tool/guacamole.md
-    - tool/netbox.md
-    - tool/rhel_idm.md
-    - tool/ui-path.md
-    - tool/vnc-tiger.md
-    - tool/vscode.md
-  windows:
+  - Windows:
     - windows/account.md
     - windows/apps.md
     - windows/powershell.md
@@ -139,3 +82,60 @@ nav:
     - windows/windows-boot.md
     - windows/windows-system.md
     - windows/wsl.md
+  - MacOS:
+    - mac/cheatsheet.md
+    - mac/clipboard-manager.md
+    - mac/iterm2.md
+    - mac/package-manager.md
+    - mac/remote-session.md
+    - mac/screenshots.md
+    - mac/shurtcuts.md
+    - mac/vmachines.md
+    - mac/windows-tilling.md
+  - DevOPS:
+    - dev/perl.md
+    - dev/python.md
+    - dev/ansible.md
+    - dev/docker.md
+    - dev/elastik.md
+    - dev/terraform.md
+    - dev/kubernetes.md
+    - dev/git.md
+  - Monitoring:
+    - monitoring/centreon.md
+    - monitoring/nagios.md
+  - Tools:
+    - tool/netbox.md
+    - tool/rhel_idm.md
+    - tool/freeipa.md
+    - tool/guacamole.md
+    - tool/ui-path.md
+    - tool/vnc-tiger.md
+    - tool/vscode.md
+  - Web & Networking:
+    - network/certmanager.md
+    - network/mkcert.md
+    - network/ssl.md
+    - network/http-status.md
+    - network/openvpn.md
+    - network/ngrok.md
+  - Cloud & Hypervisor:
+    - cloud/readme.md
+    - cloud/aws.md
+    - cloud/azure.md
+    - cloud/cgp.md
+    - cloud/oci.md
+    - cloud/vmware.md
+    - cloud/pve.md
+    - cloud/kvm.md
+  - Storage & BDD:
+    - storage/bareos.md
+    - storage/cloudera.md
+    - storage/hadoop.md
+    - storage/oracle.md
+    - storage/mysql.md
+    - storage/db2.md
+    - storage/mariadb.md
+  - Miscellaneous:
+    - misc/color-codes.md
+    - misc/markdown.md
