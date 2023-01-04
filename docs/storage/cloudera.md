@@ -9,6 +9,7 @@ NUMA has to enabled in the BIOS. If dmesg does not have records of numa initiali
 If NUMA is enabled on BIOS, then execute the command ‘numactl –hardware‘ to list inventory of available nodes on the system. Below is example output of numactl –hardware on a system which has NUMA.
 
 > numactl --hardware
+
 ```bash
 available: 2 nodes (0-1)
 node 0 cpus: 0 1 2 3 4 5 6 7 16 17 18 19 20 21 22 23
@@ -25,10 +26,10 @@ node   0   1
 
 ## NUMA Disabled Systems
 
-
 ### 1. If NUMA is disabled on BIOS, then the command ‘numactl –show‘ does not show multiple nodes.
 
 > numactl --show
+
 ```bash
 policy: default
 preferred node: current
@@ -38,7 +39,7 @@ nodebind: 0
 membind: 0
 ```
 
-### 2. The command ‘numactl –hardware‘ also does not list multiple nodes.
+### 2. The command ‘numactl –hardware‘ also does not list multiple nodes
 
 ```bash
 available: 1 nodes (0)
@@ -63,11 +64,10 @@ Faking a node at 0000000000000000-0000001027fff000
 $ grep acpi=off /proc/cmdline
 ```
 
-
-
 ## Charts Building
 
 ### Health
+
 ```SQL
 select health_good_rate * 100 as "good health", health_concerning_rate * 100 as "concerning health", health_bad_rate * 100 as "bad health", health_disabled_rate * 100 as "disabled health", health_unknown_rate * 100 as "unknown health" where entityName="hdfs:$node-ha"
 ```
@@ -77,6 +77,7 @@ select health_good_rate * 100 as "good health" where entityName="hdfs:$node-ha"
 ```
 
 ### History
+
 ```SQL
 select dfs_capacity as "HDFS",(dfs_capacity_used+dfs_capacity_used_non_hdfs) as "Used" where entityName="hdfs:$node-ha"
 ```
@@ -84,11 +85,13 @@ select dfs_capacity as "HDFS",(dfs_capacity_used+dfs_capacity_used_non_hdfs) as 
 ## System
 
 ### CPU
+
 ```sql
 select cpu_user_rate / getHostFact(numCores, 1) * 100, cpu_system_rate / getHostFact(numCores, 1) * 100, cpu_nice_rate / getHostFact(numCores, 1) * 100, cpu_iowait_rate / getHostFact(numCores, 1) * 100, cpu_irq_rate / getHostFact(numCores, 1) * 100, cpu_soft_irq_rate / getHostFact(numCores, 1) * 100, cpu_steal_rate / getHostFact(numCores, 1) * 100 
 ```
 
 ### RAM
+
 ```sql
 select swap_used, physical_memory_used, physical_memory_total WHERE hostname RLIKE ".*data.*"
 ```
@@ -106,5 +109,4 @@ Get user home directory acl as example :
 hdfs dfs -getfacl /user/JohnDoe
 ```
 
-cf [Hadoop cheat-sheet](Hadoop.md)
-
+cf [Hadoop cheat-sheet](hadoop.md)

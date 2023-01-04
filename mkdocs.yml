@@ -97,7 +97,7 @@ nav:
     - dev/python.md
     - dev/ansible.md
     - dev/docker.md
-    - dev/eLastiK.md
+    - dev/elastik.md
     - dev/terraform.md
     - dev/kubernetes.md
     - dev/git.md
@@ -105,20 +105,20 @@ nav:
     - monitoring/centreon.md
     - monitoring/nagios.md
   - Tools:
-    - dev/netbox.md
-    - dev/rhel_idm.md
-    - dev/freeipa.md
-    - dev/guacamole.md
-    - dev/ui-path.md
-    - dev/cnv-tiger.md
-    - dev/openvpn.md
-    - dev/ngrok.md
-    - dev/vscode.md
+    - tool/netbox.md
+    - tool/rhel_idm.md
+    - tool/freeipa.md
+    - tool/guacamole.md
+    - tool/ui-path.md
+    - tool/vnc-tiger.md
+    - tool/vscode.md
   - Web & Networking:
-    - network/CertManager.md
+    - network/certmanager.md
     - network/mkcert.md
-    - network/SSL.md
+    - network/ssl.md
     - network/http-status.md
+    - network/openvpn.md
+    - network/ngrok.md
   - Cloud & Hypervisor:
     - cloud/readme.md
     - cloud/aws.md
@@ -138,4 +138,4 @@ nav:
     - storage/mariadb.md
   - Miscellaneous:
     - misc/color-codes.md
-    - misc/Markdown.md
+    - misc/markdown.md
