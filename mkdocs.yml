@@ -101,6 +101,8 @@ nav:
     - dev/terraform.md
     - dev/kubernetes.md
     - dev/git.md
+    - dev/packer.md
+    - dev/vagrant.md
   - Monitoring:
     - monitoring/centreon.md
     - monitoring/nagios.md
