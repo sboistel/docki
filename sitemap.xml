@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/dev/packer/</loc>
+         <lastmod>2023-01-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/dev/perl/</loc>
          <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
@@ -82,6 +87,11 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/terraform/</loc>
+         <lastmod>2023-01-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/vagrant/</loc>
          <lastmod>2023-01-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
