@@ -93,48 +93,49 @@ nav:
     - mac/vmachines.md
     - mac/windows-tilling.md
   - DevOPS:
-    - Perl.md
-    - Python.md
-    - Ansible_Engine.md
-    - Docker.md
-    - ELastiK.md
-    - Terraform.md
-    - Kubernetes.md
-    - Git.md
+    - dev/perl.md
+    - dev/python.md
+    - dev/ansible.md
+    - dev/docker.md
+    - dev/eLastiK.md
+    - dev/terraform.md
+    - dev/kubernetes.md
+    - dev/git.md
+  - Monitoring:
+    - monitoring/centreon.md
+    - monitoring/nagios.md
   - Tools:
-    - Centreon_Central.md
-    - Nagios.md
-    - Netbox.md
-    - Rhel_idM.md
-    - FreeIPA.md
-    - Guacamole.md
-    - UI-path.md
-    - VNC_Tiger.md
-    - OpenVPN.md
-    - Ngrok.md
-    - vscode.md
+    - dev/netbox.md
+    - dev/rhel_idm.md
+    - dev/freeipa.md
+    - dev/guacamole.md
+    - dev/ui-path.md
+    - dev/cnv-tiger.md
+    - dev/openvpn.md
+    - dev/ngrok.md
+    - dev/vscode.md
   - Web & Networking:
-    - CertManager.md
-    - mkcert.md
-    - SSL.md
-    - http-status.md
+    - network/CertManager.md
+    - network/mkcert.md
+    - network/SSL.md
+    - network/http-status.md
   - Cloud & Hypervisor:
-    - Cloud_Infrastructure.md
-    - Amazon_Web_Services.md
-    - Azure_Cloud.md
-    - Google_Cloud_Platforme.md
-    - Oracle_Cloud_Infrastructure.md
-    - VMware.md
-    - Proxmox-VE.md
-    - QEMU-KVM.md
+    - cloud/readme.md
+    - cloud/aws.md
+    - cloud/azure.md
+    - cloud/cgp.md
+    - cloud/oci.md
+    - cloud/vmware.md
+    - cloud/pve.md
+    - cloud/kvm.md
   - Storage & BDD:
-    - Bareos.md
-    - Cloudera.md
-    - Hadoop.md
-    - Oracle.md
-    - MySQL.md
-    - DB2.md
-    - MariaDB.md
+    - storage/bareos.md
+    - storage/cloudera.md
+    - storage/hadoop.md
+    - storage/oracle.md
+    - storage/mysql.md
+    - storage/db2.md
+    - storage/mariadb.md
   - Miscellaneous:
-    - color-codes.md
-    - Markdown.md
+    - misc/color-codes.md
+    - misc/Markdown.md
