@@ -12,14 +12,14 @@
         <meta name="author" content="BOISTEL Samuel">
       
       
-        <link rel="canonical" href="https://sboistel.github.io/docki/dev/guacamole/">
+        <link rel="canonical" href="https://sboistel.github.io/docki/tool/vnc-tiger/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Guacamole - Dockimentation</title>
+        <title>VNC Tiger - Dockimentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#guacamole" class="md-skip">
+        <a href="#vnc-tiger" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Guacamole
+              VNC Tiger
             
           </span>
         </div>
@@ -254,7 +254,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../perl/" class="md-tabs__link">
+      <a href="../../dev/perl/" class="md-tabs__link">
         DevOPS
       </a>
     </li>
@@ -1168,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../perl/" class="md-nav__link">
+      <a href="../../dev/perl/" class="md-nav__link">
         Perl
       </a>
     </li>
@@ -1182,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../dev/python/" class="md-nav__link">
         Python
       </a>
     </li>
@@ -1196,7 +1196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ansible/" class="md-nav__link">
+      <a href="../../dev/ansible/" class="md-nav__link">
         Ansible Engine
       </a>
     </li>
@@ -1210,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../dev/docker/" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -1224,7 +1224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elastik/" class="md-nav__link">
+      <a href="../../dev/elastik/" class="md-nav__link">
         Elasticsearch / Logstash / Kibana
       </a>
     </li>
@@ -1238,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terraform/" class="md-nav__link">
+      <a href="../../dev/terraform/" class="md-nav__link">
         Terraform
       </a>
     </li>
@@ -1252,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kubernetes/" class="md-nav__link">
+      <a href="../../dev/kubernetes/" class="md-nav__link">
         Kubernetes
       </a>
     </li>
@@ -1266,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../../dev/git/" class="md-nav__link">
         Git
       </a>
     </li>
@@ -1418,173 +1418,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Guacamole
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../guacamole/" class="md-nav__link">
         Guacamole
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
-  </a>
-  
-    <nav class="md-nav" aria-label="Server">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requiere-depedences" class="md-nav__link">
-    Requiere depedences
-  </a>
-  
-    <nav class="md-nav" aria-label="Requiere depedences">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aptdebubuntu" class="md-nav__link">
-    APT:DEB/Ubuntu
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optional-depedences" class="md-nav__link">
-    Optional depedences
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#obtain-code" class="md-nav__link">
-    Obtain code
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-process" class="md-nav__link">
-    Build process
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#guest-agent" class="md-nav__link">
-    Guest agent
-  </a>
-  
-    <nav class="md-nav" aria-label="Guest agent">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requierement" class="md-nav__link">
-    Requierement
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#server-installation" class="md-nav__link">
-    Server Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#guacamole-server" class="md-nav__link">
-    Guacamole Server
-  </a>
-  
-    <nav class="md-nav" aria-label="Guacamole Server">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#downlaod" class="md-nav__link">
-    Downlaod
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#verifying-if-anything-is-missing" class="md-nav__link">
-    Verifying if anything is missing
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1608,39 +1446,86 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../vnc-tiger/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          VNC Tiger
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         VNC Tiger
       </a>
-    </li>
-  
+      
+        
 
-            
-          
-            
-              
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
-    <li class="md-nav__item">
-      <a href="../openvpn/" class="md-nav__link">
-        OpenVPN
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
+    
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vnc-session" class="md-nav__link">
+    VNC Session
+  </a>
   
-    <li class="md-nav__item">
-      <a href="../ngrok/" class="md-nav__link">
-        ngrok
-      </a>
+    <nav class="md-nav" aria-label="VNC Session">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#change-the-vncpassword" class="md-nav__link">
+    Change the VNCpassword
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#directory" class="md-nav__link">
+    Directory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-file" class="md-nav__link">
+    Session file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    Service
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1744,6 +1629,34 @@
     <li class="md-nav__item">
       <a href="../../network/http-status/" class="md-nav__link">
         HTTP Status Codes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/openvpn/" class="md-nav__link">
+        OpenVPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/ngrok/" class="md-nav__link">
+        ngrok
       </a>
     </li>
   
@@ -2123,125 +2036,38 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#server" class="md-nav__link">
-    Server
+  <a href="#vnc-session" class="md-nav__link">
+    VNC Session
   </a>
   
-    <nav class="md-nav" aria-label="Server">
+    <nav class="md-nav" aria-label="VNC Session">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#requiere-depedences" class="md-nav__link">
-    Requiere depedences
-  </a>
-  
-    <nav class="md-nav" aria-label="Requiere depedences">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aptdebubuntu" class="md-nav__link">
-    APT:DEB/Ubuntu
+  <a href="#change-the-vncpassword" class="md-nav__link">
+    Change the VNCpassword
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#optional-depedences" class="md-nav__link">
-    Optional depedences
+  <a href="#directory" class="md-nav__link">
+    Directory
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#obtain-code" class="md-nav__link">
-    Obtain code
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-process" class="md-nav__link">
-    Build process
+  <a href="#session-file" class="md-nav__link">
+    Session file
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#service" class="md-nav__link">
+    Service
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#guest-agent" class="md-nav__link">
-    Guest agent
-  </a>
-  
-    <nav class="md-nav" aria-label="Guest agent">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#requierement" class="md-nav__link">
-    Requierement
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#server-installation" class="md-nav__link">
-    Server Installation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#guacamole-server" class="md-nav__link">
-    Guacamole Server
-  </a>
-  
-    <nav class="md-nav" aria-label="Guacamole Server">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#downlaod" class="md-nav__link">
-    Downlaod
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#verifying-if-anything-is-missing" class="md-nav__link">
-    Verifying if anything is missing
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2264,85 +2090,32 @@
                 
                   
 
-  <a href="https://github.com/sboistel/docki/edit/master/docs/dev/guacamole.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/sboistel/docki/edit/master/docs/tool/vnc-tiger.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="guacamole">Guacamole</h1>
-<p>Apache Guacamole is a clientless remote desktop gateway. 
-It supports standard protocols like VNC, RDP, and SSH.</p>
-<p>We call it clientless because no plugins or client software are required.
-Thanks to HTML5, once Guacamole is installed on a server, <strong>all you need to access your desktops is a web browser</strong>.</p>
-<h2 id="server">Server</h2>
-<h3 id="requiere-depedences">Requiere depedences</h3>
-<h4 id="aptdebubuntu">APT:DEB/Ubuntu</h4>
-<pre><code class="language-bash">apt install libcairo2-dev libtool-bin libossp-uuid-dev
+<h1 id="vnc-tiger">VNC Tiger</h1>
+<h2 id="vnc-session">VNC Session</h2>
+<p>How to create new VNC Session ?</p>
+<h3 id="change-the-vncpassword">Change the VNCpassword</h3>
+<pre><code class="language-bash">vncpassword
 </code></pre>
-<h4 id="optional-depedences">Optional depedences</h4>
-<ul>
-<li>APT:DEB/Ubuntu</li>
-</ul>
-<pre><code class="language-bash">apt install libavcodec-dev libavformat-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev  libtelnet-dev libvncserver-dev libwebsockets-dev libpulse-dev libssl-dev libvorbis-dev libwebp-dev
+<h3 id="directory">Directory</h3>
+<p>Move to the session direcotry :</p>
+<pre><code class="language-bash">cd /etc/systemd/system
 </code></pre>
-<h4 id="obtain-code">Obtain code</h4>
-<ul>
-<li>APT:DEB/Ubuntu</li>
-</ul>
-<pre><code class="language-bash">apt install git
+<h3 id="session-file">Session file</h3>
+<p>Copy old vncserver.service file to a new one :</p>
+<pre><code class="language-bash">cp [vncserver@{N°}.service](mailto:vncserver@{N°}.service) vncserver@:{New N°}.service
 </code></pre>
-<p>Donwload the guacamole server repository:</p>
-<pre><code class="language-bash">git clone &lt;git://github.com/apache/guacamole-server.git&gt;
+<p>Replace :</p>
+<pre><code class="language-bash">sed -i 's/olduser/newuser/g' vncserver@:{New N°}.service
 </code></pre>
-<h3 id="build-process">Build process</h3>
-<pre><code class="language-bash">cd guacamole-server
-autoreconf -fi
-</code></pre>
-<pre><code class="language-bash">./configure --with-init-dir=/etc/init.d --enable-allow-freerdp-snapshots
-make
-</code></pre>
-<h3 id="installation">Installation</h3>
-<pre><code class="language-bash">make install
-ldconfig
-</code></pre>
-<h2 id="guest-agent">Guest agent</h2>
-<h3 id="requierement">Requierement</h3>
-<ul>
-<li>APT:DEB/Ubuntu</li>
-</ul>
-<pre><code class="language-bash">apt install git maven 
-</code></pre>
-<ul>
-<li>RPM:Fedora/Centos/Rhel:</li>
-</ul>
-<pre><code class="language-bash">yum install git maven 
-</code></pre>
-<p>Donwload the guacamole client repository</p>
-<pre><code class="language-bash">git clone &lt;git://github.com/apache/guacamole-client.git&gt;
-mvn package
-</code></pre>
-<hr />
-<p>Source : <a href="https://kifarunix.com/install-apache-guacamole-on-ubuntu-21-04/">https://kifarunix.com/install-apache-guacamole-on-ubuntu-21-04/</a></p>
-<h2 id="server-installation">Server Installation</h2>
-<p>Update :</p>
-<pre><code class="language-bash">apt update
-</code></pre>
-<p>Software needed :</p>
-<pre><code class="language-bash">apt install build-essential libcairo2-dev libpng-dev libtool-bin libossp-uuid-dev libavcodec-dev libavformat-dev libavutil-dev libswscale-dev freerdp2-dev libpango1.0-dev libssh2-1-dev libvncserver-dev libtelnet-dev libssl-dev libvorbis-dev libwebp-dev
-</code></pre>
-<hr />
-<h2 id="guacamole-server">Guacamole Server</h2>
-<h3 id="downlaod">Downlaod</h3>
-<pre><code class="language-bash">cd /usr/src/
-wget &lt;https://downloads.apache.org/guacamole/1.3.0/source/guacamole-server-1.3.0.tar.gz&gt;
-tar xzvf guacamole-server-1.3.0.tar.gz
-</code></pre>
-<h3 id="configuration">Configuration</h3>
-<p>For more configure options, run, <code>./configure --help</code></p>
-<h4 id="verifying-if-anything-is-missing">Verifying if anything is missing</h4>
-<pre><code class="language-bash">cd guacamole-server-1.3.0
-./configure --with-init-dir=/etc/init.d
+<h3 id="service">Service</h3>
+<p>Enable the service :</p>
+<pre><code class="language-bash">systemctl enable vncserver@:{New N°}.service
 </code></pre>
 
 
@@ -2364,7 +2137,7 @@ tar xzvf guacamole-server-1.3.0.tar.gz
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../freeipa/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Free IPA" rel="prev">
+        <a href="../ui-path/" class="md-footer__link md-footer__link--prev" aria-label="Previous: UI-path" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2373,20 +2146,20 @@ tar xzvf guacamole-server-1.3.0.tar.gz
               <span class="md-footer__direction">
                 Previous
               </span>
-              Free IPA
+              UI-path
             </div>
           </div>
         </a>
       
       
         
-        <a href="../ui-path/" class="md-footer__link md-footer__link--next" aria-label="Next: UI-path" rel="next">
+        <a href="../vscode/" class="md-footer__link md-footer__link--next" aria-label="Next: VSCode" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              UI-path
+              VSCode
             </div>
           </div>
           <div class="md-footer__button md-icon">

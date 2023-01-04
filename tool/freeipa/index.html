@@ -12,14 +12,14 @@
         <meta name="author" content="BOISTEL Samuel">
       
       
-        <link rel="canonical" href="https://sboistel.github.io/docki/dev/vscode/">
+        <link rel="canonical" href="https://sboistel.github.io/docki/tool/freeipa/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>VSCode - Dockimentation</title>
+        <title>Free IPA - Dockimentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vscode" class="md-skip">
+        <a href="#free-ipa" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              VSCode
+              Free IPA
             
           </span>
         </div>
@@ -254,7 +254,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../perl/" class="md-tabs__link">
+      <a href="../../dev/perl/" class="md-tabs__link">
         DevOPS
       </a>
     </li>
@@ -1168,7 +1168,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../perl/" class="md-nav__link">
+      <a href="../../dev/perl/" class="md-nav__link">
         Perl
       </a>
     </li>
@@ -1182,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/" class="md-nav__link">
+      <a href="../../dev/python/" class="md-nav__link">
         Python
       </a>
     </li>
@@ -1196,7 +1196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ansible/" class="md-nav__link">
+      <a href="../../dev/ansible/" class="md-nav__link">
         Ansible Engine
       </a>
     </li>
@@ -1210,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../dev/docker/" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -1224,7 +1224,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elastik/" class="md-nav__link">
+      <a href="../../dev/elastik/" class="md-nav__link">
         Elasticsearch / Logstash / Kibana
       </a>
     </li>
@@ -1238,7 +1238,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terraform/" class="md-nav__link">
+      <a href="../../dev/terraform/" class="md-nav__link">
         Terraform
       </a>
     </li>
@@ -1252,7 +1252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../kubernetes/" class="md-nav__link">
+      <a href="../../dev/kubernetes/" class="md-nav__link">
         Kubernetes
       </a>
     </li>
@@ -1266,7 +1266,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../../dev/git/" class="md-nav__link">
         Git
       </a>
     </li>
@@ -1404,11 +1404,149 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../freeipa/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Free IPA
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Free IPA
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hostname" class="md-nav__link">
+    Hostname
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall" class="md-nav__link">
+    Firewall
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#freeipa-servdns-packages" class="md-nav__link">
+    FreeIPA serv{dns} packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#freeipa-setup" class="md-nav__link">
+    FreeIPA setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autau-create-home-directory" class="md-nav__link">
+    Autau create home directory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#check-access" class="md-nav__link">
+    Check access
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kerebros-token-admin" class="md-nav__link">
+    Kerebros token : admin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1462,148 +1600,9 @@
   
   
     <li class="md-nav__item">
-      <a href="../openvpn/" class="md-nav__link">
-        OpenVPN
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ngrok/" class="md-nav__link">
-        ngrok
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          VSCode
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../vscode/" class="md-nav__link">
         VSCode
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#side-menu" class="md-nav__link">
-    Side Menu
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multi-cursor-editing" class="md-nav__link">
-    Multi-Cursor Editing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#split-editor" class="md-nav__link">
-    Split editor
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#split-window-focusing" class="md-nav__link">
-    Split Window focusing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#intellisense" class="md-nav__link">
-    IntelliSense
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#line-action" class="md-nav__link">
-    Line Action
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rename-refactoring" class="md-nav__link">
-    Rename Refactoring
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formatting" class="md-nav__link">
-    Formatting
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transform-selected" class="md-nav__link">
-    Transform selected
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#code-folding" class="md-nav__link">
-    Code Folding
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#errors-and-warnings" class="md-nav__link">
-    Errors and Warnings
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1693,6 +1692,34 @@
     <li class="md-nav__item">
       <a href="../../network/http-status/" class="md-nav__link">
         HTTP Status Codes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/openvpn/" class="md-nav__link">
+        OpenVPN
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../network/ngrok/" class="md-nav__link">
+        ngrok
       </a>
     </li>
   
@@ -2072,79 +2099,106 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#side-menu" class="md-nav__link">
-    Side Menu
+  <a href="#hostname" class="md-nav__link">
+    Hostname
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#multi-cursor-editing" class="md-nav__link">
-    Multi-Cursor Editing
+  <a href="#firewall" class="md-nav__link">
+    Firewall
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#split-editor" class="md-nav__link">
-    Split editor
+  <a href="#freeipa-servdns-packages" class="md-nav__link">
+    FreeIPA serv{dns} packages
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#split-window-focusing" class="md-nav__link">
-    Split Window focusing
+  <a href="#freeipa-setup" class="md-nav__link">
+    FreeIPA setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#intellisense" class="md-nav__link">
-    IntelliSense
+  <a href="#autau-create-home-directory" class="md-nav__link">
+    Autau create home directory
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#line-action" class="md-nav__link">
-    Line Action
+  <a href="#check-access" class="md-nav__link">
+    Check access
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rename-refactoring" class="md-nav__link">
-    Rename Refactoring
+  <a href="#kerebros-token-admin" class="md-nav__link">
+    Kerebros token : admin
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#formatting" class="md-nav__link">
-    Formatting
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#transform-selected" class="md-nav__link">
-    Transform selected
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#code-folding" class="md-nav__link">
-    Code Folding
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    3
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#errors-and-warnings" class="md-nav__link">
-    Errors and Warnings
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    4
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    6
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2162,295 +2216,78 @@
                 
                   
 
-  <a href="https://github.com/sboistel/docki/edit/master/docs/dev/vscode.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/sboistel/docki/edit/master/docs/tool/freeipa.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="vscode">VSCode</h1>
-<ul>
-<li><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">MacOS vscode keyboard shortcuts</a></li>
-<li><a href="https://code.visualstudio.com/docs/getstarted/keybindings">Howto vscode custom shortcuts</a></li>
-<li><a href="https://blog.logrocket.com/learn-these-keyboard-shortcuts-to-become-a-vs-code-ninja/">Learn vscode keyboard shortcuts</a></li>
-</ul>
-<h2 id="side-menu">Side Menu</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">⌘ + B</td>
-<td align="left">Hide show side menu</td>
-</tr>
-<tr>
-<td align="left">⌘ + ⇧ + E</td>
-<td align="left">Explorer window</td>
-</tr>
-<tr>
-<td align="left">⌘ + ⇧ + F</td>
-<td align="left">Find window</td>
-</tr>
-<tr>
-<td align="left">⌘ + ⇧ + J</td>
-<td align="left">Find in files window</td>
-</tr>
-<tr>
-<td align="left">⌃ + ⇧ + G</td>
-<td align="left">Git window</td>
-</tr>
-<tr>
-<td align="left">⌘ + ⇧ + D</td>
-<td align="left">Debug window</td>
-</tr>
-<tr>
-<td align="left">⌘ + ⇧ + X</td>
-<td align="left">Extension window</td>
-</tr>
-</tbody>
-</table>
-<h2 id="multi-cursor-editing">Multi-Cursor Editing</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">⌘ + ⌥ + ↓</td>
-<td align="left">add a new cursor below</td>
-</tr>
-<tr>
-<td align="left">⌥ + Click</td>
-<td align="left">add a new cursor at the mouse click</td>
-</tr>
-<tr>
-<td align="left">⌘ + ⇧ + L</td>
-<td align="left">add new cursor behind all instances of a word</td>
-</tr>
-</tbody>
-</table>
-<h2 id="split-editor">Split editor</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">⌘ + \</td>
-<td align="left">split</td>
-</tr>
-</tbody>
-</table>
-<h2 id="split-window-focusing">Split Window focusing</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">⌘ + 0</td>
-<td align="left">explorer panel</td>
-</tr>
-<tr>
-<td align="left">⌘ + 1</td>
-<td align="left">1st window split window</td>
-</tr>
-<tr>
-<td align="left">⌘ + 2</td>
-<td align="left">2nd window split window</td>
-</tr>
-<tr>
-<td align="left">⌃ + ~</td>
-<td align="left">terminal window</td>
-</tr>
-<tr>
-<td align="left">^ + tab</td>
-<td align="left">switch between tabs</td>
-</tr>
-<tr>
-<td align="left">⌘ + ~</td>
-<td align="left">switch between VS code editor windows</td>
-</tr>
-</tbody>
-</table>
-<h2 id="intellisense">IntelliSense</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">⌃ + Space</td>
-<td align="left">to invoke IntelliSense</td>
-</tr>
-</tbody>
-</table>
-<h2 id="line-action">Line Action</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">⇧ + ⌥ + ↓</td>
-<td align="left">copy the line and insert below</td>
-</tr>
-<tr>
-<td align="left">⇧ + ⌥ + ↑</td>
-<td align="left">copy the line and insert above</td>
-</tr>
-<tr>
-<td align="left">⌥ + ↓</td>
-<td align="left">move entire line below</td>
-</tr>
-<tr>
-<td align="left">⌥ + ↑</td>
-<td align="left">move entire line above</td>
-</tr>
-<tr>
-<td align="left">⌘ + ⇧ + K</td>
-<td align="left">delete entire line</td>
-</tr>
-</tbody>
-</table>
-<h2 id="rename-refactoring">Rename Refactoring</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">F2 (Fn + F2)</td>
-<td align="left">Rename Symbol in the current project</td>
-</tr>
-<tr>
-<td align="left">Right Mouse Click -&gt; Rename Symbol</td>
-<td align="left">Rename Symbol in the current project</td>
-</tr>
-</tbody>
-</table>
-<h2 id="formatting">Formatting</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">⇧ + ⌥ + F</td>
-<td align="left">format entire document</td>
-</tr>
-<tr>
-<td align="left">⌘ + K and ⌘ F</td>
-<td align="left">format selected text</td>
-</tr>
-</tbody>
-</table>
-<h2 id="transform-selected">Transform selected</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">^ + ⇧ + ⌥ + L</td>
-<td align="left">transform selected to lower</td>
-</tr>
-<tr>
-<td align="left">^ + ⇧ + ⌥ + U</td>
-<td align="left">transform selected to upper</td>
-</tr>
-<tr>
-<td align="left">^ + ⇧ + ⌥ + S</td>
-<td align="left">transform selected to snake</td>
-</tr>
-<tr>
-<td align="left">^ + ⇧ + ⌥ + T</td>
-<td align="left">transform selected to titelcase</td>
-</tr>
-</tbody>
-</table>
-<h2 id="code-folding">Code Folding</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">⌘ + ⌥ + [</td>
-<td align="left">fold</td>
-</tr>
-<tr>
-<td align="left">⌘ + ⌥ + ]</td>
-<td align="left">unfold</td>
-</tr>
-<tr>
-<td align="left">⌘ K and ⌘ 0</td>
-<td align="left">fold all</td>
-</tr>
-<tr>
-<td align="left">⌘ K and ⌘ J</td>
-<td align="left">unfold all</td>
-</tr>
-<tr>
-<td align="left">⌘ K and ⌘ 1</td>
-<td align="left">fold 1 level</td>
-</tr>
-<tr>
-<td align="left">⌘ K and ⌘ 2</td>
-<td align="left">fold 2 levels</td>
-</tr>
-<tr>
-<td align="left">⌘ K and ⌘ 5</td>
-<td align="left">fold 5 levels</td>
-</tr>
-</tbody>
-</table>
-<h2 id="errors-and-warnings">Errors and Warnings</h2>
-<table>
-<thead>
-<tr>
-<th align="left">shortcut</th>
-<th align="left">description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">F8</td>
-<td align="left">navigate across errors</td>
-</tr>
-</tbody>
-</table>
+<h1 id="free-ipa">Free IPA</h1>
+<h2 id="hostname">Hostname</h2>
+<blockquote>
+<p>echo "ldap{01,02}.home.test ldap{1,2}" &gt; /etc/hostname</p>
+</blockquote>
+<h2 id="firewall">Firewall</h2>
+<blockquote>
+<p>firewall-cmd --add-service=freeipa-ldap{,s} --permanent
+firewall-cmd --reload</p>
+</blockquote>
+<h2 id="freeipa-servdns-packages">FreeIPA serv{dns} packages</h2>
+<blockquote>
+<p>yum install ipa-server ipa-server-dns</p>
+</blockquote>
+<h2 id="freeipa-setup">FreeIPA setup</h2>
+<blockquote>
+<p>ipa-server-install</p>
+</blockquote>
+<p>ou</p>
+<pre><code class="language-bash">ipa-server-install -U -p user -a password --ip-address=ip -n fqdn -r FQDN --hostname=${hostname -f} --setup-dns --auto-reverse
+</code></pre>
+<h2 id="autau-create-home-directory">Autau create home directory</h2>
+<blockquote>
+<p>authconfig --enablemkhomedir --update</p>
+</blockquote>
+<h2 id="check-access">Check access</h2>
+<blockquote>
+<p>ipactl status</p>
+</blockquote>
+<h2 id="kerebros-token-admin">Kerebros token : admin</h2>
+<blockquote>
+<p>kinit admin
+klist</p>
+</blockquote>
+<hr />
+<h2 id="steps">Steps</h2>
+<h3 id="1">1</h3>
+<blockquote>
+<p>nmtui -&gt; hostname ldap0{1,2}.ipa.test</p>
+</blockquote>
+<h3 id="2">2</h3>
+<blockquote>
+<p>echo "$(hostname -I) $(hostname -f) ldap0{1,2}" &gt;&gt; /etc/hosts</p>
+</blockquote>
+<h3 id="3">3</h3>
+<blockquote>
+<p>firewall-cmd --add-service=freeipa-ldap{,s} --permanent
+firewall-cmd --reload</p>
+</blockquote>
+<h3 id="4">4</h3>
+<blockquote>
+<p>yum install freeipa-server ipa-server-dns</p>
+</blockquote>
+<h3 id="5">5</h3>
+<blockquote>
+<p>ipa-server-install</p>
+</blockquote>
+<h3 id="6">6</h3>
+<blockquote>
+<p>kinit admin
+ipa user-add
+ipa passwrd
+yum install ipa-server
+hostnamctl set-hostname freeipa.sboistel.lan
+ipa-server-install --setup-dns</p>
+</blockquote>
 
 
 
@@ -2471,7 +2308,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../ngrok/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ngrok" rel="prev">
+        <a href="../rhel_idm/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Red Hat Identity Management (IdM)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2480,20 +2317,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              ngrok
+              Red Hat Identity Management (IdM)
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../network/certmanager/" class="md-footer__link md-footer__link--next" aria-label="Next: Cert-Manager" rel="next">
+        <a href="../guacamole/" class="md-footer__link md-footer__link--next" aria-label="Next: Guacamole" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Cert-Manager
+              Guacamole
             </div>
           </div>
           <div class="md-footer__button md-icon">
