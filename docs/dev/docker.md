@@ -1,9 +1,9 @@
 # Docker
 
 Lister les processus en cours :
->    docker ps -a
+> docker ps -a
 
-### Images
+## Images
 
 Chaque processus dépendera d'une image pareil à une iso + son appli pour une vm.
 Chercher une image :
@@ -67,7 +67,9 @@ RPM yum install -y wget
 RPM yum install yum-utils
 ```
 
-⚠ Attention, plus il y aura de nombre de ligne dans le dockerfile, plus le nombre de couche sera important et engedra les performences.
+!!! warning
+	Plus il y aura de nombre de ligne dans le dockerfile, plus le nombre de couche sera important et engedra les performences.
+
 Construire l'image :
 
 ```bash
@@ -109,6 +111,7 @@ docker run -ti ubuntu ps
 ```
 
 Exécuter une commande dans un conteneur détaché en cours d'éxécution :
+
 ```bash
 docker exec -name=container01 -hostname=host01 centos ping 127.0.0.1
 ```
@@ -157,16 +160,19 @@ docker inspect container01
 
 ## Agrégation de recherche
 
-Récolter seulement ce qui nous intérèsse ? 
- - Avoir un status
-   ```bash
-   docker inspect --format='![](./Docker/.State.Status)' container01
-   ```
+Récolter seulement ce qui nous intérèsse ?
 
- - Avoir l'iP du container01 
-   ```bash
-   docker inspect --format='![](./Docker/.NetworkSettings.IPAddress)' container01
-   ```
+* Avoir un status
+
+```bash
+docker inspect --format='![](./Docker/.State.Status)' container01
+```
+
+* Avoir l'iP du container01 
+
+```bash
+docker inspect --format='![](./Docker/.NetworkSettings.IPAddress)' container01
+```
 
 Réccolter le tableau State :
 
@@ -201,7 +207,7 @@ docker ps -a --format "![](./Docker/.Names) : ![](./Docker/.Status)"
 
 ### Export
 
-Comment exporter son image ? 
+Comment exporter son image ?
 
 ```bash
 docker export -o mycentos01.tar mycentos
@@ -247,5 +253,3 @@ On trouvera aussi :
 * OpenVZ
 * Containerd
 * etc ...
-
-
