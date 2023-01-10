@@ -1497,6 +1497,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2005,6 +2019,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2076,11 +2104,11 @@
 <p>The recommended method to install the OpenVPN Access Server is to use the official OpenVPN Access Server software repository. </p>
 <p>You will need to be logged on to your Linux system either on the console or via SSH, and have root privileges. Then copy and paste the commands below to add the repository to your system, and install the OpenVPN Access Server client bundle and the OpenVPN Access Server package itself. </p>
 <p>Installing the package 'openvpn-as' will automatically pull in the required client bundle as well.</p>
-<pre><code class="language-bash">apt update &amp;&amp; apt -y install ca-certificates wget net-tools gnupg
-wget -qO - &lt;https://as-repository.openvpn.net/as-repo-public.gpg&gt; | apt-key add -
-echo &quot;deb &lt;http://as-repository.openvpn.net/as/debian&gt; buster main&quot;&gt;/etc/apt/sources.list.d/openvpn-as-repo.list
-apt update &amp;&amp; apt -y install openvpn-as
-</code></pre>
+<div class="highlight"><pre><span></span><code>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>ca-certificates<span class="w"> </span>wget<span class="w"> </span>net-tools<span class="w"> </span>gnupg
+wget<span class="w"> </span>-qO<span class="w"> </span>-<span class="w"> </span>&lt;https://as-repository.openvpn.net/as-repo-public.gpg&gt;<span class="w"> </span><span class="p">|</span><span class="w"> </span>apt-key<span class="w"> </span>add<span class="w"> </span>-
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb &lt;http://as-repository.openvpn.net/as/debian&gt; buster main&quot;</span>&gt;/etc/apt/sources.list.d/openvpn-as-repo.list
+apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>apt<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>openvpn-as
+</code></pre></div>
 <h2 id="configuration">Configuration</h2>
 <p>Follow theses steps : <a href="https://openvpn.net/vpn-server-resources/finishing-configuration-of-access-server/">OpenVPN Website</a></p>
 

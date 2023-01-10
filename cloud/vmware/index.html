@@ -1497,6 +1497,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2087,6 +2101,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2242,24 +2270,24 @@
 <p>How to add an USB hard drive as Datastore ?</p>
 <h3 id="disabling-usb-arbitrator-service">Disabling usb arbitrator service</h3>
 <h3 id="stopping">Stopping</h3>
-<pre><code class="language-bash">/etc/init.d/usbarbitrator stop
-</code></pre>
+<div class="highlight"><pre><span></span><code>/etc/init.d/usbarbitrator<span class="w"> </span>stop
+</code></pre></div>
 <h3 id="disabling">Disabling</h3>
-<pre><code class="language-bash">chkconfig usbarbitrator off
-</code></pre>
+<div class="highlight"><pre><span></span><code>chkconfig<span class="w"> </span>usbarbitrator<span class="w"> </span>off
+</code></pre></div>
 <h3 id="labeling">Labeling</h3>
-<pre><code class="language-bash">partedUtil mklabel /dev/disks/mpx.vmhba32:C0:T0:L0 gpt
-</code></pre>
+<div class="highlight"><pre><span></span><code>partedUtil<span class="w"> </span>mklabel<span class="w"> </span>/dev/disks/mpx.vmhba32:C0:T0:L0<span class="w"> </span>gpt
+</code></pre></div>
 <h3 id="get-the-partition-table">Get the partition table</h3>
 <p>⚠️ This command will bring you a number :</p>
-<pre><code class="language-bash">eval expr $(partedUtil getptbl /dev/disks/mpx.vmhba32:C0:T0:L0 | tail -1 | awk '{print $1 &quot; \\* &quot; $2 &quot; \\* &quot; $3}') - 1
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="w"> </span>expr<span class="w"> </span><span class="k">$(</span>partedUtil<span class="w"> </span>getptbl<span class="w"> </span>/dev/disks/mpx.vmhba32:C0:T0:L0<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-1<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1 &quot; \\* &quot; $2 &quot; \\* &quot; $3}&#39;</span><span class="k">)</span><span class="w"> </span>-<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
 <p>Dont forget to fill the number found :</p>
-<pre><code class="language-bash">partedUtil setptbl /dev/disks/mpx.vmhba32:C0:T0:L0 gpt &quot;1 2048 ${NUMBER} AA31E02A400F11DB9590000C2911D1B8 0&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>partedUtil<span class="w"> </span>setptbl<span class="w"> </span>/dev/disks/mpx.vmhba32:C0:T0:L0<span class="w"> </span>gpt<span class="w"> </span><span class="s2">&quot;1 2048 </span><span class="si">${</span><span class="nv">NUMBER</span><span class="si">}</span><span class="s2"> AA31E02A400F11DB9590000C2911D1B8 0&quot;</span>
+</code></pre></div>
 <h3 id="last-step">Last step</h3>
-<pre><code class="language-bash">vmkfstools -C vmfs6 -S USB-Datastore /dev/disks/mpx.vmhba32:C0:T0:L0:1
-</code></pre>
+<div class="highlight"><pre><span></span><code>vmkfstools<span class="w"> </span>-C<span class="w"> </span>vmfs6<span class="w"> </span>-S<span class="w"> </span>USB-Datastore<span class="w"> </span>/dev/disks/mpx.vmhba32:C0:T0:L0:1
+</code></pre></div>
 <h2 id="license">License</h2>
 <h3 id="removing-license">Removing License</h3>
 <blockquote>

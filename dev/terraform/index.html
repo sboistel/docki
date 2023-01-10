@@ -1594,6 +1594,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2052,6 +2066,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2169,26 +2197,26 @@
 <h2 id="syntaxe">Syntaxe</h2>
 <p>Travaillons sur un fichier <code>main.tf</code></p>
 <h2 id="exemple">Exemple :</h2>
-<pre><code class="language-bash">output &quot;VAR&quot; {
-value = &quot;Hello World! &quot;
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code>output<span class="w"> </span><span class="s2">&quot;VAR&quot;</span><span class="w"> </span><span class="o">{</span>
+<span class="nv">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World! &quot;</span>
+<span class="o">}</span>
+</code></pre></div>
 <h4 id="sortie">Sortie :</h4>
-<pre><code class="language-bash">Ouptus : 
-VAR = Hello World!
-</code></pre>
+<div class="highlight"><pre><span></span><code>Ouptus<span class="w"> </span>:<span class="w"> </span>
+<span class="nv">VAR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Hello<span class="w"> </span>World!
+</code></pre></div>
 <h2 id="tfstate">tfstate</h2>
 <p>Le fichier <strong>tfstate</strong> permet de visualiser les actions entreprises (pareil à un fichier de log).
 On pourra externaliser (remote state) le fichier tfstate.</p>
 <h3 id="tester-et-appliquer">Tester et appliquer</h3>
 <h3 id="tester">Tester</h3>
 <p>Tester les actions à entreprendre :</p>
-<pre><code class="language-bash">terraform plan
-</code></pre>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>plan
+</code></pre></div>
 <h3 id="appliquer">Appliquer</h3>
 <p>Appliquer les modifications souhaitée :</p>
-<pre><code class="language-bash">terraform apply
-</code></pre>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>apply
+</code></pre></div>
 
 
 

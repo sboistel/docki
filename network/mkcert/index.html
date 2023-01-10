@@ -1497,6 +1497,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2012,6 +2026,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2088,126 +2116,126 @@
 <h2 id="how-to">How to</h2>
 <p>How to use this script ?</p>
 <p>Open a terminal and run a ssh connection to pki-adm :</p>
-<pre><code class="language-bash">ssh pki-adm
-</code></pre>
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>pki-adm
+</code></pre></div>
 <p>You should be logged as <code>su</code> :</p>
-<pre><code class="language-bash">sudo su -
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>su<span class="w"> </span>-
+</code></pre></div>
 <p>You are able to run this script from everywhere.</p>
 <h2 id="run">Run</h2>
 <p>Simply run this script like :</p>
-<pre><code class="language-bash">mkcert
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkcert
+</code></pre></div>
 <p>This script will return you theses informations :</p>
-<pre><code class="language-bash">Welcome to the cert gen
-Please follow these steps :
-Enter the name ONLY :  Barack
-Enter the surname ONLY :  OBAMA
-Fill wich type would you want : 'client' or 'operator' :  client
-</code></pre>
+<div class="highlight"><pre><span></span><code>Welcome<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>cert<span class="w"> </span>gen
+Please<span class="w"> </span>follow<span class="w"> </span>these<span class="w"> </span>steps<span class="w"> </span>:
+Enter<span class="w"> </span>the<span class="w"> </span>name<span class="w"> </span>ONLY<span class="w"> </span>:<span class="w">  </span>Barack
+Enter<span class="w"> </span>the<span class="w"> </span>surname<span class="w"> </span>ONLY<span class="w"> </span>:<span class="w">  </span>OBAMA
+Fill<span class="w"> </span>wich<span class="w"> </span><span class="nb">type</span><span class="w"> </span>would<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>:<span class="w"> </span><span class="s1">&#39;client&#39;</span><span class="w"> </span>or<span class="w"> </span><span class="s1">&#39;operator&#39;</span><span class="w"> </span>:<span class="w">  </span>client
+</code></pre></div>
 <hr />
 <h2 id="raw-script">Raw script</h2>
-<pre><code class="language-shell">#!/bin/bash
-#
-# Written by sboistel on June 2021
-#
-# Create user certificate
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="c1">#</span>
+<span class="c1"># Written by sboistel on June 2021</span>
+<span class="c1">#</span>
+<span class="c1"># Create user certificate</span>
 
-# Var
-bin=/usr/local/bin
-key_pass=$(cat /dev/urandom | tr -dc 'a-z0-9' | head -c 16) # Generate random password
-Pki=/etc/pki/ # root folder of reverse-${type}
+<span class="c1"># Var</span>
+<span class="nv">bin</span><span class="o">=</span>/usr/local/bin
+<span class="nv">key_pass</span><span class="o">=</span><span class="k">$(</span>cat<span class="w"> </span>/dev/urandom<span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span>-dc<span class="w"> </span><span class="s1">&#39;a-z0-9&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-c<span class="w"> </span><span class="m">16</span><span class="k">)</span><span class="w"> </span><span class="c1"># Generate random password</span>
+<span class="nv">Pki</span><span class="o">=</span>/etc/pki/<span class="w"> </span><span class="c1"># root folder of reverse-${type}</span>
 
-# Welcome
-echo &quot;&quot;
-echo &quot;Welcome to the cert gen&quot;
-echo &quot;Please follow these steps :&quot;
-echo &quot;Enter the name ONLY :  Barack&quot;
-echo &quot;Enter the surname ONLY :  OBAMA&quot;
-echo &quot;Fill wich type would you want : 'client' or 'operator' :  client&quot;
-echo &quot;&quot;
+<span class="c1"># Welcome</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Welcome to the cert gen&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Please follow these steps :&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Enter the name ONLY :  Barack&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Enter the surname ONLY :  OBAMA&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Fill wich type would you want : &#39;client&#39; or &#39;operator&#39; :  client&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
 
-# Get Informaitons
-## User information
-### Name
-read -rp &quot;Enter the name ONLY : &quot; name
-na=$(echo ${name,,} | cut -c 1) # 1st letter of name lowercasedededed
+<span class="c1"># Get Informaitons</span>
+<span class="c1">## User information</span>
+<span class="c1">### Name</span>
+<span class="nb">read</span><span class="w"> </span>-rp<span class="w"> </span><span class="s2">&quot;Enter the name ONLY : &quot;</span><span class="w"> </span>name
+<span class="nv">na</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="si">${</span><span class="nv">name</span><span class="p">,,</span><span class="si">}</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-c<span class="w"> </span><span class="m">1</span><span class="k">)</span><span class="w"> </span><span class="c1"># 1st letter of name lowercasedededed</span>
 
-### Surname
-read -rp &quot;Enter the surname ONLY : &quot; surname
-surna=${surname,,} # surname lowercased
+<span class="c1">### Surname</span>
+<span class="nb">read</span><span class="w"> </span>-rp<span class="w"> </span><span class="s2">&quot;Enter the surname ONLY : &quot;</span><span class="w"> </span>surname
+<span class="nv">surna</span><span class="o">=</span><span class="si">${</span><span class="nv">surname</span><span class="p">,,</span><span class="si">}</span><span class="w"> </span><span class="c1"># surname lowercased</span>
 
-### Username
-username=${na}${surna} #1st letter of name + surname
+<span class="c1">### Username</span>
+<span class="nv">username</span><span class="o">=</span><span class="si">${</span><span class="nv">na</span><span class="si">}${</span><span class="nv">surna</span><span class="si">}</span><span class="w"> </span><span class="c1">#1st letter of name + surname</span>
 
-## Type of user
-echo &quot;Fill wich type would you want : 'client' or 'operator' : &quot;
-types=(&quot;client&quot; &quot;operator&quot;)
+<span class="c1">## Type of user</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Fill wich type would you want : &#39;client&#39; or &#39;operator&#39; : &quot;</span>
+<span class="nv">types</span><span class="o">=(</span><span class="s2">&quot;client&quot;</span><span class="w"> </span><span class="s2">&quot;operator&quot;</span><span class="o">)</span>
 
-select typ in &quot;${types[@]}&quot; ; do
-        case &quot;$typ&quot; in
-                &quot;client&quot;)
-                         ctype=&quot;client&quot; &amp;&amp; break
-                         ;;
-                 &quot;operator&quot;)
-                         ctype=&quot;operator&quot; &amp;&amp; break
-                         ;;
-                 *)
-                         echo &quot;Wrong choice, please select the number of the type you want.&quot;
-                         ;;
-        esac
-done
+<span class="k">select</span><span class="w"> </span>typ<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">types</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$typ</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">in</span>
+<span class="w">                </span><span class="s2">&quot;client&quot;</span><span class="o">)</span>
+<span class="w">                         </span><span class="nv">ctype</span><span class="o">=</span><span class="s2">&quot;client&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">break</span>
+<span class="w">                         </span><span class="p">;;</span>
+<span class="w">                 </span><span class="s2">&quot;operator&quot;</span><span class="o">)</span>
+<span class="w">                         </span><span class="nv">ctype</span><span class="o">=</span><span class="s2">&quot;operator&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">break</span>
+<span class="w">                         </span><span class="p">;;</span>
+<span class="w">                 </span>*<span class="o">)</span>
+<span class="w">                         </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Wrong choice, please select the number of the type you want.&quot;</span>
+<span class="w">                         </span><span class="p">;;</span>
+<span class="w">        </span><span class="k">esac</span>
+<span class="k">done</span>
 
-### Working Directory : Determine the user type trough the $ctype
-if [ &quot;$ctype&quot; = &quot;client&quot; ]; then
-    WD=$Pki/reverse-client/users
-elif [ &quot;$ctype&quot; = &quot;operator&quot; ]; then
-    WD=$Pki/reverse-operator/users
-fi
+<span class="c1">### Working Directory : Determine the user type trough the $ctype</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ctype</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;client&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nv">WD</span><span class="o">=</span><span class="nv">$Pki</span>/reverse-client/users
+<span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ctype</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;operator&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nv">WD</span><span class="o">=</span><span class="nv">$Pki</span>/reverse-operator/users
+<span class="k">fi</span>
 
-### CA Directory : Determine the CA type trough the $ctype
-if [ &quot;$ctype&quot; = &quot;client&quot; ]; then
-    ca_type=$Pki/reverse-client/intermediate-CA
-elif [ &quot;$ctype&quot; = &quot;operator&quot; ]; then
-    ca_type=$Pki/reverse-operator/intermediate-CA
-fi
+<span class="c1">### CA Directory : Determine the CA type trough the $ctype</span>
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ctype</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;client&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nv">ca_type</span><span class="o">=</span><span class="nv">$Pki</span>/reverse-client/intermediate-CA
+<span class="k">elif</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$ctype</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;operator&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nv">ca_type</span><span class="o">=</span><span class="nv">$Pki</span>/reverse-operator/intermediate-CA
+<span class="k">fi</span>
 
-# Traitement
-## Creating Directory
-echo &quot;Go to the $username directory&quot;
-mkdir -pv $WD/$username
-cd $WD/$username
+<span class="c1"># Traitement</span>
+<span class="c1">## Creating Directory</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Go to the </span><span class="nv">$username</span><span class="s2"> directory&quot;</span>
+mkdir<span class="w"> </span>-pv<span class="w"> </span><span class="nv">$WD</span>/<span class="nv">$username</span>
+<span class="nb">cd</span><span class="w"> </span><span class="nv">$WD</span>/<span class="nv">$username</span>
 
-## Create the credentials for the SSM
-echo &quot;# $username credentials&quot; &gt;&gt; ${username}_key_pass.md
-echo &quot;&gt; $key_pass&quot; &gt;&gt; ${username}_key_pass.md
+<span class="c1">## Create the credentials for the SSM</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;# </span><span class="nv">$username</span><span class="s2"> credentials&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="si">${</span><span class="nv">username</span><span class="si">}</span>_key_pass.md
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;&gt; </span><span class="nv">$key_pass</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="si">${</span><span class="nv">username</span><span class="si">}</span>_key_pass.md
 
-## Let's Certificate
-### KEY
-echo &quot;Generate the $username key&quot;
-openssl genrsa -des3 -passout pass:${key_pass} -out ${username}.key 4096
+<span class="c1">## Let&#39;s Certificate</span>
+<span class="c1">### KEY</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Generate the </span><span class="nv">$username</span><span class="s2"> key&quot;</span>
+openssl<span class="w"> </span>genrsa<span class="w"> </span>-des3<span class="w"> </span>-passout<span class="w"> </span>pass:<span class="si">${</span><span class="nv">key_pass</span><span class="si">}</span><span class="w"> </span>-out<span class="w"> </span><span class="si">${</span><span class="nv">username</span><span class="si">}</span>.key<span class="w"> </span><span class="m">4096</span>
 
-### CSR
-echo &quot;Generate the $username csr&quot;
-openssl req -new -key $username.key -passin pass:${key_pass} -out $username.csr  -subj &quot;/C=FR/ST=France/L=Paris/O=Docki/OU=sboistel/CN=Intermediate CA&quot;
+<span class="c1">### CSR</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Generate the </span><span class="nv">$username</span><span class="s2"> csr&quot;</span>
+openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-key<span class="w"> </span><span class="nv">$username</span>.key<span class="w"> </span>-passin<span class="w"> </span>pass:<span class="si">${</span><span class="nv">key_pass</span><span class="si">}</span><span class="w"> </span>-out<span class="w"> </span><span class="nv">$username</span>.csr<span class="w">  </span>-subj<span class="w"> </span><span class="s2">&quot;/C=FR/ST=France/L=Paris/O=Docki/OU=sboistel/CN=Intermediate CA&quot;</span>
 
-### Make Cert / P12
-#### Generate the Cert with the CA
-echo &quot;Generate the $username crt&quot;
-$bin/make-crt-with-intermediate-ca $username $ca_type
+<span class="c1">### Make Cert / P12</span>
+<span class="c1">#### Generate the Cert with the CA</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Generate the </span><span class="nv">$username</span><span class="s2"> crt&quot;</span>
+<span class="nv">$bin</span>/make-crt-with-intermediate-ca<span class="w"> </span><span class="nv">$username</span><span class="w"> </span><span class="nv">$ca_type</span>
 
-#### Generate the P12 with the CA
-echo &quot;Generate the $username p12&quot;
-$bin/make-p12-with-intermediate-ca $username $ca_type
+<span class="c1">#### Generate the P12 with the CA</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Generate the </span><span class="nv">$username</span><span class="s2"> p12&quot;</span>
+<span class="nv">$bin</span>/make-p12-with-intermediate-ca<span class="w"> </span><span class="nv">$username</span><span class="w"> </span><span class="nv">$ca_type</span>
 
-# End Print
-echo &quot;The $username's certificat has been created.&quot;
-echo &quot;The credentials are stored into the ${username}_key_pass.md file :&quot;
-echo &quot;Let's communicate the key password to the SSM/user&quot;
-cat ${username}_key_pass.md
+<span class="c1"># End Print</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;The </span><span class="nv">$username</span><span class="s2">&#39;s certificat has been created.&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;The credentials are stored into the </span><span class="si">${</span><span class="nv">username</span><span class="si">}</span><span class="s2">_key_pass.md file :&quot;</span>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Let&#39;s communicate the key password to the SSM/user&quot;</span>
+cat<span class="w"> </span><span class="si">${</span><span class="nv">username</span><span class="si">}</span>_key_pass.md
 
-# EOF
-</code></pre>
+<span class="c1"># EOF</span>
+</code></pre></div>
 
 
 

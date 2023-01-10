@@ -1547,6 +1547,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2005,6 +2019,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2072,23 +2100,23 @@
 
 <h1 id="system">System</h1>
 <p>Trouver la date d’installation Windows.</p>
-<pre><code class="language-powershell">systeminfo | find &quot;installation&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">systeminfo</span> <span class="p">|</span> <span class="n">find</span> <span class="s2">&quot;installation&quot;</span>
+</code></pre></div>
 <p>Se rendre rapidement sur la page de gestion des software: 
 Éxécuter la commande suivante (dans invite de commande ou executer ou menu démarré)</p>
-<pre><code class="language-powershell">Appwiz.cpl
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">Appwiz</span><span class="p">.</span><span class="n">cpl</span>
+</code></pre></div>
 <h2 id="hosts-file">Hosts file</h2>
 <p>Hosts file configuration location :</p>
-<pre><code class="language-powershell">C:\windows\system32\drivers\etc\
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="p">:\</span><span class="n">windows</span><span class="p">\</span><span class="n">system32</span><span class="p">\</span><span class="n">drivers</span><span class="p">\</span><span class="n">etc</span><span class="p">\</span>
+</code></pre></div>
 <h2 id="license">License</h2>
 <p>Temps restant disponible à la license en cours</p>
-<pre><code class="language-powershell">DISM /online /Get-CurrentEdition
-DISM /online /Get-TargetEditions
-slmgr.vbs /ipk LICENCE #&quot;Force&quot; || Dism /Online /Set-Edition:ServerDatacenter /AcceptEula /ProductKey:LICENCE
-slmgr.vbs /dlv #Check
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">DISM</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">Get-CurrentEdition</span>
+<span class="n">DISM</span> <span class="p">/</span><span class="n">online</span> <span class="p">/</span><span class="nb">Get-TargetEditions</span>
+<span class="n">slmgr</span><span class="p">.</span><span class="n">vbs</span> <span class="p">/</span><span class="n">ipk</span> <span class="n">LICENCE</span> <span class="c">#&quot;Force&quot; || Dism /Online /Set-Edition:ServerDatacenter /AcceptEula /ProductKey:LICENCE</span>
+<span class="n">slmgr</span><span class="p">.</span><span class="n">vbs</span> <span class="p">/</span><span class="n">dlv</span> <span class="c">#Check</span>
+</code></pre></div>
 
 
 

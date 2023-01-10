@@ -1595,6 +1595,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2053,6 +2067,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2172,14 +2200,14 @@
 <ul>
 <li>url: Specifies the URL pointing to the installation media.</li>
 </ul>
-<pre><code class="language-shell">url --url=&quot;http://classroom.example.com/content/rhel8.2/x86_64/dvd/&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>url<span class="w"> </span>--url<span class="o">=</span><span class="s2">&quot;http://classroom.example.com/content/rhel8.2/x86_64/dvd/&quot;</span>
+</code></pre></div>
 <ul>
 <li>repo: <strong>Specifies where to find additional packages for installation</strong>.</li>
 </ul>
 <p>This option must point to a valid <strong>yum</strong> repository.</p>
-<pre><code class="language-shell">    repo --name=&quot;appstream&quot; --baseurl=http://classroom.example.com/content/rhel8.2/x86_64/dvd/AppStream/
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>repo<span class="w"> </span>--name<span class="o">=</span><span class="s2">&quot;appstream&quot;</span><span class="w"> </span>--baseurl<span class="o">=</span>http://classroom.example.com/content/rhel8.2/x86_64/dvd/AppStream/
+</code></pre></div>
 <ul>
 <li>
 <p>text: Forces a text mode install.</p>
@@ -2188,21 +2216,21 @@
 <p>vnc: Allows the graphical installation to be viewed remotely over VNC.</p>
 </li>
 </ul>
-<pre><code class="language-shell">vnc --password=redhat
-</code></pre>
+<div class="highlight"><pre><span></span><code>vnc<span class="w"> </span>--password<span class="o">=</span>redhat
+</code></pre></div>
 <h2 id="partitioning-commands">Partitioning Commands</h2>
 <p>Define the devices and partitioning scheme to be used.</p>
 <ul>
 <li>clearpart: Removes partitions from the system prior to creation of new partitions. </li>
 </ul>
 <p>By default, no partitions are removed.</p>
-<pre><code class="language-shell">clearpart --all --drives=sda,sdb --initlabel
-</code></pre>
+<div class="highlight"><pre><span></span><code>clearpart<span class="w"> </span>--all<span class="w"> </span>--drives<span class="o">=</span>sda,sdb<span class="w"> </span>--initlabel
+</code></pre></div>
 <ul>
 <li>part: Specifies the size, format, and name of a partition.</li>
 </ul>
-<pre><code class="language-shell">part /home --fstype=ext4 --label=homes --size=4096 --maxsize=8192 --grow
-</code></pre>
+<div class="highlight"><pre><span></span><code>part<span class="w"> </span>/home<span class="w"> </span>--fstype<span class="o">=</span>ext4<span class="w"> </span>--label<span class="o">=</span>homes<span class="w"> </span>--size<span class="o">=</span><span class="m">4096</span><span class="w"> </span>--maxsize<span class="o">=</span><span class="m">8192</span><span class="w"> </span>--grow
+</code></pre></div>
 <ul>
 <li>autopart: Automatically creates a <strong>root</strong> partition, a swap partition, and an appropriate boot partition for the architecture. </li>
 </ul>
@@ -2210,21 +2238,21 @@
 <ul>
 <li>ignoredisk: Controls Anaconda's access to disks attached to the system.</li>
 </ul>
-<pre><code class="language-shell">ignoredisk --drives=sdc
-</code></pre>
+<div class="highlight"><pre><span></span><code>ignoredisk<span class="w"> </span>--drives<span class="o">=</span>sdc
+</code></pre></div>
 <ul>
 <li>bootloader: Defines where to install the bootloader.</li>
 </ul>
-<pre><code class="language-shell">bootloader --location=mbr --boot-drive=sda
-</code></pre>
+<div class="highlight"><pre><span></span><code>bootloader<span class="w"> </span>--location<span class="o">=</span>mbr<span class="w"> </span>--boot-drive<span class="o">=</span>sda
+</code></pre></div>
 <ul>
 <li>volgroup, logvol: Creates LVM volume groups and logical volumes.</li>
 </ul>
-<pre><code class="language-shell">    part pv.01 --size=8192
-    volgroup myvg pv.01
-    logvol / --vgname=myvg --fstype=xfs --size=2048 --name=rootvol --grow
-    logvol /var --vgname=myvg --fstype=xfs --size=4096 --name=varvol
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>part<span class="w"> </span>pv.01<span class="w"> </span>--size<span class="o">=</span><span class="m">8192</span>
+<span class="w">    </span>volgroup<span class="w"> </span>myvg<span class="w"> </span>pv.01
+<span class="w">    </span>logvol<span class="w"> </span>/<span class="w"> </span>--vgname<span class="o">=</span>myvg<span class="w"> </span>--fstype<span class="o">=</span>xfs<span class="w"> </span>--size<span class="o">=</span><span class="m">2048</span><span class="w"> </span>--name<span class="o">=</span>rootvol<span class="w"> </span>--grow
+<span class="w">    </span>logvol<span class="w"> </span>/var<span class="w"> </span>--vgname<span class="o">=</span>myvg<span class="w"> </span>--fstype<span class="o">=</span>xfs<span class="w"> </span>--size<span class="o">=</span><span class="m">4096</span><span class="w"> </span>--name<span class="o">=</span>varvol
+</code></pre></div>
 <ul>
 <li>zerombr: Initialize disks whose formatting is unrecognized.</li>
 </ul>
@@ -2234,8 +2262,8 @@
 <li>network: Configures network information for target system. </li>
 </ul>
 <p>Activates network devices in installer environment.</p>
-<pre><code class="language-shell">network --device=eth0 --bootproto=dhcp
-</code></pre>
+<div class="highlight"><pre><span></span><code>network<span class="w"> </span>--device<span class="o">=</span>eth0<span class="w"> </span>--bootproto<span class="o">=</span>dhcp
+</code></pre></div>
 <ul>
 <li>
 <p>firewall: Defines the firewall configuration for the target system.</p>
@@ -2247,18 +2275,18 @@
 <ul>
 <li>lang: Sets the language to use during installation and the default language of the installed system. Required.</li>
 </ul>
-<pre><code class="language-shell">    lang en_US.UTF-8
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>lang<span class="w"> </span>en_US.UTF-8
+</code></pre></div>
 <ul>
 <li>keyboard: Sets the system keyboard type. Required.</li>
 </ul>
-<pre><code class="language-shell">    keyboard --vckeymap=us --xlayouts=''
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>keyboard<span class="w"> </span>--vckeymap<span class="o">=</span>us<span class="w"> </span>--xlayouts<span class="o">=</span><span class="s1">&#39;&#39;</span>
+</code></pre></div>
 <ul>
 <li>timezone: Defines the timezone, NTP servers, and whether the hardware clock uses UTC.</li>
 </ul>
-<pre><code class="language-shell">timezone --utc --ntpservers=time.example.com Europe/Amsterdam
-</code></pre>
+<div class="highlight"><pre><span></span><code>timezone<span class="w"> </span>--utc<span class="w"> </span>--ntpservers<span class="o">=</span>time.example.com<span class="w"> </span>Europe/Amsterdam
+</code></pre></div>
 <ul>
 <li>authselect: Sets up authentication options. </li>
 </ul>
@@ -2266,41 +2294,41 @@
 <ul>
 <li>rootpw: Defines the initial root password.</li>
 </ul>
-<pre><code class="language-shell">rootpw --plaintext redhat
+<div class="highlight"><pre><span></span><code>rootpw<span class="w"> </span>--plaintext<span class="w"> </span>redhat
 
 or
 
-rootpw --iscrypted $6$KUnFfrTzO8jv.PiH$YlBbOtXBkWzoMuRfb0.SpbQ....XDR1UuchoMG1
-</code></pre>
+rootpw<span class="w"> </span>--iscrypted<span class="w"> </span><span class="nv">$6$KUnFfrTzO8jv</span>.PiH<span class="nv">$YlBbOtXBkWzoMuRfb0</span>.SpbQ....XDR1UuchoMG1
+</code></pre></div>
 <ul>
 <li>selinux: Sets the SELinux mode for the installed system.</li>
 </ul>
-<pre><code class="language-shell">    selinux --enforcing
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>selinux<span class="w"> </span>--enforcing
+</code></pre></div>
 <ul>
 <li>services: Modifies the default set of services to run under the default systemd target.</li>
 </ul>
-<pre><code class="language-shell">    services --disabled=network,iptables,ip6tables --enabled=NetworkManager,firewalld
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>services<span class="w"> </span>--disabled<span class="o">=</span>network,iptables,ip6tables<span class="w"> </span>--enabled<span class="o">=</span>NetworkManager,firewalld
+</code></pre></div>
 <ul>
 <li>group, user: Create a local group or user on the system.</li>
 </ul>
-<pre><code class="language-shell">    group --name=admins --gid=10001
-    user --name=jdoe --gecos=&quot;John Doe&quot; --groups=admins --password=changeme --plaintext
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>group<span class="w"> </span>--name<span class="o">=</span>admins<span class="w"> </span>--gid<span class="o">=</span><span class="m">10001</span>
+<span class="w">    </span>user<span class="w"> </span>--name<span class="o">=</span>jdoe<span class="w"> </span>--gecos<span class="o">=</span><span class="s2">&quot;John Doe&quot;</span><span class="w"> </span>--groups<span class="o">=</span>admins<span class="w"> </span>--password<span class="o">=</span>changeme<span class="w"> </span>--plaintext
+</code></pre></div>
 <h2 id="miscellaneous-commands">Miscellaneous Commands</h2>
 <p>Configure miscellaneous items related to logging during the installation and the host power state at completion.</p>
 <ul>
 <li>logging: This command defines how Anaconda will perform logging during the installation.</li>
 </ul>
-<pre><code class="language-shell">    logging --host=loghost.example.com --level=info
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>logging<span class="w"> </span>--host<span class="o">=</span>loghost.example.com<span class="w"> </span>--level<span class="o">=</span>info
+</code></pre></div>
 <ul>
 <li>firstboot: If enabled, the Setup Agent starts the first time the system boots. </li>
 </ul>
 <p>The initial-setup package must be installed.</p>
-<pre><code class="language-shell">    firstboot --disabled
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="w">    </span>firstboot<span class="w"> </span>--disabled
+</code></pre></div>
 <ul>
 <li>reboot, poweroff, halt: Specify the final action to take when the installation completes.</li>
 </ul>
@@ -2319,43 +2347,43 @@ rootpw --iscrypted $6$KUnFfrTzO8jv.PiH$YlBbOtXBkWzoMuRfb0.SpbQ....XDR1UuchoMG1
 <p>For example, ksverdiff -f RHEL7 -t RHEL8 identifies changes in syntax from RHEL 7 to RHEL 8. Available versions are listed in the top of the file /usr/lib/python3.6/site-packages/pykickstart/version.py.</p>
 <h3 id="example-kickstart-file">Example Kickstart File</h3>
 <p>The first part of the file consists of the installation commands, such as disk partitioning and installation source.</p>
-<pre><code class="language-shell">#version=RHEL8
-ignoredisk --only-use=vda
-# System bootloader configuration
-bootloader --append=&quot;console=ttyS0 console=ttyS0,115200n8 no_timer_check net.ifnames=0  crashkernel=auto&quot; --location=mbr --timeout=1 --boot-drive=vda
-# Clear the Master Boot Record
+<div class="highlight"><pre><span></span><code><span class="c1">#version=RHEL8</span>
+ignoredisk<span class="w"> </span>--only-use<span class="o">=</span>vda
+<span class="c1"># System bootloader configuration</span>
+bootloader<span class="w"> </span>--append<span class="o">=</span><span class="s2">&quot;console=ttyS0 console=ttyS0,115200n8 no_timer_check net.ifnames=0  crashkernel=auto&quot;</span><span class="w"> </span>--location<span class="o">=</span>mbr<span class="w"> </span>--timeout<span class="o">=</span><span class="m">1</span><span class="w"> </span>--boot-drive<span class="o">=</span>vda
+<span class="c1"># Clear the Master Boot Record</span>
 zerombr
-# Partition clearing information
-clearpart --all --initlabel
-# Use text mode install
+<span class="c1"># Partition clearing information</span>
+clearpart<span class="w"> </span>--all<span class="w"> </span>--initlabel
+<span class="c1"># Use text mode install</span>
 text
-repo --name=&quot;appstream&quot; --baseurl=http://classroom.example.com/content/rhel8.2/x86_64/dvd/AppStream/
-# Use network installation
-url --url=&quot;http://classroom.example.com/content/rhel8.2/x86_64/dvd/&quot;
-# Keyboard layouts
-# old format: keyboard us
-# new format:
-keyboard --vckeymap=us --xlayouts=''
-# System language
-lang en_US.UTF-8
-# Root password
-rootpw --plaintext redhat
-# System authorization information
-auth --enableshadow --passalgo=sha512
-# SELinux configuration
-selinux --enforcing
-firstboot --disable
-# Do not configure the X Window System
+repo<span class="w"> </span>--name<span class="o">=</span><span class="s2">&quot;appstream&quot;</span><span class="w"> </span>--baseurl<span class="o">=</span>http://classroom.example.com/content/rhel8.2/x86_64/dvd/AppStream/
+<span class="c1"># Use network installation</span>
+url<span class="w"> </span>--url<span class="o">=</span><span class="s2">&quot;http://classroom.example.com/content/rhel8.2/x86_64/dvd/&quot;</span>
+<span class="c1"># Keyboard layouts</span>
+<span class="c1"># old format: keyboard us</span>
+<span class="c1"># new format:</span>
+keyboard<span class="w"> </span>--vckeymap<span class="o">=</span>us<span class="w"> </span>--xlayouts<span class="o">=</span><span class="s1">&#39;&#39;</span>
+<span class="c1"># System language</span>
+lang<span class="w"> </span>en_US.UTF-8
+<span class="c1"># Root password</span>
+rootpw<span class="w"> </span>--plaintext<span class="w"> </span>redhat
+<span class="c1"># System authorization information</span>
+auth<span class="w"> </span>--enableshadow<span class="w"> </span>--passalgo<span class="o">=</span>sha512
+<span class="c1"># SELinux configuration</span>
+selinux<span class="w"> </span>--enforcing
+firstboot<span class="w"> </span>--disable
+<span class="c1"># Do not configure the X Window System</span>
 skipx
-# System services
-services --disabled=&quot;kdump,rhsmcertd&quot; --enabled=&quot;sshd,rngd,chronyd&quot;
-# System timezone
-timezone America/New_York --isUtc
-# Disk partitioning information
-part / --fstype=&quot;xfs&quot; --ondisk=vda --size=10000
-</code></pre>
+<span class="c1"># System services</span>
+services<span class="w"> </span>--disabled<span class="o">=</span><span class="s2">&quot;kdump,rhsmcertd&quot;</span><span class="w"> </span>--enabled<span class="o">=</span><span class="s2">&quot;sshd,rngd,chronyd&quot;</span>
+<span class="c1"># System timezone</span>
+timezone<span class="w"> </span>America/New_York<span class="w"> </span>--isUtc
+<span class="c1"># Disk partitioning information</span>
+part<span class="w"> </span>/<span class="w"> </span>--fstype<span class="o">=</span><span class="s2">&quot;xfs&quot;</span><span class="w"> </span>--ondisk<span class="o">=</span>vda<span class="w"> </span>--size<span class="o">=</span><span class="m">10000</span>
+</code></pre></div>
 <p>The second part contains the %packages section, detailing which packages and package groups should be installed, and which packages should not be installed.</p>
-<pre><code class="language-shell">%packages
+<div class="highlight"><pre><span></span><code>%packages
 @core
 chrony
 cloud-init
@@ -2369,28 +2397,28 @@ tar
 -plymouth
 
 %end
-</code></pre>
+</code></pre></div>
 <p>The last part contains any %pre and %post installation scripts.</p>
-<pre><code class="language-shell">%post --erroronfail
+<div class="highlight"><pre><span></span><code>%post<span class="w"> </span>--erroronfail
 
-# For cloud images, 'eth0' _is_ the predictable device name, since
-# we don't want to be tied to specific virtual (!) hardware
-rm -f /etc/udev/rules.d/70*
-ln -s /dev/null /etc/udev/rules.d/80-net-name-slot.rules
+<span class="c1"># For cloud images, &#39;eth0&#39; _is_ the predictable device name, since</span>
+<span class="c1"># we don&#39;t want to be tied to specific virtual (!) hardware</span>
+rm<span class="w"> </span>-f<span class="w"> </span>/etc/udev/rules.d/70*
+ln<span class="w"> </span>-s<span class="w"> </span>/dev/null<span class="w"> </span>/etc/udev/rules.d/80-net-name-slot.rules
 
-# simple eth0 config, again not hard-coded to the build hardware
-cat &gt; /etc/sysconfig/network-scripts/ifcfg-eth0 &lt;&lt; EOF
-DEVICE=&quot;eth0&quot;
-BOOTPROTO=&quot;dhcp&quot;
-ONBOOT=&quot;yes&quot;
-TYPE=&quot;Ethernet&quot;
-USERCTL=&quot;yes&quot;
-PEERDNS=&quot;yes&quot;
-IPV6INIT=&quot;no&quot;
-EOF
+<span class="c1"># simple eth0 config, again not hard-coded to the build hardware</span>
+cat<span class="w"> </span>&gt;<span class="w"> </span>/etc/sysconfig/network-scripts/ifcfg-eth0<span class="w"> </span><span class="s">&lt;&lt; EOF</span>
+<span class="s">DEVICE=&quot;eth0&quot;</span>
+<span class="s">BOOTPROTO=&quot;dhcp&quot;</span>
+<span class="s">ONBOOT=&quot;yes&quot;</span>
+<span class="s">TYPE=&quot;Ethernet&quot;</span>
+<span class="s">USERCTL=&quot;yes&quot;</span>
+<span class="s">PEERDNS=&quot;yes&quot;</span>
+<span class="s">IPV6INIT=&quot;no&quot;</span>
+<span class="s">EOF</span>
 
 %end
-</code></pre>
+</code></pre></div>
 <h2 id="creating-a-kickstart-file">Creating a Kickstart File</h2>
 <p>Use either of these methods to create a Kickstart file:</p>
 <ul>

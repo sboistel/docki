@@ -1561,6 +1561,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2019,6 +2033,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2115,34 +2143,34 @@
 <p><img alt="SELinux File Context" src="../ressources/selinux_context.png" /></p>
 <h2 id="setting-the-default-selinux-mode">Setting the default SELinux mode</h2>
 <p>You can also configure SELinux persistently using the /etc/selinux/config file. In the example below (the default configuration), the configuration file sets SELinux to enforcing. The comments also show the other valid values: permissive and disabled.</p>
-<pre><code class="language-shell"># This file controls the state of SELinux on the system.
-# SELINUX= can take one of these three values:
-#     enforcing - SELinux security policy is enforced.
-#     permissive - SELinux prints warnings instead of enforcing.
-#     disabled - No SELinux policy is loaded.
-SELINUX=enforcing
-# SELINUXTYPE= can take one of these two values:
-#     targeted - Targeted processes are protected,
-#     minimum - Modification of targeted policy. Only selected processes
-#               are protected.
-#     mls - Multi Level Security protection.
-SELINUXTYPE=targeted
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1"># This file controls the state of SELinux on the system.</span>
+<span class="c1"># SELINUX= can take one of these three values:</span>
+<span class="c1">#     enforcing - SELinux security policy is enforced.</span>
+<span class="c1">#     permissive - SELinux prints warnings instead of enforcing.</span>
+<span class="c1">#     disabled - No SELinux policy is loaded.</span>
+<span class="nv">SELINUX</span><span class="o">=</span>enforcing
+<span class="c1"># SELINUXTYPE= can take one of these two values:</span>
+<span class="c1">#     targeted - Targeted processes are protected,</span>
+<span class="c1">#     minimum - Modification of targeted policy. Only selected processes</span>
+<span class="c1">#               are protected.</span>
+<span class="c1">#     mls - Multi Level Security protection.</span>
+<span class="nv">SELINUXTYPE</span><span class="o">=</span>targeted
+</code></pre></div>
 <p>The system reads this file at boot time and configures SELinux as shown.
 Kernel arguments (<em>selinux=0|1 and enforcing=0|1</em>) override this configuration.</p>
 <h2 id="changing-the-current-selinux-mode">Changing the current SELinux mode</h2>
 <p>The SELinux subsystem provides tools to display and change modes. To determine the current SELinux mode, run the getenforce command. To set SELinux to a different mode, use the setenforce command:</p>
-<pre><code class="language-shell">[user@host ~]# getenforce
+<div class="highlight"><pre><span></span><code><span class="o">[</span>user@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># getenforce</span>
 Enforcing
-[user@host ~]# setenforce
-usage:  setenforce [ Enforcing | Permissive | 1 | 0 ]
-[user@host ~]# setenforce 0
-[user@host ~]# getenforce
+<span class="o">[</span>user@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># setenforce</span>
+usage:<span class="w">  </span>setenforce<span class="w"> </span><span class="o">[</span><span class="w"> </span>Enforcing<span class="w"> </span><span class="p">|</span><span class="w"> </span>Permissive<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span>
+<span class="o">[</span>user@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># setenforce 0</span>
+<span class="o">[</span>user@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># getenforce</span>
 Permissive
-[user@host ~]# setenforce Enforcing
-[user@host ~]# getenforce
+<span class="o">[</span>user@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># setenforce Enforcing</span>
+<span class="o">[</span>user@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># getenforce</span>
 Enforcing
-</code></pre>
+</code></pre></div>
 <p>Alternatively, you can set the SELinux mode at boot time by passing a parameter to the kernel: the kernel argument of enforcing=0 boots the system into permissive mode; a value of enforcing=1 sets enforcing mode. 
 You can also disable SELinux completely by passing on the kernel parameter selinux=0. A value of selinux=1 enables SELinux.</p>
 <h2 id="basic-file-context-operations">Basic file context operations</h2>
@@ -2154,34 +2182,34 @@ You can also disable SELinux completely by passing on the kernel parameter selin
 <p>These contain the <strong>restorecon</strong> command and <strong>semanage</strong> command, respectively.</p>
 <p>To ensure that all files in a directory have the correct file context run the <code>semanage fcontext -l</code> followed by the restorecon command.</p>
 <p>In the following example, note the file context of each file before and after the semanage and restorecon commands run.</p>
-<pre><code class="language-shell">[root@host ~]# ls -Z /var/www/html/file*
-unconfined_u:object_r:user_tmp_t:s0 /var/www/html/file1  unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/file2  
-</code></pre>
-<pre><code class="language-shell">[root@host ~]# semanage fcontext -l
-...output omitted...
-/var/www(/.*)?       all files    system_u:object_r:httpd_sys_content_t:s0
-...output omitted... 
-</code></pre>
-<pre><code class="language-shell">[root@host; ~]# restorecon -Rv /var/www/
-Relabeled /var/www/html/file1 from unconfined_u:object_r:user_tmp_t:s0 to unconfined_u:object_r:httpd_sys_content_t:s0
-[root@host ~]# ls -Z /var/www/html/file*
-unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/file1  unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/file2
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># ls -Z /var/www/html/file*</span>
+unconfined_u:object_r:user_tmp_t:s0<span class="w"> </span>/var/www/html/file1<span class="w">  </span>unconfined_u:object_r:httpd_sys_content_t:s0<span class="w"> </span>/var/www/html/file2<span class="w">  </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># semanage fcontext -l</span>
+...output<span class="w"> </span>omitted...
+/var/www<span class="o">(</span>/.*<span class="o">)</span>?<span class="w">       </span>all<span class="w"> </span>files<span class="w">    </span>system_u:object_r:httpd_sys_content_t:s0
+...output<span class="w"> </span>omitted...<span class="w"> </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="p">;</span><span class="w"> </span>~<span class="o">]</span><span class="c1"># restorecon -Rv /var/www/</span>
+Relabeled<span class="w"> </span>/var/www/html/file1<span class="w"> </span>from<span class="w"> </span>unconfined_u:object_r:user_tmp_t:s0<span class="w"> </span>to<span class="w"> </span>unconfined_u:object_r:httpd_sys_content_t:s0
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># ls -Z /var/www/html/file*</span>
+unconfined_u:object_r:httpd_sys_content_t:s0<span class="w"> </span>/var/www/html/file1<span class="w">  </span>unconfined_u:object_r:httpd_sys_content_t:s0<span class="w"> </span>/var/www/html/file2
+</code></pre></div>
 <p>The following example shows how to use semanage to add a context for a new directory.</p>
-<pre><code class="language-shell">[root@host ~]# mkdir /virtual
-[root@host ~]# touch /virtual/index.html
-[root@host ~]# ls -Zd /virtual/
-drwxr-xr-x. root root unconfined_u:object_r:default_t:s0 /virtual/ 
-</code></pre>
-<pre><code class="language-shell">[root@host ~]# ls -Z /virtual/
--rw-r--r--. root root unconfined_u:object_r:default_t:s0 index.html
-[root@host ~]# semanage fcontext -a -t httpd_sys_content_t '/virtual(/.*)?'
-[root@host ~]# restorecon -RFvv /virtual
-[root@host ~]# ls -Zd /virtual/
-drwxr-xr-x. root root system_u:object_r:httpd_sys_content_t:s0 /virtual/
-[root@host ~]# ls -Z /virtual/
--rw-r--r--. root root system_u:object_r:httpd_sys_content_t:s0 index.html
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># mkdir /virtual</span>
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># touch /virtual/index.html</span>
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># ls -Zd /virtual/</span>
+drwxr-xr-x.<span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span>unconfined_u:object_r:default_t:s0<span class="w"> </span>/virtual/<span class="w"> </span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># ls -Z /virtual/</span>
+-rw-r--r--.<span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span>unconfined_u:object_r:default_t:s0<span class="w"> </span>index.html
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># semanage fcontext -a -t httpd_sys_content_t &#39;/virtual(/.*)?&#39;</span>
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># restorecon -RFvv /virtual</span>
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># ls -Zd /virtual/</span>
+drwxr-xr-x.<span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span>system_u:object_r:httpd_sys_content_t:s0<span class="w"> </span>/virtual/
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># ls -Z /virtual/</span>
+-rw-r--r--.<span class="w"> </span>root<span class="w"> </span>root<span class="w"> </span>system_u:object_r:httpd_sys_content_t:s0<span class="w"> </span>index.html
+</code></pre></div>
 
 
 

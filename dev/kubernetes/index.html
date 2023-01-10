@@ -1574,6 +1574,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2032,6 +2046,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2143,14 +2171,14 @@ Un ensemble de noeud de type linux ou windows</p>
 <p>Un cluster éxecute des pods, mais de quoi s'agit-il ?
 Il s'agit d'un ensemble de conteneurs se partageant les ressources.</p>
 <p>Lister les pods :</p>
-<pre><code class="language-BASH">kubectl get pods
-</code></pre>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods
+</code></pre></div>
 <p>Tester les ports :</p>
-<pre><code class="language-BASH">kubectl port-forward POD_NAME 8000:80
-</code></pre>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>POD_NAME<span class="w"> </span><span class="m">8000</span>:80
+</code></pre></div>
 <p>Réccupérer les élèments d'un pod :</p>
-<pre><code class="language-BASH">kubectl describe po/POD_NAME
-</code></pre>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>describe<span class="w"> </span>po/POD_NAME
+</code></pre></div>
 <h2 id="service">Service</h2>
 <p>Les service exposent les ports d'un pod</p>
 <h2 id="nodes">Nodes</h2>
@@ -2168,8 +2196,8 @@ Que font les Master ?</p>
 <li>Communique avec le master (actions à exécuter ...)</li>
 </ul>
 <p>Lister les noeuds : </p>
-<pre><code class="language-BASH">kubectl get nodes
-</code></pre>
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>nodes
+</code></pre></div>
 
 
 

@@ -1649,6 +1649,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2107,6 +2121,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2277,34 +2305,34 @@
 <h1 id="wsl">WSL</h1>
 <h2 id="backup-and-restore-wsl">Backup and Restore WSL</h2>
 <h3 id="listing-running-distros">Listing Running Distros</h3>
-<pre><code class="language-powershell">wsl --list --verbose
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-list</span> <span class="p">-</span><span class="n">-verbose</span>
+</code></pre></div>
 <h3 id="startingrestarting-a-distro">Starting/Restarting a Distro</h3>
-<pre><code class="language-powershell">wsl --distribution DISTRO-NAME
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-distribution</span> <span class="n">DISTRO-NAME</span>
+</code></pre></div>
 <h3 id="terminate-a-running-distro">Terminate a Running Distro</h3>
-<pre><code class="language-powershell">wsl --t DISTRO-NAME
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-t</span> <span class="n">DISTRO-NAME</span>
+</code></pre></div>
 <h3 id="terminate-all-running-distros-and-wsl-process">Terminate All Running Distros and WSL process</h3>
-<pre><code class="language-powershell">wsl --shutdown
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-shutdown</span>
+</code></pre></div>
 <h3 id="backup-a-wsl-distro">Backup a WSL Distro</h3>
-<pre><code class="language-powershell">wsl --export (distribution) (filename.tar)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-export</span> <span class="p">(</span><span class="n">distribution</span><span class="p">)</span> <span class="p">(</span><span class="n">filename</span><span class="p">.</span><span class="n">tar</span><span class="p">)</span>
+</code></pre></div>
 <h3 id="restore-a-wsl-distro-from-backup">Restore a WSL Distro from Backup</h3>
-<pre><code class="language-powershell">wsl --import (distribution) (install location) (file location and filename)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-import</span> <span class="p">(</span><span class="n">distribution</span><span class="p">)</span> <span class="p">(</span><span class="n">install</span> <span class="n">location</span><span class="p">)</span> <span class="p">(</span><span class="n">file</span> <span class="n">location</span> <span class="n">and</span> <span class="n">filename</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="symbolic-links">Symbolic Links</h2>
 <h3 id="link-ssh-folder">Link .ssh folder</h3>
-<pre><code class="language-bash">sudo ln -s /mnt/c/Users/lempa/.ssh ~/.ssh
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/mnt/c/Users/lempa/.ssh<span class="w"> </span>~/.ssh
+</code></pre></div>
 <h3 id="link-kube-folder">Link .kube folder</h3>
-<pre><code class="language-bash">sudo ln -s /mnt/c/Users/lempa/.ssh ~/.ssh
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>ln<span class="w"> </span>-s<span class="w"> </span>/mnt/c/Users/lempa/.ssh<span class="w"> </span>~/.ssh
+</code></pre></div>
 <h2 id="file-permissions">File Permissions</h2>
 <p>Advanced settings configuration in WSL: <a href="https://docs.microsoft.com/en-us/windows/wsl/wsl-config">WSL Config Parameters</a></p>
-<p><strong>Example wsl.conf</strong></p>
-<pre><code>[automount]
+<p><strong>Example wsl.conf</strong>
+<div class="highlight"><pre><span></span><code>[automount]
 enabled = true
 options = &quot;metadata,uid=1000,gid=1000,umask=077,fmask=11,case=off&quot;
 mountFsTab = true
@@ -2312,30 +2340,29 @@ mountFsTab = true
 [interop]
 enabled = false
 appendWindowsPath = false
-</code></pre>
+</code></pre></div></p>
 <h2 id="networking">Networking</h2>
 <h3 id="port-forwarding">Port Forwarding</h3>
-<p><strong>Find IP Address</strong></p>
-<pre><code class="language-powershell">bash.exe -c &quot;ifconfig eth0 | grep 'inet '&quot;
-</code></pre>
-<p><strong>Add PortForwarding</strong></p>
-<pre><code class="language-powershell">$port = 8080
-$remoteaddr = 0.0.0.0
+<p><strong>Find IP Address</strong>
+<div class="highlight"><pre><span></span><code><span class="n">bash</span><span class="p">.</span><span class="n">exe</span> <span class="n">-c</span> <span class="s2">&quot;ifconfig eth0 | grep &#39;inet &#39;&quot;</span>
+</code></pre></div></p>
+<p><strong>Add PortForwarding</strong>
+<div class="highlight"><pre><span></span><code><span class="nv">$port</span> <span class="p">=</span> <span class="n">8080</span>
+<span class="nv">$remoteaddr</span> <span class="p">=</span> <span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span>
 
-netsh interface portproxy add v4tov4 listenport=$port connectport=$port connectaddress=$remoteaddr
+<span class="n">netsh</span> <span class="n">interface</span> <span class="n">portproxy</span> <span class="n">add</span> <span class="n">v4tov4</span> <span class="n">listenport</span><span class="p">=</span><span class="nv">$port</span> <span class="n">connectport</span><span class="p">=</span><span class="nv">$port</span> <span class="n">connectaddress</span><span class="p">=</span><span class="nv">$remoteaddr</span>
 
-netsh advfirewall firewall add rule name=$port dir=in action=allow protocol=TCP localport=$port
-</code></pre>
-<p><strong>Delete PortForwarding</strong></p>
-<pre><code class="language-PowerShell">$port = 8080
+<span class="n">netsh</span> <span class="n">advfirewall</span> <span class="n">firewall</span> <span class="n">add</span> <span class="n">rule</span> <span class="n">name</span><span class="p">=</span><span class="nv">$port</span> <span class="n">dir</span><span class="p">=</span><span class="k">in</span> <span class="n">action</span><span class="p">=</span><span class="n">allow</span> <span class="n">protocol</span><span class="p">=</span><span class="n">TCP</span> <span class="n">localport</span><span class="p">=</span><span class="nv">$port</span>
+</code></pre></div></p>
+<p><strong>Delete PortForwarding</strong>
+<div class="highlight"><pre><span></span><code><span class="nv">$port</span> <span class="p">=</span> <span class="n">8080</span>
 
-netsh interface portproxy delete v4tov4 listenport=$port
-netsh advfirewall firewall delete rule name=$port
-
-</code></pre>
-<p><strong>Show PortForwardings</strong></p>
-<pre><code class="language-powershell">netsh interface portproxy show v4tov4
-</code></pre>
+<span class="n">netsh</span> <span class="n">interface</span> <span class="n">portproxy</span> <span class="n">delete</span> <span class="n">v4tov4</span> <span class="n">listenport</span><span class="p">=</span><span class="nv">$port</span>
+<span class="n">netsh</span> <span class="n">advfirewall</span> <span class="n">firewall</span> <span class="n">delete</span> <span class="n">rule</span> <span class="n">name</span><span class="p">=</span><span class="nv">$port</span>
+</code></pre></div></p>
+<p><strong>Show PortForwardings</strong>
+<div class="highlight"><pre><span></span><code><span class="n">netsh</span> <span class="n">interface</span> <span class="n">portproxy</span> <span class="n">show</span> <span class="n">v4tov4</span>
+</code></pre></div></p>
 <h2 id="linux-desktop-in-wsl2">Linux desktop in WSL2</h2>
 <p>With WSL2 it's possible to install and run a Linux desktop environment (XFCE). A tutorial on how
 to implement that, can be found <a href="https://thedatabaseme.de/2022/05/15/shorty-running-xfce-linux-desktop-on-wsl2/">here</a>.</p>

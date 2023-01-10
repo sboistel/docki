@@ -1240,16 +1240,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#serveur" class="md-nav__link">
+    Serveur
   </a>
   
-    <nav class="md-nav" aria-label="Configuration">
+    <nav class="md-nav" aria-label="Serveur">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ansible" class="md-nav__link">
-    ansible
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
@@ -1257,6 +1257,26 @@
           <li class="md-nav__item">
   <a href="#inventory" class="md-nav__link">
     Inventory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remote" class="md-nav__link">
+    Remote
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
   </a>
   
 </li>
@@ -1561,6 +1581,20 @@
     <li class="md-nav__item">
       <a href="../../tool/vscode/" class="md-nav__link">
         VSCode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
       </a>
     </li>
   
@@ -2025,6 +2059,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2065,16 +2113,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#serveur" class="md-nav__link">
+    Serveur
   </a>
   
-    <nav class="md-nav" aria-label="Configuration">
+    <nav class="md-nav" aria-label="Serveur">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#ansible" class="md-nav__link">
-    ansible
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
@@ -2082,6 +2130,26 @@
           <li class="md-nav__item">
   <a href="#inventory" class="md-nav__link">
     Inventory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remote" class="md-nav__link">
+    Remote
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windows" class="md-nav__link">
+    Windows
   </a>
   
 </li>
@@ -2120,21 +2188,23 @@
 <li>-K : Demander le mot de passe <strong>root</strong></li>
 <li>-b,--become : Éxécuter en tant que <strong>su</strong> (*admin)</li>
 </ul>
-<h2 id="configuration">Configuration</h2>
-<h3 id="ansible">ansible</h3>
+<h2 id="serveur">Serveur</h2>
+<h3 id="configuration">Configuration</h3>
 <p>file : <code>ansible.cgf</code></p>
-<pre><code class="language-bash">host_key_checking = False
-inventory = pve.inventory
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nv">host_key_checking</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>False
+<span class="nv">inventory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>pve.inventory
+</code></pre></div>
 <h3 id="inventory">Inventory</h3>
 <p>file : <code>inventory</code></p>
-<pre><code class="language-bash">[Groups]
-ansible ansible_hosts=iP
+<div class="highlight"><pre><span></span><code><span class="o">[</span>Groups<span class="o">]</span>
+ansible<span class="w"> </span><span class="nv">ansible_hosts</span><span class="o">=</span>iP
 
-[Groups:vars]
-ansible_user = John Doe
-ansible_password = jdoe
-</code></pre>
+<span class="o">[</span>Groups:vars<span class="o">]</span>
+<span class="nv">ansible_user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>John<span class="w"> </span>Doe
+<span class="nv">ansible_password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>jdoe
+</code></pre></div>
+<h2 id="remote">Remote</h2>
+<h3 id="windows">Windows</h3>
 
 
 

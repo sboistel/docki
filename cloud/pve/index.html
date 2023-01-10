@@ -1497,6 +1497,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2018,6 +2032,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2102,13 +2130,13 @@
 <h3 id="change-to-active">Change to Active</h3>
 <p>Situated at the line ~120
 Change the status to <code>Active</code> :</p>
-<pre><code class="language-BASH">sed -i.bak 's/NotFound/Active/g' /usr/share/perl5/PVE/API2/Subscription.pm
-sed -i.bak 's/There is no subscription key/It seams to be active right ?/' /usr/share/perl5/PVE/API2/Subscription.pm
-</code></pre>
+<div class="highlight"><pre><span></span><code>sed<span class="w"> </span>-i.bak<span class="w"> </span><span class="s1">&#39;s/NotFound/Active/g&#39;</span><span class="w"> </span>/usr/share/perl5/PVE/API2/Subscription.pm
+sed<span class="w"> </span>-i.bak<span class="w"> </span><span class="s1">&#39;s/There is no subscription key/It seams to be active right ?/&#39;</span><span class="w"> </span>/usr/share/perl5/PVE/API2/Subscription.pm
+</code></pre></div>
 <h3 id="restart-service">Restart service</h3>
 <p>Restart pveproxy service &amp; refresh next your web page :</p>
-<pre><code class="language-BASH">systemctl restart pveproxy.service
-</code></pre>
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>restart<span class="w"> </span>pveproxy.service
+</code></pre></div>
 
 
 

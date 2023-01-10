@@ -1547,6 +1547,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2005,6 +2019,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2073,11 +2101,11 @@
 <h1 id="how-to-find">How to find</h1>
 <h2 id="find">Find</h2>
 <p>Trouver tout fichier depuis l’endroit que vous souhaitez portant le nom de jacquet :</p>
-<pre><code class="language-bash">find $DEPUIS_QUEL_ENDROIT -name &quot;jacquet&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span><span class="nv">$DEPUIS_QUEL_ENDROIT</span><span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;jacquet&quot;</span>
+</code></pre></div>
 <p>Trouver dans le dossier httpd tout fichier plus vieux de 90 jours puis les supprimer :</p>
-<pre><code class="language-bash">find /var/log/httpd/ -type f -name &quot;*&quot; -mtime +90 -exec rm -f {} \;
-</code></pre>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/var/log/httpd/<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="w"> </span>-mtime<span class="w"> </span>+90<span class="w"> </span>-exec<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+</code></pre></div>
 <table>
 <thead>
 <tr>
@@ -2092,12 +2120,12 @@
 </table>
 <h2 id="grep">Grep</h2>
 <p>L'outil « grep », qui signifie « impression d’expressions régulières globales », traite le texte ligne par ligne et imprime toutes les lignes correspondant au modèle spécifié.</p>
-<pre><code class="language-bash">grep infos fichiers.txt
-grep -A $NUMBER_OF_LINE &quot;INFOS QU'ON CHERCHE&quot; -B $NUMBER_OF_LINE
-</code></pre>
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>infos<span class="w"> </span>fichiers.txt
+grep<span class="w"> </span>-A<span class="w"> </span><span class="nv">$NUMBER_OF_LINE</span><span class="w"> </span><span class="s2">&quot;INFOS QU&#39;ON CHERCHE&quot;</span><span class="w"> </span>-B<span class="w"> </span><span class="nv">$NUMBER_OF_LINE</span>
+</code></pre></div>
 <p>Trouver dans multiples fichiers depuis un endroit :</p>
-<pre><code class="language-shell">grep -ari copyright /var/www/html/
-</code></pre>
+<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-ari<span class="w"> </span>copyright<span class="w"> </span>/var/www/html/
+</code></pre></div>
 
 
 

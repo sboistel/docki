@@ -1509,6 +1509,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1967,6 +1981,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2012,13 +2040,13 @@
 
 <h1 id="clock">Clock</h1>
 <p>How to mod sys clock ?</p>
-<pre><code class="language-bash">mv /etc/localtime /etc/localtime.backup
-ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
+<div class="highlight"><pre><span></span><code>mv<span class="w"> </span>/etc/localtime<span class="w"> </span>/etc/localtime.backup
+ln<span class="w"> </span>-s<span class="w"> </span>/usr/share/zoneinfo/Europe/Paris<span class="w"> </span>/etc/localtime
 
-echo &quot;Europe/Paris&quot; | tee /etc/timezone
-timedatectl set-timezone Europe/Paris
-hwclock -s
-</code></pre>
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Europe/Paris&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tee<span class="w"> </span>/etc/timezone
+timedatectl<span class="w"> </span>set-timezone<span class="w"> </span>Europe/Paris
+hwclock<span class="w"> </span>-s
+</code></pre></div>
 
 
 

@@ -12,20 +12,20 @@
         <meta name="author" content="BOISTEL Samuel">
       
       
-        <link rel="canonical" href="https://sboistel.github.io/docki/network/certmanager/">
+        <link rel="canonical" href="https://sboistel.github.io/docki/tool/pi-hole/">
       
       
-        <link rel="prev" href="../../tool/pi-hole/">
+        <link rel="prev" href="../vscode/">
       
       
-        <link rel="next" href="../mkcert/">
+        <link rel="next" href="../../network/certmanager/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
     
     
       
-        <title>Cert-Manager - Dockimentation</title>
+        <title>Pi-Hole - Dockimentation</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cert-manager" class="md-skip">
+        <a href="#pi-hole" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cert-Manager
+              Pi-Hole
             
           </span>
         </div>
@@ -281,13 +281,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../tool/netbox/" class="md-tabs__link">
+      <a href="../netbox/" class="md-tabs__link md-tabs__link--active">
         Tools
       </a>
     </li>
@@ -297,15 +299,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../network/certmanager/" class="md-tabs__link">
         Web & Networking
       </a>
     </li>
@@ -1377,12 +1377,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -1405,7 +1407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool/netbox/" class="md-nav__link">
+      <a href="../netbox/" class="md-nav__link">
         IPAM - Netbox
       </a>
     </li>
@@ -1419,7 +1421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool/rhel_idm/" class="md-nav__link">
+      <a href="../rhel_idm/" class="md-nav__link">
         Red Hat Identity Management (IdM)
       </a>
     </li>
@@ -1433,7 +1435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool/freeipa/" class="md-nav__link">
+      <a href="../freeipa/" class="md-nav__link">
         Free IPA
       </a>
     </li>
@@ -1447,7 +1449,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool/guacamole/" class="md-nav__link">
+      <a href="../guacamole/" class="md-nav__link">
         Guacamole
       </a>
     </li>
@@ -1461,7 +1463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool/ui-path/" class="md-nav__link">
+      <a href="../ui-path/" class="md-nav__link">
         UI-path
       </a>
     </li>
@@ -1475,7 +1477,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool/vnc-tiger/" class="md-nav__link">
+      <a href="../vnc-tiger/" class="md-nav__link">
         VNC Tiger
       </a>
     </li>
@@ -1489,7 +1491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../tool/vscode/" class="md-nav__link">
+      <a href="../vscode/" class="md-nav__link">
         VSCode
       </a>
     </li>
@@ -1501,11 +1503,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../tool/pi-hole/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Pi-Hole
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Pi-Hole
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirement" class="md-nav__link">
+    Requirement
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1523,14 +1580,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
       
       
@@ -1551,126 +1606,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Cert-Manager
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../network/certmanager/" class="md-nav__link">
         Cert-Manager
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#self-signed-certificates" class="md-nav__link">
-    Self-Signed Certificates
-  </a>
-  
-    <nav class="md-nav" aria-label="Self-Signed Certificates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#upload-existing-cakey-and-cacrt-files-option-1" class="md-nav__link">
-    Upload existing CA.key and CA.crt files (Option 1)
-  </a>
-  
-    <nav class="md-nav" aria-label="Upload existing CA.key and CA.crt files (Option 1)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate" class="md-nav__link">
-    1. Create a self-signed CA (ssl-certs) creating a ca.key (private-key) and ca.crt (certificate)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool" class="md-nav__link">
-    2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-create-a-new-ssl-secret-object-using-the-strings" class="md-nav__link">
-    3. Create a new ssl secret object using the strings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret" class="md-nav__link">
-    4. Create a new ClusterIssuer or Issuer object by using the ssl secret
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-ca-through-cert-manager-option-2" class="md-nav__link">
-    Create CA through Cert-manager (Option 2)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    Troubleshooting
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#common-errors" class="md-nav__link">
-    Common Errors
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1682,7 +1622,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkcert/" class="md-nav__link">
+      <a href="../../network/mkcert/" class="md-nav__link">
         Certificate Generator
       </a>
     </li>
@@ -1696,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssl/" class="md-nav__link">
+      <a href="../../network/ssl/" class="md-nav__link">
         SSL Certificates
       </a>
     </li>
@@ -1710,7 +1650,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../http-status/" class="md-nav__link">
+      <a href="../../network/http-status/" class="md-nav__link">
         HTTP Status Codes
       </a>
     </li>
@@ -1724,7 +1664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openvpn/" class="md-nav__link">
+      <a href="../../network/openvpn/" class="md-nav__link">
         OpenVPN
       </a>
     </li>
@@ -1738,7 +1678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ngrok/" class="md-nav__link">
+      <a href="../../network/ngrok/" class="md-nav__link">
         ngrok
       </a>
     </li>
@@ -2133,83 +2073,23 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#self-signed-certificates" class="md-nav__link">
-    Self-Signed Certificates
+  <a href="#requirement" class="md-nav__link">
+    Requirement
   </a>
-  
-    <nav class="md-nav" aria-label="Self-Signed Certificates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#upload-existing-cakey-and-cacrt-files-option-1" class="md-nav__link">
-    Upload existing CA.key and CA.crt files (Option 1)
-  </a>
-  
-    <nav class="md-nav" aria-label="Upload existing CA.key and CA.crt files (Option 1)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate" class="md-nav__link">
-    1. Create a self-signed CA (ssl-certs) creating a ca.key (private-key) and ca.crt (certificate)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool" class="md-nav__link">
-    2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-create-a-new-ssl-secret-object-using-the-strings" class="md-nav__link">
-    3. Create a new ssl secret object using the strings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret" class="md-nav__link">
-    4. Create a new ClusterIssuer or Issuer object by using the ssl secret
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-ca-through-cert-manager-option-2" class="md-nav__link">
-    Create CA through Cert-manager (Option 2)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    Troubleshooting
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#common-errors" class="md-nav__link">
-    Common Errors
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
   
 </li>
       
@@ -2232,63 +2112,20 @@
 
 
 
-<h1 id="cert-manager">Cert-Manager</h1>
-<p>Cert-manager adds certificates and certificate issuers as resource types in <strong>Kubernetes</strong> clusters, and simplifies the process of obtaining, renewing and using those certificates.</p>
-<p>Documentation &amp; Project Homepage: <a href="https://cert-manager.io/docs/">Cert-Manager Docs</a></p>
-<hr />
-<h2 id="self-signed-certificates">Self-Signed Certificates</h2>
-<h3 id="upload-existing-cakey-and-cacrt-files-option-1">Upload existing CA.key and CA.crt files (Option 1)</h3>
-<h4 id="1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate">1. Create a self-signed CA (ssl-certs) creating a ca.key (private-key) and ca.crt (certificate)</h4>
-<p>(ca.key)</p>
-<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>genrsa<span class="w"> </span>-out<span class="w"> </span>ca.key<span class="w"> </span><span class="m">4096</span>
+<h1 id="pi-hole">Pi-Hole</h1>
+<h2 id="requirement">Requirement</h2>
+<p>Set static iP @</p>
+<h2 id="installation">Installation</h2>
+<p>Installing packages</p>
+<div class="highlight"><pre><span></span><code>apt<span class="w"> </span>install<span class="w"> </span>curl
 </code></pre></div>
-<p>(ca.crt)</p>
-<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-x509<span class="w"> </span>-sha256<span class="w"> </span>-days<span class="w"> </span><span class="m">365</span><span class="w"> </span>-key<span class="w"> </span>ca.key<span class="w"> </span>-out<span class="w"> </span>ca.crt
+<p>Download &amp; run the installation file</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sSL<span class="w"> </span>https://install.pi-hole.net<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
 </code></pre></div>
-<h4 id="2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool">2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)</h4>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>ca.key<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-w<span class="w"> </span><span class="m">0</span>
+<h2 id="configuration">Configuration</h2>
+<p>Change the main password</p>
+<div class="highlight"><pre><span></span><code>pihole<span class="w"> </span>-a<span class="w"> </span>-p
 </code></pre></div>
-<h4 id="3-create-a-new-ssl-secret-object-using-the-strings">3. Create a new ssl secret object using the strings</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Secret</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssl-issuer-secret</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># (Optional) Metadata</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># ---</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># namespace: your-namespace</span>
-<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Opaque</span>
-<span class="nt">data</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">tls.crt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;base64-decoded-string&gt;</span>
-<span class="w">  </span><span class="nt">tls.key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;base64-decoded-string&gt;</span>
-</code></pre></div>
-<h4 id="4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret">4. Create a new ClusterIssuer or Issuer object by using the ssl secret</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cert-manager.io/v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIssuer</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="err"> </span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">selfsigned-issuer</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># (Optional) Metadata</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># ---</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># namespace: your-namespace</span>
-<span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">ca</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">secretName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssl-issuer-secret</span>
-</code></pre></div>
-<h3 id="create-ca-through-cert-manager-option-2">Create CA through Cert-manager (Option 2)</h3>
-<p>Create a new ClusterIssuer or Issuer object by using the selfSigned Attribute.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cert-manager.io/v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIssuer</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">root-issuer</span>
-<span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">selfSigned</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
-</code></pre></div>
-<hr />
-<h2 id="troubleshooting">Troubleshooting</h2>
-<h3 id="common-errors">Common Errors</h3>
-<p><strong>DNS Record not yet propagated</strong>
-The error, <code>Waiting for DNS-01 challenge propagation: DNS record for "your-dns-record" not yet propagated.</code>, might occur in the <code>challenge</code> object. Cert-Manager creates a TXT Record on the DNS provider and checks, whether the record is existing, before issuing the certificate. In a split-dns environment, this could be a problem when internal DNS Servers can't resolve the TXT Record on the Cloud DNS. You can use the <code>extraArgs</code> <code>--dns01-recursive-nameservers-only</code>, and <code>--dns01-recursive-nameservers=8.8.8.8:53,1.1.1.1:53</code>, to specific the DNS Resolvers used for the challenge.</p>
-<p><strong>No solver found</strong>
-The error, <code>Failed to determine a valid solver configuration for the set of domains on the Order: no configured challenge solvers can be used for this challenge</code> might occur in the <code>order</code> object, when no solver can't be found for the DNS Hostname. Make sure your solvers have a corrent <code>dnsZones</code> configured that matches the DNS Hostnames Zone.</p>
 
 
 

@@ -1641,6 +1641,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2099,6 +2113,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2269,57 +2297,57 @@
 </ul>
 <h3 id="compresser">Compresser</h3>
 <p>Compresser des fichiers :</p>
-<pre><code class="language-bash">tar -czvf nom-de-l-archive.tar.gz /chemin/vers/répertoire-ou-fichier
-</code></pre>
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-czvf<span class="w"> </span>nom-de-l-archive.tar.gz<span class="w"> </span>/chemin/vers/répertoire-ou-fichier
+</code></pre></div>
 <h3 id="decompresser">Décompresser</h3>
 <p>Pour décompresser le rar avec son passwd :</p>
-<pre><code class="language-bash">rar x -hP{MOT DE PASSE} {FICHIER.RAR}
-rar x -hPTEST test2.rar
-</code></pre>
+<div class="highlight"><pre><span></span><code>rar<span class="w"> </span>x<span class="w"> </span>-hP<span class="o">{</span>MOT<span class="w"> </span>DE<span class="w"> </span>PASSE<span class="o">}</span><span class="w"> </span><span class="o">{</span>FICHIER.RAR<span class="o">}</span>
+rar<span class="w"> </span>x<span class="w"> </span>-hPTEST<span class="w"> </span>test2.rar
+</code></pre></div>
 <h2 id="dd">DD</h2>
 <p>dd nécessite de droits super utilisateur :</p>
-<pre><code class="language-bash">sudo dd bs=4M if=$chemin/fichier.iso of=/dev/$disk &amp;&amp; sync
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dd<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>4M<span class="w"> </span><span class="k">if</span><span class="o">=</span><span class="nv">$chemin</span>/fichier.iso<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/dev/<span class="nv">$disk</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sync
+</code></pre></div>
 <h3 id="create-1-file-heavy-as-1g">Create 1 file heavy as 1G</h3>
-<pre><code class="language-bash">dd if=/dev/urandom of=tempfile bs=1M count=1024
-</code></pre>
+<div class="highlight"><pre><span></span><code>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/urandom<span class="w"> </span><span class="nv">of</span><span class="o">=</span>tempfile<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">1024</span>
+</code></pre></div>
 <h2 id="lvm-logical-volume-manager">LVM - Logical Volume Manager</h2>
 <h3 id="extend-partition">Extend partition</h3>
-<pre><code class="language-bash">fdisk [/dev/sdX](file:///home/sboistel/Documents/Cliford/Zbook/dev/sdX)
-</code></pre>
-<pre><code class="language-bash">echo 1 &gt; /sys/block/sdX/device/rescan
-</code></pre>
-<pre><code class="language-bash">pvresize /dev/sdX2
-</code></pre>
+<div class="highlight"><pre><span></span><code>fdisk<span class="w"> </span><span class="o">[</span>/dev/sdX<span class="o">](</span>file:///home/sboistel/Documents/Cliford/Zbook/dev/sdX<span class="o">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/block/sdX/device/rescan
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>pvresize<span class="w"> </span>/dev/sdX2
+</code></pre></div>
 <h3 id="make-fs">Make FS</h3>
-<pre><code class="language-bash">mkfs.xfs -d su=64k,sw=4 /dev/mapper/
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkfs.xfs<span class="w"> </span>-d<span class="w"> </span><span class="nv">su</span><span class="o">=</span>64k,sw<span class="o">=</span><span class="m">4</span><span class="w"> </span>/dev/mapper/
+</code></pre></div>
 <h3 id="scan-disk">Scan Disk</h3>
 <p>Rescan disk</p>
-<pre><code class="language-bash">echo 1 &gt; /sys/class/scsi_disk/1\[:TAB:]/device/rescan
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/class/scsi_disk/1<span class="se">\[</span>:TAB:<span class="o">]</span>/device/rescan
+</code></pre></div>
 <h4 id="extend-volumes">Extend volumes</h4>
-<pre><code class="language-bash">lvextend -L+&lt;&lt;&gt;&gt;G /dev/mapper/VOLUME
-</code></pre>
+<div class="highlight"><pre><span></span><code>lvextend<span class="w"> </span>-L+&lt;&lt;&gt;&gt;G<span class="w"> </span>/dev/mapper/VOLUME
+</code></pre></div>
 <h4 id="apply-modifications">Apply modifications</h4>
-<pre><code class="language-bash">resize2fs /dev/mapper/VOLUME
-</code></pre>
+<div class="highlight"><pre><span></span><code>resize2fs<span class="w"> </span>/dev/mapper/VOLUME
+</code></pre></div>
 <h4 id="reducing-an-lvm2-swap-logical-volume">Reducing an LVM2 Swap Logical Volume</h4>
 <p>Disable swapping for the associated logical volume:</p>
-<pre><code class="language-bash">swapoff -v /dev/VolGroup00/LogVol01
-</code></pre>
+<div class="highlight"><pre><span></span><code>swapoff<span class="w"> </span>-v<span class="w"> </span>/dev/VolGroup00/LogVol01
+</code></pre></div>
 <p>Reduce the LVM2 logical volume by 512 MB:</p>
-<pre><code class="language-bash">lvreduce /dev/VolGroup00/LogVol01 -L -512M
-</code></pre>
+<div class="highlight"><pre><span></span><code>lvreduce<span class="w"> </span>/dev/VolGroup00/LogVol01<span class="w"> </span>-L<span class="w"> </span>-512M
+</code></pre></div>
 <p>Format the new swap space:</p>
-<pre><code class="language-bash">mkswap /dev/VolGroup00/LogVol01
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkswap<span class="w"> </span>/dev/VolGroup00/LogVol01
+</code></pre></div>
 <p>Activate swap on the logical volume:</p>
-<pre><code class="language-bash">swapon -v /dev/VolGroup00/LogVol01
-</code></pre>
+<div class="highlight"><pre><span></span><code>swapon<span class="w"> </span>-v<span class="w"> </span>/dev/VolGroup00/LogVol01
+</code></pre></div>
 <p>To test if the swap logical volume was successfully reduced, inspect active swap space:</p>
-<pre><code class="language-bash">cat /proc/swaps
-</code></pre>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>/proc/swaps
+</code></pre></div>
 
 
 

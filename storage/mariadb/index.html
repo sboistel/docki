@@ -1497,6 +1497,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2012,6 +2026,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2086,34 +2114,34 @@
 
 <h1 id="mariadb">MariaDB</h1>
 <h2 id="install-mariadb">Install MariaDB</h2>
-<pre><code class="language-bash">sudo apt update
-sudo apt install mariadb-server
-sudo mysql_secure_installation
-</code></pre>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
+sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mariadb-server
+sudo<span class="w"> </span>mysql_secure_installation
+</code></pre></div>
 <h2 id="access-database-from-outside">Access Database from outside</h2>
 <p>Open <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code> and change the <code>bind-address</code> to:</p>
-<pre><code>...
+<div class="highlight"><pre><span></span><code>...
 
 bind-address = 0.0.0.0
 
 ...
-</code></pre>
+</code></pre></div>
 <h2 id="create-administrative-user">Create Administrative User</h2>
 <ol>
 <li>Create a new user <code>newuser</code> for the host <code>localhost</code> with a new <code>password</code>:</li>
 </ol>
-<pre><code class="language-mysql">CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;newuser&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="w"> </span><span class="k">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;password&#39;</span><span class="p">;</span>
+</code></pre></div>
 <ol>
 <li>Grant all permissions to the new user</li>
 </ol>
-<pre><code class="language-mysql">GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;newuser&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="p">;</span>
+</code></pre></div>
 <ol>
 <li>Update permissions</li>
 </ol>
-<pre><code class="language-mysql">FLUSH PRIVILEGES;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
+</code></pre></div>
 
 
 

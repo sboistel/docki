@@ -1560,6 +1560,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2018,6 +2032,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2114,20 +2142,20 @@
 <p>Append <em>rd.break</em> to the end of the line.</p>
 <p>Press Ctrl+x to boot using the modified configuration.</p>
 <p>At the switch_root prompt, remount the /sysroot file system read/write, then use chroot to go into a chroot jail at /sysroot.</p>
-<pre><code class="language-shell">switch_root:/# mount -o remount,rw /sysroot
-switch_root:/# chroot /sysroot
-</code></pre>
+<div class="highlight"><pre><span></span><code>switch_root:/#<span class="w"> </span>mount<span class="w"> </span>-o<span class="w"> </span>remount,rw<span class="w"> </span>/sysroot
+switch_root:/#<span class="w"> </span>chroot<span class="w"> </span>/sysroot
+</code></pre></div>
 <p>Set the root password to redhat.</p>
-<pre><code class="language-shell">sh-4.4# passwd root
-Changing password for user root.
-New password: redhat
-BAD PASSWORD: The password is shorter than 8 characters
-Retype new password: redhat
-passwd: all authentication tokens updated successfully.
-</code></pre>
+<div class="highlight"><pre><span></span><code>sh-4.4#<span class="w"> </span>passwd<span class="w"> </span>root
+Changing<span class="w"> </span>password<span class="w"> </span><span class="k">for</span><span class="w"> </span>user<span class="w"> </span>root.
+New<span class="w"> </span>password:<span class="w"> </span>redhat
+BAD<span class="w"> </span>PASSWORD:<span class="w"> </span>The<span class="w"> </span>password<span class="w"> </span>is<span class="w"> </span>shorter<span class="w"> </span>than<span class="w"> </span><span class="m">8</span><span class="w"> </span>characters
+Retype<span class="w"> </span>new<span class="w"> </span>password:<span class="w"> </span>redhat
+passwd:<span class="w"> </span>all<span class="w"> </span>authentication<span class="w"> </span>tokens<span class="w"> </span>updated<span class="w"> </span>successfully.
+</code></pre></div>
 <p>Configure the system to automatically perform a full SELinux relabel after boot.</p>
-<pre><code class="language-shell">sh-4.4# touch /.autorelabel
-</code></pre>
+<div class="highlight"><pre><span></span><code>sh-4.4#<span class="w"> </span>touch<span class="w"> </span>/.autorelabel
+</code></pre></div>
 <p>Type exit twice to continue booting your system. The system fails to boot because of an issue you resolve in the next step. </p>
 <h3 id="selinux">Selinux</h3>
 <p>⚠ Make sure SELinux allows the file changed</p>

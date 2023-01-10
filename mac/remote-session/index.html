@@ -1600,6 +1600,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2058,6 +2072,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2180,19 +2208,19 @@
 <h2 id="ssh">SSH</h2>
 <h3 id="proxy-settings">Proxy settings</h3>
 <p>Into my ssh configuration file, I added the nc command like :</p>
-<pre><code class="language-shell">ProxyCommand /usr/bin/nc -x $PROXY_iP %h %p
-</code></pre>
+<div class="highlight"><pre><span></span><code>ProxyCommand<span class="w"> </span>/usr/bin/nc<span class="w"> </span>-x<span class="w"> </span><span class="nv">$PROXY_iP</span><span class="w"> </span>%h<span class="w"> </span>%p
+</code></pre></div>
 <p>As Example :</p>
-<pre><code class="language-shell">## Customer
-Host customer1
-    Hostname 1**.**.***.*0
-    User toto
-    ProxyCommand /usr/bin/nc -x $PROXY_iP %h %p
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="c1">## Customer</span>
+Host<span class="w"> </span>customer1
+<span class="w">    </span>Hostname<span class="w"> </span><span class="m">1</span>**.**.***.*0
+<span class="w">    </span>User<span class="w"> </span>toto
+<span class="w">    </span>ProxyCommand<span class="w"> </span>/usr/bin/nc<span class="w"> </span>-x<span class="w"> </span><span class="nv">$PROXY_iP</span><span class="w"> </span>%h<span class="w"> </span>%p
+</code></pre></div>
 <h3 id="sshs">sshs</h3>
 <p>sshs is kind of bastion based on ssh config file</p>
-<pre><code class="language-zsh">brew install sshs
-</code></pre>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>sshs
+</code></pre></div>
 <p><img alt="demo" src="https://camo.githubusercontent.com/31b61454d3d87320d2839f2a6b84e392e0b5e4a8a1760164684220358b7de426/68747470733a2f2f692e696d6775722e636f6d2f69506d694556552e676966" /></p>
 <p>Repository link : <a href="https://github.com/quantumsheep/sshs">https://github.com/quantumsheep/sshs</a></p>
 <h3 id="sshpass">sshpass</h3>
@@ -2200,18 +2228,18 @@ Host customer1
 <ul>
 <li>First, install-it with <a href="#homebrew">homebrew</a> if it dont installed yet.</li>
 </ul>
-<pre><code class="language-zsh">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
-</code></pre>
+<div class="highlight"><pre><span></span><code>/bin/bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
 <ul>
 <li>Next, install sshpass</li>
 </ul>
-<pre><code class="language-zsh">brew install hudochenkov/sshpass/sshpass
-</code></pre>
+<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>hudochenkov/sshpass/sshpass
+</code></pre></div>
 <ul>
 <li>Then, use it dude</li>
 </ul>
-<pre><code class="language-zsh">sshpass -f LOCAIONT/FILENAME ssh user@iP
-</code></pre>
+<div class="highlight"><pre><span></span><code>sshpass<span class="w"> </span>-f<span class="w"> </span>LOCAIONT/FILENAME<span class="w"> </span>ssh<span class="w"> </span>user@iP
+</code></pre></div>
 <h4 id="fingerprint">fingerprint</h4>
 <p>ℹ️ Don't forget you need to accept the remote fingerprint before any sshpass connection</p>
 <p><img alt="fingerprint example" src="../ressources/remote-session.png" /></p>

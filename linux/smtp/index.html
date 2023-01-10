@@ -1553,6 +1553,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2011,6 +2025,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2088,25 +2116,25 @@
 <ol>
 <li>Prepare encoded strings for your mail username and password</li>
 </ol>
-<pre><code class="language-bash">echo -ne &quot;mail@example.net&quot; | base64
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span>-ne<span class="w"> </span><span class="s2">&quot;mail@example.net&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64
+</code></pre></div>
 <ol>
 <li>Connect to mail server</li>
 </ol>
-<pre><code class="language-bash">openssl s_client -starttls smtp -connect smtp.example.com:587
-</code></pre>
+<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>s_client<span class="w"> </span>-starttls<span class="w"> </span>smtp<span class="w"> </span>-connect<span class="w"> </span>smtp.example.com:587
+</code></pre></div>
 <ol>
 <li>Send HELO</li>
 </ol>
-<pre><code class="language-smtp">EHLO
-</code></pre>
+<div class="highlight"><pre><span></span><code>EHLO
+</code></pre></div>
 <ol>
 <li>Authenticate</li>
 </ol>
-<pre><code class="language-smtp">AUTH LOGIN
+<div class="highlight"><pre><span></span><code>AUTH LOGIN
 &lt;your-encoded-username&gt;
 &lt;your-encoded-password&gt;
-</code></pre>
+</code></pre></div>
 <p>If that's successful the mail server should return <code>235 2.7.0 Authentication successful</code>.</p>
 
 

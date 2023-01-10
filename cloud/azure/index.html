@@ -1497,6 +1497,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2025,6 +2039,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2115,20 +2143,20 @@
 <p>La version actuelle d’Azure CLI ne vous permet pas de gérer la journalisation des applications dans Stockage Blob. </p>
 <h3 id="activer">Activer</h3>
 <p>Pour activer la journalisation des applications dans le système de fichiers, exécutez cette commande :</p>
-<pre><code class="language-powershell">az webapp log config --application-logging true --level verbose --name &lt;app-name&gt; --resource-group &lt;resource-group-name&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">az</span> <span class="n">webapp</span> <span class="n">log</span> <span class="n">config</span> <span class="p">-</span><span class="n">-application-logging</span> <span class="n">true</span> <span class="p">-</span><span class="n">-level</span> <span class="n">verbose</span> <span class="p">-</span><span class="n">-name</span> <span class="p">&lt;</span><span class="n">app-name</span><span class="p">&gt;</span> <span class="p">-</span><span class="n">-resource-group</span> <span class="p">&lt;</span><span class="n">resource-group-name</span><span class="p">&gt;</span>
+</code></pre></div>
 <p>Par exemple, pour activer la journalisation dans le système de fichiers pour une application appelée contosofashions123 en capturant tous les messages, exécutez cette commande.</p>
-<pre><code class="language-powershell">az webapp log config --application-logging true --level verbose --name contosofashions123 --resource-group contosofashionsRG
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">az</span> <span class="n">webapp</span> <span class="n">log</span> <span class="n">config</span> <span class="p">-</span><span class="n">-application-logging</span> <span class="n">true</span> <span class="p">-</span><span class="n">-level</span> <span class="n">verbose</span> <span class="p">-</span><span class="n">-name</span> <span class="n">contosofashions123</span> <span class="p">-</span><span class="n">-resource-group</span> <span class="n">contosofashionsRG</span>
+</code></pre></div>
 <p>Il n’existe actuellement aucun moyen de désactiver la journalisation des applications à l’aide de commandes Azure CLI.</p>
 <h3 id="reset">Reset</h3>
 <p>Toutefois, la commande suivante permet de réinitialiser la journalisation dans le système de fichiers au niveau erreur simplement.</p>
-<pre><code class="language-powershell">az webapp log config --application-logging false --name &lt;app-name&gt; --resource-group &lt;resource-group-name&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">az</span> <span class="n">webapp</span> <span class="n">log</span> <span class="n">config</span> <span class="p">-</span><span class="n">-application-logging</span> <span class="n">false</span> <span class="p">-</span><span class="n">-name</span> <span class="p">&lt;</span><span class="n">app-name</span><span class="p">&gt;</span> <span class="p">-</span><span class="n">-resource-group</span> <span class="p">&lt;</span><span class="n">resource-group-name</span><span class="p">&gt;</span>
+</code></pre></div>
 <h3 id="status">Status</h3>
 <p>Pour connaître l’état actuel de la journalisation d’une application, utilisez cette commande.</p>
-<pre><code class="language-powershell">az webapp log show --name &lt;app-name&gt; --resource-group &lt;resource-group-name&gt;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">az</span> <span class="n">webapp</span> <span class="n">log</span> <span class="n">show</span> <span class="p">-</span><span class="n">-name</span> <span class="p">&lt;</span><span class="n">app-name</span><span class="p">&gt;</span> <span class="p">-</span><span class="n">-resource-group</span> <span class="p">&lt;</span><span class="n">resource-group-name</span><span class="p">&gt;</span>
+</code></pre></div>
 
 
 

@@ -12,20 +12,18 @@
         <meta name="author" content="BOISTEL Samuel">
       
       
-        <link rel="canonical" href="https://sboistel.github.io/docki/network/certmanager/">
+        <link rel="canonical" href="https://sboistel.github.io/docki/misc/mkdocs/">
       
       
-        <link rel="prev" href="../../tool/pi-hole/">
+        <link rel="prev" href="../markdown/">
       
-      
-        <link rel="next" href="../mkcert/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
     
     
       
-        <title>Cert-Manager - Dockimentation</title>
+        <title>MKDocs - Dockimentation</title>
       
     
     
@@ -77,7 +75,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cert-manager" class="md-skip">
+        <a href="#mkdocs" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cert-Manager
+              MKDocs
             
           </span>
         </div>
@@ -297,15 +295,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../../network/certmanager/" class="md-tabs__link">
         Web & Networking
       </a>
     </li>
@@ -347,13 +343,15 @@
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../../misc/color-codes/" class="md-tabs__link">
+      <a href="../color-codes/" class="md-tabs__link md-tabs__link--active">
         Miscellaneous
       </a>
     </li>
@@ -1523,14 +1521,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
       
       
       
@@ -1551,126 +1547,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Cert-Manager
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../network/certmanager/" class="md-nav__link">
         Cert-Manager
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#self-signed-certificates" class="md-nav__link">
-    Self-Signed Certificates
-  </a>
-  
-    <nav class="md-nav" aria-label="Self-Signed Certificates">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#upload-existing-cakey-and-cacrt-files-option-1" class="md-nav__link">
-    Upload existing CA.key and CA.crt files (Option 1)
-  </a>
-  
-    <nav class="md-nav" aria-label="Upload existing CA.key and CA.crt files (Option 1)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate" class="md-nav__link">
-    1. Create a self-signed CA (ssl-certs) creating a ca.key (private-key) and ca.crt (certificate)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool" class="md-nav__link">
-    2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-create-a-new-ssl-secret-object-using-the-strings" class="md-nav__link">
-    3. Create a new ssl secret object using the strings
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret" class="md-nav__link">
-    4. Create a new ClusterIssuer or Issuer object by using the ssl secret
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-ca-through-cert-manager-option-2" class="md-nav__link">
-    Create CA through Cert-manager (Option 2)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    Troubleshooting
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#common-errors" class="md-nav__link">
-    Common Errors
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1682,7 +1563,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mkcert/" class="md-nav__link">
+      <a href="../../network/mkcert/" class="md-nav__link">
         Certificate Generator
       </a>
     </li>
@@ -1696,7 +1577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ssl/" class="md-nav__link">
+      <a href="../../network/ssl/" class="md-nav__link">
         SSL Certificates
       </a>
     </li>
@@ -1710,7 +1591,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../http-status/" class="md-nav__link">
+      <a href="../../network/http-status/" class="md-nav__link">
         HTTP Status Codes
       </a>
     </li>
@@ -1724,7 +1605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../openvpn/" class="md-nav__link">
+      <a href="../../network/openvpn/" class="md-nav__link">
         OpenVPN
       </a>
     </li>
@@ -1738,7 +1619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ngrok/" class="md-nav__link">
+      <a href="../../network/ngrok/" class="md-nav__link">
         ngrok
       </a>
     </li>
@@ -2036,12 +1917,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_10" type="checkbox" id="__nav_10" checked>
       
       
       
@@ -2064,7 +1947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/color-codes/" class="md-nav__link">
+      <a href="../color-codes/" class="md-nav__link">
         256 Color Codes Cheat-Sheet
       </a>
     </li>
@@ -2078,7 +1961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/markdown/" class="md-nav__link">
+      <a href="../markdown/" class="md-nav__link">
         Markdown
       </a>
     </li>
@@ -2090,11 +1973,168 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../misc/mkdocs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MKDocs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         MKDocs
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#material" class="md-nav__link">
+    Material
+  </a>
+  
+    <nav class="md-nav" aria-label="Material">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#admonition" class="md-nav__link">
+    Admonition
+  </a>
+  
+    <nav class="md-nav" aria-label="Admonition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supported-types" class="md-nav__link">
+    Supported types
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    note
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abstract" class="md-nav__link">
+    abstract
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tip" class="md-nav__link">
+    tip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success" class="md-nav__link">
+    success
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    question
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warning" class="md-nav__link">
+    warning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failure" class="md-nav__link">
+    failure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#danger" class="md-nav__link">
+    danger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug" class="md-nav__link">
+    bug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quote" class="md-nav__link">
+    quote
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2133,45 +2173,109 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#self-signed-certificates" class="md-nav__link">
-    Self-Signed Certificates
+  <a href="#material" class="md-nav__link">
+    Material
   </a>
   
-    <nav class="md-nav" aria-label="Self-Signed Certificates">
+    <nav class="md-nav" aria-label="Material">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#upload-existing-cakey-and-cacrt-files-option-1" class="md-nav__link">
-    Upload existing CA.key and CA.crt files (Option 1)
+  <a href="#admonition" class="md-nav__link">
+    Admonition
   </a>
   
-    <nav class="md-nav" aria-label="Upload existing CA.key and CA.crt files (Option 1)">
+    <nav class="md-nav" aria-label="Admonition">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate" class="md-nav__link">
-    1. Create a self-signed CA (ssl-certs) creating a ca.key (private-key) and ca.crt (certificate)
+  <a href="#supported-types" class="md-nav__link">
+    Supported types
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    note
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool" class="md-nav__link">
-    2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)
+  <a href="#abstract" class="md-nav__link">
+    abstract
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-create-a-new-ssl-secret-object-using-the-strings" class="md-nav__link">
-    3. Create a new ssl secret object using the strings
+  <a href="#info" class="md-nav__link">
+    info
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret" class="md-nav__link">
-    4. Create a new ClusterIssuer or Issuer object by using the ssl secret
+  <a href="#tip" class="md-nav__link">
+    tip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success" class="md-nav__link">
+    success
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    question
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warning" class="md-nav__link">
+    warning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#failure" class="md-nav__link">
+    failure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#danger" class="md-nav__link">
+    danger
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bug" class="md-nav__link">
+    bug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    example
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quote" class="md-nav__link">
+    quote
   </a>
   
 </li>
@@ -2181,30 +2285,8 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#create-ca-through-cert-manager-option-2" class="md-nav__link">
-    Create CA through Cert-manager (Option 2)
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    Troubleshooting
-  </a>
-  
-    <nav class="md-nav" aria-label="Troubleshooting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#common-errors" class="md-nav__link">
-    Common Errors
-  </a>
   
 </li>
         
@@ -2232,63 +2314,108 @@
 
 
 
-<h1 id="cert-manager">Cert-Manager</h1>
-<p>Cert-manager adds certificates and certificate issuers as resource types in <strong>Kubernetes</strong> clusters, and simplifies the process of obtaining, renewing and using those certificates.</p>
-<p>Documentation &amp; Project Homepage: <a href="https://cert-manager.io/docs/">Cert-Manager Docs</a></p>
-<hr />
-<h2 id="self-signed-certificates">Self-Signed Certificates</h2>
-<h3 id="upload-existing-cakey-and-cacrt-files-option-1">Upload existing CA.key and CA.crt files (Option 1)</h3>
-<h4 id="1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate">1. Create a self-signed CA (ssl-certs) creating a ca.key (private-key) and ca.crt (certificate)</h4>
-<p>(ca.key)</p>
-<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>genrsa<span class="w"> </span>-out<span class="w"> </span>ca.key<span class="w"> </span><span class="m">4096</span>
+<h1 id="mkdocs">MKDocs</h1>
+<h2 id="material">Material</h2>
+<h3 id="admonition">Admonition</h3>
+<div class="highlight"><pre><span></span><code>markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 </code></pre></div>
-<p>(ca.crt)</p>
-<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-x509<span class="w"> </span>-sha256<span class="w"> </span>-days<span class="w"> </span><span class="m">365</span><span class="w"> </span>-key<span class="w"> </span>ca.key<span class="w"> </span>-out<span class="w"> </span>ca.crt
-</code></pre></div>
-<h4 id="2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool">2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)</h4>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>ca.key<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-w<span class="w"> </span><span class="m">0</span>
-</code></pre></div>
-<h4 id="3-create-a-new-ssl-secret-object-using-the-strings">3. Create a new ssl secret object using the strings</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Secret</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssl-issuer-secret</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># (Optional) Metadata</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># ---</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># namespace: your-namespace</span>
-<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Opaque</span>
-<span class="nt">data</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">tls.crt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;base64-decoded-string&gt;</span>
-<span class="w">  </span><span class="nt">tls.key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;base64-decoded-string&gt;</span>
-</code></pre></div>
-<h4 id="4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret">4. Create a new ClusterIssuer or Issuer object by using the ssl secret</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cert-manager.io/v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIssuer</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="err"> </span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">selfsigned-issuer</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># (Optional) Metadata</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># ---</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># namespace: your-namespace</span>
-<span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">ca</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">secretName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssl-issuer-secret</span>
-</code></pre></div>
-<h3 id="create-ca-through-cert-manager-option-2">Create CA through Cert-manager (Option 2)</h3>
-<p>Create a new ClusterIssuer or Issuer object by using the selfSigned Attribute.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cert-manager.io/v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIssuer</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">root-issuer</span>
-<span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">selfSigned</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
-</code></pre></div>
-<hr />
-<h2 id="troubleshooting">Troubleshooting</h2>
-<h3 id="common-errors">Common Errors</h3>
-<p><strong>DNS Record not yet propagated</strong>
-The error, <code>Waiting for DNS-01 challenge propagation: DNS record for "your-dns-record" not yet propagated.</code>, might occur in the <code>challenge</code> object. Cert-Manager creates a TXT Record on the DNS provider and checks, whether the record is existing, before issuing the certificate. In a split-dns environment, this could be a problem when internal DNS Servers can't resolve the TXT Record on the Cloud DNS. You can use the <code>extraArgs</code> <code>--dns01-recursive-nameservers-only</code>, and <code>--dns01-recursive-nameservers=8.8.8.8:53,1.1.1.1:53</code>, to specific the DNS Resolvers used for the challenge.</p>
-<p><strong>No solver found</strong>
-The error, <code>Failed to determine a valid solver configuration for the set of domains on the Order: no configured challenge solvers can be used for this challenge</code> might occur in the <code>order</code> object, when no solver can't be found for the DNS Hostname. Make sure your solvers have a corrent <code>dnsZones</code> configured that matches the DNS Hostnames Zone.</p>
+<h4 id="supported-types">Supported types</h4>
+<p>Following is a list of type qualifiers provided by Material for MkDocs, whereas
+the default type, and thus fallback for unknown type qualifiers, is <code>note</code>[^1]:</p>
+<p>[^1]:
+    Previously, some of the supported types defined more than one qualifier.
+    For example, authors could use <code>summary</code> or <code>tldr</code> as alternative qualifiers
+    to render an ##### <a href="abstract"><code>abstract</code></a> admonition. As this increased the
+    size of the CSS that is shipped with Material for MkDocs, the additional
+    type qualifiers are now all deprecated and will be removed in the next major
+    version. This will also be mentioned in the upgrade guide.</p>
+<h5 id="note"><a href="note"><code>note</code></a></h5>
+<div class="admonition note">
+<p class="admonition-title">Note<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="abstract"><a href="abstract"><code>abstract</code></a></h5>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="info"><a href="info"><code>info</code></a></h5>
+<div class="admonition info">
+<p class="admonition-title">Info<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="tip"><a href="tip"><code>tip</code></a></h5>
+<div class="admonition tip">
+<p class="admonition-title">Tip<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="success"><a href="success"><code>success</code></a></h5>
+<div class="admonition success">
+<p class="admonition-title">Success<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="question"><a href="question"><code>question</code></a></h5>
+<div class="admonition question">
+<p class="admonition-title">Question<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="warning"><a href="warning"><code>warning</code></a></h5>
+<div class="admonition warning">
+<p class="admonition-title">Warning<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="failure"><a href="failure"><code>failure</code></a></h5>
+<div class="admonition failure">
+<p class="admonition-title">Failure<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="danger"><a href="danger"><code>danger</code></a></h5>
+<div class="admonition danger">
+<p class="admonition-title">Danger<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="bug"><a href="bug"><code>bug</code></a></h5>
+<div class="admonition bug">
+<p class="admonition-title">Bug<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="example"><a href="example"><code>example</code></a></h5>
+<div class="admonition example">
+<p class="admonition-title">Example<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
+<h5 id="quote"><a href="quote"><code>quote</code></a></h5>
+<div class="admonition quote">
+<p class="admonition-title">Quote<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.</p>
+</p>
+</div>
 
 
 

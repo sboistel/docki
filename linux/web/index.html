@@ -1547,6 +1547,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2005,6 +2019,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2073,18 +2101,18 @@
 <h1 id="web">Web</h1>
 <h2 id="lamp">lamp</h2>
 <p>Apache check config :</p>
-<pre><code class="language-bash">/opt/lampp/bin/httpd -t
-</code></pre>
+<div class="highlight"><pre><span></span><code>/opt/lampp/bin/httpd<span class="w"> </span>-t
+</code></pre></div>
 <p>Apache restart :</p>
-<pre><code class="language-bash">/opt/lampp/bin/httpd -k restart
-</code></pre>
+<div class="highlight"><pre><span></span><code>/opt/lampp/bin/httpd<span class="w"> </span>-k<span class="w"> </span>restart
+</code></pre></div>
 <h2 id="postfix">Postfix</h2>
 <p>Basic postfix configuration <code>/etc/postfix/main.cf</code> :</p>
-<pre><code class="language-bash">relayhost = [smtp.gmail.com]:587
-smtp_sasl_auth_enable = yes
-smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
-smtp_sasl_security_options = noanonymous
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nv">relayhost</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>smtp.gmail.com<span class="o">]</span>:587
+<span class="nv">smtp_sasl_auth_enable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>yes
+<span class="nv">smtp_sasl_password_maps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>hash:/etc/postfix/sasl_passwd
+<span class="nv">smtp_sasl_security_options</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>noanonymous
+</code></pre></div>
 
 
 

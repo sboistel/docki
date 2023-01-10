@@ -1581,6 +1581,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2039,6 +2053,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2145,42 +2173,42 @@ Boot on Windows 10 ISO
 On the language screen, chose your language and hit <strong>SHIFT+F10</strong></p>
 <h2 id="get-logical-volume-inforations">Get Logical Volume inforations</h2>
 <p>When the cmd terminal is oppened, list Diske Caption and Volume Name :</p>
-<pre><code class="language-powershell">wmic logicaldisk get caption, VolumeName
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wmic</span> <span class="n">logicaldisk</span> <span class="n">get</span> <span class="n">caption</span><span class="p">,</span> <span class="n">VolumeName</span>
+</code></pre></div>
 <p>Move to the Disk you want (letter found with the previous command)</p>
-<pre><code class="language-powershell">d:
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">:</span>
+</code></pre></div>
 <p>Go to the system32 folder</p>
-<pre><code class="language-powershell">cd windows\system32
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">cd </span><span class="n">windows</span><span class="p">\</span><span class="n">system32</span>
+</code></pre></div>
 <h2 id="utilman">Utilman</h2>
 <p>Use utilman despite off cmd.exe</p>
-<pre><code class="language-powershell">ren utilman.exe utilman.exe.bak
-ren cmd.exe utilman.exe
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">ren </span><span class="n">utilman</span><span class="p">.</span><span class="n">exe</span> <span class="n">utilman</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span><span class="n">bak</span>
+<span class="nb">ren </span><span class="n">cmd</span><span class="p">.</span><span class="n">exe</span> <span class="n">utilman</span><span class="p">.</span><span class="n">exe</span>
+</code></pre></div>
 <p>Reboot</p>
-<pre><code class="language-powershell">wpeutil reboot
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wpeutil</span> <span class="n">reboot</span>
+</code></pre></div>
 <h3 id="change-user-password">Change user password</h3>
 <p>After rebooting, clic on accessibility icon</p>
 <h3 id="change-password">Change password</h3>
 <p>Change the user password</p>
-<pre><code class="language-powershell">Example :
-net user admin root
+<div class="highlight"><pre><span></span><code><span class="n">Example</span> <span class="p">:</span>
+<span class="n">net</span> <span class="n">user</span> <span class="n">admin</span> <span class="n">root</span>
 
-net user $USER pass
-</code></pre>
+<span class="n">net</span> <span class="n">user</span> <span class="nv">$USER</span> <span class="n">pass</span>
+</code></pre></div>
 <h3 id="active-user">Active user</h3>
 <p>Active user</p>
-<pre><code class="language-powershell">net user $USER /active:yes
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">net</span> <span class="n">user</span> <span class="nv">$USER</span> <span class="p">/</span><span class="n">active</span><span class="p">:</span><span class="n">yes</span>
+</code></pre></div>
 <p>Reboot</p>
-<pre><code class="language-powershell">wpeutil reboot
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">wpeutil</span> <span class="n">reboot</span>
+</code></pre></div>
 <p>Replace utilman despite off cmd.exe</p>
-<pre><code class="language-powershell">ren utilman.exe cmd.exe
-ren utilman.exe.bak utilman.exe
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">ren </span><span class="n">utilman</span><span class="p">.</span><span class="n">exe</span> <span class="n">cmd</span><span class="p">.</span><span class="n">exe</span>
+<span class="nb">ren </span><span class="n">utilman</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span><span class="n">bak</span> <span class="n">utilman</span><span class="p">.</span><span class="n">exe</span>
+</code></pre></div>
 
 
 

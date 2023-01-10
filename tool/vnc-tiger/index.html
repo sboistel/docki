@@ -1574,6 +1574,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2032,6 +2046,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2128,23 +2156,23 @@
 <h2 id="vnc-session">VNC Session</h2>
 <p>How to create new VNC Session ?</p>
 <h3 id="change-the-vncpassword">Change the VNCpassword</h3>
-<pre><code class="language-bash">vncpassword
-</code></pre>
+<div class="highlight"><pre><span></span><code>vncpassword
+</code></pre></div>
 <h3 id="directory">Directory</h3>
 <p>Move to the session direcotry :</p>
-<pre><code class="language-bash">cd /etc/systemd/system
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/etc/systemd/system
+</code></pre></div>
 <h3 id="session-file">Session file</h3>
-<p>Copy old vncserver.service file to a new one :</p>
-<pre><code class="language-bash">cp [vncserver@{N°}.service](mailto:vncserver@{N°}.service) vncserver@:{New N°}.service
-</code></pre>
-<p>Replace :</p>
-<pre><code class="language-bash">sed -i 's/olduser/newuser/g' vncserver@:{New N°}.service
-</code></pre>
+<p>Copy old vncserver.service file to a new one :
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span><span class="o">[</span>vncserver@<span class="o">{</span>N°<span class="o">}</span>.service<span class="o">](</span>mailto:vncserver@<span class="o">{</span>N°<span class="o">}</span>.service<span class="o">)</span><span class="w"> </span>vncserver@:<span class="o">{</span>New<span class="w"> </span>N°<span class="o">}</span>.service
+</code></pre></div></p>
+<p>Replace :
+<div class="highlight"><pre><span></span><code>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/olduser/newuser/g&#39;</span><span class="w"> </span>vncserver@:<span class="o">{</span>New<span class="w"> </span>N°<span class="o">}</span>.service
+</code></pre></div></p>
 <h3 id="service">Service</h3>
-<p>Enable the service :</p>
-<pre><code class="language-bash">systemctl enable vncserver@:{New N°}.service
-</code></pre>
+<p>Enable the service :
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>vncserver@:<span class="o">{</span>New<span class="w"> </span>N°<span class="o">}</span>.service
+</code></pre></div></p>
 
 
 

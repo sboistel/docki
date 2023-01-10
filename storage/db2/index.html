@@ -1497,6 +1497,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2019,6 +2033,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2101,26 +2129,26 @@
 <h1 id="ibm-db2">IBM DB2</h1>
 <h2 id="installation">Installation</h2>
 <p>As root</p>
-<p>Untar the archive file</p>
-<pre><code class="language-bash">tar -xvf linuxx64_client.tar.gz
-</code></pre>
-<p>Install db2</p>
-<pre><code class="language-bash">./client/db2_install  -b /opt/db/v11.5
-</code></pre>
+<p>Untar the archive file
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-xvf<span class="w"> </span>linuxx64_client.tar.gz
+</code></pre></div></p>
+<p>Install db2
+<div class="highlight"><pre><span></span><code>./client/db2_install<span class="w">  </span>-b<span class="w"> </span>/opt/db/v11.5
+</code></pre></div></p>
 <h2 id="create-user-client">Create user client</h2>
-<pre><code class="language-bash">/opt/ibm/db2/v11.5/instance/db2icrt -s client lully
-</code></pre>
+<div class="highlight"><pre><span></span><code>/opt/ibm/db2/v11.5/instance/db2icrt<span class="w"> </span>-s<span class="w"> </span>client<span class="w"> </span>lully
+</code></pre></div>
 <h2 id="migration">Migration</h2>
 <p>As root</p>
-<pre><code class="language-bash">db2cfexp db2cfexp.log template
-</code></pre>
+<div class="highlight"><pre><span></span><code>db2cfexp<span class="w"> </span>db2cfexp.log<span class="w"> </span>template
+</code></pre></div>
 <p>As instance user</p>
 <p>db2cfimp export.log</p>
 <h2 id="check-directories">Check directories</h2>
 <p>Run db2 cmd as user sourced profile</p>
-<pre><code>list db directory
+<div class="highlight"><pre><span></span><code>list db directory
 list node directory
-</code></pre>
+</code></pre></div>
 
 
 

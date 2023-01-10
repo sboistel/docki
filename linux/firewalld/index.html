@@ -1547,6 +1547,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2005,6 +2019,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2199,12 +2227,12 @@
 </table>
 <hr />
 <p>The example commands below set the default zone to dmz, assign all traffic coming from the 192.168.0.0/24 network to the internal zone, and open the network ports for the mysql service on the internal zone.</p>
-<pre><code class="language-shell">[root@host ~]# firewall-cmd --set-default-zone=dmz
-[root@host ~]# firewall-cmd --permanent --zone=internal \
---add-source=192.168.0.0/24
-[root@host ~]# firewall-cmd --permanent --zone=internal --add-service=mysql
-[root@host ~]# firewall-cmd --reload
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># firewall-cmd --set-default-zone=dmz</span>
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># firewall-cmd --permanent --zone=internal \</span>
+--add-source<span class="o">=</span><span class="m">192</span>.168.0.0/24
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># firewall-cmd --permanent --zone=internal --add-service=mysql</span>
+<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># firewall-cmd --reload</span>
+</code></pre></div>
 
 
 

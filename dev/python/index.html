@@ -1667,6 +1667,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tool/pi-hole/" class="md-nav__link">
+        Pi-Hole
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2125,6 +2139,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../misc/mkdocs/" class="md-nav__link">
+        MKDocs
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2318,80 +2346,80 @@
 <p><em>A virtual environement ne require privileges</em></p>
 <h3 id="how-to">How to ?</h3>
 <p>Create python venv (here name <code>pyvenv</code>)</p>
-<pre><code class="language-sh">python3 -m venv pyvenv
-</code></pre>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>pyvenv
+</code></pre></div>
 <p>Source it</p>
-<pre><code class="language-bash">source pyvenv/bin/active
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>pyvenv/bin/active
+</code></pre></div>
 <p>Download module</p>
-<pre><code class="language-sh">mkdir module; cd module
-pip download module_name
-</code></pre>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>module<span class="p">;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>module
+pip<span class="w"> </span>download<span class="w"> </span>module_name
+</code></pre></div>
 <p>Requierements</p>
 <p>You have to fill the module name wished to the <code>requierements.txt</code> file. 
 This file is used to build your envirement</p>
-<pre><code class="language-bash">echo &quot;module_name&quot; &gt;&gt; requirements.txt
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;module_name&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>requirements.txt
+</code></pre></div>
 <p>Install virtual environement </p>
-<pre><code class="language-sh">pip install --no-index --find-links module/ -r requirements.txt
-</code></pre>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--no-index<span class="w"> </span>--find-links<span class="w"> </span>module/<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
 <h2 id="syntaxe">Syntaxe</h2>
 <h3 id="coding">Coding</h3>
 <p>Format UTF-8 : <code>## -*- coding:Utf-8 -*-</code></p>
 <h2 id="librairy">Librairy</h2>
 <h3 id="import-de-librairie">Import de librairie</h3>
 <p>On peut importer un seul module d'une librairie :</p>
-<pre><code class="language-python">from LIBRAIRIE import module
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">LIBRAIRIE</span> <span class="kn">import</span> <span class="n">module</span>
+</code></pre></div>
 <p>On peut aussi importer la librairie complette : </p>
-<pre><code class="language-python">from LIBRAIRIE import *
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">LIBRAIRIE</span> <span class="kn">import</span> <span class="o">*</span>
+</code></pre></div>
 <p>Ou depuis un autre fichier.Py :</p>
-<pre><code class="language-python">from fichier import classe
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fichier</span> <span class="kn">import</span> <span class="n">classe</span>
+</code></pre></div>
 <h2 id="interpollation">Interpollation</h2>
 <p>Divers techniques existe afin de sortir un clef d'une liste:</p>
-<pre><code class="language-python">print(&quot;Je m'appel %s !&quot; % liste_nom['nom']) 
-print(&quot;Je m'appel %(nom)s !&quot; % d)
-print(&quot;Je m'appel {0} !&quot;.format(d['nom']))
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je m&#39;appel </span><span class="si">%s</span><span class="s2"> !&quot;</span> <span class="o">%</span> <span class="n">liste_nom</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">])</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je m&#39;appel </span><span class="si">%(nom)s</span><span class="s2"> !&quot;</span> <span class="o">%</span> <span class="n">d</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Je m&#39;appel </span><span class="si">{0}</span><span class="s2"> !&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;nom&#39;</span><span class="p">]))</span>
+</code></pre></div>
 <h3 id="verifications">Vérifications</h3>
 <p>Vérifier si un block est correct avec 'try' :</p>
-<pre><code class="language-python">try: ## Vérifier ce bloc
-file = open('infos.txt', 'r')
-print(file.read())
-except: ## Si erreur se trouve dans try
-print(&quot;erreur&quot;)
-finally: ## Qui s'éxecutera quoi qu'il arrive des blocs précédents
-file.close
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span> <span class="c1">## Vérifier ce bloc</span>
+<span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;infos.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<span class="k">except</span><span class="p">:</span> <span class="c1">## Si erreur se trouve dans try</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;erreur&quot;</span><span class="p">)</span>
+<span class="k">finally</span><span class="p">:</span> <span class="c1">## Qui s&#39;éxecutera quoi qu&#39;il arrive des blocs précédents</span>
+<span class="n">file</span><span class="o">.</span><span class="n">close</span>
+</code></pre></div>
 <p>La vérification peut se traduire par plusieur méthodes :</p>
-<pre><code class="language-python">execpt IOError ## Pour se qui concerne les fichier ou élèments en dur
-except ValueError ## Qui concernera les érreurs de conversions
-</code></pre>
-<p>La méthode la plus sûr reste l'option 'with':</p>
-<pre><code class="language-python">try: ## Vérifier ce bloc
-with open('infox.txt', 'r') as file: ## Avec le fichier, l'ouvrir en var file
-for line in file.readlines():
-print(int(line.strip()))
-except IOError as err:
-print(&quot;Erreur de fichier&quot;, err)
-except ValueError:
-print(&quot;Erreur de conversion&quot;)
-except:
-print(&quot;Erreur inconnue, tous aux abris.&quot;)
-else:
-print(&quot;Fichier connue de tous wallah&quot;)
-</code></pre>
+<p><div class="highlight"><pre><span></span><code><span class="n">execpt</span> <span class="ne">IOError</span> <span class="c1">## Pour se qui concerne les fichier ou élèments en dur</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="c1">## Qui concernera les érreurs de conversions</span>
+</code></pre></div>
+La méthode la plus sûr reste l'option 'with':</p>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span> <span class="c1">## Vérifier ce bloc</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;infox.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span> <span class="c1">## Avec le fichier, l&#39;ouvrir en var file</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">file</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()))</span>
+<span class="k">except</span> <span class="ne">IOError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Erreur de fichier&quot;</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Erreur de conversion&quot;</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Erreur inconnue, tous aux abris.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fichier connue de tous wallah&quot;</span><span class="p">)</span>
+</code></pre></div>
 <h2 id="tkinter">TKinter</h2>
 <p>TKinter est une librairie permettant de génerer des fenêtre sur le code Python.
 Exemple de code :</p>
-<pre><code class="language-python">from Tkinter import *
-fenetre = Tk()
-label = Label(fenetre, text=&quot;Exmple de coprs de fenêtre&quot;)
-label.pack()
-fenetre.mainloop()
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">Tkinter</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">fenetre</span> <span class="o">=</span> <span class="n">Tk</span><span class="p">()</span>
+<span class="n">label</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Exmple de coprs de fenêtre&quot;</span><span class="p">)</span>
+<span class="n">label</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+<span class="n">fenetre</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</code></pre></div>
 <h3 id="personnalisation-de-la-fenetre">Personnalisation de la fenêtre</h3>
 <p>Liste d'élèments permettant de personnaliser une fenêtre (ici : <em>window = Tk()</em>):
 - window.title("<strong>My application</strong>")
@@ -2402,24 +2430,24 @@ fenetre.mainloop()
 <h3 id="widget">Widget</h3>
 <h4 id="case-a-cocher">Case à cocher</h4>
 <p>Liste de case à cocher :</p>
-<pre><code class="language-python">caseACocher1 = Checkbutton(window, text=&quot;Case N°1&quot;).pack()
-caseACocher2 = Checkbutton(window, text=&quot;Case N°2&quot;).pack()
-...
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">caseACocher1</span> <span class="o">=</span> <span class="n">Checkbutton</span><span class="p">(</span><span class="n">window</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Case N°1&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+<span class="n">caseACocher2</span> <span class="o">=</span> <span class="n">Checkbutton</span><span class="p">(</span><span class="n">window</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="s2">&quot;Case N°2&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+<span class="o">...</span>
+</code></pre></div>
 <h4 id="champs-de-saisie">Champs de saisie</h4>
 <p>Champs de saisie :</p>
-<pre><code class="language-python">value = StringVar()
-value.set(&quot;Zonne de text&quot;)
-entree = Entry(window, textvariable=value, width=30)
-entree.pack()
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">value</span> <span class="o">=</span> <span class="n">StringVar</span><span class="p">()</span>
+<span class="n">value</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;Zonne de text&quot;</span><span class="p">)</span>
+<span class="n">entree</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">(</span><span class="n">window</span><span class="p">,</span> <span class="n">textvariable</span><span class="o">=</span><span class="n">value</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">entree</span><span class="o">.</span><span class="n">pack</span><span class="p">()</span>
+</code></pre></div>
 <h4 id="barre-de-menu">Barre de menu</h4>
 <p>Menu fichier :</p>
-<pre><code class="language-python">file_menu = Menu(menu_bar, tearoff=0)
-file_menu.add_command(label=&quot;Nouveau&quot;, command=generate_password)
-file_menu.add_command(label=&quot;Quitter&quot;, command=window.quit)
-menu_bar.add_cascade(label=&quot;Fichier&quot;, menu=file_menu)
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">file_menu</span> <span class="o">=</span> <span class="n">Menu</span><span class="p">(</span><span class="n">menu_bar</span><span class="p">,</span> <span class="n">tearoff</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">file_menu</span><span class="o">.</span><span class="n">add_command</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Nouveau&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">generate_password</span><span class="p">)</span>
+<span class="n">file_menu</span><span class="o">.</span><span class="n">add_command</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Quitter&quot;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">window</span><span class="o">.</span><span class="n">quit</span><span class="p">)</span>
+<span class="n">menu_bar</span><span class="o">.</span><span class="n">add_cascade</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fichier&quot;</span><span class="p">,</span> <span class="n">menu</span><span class="o">=</span><span class="n">file_menu</span><span class="p">)</span>
+</code></pre></div>
 
 
 
