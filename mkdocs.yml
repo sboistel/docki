@@ -13,6 +13,12 @@ repo_url: https://github.com/sboistel/docki
 # Copyright
 copyright: Copyright &copy; 2022 sboistel
 
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+
 # Theme
 theme:
   name: material
@@ -114,6 +120,7 @@ nav:
     - tool/ui-path.md
     - tool/vnc-tiger.md
     - tool/vscode.md
+    - tool/pi-hole.md
   - Web & Networking:
     - network/certmanager.md
     - network/mkcert.md
@@ -141,3 +148,4 @@ nav:
   - Miscellaneous:
     - misc/color-codes.md
     - misc/markdown.md
+    - misc/mkdocs.md
