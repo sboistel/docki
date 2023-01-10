@@ -14,6 +14,6 @@ taskkill /F /IM OpenWith.exe /T
 
 Ouvrir une page web avec Google Chrome dans une page détachée: 
 
-```POWERSHELL
+```powershell
 Chrome.exe --app=http://
 ```

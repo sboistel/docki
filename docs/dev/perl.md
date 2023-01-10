@@ -20,7 +20,8 @@ Le type de la variable hashs
 > %
 
 ### Example de hashs :
-```PERL
+
+```perl
 my %liste = (
 Perl => 'Super',
 Python => 'Génial'
@@ -52,7 +53,7 @@ Erreur de syntaxe, avoir un code propre
 
 ## warning
 
-Avertissement d'erreur de syntaxe 
+Avertissement d'erreur de syntaxe
 > use warning;
 
 ## Sucre de syntaxe
@@ -65,6 +66,7 @@ Pour substituer "" :
 > qq/Chaine de carractère/
 
 ### Guillement Simple
+
 Pour substituer '' :
 > q/Chaine de carractère/
 
@@ -77,7 +79,7 @@ Pour substituer une liste (ex : ('Toto', 'Titi', 'Tata')) :
 
 OEF signifiant fin de ligne permet d'englober un parragraphe de données :
 
-```PERL
+```perl
 my $variable = <<OEF;
 ligne 1 de données
 ligne 2 de données
@@ -87,12 +89,11 @@ EOF
 
 ## Vérifications
 
-
 ### Prédica 'if'
 
 Vérification de l'éxistance d'un élèment.
 
-```PERL
+```perl
 use strict
 
 my $langages = (
@@ -119,14 +120,13 @@ print "Haskell n'est pas défini !\n";
 
 ## Rendre son script intératif
 
-
 ### Standard input
 
 Chop retire le dernier carractère
 Chomp retire le dernier carractère seulement si celui-ci est un '\n'
 Noté ``STDIN``, il sert à poser une question à l'utilisateur:
 
-```PERL
+```perl
 use strict
 
 my $langages = (
@@ -151,7 +151,7 @@ if exists $langages{$response} or die "$response n'éxiste pas !\n";
 
 For ou Foreach on la même signification
 
-```PERL
+```perl
 use stric
 
 my $langages = (
@@ -170,7 +170,7 @@ print "Element : $_\n" for (sort keys %langages);
 
 Tant que quoi ?
 
-```PERL
+```perl
 while(<STDIN>) {
 chomp;
 die "Fin." unless $_; # ou 'last unless $_;' pour quitter la boucle
@@ -182,7 +182,7 @@ print "coucou $_";
 
 La fonction case n'éxiste pas mais un bricolage est possible :
 
-```PERL
+```perl
 print "Entrer un nombre entre 1 et 3 : ";
 my $response = <STDIN>;
 
@@ -208,7 +208,6 @@ Ouvrir un fichier avec :
 
 open FILE, '<'
 
-
 ## Librairies
 
 ### REST
@@ -218,4 +217,3 @@ open FILE, '<'
 Comment afficher le token géneré :
 
 > print $authToken->{'authToken'}, "\n";
-

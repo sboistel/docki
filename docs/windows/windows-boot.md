@@ -11,7 +11,7 @@ On sélectionnera ensuite l'installation de Windows dans la liste des choix prop
 
 Au prompt, taper :
 
-```POWERSHELL
+```powershell
 C:\WINDOWS> fixboot
 C:\WINDOWS> fixmbr
 ```
@@ -22,7 +22,7 @@ C'est l'affaire de fdsik.
 La réallocation consiste en un nouveau formatage, sous le format vfat ou ntfs ou autre, selon le choix - si l'on souhaite ré-allouer les partitions au profit de Windows. On pourra ainsi modifier le format de tout ou partie des partitions et notamment les fusionner. fdisk existe dans l'environnement Windows (ou un programme équivalent).
 On redémarrera par la commande :
 
-```POWERSHELL
+```powershell
 C:\WINDOWS> exit
 ```
 

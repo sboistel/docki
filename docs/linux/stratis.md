@@ -65,7 +65,7 @@ Name     Total Physical Size  Total Physical Used
 pool1                  5 GiB               52 MiB
 ```
 
-⚠️ Warning
+!!! warning
     The stratis pool list command is very important because it shows you how much storage space is in use (and therefore how much is still available) in the pools.
     If a pool runs out of storage, further data written to file systems belonging to that pool is quietly lost.
 
