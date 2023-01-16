@@ -2,7 +2,7 @@
 
 A CRON expression is simply a string consisting of six fields that each define a specific unit of time.
 
-![cheat cron preview](ressources/cron-cheat.JPG)
+![cheat cron preview](resources/cron-cheat.JPG)
 
 They are written in the following format:
 
