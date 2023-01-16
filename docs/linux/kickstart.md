@@ -109,7 +109,7 @@ Configure settings related to security, language, and regions.
 timezone --utc --ntpservers=time.example.com Europe/Amsterdam
 ```
 
-* authselect: Sets up authentication options. 
+* authselect: Sets up authentication options.
 
 Options recognized by authselect are valid for this command.
 
@@ -163,7 +163,6 @@ The initial-setup package must be installed.
 * reboot, poweroff, halt: Specify the final action to take when the installation completes.
 
 !!! note "Info"
-    
     The ksverdiff utility from the pykickstart package is useful for identifying changes in Kickstart file syntax between two versions of Red Hat Enterprise Linux or Fedora.
 
 For example, ksverdiff -f RHEL7 -t RHEL8 identifies changes in syntax from RHEL 7 to RHEL 8. Available versions are listed in the top of the file /usr/lib/python3.6/site-packages/pykickstart/version.py.
@@ -260,7 +259,7 @@ Use either of these methods to create a Kickstart file:
 * Use a text editor.
 
 The Kickstart Generator website at https://access.redhat.com/labs/kickstartconfig/ presents dialog boxes for user inputs, and creates a Kickstart directives text file with the user's choices. Each dialog box corresponds to the configurable items in the Anaconda installer.
-![Basic Configuration with Kickstart Generator](kickstart-generator.png)
+![Basic Configuration with Kickstart Generator](resources/kickstart-generator.png)
 
 Creating a Kickstart file from scratch is typically too complex, but editing an existing Kickstart file is common and useful. Every installation creates a _/root/anaconda-ks.cfg_ file containing the Kickstart directives used in the installation.
 
