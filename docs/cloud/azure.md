@@ -35,3 +35,8 @@ Pour connaître l’état actuel de la journalisation d’une application, utili
 ```powershell
 az webapp log show --name <app-name> --resource-group <resource-group-name>
 ```
+
+---
+
+## AZ400
+
