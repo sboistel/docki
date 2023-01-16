@@ -9,7 +9,7 @@ Open regedit as administrator :
 * Create a new sub key as ``Defaulticon`` :
 
 ```powershell
-Ordinateur\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\E   xplorer\DriveIcons\D\Defaulticon
+Ordinateur\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\DriveIcons\D\Defaulticon
 ```
 
 Mod the chaine containned in Defaulticon key with the full path of your ``ico`` file.
