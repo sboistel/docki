@@ -59,7 +59,7 @@ sshpass -f LOCAIONT/FILENAME ssh user@iP
 
 ℹ️ Don't forget you need to accept the remote fingerprint before any sshpass connection
 
-![fingerprint example](ressources/remote-session.png)
+![fingerprint example](resources/remote-session.png)
 
 ## RDP
 
