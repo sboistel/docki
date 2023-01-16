@@ -24,6 +24,16 @@ the default type, and thus fallback for unknown type qualifiers, is `note`[^1]:
     type qualifiers are now all deprecated and will be removed in the next major
     version. This will also be mentioned in the upgrade guide.
 
+#### How to 
+
+Use the type belong `!!!` as :
+
+```note
+!!! note
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
+```
+
 ##### [`note`](note)
 
 !!! note
