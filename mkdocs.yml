@@ -108,6 +108,7 @@ nav:
   - MacOS:
     - mac/cheatsheet.md
     - mac/clipboard-manager.md
+    - mac/dock.md
     - mac/iterm2.md
     - mac/package-manager.md
     - mac/remote-session.md
@@ -166,3 +167,5 @@ nav:
     - misc/color-codes.md
     - misc/markdown.md
     - misc/mkdocs.md
+    - misc/mermaid.md
+    - misc/obsidian.md
