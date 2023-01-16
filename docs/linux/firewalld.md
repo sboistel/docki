@@ -26,7 +26,7 @@ The following table lists a number of frequently used firewall-cmd commands, alo
 
 Note that unless otherwise specified, almost all commands will work on the runtime configuration, unless the **--permanent** option is specified.
 
-If the --permanent option is specified, you **must** activate the setting by also running the `firewall-cmd --reload` command, which reads the current permanent configuration and applies it as the new runtime configuration. 
+If the --permanent option is specified, you **must** activate the setting by also running the `firewall-cmd --reload` command, which reads the current permanent configuration and applies it as the new runtime configuration.
 
 Many of the commands listed take the **--zone=ZONE** option to determine which zone they affect.
 
