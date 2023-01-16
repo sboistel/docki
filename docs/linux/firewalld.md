@@ -56,8 +56,7 @@ The example commands below set the default zone to dmz, assign all traffic comin
 
 ```shell
 [root@host ~]# firewall-cmd --set-default-zone=dmz
-[root@host ~]# firewall-cmd --permanent --zone=internal \
---add-source=192.168.0.0/24
+[root@host ~]# firewall-cmd --permanent --zone=internal --add-source=192.168.0.0/24
 [root@host ~]# firewall-cmd --permanent --zone=internal --add-service=mysql
 [root@host ~]# firewall-cmd --reload
 ```
