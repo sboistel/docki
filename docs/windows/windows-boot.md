@@ -26,6 +26,5 @@ On redémarrera par la commande :
 C:\WINDOWS> exit
 ```
 
-| Restauration Grub |
-|-|
-| Si les partitions Linux n'ont pas été ré-allouées, il est toujours possible de restaurer GRUB (et ainsi le boot sur Fedora ou Windows). |
+!!! abstract "Restauration Grub"
+    Si les partitions Linux n'ont pas été ré-allouées, il est toujours possible de restaurer GRUB (et ainsi le boot sur Fedora ou Windows)
