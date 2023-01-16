@@ -4,7 +4,7 @@
 
 How to rescan storage ?
 
-![demo](ressources/vmware-pasted_image.png)
+![demo](resources/vmware-pasted_image.png)
 
 ## USB Datastore
 
