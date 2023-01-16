@@ -19,7 +19,7 @@ SELinux labels have several contexts:
 
 The targeted policy, which is the default policy enabled in Red Hat Enterprise Linux, bases its rules on the third context: the type context usually named end **with _t**.
 
-![SELinux File Context](ressources/selinux_context.png)
+![SELinux File Context](resources/selinux_context.png)
 
 ## Setting the default SELinux mode
 
