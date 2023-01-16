@@ -12,7 +12,7 @@ The components that make up a Stratis-managed file system are built from standar
 
 The following diagram illustrates how the elements of the Stratis storage management solution are assembled. Block storage devices such as hard disks or SSDs are assigned to pools, each contributing some physical storage to the pool. File systems are created from the pools, and physical storage is mapped to each file system as it is needed.
 
-![Elements of Stratis](ressources/stratis_element-storage-modern.svg)
+![Elements of Stratis](resources/stratis_element-storage-modern.svg)
 
 ## Working with Stratis Storage
 
