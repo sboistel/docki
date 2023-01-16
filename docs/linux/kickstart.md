@@ -30,7 +30,7 @@ vnc --password=redhat
 
 Define the devices and partitioning scheme to be used.
 
-* clearpart: Removes partitions from the system prior to creation of new partitions. 
+* clearpart: Removes partitions from the system prior to creation of new partitions.
 
 By default, no partitions are removed.
 
@@ -152,7 +152,7 @@ Configure miscellaneous items related to logging during the installation and the
     logging --host=loghost.example.com --level=info
 ```
 
-* firstboot: If enabled, the Setup Agent starts the first time the system boots. 
+* firstboot: If enabled, the Setup Agent starts the first time the system boots.
 
 The initial-setup package must be installed.
 
@@ -162,9 +162,9 @@ The initial-setup package must be installed.
 
 * reboot, poweroff, halt: Specify the final action to take when the installation completes.
 
-| Note |
-| - |
-| The ksverdiff utility from the pykickstart package is useful for identifying changes in Kickstart file syntax between two versions of Red Hat Enterprise Linux or Fedora. |
+!!! note "Info"
+    
+    The ksverdiff utility from the pykickstart package is useful for identifying changes in Kickstart file syntax between two versions of Red Hat Enterprise Linux or Fedora.
 
 For example, ksverdiff -f RHEL7 -t RHEL8 identifies changes in syntax from RHEL 7 to RHEL 8. Available versions are listed in the top of the file /usr/lib/python3.6/site-packages/pykickstart/version.py.
 
@@ -260,7 +260,7 @@ Use either of these methods to create a Kickstart file:
 * Use a text editor.
 
 The Kickstart Generator website at https://access.redhat.com/labs/kickstartconfig/ presents dialog boxes for user inputs, and creates a Kickstart directives text file with the user's choices. Each dialog box corresponds to the configurable items in the Anaconda installer.
-![Basic Configuration with Kickstart Generator](ressources/kickstart-generator.png)
+![Basic Configuration with Kickstart Generator](kickstart-generator.png)
 
 Creating a Kickstart file from scratch is typically too complex, but editing an existing Kickstart file is common and useful. Every installation creates a _/root/anaconda-ks.cfg_ file containing the Kickstart directives used in the installation.
 
@@ -307,10 +307,10 @@ Once a Kickstart method is chosen, the installer is told where to locate the Kic
 * inst.ks=`hd:device:/dir/file`
 * inst.ks=`cdrom:device`
 
-![Specifying the Kickstart file location during installation](ressources/kickstart-boot.png)
+![Specifying the Kickstart file location during installation](resources/kickstart-boot.png)
 
 For virtual machine installations using the Virtual Machine Manager or virt-manager, the Kickstart URL can be specified in a box under URL Options. When installing physical machines, boot using installation media and press the Tab key to interrupt the boot process. Add an inst.ks=LOCATION parameter to the installation kernel.
 
 ## Reference
 
-[Red Hat System Administration II](https://rol.redhat.com/rol/app/courses/rh134-8.2/pages/ch12s03)
+* [Red Hat System Administration II](https://rol.redhat.com/rol/app/courses/rh134-8.2/pages/ch12s03)
