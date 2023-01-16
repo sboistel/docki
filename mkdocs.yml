@@ -16,8 +16,13 @@ copyright: Copyright &copy; 2022 sboistel
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
-
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 # Theme
 theme:
@@ -29,9 +34,21 @@ theme:
   style_external_links: true
   
   features:
-    - navigation.tabs
+    # - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tooltips
     - navigation.sections
-    - navigation.expand
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   
   palette:
     # Palette toggle for light mode
