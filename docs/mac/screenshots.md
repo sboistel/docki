@@ -6,7 +6,7 @@ On mac use `⇧+⌘+5` to launch th default tool
 
 Preview:
 
-![Default screenshot](ressources/screenshots-default.png)
+![Default screenshot](resources/screenshots-default.png)
 
 ## Flamshot
 
@@ -18,4 +18,4 @@ brew install flameshot
 
 Preview :
 
-![Flamshot session](ressources/screenshots-flameshot.png)
+![Flamshot session](resources/screenshots-flameshot.png)
