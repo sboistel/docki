@@ -116,6 +116,7 @@ nav:
     - mac/shurtcuts.md
     - mac/vmachines.md
     - mac/windows-tilling.md
+    - mac/keybinds.md
   - DevOPS:
     - dev/perl.md
     - dev/python.md
