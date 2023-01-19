@@ -39,8 +39,8 @@ ansible_password = jdoe
 
 #### WinRM
 
-WinRM is a management protocol used by Windows to remotely communicate with another server. 
-It is a SOAP-based protocol that communicates over HTTP/HTTPS, and is included in all recent Windows operating systems. 
+WinRM is a management protocol used by Windows to remotely communicate with another server.
+It is a SOAP-based protocol that communicates over HTTP/HTTPS, and is included in all recent Windows operating systems.
 Since Windows Server 2012, WinRM has been enabled by default, but in most cases extra configuration is required to use WinRM with Ansible.
 
 ##### Authentification Options
@@ -68,7 +68,7 @@ ansible_winrm_transport: basic
 
 CredSSP authentication is a newer authentication protocol that allows credential delegation. This is achieved by encrypting the username and password after authentication has succeeded and sending that to the server using the CredSSP protocol.
 
-To use CredSSP authentication, the host vars are configured like so
+To use CredSSP authentication, the host vars are configured like :
 
 ```yaml
 ansible_user: Username
@@ -99,12 +99,12 @@ pip install pywinrm[credssp]
 
 ##### TLS 1.2
 
-By default the `requests-credssp` library is configured to authenticate over the TLS 1.2 protocol. 
+By default the `requests-credssp` library is configured to authenticate over the TLS 1.2 protocol.
 TLS 1.2 is **installed** and enabled by **default** for *Windows Server 2012* and *Windows 8* and more recent releases.
 
 ##### Certificate
 
-CredSSP works by encrypting the credentials through the TLS protocol and uses a self-signed certificate by default. 
+CredSSP works by encrypting the credentials through the TLS protocol and uses a self-signed certificate by default.
 The `CertificateThumbprint` option under the WinRM service configuration can be used to specify the thumbprint of another certificate.
 
 ```yaml
@@ -114,7 +114,6 @@ $certificate_thumbprint = "7C8DCBD5427AFEE6560F4AF524E325915F51172C"
 
 # Set the thumbprint value
 Set-Item -Path WSMan:\localhost\Service\CertificateThumbprint -Value $certificate_thumbprint
-
 ```
 
 [[https://docs.ansible.com/ansible/latest/os_guide/windows_winrm.html#id9]]

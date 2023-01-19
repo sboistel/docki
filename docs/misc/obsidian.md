@@ -23,7 +23,7 @@ The following admonition types are currently supported:
 
 ### Parameters
 
-```
+```note
 ```ad- # Admonition type. See below for a list of available types.
 title: # Admonition title.
 collapse: # Create a collapsible admonition.
@@ -33,7 +33,7 @@ color: # Override the color.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.
 ```
 
-#### Example 
+#### Example
 
 Note : (`ad-note`)
 
@@ -44,4 +44,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
 euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
 purus auctor massa, nec semper lorem quam in massa.
 ```
-

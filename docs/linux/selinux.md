@@ -6,16 +6,16 @@ SELinux is a set of security rules that determine which process can access which
 
 Every file, process, directory, and port has a special security label called an SELinux context.
 
-A **context** is a name used by the _SELinux policy_ to determine whether a process can access a file, directory, or port. 
+A **context** is a name used by the _SELinux policy_ to determine whether a process can access a file, directory, or port.
 
 By default, the policy **does not allow any interaction** unless an explicit rule grants access. If there is no allow rule, no access is allowed.
 
-SELinux labels have several contexts: 
+SELinux labels have several contexts:
 
 * user
 * role
 * type
-* sensitivity 
+* sensitivity
 
 The targeted policy, which is the default policy enabled in Red Hat Enterprise Linux, bases its rules on the third context: the type context usually named end **with _t**.
 
@@ -60,12 +60,12 @@ Permissive
 Enforcing
 ```
 
-Alternatively, you can set the SELinux mode at boot time by passing a parameter to the kernel: the kernel argument of enforcing=0 boots the system into permissive mode; a value of enforcing=1 sets enforcing mode. 
+Alternatively, you can set the SELinux mode at boot time by passing a parameter to the kernel: the kernel argument of enforcing=0 boots the system into permissive mode; a value of enforcing=1 sets enforcing mode.
 You can also disable SELinux completely by passing on the kernel parameter selinux=0. A value of selinux=1 enables SELinux.
 
 ## Basic file context operations
 
-To ensure that you have the tools to manage SELinux contexts, install these packages : 
+To ensure that you have the tools to manage SELinux contexts, install these packages :
 
 * policycoreutils
 * policycoreutils-python

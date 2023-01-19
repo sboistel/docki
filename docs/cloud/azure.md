@@ -2,7 +2,7 @@
 
 ## Journalisation à l’aide d’Azure CLI
 
-La version actuelle d’Azure CLI ne vous permet pas de gérer la journalisation des applications dans Stockage Blob. 
+La version actuelle d’Azure CLI ne vous permet pas de gérer la journalisation des applications dans Stockage Blob.
 
 ### Activer
 
@@ -39,4 +39,3 @@ az webapp log show --name <app-name> --resource-group <resource-group-name>
 ---
 
 ## AZ400
-
