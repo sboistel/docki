@@ -172,8 +172,6 @@ Example of more complexe parameters
 	Hi Johnny Doe!
 	```
 
-
-
 ### Returning data
 
 Into your function, it could be clever to add like comment as :
@@ -253,7 +251,6 @@ AKA `venv` , that is better to use venv to allow using multiple versions and avo
 	
 	A virtual environement ne require privileges
 
-
 ### 1. Create python venv (here name `pyvenv`)
 
 ```sh
@@ -268,7 +265,7 @@ source pyvenv/bin/active
 
 ### 3. Download module.s
 
-```sh
+```shell
 mkdir module; cd module
 pip download module_name
 ```
