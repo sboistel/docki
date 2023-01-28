@@ -2,472 +2,472 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sboistel.github.io/docki/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/cloud/aws/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/cloud/azure/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/cloud/cgp/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/cloud/kvm/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/cloud/oci/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/cloud/pve/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/cloud/readme/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/cloud/vmware/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/ansible/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/docker/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/elastik/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/git/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/kubernetes/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/packer/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/perl/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/python/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/terraform/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/vagrant/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/account/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/apps/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/cron/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/desktop/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/disk/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/exit-codes/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/firewalld/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/gawk/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/keymaps/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/kickstart/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/logfile/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/memory/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/network/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/package-manager/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/proc/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/regular-expressions/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/root-rescue/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/sar/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/screen/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/selinux/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/service/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/smtp/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/stratis/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/time/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/vim/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/web/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/where/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/cheatsheet/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/clipboard-manager/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/dock/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/iterm2/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/keybinds/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/package-manager/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/remote-session/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/screenshots/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/shurtcuts/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/vmachines/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/mac/windows-tilling/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/misc/color-codes/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/misc/markdown/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/misc/mermaid/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/misc/mkdocs/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/misc/obsidian/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/monitoring/centreon/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/monitoring/nagios/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/network/certmanager/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/network/http-status/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/network/mkcert/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/network/ngrok/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/network/openvpn/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/network/ssl/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/storage/bareos/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/storage/cloudera/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/storage/db2/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/storage/hadoop/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/storage/mariadb/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/storage/mysql/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/storage/oracle/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/tool/freeipa/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/tool/guacamole/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/tool/netbox/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/tool/pi-hole/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/tool/rhel_idm/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/tool/ui-path/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/tool/vnc-tiger/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/tool/vscode/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/account/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/apps/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/powershell/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/storage/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/terminal/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/vars-env/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/windows-boot/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/windows-system/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/wsl/</loc>
-         <lastmod>2023-01-27</lastmod>
+         <lastmod>2023-01-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
