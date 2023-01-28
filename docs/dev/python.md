@@ -34,14 +34,14 @@ From python.py file:
 from fichier import classe
 ```
 
-## Interpollation
+## Keys
 
 How to use keys from list ?
 
 ```python
-print("Je m'appel %s !" % liste_nom['nom']) 
-print("Je m'appel %(nom)s !" % d)
-print("Je m'appel {0} !".format(d['nom']))
+print("My name is %s !" % liste_nom['name']) 
+print("My name is %(name)s !" % d)
+print("My name is {0} !".format(d['name']))
 ```
 
 ### Check
@@ -50,11 +50,11 @@ Use `try` to verify block
 
 ```python
 try: ## Vérifier ce bloc
-file = open('infos.txt', 'r')
-print(file.read())
+	file = open('infos.txt', 'r')
+	print(file.read())
 except: ## Si erreur se trouve dans try
-print("erreur")
-finally: ## Qui s'éxecutera quoi qu'il arrive des blocs précédents
+	print("erreur")
+	finally: ## Qui s'éxecutera quoi qu'il arrive des blocs précédents
 file.close
 ```
 
@@ -69,17 +69,17 @@ The safest method remains the 'with' option:
 
 ```python
 try: ## Vérifier ce bloc
-with open('infox.txt', 'r') as file: ## Avec le fichier, l'ouvrir en var file
-for line in file.readlines():
-print(int(line.strip()))
+	with open('infox.txt', 'r') as file: ## Avec le fichier, l'ouvrir en var file
+	for line in file.readlines():
+	print(int(line.strip()))
 except IOError as err:
-print("Erreur de fichier", err)
+	print("Erreur de fichier", err)
 except ValueError:
-print("Erreur de conversion")
+	print("Erreur de conversion")
 except:
-print("Erreur inconnue, tous aux abris.")
+	print("Erreur inconnue, tous aux abris.")
 else:
-print("Fichier connue de tous wallah")
+	print("Fichier connue de tous wallah")
 ```
 
 ## Conparators
@@ -590,7 +590,7 @@ for number in range(3): # From 0 included to 3 excluded = 0, 1, 2
 	print(number)
 
 for number in range(1, 3): # From 1 included to 3 excluded = 1, 2
-    print(number)x
+    print(number)
 
 for number in range(1, 10, 2): # From 1 included to 1O excluded steped by 2 = 1, 3, 5, 7, 9
     print(number)
@@ -632,6 +632,75 @@ print('-' * 16)
 for task in todo_index: # From index, get items
     print(task)
 ```
+
+## Dictionaries
+
+the dictionary is a data type that 
+
+- Hold key-value pairs called items.
+- AKA associative arrays, has tables and hases.
+
+
+### Creating
+
+### Items
+
+Dictionary referred to as associative arrays hases or hash tables dictionaries using comma-separated items between curly braces 
+
+!!! example "Syntax"
+
+	```python
+	dictionary_name = {key_1: value_1, key_X: value_X}
+	
+	dictionary_name = {}
+	
+	dictionary_name[key]
+	```
+
+Value from Key
+
+```python
+contacts = {'Jason': '555-0123', 'Carl': '555-0987'}
+jasons_phone = contacts['Jason']
+carls_phone = contacts['Carl']
+
+print('Dial {} to call Jason.'format(jasons_phone))
+print('Dial {} to call Carl.'format(carls_phone))
+```
+
+### Adding
+
+Replace Key value from dictionary
+
+```python
+contacts = {'Jason': '555-0123', 'Carl': '555-0987'}
+contacts['Jason'] = '555-0000'
+jasons_phone = contacts['Jason']
+print('Dial {} to call Jason.'format(jasons_phone))
+```
+
+Add Key from dictionary
+
+```python
+contacts = {'Jason': '555-0123', 'Carl': '555-0987'}
+contacts = ['Tony'] = '555-0570'
+```
+
+#### Removing
+
+Remove key from dictionary using `del`
+
+```python
+contacts = {'Jason': '555-0123', 'Carl': '555-0987'}
+del contacts['Jason']
+```
+
+### Searching
+
+### Nesting
+
+### Looping
+
 
 ## TKinter
 
