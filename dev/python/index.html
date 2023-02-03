@@ -1569,6 +1569,19 @@
     Searching
   </a>
   
+    <nav class="md-nav" aria-label="Searching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#does-it-exist" class="md-nav__link">
+    Does it exist ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1581,6 +1594,13 @@
           <li class="md-nav__item">
   <a href="#looping" class="md-nav__link">
     Looping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -2822,6 +2842,19 @@
     Searching
   </a>
   
+    <nav class="md-nav" aria-label="Searching">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#does-it-exist" class="md-nav__link">
+    Does it exist ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -2834,6 +2867,13 @@
           <li class="md-nav__item">
   <a href="#looping" class="md-nav__link">
     Looping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -3409,14 +3449,14 @@ pip<span class="w"> </span>download<span class="w"> </span>module_name
     <span class="nb">print</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="dictionaries">Dictionaries</h2>
-<p>the dictionary is a data type that </p>
+<p>the dictionary is a data type that</p>
 <ul>
 <li>Hold key-value pairs called items.</li>
 <li>AKA associative arrays, has tables and hases.</li>
 </ul>
 <h3 id="creating">Creating</h3>
 <h3 id="items">Items</h3>
-<p>Dictionary referred to as associative arrays hases or hash tables dictionaries using comma-separated items between curly braces </p>
+<p>Dictionary referred to as associative arrays hases or hash tables dictionaries using comma-separated items between curly braces</p>
 <div class="admonition example">
 <p class="admonition-title">Syntax</p>
 <div class="highlight"><pre><span></span><code><span class="n">dictionary_name</span> <span class="o">=</span> <span class="p">{</span><span class="n">key_1</span><span class="p">:</span> <span class="n">value_1</span><span class="p">,</span> <span class="n">key_X</span><span class="p">:</span> <span class="n">value_X</span><span class="p">}</span>
@@ -3451,8 +3491,127 @@ pip<span class="w"> </span>download<span class="w"> </span>module_name
 <span class="k">del</span> <span class="n">contacts</span><span class="p">[</span><span class="s1">&#39;Jason&#39;</span><span class="p">]</span>
 </code></pre></div>
 <h3 id="searching">Searching</h3>
+<p>To verify if certain key is existing into a dictionary</p>
+<div class="highlight"><pre><span></span><code><span class="n">contacts</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Jason&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;555-0123&#39;</span><span class="p">,</span> <span class="s1">&#39;555-0000&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Carl&#39;</span><span class="p">:</span> <span class="s1">&#39;555-0987&#39;</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="s1">&#39;Jason&#39;</span> <span class="ow">in</span> <span class="n">contacts</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Jason&#39;s phone number is:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">contacts</span><span class="p">[</span><span class="s1">&#39;Jason&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="k">if</span> <span class="s1">&#39;Tony&#39;</span> <span class="ow">in</span> <span class="n">contacts</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tony&#39;s phone number is:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">contacts</span><span class="p">[</span><span class="s1">&#39;Tony&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div>
+<p>Output :</p>
+<div class="highlight"><pre><span></span><code><span class="n">Jason</span><span class="s1">&#39;s phone number is:</span>
+<span class="mi">555</span><span class="o">-</span><span class="mi">0123</span>
+</code></pre></div>
+<h4 id="does-it-exist">Does it exist ?</h4>
+<p>True or false will be returned</p>
+<div class="highlight"><pre><span></span><code><span class="n">contacts</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Jason&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;555-0123&#39;</span><span class="p">,</span> <span class="s1">&#39;555-0000&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Carl&#39;</span><span class="p">:</span> <span class="s1">&#39;555-0987&#39;</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;555-0987&#39;</span> <span class="ow">in</span> <span class="n">contacts</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+</code></pre></div>
+<p>Output :</p>
+<div class="highlight"><pre><span></span><code><span class="kc">True</span>
+</code></pre></div>
 <h3 id="nesting">Nesting</h3>
+<p>Find multiple items attached to a key from list</p>
+<div class="highlight"><pre><span></span><code><span class="n">contacts</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Jason&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;555-0123&#39;</span><span class="p">,</span> <span class="s1">&#39;555-0000&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Carl&#39;</span><span class="p">:</span> <span class="s1">&#39;555-0987&#39;</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">contacts</span><span class="p">[</span><span class="s1">&#39;Jason&#39;</span><span class="p">]:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Phone number: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
+</code></pre></div>
+<p>Output :</p>
+<div class="highlight"><pre><span></span><code><span class="n">Phone</span> <span class="n">number</span><span class="p">:</span> <span class="mi">555</span><span class="o">-</span><span class="mi">0123</span>
+<span class="n">Phone</span> <span class="n">number</span><span class="p">:</span> <span class="mi">555</span><span class="o">-</span><span class="mi">0000</span>
+</code></pre></div>
 <h3 id="looping">Looping</h3>
+<p>There is the syntax :</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">key_variable</span> <span class="ow">in</span> <span class="n">dictionary_name</span><span class="p">:</span>
+    <span class="c1"># code block</span>
+    <span class="c1"># dictionary_name[key_variable]</span>
+
+<span class="k">for</span> <span class="n">contact</span> <span class="ow">in</span> <span class="n">contacts</span><span class="p">:</span>
+    <span class="c1"># code block</span>
+
+<span class="k">for</span> <span class="n">person</span> <span class="ow">in</span> <span class="n">people</span><span class="p">:</span>
+    <span class="c1"># code block</span>
+</code></pre></div>
+<p>Example :</p>
+<div class="highlight"><pre><span></span><code><span class="n">contacts</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Jason&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;555-0123&#39;</span><span class="p">,</span> <span class="s1">&#39;555-0000&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Carl&#39;</span><span class="p">:</span> <span class="s1">&#39;555-0987&#39;</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">contact</span> <span class="ow">in</span> <span class="n">contacts</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The number for </span><span class="si">{0}</span><span class="s1"> is </span><span class="si">{1}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">contact</span><span class="p">,</span> <span class="n">contacts</span><span class="p">[</span><span class="n">contact</span><span class="p">]))</span>
+</code></pre></div>
+<p>Output :</p>
+<div class="highlight"><pre><span></span><code><span class="n">The</span> <span class="n">number</span> <span class="k">for</span> <span class="n">Jason</span> <span class="ow">is</span> <span class="p">[</span><span class="s1">&#39;555-0123&#39;</span><span class="p">,</span> <span class="s1">&#39;555-0000&#39;</span><span class="p">]</span><span class="o">.</span>
+<span class="n">The</span> <span class="n">number</span> <span class="k">for</span> <span class="n">Carl</span> <span class="ow">is</span> <span class="mi">555</span><span class="o">-</span><span class="mf">0987.</span>
+</code></pre></div>
+<p>Equivalent to previous example :</p>
+<div class="highlight"><pre><span></span><code><span class="n">contacts</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Jason&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;555-0123&#39;</span><span class="p">,</span> <span class="s1">&#39;555-0000&#39;</span><span class="p">],</span>
+    <span class="s1">&#39;Carl&#39;</span><span class="p">:</span> <span class="s1">&#39;555-0987&#39;</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">person</span><span class="p">,</span> <span class="n">phone_number</span> <span class="ow">in</span> <span class="n">contacts</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The number for </span><span class="si">{0}</span><span class="s1"> is </span><span class="si">{1}</span><span class="s1">.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">person</span><span class="p">,</span> <span class="n">phone_number</span><span class="p">))</span>
+</code></pre></div>
+<p>Index nested :</p>
+<div class="highlight"><pre><span></span><code><span class="n">contacts</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Jason&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;phone&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;555-0123&#39;</span><span class="p">,</span> <span class="s1">&#39;555-0000&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;email&#39;</span><span class="p">:</span> <span class="s1">&#39;jsaon@example.com&#39;</span>
+    <span class="p">},</span>
+    <span class="s1">&#39;Carl&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;phone&#39;</span><span class="p">:</span> <span class="s1">&#39;555-0987&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;email&#39;</span><span class="p">:</span> <span class="s1">&#39;carl@example.com&#39;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">contact</span> <span class="ow">in</span> <span class="n">contacts</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&#39;s contact info:&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">contact</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">contacts</span><span class="p">[</span><span class="n">contact</span><span class="p">][</span><span class="s1">&#39;phone&#39;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">contacts</span><span class="p">[</span><span class="n">contact</span><span class="p">][</span><span class="s1">&#39;email&#39;</span><span class="p">])</span>
+
+<span class="c1"># or</span>
+
+<span class="k">for</span> <span class="n">person</span> <span class="ow">in</span> <span class="n">contacts</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The </span><span class="si">{0}</span><span class="s2">&#39;s phone number is </span><span class="si">{1}</span><span class="s2">. His mail is </span><span class="si">{2}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">person</span><span class="p">,</span> <span class="n">contacts</span><span class="p">[</span><span class="n">person</span><span class="p">][</span><span class="s1">&#39;phone&#39;</span><span class="p">],</span> <span class="n">contacts</span><span class="p">[</span><span class="n">person</span><span class="p">][</span><span class="s1">&#39;email&#39;</span><span class="p">]))</span>
+</code></pre></div>
+<p>Output :</p>
+<div class="highlight"><pre><span></span><code><span class="n">Jason</span><span class="s1">&#39;s contact info:</span>
+<span class="p">[</span><span class="s1">&#39;555-0123&#39;</span><span class="p">,</span> <span class="s1">&#39;555-0000&#39;</span><span class="p">]</span>
+<span class="n">jsaon</span><span class="nd">@example</span><span class="o">.</span><span class="n">com</span>
+<span class="n">Carl</span><span class="s1">&#39;s contact info:</span>
+<span class="mi">555</span><span class="o">-</span><span class="mi">0987</span>
+<span class="n">carl</span><span class="nd">@example</span><span class="o">.</span><span class="n">com</span>
+
+<span class="c1"># or</span>
+
+<span class="n">The</span> <span class="n">Jason</span><span class="s1">&#39;s phone number is [&#39;</span><span class="mi">555</span><span class="o">-</span><span class="mi">0123</span><span class="s1">&#39;, &#39;</span><span class="mi">555</span><span class="o">-</span><span class="mi">0000</span><span class="s1">&#39;]. His mail is jsaon@example.com</span>
+<span class="n">The</span> <span class="n">Carl</span><span class="s1">&#39;s phone number is 555-0987. His mail is carl@example.com</span>
+</code></pre></div>
+<h3 id="conclusion_1">Conclusion</h3>
+<p>Dictionnaries hold key-value pairs, called items</p>
+<div class="highlight"><pre><span></span><code><span class="n">dictionary_name</span> <span class="o">=</span> <span class="p">{</span><span class="n">key_1</span><span class="p">:</span> <span class="n">value_1</span><span class="p">,</span> <span class="n">key_X</span><span class="p">:</span> <span class="n">value_X</span><span class="p">}</span>
+</code></pre></div>
+<p>Access the values stored in a dictionary by key</p>
+<div class="highlight"><pre><span></span><code><span class="n">dictionary_name</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+</code></pre></div>
+<p>Determine if a value exists use the value in <code>dictionary_name.values()</code>, wtich returns a <strong>boolean</strong>.</p>
+<p>The <code>values()</code> dictionary method returns a list of the values stored in that dictionary.</p>
 <h2 id="tkinter">TKinter</h2>
 <p>TKinter is a library to manage window.s</p>
 <p>Example of code :</p>
@@ -3463,12 +3622,14 @@ pip<span class="w"> </span>download<span class="w"> </span>module_name
 <span class="n">fenetre</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
 </code></pre></div>
 <h3 id="customize-window">Customize window</h3>
-<p>List of elements used to customize a window <code>window = Tk()*</code>
-- window.title("<strong>My application</strong>")
-- window.geometry("720x480")
-- window.minsize(700, 300)
-- window.iconbitmap("image.ico")
-- window.config(background='#CC0000')</p>
+<p>List of elements used to customize a window <code>window = Tk()*</code></p>
+<ul>
+<li>window.title("<strong>My application</strong>")</li>
+<li>window.geometry("720x480")</li>
+<li>window.minsize(700, 300)</li>
+<li>window.iconbitmap("image.ico")</li>
+<li>window.config(background='#CC0000')</li>
+</ul>
 <h3 id="widget">Widget</h3>
 <h4 id="checkboxes">Checkboxes</h4>
 <p>Checkbox list :</p>
