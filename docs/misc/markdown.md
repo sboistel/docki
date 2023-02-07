@@ -1473,4 +1473,5 @@ More information:
 ## Reference
 
 Link: [markdown guide](https://www.markdownguide.org/cheat-sheet)
+
 Rules: [markownlint github](https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md)
