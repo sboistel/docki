@@ -466,7 +466,9 @@ effect - you can't insert a br element with just a single trailing space, so
 if you set br_spaces to 1, the exception will be disabled, just as if it was
 set to the default of 0.
 
-### MD010 - Hard tabs
+### MD010
+
+Hard tabs
 
 Tags: whitespace, hard_tab
 
@@ -497,7 +499,9 @@ Some text
 You have the option to exclude this rule for code blocks. To do this, set the
 `ignore_code_blocks` parameter to true.
 
-### MD011 - Reversed link syntax
+### MD011
+
+Reversed link syntax
 
 Tags: links
 
@@ -517,7 +521,9 @@ To fix this, swap the `[]` and `()` around:
 [Correct link syntax](http://www.example.com/)
 ```
 
-### MD012 - Multiple consecutive blank lines
+### MD012
+
+Multiple consecutive blank lines
 
 Tags: whitespace, blank_lines
 
@@ -544,7 +550,9 @@ Some more text here
 Note: this rule will not be triggered if there are multiple consecutive blank
 lines inside code blocks.
 
-### MD013 - Line length
+### MD013
+
+Line length
 
 Tags: line_length
 
@@ -572,7 +580,9 @@ Code blocks are included in this rule by default since it is often a
 requirement for document readability, and tentatively compatible with code
 rules. Still, some languages do not lend themselves to short lines.
 
-### MD014 - Dollar signs used before commands without showing output
+### MD014
+
+Dollar signs used before commands without showing output
 
 Tags: code
 
@@ -613,7 +623,9 @@ are omitted when they are not needed. See
 <https://cirosantilli.com/markdown-style-guide#dollar-signs-in-shell-code>
 for more information.
 
-### MD018 - No space after hash on atx style header
+### MD018
+
+No space after hash on atx style header
 
 Tags: headers, atx, spaces
 
@@ -637,7 +649,9 @@ space:
 ### Header 2
 ```
 
-### MD019 - Multiple spaces after hash on atx style header
+### MD019
+
+Multiple spaces after hash on atx style header
 
 Tags: headers, atx, spaces
 
@@ -661,7 +675,9 @@ space:
 ### Header 2
 ```
 
-### MD020 - No space inside hashes on closed atx style header
+### MD020
+
+No space inside hashes on closed atx style header
 
 Tags: headers, atx_closed, spaces
 
@@ -687,7 +703,9 @@ space:
 
 Note: this rule will fire if either side of the header is missing spaces.
 
-### MD021 - Multiple spaces inside hashes on closed atx style header
+### MD021
+
+Multiple spaces inside hashes on closed atx style header
 
 Tags: headers, atx_closed, spaces
 
@@ -714,7 +732,9 @@ space:
 Note: this rule will fire if either side of the header contains multiple
 spaces.
 
-### MD022 - Headers should be surrounded by blank lines
+### MD022
+
+Headers should be surrounded by blank lines
 
 Tags: headers, blank_lines
 
@@ -748,7 +768,9 @@ Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will
 not parse headers that don't have a blank line before, and will parse them as
 regular text.
 
-### MD023 - Headers must start at the beginning of the line
+### MD023
+
+Headers must start at the beginning of the line
 
 Tags: headers, spaces
 
@@ -773,7 +795,9 @@ Some text
 Rationale: Headers that don't start at the beginning of the line will not be
 parsed as headers, and will instead appear as regular text.
 
-### MD024 - Multiple headers with the same content
+### MD024
+
+Multiple headers with the same content
 
 Tags: headers
 
@@ -819,7 +843,9 @@ under different nesting is allowed, like it usually happens in change logs:
 #### Bug fixes
 ```
 
-### MD025 - Multiple top level headers in the same document
+### MD025
+
+Multiple top level headers in the same document
 
 Tags: headers
 
@@ -857,7 +883,9 @@ should be contained within this header.
 Note: The `level` parameter can be used to change the top level (ex: to h2) in
 cases where an h1 is added externally.
 
-### MD026 - Trailing punctuation in header
+### MD026
+
+Trailing punctuation in header
 
 Tags: headers
 
@@ -883,7 +911,9 @@ as punctuation at the end of the header. For example, you can set it to
 `'.,;:!'` to allow headers with question marks in them, such as might be used
 in an FAQ.
 
-### MD027 - Multiple spaces after blockquote symbol
+### MD027
+
+Multiple spaces after blockquote symbol
 
 Tags: blockquote, whitespace, indentation
 
@@ -904,7 +934,9 @@ To fix, remove any extraneous space:
 > indentation.
 ```
 
-### MD028 - Blank line inside blockquote
+### MD028
+
+Blank line inside blockquote
 
 Tags: blockquote, whitespace
 
@@ -945,7 +977,9 @@ Rationale: Some markdown parsers will treat two blockquotes separated by one
 or more blank lines as the same blockquote, while others will treat them as
 separate blockquotes.
 
-### MD029 - Ordered list item prefix
+### MD029
+
+Ordered list item prefix
 
 Tags: ol
 
@@ -973,7 +1007,9 @@ Example valid list if the style is configured as 'ordered':
 3. Done.
 ```
 
-### MD030 - Spaces after list markers
+### MD030
+
+Spaces after list markers
 
 Tags: ol, ul, whitespace
 
@@ -1042,7 +1078,9 @@ or
 To fix this, ensure the correct number of spaces are used after list marker
 for your selected document style.
 
-### MD031 - Fenced code blocks should be surrounded by blank lines
+### MD031
+
+Fenced code blocks should be surrounded by blank lines
 
 Tags: code, blank_lines
 
@@ -1079,7 +1117,9 @@ and after (except where the block is at the beginning or end of the document):
 Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will
 not parse fenced code blocks that don't have blank lines before and after them.
 
-### MD032 - Lists should be surrounded by blank lines
+### MD032
+
+Lists should be surrounded by blank lines
 
 Tags: bullet, ul, ol, blank_lines
 
@@ -1127,7 +1167,9 @@ not okay
   okay
 ```
 
-### MD033 - Inline HTML
+### MD033
+
+Inline HTML
 
 Tags: html
 
@@ -1149,7 +1191,9 @@ Rationale: Raw HTML is allowed in markdown, but this rule is included for
 those who want their documents to only include "pure" markdown, or for those
 who are rendering markdown documents in something other than HTML.
 
-### MD034 - Bare URL used
+### MD034
+
+Bare URL used
 
 Tags: links, url
 
@@ -1179,7 +1223,9 @@ converted:
 `http://www.example.com`
 ```
 
-### MD035 - Horizontal rule style
+### MD035
+
+Horizontal rule style
 
 Tags: hr
 
@@ -1219,7 +1265,9 @@ want to configure the rule to match a specific style, the parameter given to
 the 'style' option is a string containing the exact horizontal rule text that
 is allowed.
 
-### MD036 - Emphasis used instead of a header
+### MD036
+
+Emphasis used instead of a header
 
 Tags: headers, emphasis
 
@@ -1259,7 +1307,9 @@ multi-line emphasized paragraphs, and paragraphs ending in punctuation.
 Similarly to rule MD026, you can configure what characters are recognized as
 punctuation.
 
-### MD037 - Spaces inside emphasis markers
+### MD037
+
+Spaces inside emphasis markers
 
 Tags: whitespace, emphasis
 
@@ -1295,7 +1345,9 @@ aren't completely surrounded by spaces. This rule attempts to detect where
 they were surrounded by spaces, but it appears that emphasized text was
 intended by the author.
 
-### MD038 - Spaces inside code span elements
+### MD038
+
+Spaces inside code span elements
 
 Tags: whitespace, code
 
@@ -1318,7 +1370,9 @@ To fix this, remove the spaces inside the codespan markers:
 `some text`
 ```
 
-### MD039 - Spaces inside link text
+### MD039
+
+Spaces inside link text
 
 Tags: whitespace, links
 
@@ -1336,7 +1390,9 @@ To fix this, remove the spaces surrounding the link text:
 [a link](http://www.example.com/)
 ```
 
-### MD040 - Fenced code blocks should have a language specified
+### MD040
+
+Fenced code blocks should have a language specified
 
 Tags: code, language
 
@@ -1359,7 +1415,9 @@ To fix this, add a language specifier to the code block:
 
 If no specific language is used, you can specify `text` as language.
 
-### MD041 - First line in file should be a top level header
+### MD041
+
+First line in file should be a top level header
 
 Tags: headers
 
@@ -1385,7 +1443,9 @@ This is a file with a top level header
 Note: The `level` parameter can be used to change the top level (ex: to h2) in
 cases where an h1 is added externally.
 
-### MD046 - Code block style
+### MD046
+
+Code block style
 
 Tags: code
 
@@ -1415,7 +1475,9 @@ To fix this, used fenced code blocks:
 
 The reverse is true if the rule is configured to use the `indented` style.
 
-### MD047 - File should end with a single newline character
+### MD047
+
+File should end with a single newline character
 
 Tags: blank_lines
 
