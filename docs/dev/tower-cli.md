@@ -64,6 +64,7 @@ or modify the configuration file.
 List **Hosts** by inventoriy
 
 -i : inventory name
+
 -a : all (pages)
 
 ```python
