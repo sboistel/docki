@@ -120,6 +120,7 @@ nav:
     - dev/perl.md
     - dev/python.md
     - dev/ansible.md
+    - dev/tower-cli.md
     - dev/docker.md
     - dev/elastik.md
     - dev/terraform.md
