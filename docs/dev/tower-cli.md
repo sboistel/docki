@@ -15,7 +15,7 @@ Clone it and make the installation
 ```shell
 git clone https://github.com/ansible/tower-cli.git
 make install
-````
+```
 
 ### Python Venv
 
