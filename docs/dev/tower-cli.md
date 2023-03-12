@@ -61,7 +61,7 @@ or modify the configuration file.
 
 ### Inventories
 
-List **Hosts** by inventoriy
+List **Hosts** by inventory
 
 -i : inventory name
 
