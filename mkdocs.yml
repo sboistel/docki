@@ -147,6 +147,7 @@ nav:
     - network/http-status.md
     - network/openvpn.md
     - network/ngrok.md
+    - network/pi-hole.md
   - Cloud & Hypervisor:
     - cloud/readme.md
     - cloud/aws.md
