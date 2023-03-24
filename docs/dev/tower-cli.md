@@ -1,4 +1,4 @@
-# Ansible Tower-CLI
+# Tower-CLI
 
 Tower-cli is a command line tool for Ansible Tower. It allows Tower commands to be easily run from the UNIX command line. It can also be used as a client library for other python apps, or as a reference for others developing API interactions with Tower’s REST API.
 
