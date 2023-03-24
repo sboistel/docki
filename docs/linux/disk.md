@@ -45,7 +45,7 @@ dd if=/dev/urandom of=tempfile bs=1M count=1024
 ### Extend partition
 
 ```bash
-fdisk [/dev/sdX](file:///home/sboistel/Documents/Cliford/Zbook/dev/sdX)
+fdisk dev/sdX
 ```
 
 ```bash
@@ -58,8 +58,16 @@ pvresize /dev/sdX2
 
 ### Make FS
 
+#### XFS
+
 ```bash
 mkfs.xfs -d su=64k,sw=4 /dev/mapper/
+```
+
+#### EXT4
+
+```bash
+mkfs.ext4 -L Label /dev/block_device
 ```
 
 ### Scan Disk
@@ -112,4 +120,10 @@ To test if the swap logical volume was successfully reduced, inspect active swap
 
 ```bash
 cat /proc/swaps
+```
+
+## Label Block Device
+
+```bash
+e4label <block_device> new-label
 ```
