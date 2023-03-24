@@ -14,7 +14,7 @@ Before going any further, make sure your system meets all the [requirements](/in
 
 ```bash
 wget https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.gz
-  ```
+```
 
 2. Extract the package to the final destination of your choice
 
