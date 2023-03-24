@@ -1,6 +1,4 @@
-# fstab
-
-Filesystem table AKA fstab
+# Filesystem table AKA fstab
 
 It is a set of rules used to control how different filesystems are treated each time they are introduced to a system.
 
