@@ -865,6 +865,8 @@ Determine if a value exists use the value in `dictionary_name.values()`, wtich r
 
 The `values()` dictionary method returns a list of the values stored in that dictionary.
 
+---
+
 ## TKinter
 
 TKinter is a library to manage window.s
