@@ -75,7 +75,9 @@ nav:
     - linux/disk.md
     - linux/exit-codes.md
     - linux/firewalld.md
+    - linux/fstab.md
     - linux/gawk.md
+    - linux/getops.md
     - linux/keymaps.md
     - linux/kickstart.md
     - linux/logfile.md
@@ -94,9 +96,12 @@ nav:
     - linux/time.md
     - linux/vim.md
     - linux/web.md
+    - Certification: 
+      - linux/rhel-sysadmin-II.md
   - Windows:
     - windows/account.md
     - windows/apps.md
+    - windows/kms.md
     - windows/powershell.md
     - windows/storage.md
     - windows/terminal.md
@@ -117,29 +122,32 @@ nav:
     - mac/windows-tilling.md
     - mac/keybinds.md
   - DevOPS:
-    - dev/perl.md
-    - dev/python.md
     - dev/ansible.md
-    - dev/tower-cli.md
     - dev/docker.md
     - dev/elastik.md
-    - dev/terraform.md
-    - dev/kubernetes.md
     - dev/git.md
+    - dev/kubernetes.md
+    - dev/multipass.md
     - dev/packer.md
+    - dev/perl.md
+    - dev/python.md
+    - dev/terraform.md
+    - dev/tower-cli.md
     - dev/vagrant.md
   - Monitoring:
     - monitoring/centreon.md
     - monitoring/nagios.md
   - Tools:
-    - tool/netbox.md
-    - tool/rhel_idm.md
     - tool/freeipa.md
     - tool/guacamole.md
+    - tool/netbox.md
+    - tool/pi-hole.md
+    - tool/rhel_idm.md
+    - tool/sshs.md
     - tool/ui-path.md
     - tool/vnc-tiger.md
     - tool/vscode.md
-    - tool/pi-hole.md
+    - tool/wikijs.md
   - Web & Networking:
     - network/certmanager.md
     - network/mkcert.md
@@ -151,12 +159,15 @@ nav:
   - Cloud & Hypervisor:
     - cloud/readme.md
     - cloud/aws.md
+    - cloud/awx.md
     - cloud/azure.md
     - cloud/cgp.md
     - cloud/oci.md
     - cloud/vmware.md
     - cloud/pve.md
     - cloud/kvm.md
+    - Certification:
+      - cloud/az-104.md
   - Storage & BDD:
     - storage/bareos.md
     - storage/cloudera.md
