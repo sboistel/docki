@@ -70,3 +70,19 @@ List **Hosts** by inventory
 ```python
 tower-cli host list -i inventoriy_name -a
 ```
+
+## Team
+
+Associate user to team :
+
+```python
+tower-cli team associate --user user_name --team team_name
+```
+
+## Group
+
+Associate user to group :
+
+```python
+tower-cli group associate --user user_name --group group_name
+```
