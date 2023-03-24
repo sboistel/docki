@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/cloud/az-104/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/cloud/azure/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
@@ -72,6 +77,11 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/kubernetes/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/multipass/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -151,6 +161,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/linux/getops/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/linux/keymaps/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
@@ -187,6 +202,11 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/linux/regular-expressions/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/linux/rhel-sysadmin-II/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -452,6 +472,11 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/apps/</loc>
+         <lastmod>2023-03-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/kms/</loc>
          <lastmod>2023-03-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

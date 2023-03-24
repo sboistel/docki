@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://sboistel.github.io/docki/windows/powershell/">
       
       
-        <link rel="prev" href="../apps/">
+        <link rel="prev" href="../kms/">
       
       
         <link rel="next" href="../storage/">
@@ -25,7 +25,7 @@
     
     
       
-        <title>PowerShell - Dockimentation</title>
+        <title>Powershell - Dockimentation</title>
       
     
     
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PowerShell
+              Powershell
             
           </span>
         </div>
@@ -263,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../dev/perl/" class="md-tabs__link">
+      <a href="../../dev/ansible/" class="md-tabs__link">
         DevOPS
       </a>
     </li>
@@ -569,6 +569,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../linux/getops/" class="md-nav__link">
+        Getops
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../linux/keymaps/" class="md-nav__link">
         Keymap
       </a>
@@ -815,6 +829,55 @@
 
             
           
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1_29" type="checkbox" id="__nav_1_29" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_29">
+          Certification
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Certification" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_29">
+          <span class="md-nav__icon md-icon"></span>
+          Certification
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../linux/rhel-sysadmin-II/" class="md-nav__link">
+        Red Hat System Administration II
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -883,6 +946,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../kms/" class="md-nav__link">
+        Key Management Services (KMS)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -895,12 +972,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          PowerShell
+          Powershell
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        PowerShell
+        Powershell
       </a>
       
         
@@ -919,6 +996,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-is-a-powershell-script" class="md-nav__link">
+    What is a PowerShell script?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-windows-update" class="md-nav__link">
     Install Windows Update
   </a>
@@ -929,6 +1013,40 @@
   <a href="#list-all-commands" class="md-nav__link">
     List all Commands
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#powershell-techniques" class="md-nav__link">
+    PowerShell techniques
+  </a>
+  
+    <nav class="md-nav" aria-label="PowerShell techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    Loops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1253,50 +1371,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/perl/" class="md-nav__link">
-        Perl
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../dev/python/" class="md-nav__link">
-        Python
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../dev/ansible/" class="md-nav__link">
         Ansible Engine
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../dev/tower-cli/" class="md-nav__link">
-        Ansible Tower-CLI
       </a>
     </li>
   
@@ -1337,8 +1413,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/terraform/" class="md-nav__link">
-        Terraform
+      <a href="../../dev/git/" class="md-nav__link">
+        Git
       </a>
     </li>
   
@@ -1365,8 +1441,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../dev/git/" class="md-nav__link">
-        Git
+      <a href="../../dev/multipass/" class="md-nav__link">
+        Multipass
       </a>
     </li>
   
@@ -1381,6 +1457,62 @@
     <li class="md-nav__item">
       <a href="../../dev/packer/" class="md-nav__link">
         Packer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/perl/" class="md-nav__link">
+        Perl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/python/" class="md-nav__link">
+        Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/terraform/" class="md-nav__link">
+        Terraform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/tower-cli/" class="md-nav__link">
+        Ansible Tower-CLI
       </a>
     </li>
   
@@ -1915,6 +2047,55 @@
 
             
           
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_8_10" type="checkbox" id="__nav_8_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_8_10">
+          Certification
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Certification" data-md-level="2">
+        <label class="md-nav__title" for="__nav_8_10">
+          <span class="md-nav__icon md-icon"></span>
+          Certification
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cloud/az-104/" class="md-nav__link">
+        Microsoft Azure Administrator
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -2184,6 +2365,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#what-is-a-powershell-script" class="md-nav__link">
+    What is a PowerShell script?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#install-windows-update" class="md-nav__link">
     Install Windows Update
   </a>
@@ -2194,6 +2382,40 @@
   <a href="#list-all-commands" class="md-nav__link">
     List all Commands
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#powershell-techniques" class="md-nav__link">
+    PowerShell techniques
+  </a>
+  
+    <nav class="md-nav" aria-label="PowerShell techniques">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loops" class="md-nav__link">
+    Loops
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2221,7 +2443,28 @@
 
 
 
-<h1 id="powershell">PowerShell</h1>
+<h1 id="powershell">Powershell</h1>
+<p>Complex or repetitive tasks often take a great deal of administrative time. Organizations prefer to automate these tasks to reduce costs and avoid errors.</p>
+<p>Automation is important in the Customer Relationship Management (CRM) company example. There, you're testing your software on multiple Linux Virtual Machines (VMs) that you need to continuously delete and recreate. You want to use a PowerShell script to automate the creation of the VMs versus creating them manually each time.</p>
+<p>Beyond the core operation of creating a VM, you have a few more requirements for your script:</p>
+<ul>
+<li>You'll create multiple VMs, so you want to put the creation inside a loop</li>
+<li>You need to create VMs in three different resource groups, so the name of the resource group should be passed to the script as a parameter</li>
+</ul>
+<p>In this section, you'll see how to write and execute an Azure PowerShell script that meets these requirements.</p>
+<h2 id="what-is-a-powershell-script">What is a PowerShell script?</h2>
+<p>A PowerShell script is a text file containing commands and control constructs. The commands are invocations of cmdlets. The control constructs are programming features like loops, variables, parameters, comments, etc., supplied by PowerShell.</p>
+<p>PowerShell script files have a <code>.ps1</code> file extension. You can create and save these files with any text editor.</p>
+<p>Tip</p>
+<p>If you’re writing PowerShell scripts under Windows, you can use the Windows PowerShell Integrated Scripting Environment (ISE). This editor provides features such as syntax coloring and a list of available cmdlets.</p>
+<p>The following screenshot shows the Windows PowerShell Integrated Scripting Environment (ISE) with a sample script to connect to Azure and create a virtual machine in Azure.</p>
+<blockquote>
+<p><img alt="Screenshot of the Windows PowerShell Integrated Scripting Environment with a script to create a virtual machine open in the editing window." src="https://learn.microsoft.com/en-us/training/modules/automate-azure-tasks-with-powershell/media/7-windows-powershell-ise-screenshot.png" /></p>
+</blockquote>
+<p>Once you've written the script, execute it from the PowerShell command line by passing the name of the file preceded by a dot and a backslash:</p>
+<p>PowerShell</p>
+<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">myScript</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
 <h2 id="install-windows-update">Install Windows Update</h2>
 <div class="highlight"><pre><span></span><code><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">PSWindowsUpdate</span>
 </code></pre></div>
@@ -2230,6 +2473,65 @@
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="nb">Get-WUInstall</span>
 </code></pre></div>
+<h2 id="powershell-techniques">PowerShell techniques</h2>
+<p>PowerShell has many features found in typical programming languages.
+You can define variables, use branches and loops, capture command-line parameters, write functions, add comments, and so on.</p>
+<p>We'll need three features for our script :</p>
+<ul>
+<li>variables</li>
+<li>loops</li>
+<li>parameters</li>
+</ul>
+<h3 id="variables">Variables</h3>
+<p>In the last unit, you saw that PowerShell supports variables. Use $ to declare a variable and = to assign a value.</p>
+<p>For example :</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$loc</span> <span class="p">=</span> <span class="s2">&quot;East US&quot;</span>
+<span class="nv">$iterations</span> <span class="p">=</span> <span class="n">3</span>
+</code></pre></div>
+<p>Variables can hold objects. For example, the following definition sets the adminCredential variable to the object returned by the Get-Credential cmdlet.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$adminCredential</span> <span class="p">=</span> <span class="nb">Get-Credential</span>
+</code></pre></div>
+<p>To obtain the value stored in a variable, use the $ prefix and its name, as in the following :</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$loc</span> <span class="p">=</span> <span class="s2">&quot;East US&quot;</span>
+<span class="nv">$iterations</span> <span class="p">=</span> <span class="n">3</span>
+</code></pre></div>
+<p>Variables can hold objects. For example, the following definition sets the <strong>adminCredential</strong> variable to the object returned by the <strong>Get-Credential</strong> cmdlet.</p>
+<p>PowerShell</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$adminCredential</span> <span class="p">=</span> <span class="nb">Get-Credential</span>
+</code></pre></div>
+<p>To obtain the value stored in a variable, use the <code>$</code> prefix and its name, as in the following:</p>
+<p>PowerShell</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$loc</span> <span class="p">=</span> <span class="s2">&quot;East US&quot;</span>
+<span class="nb">New-AzResourceGroup</span> <span class="n">-Name</span> <span class="s2">&quot;MyResourceGroup&quot;</span> <span class="n">-Location</span> <span class="nv">$loc</span>
+</code></pre></div>
+<h3 id="loops">Loops</h3>
+<p>PowerShell has several loop structures, including <code>For</code>, <code>Do...While</code>, and <code>For...Each</code>. The <code>For</code> loop is the best match for our needs because we'll execute a cmdlet a fixed number of times.</p>
+<p>The following example shows the core syntax. The example runs for two iterations and prints the value of <strong>i</strong> each time. The comparison operators are written <code>-lt</code> for "less than", <code>-le</code> for "less than or equal", <code>-eq</code> for "equal", <code>-ne</code> for "not equal", etc.</p>
+<p>PowerShell</p>
+<div class="highlight"><pre><span></span><code><span class="k">For</span> <span class="p">(</span><span class="nv">$i</span> <span class="p">=</span> <span class="n">1</span><span class="p">;</span> <span class="nv">$i</span> <span class="o">-lt</span> <span class="n">3</span><span class="p">;</span> <span class="nv">$i</span><span class="p">++)</span>
+<span class="p">{</span>
+    <span class="nv">$i</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="parameters">Parameters</h3>
+<p>When you execute a script, you can pass arguments on the command line. You can provide names for each parameter to help the script extract the values. For example:</p>
+<p>PowerShell</p>
+<div class="highlight"><pre><span></span><code><span class="p">.\</span><span class="n">setupEnvironment</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-size</span> <span class="n">5</span> <span class="n">-location</span> <span class="s2">&quot;East US&quot;</span>
+</code></pre></div>
+<p>Inside the script, you'll capture the values into variables. In this example, the parameters are matched by name:</p>
+<p>PowerShell</p>
+<div class="highlight"><pre><span></span><code><span class="k">param</span><span class="p">(</span><span class="no">[string]</span><span class="nv">$location</span><span class="p">,</span> <span class="no">[int]</span><span class="nv">$size</span><span class="p">)</span>
+</code></pre></div>
+<p>You can omit the names from the command line. For example:</p>
+<p>PowerShell</p>
+<div class="highlight"><pre><span></span><code>.\setupEnvironment.ps1 5 &quot;East US&quot;
+</code></pre></div>
+<p>Inside the script, you'll rely on position for matching when the parameters are unnamed:</p>
+<p>PowerShell</p>
+<div class="highlight"><pre><span></span><code>param([int]$size, [string]$location)
+</code></pre></div>
+<p>We could take these parameters as input and use a loop to create a set of VMs from the given parameters. We'll try that next.</p>
+<p>The combination of PowerShell and Azure PowerShell gives you all the tools you need to automate Azure. In our CRM example, we'll be able to create multiple Linux VMs using a parameter to keep the script generic and a loop to avoid repeated code. This script allows us to execute a formerly complex operation in a single step.</p>
 
 
 
