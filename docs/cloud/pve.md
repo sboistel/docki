@@ -78,7 +78,10 @@ update-initramfs -u -k all
 ```bash
 # not for production use
 deb http://download.proxmox.com/debian buster pve-no-subscription
+```
 
-/etc/apt/sources.list.d/pve-enterprise.list
+> /etc/apt/sources.list.d/pve-enterprise.list
+
+```bash
 # deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise
 ```
