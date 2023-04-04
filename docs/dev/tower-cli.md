@@ -86,3 +86,11 @@ Associate user to group :
 ```python
 tower-cli group associate --user user_name --group group_name
 ```
+
+## Host
+
+Associate host to group :
+
+```python
+tower-cli host associate --host host_name --group group_name
+```
