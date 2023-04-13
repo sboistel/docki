@@ -1313,6 +1313,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dev/ds_store.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../dev/elastik/" class="md-nav__link">
         Elasticsearch / Logstash / Kibana
       </a>
@@ -2466,10 +2480,10 @@ Fill<span class="w"> </span>wich<span class="w"> </span><span class="nb">type</s
 <span class="k">select</span><span class="w"> </span>typ<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">types</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">;</span><span class="w"> </span><span class="k">do</span>
 <span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$typ</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">in</span>
 <span class="w">                </span><span class="s2">&quot;client&quot;</span><span class="o">)</span>
-<span class="w">                         </span><span class="nv">ctype</span><span class="o">=</span><span class="s2">&quot;client&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">break</span>
+<span class="w">                         </span><span class="nv">ctype</span><span class="o">=</span><span class="s2">&quot;client&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="k">break</span>
 <span class="w">                         </span><span class="p">;;</span>
 <span class="w">                 </span><span class="s2">&quot;operator&quot;</span><span class="o">)</span>
-<span class="w">                         </span><span class="nv">ctype</span><span class="o">=</span><span class="s2">&quot;operator&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">break</span>
+<span class="w">                         </span><span class="nv">ctype</span><span class="o">=</span><span class="s2">&quot;operator&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="k">break</span>
 <span class="w">                         </span><span class="p">;;</span>
 <span class="w">                 </span>*<span class="o">)</span>
 <span class="w">                         </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Wrong choice, please select the number of the type you want.&quot;</span>
