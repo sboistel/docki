@@ -125,7 +125,6 @@ nav:
   - DevOPS:
     - dev/ansible.md
     - dev/docker.md
-    - dev/ds_store.md
     - dev/elastik.md
     - dev/git.md
     - dev/kubernetes.md
