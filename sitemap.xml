@@ -101,6 +101,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/dev/readme/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/dev/terraform/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
@@ -201,6 +206,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/linux/readme/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/linux/regular-expressions/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
@@ -296,6 +306,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/mac/readme/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/mac/remote-session/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
@@ -356,6 +371,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/monitoring/readme/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/network/certmanager/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
@@ -382,6 +402,11 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/network/pi-hole/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/network/readme/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -446,6 +471,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/tool/readme/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/tool/rhel_idm/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
@@ -492,6 +522,11 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/windows/powershell/</loc>
+         <lastmod>2023-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/windows/readme/</loc>
          <lastmod>2023-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
