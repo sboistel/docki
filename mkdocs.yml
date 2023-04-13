@@ -67,7 +67,8 @@ theme:
 
 # Page tree
 nav:
-  - Linux: 
+  - Linux:
+    - linux/readme.md
     - linux/account.md
     - linux/apps.md
     - linux/cron.md
@@ -99,6 +100,7 @@ nav:
     - Certification: 
       - linux/rhel-sysadmin-II.md
   - Windows:
+    - windows/readme.md
     - windows/account.md
     - windows/apps.md
     - windows/kms.md
@@ -110,6 +112,7 @@ nav:
     - windows/windows-system.md
     - windows/wsl.md
   - MacOS:
+    - mac/readme.md
     - mac/cheatsheet.md
     - mac/clipboard-manager.md
     - mac/dock.md
@@ -123,6 +126,7 @@ nav:
     - mac/windows-tilling.md
     - mac/keybinds.md
   - DevOPS:
+    - dev/readme.md
     - dev/ansible.md
     - dev/docker.md
     - dev/elastik.md
@@ -136,9 +140,11 @@ nav:
     - dev/tower-cli.md
     - dev/vagrant.md
   - Monitoring:
+    - monitoring/readme.md
     - monitoring/centreon.md
     - monitoring/nagios.md
   - Tools:
+    - tool/readme.md
     - tool/freeipa.md
     - tool/guacamole.md
     - tool/netbox.md
@@ -150,6 +156,7 @@ nav:
     - tool/vscode.md
     - tool/wikijs.md
   - Web & Networking:
+    - network/readme.md
     - network/certmanager.md
     - network/mkcert.md
     - network/ssl.md
