@@ -156,7 +156,7 @@ nav:
     - dev/tower-cli.md
     - dev/vagrant.md
   - Monitoring:
-    - monitoring/readme.md
+    - README: monitoring/readme.md
     - monitoring/centreon.md
     - monitoring/nagios.md
   - Tools:
