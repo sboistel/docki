@@ -76,6 +76,8 @@ terraform apply
 terraform graph | dot -Tsvg > graph.svg
 ```
 
+Example :
+
 ```dot
 digraph {
     compound = "true"
