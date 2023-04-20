@@ -151,6 +151,9 @@ nav:
     - dev/multipass.md
     - dev/packer.md
     - dev/perl.md
+    - dev/terraform.md
+    - dev/tower-cli.md
+    - dev/vagrant.md
     - Python: 
       - dev/python.md
       - dev/python/args-and-kwargs.md
@@ -176,9 +179,6 @@ nav:
       - dev/python/setup-py.md
       - dev/python/string-formatting.md
       - dev/python/virtual-environments.md
-      - dev/terraform.md
-    - dev/tower-cli.md
-    - dev/vagrant.md
   - Monitoring:
     - README: monitoring/readme.md
     - monitoring/centreon.md
