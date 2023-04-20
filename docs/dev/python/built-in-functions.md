@@ -1,5 +1,5 @@
 ---
-title: Python built-in functions - Python Cheatsheet
+title: Python built-in functions
 description: The Python interpreter has a number of functions and types built into it that are always available.
 ---
 

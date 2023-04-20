@@ -1,5 +1,5 @@
 ---
-title: Python Functions - Python Cheatsheet
+title: Python Functions
 description: In Python, A function is a block of organized code that is used to perform a single task.
 ---
 

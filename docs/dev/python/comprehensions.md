@@ -1,5 +1,5 @@
 ---
-title: Python Comprehensions - Python Cheatsheet
+title: Python Comprehensions
 description: List comprehensions provide a concise way to create lists
 ---
 
