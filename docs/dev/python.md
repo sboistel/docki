@@ -46,7 +46,7 @@ print("My name is {0} !".format(d['name']))
 
 ### Check
 
-Use `try` to verify block 
+Use `try` to verify block
 
 ```python
 try: ## Vérifier ce bloc
