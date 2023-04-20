@@ -151,7 +151,30 @@ nav:
     - dev/multipass.md
     - dev/packer.md
     - dev/perl.md
-    - dev/python.md
+    - Python: dev/python.md
+    - dev/python/args-and-kwargs.md
+    - dev/python/basics.md
+    - dev/python/built-in-functions.md
+    - dev/python/comprehensions.md
+    - dev/python/context-manager.md
+    - dev/python/control-flow.md
+    - dev/python/dataclasses.md
+    - dev/python/debugging.md
+    - dev/python/dictionaries.md
+    - dev/python/exception-handling.md
+    - dev/python/file-directory-path.md
+    - dev/python/functions.md
+    - dev/python/json-yaml.md
+    - dev/python/lists-and-tuples.md
+    - dev/python/main.md
+    - dev/python/manipulating-strings.md
+    - dev/python/oop-basics.md
+    - dev/python/reading-and-writing-files.md
+    - dev/python/regular-expressions.md
+    - dev/python/sets.md
+    - dev/python/setup-py.md
+    - dev/python/string-formatting.md
+    - dev/python/virtual-environments.md
     - dev/terraform.md
     - dev/tower-cli.md
     - dev/vagrant.md
