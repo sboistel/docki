@@ -1475,8 +1475,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-from-source" class="md-nav__link">
-    Install from source
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#centosredhatrocky" class="md-nav__link">
+    Centos/Redhat/Rocky
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubuntudebian" class="md-nav__link">
+    Ubuntu/Debian
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subcommands" class="md-nav__link">
+    Subcommands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-autocomplete" class="md-nav__link">
+    Install autocomplete
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packer-build" class="md-nav__link">
+    Packer Build
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    Environment variables
   </a>
   
 </li>
@@ -2469,8 +2517,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-from-source" class="md-nav__link">
-    Install from source
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#centosredhatrocky" class="md-nav__link">
+    Centos/Redhat/Rocky
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ubuntudebian" class="md-nav__link">
+    Ubuntu/Debian
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subcommands" class="md-nav__link">
+    Subcommands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-autocomplete" class="md-nav__link">
+    Install autocomplete
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packer-build" class="md-nav__link">
+    Packer Build
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    Environment variables
   </a>
   
 </li>
@@ -2502,7 +2598,8 @@
 
 
 <h1 id="packer">Packer</h1>
-<h2 id="install-from-source">Install from source</h2>
+<h2 id="installation">Installation</h2>
+<h3 id="centosredhatrocky">Centos/Redhat/Rocky</h3>
 <ul>
 <li>Add hashicorp repository</li>
 </ul>
@@ -2513,6 +2610,57 @@
 </ul>
 <div class="highlight"><pre><span></span><code>dnf<span class="w"> </span>install<span class="w"> </span>packer
 </code></pre></div>
+<h3 id="ubuntudebian">Ubuntu/Debian</h3>
+<p>Add the HashiCorp <a href="https://apt.releases.hashicorp.com/gpg" title="HashiCorp GPG key">GPG key</a>.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://apt.releases.hashicorp.com/gpg<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>apt-key<span class="w"> </span>add<span class="w"> </span>-
+</code></pre></div>
+<p>Add the official HashiCorp Linux repository.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt-add-repository<span class="w"> </span><span class="s2">&quot;deb [arch=amd64] https://apt.releases.hashicorp.com </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> main&quot;</span>
+</code></pre></div>
+<p>Update and install.</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>packer
+</code></pre></div>
+<h2 id="subcommands">Subcommands</h2>
+<div class="highlight"><pre><span></span><code>Usage:<span class="w"> </span>packer<span class="w"> </span><span class="o">[</span>--version<span class="o">]</span><span class="w"> </span><span class="o">[</span>--help<span class="o">]</span><span class="w"> </span>&lt;command&gt;<span class="w"> </span><span class="o">[</span>&lt;args&gt;<span class="o">]</span>
+
+Available<span class="w"> </span>commands<span class="w"> </span>are:
+<span class="w">    </span>build<span class="w">           </span>build<span class="w"> </span>image<span class="o">(</span>s<span class="o">)</span><span class="w"> </span>from<span class="w"> </span>template
+<span class="w">    </span>console<span class="w">         </span>creates<span class="w"> </span>a<span class="w"> </span>console<span class="w"> </span><span class="k">for</span><span class="w"> </span>testing<span class="w"> </span>variable<span class="w"> </span>interpolation
+<span class="w">    </span>fix<span class="w">             </span>fixes<span class="w"> </span>templates<span class="w"> </span>from<span class="w"> </span>old<span class="w"> </span>versions<span class="w"> </span>of<span class="w"> </span>packer
+<span class="w">    </span>fmt<span class="w">             </span>Rewrites<span class="w"> </span>HCL2<span class="w"> </span>config<span class="w"> </span>files<span class="w"> </span>to<span class="w"> </span>canonical<span class="w"> </span>format
+<span class="w">    </span>hcl2_upgrade<span class="w">    </span>transform<span class="w"> </span>a<span class="w"> </span>JSON<span class="w"> </span>template<span class="w"> </span>into<span class="w"> </span>an<span class="w"> </span>HCL2<span class="w"> </span>configuration
+<span class="w">    </span>init<span class="w">            </span>Install<span class="w"> </span>missing<span class="w"> </span>plugins<span class="w"> </span>or<span class="w"> </span>upgrade<span class="w"> </span>plugins
+<span class="w">    </span>inspect<span class="w">         </span>see<span class="w"> </span>components<span class="w"> </span>of<span class="w"> </span>a<span class="w"> </span>template
+<span class="w">    </span>plugins<span class="w">         </span>Interact<span class="w"> </span>with<span class="w"> </span>Packer<span class="w"> </span>plugins<span class="w"> </span>and<span class="w"> </span>catalog
+<span class="w">    </span>validate<span class="w">        </span>check<span class="w"> </span>that<span class="w"> </span>a<span class="w"> </span>template<span class="w"> </span>is<span class="w"> </span>valid
+<span class="w">    </span>version<span class="w">         </span>Prints<span class="w"> </span>the<span class="w"> </span>Packer<span class="w"> </span>version
+</code></pre></div>
+<p>Most of the commands accept or require flags or ags to execute the desired functionnality</p>
+<h2 id="install-autocomplete">Install autocomplete</h2>
+<p>That enable tab completion when using the CLI</p>
+<div class="highlight"><pre><span></span><code>packer<span class="w"> </span>-autocomplete-install
+</code></pre></div>
+<h2 id="packer-build">Packer Build</h2>
+<p>The packer build command takes a Packer temmplate and runs all the defined builds to generate the desired artifacts. <br>
+The build command provides the core functionality of Packer.</p>
+<div class="admonition note">
+<p class="admonition-title">Terminal</p>
+<div class="highlight"><pre><span></span><code>packer<span class="w"> </span>build<span class="w"> </span>packer_template.hcl
+</code></pre></div>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Important Options/Arguments</p>
+<p>-debub : enables debug mode fpr step-by-step troubleshooting
+- var : set a variable in the Packer template
+- var-file : use a separate variable file</p>
+</div>
+<h2 id="environment-variables">Environment variables</h2>
+<p>Packer has a few environment variables :</p>
+<ul>
+<li>PACKER_LOG : enable Packer detailed logs (off by default)</li>
+<li>PACKER_LOG_PATH : set the path of Packer logs to specific file (rather than stderr)</li>
+<li>PKR_VAR_xxx : define a variable value using ENV rather than in a template</li>
+</ul>
 
 
 
