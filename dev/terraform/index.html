@@ -21,7 +21,7 @@
         <link rel="next" href="../tower-cli/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
     
     
       
@@ -65,7 +65,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     
@@ -75,6 +75,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#terraform" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -111,25 +116,31 @@
       </div>
     </div>
     
-      <form class="md-header__option" data-md-component="palette">
-        
+      
+        <form class="md-header__option" data-md-component="palette">
           
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
           
-            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
           
-        
-          
-          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-          
-            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-            </label>
-          
-        
-      </form>
+        </form>
+      
     
     
     
@@ -1470,10 +1481,171 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Terraform
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Terraform
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-terraform" class="md-nav__link">
+    What is Terraform ?
+  </a>
+  
+    <nav class="md-nav" aria-label="What is Terraform ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-does-it-works" class="md-nav__link">
+    How does it works ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntudebian" class="md-nav__link">
+    Ubuntu/Debian
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntaxe" class="md-nav__link">
+    Syntaxe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tfstate" class="md-nav__link">
+    tfstate
+  </a>
+  
+    <nav class="md-nav" aria-label="tfstate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-apply" class="md-nav__link">
+    Test &amp; Apply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    Test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply" class="md-nav__link">
+    Apply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graph" class="md-nav__link">
+    Graph
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#providers" class="md-nav__link">
+    Providers
+  </a>
+  
+    <nav class="md-nav" aria-label="Providers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws" class="md-nav__link">
+    AWS
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam" class="md-nav__link">
+    IAM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2779,6 +2951,151 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-terraform" class="md-nav__link">
+    What is Terraform ?
+  </a>
+  
+    <nav class="md-nav" aria-label="What is Terraform ?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-does-it-works" class="md-nav__link">
+    How does it works ?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ubuntudebian" class="md-nav__link">
+    Ubuntu/Debian
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntaxe" class="md-nav__link">
+    Syntaxe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exemple" class="md-nav__link">
+    Exemple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tfstate" class="md-nav__link">
+    tfstate
+  </a>
+  
+    <nav class="md-nav" aria-label="tfstate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-apply" class="md-nav__link">
+    Test &amp; Apply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#test" class="md-nav__link">
+    Test
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply" class="md-nav__link">
+    Apply
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graph" class="md-nav__link">
+    Graph
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#providers" class="md-nav__link">
+    Providers
+  </a>
+  
+    <nav class="md-nav" aria-label="Providers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aws" class="md-nav__link">
+    AWS
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iam" class="md-nav__link">
+    IAM
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2804,21 +3121,105 @@
   
 
 
-  <h1>Terraform</h1>
-
-<pre>Error : [Errno 2] No such file or directory: 'dot' : ['dot', '-Gbgcolor=none', '-Gcolor=#789abc', '-Gfontcolor=#789abc', '-Ncolor=#789abc', '-Nfontcolor=#789abc', '-Ecolor=#789abc', '-Efontcolor=#789abc', '-Tsvg']</pre>
-<pre>digraph {
-    compound = "true"
-    newrank = "true"
-    subgraph "root" {
-        "[root] aws_instance.test_ec2 (expand)" [label = "aws_instance.test_ec2", shape = "box"]
-        "[root] provider[\"registry.terraform.io/hashicorp/aws\"]" [label = "provider[\"registry.terraform.io/hashicorp/aws\"]", shape = "diamond"]
-        "[root] aws_instance.test_ec2 (expand)" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"]"
-        "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)" -> "[root] aws_instance.test_ec2 (expand)"
-        "[root] root" -> "[root] provider[\"registry.terraform.io/hashicorp/aws\"] (close)"
+<h1 id="terraform">Terraform</h1>
+<h2 id="what-is-terraform">What is Terraform ?</h2>
+<p>Terraform is an infrastructure as code tool that lets you build, change, and version cloud and on-prem resources safely and efficiently.</p>
+<h3 id="how-does-it-works">How does it works ?</h3>
+<p>Terraform creates and manages resources on cloud platforms and other services through their application programming interfaces (APIs). Providers enable Terraform to work with virtually any platform or service with an accessible API.</p>
+<p>The core Terraform workflow consists of three stages:</p>
+<ul>
+<li>
+<p>Write: You define resources, which may be across multiple cloud providers and services. For example, you might create a configuration to deploy an application on virtual machines in a Virtual Private Cloud (VPC) network with security groups and a load balancer.</p>
+</li>
+<li>
+<p>Plan: Terraform creates an execution plan describing the infrastructure it will create, update, or destroy based on the existing infrastructure and your configuration.</p>
+</li>
+<li>
+<p>Apply: On approval, Terraform performs the proposed operations in the correct order, respecting any resource dependencies. For example, if you update the properties of a VPC and change the number of virtual machines in that VPC, Terraform will recreate the VPC before scaling the virtual machines.</p>
+</li>
+</ul>
+<p><img alt="Workflow" src="../resources/terraform-processe.png" /></p>
+<h2 id="installation">Installation</h2>
+<h3 id="ubuntudebian">Ubuntu/Debian</h3>
+<p>Add keys</p>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-O-<span class="w"> </span>https://apt.releases.hashicorp.com/gpg<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>gpg<span class="w"> </span>--dearmor<span class="w"> </span>-o<span class="w"> </span>/usr/share/keyrings/hashicorp-archive-keyring.gpg
+</code></pre></div>
+<p>Add repo list</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> main&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/hashicorp.list
+</code></pre></div>
+<p>Update and install</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>terraform
+</code></pre></div>
+<h2 id="syntaxe">Syntaxe</h2>
+<p>Travaillons sur un fichier <code>main.tf</code></p>
+<h2 id="exemple">Exemple</h2>
+<div class="highlight"><pre><span></span><code>output<span class="w"> </span><span class="s2">&quot;VAR&quot;</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="nv">value</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Hello World! &quot;</span>
+<span class="o">}</span>
+</code></pre></div>
+<h2 id="tfstate">tfstate</h2>
+<p>tfstate file is equivalent as logfile. It keeps state<strong>S</strong></p>
+<h3 id="test-apply">Test &amp; Apply</h3>
+<h3 id="test">Test</h3>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>plan
+</code></pre></div>
+<h3 id="apply">Apply</h3>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>apply
+</code></pre></div>
+<h3 id="graph">Graph</h3>
+<div class="highlight"><pre><span></span><code><span class="err">terraform</span><span class="w"> </span><span class="err">graph</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="err">dot</span><span class="w"> </span><span class="err">-Tsvg</span><span class="w"> </span><span class="err">&gt;</span><span class="w"> </span><span class="nv">graph.svg</span>
+</code></pre></div>
+<p>Example code :</p>
+<div class="highlight"><pre><span></span><code>digraph {
+    compound = &quot;true&quot;
+    newrank = &quot;true&quot;
+    subgraph &quot;root&quot; {
+        &quot;[root] aws_instance.test_ec2 (expand)&quot; [label = &quot;aws_instance.test_ec2&quot;, shape = &quot;box&quot;]
+        &quot;[root] provider[\&quot;registry.terraform.io/hashicorp/aws\&quot;]&quot; [label = &quot;provider[\&quot;registry.terraform.io/hashicorp/aws\&quot;]&quot;, shape = &quot;diamond&quot;]
+        &quot;[root] aws_instance.test_ec2 (expand)&quot; -&gt; &quot;[root] provider[\&quot;registry.terraform.io/hashicorp/aws\&quot;]&quot;
+        &quot;[root] provider[\&quot;registry.terraform.io/hashicorp/aws\&quot;] (close)&quot; -&gt; &quot;[root] aws_instance.test_ec2 (expand)&quot;
+        &quot;[root] root&quot; -&gt; &quot;[root] provider[\&quot;registry.terraform.io/hashicorp/aws\&quot;] (close)&quot;
     }
 }
-</pre>
+</code></pre></div>
+<h2 id="providers">Providers</h2>
+<h3 id="aws">AWS</h3>
+<h4 id="prerequisites">Prerequisites</h4>
+<h4 id="iam">IAM</h4>
+<p>Keys :</p>
+<p><img alt="" src="../resources/terraform-aws-access_keys_01.png" /></p>
+<p><img alt="" src="../resources/terraform-aws-access_keys_02.png" /></p>
+<p><img alt="" src="../resources/terraform-aws-access_keys_03.png" /></p>
+<p><img alt="" src="../resources/terraform-aws-access_keys_04.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Copy somewhere your keys</p>
+</div>
+<p><img alt="" src="resources/terraform-aws-access_keys_05.png" /></p>
+<p>Generate keys :</p>
+<p><img alt="" src="../resources/terraform-aws-keypairs_01.png" /></p>
+<p><img alt="" src="../resources/terraform-aws-keypairs_02.png" /></p>
+<p>Create instance :</p>
+<p>Example <code>main.tf</code></p>
+<ul>
+<li>key name = key pairs</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kr">provider</span><span class="w"> </span><span class="nv">&quot;aws&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">region</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;eu-central-1&quot;</span>
+<span class="w">  </span><span class="na">access_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*************&quot;</span>
+<span class="w">  </span><span class="na">secret_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;*******************&quot;</span>
+<span class="p">}</span>
+
+<span class="kr">resource</span><span class="w"> </span><span class="nc">&quot;aws_instance&quot;</span><span class="w"> </span><span class="nv">&quot;test_ec2&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">ami</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;ami-0ec7f9846da6b0f61&quot;</span><span class="c1"> # Ubuntu Server 22.04 LTS (HVM)</span>
+<span class="w">  </span><span class="na">instance_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;t2.micro&quot;</span>
+<span class="w">  </span><span class="na">key_name</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;***********&quot;</span>
+
+<span class="w">  </span><span class="nb">tags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;test01&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
