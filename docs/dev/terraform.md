@@ -76,9 +76,9 @@ terraform apply
 terraform graph | dot -Tsvg > graph.svg
 ```
 
-Example :
+Example code :
 
-```dot
+```diagraph
 digraph {
     compound = "true"
     newrank = "true"
