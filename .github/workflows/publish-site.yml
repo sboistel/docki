@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install Mkdocs
-        run: pip install mkdocs mkdocs-material mkdocs-graphviz py-dot
+        run: pip install mkdocs mkdocs-material py-dot mkdocs-graphviz
 
       - name: Checkout Code
         uses: actions/checkout@v3
