@@ -21,7 +21,7 @@
         <link rel="next" href="../apps/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2954,42 +2954,42 @@ Boot on Windows 10 ISO
 On the language screen, chose your language and hit <strong>SHIFT+F10</strong></p>
 <h2 id="get-logical-volume-inforations">Get Logical Volume inforations</h2>
 <p>When the cmd terminal is oppened, list Diske Caption and Volume Name :</p>
-<div class="highlight"><pre><span></span><code><span class="n">wmic</span> <span class="n">logicaldisk</span> <span class="n">get</span> <span class="n">caption</span><span class="p">,</span> <span class="n">VolumeName</span>
-</code></pre></div>
+<pre><code class="language-powershell">wmic logicaldisk get caption, VolumeName
+</code></pre>
 <p>Move to the Disk you want (letter found with the previous command)</p>
-<div class="highlight"><pre><span></span><code><span class="n">d</span><span class="p">:</span>
-</code></pre></div>
+<pre><code class="language-powershell">d:
+</code></pre>
 <p>Go to the system32 folder</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd </span><span class="n">windows</span><span class="p">\</span><span class="n">system32</span>
-</code></pre></div>
+<pre><code class="language-powershell">cd windows\system32
+</code></pre>
 <h2 id="utilman">Utilman</h2>
 <p>Use utilman despite off cmd.exe</p>
-<div class="highlight"><pre><span></span><code><span class="nb">ren </span><span class="n">utilman</span><span class="p">.</span><span class="n">exe</span> <span class="n">utilman</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span><span class="n">bak</span>
-<span class="nb">ren </span><span class="n">cmd</span><span class="p">.</span><span class="n">exe</span> <span class="n">utilman</span><span class="p">.</span><span class="n">exe</span>
-</code></pre></div>
+<pre><code class="language-powershell">ren utilman.exe utilman.exe.bak
+ren cmd.exe utilman.exe
+</code></pre>
 <p>Reboot</p>
-<div class="highlight"><pre><span></span><code><span class="n">wpeutil</span> <span class="n">reboot</span>
-</code></pre></div>
+<pre><code class="language-powershell">wpeutil reboot
+</code></pre>
 <h3 id="change-user-password">Change user password</h3>
 <p>After rebooting, clic on accessibility icon</p>
 <h3 id="change-password">Change password</h3>
 <p>Change the user password</p>
-<div class="highlight"><pre><span></span><code><span class="n">Example</span> <span class="p">:</span>
-<span class="n">net</span> <span class="n">user</span> <span class="n">admin</span> <span class="n">root</span>
+<pre><code class="language-powershell">Example :
+net user admin root
 
-<span class="n">net</span> <span class="n">user</span> <span class="nv">$USER</span> <span class="n">pass</span>
-</code></pre></div>
+net user $USER pass
+</code></pre>
 <h3 id="active-user">Active user</h3>
 <p>Active user</p>
-<div class="highlight"><pre><span></span><code><span class="n">net</span> <span class="n">user</span> <span class="nv">$USER</span> <span class="p">/</span><span class="n">active</span><span class="p">:</span><span class="n">yes</span>
-</code></pre></div>
+<pre><code class="language-powershell">net user $USER /active:yes
+</code></pre>
 <p>Reboot</p>
-<div class="highlight"><pre><span></span><code><span class="n">wpeutil</span> <span class="n">reboot</span>
-</code></pre></div>
+<pre><code class="language-powershell">wpeutil reboot
+</code></pre>
 <p>Replace utilman despite off cmd.exe</p>
-<div class="highlight"><pre><span></span><code><span class="nb">ren </span><span class="n">utilman</span><span class="p">.</span><span class="n">exe</span> <span class="n">cmd</span><span class="p">.</span><span class="n">exe</span>
-<span class="nb">ren </span><span class="n">utilman</span><span class="p">.</span><span class="n">exe</span><span class="p">.</span><span class="n">bak</span> <span class="n">utilman</span><span class="p">.</span><span class="n">exe</span>
-</code></pre></div>
+<pre><code class="language-powershell">ren utilman.exe cmd.exe
+ren utilman.exe.bak utilman.exe
+</code></pre>
 
 
 
@@ -3039,7 +3039,7 @@ On the language screen, chose your language and hit <strong>SHIFT+F10</strong></
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

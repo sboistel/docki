@@ -21,7 +21,7 @@
         <link rel="next" href="../json-yaml/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2947,31 +2947,31 @@ Python Functions
 <h2 id="function-arguments">Function Arguments</h2>
 <p>A function can take <code>arguments</code> and <code>return values</code>:</p>
 <p>In the following example, the function <strong>say_hello</strong> receives the argument "name" and prints a greeting:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">say_hello</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<span class="o">...</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;Carlos&#39;</span><span class="p">)</span>
-<span class="c1"># Hello Carlos</span>
+<pre><code class="language-python">&gt;&gt;&gt; def say_hello(name):
+...    print(f'Hello {name}')
+...
+&gt;&gt;&gt; say_hello('Carlos')
+# Hello Carlos
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;Wanda&#39;</span><span class="p">)</span>
-<span class="c1"># Hello Wanda</span>
+&gt;&gt;&gt; say_hello('Wanda')
+# Hello Wanda
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;Rose&#39;</span><span class="p">)</span>
-<span class="c1"># Hello Rose</span>
-</code></pre></div>
+&gt;&gt;&gt; say_hello('Rose')
+# Hello Rose
+</code></pre>
 <h2 id="keyword-arguments">Keyword Arguments</h2>
 <p>To improve code readability, we should be as explicit as possible. We can achieve this in our functions by using <code>Keyword Arguments</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">say_hi</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">greeting</span><span class="p">):</span>
-<span class="o">...</span>    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">greeting</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># without keyword arguments</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">say_hi</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
-<span class="c1"># Hello John</span>
+<pre><code class="language-python">&gt;&gt;&gt; def say_hi(name, greeting):
+...    print(f&quot;{greeting} {name}&quot;)
+...
+&gt;&gt;&gt; # without keyword arguments
+&gt;&gt;&gt; say_hi('John', 'Hello')
+# Hello John
 
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># with keyword arguments</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">say_hi</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="n">greeting</span><span class="o">=</span><span class="s1">&#39;Hi&#39;</span><span class="p">)</span>
-<span class="c1"># Hi Anna</span>
-</code></pre></div>
+&gt;&gt;&gt; # with keyword arguments
+&gt;&gt;&gt; say_hi(name='Anna', greeting='Hi')
+# Hi Anna
+</code></pre>
 <h2 id="return-values">Return Values</h2>
 <p>When creating a function using the <code>def</code> statement, you can specify what the return value should be with a <code>return</code> statement. A return statement consists of the following:</p>
 <ul>
@@ -2982,13 +2982,13 @@ Python Functions
 <p>The value or expression that the function should return.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">sum_two_numbers</span><span class="p">(</span><span class="n">number_1</span><span class="p">,</span> <span class="n">number_2</span><span class="p">):</span>
-<span class="o">...</span>    <span class="k">return</span> <span class="n">number_1</span> <span class="o">+</span> <span class="n">number_2</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">result</span> <span class="o">=</span> <span class="n">sum_two_numbers</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
-<span class="c1"># 15</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; def sum_two_numbers(number_1, number_2):
+...    return number_1 + number_2
+...
+&gt;&gt;&gt; result = sum_two_numbers(7, 8)
+&gt;&gt;&gt; print(result)
+# 15
+</code></pre>
 <h2 id="local-and-global-scope">Local and Global Scope</h2>
 <ul>
 <li>
@@ -3004,30 +3004,30 @@ Python Functions
 <p>You can use the same name for different variables if they are in different scopes. That is, there can be a local variable named spam and a global variable also named spam.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="n">global_variable</span> <span class="o">=</span> <span class="s1">&#39;I am available everywhere&#39;</span>
+<pre><code class="language-python">global_variable = 'I am available everywhere'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">global_variable</span><span class="p">)</span>  <span class="c1"># because is global</span>
-<span class="o">...</span>     <span class="n">local_variable</span> <span class="o">=</span> <span class="s2">&quot;only available within this function&quot;</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">local_variable</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># the following code will throw error because</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># &#39;local_variable&#39; only exists inside &#39;some_function&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">local_variable</span><span class="p">)</span>
-<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
-  <span class="n">File</span> <span class="s2">&quot;&lt;stdin&gt;&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">10</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">NameError</span><span class="p">:</span> <span class="n">name</span> <span class="s1">&#39;local_variable&#39;</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">defined</span>
-</code></pre></div>
+&gt;&gt;&gt; def some_function():
+...     print(global_variable)  # because is global
+...     local_variable = &quot;only available within this function&quot;
+...     print(local_variable)
+...
+&gt;&gt;&gt; # the following code will throw error because
+&gt;&gt;&gt; # 'local_variable' only exists inside 'some_function'
+&gt;&gt;&gt; print(local_variable)
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 10, in &lt;module&gt;
+NameError: name 'local_variable' is not defined
+</code></pre>
 <h2 id="the-global-statement">The global Statement</h2>
 <p>If you need to modify a global variable from within a function, use the global statement:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
-<span class="o">...</span>     <span class="k">global</span> <span class="n">eggs</span>
-<span class="o">...</span>     <span class="n">eggs</span> <span class="o">=</span> <span class="s1">&#39;spam&#39;</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">eggs</span> <span class="o">=</span> <span class="s1">&#39;global&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">eggs</span><span class="p">)</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; def spam():
+...     global eggs
+...     eggs = 'spam'
+...
+&gt;&gt;&gt; eggs = 'global'
+&gt;&gt;&gt; spam()
+&gt;&gt;&gt; print(eggs)
+</code></pre>
 <p>There are four rules to tell whether a variable is in a local scope or global scope:</p>
 <ol>
 <li>
@@ -3062,29 +3062,29 @@ Python Functions
   </base-warning-content>
 </base-warning></p>
 <p>This function:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="c1"># 8</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; def add(x, y):
+...     return x + y
+...
+&gt;&gt;&gt; add(5, 3)
+# 8
+</code></pre>
 <p>Is equivalent to the <em>lambda</em> function:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">add</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-<span class="c1"># 8</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; add = lambda x, y: x + y
+&gt;&gt;&gt; add(5, 3)
+# 8
+</code></pre>
 <p>Like regular nested functions, lambdas also work as lexical closures:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">make_adder</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">return</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">n</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">plus_3</span> <span class="o">=</span> <span class="n">make_adder</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">plus_5</span> <span class="o">=</span> <span class="n">make_adder</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<pre><code class="language-python">&gt;&gt;&gt; def make_adder(n):
+...     return lambda x: x + n
+...
+&gt;&gt;&gt; plus_3 = make_adder(3)
+&gt;&gt;&gt; plus_5 = make_adder(5)
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">plus_3</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-<span class="c1"># 7</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">plus_5</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-<span class="c1"># 9</span>
-</code></pre></div>
+&gt;&gt;&gt; plus_3(4)
+# 7
+&gt;&gt;&gt; plus_5(4)
+# 9
+</code></pre>
 
 
 
@@ -3134,7 +3134,7 @@ Python Functions
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

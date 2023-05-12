@@ -21,7 +21,7 @@
         <link rel="next" href="../sshs/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3023,45 +3023,45 @@
 <p class="admonition-title">Warning</p>
 <p>Rundeck depends on <strong>Java 11</strong> or <strong>Java 8</strong>. The <strong>Java 14</strong> packages will satisfy this dependency however Rundeck will not function properly with them. It is recommended to install the <code>openjdk-11-jre-headless</code> package manually.</p>
 </div>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>openjdk-11-jre-headless
-</code></pre></div>
+<pre><code class="language-bash">sudo apt-get install openjdk-11-jre-headless
+</code></pre>
 <h4 id="quick-installation">Quick installation</h4>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>https://raw.githubusercontent.com/rundeck/packaging/main/scripts/deb-setup.sh<span class="w"> </span><span class="m">2</span>&gt;<span class="w"> </span>/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>bash<span class="w"> </span>-s<span class="w"> </span>rundeck
-</code></pre></div>
+<pre><code class="language-bash">curl https://raw.githubusercontent.com/rundeck/packaging/main/scripts/deb-setup.sh 2&gt; /dev/null | sudo bash -s rundeck
+</code></pre>
 <h4 id="manual-installation">Manual installation</h4>
 <p>Bring signed keys :</p>
-<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-L<span class="w"> </span>https://packages.rundeck.com/pagerduty/rundeck/gpgkey<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>apt-key<span class="w"> </span>add<span class="w"> </span>-
-</code></pre></div>
+<pre><code class="language-bash">curl -L https://packages.rundeck.com/pagerduty/rundeck/gpgkey | sudo apt-key add -
+</code></pre>
 <p>Create new sources list  <code>/etc/apt/sources.list.d/rundeck.list</code> :</p>
-<div class="highlight"><pre><span></span><code>deb<span class="w"> </span>https://packages.rundeck.com/pagerduty/rundeck/any/<span class="w"> </span>any<span class="w"> </span>main
-deb-src<span class="w"> </span>https://packages.rundeck.com/pagerduty/rundeck/any/<span class="w"> </span>any<span class="w"> </span>main
-</code></pre></div>
+<pre><code class="language-bash">deb https://packages.rundeck.com/pagerduty/rundeck/any/ any main
+deb-src https://packages.rundeck.com/pagerduty/rundeck/any/ any main
+</code></pre>
 <p>Now, lets install</p>
 <p>Download package if relavant from the <a href="https://www.rundeck.com/downloads">download page</a></p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>rundeck
-</code></pre></div>
+<pre><code class="language-bash">sudo apt update
+sudo apt install rundeck
+</code></pre>
 <h3 id="post-installation">Post Installation</h3>
 <h4 id="url">URL ?</h4>
 <p>Change the URL into the <code>/etc/rundeck</code> directory <br>
 <em>&gt; might be run as root</em></p>
 <p>Replace the <strong>10..x</strong> by your <strong>iP</strong></p>
-<div class="highlight"><pre><span></span><code>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/localhost/10..x/g&#39;</span><span class="w"> </span>rundeck-config.properties<span class="w"> </span>framework.properties
-</code></pre></div>
+<pre><code class="language-bash">sed -i 's/localhost/10..x/g' rundeck-config.properties framework.properties
+</code></pre>
 <h4 id="service">Service</h4>
 <p>Enable the <code>rundeckd</code> service</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>rundeckd
-</code></pre></div>
+<pre><code class="language-bash">sudo systemctl enable rundeckd
+</code></pre>
 <p>Start the <code>rundeckd</code> service</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>rundeckd
-</code></pre></div>
+<pre><code class="language-bash">sudo systemctl start rundeckd
+</code></pre>
 <p>To verify that the service started correctly, tail the logs:</p>
-<div class="highlight"><pre><span></span><code>tail<span class="w"> </span>-f<span class="w"> </span>/var/log/rundeck/service.log
-</code></pre></div>
+<pre><code class="language-bash">tail -f /var/log/rundeck/service.log
+</code></pre>
 <p>Copied!</p>
 <p>The service is ready once you see something similar to:</p>
-<div class="highlight"><pre><span></span><code>Grails<span class="w"> </span>application<span class="w"> </span>running<span class="w"> </span>at<span class="w"> </span>http://localhost:4440<span class="w"> </span><span class="k">in</span><span class="w"> </span>environment:<span class="w"> </span>production
-</code></pre></div>
+<pre><code class="language-bash">Grails application running at http://localhost:4440 in environment: production
+</code></pre>
 <p><em>Yes there is locahost in the log I know ...</em></p>
 <h4 id="logging-in-for-the-first-time">Logging in for the first time</h4>
 <ol>
@@ -3118,7 +3118,7 @@ sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> <
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

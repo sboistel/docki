@@ -21,7 +21,7 @@
         <link rel="next" href="../../network/readme/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2890,35 +2890,35 @@
 <ol>
 <li>Download the latest version of Wiki.js</li>
 </ol>
-<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.gz
-</code></pre></div>
+<pre><code class="language-bash">wget https://github.com/Requarks/wiki/releases/latest/download/wiki-js.tar.gz
+</code></pre>
 <ol>
 <li>Extract the package to the final destination of your choice</li>
 </ol>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>wiki
-tar<span class="w"> </span>xzf<span class="w"> </span>wiki-js.tar.gz<span class="w"> </span>-C<span class="w"> </span>./wiki
-<span class="nb">cd</span><span class="w"> </span>./wiki
-</code></pre></div>
+<pre><code class="language-bash">mkdir wiki
+tar xzf wiki-js.tar.gz -C ./wiki
+cd ./wiki
+</code></pre>
 <ol>
 <li>Rename the sample config file to <code>config.yml</code></li>
 </ol>
-<div class="highlight"><pre><span></span><code>mv<span class="w"> </span>config.sample.yml<span class="w"> </span>config.yml
-</code></pre></div>
+<pre><code class="language-bash">mv config.sample.yml config.yml
+</code></pre>
 <ol>
 <li>Edit the config file and fill in your database and port settings (<a href="/install/config">Configuration Reference</a>)</li>
 </ol>
-<div class="highlight"><pre><span></span><code>nano<span class="w"> </span>config.yml
-</code></pre></div>
+<pre><code class="language-bash">nano config.yml
+</code></pre>
 <ol>
 <li><strong><em>For SQLite installations only:</em></strong> <em>(skip this step otherwise)</em> Fetch native bindings for SQLite3</li>
 </ol>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>rebuild<span class="w"> </span>sqlite3
-</code></pre></div>
+<pre><code class="language-bash">npm rebuild sqlite3
+</code></pre>
 <ol>
 <li>Run Wiki.js</li>
 </ol>
-<div class="highlight"><pre><span></span><code>node<span class="w"> </span>server
-</code></pre></div>
+<pre><code class="language-bash">node server
+</code></pre>
 <ol>
 <li>
 <p>Wait until you are invited to open to the setup page in your browser.</p>
@@ -2932,29 +2932,29 @@ tar<span class="w"> </span>xzf<span class="w"> </span>wiki-js.tar.gz<span class=
 <ol>
 <li>
 <p>Create a new file named <code>wiki.service</code> inside directory <code>/etc/systemd/system</code>.
-  <div class="highlight"><pre><span></span><code>nano<span class="w"> </span>/etc/systemd/system/wiki.service
-</code></pre></div></p>
+  <code>bash
+  nano /etc/systemd/system/wiki.service</code></p>
 </li>
 <li>
 <p>Paste the following contents (assuming your wiki is installed at <code>/var/wiki</code>):</p>
 </li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="k">[Unit]</span>
-<span class="na">Description</span><span class="o">=</span><span class="s">Wiki.js</span>
-<span class="na">After</span><span class="o">=</span><span class="s">network.target</span>
+<pre><code class="language-ini">[Unit]
+Description=Wiki.js
+After=network.target
 
-<span class="k">[Service]</span>
-<span class="na">Type</span><span class="o">=</span><span class="s">simple</span>
-<span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/node server</span>
-<span class="na">Restart</span><span class="o">=</span><span class="s">always</span>
-<span class="c1"># Consider creating a dedicated user for Wiki.js here:</span>
-<span class="na">User</span><span class="o">=</span><span class="s">nobody</span>
-<span class="na">Environment</span><span class="o">=</span><span class="s">NODE_ENV=production</span>
-<span class="na">WorkingDirectory</span><span class="o">=</span><span class="s">/var/wiki</span>
+[Service]
+Type=simple
+ExecStart=/usr/bin/node server
+Restart=always
+# Consider creating a dedicated user for Wiki.js here:
+User=nobody
+Environment=NODE_ENV=production
+WorkingDirectory=/var/wiki
 
-<span class="k">[Install]</span>
-<span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
-</code></pre></div>
+[Install]
+WantedBy=multi-user.target
+</code></pre>
 <ol>
 <li>
 <p>Save the service file (<kbd>CTRL</kbd>+<kbd>X</kbd>, followed by <kbd>Y</kbd>).</p>
@@ -2963,18 +2963,18 @@ tar<span class="w"> </span>xzf<span class="w"> </span>wiki-js.tar.gz<span class=
 <p>Reload systemd:</p>
 </li>
 </ol>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>daemon-reload
-</code></pre></div>
+<pre><code class="language-bash">systemctl daemon-reload
+</code></pre>
 <ol>
 <li>Run the service:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>start<span class="w"> </span>wiki
-</code></pre></div>
+<pre><code class="language-bash">systemctl start wiki
+</code></pre>
 <ol>
 <li>Enable the service on system boot.</li>
 </ol>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>wiki
-</code></pre></div>
+<pre><code class="language-bash">systemctl enable wiki
+</code></pre>
 <p><em>Note:</em> You can see the logs of the service using <code>journalctl -u wiki</code></p>
 <p><img alt="" src="https://a.icons8.com/TqgWTTfw/Oy7xHF/svg.svg" />{.align-abstopright}</p>
 
@@ -3026,7 +3026,7 @@ tar<span class="w"> </span>xzf<span class="w"> </span>wiki-js.tar.gz<span class=
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

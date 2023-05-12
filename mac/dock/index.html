@@ -21,7 +21,7 @@
         <link rel="next" href="../ds_store/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2883,28 +2883,28 @@
 <h2 id="space">Space</h2>
 <p>How to add space on dock as an application ?</p>
 <p>This command will add a new blank application into your dock.</p>
-<div class="highlight"><pre><span></span><code>defaults<span class="w"> </span>write<span class="w"> </span>com.apple.dock<span class="w"> </span>persistent-apps<span class="w"> </span>-array-add<span class="w"> </span><span class="s1">&#39;{tile-type=&quot;spacer-tile&quot;;}&#39;</span>
-</code></pre></div>
+<pre><code class="language-zsh">defaults write com.apple.dock persistent-apps -array-add '{tile-type=&quot;spacer-tile&quot;;}'
+</code></pre>
 <p>To take it into account, restart your dock</p>
-<div class="highlight"><pre><span></span><code>killall<span class="w"> </span>Dock
-</code></pre></div>
+<pre><code class="language-zsh">killall Dock
+</code></pre>
 <p>To force start dock, minimise an application</p>
 <h2 id="delay">Delay</h2>
 <p>Fortunately, many hidden options in macOS can be set with a command-line utility called defaults. To trigger the fade-in animation of the Dock immediately you can do the following:</p>
-<div class="highlight"><pre><span></span><code>defaults<span class="w"> </span>write<span class="w"> </span>com.apple.dock<span class="w"> </span>autohide-delay<span class="w"> </span>-float<span class="w"> </span><span class="m">0</span>
-killall<span class="w"> </span>Dock
-</code></pre></div>
+<pre><code class="language-zsh">defaults write com.apple.dock autohide-delay -float 0
+killall Dock
+</code></pre>
 <p>After executing this command the Dock needs to be restarted (killall Dock). If you want to switch back to the standard behavior, you can simply delete the corresponding configuration key:</p>
-<div class="highlight"><pre><span></span><code>defaults<span class="w"> </span>delete<span class="w"> </span>com.apple.dock<span class="w"> </span>autohide-delay
-killall<span class="w"> </span>Dock
-</code></pre></div>
+<pre><code class="language-zsh">defaults delete com.apple.dock autohide-delay
+killall Dock
+</code></pre>
 <p>You can also control the duration of the fade-in and fade-out animation itself. For example, to set the animation duration to half a second, you can enter the following commands.</p>
-<div class="highlight"><pre><span></span><code>defaults<span class="w"> </span>write<span class="w"> </span>com.apple.dock<span class="w"> </span>autohide-time-modifier<span class="w"> </span>-float<span class="w"> </span><span class="m">0</span>.5
-killall<span class="w"> </span>Dock
-</code></pre></div>
+<pre><code class="language-zsh">defaults write com.apple.dock autohide-time-modifier -float 0.5
+killall Dock
+</code></pre>
 <p>My default :</p>
-<div class="highlight"><pre><span></span><code>defaults<span class="w"> </span>write<span class="w"> </span>com.apple.dock<span class="w"> </span>autohide-time-modifier<span class="w"> </span>-float<span class="w"> </span><span class="m">0</span>.3<span class="p">;</span>killall<span class="w"> </span>Doc
-</code></pre></div>
+<pre><code class="language-zsh">defaults write com.apple.dock autohide-time-modifier -float 0.3;killall Doc
+</code></pre>
 
 
 
@@ -2954,7 +2954,7 @@ killall<span class="w"> </span>Dock
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

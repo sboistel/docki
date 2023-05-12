@@ -21,7 +21,7 @@
         <link rel="next" href="../kvm/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3005,58 +3005,58 @@
 <h3 id="change-to-active">Change to Active</h3>
 <p>Situated at the line ~120
 Change the status to <code>Active</code> :</p>
-<div class="highlight"><pre><span></span><code>sed<span class="w"> </span>-i.bak<span class="w"> </span><span class="s1">&#39;s/notfound/active/g&#39;</span><span class="w"> </span>/usr/share/perl5/PVE/API2/Subscription.pm
-sed<span class="w"> </span>-i.bak<span class="w"> </span><span class="s1">&#39;s/There is no subscription key/It seams to be active right ?/&#39;</span><span class="w"> </span>/usr/share/perl5/PVE/API2/Subscription.pm
-</code></pre></div>
+<pre><code class="language-bash">sed -i.bak 's/notfound/active/g' /usr/share/perl5/PVE/API2/Subscription.pm
+sed -i.bak 's/There is no subscription key/It seams to be active right ?/' /usr/share/perl5/PVE/API2/Subscription.pm
+</code></pre>
 <h3 id="restart-service">Restart service</h3>
 <p>Restart pveproxy service &amp; refresh next your web page :</p>
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span>restart<span class="w"> </span>pveproxy.service
-</code></pre></div>
+<pre><code class="language-bash">systemctl restart pveproxy.service
+</code></pre>
 <h2 id="grub">Grub</h2>
 <blockquote>
 <p>/etc/default/grub</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><span class="nv">GRUB_DISTRIBUTOR</span><span class="o">=</span><span class="s2">&quot;Proxmox Virtual Environnement&quot;</span>
-<span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&quot;quiet intel_iommu=on&quot;</span>
-<span class="nv">GRUB_CMDLINE_LINUX</span><span class="o">=</span><span class="s2">&quot;consoleblank=300&quot;</span>
-</code></pre></div>
+<pre><code class="language-bash">GRUB_DISTRIBUTOR=&quot;Proxmox Virtual Environnement&quot;
+GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet intel_iommu=on&quot;
+GRUB_CMDLINE_LINUX=&quot;consoleblank=300&quot;
+</code></pre>
 <h3 id="apply-grub-modifications">Apply grub modifications</h3>
-<div class="highlight"><pre><span></span><code>update-grub
-</code></pre></div>
+<pre><code class="language-bash">update-grub
+</code></pre>
 <p>or</p>
-<div class="highlight"><pre><span></span><code>grub-mkconfig<span class="w"> </span>-o<span class="w"> </span>/boot/grub/grub.cfg
-</code></pre></div>
+<pre><code class="language-bash">grub-mkconfig -o /boot/grub/grub.cfg
+</code></pre>
 <p>or</p>
-<div class="highlight"><pre><span></span><code>grub2-mkconfig<span class="w"> </span>-o<span class="w"> </span>/boot/grub2/grub.cfg
-</code></pre></div>
+<pre><code class="language-bash">grub2-mkconfig -o /boot/grub2/grub.cfg
+</code></pre>
 <h2 id="modules">Modules</h2>
 <blockquote>
 <p>/etc/modules</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><span class="c1"># Virtual Function I/O</span>
+<pre><code class="language-bash"># Virtual Function I/O
 vfio
 vfio_iommu_type1
 vfio_pci
 vfio_virqfd
 
-<span class="c1"># Chip drivers</span>
+# Chip drivers
 coretemp
-</code></pre></div>
+</code></pre>
 <h3 id="update-initramfs">Update initramfs</h3>
-<div class="highlight"><pre><span></span><code>update-initramfs<span class="w"> </span>-u<span class="w"> </span>-k<span class="w"> </span>all
-</code></pre></div>
+<pre><code class="language-bash">update-initramfs -u -k all
+</code></pre>
 <h2 id="repositories">Repositories</h2>
 <blockquote>
 <p>/etc/apt/sources.list</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><span class="c1"># not for production use</span>
-deb<span class="w"> </span>http://download.proxmox.com/debian<span class="w"> </span>buster<span class="w"> </span>pve-no-subscription
-</code></pre></div>
+<pre><code class="language-bash"># not for production use
+deb http://download.proxmox.com/debian buster pve-no-subscription
+</code></pre>
 <blockquote>
 <p>/etc/apt/sources.list.d/pve-enterprise.list</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><span class="c1"># deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise</span>
-</code></pre></div>
+<pre><code class="language-bash"># deb https://enterprise.proxmox.com/debian/pve bullseye pve-enterprise
+</code></pre>
 
 
 
@@ -3106,7 +3106,7 @@ deb<span class="w"> </span>http://download.proxmox.com/debian<span class="w"> </
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

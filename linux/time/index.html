@@ -21,7 +21,7 @@
         <link rel="next" href="../vim/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2821,13 +2821,13 @@
 
 <h1 id="clock">Clock</h1>
 <p>How to mod sys clock ?</p>
-<div class="highlight"><pre><span></span><code>mv<span class="w"> </span>/etc/localtime<span class="w"> </span>/etc/localtime.backup
-ln<span class="w"> </span>-s<span class="w"> </span>/usr/share/zoneinfo/Europe/Paris<span class="w"> </span>/etc/localtime
+<pre><code class="language-bash">mv /etc/localtime /etc/localtime.backup
+ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime
 
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Europe/Paris&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tee<span class="w"> </span>/etc/timezone
-timedatectl<span class="w"> </span>set-timezone<span class="w"> </span>Europe/Paris
-hwclock<span class="w"> </span>-s
-</code></pre></div>
+echo &quot;Europe/Paris&quot; | tee /etc/timezone
+timedatectl set-timezone Europe/Paris
+hwclock -s
+</code></pre>
 
 
 
@@ -2877,7 +2877,7 @@ hwclock<span class="w"> </span>-s
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

@@ -21,7 +21,7 @@
         <link rel="next" href="../debugging/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2906,51 +2906,51 @@ This module provides a decorator and functions for automatically adding generate
 </li>
 </ol>
 <p>Python 3.7 provides a decorator dataclass that is used to convert a class into a dataclass.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">Number</span><span class="p">:</span>
-<span class="o">...</span>     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
-<span class="o">...</span>         <span class="bp">self</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">Number</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span><span class="o">.</span><span class="n">val</span>
-<span class="c1"># 2</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; class Number:
+...     def __init__(self, val):
+...         self.val = val
+...
+&gt;&gt;&gt; obj = Number(2)
+&gt;&gt;&gt; obj.val
+# 2
+</code></pre>
 <p>with dataclass</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nd">@dataclass</span>
-<span class="o">...</span> <span class="k">class</span> <span class="nc">Number</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">val</span><span class="p">:</span> <span class="nb">int</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">Number</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span><span class="o">.</span><span class="n">val</span>
-<span class="c1"># 2</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; @dataclass
+... class Number:
+...     val: int
+...
+&gt;&gt;&gt; obj = Number(2)
+&gt;&gt;&gt; obj.val
+# 2
+</code></pre>
 <h2 id="default-values">Default values</h2>
 <p>It is easy to add default values to the fields of your data class.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nd">@dataclass</span>
-<span class="o">...</span> <span class="k">class</span> <span class="nc">Product</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
-<span class="o">...</span>     <span class="n">count</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="o">...</span>     <span class="n">price</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span> <span class="o">=</span> <span class="n">Product</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span><span class="o">.</span><span class="n">name</span>
-<span class="c1"># Python</span>
+<pre><code class="language-python">&gt;&gt;&gt; @dataclass
+... class Product:
+...     name: str
+...     count: int = 0
+...     price: float = 0.0
+...
+&gt;&gt;&gt; obj = Product(&quot;Python&quot;)
+&gt;&gt;&gt; obj.name
+# Python
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span><span class="o">.</span><span class="n">count</span>
-<span class="c1"># 0</span>
+&gt;&gt;&gt; obj.count
+# 0
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">obj</span><span class="o">.</span><span class="n">price</span>
-<span class="c1"># 0.0</span>
-</code></pre></div>
+&gt;&gt;&gt; obj.price
+# 0.0
+</code></pre>
 <h2 id="type-hints">Type hints</h2>
 <p>It is mandatory to define the data type in dataclass. However, If you would rather not specify the datatype then, use <code>typing.Any</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span>
+<pre><code class="language-python">&gt;&gt;&gt; from dataclasses import dataclass
+&gt;&gt;&gt; from typing import Any
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nd">@dataclass</span>
-<span class="o">...</span> <span class="k">class</span> <span class="nc">WithoutExplicitTypes</span><span class="p">:</span>
-<span class="o">...</span>    <span class="n">name</span><span class="p">:</span> <span class="n">Any</span>
-<span class="o">...</span>    <span class="n">value</span><span class="p">:</span> <span class="n">Any</span> <span class="o">=</span> <span class="mi">42</span>
-</code></pre></div>
+&gt;&gt;&gt; @dataclass
+... class WithoutExplicitTypes:
+...    name: Any
+...    value: Any = 42
+</code></pre>
 
 
 
@@ -3000,7 +3000,7 @@ This module provides a decorator and functions for automatically adding generate
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

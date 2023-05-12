@@ -21,7 +21,7 @@
         <link rel="next" href="../vscode/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2937,23 +2937,23 @@
 <h2 id="vnc-session">VNC Session</h2>
 <p>How to create new VNC Session ?</p>
 <h3 id="change-the-vncpassword">Change the VNCpassword</h3>
-<div class="highlight"><pre><span></span><code>vncpassword
-</code></pre></div>
+<pre><code class="language-bash">vncpassword
+</code></pre>
 <h3 id="directory">Directory</h3>
 <p>Move to the session direcotry :</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/etc/systemd/system
-</code></pre></div>
+<pre><code class="language-bash">cd /etc/systemd/system
+</code></pre>
 <h3 id="session-file">Session file</h3>
-<p>Copy old vncserver.service file to a new one :
-<div class="highlight"><pre><span></span><code>cp<span class="w"> </span><span class="o">[</span>vncserver@<span class="o">{</span>N°<span class="o">}</span>.service<span class="o">](</span>mailto:vncserver@<span class="o">{</span>N°<span class="o">}</span>.service<span class="o">)</span><span class="w"> </span>vncserver@:<span class="o">{</span>New<span class="w"> </span>N°<span class="o">}</span>.service
-</code></pre></div></p>
-<p>Replace :
-<div class="highlight"><pre><span></span><code>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/olduser/newuser/g&#39;</span><span class="w"> </span>vncserver@:<span class="o">{</span>New<span class="w"> </span>N°<span class="o">}</span>.service
-</code></pre></div></p>
+<p>Copy old vncserver.service file to a new one :</p>
+<pre><code class="language-bash">cp [vncserver@{N°}.service](mailto:vncserver@{N°}.service) vncserver@:{New N°}.service
+</code></pre>
+<p>Replace :</p>
+<pre><code class="language-bash">sed -i 's/olduser/newuser/g' vncserver@:{New N°}.service
+</code></pre>
 <h3 id="service">Service</h3>
-<p>Enable the service :
-<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>vncserver@:<span class="o">{</span>New<span class="w"> </span>N°<span class="o">}</span>.service
-</code></pre></div></p>
+<p>Enable the service :</p>
+<pre><code class="language-bash">systemctl enable vncserver@:{New N°}.service
+</code></pre>
 
 
 
@@ -3003,7 +3003,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

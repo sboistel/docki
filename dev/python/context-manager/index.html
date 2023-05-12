@@ -21,7 +21,7 @@
         <link rel="next" href="../control-flow/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2898,47 +2898,47 @@ Python Context Manager
 <h2 id="the-with-statement">The with statement</h2>
 <p>A context manager is an object that is notified when a context (a block of code) starts and ends. You commonly use one with the <code>with</code> statement. It takes care of the notifying.</p>
 <p>For example, file objects are context managers. When a context ends, the file object is closed automatically:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">file_contents</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># the open_file object has automatically been closed.</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; with open(filename) as f:
+...     file_contents = f.read()
+...
+&gt;&gt;&gt; # the open_file object has automatically been closed.
+</code></pre>
 <p>Anything that ends execution of the block causes the context manager's exit method to be called. This includes exceptions, and can be useful when an error causes you to prematurely exit an open file or connection. Exiting a script without properly closing files/connections is a bad idea, that may cause data loss or other problems. By using a context manager, you can ensure that precautions are always taken to prevent damage or loss in this way.</p>
 <h2 id="writing-your-own-context-manager">Writing your own context manager</h2>
 <p>It is also possible to write a context manager using generator syntax thanks to the <code>contextlib.contextmanager</code> decorator:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">contextlib</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nd">@contextlib</span><span class="o">.</span><span class="n">contextmanager</span>
-<span class="o">...</span> <span class="k">def</span> <span class="nf">context_manager</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Enter&#39;</span><span class="p">)</span>
-<span class="o">...</span>     <span class="k">yield</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Exit&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="n">context_manager</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">as</span> <span class="n">cm</span><span class="p">:</span>
-<span class="o">...</span>     <span class="c1"># the following instructions are run when</span>
-<span class="o">...</span>     <span class="c1"># the &#39;yield&#39; point of the context manager is</span>
-<span class="o">...</span>     <span class="c1"># reached. &#39;cm&#39; will have the value that was yielded</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Right in the middle with cm = </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cm</span><span class="p">))</span>
-<span class="o">...</span>
-<span class="c1"># Enter</span>
-<span class="c1"># Right in the middle with cm = 3</span>
-<span class="c1"># Exit</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; import contextlib
+&gt;&gt;&gt; @contextlib.contextmanager
+... def context_manager(num):
+...     print('Enter')
+...     yield num + 1
+...     print('Exit')
+...
+&gt;&gt;&gt; with context_manager(2) as cm:
+...     # the following instructions are run when
+...     # the 'yield' point of the context manager is
+...     # reached. 'cm' will have the value that was yielded
+...     print('Right in the middle with cm = {}'.format(cm))
+...
+# Enter
+# Right in the middle with cm = 3
+# Exit
+</code></pre>
 <h2 id="class-based-context-manager">Class based context manager</h2>
-<p>You can define class based context manager. The key methods are <code>__enter__</code> and <code>__exit__</code>
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">ContextManager</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--enter--&quot;</span><span class="p">)</span>
+<p>You can define class based context manager. The key methods are <code>__enter__</code> and <code>__exit__</code></p>
+<pre><code class="language-python">class ContextManager:
+    def __enter__(self, *args, **kwargs):
+        print(&quot;--enter--&quot;)
 
-    <span class="k">def</span> <span class="fm">__exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;--exit--&quot;</span><span class="p">)</span>
+    def __exit__(self, *args):
+        print(&quot;--exit--&quot;)
 
 
-<span class="k">with</span> <span class="n">ContextManager</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
-<span class="c1">#--enter--</span>
-<span class="c1">#test</span>
-<span class="c1">#--exit--</span>
-</code></pre></div></p>
+with ContextManager():
+    print(&quot;test&quot;)
+#--enter--
+#test
+#--exit--
+</code></pre>
 
 
 
@@ -2988,7 +2988,7 @@ Python Context Manager
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

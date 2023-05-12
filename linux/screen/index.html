@@ -21,7 +21,7 @@
         <link rel="next" href="../selinux/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2868,18 +2868,18 @@
 <h1 id="touchscreen">Touchscreen</h1>
 <p>How to disable touchscreen at start ?</p>
 <p>Create a new file as <code>/etc/X11/xorg.conf.d/01-no_touchscreen.conf</code> as 664 :</p>
-<div class="highlight"><pre><span></span><code><span class="c1">## Written by systemd-localed(8), read by systemd-localed and Xorg. Its</span>
-<span class="c1">## probably wise not to edit this file manually. use localectl(1) to</span>
-<span class="c1">## instruct systemd-localed to update it</span>
-Section<span class="w"> </span><span class="s2">&quot;InputClass&quot;</span>
-Identifier<span class="w"> </span><span class="s2">&quot;Raydium catchall&quot;</span>
-MatchIsTouchscreen<span class="w"> </span><span class="s2">&quot;on&quot;</span>
-Option<span class="w"> </span><span class="s2">&quot;Ignore&quot;</span><span class="w"> </span><span class="s2">&quot;on&quot;</span>
+<pre><code class="language-shell">## Written by systemd-localed(8), read by systemd-localed and Xorg. Its
+## probably wise not to edit this file manually. use localectl(1) to
+## instruct systemd-localed to update it
+Section &quot;InputClass&quot;
+Identifier &quot;Raydium catchall&quot;
+MatchIsTouchscreen &quot;on&quot;
+Option &quot;Ignore&quot; &quot;on&quot;
 EndSection
-</code></pre></div>
+</code></pre>
 <p>Using command line :</p>
-<div class="highlight"><pre><span></span><code>xinput<span class="w"> </span>disable<span class="w"> </span><span class="k">$(</span>xinput<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;/Touchscreen/ {print $5}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>cut<span class="w"> </span>-d<span class="w"> </span><span class="s2">&quot;=&quot;</span><span class="w"> </span>-f2<span class="k">)</span>
-</code></pre></div>
+<pre><code class="language-shell">xinput disable $(xinput list | awk '/Touchscreen/ {print $5}' | cut -d &quot;=&quot; -f2)
+</code></pre>
 <h2 id="blank-screen">Blank Screen</h2>
 <p>logind est le composant en charge de la gestion des sessions sur les systèmes avec systemd.</p>
 <p>Il détermine le comportement d’un ordinateur portable lorsque l’on ferme l’écran (Lid Switch) via la variable <code>HandleLidSwitch</code> de son fichier de configuration :  <code>/etc/systemd/logind.conf</code> .</p>
@@ -2897,21 +2897,21 @@ EndSection
 <li>lock (Verrouille de la session)</li>
 </ul>
 <p>Donc si je souhaite que mon portable reste actif lorsque l’écran est fermé:</p>
-<div class="highlight"><pre><span></span><code>vim<span class="w">  </span>/etc/systemd/logind.conf
-</code></pre></div>
+<pre><code class="language-shell">vim  /etc/systemd/logind.conf
+</code></pre>
 <p>Puis on modifie le paramètre HandleLidSwitch de cette façon:</p>
-<div class="highlight"><pre><span></span><code><span class="c1">#HandleLidSwitch=suspend</span>
-</code></pre></div>
+<pre><code class="language-shell">#HandleLidSwitch=suspend
+</code></pre>
 <p>devient</p>
-<div class="highlight"><pre><span></span><code><span class="nv">HandleLidSwitch</span><span class="o">=</span>ignore
-</code></pre></div>
+<pre><code class="language-shell">HandleLidSwitch=ignore
+</code></pre>
 <p>Et on termine par un petit redémarrage:</p>
-<div class="highlight"><pre><span></span><code>reboot
-</code></pre></div>
+<pre><code class="language-shell">reboot
+</code></pre>
 <p>Retirer la mise en veille lors de la fermeture du capot de l’ordinateur portable.</p>
-<div class="highlight"><pre><span></span><code>setterm-powersave<span class="w"> </span>off<span class="w"> </span>-blank<span class="w"> </span><span class="m">0</span>
-systemctl<span class="w"> </span>mask<span class="w"> </span>sleep.target<span class="w"> </span>suspend.target<span class="w"> </span>hibernate.target<span class="w"> </span>hybrid-sleep.target
-</code></pre></div>
+<pre><code class="language-bash">setterm-powersave off -blank 0
+systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+</code></pre>
 
 
 
@@ -2961,7 +2961,7 @@ systemctl<span class="w"> </span>mask<span class="w"> </span>sleep.target<span c
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

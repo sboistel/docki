@@ -21,7 +21,7 @@
         <link rel="next" href="../string-formatting/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2898,20 +2898,20 @@ Python setup.py
 <p>The setup script is the center of all activity in building, distributing, and installing modules using the Distutils. The main purpose of the setup script is to describe your module distribution to the Distutils, so that the various commands that operate on your modules do the right thing.</p>
 <p>The <code>setup.py</code> file is at the heart of a Python project. It describes all the metadata about your project. There are quite a few fields you can add to a project to give it a rich set of metadata describing the project. However, there are only three required fields: name, version, and packages. The name field must be unique if you wish to publish your package on the Python Package Index (PyPI). The version field keeps track of different releases of the project. The package's field describes where you’ve put the Python source code within your project.</p>
 <p>This allows you to easily install Python packages. Often it's enough to write:</p>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>setup.py<span class="w"> </span>install
-</code></pre></div>
+<pre><code class="language-bash">python setup.py install
+</code></pre>
 <p>and module will install itself.</p>
 <h2 id="example">Example</h2>
 <p>Our initial setup.py will also include information about the license and will re-use the README.txt file for the long_description field. This will look like:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">distutils.core</span> <span class="kn">import</span> <span class="n">setup</span>
-<span class="n">setup</span><span class="p">(</span>
-   <span class="n">name</span><span class="o">=</span><span class="s1">&#39;pythonCheatsheet&#39;</span><span class="p">,</span>
-   <span class="n">version</span><span class="o">=</span><span class="s1">&#39;0.1&#39;</span><span class="p">,</span>
-   <span class="n">packages</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;pipenv&#39;</span><span class="p">,],</span>
-   <span class="n">license</span><span class="o">=</span><span class="s1">&#39;MIT&#39;</span><span class="p">,</span>
-   <span class="n">long_description</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;README.txt&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span>
-<span class="p">)</span>
-</code></pre></div>
+<pre><code class="language-python">from distutils.core import setup
+setup(
+   name='pythonCheatsheet',
+   version='0.1',
+   packages=['pipenv',],
+   license='MIT',
+   long_description=open('README.txt').read(),
+)
+</code></pre>
 <p>Find more information visit the <a href="http://docs.python.org/install/index.html">official documentation</a>.</p>
 
 
@@ -2962,7 +2962,7 @@ Python setup.py
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

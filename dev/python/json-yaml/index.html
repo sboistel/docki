@@ -21,7 +21,7 @@
         <link rel="next" href="../lists-and-tuples/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2896,17 +2896,17 @@ JSON and YAML
 </base-title></p>
 <h2 id="json">JSON</h2>
 <p>JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data. Json is often used when data is sent from a server to a web page.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">json</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;filename.json&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">content</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; import json
+&gt;&gt;&gt; with open(&quot;filename.json&quot;, &quot;r&quot;) as f:
+...     content = json.load(f)
+</code></pre>
 <p>Write a JSON file with:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">json</span>
+<pre><code class="language-python">&gt;&gt;&gt; import json
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">content</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Joe&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;filename.json&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div>
+&gt;&gt;&gt; content = {&quot;name&quot;: &quot;Joe&quot;, &quot;age&quot;: 20}
+&gt;&gt;&gt; with open(&quot;filename.json&quot;, &quot;w&quot;) as f:
+...     json.dump(content, f, indent=2)
+</code></pre>
 <h2 id="yaml">YAML</h2>
 <p>Compared to JSON, YAML allows a much better human maintainability and gives ability to add comments. It is a convenient choice for configuration files where a human will have to edit.</p>
 <p>There are two main libraries allowing to access to YAML files:</p>
@@ -2918,21 +2918,21 @@ JSON and YAML
 <p>The first one is easier to use but the second one, Ruamel, implements much better the YAML
 specification, and allow for example to modify a YAML content without altering comments.</p>
 <p>Open a YAML file with:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">ruamel.yaml</span> <span class="kn">import</span> <span class="n">YAML</span>
+<pre><code class="language-python">&gt;&gt;&gt; from ruamel.yaml import YAML
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;filename.yaml&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">yaml</span><span class="o">=</span><span class="n">YAML</span><span class="p">()</span>
-<span class="o">...</span>     <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</code></pre></div>
+&gt;&gt;&gt; with open(&quot;filename.yaml&quot;) as f:
+...     yaml=YAML()
+...     yaml.load(f)
+</code></pre>
 <h2 id="anyconfig">Anyconfig</h2>
 <p><a href="https://pypi.python.org/pypi/anyconfig">Anyconfig</a> is a very handy package, allowing to abstract completely the underlying configuration file format. It allows to load a Python dictionary from JSON, YAML, TOML, and so on.</p>
 <p>Install it with:</p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>anyconfig
-</code></pre></div>
+<pre><code class="language-bash">pip install anyconfig
+</code></pre>
 <p>Usage:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">anyconfig</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">conf1</span> <span class="o">=</span> <span class="n">anyconfig</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;/path/to/foo/conf.d/a.yml&quot;</span><span class="p">)</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; import anyconfig
+&gt;&gt;&gt; conf1 = anyconfig.load(&quot;/path/to/foo/conf.d/a.yml&quot;)
+</code></pre>
 
 
 
@@ -2982,7 +2982,7 @@ specification, and allow for example to modify a YAML content without altering c
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

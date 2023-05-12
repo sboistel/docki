@@ -21,7 +21,7 @@
         <link rel="next" href="../main/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3185,216 +3185,216 @@
 Python Lists
 </base-title></p>
 <p>Lists are one of the 4 data types in Python used to store collections of data.</p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="s1">&#39;Peter&#39;</span><span class="p">,</span> <span class="s1">&#39;Debora&#39;</span><span class="p">,</span> <span class="s1">&#39;Charles&#39;</span><span class="p">]</span>
-</code></pre></div>
+<pre><code class="language-python">['John', 'Peter', 'Debora', 'Charles']
+</code></pre>
 <h2 id="getting-values-with-indexes">Getting values with indexes</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1"># &#39;table&#39;</span>
+&gt;&gt;&gt; furniture[0]
+# 'table'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="c1"># &#39;chair&#39;</span>
+&gt;&gt;&gt; furniture[1]
+# 'chair'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="c1"># &#39;rack&#39;</span>
+&gt;&gt;&gt; furniture[2]
+# 'rack'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-<span class="c1"># &#39;shelf&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; furniture[3]
+# 'shelf'
+</code></pre>
 <h2 id="negative-indexes">Negative indexes</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="c1"># &#39;shelf&#39;</span>
+&gt;&gt;&gt; furniture[-1]
+# 'shelf'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
-<span class="c1"># &#39;chair&#39;</span>
+&gt;&gt;&gt; furniture[-3]
+# 'chair'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s1">&#39;The </span><span class="si">{</span><span class="n">furniture</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1"> is bigger than the </span><span class="si">{</span><span class="n">furniture</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span>
-<span class="c1"># &#39;The shelf is bigger than the chair&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; f'The {furniture[-1]} is bigger than the {furniture[-3]}'
+# 'The shelf is bigger than the chair'
+</code></pre>
 <h2 id="getting-sublists-with-slices">Getting sublists with Slices</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
-<span class="c1"># [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]</span>
+&gt;&gt;&gt; furniture[0:4]
+# ['table', 'chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="c1"># [&#39;chair&#39;, &#39;rack&#39;]</span>
+&gt;&gt;&gt; furniture[1:3]
+# ['chair', 'rack']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="c1"># [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;]</span>
+&gt;&gt;&gt; furniture[0:-1]
+# ['table', 'chair', 'rack']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[:</span><span class="mi">2</span><span class="p">]</span>
-<span class="c1"># [&#39;table&#39;, &#39;chair&#39;]</span>
+&gt;&gt;&gt; furniture[:2]
+# ['table', 'chair']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-<span class="c1"># [&#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]</span>
+&gt;&gt;&gt; furniture[1:]
+# ['chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[:]</span>
-<span class="c1"># [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; furniture[:]
+# ['table', 'chair', 'rack', 'shelf']
+</code></pre>
 <p>Slicing the complete list will perform a copy:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam2</span> <span class="o">=</span> <span class="n">spam</span><span class="p">[:]</span>
-<span class="c1"># [&#39;cat&#39;, &#39;bat&#39;, &#39;rat&#39;, &#39;elephant&#39;]</span>
+<pre><code class="language-python">&gt;&gt;&gt; spam2 = spam[:]
+# ['cat', 'bat', 'rat', 'elephant']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;dog&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span>
-<span class="c1"># [&#39;cat&#39;, &#39;bat&#39;, &#39;rat&#39;, &#39;elephant&#39;, &#39;dog&#39;]</span>
+&gt;&gt;&gt; spam.append('dog')
+&gt;&gt;&gt; spam
+# ['cat', 'bat', 'rat', 'elephant', 'dog']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam2</span>
-<span class="c1"># [&#39;cat&#39;, &#39;bat&#39;, &#39;rat&#39;, &#39;elephant&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; spam2
+# ['cat', 'bat', 'rat', 'elephant']
+</code></pre>
 <h2 id="getting-a-list-length-with-len">Getting a list length with len()</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">furniture</span><span class="p">)</span>
-<span class="c1"># 4</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; len(furniture)
+# 4
+</code></pre>
 <h2 id="changing-values-with-indexes">Changing values with indexes</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;desk&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;desk&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]</span>
+&gt;&gt;&gt; furniture[0] = 'desk'
+&gt;&gt;&gt; furniture
+# ['desk', 'chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;desk&#39;, &#39;chair&#39;, &#39;chair&#39;, &#39;shelf&#39;]</span>
+&gt;&gt;&gt; furniture[2] = furniture[1]
+&gt;&gt;&gt; furniture
+# ['desk', 'chair', 'chair', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;bed&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;desk&#39;, &#39;chair&#39;, &#39;chair&#39;, &#39;bed&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; furniture[-1] = 'bed'
+&gt;&gt;&gt; furniture
+# ['desk', 'chair', 'chair', 'bed']
+</code></pre>
 <h2 id="concatenation-and-replication">Concatenation and Replication</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">]</span>
-<span class="c1"># [1, 2, 3, &#39;A&#39;, &#39;B&#39;, &#39;C&#39;]</span>
+<pre><code class="language-python">&gt;&gt;&gt; [1, 2, 3] + ['A', 'B', 'C']
+# [1, 2, 3, 'A', 'B', 'C']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span>
-<span class="c1"># [&#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;, &#39;X&#39;, &#39;Y&#39;, &#39;Z&#39;]</span>
+&gt;&gt;&gt; ['X', 'Y', 'Z'] * 3
+# ['X', 'Y', 'Z', 'X', 'Y', 'Z', 'X', 'Y', 'Z']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">=</span> <span class="n">my_list</span> <span class="o">+</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span>
-<span class="c1"># [1, 2, 3, &#39;A&#39;, &#39;B&#39;, &#39;C&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; my_list = [1, 2, 3]
+&gt;&gt;&gt; my_list = my_list + ['A', 'B', 'C']
+&gt;&gt;&gt; my_list
+# [1, 2, 3, 'A', 'B', 'C']
+</code></pre>
 <h2 id="using-for-loops-with-lists">Using for loops with Lists</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">furniture</span><span class="p">:</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-<span class="c1"># table</span>
-<span class="c1"># chair</span>
-<span class="c1"># rack</span>
-<span class="c1"># shelf</span>
-</code></pre></div>
+&gt;&gt;&gt; for item in furniture:
+...     print(item)
+# table
+# chair
+# rack
+# shelf
+</code></pre>
 <h2 id="getting-the-index-in-a-loop-with-enumerate">Getting the index in a loop with enumerate()</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">furniture</span><span class="p">):</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;index: </span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s1"> - item: </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="c1"># index: 0 - item: table</span>
-<span class="c1"># index: 1 - item: chair</span>
-<span class="c1"># index: 2 - item: rack</span>
-<span class="c1"># index: 3 - item: shelf</span>
-</code></pre></div>
+&gt;&gt;&gt; for index, item in enumerate(furniture):
+...     print(f'index: {index} - item: {item}')
+# index: 0 - item: table
+# index: 1 - item: chair
+# index: 2 - item: rack
+# index: 3 - item: shelf
+</code></pre>
 <h2 id="loop-in-multiple-lists-with-zip">Loop in Multiple Lists with zip()</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">price</span> <span class="o">=</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; price = [100, 50, 80, 40]
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">item</span><span class="p">,</span> <span class="n">amount</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">furniture</span><span class="p">,</span> <span class="n">price</span><span class="p">):</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s1"> costs $</span><span class="si">{</span><span class="n">amount</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="c1"># The table costs $100</span>
-<span class="c1"># The chair costs $50</span>
-<span class="c1"># The rack costs $80</span>
-<span class="c1"># The shelf costs $40</span>
-</code></pre></div>
+&gt;&gt;&gt; for item, amount in zip(furniture, price):
+...     print(f'The {item} costs ${amount}')
+# The table costs $100
+# The chair costs $50
+# The rack costs $80
+# The shelf costs $40
+</code></pre>
 <h2 id="the-in-and-not-in-operators">The in and not in operators</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;rack&#39;</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="c1"># True</span>
+<pre><code class="language-python">&gt;&gt;&gt; 'rack' in ['table', 'chair', 'rack', 'shelf']
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;bed&#39;</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; 'bed' in ['table', 'chair', 'rack', 'shelf']
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;bed&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">furniture</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; 'bed' not in furniture
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;rack&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">furniture</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; 'rack' not in furniture
+# False
+</code></pre>
 <h2 id="the-multiple-assignment-trick">The Multiple Assignment Trick</h2>
 <p>The multiple assignment trick is a shortcut that lets you assign multiple variables with the values in a list in one line of code. So instead of doing this:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">table</span> <span class="o">=</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">chair</span> <span class="o">=</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">rack</span> <span class="o">=</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">shelf</span> <span class="o">=</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; table = furniture[0]
+&gt;&gt;&gt; chair = furniture[1]
+&gt;&gt;&gt; rack = furniture[2]
+&gt;&gt;&gt; shelf = furniture[3]
+</code></pre>
 <p>You could type this line of code:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">table</span><span class="p">,</span> <span class="n">chair</span><span class="p">,</span> <span class="n">rack</span><span class="p">,</span> <span class="n">shelf</span> <span class="o">=</span> <span class="n">furniture</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; table, chair, rack, shelf = furniture
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">table</span>
-<span class="c1"># &#39;table&#39;</span>
+&gt;&gt;&gt; table
+# 'table'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">chair</span>
-<span class="c1"># &#39;chair&#39;</span>
+&gt;&gt;&gt; chair
+# 'chair'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">rack</span>
-<span class="c1"># &#39;rack&#39;</span>
+&gt;&gt;&gt; rack
+# 'rack'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">shelf</span>
-<span class="c1"># &#39;shelf&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; shelf
+# 'shelf'
+</code></pre>
 <p>The multiple assignment trick can also be used to swap the values in two variables:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="c1"># chair</span>
+<pre><code class="language-python">&gt;&gt;&gt; a, b = 'table', 'chair'
+&gt;&gt;&gt; a, b = b, a
+&gt;&gt;&gt; print(a)
+# chair
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="c1"># table</span>
-</code></pre></div>
+&gt;&gt;&gt; print(b)
+# table
+</code></pre>
 <h2 id="the-index-method">The index Method</h2>
 <p>The <code>index</code> method allows you to find the index of a value by passing its name:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="s1">&#39;chair&#39;</span><span class="p">)</span>
-<span class="c1"># 1</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; furniture.index('chair')
+# 1
+</code></pre>
 <h2 id="adding-values">Adding Values</h2>
 <h3 id="append">append()</h3>
 <p><code>append</code> adds an element to the end of a <code>list</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;bed&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;table&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;, &#39;bed&#39;]</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; furniture.append('bed')
+&gt;&gt;&gt; furniture
+# ['table', 'chair', 'rack', 'shelf', 'bed']
+</code></pre>
 <h3 id="insert">insert()</h3>
 <p><code>insert</code> adds an element to a <code>list</code> at a given position:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;bed&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;table&#39;, &#39;bed&#39;, &#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;]</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; furniture.insert(1, 'bed')
+&gt;&gt;&gt; furniture
+# ['table', 'bed', 'chair', 'rack', 'shelf']
+</code></pre>
 <h2 id="removing-values">Removing Values</h2>
 <h3 id="del">del()</h3>
 <p><code>del</code> removes an item using the index:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;table&#39;, &#39;chair&#39;, &#39;shelf&#39;]</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; del furniture[2]
+&gt;&gt;&gt; furniture
+# ['table', 'chair', 'shelf']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;table&#39;, &#39;chair&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; del furniture[2]
+&gt;&gt;&gt; furniture
+# ['table', 'chair']
+</code></pre>
 <h3 id="remove">remove()</h3>
 <p><code>remove</code> removes an item with using actual value of it:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;chair&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;table&#39;, &#39;rack&#39;, &#39;shelf&#39;]</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; furniture.remove('chair')
+&gt;&gt;&gt; furniture
+# ['table', 'rack', 'shelf']
+</code></pre>
 <p><base-warning>
   <base-warning-title>
     Removing repeated items
@@ -3405,47 +3405,47 @@ Python Lists
 </base-warning></p>
 <h3 id="pop">pop()</h3>
 <p>By default, <code>pop</code> will remove and return the last item of the list. You can also pass the index of the element as an optional parameter:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;bat&#39;</span><span class="p">,</span> <span class="s1">&#39;rat&#39;</span><span class="p">,</span> <span class="s1">&#39;elephant&#39;</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; animals = ['cat', 'bat', 'rat', 'elephant']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">animals</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-<span class="s1">&#39;elephant&#39;</span>
+&gt;&gt;&gt; animals.pop()
+'elephant'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">animals</span>
-<span class="p">[</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;bat&#39;</span><span class="p">,</span> <span class="s1">&#39;rat&#39;</span><span class="p">]</span>
+&gt;&gt;&gt; animals
+['cat', 'bat', 'rat']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">animals</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="s1">&#39;cat&#39;</span>
+&gt;&gt;&gt; animals.pop(0)
+'cat'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">animals</span>
-<span class="p">[</span><span class="s1">&#39;bat&#39;</span><span class="p">,</span> <span class="s1">&#39;rat&#39;</span><span class="p">]</span>
-</code></pre></div>
+&gt;&gt;&gt; animals
+['bat', 'rat']
+</code></pre>
 <h2 id="sorting-values-with-sort">Sorting values with sort()</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">numbers</span>
-<span class="c1"># [-7, 1, 2, 3.14, 5]</span>
+<pre><code class="language-python">&gt;&gt;&gt; numbers = [2, 5, 3.14, 1, -7]
+&gt;&gt;&gt; numbers.sort()
+&gt;&gt;&gt; numbers
+# [-7, 1, 2, 3.14, 5]
 
-<span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="n">furniture</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="n">furniture</span>
-<span class="c1"># [&#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;, &#39;table&#39;]</span>
-</code></pre></div>
+furniture = ['table', 'chair', 'rack', 'shelf']
+furniture.sort()
+furniture
+# ['chair', 'rack', 'shelf', 'table']
+</code></pre>
 <p>You can also pass <code>True</code> for the <code>reverse</code> keyword argument to have <code>sort()</code> sort the values in reverse order:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span>
-<span class="c1"># [&#39;table&#39;, &#39;shelf&#39;, &#39;rack&#39;, &#39;chair&#39;]</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; furniture.sort(reverse=True)
+&gt;&gt;&gt; furniture
+# ['table', 'shelf', 'rack', 'chair']
+</code></pre>
 <p>If you need to sort the values in regular alphabetical order, pass <code>str.lower</code> for the key keyword argument in the sort() method call:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">letters</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="nb">str</span><span class="o">.</span><span class="n">lower</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">letters</span>
-<span class="c1"># [&#39;a&#39;, &#39;A&#39;, &#39;z&#39;, &#39;Z&#39;]</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; letters = ['a', 'z', 'A', 'Z']
+&gt;&gt;&gt; letters.sort(key=str.lower)
+&gt;&gt;&gt; letters
+# ['a', 'A', 'z', 'Z']
+</code></pre>
 <p>You can use the built-in function <code>sorted</code> to return a new list:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">furniture</span><span class="p">)</span>
-<span class="c1"># [&#39;chair&#39;, &#39;rack&#39;, &#39;shelf&#39;, &#39;table&#39;]</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ['table', 'chair', 'rack', 'shelf']
+&gt;&gt;&gt; sorted(furniture)
+# ['chair', 'rack', 'shelf', 'table']
+</code></pre>
 <h2 id="the-tuple-data-type">The Tuple data type</h2>
 <p><base-disclaimer>
   <base-disclaimer-title>
@@ -3455,28 +3455,28 @@ Python Lists
     The key difference between tuples and lists is that, while <code>tuples</code> are <i>immutable</i> objects, <code>lists</code> are <i>mutable</i>. This means that tuples cannot be changed while the lists can be modified. Tuples are more memory efficient than the lists.
   </base-disclaimer-content>
 </base-disclaimer></p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;table&#39;</span><span class="p">,</span> <span class="s1">&#39;chair&#39;</span><span class="p">,</span> <span class="s1">&#39;rack&#39;</span><span class="p">,</span> <span class="s1">&#39;shelf&#39;</span><span class="p">)</span>
+<pre><code class="language-python">&gt;&gt;&gt; furniture = ('table', 'chair', 'rack', 'shelf')
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1"># &#39;table&#39;</span>
+&gt;&gt;&gt; furniture[0]
+# 'table'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">furniture</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
-<span class="c1"># (&#39;chair&#39;, &#39;rack&#39;)</span>
+&gt;&gt;&gt; furniture[1:3]
+# ('chair', 'rack')
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">furniture</span><span class="p">)</span>
-<span class="c1"># 4</span>
-</code></pre></div>
+&gt;&gt;&gt; len(furniture)
+# 4
+</code></pre>
 <p>The main way that tuples are different from lists is that tuples, like strings, are immutable.</p>
 <h2 id="converting-between-list-and-tuple">Converting between list() and tuple()</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">tuple</span><span class="p">([</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-<span class="c1"># (&#39;cat&#39;, &#39;dog&#39;, 5)</span>
+<pre><code class="language-python">&gt;&gt;&gt; tuple(['cat', 'dog', 5])
+# ('cat', 'dog', 5)
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">((</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
-<span class="c1"># [&#39;cat&#39;, &#39;dog&#39;, 5]</span>
+&gt;&gt;&gt; list(('cat', 'dog', 5))
+# ['cat', 'dog', 5]
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
-<span class="c1"># [&#39;h&#39;, &#39;e&#39;, &#39;l&#39;, &#39;l&#39;, &#39;o&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; list('hello')
+# ['h', 'e', 'l', 'l', 'o']
+</code></pre>
 
 
 
@@ -3526,7 +3526,7 @@ Python Lists
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

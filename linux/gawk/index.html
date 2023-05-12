@@ -21,7 +21,7 @@
         <link rel="next" href="../getops/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3018,13 +3018,13 @@
 <p>He has been a heavy <strong>AWK</strong> user since 1987, when he became involved with <strong>gawk</strong>, the GNU project's version of AWK. </p>
 <h2 id="sed">Sed</h2>
 <p>Add item to certain line</p>
-<div class="highlight"><pre><span></span><code>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;20 a nouvel élèment&#39;</span><span class="w"> </span>FICHIER
-</code></pre></div>
+<pre><code class="language-bash">sed -i '20 a nouvel élèment' FICHIER
+</code></pre>
 <h3 id="remove-saut-de-ligne">Remove saut de ligne</h3>
-<div class="highlight"><pre><span></span><code>sed<span class="w"> </span><span class="s1">&#39;/^$/d&#39;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sed<span class="w"> </span><span class="s1">&#39;/^:space:*$/d&#39;</span>
-</code></pre></div>
+<pre><code class="language-bash">sed '/^$/d'
+</code></pre>
+<pre><code class="language-bash">sed '/^:space:*$/d'
+</code></pre>
 <h2 id="awk">AWK</h2>
 <p>Awk command :</p>
 <table>
@@ -3050,22 +3050,22 @@
 </table>
 <h2 id="tr">TR</h2>
 <p>Remove space :</p>
-<div class="highlight"><pre><span></span><code>tr<span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;[:blank:]&#39;</span>
-</code></pre></div>
+<pre><code class="language-bash">tr -d '[:blank:]'
+</code></pre>
 <h2 id="find">FIND</h2>
 <h3 id="files">Files</h3>
 <p>Find all 'jacquet' file from $PLACE :</p>
-<div class="highlight"><pre><span></span><code>find<span class="w"> </span><span class="nv">$PLACE</span><span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;jacquet&quot;</span>
-</code></pre></div>
+<pre><code class="language-bash">find $PLACE -name &quot;jacquet&quot;
+</code></pre>
 <h3 id="directory">Directory</h3>
 <p>Find all files older than 90 days in <code>/var/log/httpd/</code> directory</p>
-<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/var/log/httpd/<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*&quot;</span><span class="w"> </span>-mtime<span class="w"> </span>+90<span class="w"> </span>-exec<span class="w"> </span>rm<span class="w"> </span>-f<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
-</code></pre></div>
+<pre><code class="language-bash">find /var/log/httpd/ -type f -name &quot;*&quot; -mtime +90 -exec rm -f {} \;
+</code></pre>
 <h4 id="exclude">Exclude</h4>
 <p>How to exclude directory.ies ?</p>
 <p>Use the <code>! -path '*$THING*'</code>syntax</p>
-<div class="highlight"><pre><span></span><code>find<span class="w"> </span><span class="nv">$PLACE</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-name<span class="w"> </span><span class="nv">$SOMETING</span><span class="w"> </span>!<span class="w"> </span>-path<span class="w"> </span><span class="s1">&#39;*NOT_THIS_ONE*&#39;</span>
-</code></pre></div>
+<pre><code class="language-shell">find $PLACE -type f -name $SOMETING ! -path '*NOT_THIS_ONE*'
+</code></pre>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><code>{}</code> is the resutl of find command</p>
@@ -3073,12 +3073,12 @@
 <h2 id="grep">Grep</h2>
 <p>That is a command-line utility for searching plain-text data sets for lines that match a regular expression.</p>
 <p>Its name comes from the <code>ed</code> command <code>g/re/p</code> (<em>globally search for a regular expression and print matching lines</em>).</p>
-<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>thing<span class="w"> </span>file.txt
-grep<span class="w"> </span><span class="s2">&quot;searching elements&quot;</span><span class="w"> </span>-A<span class="w"> </span><span class="nv">$NUMBER_OF_LINE</span><span class="w"> </span>-B<span class="w"> </span><span class="nv">$NUMBER_OF_LINE</span>
-</code></pre></div>
+<pre><code class="language-bash">grep thing file.txt
+grep &quot;searching elements&quot; -A $NUMBER_OF_LINE -B $NUMBER_OF_LINE
+</code></pre>
 <p>Catch something from multiple files</p>
-<div class="highlight"><pre><span></span><code>grep<span class="w"> </span>-ari<span class="w"> </span>copyright<span class="w"> </span>/var/www/html/
-</code></pre></div>
+<pre><code class="language-shell">grep -ari copyright /var/www/html/
+</code></pre>
 
 
 
@@ -3128,7 +3128,7 @@ grep<span class="w"> </span><span class="s2">&quot;searching elements&quot;</spa
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

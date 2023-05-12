@@ -21,7 +21,7 @@
         <link rel="next" href="../elastik/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3157,45 +3157,45 @@
 <h2 id="images">Images</h2>
 <p>Chaque processus dépendera d'une image pareil à une iso + son appli pour une vm.
 Chercher une image :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>search<span class="w"> </span>nginx
-</code></pre></div>
+<pre><code class="language-bash">docker search nginx
+</code></pre>
 <p>Télécharger une image : </p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>pull<span class="w"> </span>nginx
-</code></pre></div>
+<pre><code class="language-bash">docker pull nginx
+</code></pre>
 <p>Lister les images téléchargées :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>images
-</code></pre></div>
+<pre><code class="language-bash">docker images
+</code></pre>
 <p>ou</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>image<span class="w"> </span>ls
-</code></pre></div>
+<pre><code class="language-bash">docker image ls
+</code></pre>
 <p>Supprimer une image :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rmi<span class="w"> </span>nginx
-</code></pre></div>
+<pre><code class="language-bash">docker rmi nginx
+</code></pre>
 <p>⚠ Si une image est sur le disque mais nous est impossible de supprimer (on parlera d'une image souvent testé à l'installation de docker)
 Nous allons devoir forcer sa suppression :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>rmi<span class="w"> </span>-f<span class="w"> </span>hello-world
-</code></pre></div>
+<pre><code class="language-bash">docker rmi -f hello-world
+</code></pre>
 <p>Voir l'historique de son image :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">history</span><span class="w"> </span>sboistel/image:verison<span class="o">(</span><span class="m">1</span>.1<span class="o">)</span>
-</code></pre></div>
+<pre><code class="language-bash">docker history sboistel/image:verison(1.1)
+</code></pre>
 <h2 id="commit">Commit</h2>
 <p>Après avoir fait des changements sur une image, comment enregister tout ça ?</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>commit<span class="w"> </span>mycentos01<span class="w"> </span>sboistel/mycentos:1.0
-</code></pre></div>
+<pre><code class="language-bash">docker commit mycentos01 sboistel/mycentos:1.0
+</code></pre>
 <h2 id="dockerfile">DockerFile</h2>
 <p>Créer un docker file : <code>vim dockerfile</code></p>
-<div class="highlight"><pre><span></span><code>FROM centos
+<pre><code class="language-yml">FROM centos
 RPM yum install -y wget
 RPM yum install yum-utils
-</code></pre></div>
+</code></pre>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Plus il y aura de nombre de ligne dans le dockerfile, plus le nombre de couche sera important et engedra les performences.</p>
 </div>
 <p>Construire l'image :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>sboistel/mycentos:1.0
-docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>mon_image:v1.0
-</code></pre></div>
+<pre><code class="language-bash">docker build -t sboistel/mycentos:1.0
+docker build -t mon_image:v1.0
+</code></pre>
 <h3 id="champs">Champs</h3>
 <p>Liste des différents champs complétable :</p>
 <ul>
@@ -3218,76 +3218,76 @@ docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </
 <li>i : Interactif </li>
 </ul>
 <h3 id="exemple">Exemple :</h3>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-ti<span class="w"> </span>ubuntu
-</code></pre></div>
+<pre><code class="language-bash">docker run -ti ubuntu
+</code></pre>
 <p>Exécuter une commande dans l'environnement Bash :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-ti<span class="w"> </span>ubuntu<span class="w"> </span>ps
-</code></pre></div>
+<pre><code class="language-bash">docker run -ti ubuntu ps
+</code></pre>
 <p>Exécuter une commande dans un conteneur détaché en cours d'éxécution :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>-name<span class="o">=</span>container01<span class="w"> </span>-hostname<span class="o">=</span>host01<span class="w"> </span>centos<span class="w"> </span>ping<span class="w"> </span><span class="m">127</span>.0.0.1
-</code></pre></div>
+<pre><code class="language-bash">docker exec -name=container01 -hostname=host01 centos ping 127.0.0.1
+</code></pre>
 <h2 id="attache-non-attache">Attaché / Non Attaché</h2>
 <p>Exécuter l'image ubuntu avec des paramètres d'attachements :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>--name<span class="o">=</span>container01<span class="w"> </span>--hostname<span class="o">=</span>host01<span class="w"> </span>-it<span class="w"> </span>ubuntu
-</code></pre></div>
+<pre><code class="language-bash">docker run --name=container01 --hostname=host01 -it ubuntu
+</code></pre>
 <p>Exécuter l'image ubuntu avec des paramètres de détachement :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>-it<span class="w"> </span>centos<span class="w"> </span>ping<span class="w"> </span><span class="m">127</span>.0.0.1
-</code></pre></div>
+<pre><code class="language-bash">docker run -d -it centos ping 127.0.0.1
+</code></pre>
 <p>Du coup, où se passes les informations du conteneur détaché ? :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>logs<span class="w"> </span>ID_DU_CONTAINER
-</code></pre></div>
+<pre><code class="language-bash">docker logs ID_DU_CONTAINER
+</code></pre>
 <p>Rappel pour avoir l'id du conteneur : </p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps<span class="w"> </span>
-</code></pre></div>
+<pre><code class="language-bash">docker ps 
+</code></pre>
 <p>Afin de réccupérer la main sur la session du conteneur détaché :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>attache<span class="w"> </span>ID_DU_CONTAINER
-</code></pre></div>
+<pre><code class="language-bash">docker attache ID_DU_CONTAINER
+</code></pre>
 <p>Revenir au mode détaché, faire la combinaison suivante : <code>CTRL + Q</code></p>
 <h2 id="inspecter-un-conteneur">Inspecter un conteneur</h2>
 <p>Avoir les informations du conteneur en format json :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>inspect<span class="w"> </span>container01
-</code></pre></div>
+<pre><code class="language-bash">docker inspect container01
+</code></pre>
 <h2 id="agregation-de-recherche">Agrégation de recherche</h2>
 <p>Récolter seulement ce qui nous intérèsse ?</p>
 <ul>
 <li>Avoir un status</li>
 </ul>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>inspect<span class="w"> </span>--format<span class="o">=</span><span class="s1">&#39;![](./Docker/.State.Status)&#39;</span><span class="w"> </span>container01
-</code></pre></div>
+<pre><code class="language-bash">docker inspect --format='![](./Docker/.State.Status)' container01
+</code></pre>
 <ul>
 <li>Avoir l'iP du container01 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>inspect<span class="w"> </span>--format<span class="o">=</span><span class="s1">&#39;![](./Docker/.NetworkSettings.IPAddress)&#39;</span><span class="w"> </span>container01
-</code></pre></div>
+<pre><code class="language-bash">docker inspect --format='![](./Docker/.NetworkSettings.IPAddress)' container01
+</code></pre>
 <p>Réccolter le tableau State :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>inspect<span class="w"> </span>--format<span class="o">=</span><span class="s1">&#39;![](./Docker/json .State)&#39;</span><span class="w"> </span>container01
-</code></pre></div>
+<pre><code class="language-bash">docker inspect --format='![](./Docker/json .State)' container01
+</code></pre>
 <h3 id="filtres">Filtres</h3>
 <p>Filtrer tout les conteneur ayant comme nom web :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span>--filter<span class="w"> </span><span class="nv">name</span><span class="o">=</span>web
-</code></pre></div>
+<pre><code class="language-bash">docker ps -a --filter name=web
+</code></pre>
 <p>Filtrer tout les conteneurs ayant un status fermé :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span>--filter<span class="w"> </span><span class="nv">status</span><span class="o">=</span>exited
-</code></pre></div>
+<pre><code class="language-bash">docker ps -a --filter status=exited
+</code></pre>
 <h2 id="formater-laffichage">Formater l'affichage</h2>
 <p>Formater la sortie :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span>--format<span class="w"> </span><span class="s2">&quot;![](./Docker/.Names) : ![](./Docker/.Status)&quot;</span>
-</code></pre></div>
+<pre><code class="language-bash">docker ps -a --format &quot;![](./Docker/.Names) : ![](./Docker/.Status)&quot;
+</code></pre>
 <h2 id="import-export">Import / Export</h2>
 <h3 id="export">Export</h3>
 <p>Comment exporter son image ?</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span><span class="nb">export</span><span class="w"> </span>-o<span class="w"> </span>mycentos01.tar<span class="w"> </span>mycentos
-</code></pre></div>
+<pre><code class="language-bash">docker export -o mycentos01.tar mycentos
+</code></pre>
 <p>Vérifier son export :</p>
-<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>tvf<span class="w"> </span>mycentos01.tar
-</code></pre></div>
+<pre><code class="language-bash">tar tvf mycentos01.tar
+</code></pre>
 <p>Tout est ok, je compresse :</p>
-<div class="highlight"><pre><span></span><code>gzip<span class="w"> </span>mycentos01.tar
-</code></pre></div>
+<pre><code class="language-bash">gzip mycentos01.tar
+</code></pre>
 <h4 id="import">Import</h4>
 <p>Comment import une image exportée ? :</p>
-<div class="highlight"><pre><span></span><code>docker<span class="w"> </span>import<span class="w"> </span>mycentos.tar.gz<span class="w"> </span>mycentos:1.0
-</code></pre></div>
+<pre><code class="language-bash">docker import mycentos.tar.gz mycentos:1.0
+</code></pre>
 <h2 id="containers">Containers</h2>
 <p>L'objectif de la conteneurisation est de faire en sorte qu'un ensemble logiciel cohérent puisse fonctionner au sein d'un conteneur.</p>
 <p>Pour qu'une application puisse tourner au sein d'un conteneur, elle doit être empaquetée, c'est à dire qu'on la met à l'intérieur d'un paquet (une image dans la terminologie des conteneurs) avec ses dépendances. </p>
@@ -3305,25 +3305,25 @@ Dotcloud plus connu sous le nom de Docker sera de moins en moins utilisé car ta
 <li>etc ...</li>
 </ul>
 <h2 id="dockerless">Dockerless</h2>
-<div class="highlight"><pre><span></span><code><span class="o">================================================================================</span>
+<pre><code class="language-bash">================================================================================
 
-To<span class="w"> </span>run<span class="w"> </span>Docker<span class="w"> </span>as<span class="w"> </span>a<span class="w"> </span>non-privileged<span class="w"> </span>user,<span class="w"> </span>consider<span class="w"> </span>setting<span class="w"> </span>up<span class="w"> </span>the
-Docker<span class="w"> </span>daemon<span class="w"> </span><span class="k">in</span><span class="w"> </span>rootless<span class="w"> </span>mode<span class="w"> </span><span class="k">for</span><span class="w"> </span>your<span class="w"> </span>user:
+To run Docker as a non-privileged user, consider setting up the
+Docker daemon in rootless mode for your user:
 
-<span class="w">    </span>dockerd-rootless-setuptool.sh<span class="w"> </span>install
+    dockerd-rootless-setuptool.sh install
 
-Visit<span class="w"> </span>https://docs.docker.com/go/rootless/<span class="w"> </span>to<span class="w"> </span>learn<span class="w"> </span>about<span class="w"> </span>rootless<span class="w"> </span>mode.
+Visit https://docs.docker.com/go/rootless/ to learn about rootless mode.
 
 
-To<span class="w"> </span>run<span class="w"> </span>the<span class="w"> </span>Docker<span class="w"> </span>daemon<span class="w"> </span>as<span class="w"> </span>a<span class="w"> </span>fully<span class="w"> </span>privileged<span class="w"> </span>service,<span class="w"> </span>but<span class="w"> </span>granting<span class="w"> </span>non-root
-users<span class="w"> </span>access,<span class="w"> </span>refer<span class="w"> </span>to<span class="w"> </span>https://docs.docker.com/go/daemon-access/
+To run the Docker daemon as a fully privileged service, but granting non-root
+users access, refer to https://docs.docker.com/go/daemon-access/
 
-WARNING:<span class="w"> </span>Access<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>remote<span class="w"> </span>API<span class="w"> </span>on<span class="w"> </span>a<span class="w"> </span>privileged<span class="w"> </span>Docker<span class="w"> </span>daemon<span class="w"> </span>is<span class="w"> </span>equivalent
-<span class="w">         </span>to<span class="w"> </span>root<span class="w"> </span>access<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>host.<span class="w"> </span>Refer<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span><span class="s1">&#39;Docker daemon attack surface&#39;</span>
-<span class="w">         </span>documentation<span class="w"> </span><span class="k">for</span><span class="w"> </span>details:<span class="w"> </span>https://docs.docker.com/go/attack-surface/
+WARNING: Access to the remote API on a privileged Docker daemon is equivalent
+         to root access on the host. Refer to the 'Docker daemon attack surface'
+         documentation for details: https://docs.docker.com/go/attack-surface/
 
-<span class="o">================================================================================</span>
-</code></pre></div>
+================================================================================
+</code></pre>
 
 
 
@@ -3373,7 +3373,7 @@ WARNING:<span class="w"> </span>Access<span class="w"> </span>to<span class="w">
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

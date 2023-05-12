@@ -21,7 +21,7 @@
         <link rel="next" href="../keymaps/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2885,39 +2885,39 @@
 <p>A positional parameter is an argument specified on the command line, used to launch the current process in a shell.</p>
 <p>Positional parameter values are stored in a special set of variables maintained by the shell.</p>
 <p><img alt="positional parameter" src="../resources/getops_01.png" /></p>
-<div class="highlight"><pre><span></span><code>mycmd<span class="w"> </span>-a<span class="w"> </span>argument1<span class="w"> </span>-b<span class="w"> </span>argument2
-</code></pre></div>
+<pre><code class="language-bash">mycmd -a argument1 -b argument2
+</code></pre>
 <h2 id="examples">EXAMPLES</h2>
 <p>The following code fragment shows how one might process the arguments for a command that can take the options -a and -b, and the option -o, which requires an argument.</p>
-<div class="highlight"><pre><span></span><code><span class="nv">args</span><span class="o">=</span><span class="sb">`</span>getopt<span class="w"> </span>abo:<span class="w"> </span><span class="nv">$*</span><span class="sb">`</span>
-<span class="c1"># you should not use `getopt abo: &quot;$@&quot;` since that would parse</span>
-<span class="c1"># the arguments differently from what the set command below does.</span>
-<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$?</span><span class="w"> </span>-ne<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
-<span class="w">        </span><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;Usage: ...&#39;</span>
-<span class="w">        </span><span class="nb">exit</span><span class="w"> </span><span class="m">2</span>
-<span class="k">fi</span>
-<span class="nb">set</span><span class="w"> </span>--<span class="w"> </span><span class="nv">$args</span>
-<span class="c1"># You cannot use the set command with a backquoted getopt directly,</span>
-<span class="c1"># since the exit code from getopt would be shadowed by those of set,</span>
-<span class="c1"># which is zero by definition.</span>
-<span class="k">while</span><span class="w"> </span>:<span class="p">;</span><span class="w"> </span><span class="k">do</span>
-<span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="k">in</span>
-<span class="w">        </span>-a<span class="p">|</span>-b<span class="o">)</span>
-<span class="w">                </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;flag </span><span class="nv">$1</span><span class="s2"> set&quot;</span><span class="p">;</span><span class="w"> </span><span class="nv">sflags</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">1</span><span class="p">#-</span><span class="si">}</span><span class="nv">$sflags</span><span class="s2">&quot;</span>
-<span class="w">                </span><span class="nb">shift</span>
-<span class="w">                </span><span class="p">;;</span>
-<span class="w">        </span>-o<span class="o">)</span>
-<span class="w">                </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;oarg is &#39;</span><span class="nv">$2</span><span class="s2">&#39;&quot;</span><span class="p">;</span><span class="w"> </span><span class="nv">oarg</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
-<span class="w">                </span>shift<span class="p">;</span><span class="w"> </span><span class="nb">shift</span>
-<span class="w">                </span><span class="p">;;</span>
-<span class="w">        </span>--<span class="o">)</span>
-<span class="w">                </span>shift<span class="p">;</span><span class="w"> </span><span class="k">break</span>
-<span class="w">                </span><span class="p">;;</span>
-<span class="w">        </span><span class="k">esac</span>
-<span class="k">done</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;single-char flags: &#39;</span><span class="nv">$sflags</span><span class="s2">&#39;&quot;</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;oarg is &#39;</span><span class="nv">$oarg</span><span class="s2">&#39;&quot;</span>
-</code></pre></div>
+<pre><code class="language-bash">args=`getopt abo: $*`
+# you should not use `getopt abo: &quot;$@&quot;` since that would parse
+# the arguments differently from what the set command below does.
+if [ $? -ne 0 ]; then
+        echo 'Usage: ...'
+        exit 2
+fi
+set -- $args
+# You cannot use the set command with a backquoted getopt directly,
+# since the exit code from getopt would be shadowed by those of set,
+# which is zero by definition.
+while :; do
+        case &quot;$1&quot; in
+        -a|-b)
+                echo &quot;flag $1 set&quot;; sflags=&quot;${1#-}$sflags&quot;
+                shift
+                ;;
+        -o)
+                echo &quot;oarg is '$2'&quot;; oarg=&quot;$2&quot;
+                shift; shift
+                ;;
+        --)
+                shift; break
+                ;;
+        esac
+done
+echo &quot;single-char flags: '$sflags'&quot;
+echo &quot;oarg is '$oarg'&quot;
+</code></pre>
 
 
 
@@ -2967,7 +2967,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

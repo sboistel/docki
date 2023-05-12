@@ -21,7 +21,7 @@
         <link rel="next" href="../reading-and-writing-files/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2939,162 +2939,166 @@ Python OOP Basics
 <p>In the given code example, the class MyClass has two attributes, _protected_var and __private_var. The _protected_var is marked as protected by using a single underscore prefix. This means that the attribute can be accessed within the class and its subclasses but not outside the class. The __private_var is marked as private by using two underscore prefixes. This means that the attribute can only be accessed within the class and not outside the class, not even in its subclasses.</p>
 <p>When we create an object of the MyClass class, we can access the _protected_var attribute using the object name with a single underscore prefix. However, we cannot access the __private_var attribute using the object name, as it is hidden from the outside world. If we try to access the __private_var attribute, we will get an AttributeError as shown in the code.</p>
 <p>In summary, encapsulation is an important concept in object-oriented programming that helps to protect the implementation details of an object. In Python, we can achieve encapsulation by using access modifiers and using underscore prefixes to indicate the access level.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Define a class named MyClass</span>
-<span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+<pre><code class="language-python"># Define a class named MyClass
+class MyClass:
 
-    <span class="c1"># Constructor method that initializes the class object</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    # Constructor method that initializes the class object
+    def __init__(self):
 
-        <span class="c1"># Define a protected variable with an initial value of 10</span>
-        <span class="c1"># The variable name starts with a single underscore, which indicates protected access</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_protected_var</span> <span class="o">=</span> <span class="mi">10</span>
+        # Define a protected variable with an initial value of 10
+        # The variable name starts with a single underscore, which indicates protected access
+        self._protected_var = 10
 
-        <span class="c1"># Define a private variable with an initial value of 20</span>
-        <span class="c1"># The variable name starts with two underscores, which indicates private access</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">__private_var</span> <span class="o">=</span> <span class="mi">20</span>
+        # Define a private variable with an initial value of 20
+        # The variable name starts with two underscores, which indicates private access
+        self.__private_var = 20
 
-<span class="c1"># Create an object of MyClass class</span>
-<span class="n">obj</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">()</span>
+# Create an object of MyClass class
+obj = MyClass()
 
-<span class="c1"># Access the protected variable using the object name and print its value</span>
-<span class="c1"># The protected variable can be accessed outside the class but</span>
-<span class="c1"># it is intended to be used within the class or its subclasses</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">_protected_var</span><span class="p">)</span>   <span class="c1"># output: 10</span>
+# Access the protected variable using the object name and print its value
+# The protected variable can be accessed outside the class but
+# it is intended to be used within the class or its subclasses
+print(obj._protected_var)   # output: 10
 
-<span class="c1"># Try to access the private variable using the object name and print its value</span>
-<span class="c1"># The private variable cannot be accessed outside the class, even by its subclasses</span>
-<span class="c1"># This will raise an AttributeError because the variable is not accessible outside the class</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">__private_var</span><span class="p">)</span>    <span class="c1"># AttributeError: &#39;MyClass&#39; object has no attribute &#39;__private_var&#39;</span>
-</code></pre></div>
+# Try to access the private variable using the object name and print its value
+# The private variable cannot be accessed outside the class, even by its subclasses
+# This will raise an AttributeError because the variable is not accessible outside the class
+print(obj.__private_var)    # AttributeError: 'MyClass' object has no attribute '__private_var'
+
+</code></pre>
 <h2 id="inheritance">Inheritance</h2>
 <p>Inheritance promotes code reuse and allows you to create a hierarchy of classes that share common attributes and methods. It helps in creating clean and organized code by keeping related functionality in one place and promoting the concept of modularity. The base class from which a new class is derived is also known as a parent class, and the new class is known as the child class or subclass.</p>
 <p>In the code, we define a class named Animal which has a constructor method that initializes the class object with a name attribute and a method named speak. The speak method is defined in the Animal class but does not have a body.</p>
 <p>We then define two subclasses named Dog and Cat which inherit from the Animal class. These subclasses override the speak method of the Animal class.</p>
 <p>We create a Dog object with a name attribute "Rover" and a Cat object with a name attribute "Whiskers". We call the speak method of the Dog object using dog.speak(), and it prints "Woof!" because the speak method of the Dog class overrides the speak method of the Animal class. Similarly, we call the speak method of the Cat object using cat.speak(), and it prints "Meow!" because the speak method of the Cat class overrides the speak method of the Animal class.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Define a class named Animal</span>
-<span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
+<pre><code class="language-python"># Define a class named Animal
+class Animal:
 
-    <span class="c1"># Constructor method that initializes the class object with a name attribute</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+    # Constructor method that initializes the class object with a name attribute
+    def __init__(self, name):
+        self.name = name
 
-    <span class="c1"># Method that is defined in the Animal class but does not have a body</span>
-    <span class="c1"># This method will be overridden in the subclasses of Animal</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    # Method that is defined in the Animal class but does not have a body
+    # This method will be overridden in the subclasses of Animal
+    def speak(self):
+        print(&quot;&quot;)
 
-<span class="c1"># Define a subclass named Dog that inherits from the Animal class</span>
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+# Define a subclass named Dog that inherits from the Animal class
+class Dog(Animal):
 
-    <span class="c1"># Override the speak method of the Animal class</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Woof!&quot;</span><span class="p">)</span>
+    # Override the speak method of the Animal class
+    def speak(self):
+        print(&quot;Woof!&quot;)
 
-<span class="c1"># Define a subclass named Cat that inherits from the Animal class</span>
-<span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+# Define a subclass named Cat that inherits from the Animal class
+class Cat(Animal):
 
-    <span class="c1"># Override the speak method of the Animal class</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Meow!&quot;</span><span class="p">)</span>
+    # Override the speak method of the Animal class
+    def speak(self):
+        print(&quot;Meow!&quot;)
 
-<span class="c1"># Create a Dog object with a name attribute &quot;Rover&quot;</span>
-<span class="n">dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s2">&quot;Rover&quot;</span><span class="p">)</span>
+# Create a Dog object with a name attribute &quot;Rover&quot;
+dog = Dog(&quot;Rover&quot;)
 
-<span class="c1"># Create a Cat object with a name attribute &quot;Whiskers&quot;</span>
-<span class="n">cat</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s2">&quot;Whiskers&quot;</span><span class="p">)</span>
+# Create a Cat object with a name attribute &quot;Whiskers&quot;
+cat = Cat(&quot;Whiskers&quot;)
 
-<span class="c1"># Call the speak method of the Dog class and print the output</span>
-<span class="c1"># The speak method of the Dog class overrides the speak method of the Animal class</span>
-<span class="c1"># Therefore, when we call the speak method of the Dog object, it will print &quot;Woof!&quot;</span>
-<span class="n">dog</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>   <span class="c1"># output: Woof!</span>
+# Call the speak method of the Dog class and print the output
+# The speak method of the Dog class overrides the speak method of the Animal class
+# Therefore, when we call the speak method of the Dog object, it will print &quot;Woof!&quot;
+dog.speak()   # output: Woof!
 
-<span class="c1"># Call the speak method of the Cat class and print the output</span>
-<span class="c1"># The speak method of the Cat class overrides the speak method of the Animal class</span>
-<span class="c1"># Therefore, when we call the speak method of the Cat object, it will print &quot;Meow!&quot;</span>
-<span class="n">cat</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>   <span class="c1"># output: Meow!</span>
-</code></pre></div>
+# Call the speak method of the Cat class and print the output
+# The speak method of the Cat class overrides the speak method of the Animal class
+# Therefore, when we call the speak method of the Cat object, it will print &quot;Meow!&quot;
+cat.speak()   # output: Meow!
+
+</code></pre>
 <h2 id="polymorphism">Polymorphism</h2>
 <p>Polymorphism is an important concept in object-oriented programming that allows you to write code that can work with objects of different classes in a uniform way. In Python, polymorphism is achieved by using method overriding or method overloading.</p>
 <p>Method overriding is when a subclass provides its own implementation of a method that is already defined in its parent class. This allows the subclass to modify the behavior of the method without changing its name or signature.</p>
 <p>Method overloading is when multiple methods have the same name but different parameters. Python does not support method overloading directly, but it can be achieved using default arguments or variable-length arguments.</p>
 <p>Polymorphism makes it easier to write flexible and reusable code. It allows you to write code that can work with different objects without needing to know their specific types.</p>
-<div class="highlight"><pre><span></span><code><span class="c1">#The Shape class is defined with an abstract area method, which is intended to be overridden by subclasses.</span>
-<span class="k">class</span> <span class="nc">Shape</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
+<pre><code class="language-python">#The Shape class is defined with an abstract area method, which is intended to be overridden by subclasses.
+class Shape:
+    def area(self):
+        pass
 
-<span class="k">class</span> <span class="nc">Rectangle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
-    <span class="c1"># The Rectangle class is defined with an __init__ method that initializes</span>
-    <span class="c1"># width and height instance variables.</span>
-    <span class="c1"># It also defines an area method that calculates and returns</span>
-    <span class="c1"># the area of a rectangle using the width and height instance variables.</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>  <span class="c1"># Initialize width instance variable</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>  <span class="c1"># Initialize height instance variable</span>
+class Rectangle(Shape):
+    # The Rectangle class is defined with an __init__ method that initializes
+    # width and height instance variables.
+    # It also defines an area method that calculates and returns
+    # the area of a rectangle using the width and height instance variables.
+    def __init__(self, width, height):
+        self.width = width  # Initialize width instance variable
+        self.height = height  # Initialize height instance variable
 
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>  <span class="c1"># Return area of rectangle</span>
+    def area(self):
+        return self.width * self.height  # Return area of rectangle
 
 
- <span class="c1"># The Circle class is defined with an __init__ method</span>
- <span class="c1"># that initializes a radius instance variable.</span>
- <span class="c1"># It also defines an area method that calculates and</span>
- <span class="c1"># returns the area of a circle using the radius instance variable.</span>
-<span class="k">class</span> <span class="nc">Circle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>  <span class="c1"># Initialize radius instance variable</span>
+ # The Circle class is defined with an __init__ method
+ # that initializes a radius instance variable.
+ # It also defines an area method that calculates and
+ # returns the area of a circle using the radius instance variable.
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius  # Initialize radius instance variable
 
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="mf">3.14</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>  <span class="c1"># Return area of circle using pi * r^2</span>
+    def area(self):
+        return 3.14 * self.radius ** 2  # Return area of circle using pi * r^2
 
-<span class="c1"># The shapes list is created with one Rectangle object and one Circle object. The for</span>
-<span class="c1"># loop iterates over each object in the list and calls the area method of each object</span>
-<span class="c1"># The output will be the area of the rectangle (20) and the area of the circle (153.86).</span>
-<span class="n">shapes</span> <span class="o">=</span> <span class="p">[</span><span class="n">Rectangle</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">Circle</span><span class="p">(</span><span class="mi">7</span><span class="p">)]</span>  <span class="c1"># Create a list of Shape objects</span>
-<span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">shapes</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">shape</span><span class="o">.</span><span class="n">area</span><span class="p">())</span>  <span class="c1"># Output the area of each Shape object</span>
-</code></pre></div>
+# The shapes list is created with one Rectangle object and one Circle object. The for
+# loop iterates over each object in the list and calls the area method of each object
+# The output will be the area of the rectangle (20) and the area of the circle (153.86).
+shapes = [Rectangle(4, 5), Circle(7)]  # Create a list of Shape objects
+for shape in shapes:
+    print(shape.area())  # Output the area of each Shape object
+
+</code></pre>
 <h2 id="abstraction">Abstraction</h2>
 <p>Abstraction is an important concept in object-oriented programming (OOP) because it allows you to focus on the essential features of an object or system while ignoring the details that aren't relevant to the current context. By reducing complexity and hiding unnecessary details, abstraction can make code more modular, easier to read, and easier to maintain.</p>
 <p>In Python, abstraction can be achieved by using abstract classes or interfaces. An abstract class is a class that cannot be instantiated directly, but is meant to be subclassed by other classes. It often includes abstract methods that have no implementation, but provide a template for how the subclass should be implemented. This allows the programmer to define a common interface for a group of related classes, while still allowing each class to have its own specific behavior.</p>
 <p>An interface, on the other hand, is a collection of method signatures that a class must implement in order to be considered "compatible" with the interface. Interfaces are often used to define a common set of methods that multiple classes can implement, allowing them to be used interchangeably in certain contexts.</p>
 <p>Python does not have built-in support for abstract classes or interfaces, but they can be implemented using the abc (abstract base class) module. This module provides the ABC class and the abstractmethod decorator, which can be used to define abstract classes and methods.</p>
 <p>Overall, abstraction is a powerful tool for managing complexity and improving code quality in object-oriented programming, and Python provides a range of options for achieving abstraction in your code.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Import the abc module to define abstract classes and methods</span>
-<span class="kn">from</span> <span class="nn">abc</span> <span class="kn">import</span> <span class="n">ABC</span><span class="p">,</span> <span class="n">abstractmethod</span>
+<pre><code class="language-python"># Import the abc module to define abstract classes and methods
+from abc import ABC, abstractmethod
 
-<span class="c1"># Define an abstract class called Shape that has an abstract method called area</span>
-<span class="k">class</span> <span class="nc">Shape</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
-    <span class="nd">@abstractmethod</span>
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
+# Define an abstract class called Shape that has an abstract method called area
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
 
-<span class="c1"># Define a Rectangle class that inherits from Shape</span>
-<span class="k">class</span> <span class="nc">Rectangle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">width</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">height</span>
+# Define a Rectangle class that inherits from Shape
+class Rectangle(Shape):
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
-    <span class="c1"># Implement the area method for Rectangles</span>
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">width</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">height</span>
+    # Implement the area method for Rectangles
+    def area(self):
+        return self.width * self.height
 
-<span class="c1"># Define a Circle class that also inherits from Shape</span>
-<span class="k">class</span> <span class="nc">Circle</span><span class="p">(</span><span class="n">Shape</span><span class="p">):</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">radius</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">=</span> <span class="n">radius</span>
+# Define a Circle class that also inherits from Shape
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
 
-    <span class="c1"># Implement the area method for Circles</span>
-    <span class="k">def</span> <span class="nf">area</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="mf">3.14</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">radius</span> <span class="o">**</span> <span class="mi">2</span>
+    # Implement the area method for Circles
+    def area(self):
+        return 3.14 * self.radius ** 2
 
-<span class="c1"># Create a list of shapes that includes both Rectangles and Circles</span>
-<span class="n">shapes</span> <span class="o">=</span> <span class="p">[</span><span class="n">Rectangle</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">Circle</span><span class="p">(</span><span class="mi">7</span><span class="p">)]</span>
+# Create a list of shapes that includes both Rectangles and Circles
+shapes = [Rectangle(4, 5), Circle(7)]
 
-<span class="c1"># Loop through each shape in the list and print its area</span>
-<span class="k">for</span> <span class="n">shape</span> <span class="ow">in</span> <span class="n">shapes</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">shape</span><span class="o">.</span><span class="n">area</span><span class="p">())</span>
-</code></pre></div>
+# Loop through each shape in the list and print its area
+for shape in shapes:
+    print(shape.area())
+
+</code></pre>
 <p>These are some of the basic OOP principles in Python. This page is currently in progress and more
 detailed examples and explanations will be coming soon.</p>
 
@@ -3146,7 +3150,7 @@ detailed examples and explanations will be coming soon.</p>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

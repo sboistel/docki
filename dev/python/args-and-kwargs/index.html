@@ -21,7 +21,7 @@
         <link rel="next" href="../basics/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2905,21 +2905,21 @@ Python Args and Kwargs
 <p>Read the article <router-link to="/blog/python-easy-args-kwargs">Python *args and **kwargs Made Easy</router-link> for a more in deep introduction.</p>
 <h2 id="args-and-kwargs">Args and Kwargs</h2>
 <p><code>*args</code> and <code>**kwargs</code> allow you to pass an undefined number of arguments and keywords when calling a function.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">some_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">pass</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># call some_function with any number of arguments</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">some_function</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="n">arg3</span><span class="p">)</span>
+<pre><code class="language-python">&gt;&gt;&gt; def some_function(*args, **kwargs):
+...     pass
+...
+&gt;&gt;&gt; # call some_function with any number of arguments
+&gt;&gt;&gt; some_function(arg1, arg2, arg3)
 
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># call some_function with any number of keywords</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">some_function</span><span class="p">(</span><span class="n">key1</span><span class="o">=</span><span class="n">arg1</span><span class="p">,</span> <span class="n">key2</span><span class="o">=</span><span class="n">arg2</span><span class="p">,</span> <span class="n">key3</span><span class="o">=</span><span class="n">arg3</span><span class="p">)</span>
+&gt;&gt;&gt; # call some_function with any number of keywords
+&gt;&gt;&gt; some_function(key1=arg1, key2=arg2, key3=arg3)
 
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># call both, arguments and keywords</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">some_function</span><span class="p">(</span><span class="n">arg</span><span class="p">,</span> <span class="n">key1</span><span class="o">=</span><span class="n">arg1</span><span class="p">)</span>
+&gt;&gt;&gt; # call both, arguments and keywords
+&gt;&gt;&gt; some_function(arg, key1=arg1)
 
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># or none</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">some_function</span><span class="p">()</span>
-</code></pre></div>
+&gt;&gt;&gt; # or none
+&gt;&gt;&gt; some_function()
+</code></pre>
 <p><base-warning>
   <base-warning-title>
     Python conventions
@@ -2930,20 +2930,20 @@ Python Args and Kwargs
 </base-warning></p>
 <h2 id="args">args</h2>
 <p>You can access the <em>arguments</em> through the <code>args</code> variable:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">some_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Arguments passed: </span><span class="si">{</span><span class="n">args</span><span class="si">}</span><span class="s1"> as </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">args</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">some_function</span><span class="p">(</span><span class="s1">&#39;arg1&#39;</span><span class="p">,</span> <span class="s1">&#39;arg2&#39;</span><span class="p">,</span> <span class="s1">&#39;arg3&#39;</span><span class="p">)</span>
-<span class="c1"># Arguments passed: (&#39;arg1&#39;, &#39;arg2&#39;, &#39;arg3&#39;) as &lt;class &#39;tuple&#39;&gt;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; def some_function(*args):
+...     print(f'Arguments passed: {args} as {type(args)}')
+...
+&gt;&gt;&gt; some_function('arg1', 'arg2', 'arg3')
+# Arguments passed: ('arg1', 'arg2', 'arg3') as &lt;class 'tuple'&gt;
+</code></pre>
 <h2 id="kwargs">kwargs</h2>
 <p>Keywords are accessed through the <code>kwargs</code> variable:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">some_function</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;keywords: </span><span class="si">{</span><span class="n">kwargs</span><span class="si">}</span><span class="s1"> as </span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">some_function</span><span class="p">(</span><span class="n">key1</span><span class="o">=</span><span class="s1">&#39;arg1&#39;</span><span class="p">,</span> <span class="n">key2</span><span class="o">=</span><span class="s1">&#39;arg2&#39;</span><span class="p">)</span>
-<span class="c1"># keywords: {&#39;key1&#39;: &#39;arg1&#39;, &#39;key2&#39;: &#39;arg2&#39;} as &lt;class &#39;dict&#39;&gt;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; def some_function(**kwargs):
+...     print(f'keywords: {kwargs} as {type(kwargs)}')
+...
+&gt;&gt;&gt; some_function(key1='arg1', key2='arg2')
+# keywords: {'key1': 'arg1', 'key2': 'arg2'} as &lt;class 'dict'&gt;
+</code></pre>
 
 
 
@@ -2993,7 +2993,7 @@ Python Args and Kwargs
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

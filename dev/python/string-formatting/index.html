@@ -21,7 +21,7 @@
         <link rel="next" href="../virtual-environments/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3019,26 +3019,26 @@ Python String Formatting
     For new code, using <a href="#strformat">str.format</a>, or <a href="#formatted-string-literals-or-f-strings">formatted string literals</a> (Python 3.6+) over the <code>%</code> operator is strongly recommended.
   </base-warning-content>
 </base-warning></p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Pete&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">name</span>
-<span class="c1"># &quot;Hello Pete&quot;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; name = 'Pete'
+&gt;&gt;&gt; 'Hello %s' % name
+# &quot;Hello Pete&quot;
+</code></pre>
 <p>We can use the <code>%d</code> format specifier to convert an int value to a string:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">num</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;I have </span><span class="si">%d</span><span class="s1"> apples&#39;</span> <span class="o">%</span> <span class="n">num</span>
-<span class="c1"># &quot;I have 5 apples&quot;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; num = 5
+&gt;&gt;&gt; 'I have %d apples' % num
+# &quot;I have 5 apples&quot;
+</code></pre>
 <h2 id="strformat">str.format</h2>
 <p>Python 3 introduced a new way to do string formatting that was later back-ported to Python 2.7. This makes the syntax for string formatting more regular.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;John&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
+<pre><code class="language-python">&gt;&gt;&gt; name = 'John'
+&gt;&gt;&gt; age = 20
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;Hello I&#39;m </span><span class="si">{}</span><span class="s2">, my age is </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
-<span class="c1"># &quot;Hello I&#39;m John, my age is 20&quot;</span>
+&gt;&gt;&gt; &quot;Hello I'm {}, my age is {}&quot;.format(name, age)
+# &quot;Hello I'm John, my age is 20&quot;
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s2">&quot;Hello I&#39;m </span><span class="si">{0}</span><span class="s2">, my age is </span><span class="si">{1}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
-<span class="c1"># &quot;Hello I&#39;m John, my age is 20&quot;</span>
-</code></pre></div>
+&gt;&gt;&gt; &quot;Hello I'm {0}, my age is {1}&quot;.format(name, age)
+# &quot;Hello I'm John, my age is 20&quot;
+</code></pre>
 <h2 id="formatted-string-literals-or-f-strings">Formatted String Literals or f-Strings</h2>
 <p>If your are using Python 3.6+, string <code>f-Strings</code> are the recommended way to format strings.</p>
 <p><base-disclaimer>
@@ -3049,58 +3049,58 @@ Python String Formatting
     A formatted string literal or f-string is a string literal that is prefixed with <code>f</code> or <code>F</code>. These strings may contain replacement fields, which are expressions delimited by curly braces {}. While other string literals always have a constant value, formatted strings are really expressions evaluated at run time.
   </base-disclaimer-content>
 </base-disclaimer></p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Elizabeth&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s1">&#39;Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">!&#39;</span>
-<span class="c1"># &#39;Hello Elizabeth!&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; name = 'Elizabeth'
+&gt;&gt;&gt; f'Hello {name}!'
+# 'Hello Elizabeth!'
+</code></pre>
 <p>It is even possible to do inline arithmetic with it:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s1">&#39;Five plus ten is </span><span class="si">{</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="si">}</span><span class="s1"> and not </span><span class="si">{</span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="si">}</span><span class="s1">.&#39;</span>
-<span class="c1"># &#39;Five plus ten is 15 and not 30.&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; a = 5
+&gt;&gt;&gt; b = 10
+&gt;&gt;&gt; f'Five plus ten is {a + b} and not {2 * (a + b)}.'
+# 'Five plus ten is 15 and not 30.'
+</code></pre>
 <h3 id="multiline-f-strings">Multiline f-Strings</h3>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Robert&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">messages</span> <span class="o">=</span> <span class="mi">12</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span>
-<span class="o">...</span> <span class="sa">f</span><span class="s1">&#39;Hi, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">. &#39;</span>
-<span class="o">...</span> <span class="sa">f</span><span class="s1">&#39;You have </span><span class="si">{</span><span class="n">messages</span><span class="si">}</span><span class="s1"> unread messages&#39;</span>
-<span class="o">...</span> <span class="p">)</span>
-<span class="c1"># &#39;Hi, Robert. You have 12 unread messages&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; name = 'Robert'
+&gt;&gt;&gt; messages = 12
+&gt;&gt;&gt; (
+... f'Hi, {name}. '
+... f'You have {messages} unread messages'
+... )
+# 'Hi, Robert. You have 12 unread messages'
+</code></pre>
 <h3 id="the-specifier">The <code>=</code> specifier</h3>
 <p>This will print the expression and its value:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%b/</span><span class="si">%d</span><span class="s2">/%Y - %H:%M:%S&quot;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s1">&#39;date and time: </span><span class="si">{</span><span class="n">now</span><span class="si">=}</span><span class="s1">&#39;</span>
-<span class="c1"># &quot;date and time: now=&#39;Nov/14/2022 - 20:50:01&#39;&quot;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; from datetime import datetime
+&gt;&gt;&gt; now = datetime.now().strftime(&quot;%b/%d/%Y - %H:%M:%S&quot;)
+&gt;&gt;&gt; f'date and time: {now=}'
+# &quot;date and time: now='Nov/14/2022 - 20:50:01'&quot;
+</code></pre>
 <h3 id="adding-spaces-or-characters">Adding spaces or characters</h3>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="w"> </span><span class="si">= :</span><span class="s2">-^20</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="c1"># &#39;name.upper() = -------ROBERT-------&#39;</span>
-<span class="o">&gt;&gt;&gt;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="w"> </span><span class="si">= :</span><span class="s2">^20</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="c1"># &#39;name.upper() =        ROBERT       &#39;</span>
-<span class="o">&gt;&gt;&gt;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="w"> </span><span class="si">= :</span><span class="s2">20</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="c1"># &#39;name.upper() = ROBERT              &#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; f&quot;{name.upper() = :-^20}&quot;
+# 'name.upper() = -------ROBERT-------'
+&gt;&gt;&gt;
+&gt;&gt;&gt; f&quot;{name.upper() = :^20}&quot;
+# 'name.upper() =        ROBERT       '
+&gt;&gt;&gt;
+&gt;&gt;&gt; f&quot;{name.upper() = :20}&quot;
+# 'name.upper() = ROBERT              '
+</code></pre>
 <h2 id="formatting-digits">Formatting Digits</h2>
 <p>Adding thousands separator</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10000000</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s2">,</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="c1"># &#39;10,000,000&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; a = 10000000
+&gt;&gt;&gt; f&quot;{a:,}&quot;
+# '10,000,000'
+</code></pre>
 <p>Rounding</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">3.1415926</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="c1"># &#39;3.14&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; a = 3.1415926
+&gt;&gt;&gt; f&quot;{a:.2f}&quot;
+# '3.14'
+</code></pre>
 <p>Showing as Percentage</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">0.816562</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="c1"># &#39;81.66%&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; a = 0.816562
+&gt;&gt;&gt; f&quot;{a:.2%}&quot;
+# '81.66%'
+</code></pre>
 <h3 id="number-formatting-table">Number formatting table</h3>
 <table>
 <thead>
@@ -3194,12 +3194,12 @@ Python String Formatting
 </table>
 <h2 id="template-strings">Template Strings</h2>
 <p>A simpler and less powerful mechanism, but it is recommended when handling strings generated by users. Due to their reduced complexity, template strings are a safer choice.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">Template</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Elizabeth&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">t</span> <span class="o">=</span> <span class="n">Template</span><span class="p">(</span><span class="s1">&#39;Hey $name!&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">t</span><span class="o">.</span><span class="n">substitute</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span>
-<span class="c1"># &#39;Hey Elizabeth!&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; from string import Template
+&gt;&gt;&gt; name = 'Elizabeth'
+&gt;&gt;&gt; t = Template('Hey $name!')
+&gt;&gt;&gt; t.substitute(name=name)
+# 'Hey Elizabeth!'
+</code></pre>
 
 
 
@@ -3249,7 +3249,7 @@ Python String Formatting
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

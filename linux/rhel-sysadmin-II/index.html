@@ -21,7 +21,7 @@
         <link rel="next" href="../../windows/readme/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3061,19 +3061,19 @@
 
 <h1 id="red-hat-system-administration-ii">Red Hat System Administration II</h1>
 <h2 id="tuning-system-performance">Tuning System Performance</h2>
-<div class="highlight"><pre><span></span><code>**<span class="sb">`</span>tuned-adm<span class="w"> </span>list<span class="sb">`</span>**
-Available<span class="w"> </span>profiles:
--<span class="w"> </span>balanced
--<span class="w"> </span>desktop
--<span class="w"> </span>latency-performance
--<span class="w"> </span>network-latency
--<span class="w"> </span>network-throughput
--<span class="w"> </span>powersave
--<span class="w"> </span>sap
--<span class="w"> </span>throughput-performance
--<span class="w"> </span>virtual-guest
--<span class="w"> </span>virtual-host
-</code></pre></div>
+<pre><code class="language-shell">**`tuned-adm list`**
+Available profiles:
+- balanced
+- desktop
+- latency-performance
+- network-latency
+- network-throughput
+- powersave
+- sap
+- throughput-performance
+- virtual-guest
+- virtual-host
+</code></pre>
 <h3 id="profiles-distributed-with-rhel-8">Profiles Distributed with Rhel 8</h3>
 <table>
 <thead>
@@ -3162,10 +3162,10 @@ Available<span class="w"> </span>profiles:
 <li>The Virtual Data Optimizer (VDO) aims to reduce the cost of data storage.</li>
 <li>The Virtual Data Optimizer applies zero-block elimination, data deduplication, and data compression to optimize disk space efficiency.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>title: pool list max number file supported
+<pre><code class="language-ad-info">title: pool list max number file supported
 
 You can create multiple pools from different storage devices. From each pool, you can create one or more file systems. Currently, you can create up to **2^24** file systems per pool.
-</code></pre></div>
+</code></pre>
 <h2 id="managing-logical-volumes">Managing Logical Volumes</h2>
 <p><img alt="LVM" src="../resources/stratis_element-storage-modern.svg" /></p>
 <ul>
@@ -3199,11 +3199,11 @@ You can create multiple pools from different storage devices. From each pool, yo
 <h2 id="managing-virtual-machines-with-cockpit">Managing Virtual Machines with Cockpit</h2>
 <p>Required package name : <strong><code>cockpit-machines</code></strong></p>
 <p>Install the cockpit-machines package to add the Virtual Machines menu to Cockpit.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># yum install cockpit-machines</span>
-</code></pre></div>
+<pre><code class="language-shell">[root@host ~]# yum install cockpit-machines
+</code></pre>
 <p>If Cockpit is not already running, start and enable it.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># systemctl enable --now cockpit.socket</span>
-</code></pre></div>
+<pre><code class="language-shell">[root@host ~]# systemctl enable --now cockpit.socket
+</code></pre>
 <h2 id="containers">Containers</h2>
 <ul>
 <li>Containers provide a lightweight way to distribute and run an application and its dependencies that may conflict with software installed on the host.</li>
@@ -3264,7 +3264,7 @@ You can create multiple pools from different storage devices. From each pool, yo
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

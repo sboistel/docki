@@ -21,7 +21,7 @@
         <link rel="next" href="../oop-basics/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3144,126 +3144,126 @@ Manipulating Strings
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello there!</span><span class="se">\n</span><span class="s2">How are you?</span><span class="se">\n</span><span class="s2">I</span><span class="se">\&#39;</span><span class="s2">m doing fine.&quot;</span><span class="p">)</span>
-<span class="c1"># Hello there!</span>
-<span class="c1"># How are you?</span>
-<span class="c1"># I&#39;m doing fine.</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; print(&quot;Hello there!\nHow are you?\nI\'m doing fine.&quot;)
+# Hello there!
+# How are you?
+# I'm doing fine.
+</code></pre>
 <h2 id="raw-strings">Raw strings</h2>
 <p>A raw string entirely ignores all escape characters and prints any backslash that appears in the string.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;Hello there!\nHow are you?\nI\&#39;m doing fine.&quot;</span><span class="p">)</span>
-<span class="c1"># Hello there!\nHow are you?\nI\&#39;m doing fine.</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; print(r&quot;Hello there!\nHow are you?\nI\'m doing fine.&quot;)
+# Hello there!\nHow are you?\nI\'m doing fine.
+</code></pre>
 <p>Raw strings are mostly used for <router-link to="/cheatsheet/regular-expressions">regular expression</router-link> definition.</p>
 <h2 id="multiline-strings">Multiline Strings</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span>
-<span class="o">...</span> <span class="s2">&quot;&quot;&quot;Dear Alice,</span>
-<span class="s2">...</span>
-<span class="s2">... Eve&#39;s cat has been arrested for catnapping,</span>
-<span class="s2">... cat burglary, and extortion.</span>
-<span class="s2">...</span>
-<span class="s2">... Sincerely,</span>
-<span class="s2">... Bob&quot;&quot;&quot;</span>
-<span class="o">...</span> <span class="p">)</span>
+<pre><code class="language-python">&gt;&gt;&gt; print(
+... &quot;&quot;&quot;Dear Alice,
+...
+... Eve's cat has been arrested for catnapping,
+... cat burglary, and extortion.
+...
+... Sincerely,
+... Bob&quot;&quot;&quot;
+... )
 
-<span class="c1"># Dear Alice,</span>
+# Dear Alice,
 
-<span class="c1"># Eve&#39;s cat has been arrested for catnapping,</span>
-<span class="c1"># cat burglary, and extortion.</span>
+# Eve's cat has been arrested for catnapping,
+# cat burglary, and extortion.
 
-<span class="c1"># Sincerely,</span>
-<span class="c1"># Bob</span>
-</code></pre></div>
+# Sincerely,
+# Bob
+</code></pre>
 <h2 id="indexing-and-slicing-strings">Indexing and Slicing strings</h2>
 <pre><code>H   e   l   l   o       w   o   r   l   d    !
 0   1   2   3   4   5   6   7   8   9   10   11
 </code></pre>
 <h3 id="indexing">Indexing</h3>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s1">&#39;Hello world!&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; spam = 'Hello world!'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1"># &#39;H&#39;</span>
+&gt;&gt;&gt; spam[0]
+# 'H'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
-<span class="c1"># &#39;o&#39;</span>
+&gt;&gt;&gt; spam[4]
+# 'o'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="c1"># &#39;!&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; spam[-1]
+# '!'
+</code></pre>
 <h3 id="slicing">Slicing</h3>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s1">&#39;Hello world!&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; spam = 'Hello world!'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
-<span class="c1"># &#39;Hello&#39;</span>
+&gt;&gt;&gt; spam[0:5]
+# 'Hello'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
-<span class="c1"># &#39;Hello&#39;</span>
+&gt;&gt;&gt; spam[:5]
+# 'Hello'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
-<span class="c1"># &#39;world!&#39;</span>
+&gt;&gt;&gt; spam[6:]
+# 'world!'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[</span><span class="mi">6</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="c1"># &#39;world&#39;</span>
+&gt;&gt;&gt; spam[6:-1]
+# 'world'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="c1"># &#39;Hello world&#39;</span>
+&gt;&gt;&gt; spam[:-1]
+# 'Hello world'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="c1"># &#39;!dlrow olleH&#39;</span>
+&gt;&gt;&gt; spam[::-1]
+# '!dlrow olleH'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">fizz</span> <span class="o">=</span> <span class="n">spam</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">fizz</span>
-<span class="c1"># &#39;Hello&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; fizz = spam[0:5]
+&gt;&gt;&gt; fizz
+# 'Hello'
+</code></pre>
 <h2 id="the-in-and-not-in-operators">The in and not in operators</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span> <span class="ow">in</span> <span class="s1">&#39;Hello World&#39;</span>
-<span class="c1"># True</span>
+<pre><code class="language-python">&gt;&gt;&gt; 'Hello' in 'Hello World'
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span> <span class="ow">in</span> <span class="s1">&#39;Hello&#39;</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; 'Hello' in 'Hello'
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;HELLO&#39;</span> <span class="ow">in</span> <span class="s1">&#39;Hello World&#39;</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; 'HELLO' in 'Hello World'
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;&#39;</span> <span class="ow">in</span> <span class="s1">&#39;spam&#39;</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; '' in 'spam'
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;cats&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="s1">&#39;cats and dogs&#39;</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; 'cats' not in 'cats and dogs'
+# False
+</code></pre>
 <h2 id="upper-lower-and-title">upper(), lower() and title()</h2>
 <p>Transforms a string to upper, lower and title case:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">greet</span> <span class="o">=</span> <span class="s1">&#39;Hello world!&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">greet</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-<span class="c1"># &#39;HELLO WORLD!&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; greet = 'Hello world!'
+&gt;&gt;&gt; greet.upper()
+# 'HELLO WORLD!'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">greet</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-<span class="c1"># &#39;hello world!&#39;</span>
+&gt;&gt;&gt; greet.lower()
+# 'hello world!'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">greet</span><span class="o">.</span><span class="n">title</span><span class="p">()</span>
-<span class="c1"># &#39;Hello World!&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; greet.title()
+# 'Hello World!'
+</code></pre>
 <h2 id="isupper-and-islower-methods">isupper() and islower() methods</h2>
 <p>Returns <code>True</code> or <code>False</code> after evaluating if a string is in upper or lower case:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s1">&#39;Hello world!&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>
-<span class="c1"># False</span>
+<pre><code class="language-python">&gt;&gt;&gt; spam = 'Hello world!'
+&gt;&gt;&gt; spam.islower()
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; spam.isupper()
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;HELLO&#39;</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; 'HELLO'.isupper()
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;abc12345&#39;</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; 'abc12345'.islower()
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;12345&#39;</span><span class="o">.</span><span class="n">islower</span><span class="p">()</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; '12345'.islower()
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;12345&#39;</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; '12345'.isupper()
+# False
+</code></pre>
 <h2 id="the-isx-string-methods">The isX string methods</h2>
 <table>
 <thead>
@@ -3296,97 +3296,97 @@ Manipulating Strings
 </tbody>
 </table>
 <h2 id="startswith-and-endswith">startswith() and endswith()</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello world!&#39;</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;Hello&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+<pre><code class="language-python">&gt;&gt;&gt; 'Hello world!'.startswith('Hello')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello world!&#39;</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;world!&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; 'Hello world!'.endswith('world!')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;abc123&#39;</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;abcdef&#39;</span><span class="p">)</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; 'abc123'.startswith('abcdef')
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;abc123&#39;</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;12&#39;</span><span class="p">)</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; 'abc123'.endswith('12')
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello world!&#39;</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; 'Hello world!'.startswith('Hello world!')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello world!&#39;</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
-</code></pre></div>
+&gt;&gt;&gt; 'Hello world!'.endswith('Hello world!')
+# True
+</code></pre>
 <h2 id="join-and-split">join() and split()</h2>
 <h3 id="join">join()</h3>
 <p>The <code>join()</code> method takes all the items in an iterable, like a <router-link to="/cheatsheet/lists-and-tuples">list</router-link>, <router-link to="/cheatsheet/dictionaries">dictionary</router-link>, <router-link to="/cheatsheet/lists-and-tuples#the-tuple-data-type">tuple</router-link> or <router-link to="/cheatsheet/sets">set</router-link>, and joins them into a string. You can also specify a separator.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;My&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;Simon&#39;</span><span class="p">])</span>
-<span class="s1">&#39;MynameisSimon&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; ''.join(['My', 'name', 'is', 'Simon'])
+'MynameisSimon'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;rats&#39;</span><span class="p">,</span> <span class="s1">&#39;bats&#39;</span><span class="p">])</span>
-<span class="c1"># &#39;cats, rats, bats&#39;</span>
+&gt;&gt;&gt; ', '.join(['cats', 'rats', 'bats'])
+# 'cats, rats, bats'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;My&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;Simon&#39;</span><span class="p">])</span>
-<span class="c1"># &#39;My name is Simon&#39;</span>
+&gt;&gt;&gt; ' '.join(['My', 'name', 'is', 'Simon'])
+# 'My name is Simon'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;ABC&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;My&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;is&#39;</span><span class="p">,</span> <span class="s1">&#39;Simon&#39;</span><span class="p">])</span>
-<span class="c1"># &#39;MyABCnameABCisABCSimon&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; 'ABC'.join(['My', 'name', 'is', 'Simon'])
+# 'MyABCnameABCisABCSimon'
+</code></pre>
 <h3 id="split">split()</h3>
 <p>The <code>split()</code> method splits a <code>string</code> into a <code>list</code>. By default, it will use whitespace to separate the items, but you can also set another character of choice:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;My name is Simon&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-<span class="c1"># [&#39;My&#39;, &#39;name&#39;, &#39;is&#39;, &#39;Simon&#39;]</span>
+<pre><code class="language-python">&gt;&gt;&gt; 'My name is Simon'.split()
+# ['My', 'name', 'is', 'Simon']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;MyABCnameABCisABCSimon&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;ABC&#39;</span><span class="p">)</span>
-<span class="c1"># [&#39;My&#39;, &#39;name&#39;, &#39;is&#39;, &#39;Simon&#39;]</span>
+&gt;&gt;&gt; 'MyABCnameABCisABCSimon'.split('ABC')
+# ['My', 'name', 'is', 'Simon']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;My name is Simon&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;m&#39;</span><span class="p">)</span>
-<span class="c1"># [&#39;My na&#39;, &#39;e is Si&#39;, &#39;on&#39;]</span>
+&gt;&gt;&gt; 'My name is Simon'.split('m')
+# ['My na', 'e is Si', 'on']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39; My  name is  Simon&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-<span class="c1"># [&#39;My&#39;, &#39;name&#39;, &#39;is&#39;, &#39;Simon&#39;]</span>
+&gt;&gt;&gt; ' My  name is  Simon'.split()
+# ['My', 'name', 'is', 'Simon']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39; My  name is  Simon&#39;</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-<span class="c1"># [&#39;&#39;, &#39;My&#39;, &#39;&#39;, &#39;name&#39;, &#39;is&#39;, &#39;&#39;, &#39;Simon&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; ' My  name is  Simon'.split(' ')
+# ['', 'My', '', 'name', 'is', '', 'Simon']
+</code></pre>
 <h2 id="justifying-text-with-rjust-ljust-and-center">Justifying text with rjust(), ljust() and center()</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="c1"># &#39;     Hello&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; 'Hello'.rjust(10)
+# '     Hello'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-<span class="c1"># &#39;               Hello&#39;</span>
+&gt;&gt;&gt; 'Hello'.rjust(20)
+# '               Hello'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello World&#39;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-<span class="c1"># &#39;         Hello World&#39;</span>
+&gt;&gt;&gt; 'Hello World'.rjust(20)
+# '         Hello World'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="c1"># &#39;Hello     &#39;</span>
+&gt;&gt;&gt; 'Hello'.ljust(10)
+# 'Hello     '
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-<span class="c1"># &#39;       Hello       &#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; 'Hello'.center(20)
+# '       Hello       '
+</code></pre>
 <p>An optional second argument to <code>rjust()</code> and <code>ljust()</code> will specify a fill character apart from a space character:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;***************Hello&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; 'Hello'.rjust(20, '*')
+# '***************Hello'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;-&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;Hello---------------&#39;</span>
+&gt;&gt;&gt; 'Hello'.ljust(20, '-')
+# 'Hello---------------'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hello&#39;</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;=&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;=======Hello========&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; 'Hello'.center(20, '=')
+# '=======Hello========'
+</code></pre>
 <h2 id="removing-whitespace-with-strip-rstrip-and-lstrip">Removing whitespace with strip(), rstrip(), and lstrip()</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s1">&#39;    Hello World     &#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-<span class="c1"># &#39;Hello World&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; spam = '    Hello World     '
+&gt;&gt;&gt; spam.strip()
+# 'Hello World'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span>
-<span class="c1"># &#39;Hello World     &#39;</span>
+&gt;&gt;&gt; spam.lstrip()
+# 'Hello World     '
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
-<span class="c1"># &#39;    Hello World&#39;</span>
+&gt;&gt;&gt; spam.rstrip()
+# '    Hello World'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span> <span class="o">=</span> <span class="s1">&#39;SpamSpamBaconSpamEggsSpamSpam&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">spam</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;ampS&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;BaconSpamEggs&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; spam = 'SpamSpamBaconSpamEggsSpamSpam'
+&gt;&gt;&gt; spam.strip('ampS')
+# 'BaconSpamEggs'
+</code></pre>
 
 
 
@@ -3436,7 +3436,7 @@ Manipulating Strings
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

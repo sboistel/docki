@@ -21,7 +21,7 @@
         <link rel="next" href="../disk/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3015,21 +3015,21 @@
 <h3 id="gnome">Gnome</h3>
 <h4 id="ajouter-une-application-dans-gnom-shell">Ajouter une application dans gnom shell</h4>
 <p>Ajouter un fichier .desktop dans /usr/share/appliations/MONAPPLI.desktop :</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>Desktop<span class="w"> </span>Entry<span class="o">]</span>
-<span class="nv">Name</span><span class="o">=</span>MonAppli
-<span class="nv">Comment</span><span class="o">=</span>Descritpion<span class="w"> </span>de<span class="w"> </span>l<span class="err">&#39;</span>appli
-<span class="nv">Exec</span><span class="o">=</span>MonAppli.sh<span class="w"> </span>%U
-<span class="nv">Icon</span><span class="o">=</span>/usr/share/icons/monappli.svg
-<span class="nv">Terminal</span><span class="o">=</span><span class="nb">false</span>
-<span class="nv">Type</span><span class="o">=</span>Application
-<span class="nv">Encoding</span><span class="o">=</span>UTF-8
-<span class="nv">Categories</span><span class="o">=</span>Network<span class="p">;</span>Application
-</code></pre></div>
+<pre><code class="language-shell">[Desktop Entry]
+Name=MonAppli
+Comment=Descritpion de l'appli
+Exec=MonAppli.sh %U
+Icon=/usr/share/icons/monappli.svg
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Network;Application
+</code></pre>
 <h5 id="modifier-une-application-existante">Modifier une application éxistante</h5>
 <p>Trouver le fichier de l'application choisie, ici <code>VirtualBox</code>
 Un soucis connu sur Gnome et virtualbox est que l'interface soit broken. On vient alors corrigé ceci en  changeant le style de celui-ci via la commande :</p>
-<div class="highlight"><pre><span></span><code>VirtualBox<span class="w"> </span>-style<span class="w"> </span>Adwaita
-</code></pre></div>
+<pre><code class="language-shell">VirtualBox -style Adwaita
+</code></pre>
 <p>On vient alors modifier le fichier <code>/usr/share/applications/virtualbox.desktop</code>
 On remplace la ligne 10 <code>Exec=VirtualBox %U</code> par <code>Exec=VirtualBox -style Adwaita</code>.</p>
 <h2 id="desktop-manager">Desktop Manager</h2>
@@ -3037,8 +3037,8 @@ On remplace la ligne 10 <code>Exec=VirtualBox %U</code> par <code>Exec=VirtualBo
 <h4 id="autologin">Autologin</h4>
 <p>Editer le fichier de configuration suivant : <code>/etc/lightdm/lightdm.conf</code>
 Compléter les informations attendues :</p>
-<div class="highlight"><pre><span></span><code>autologin-user<span class="o">=</span>jdoe
-</code></pre></div>
+<pre><code class="language-shell">autologin-user=jdoe
+</code></pre>
 
 
 
@@ -3088,7 +3088,7 @@ Compléter les informations attendues :</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

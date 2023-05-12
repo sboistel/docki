@@ -21,7 +21,7 @@
         <link rel="next" href="../mkcert/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3021,48 +3021,48 @@
 <h3 id="upload-existing-cakey-and-cacrt-files-option-1">Upload existing CA.key and CA.crt files (Option 1)</h3>
 <h4 id="1-create-a-self-signed-ca-ssl-certs-creating-a-cakey-private-key-and-cacrt-certificate">1. Create a self-signed CA (ssl-certs) creating a ca.key (private-key) and ca.crt (certificate)</h4>
 <p>(ca.key)</p>
-<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>genrsa<span class="w"> </span>-out<span class="w"> </span>ca.key<span class="w"> </span><span class="m">4096</span>
-</code></pre></div>
+<pre><code class="language-shell">openssl genrsa -out ca.key 4096
+</code></pre>
 <p>(ca.crt)</p>
-<div class="highlight"><pre><span></span><code>openssl<span class="w"> </span>req<span class="w"> </span>-new<span class="w"> </span>-x509<span class="w"> </span>-sha256<span class="w"> </span>-days<span class="w"> </span><span class="m">365</span><span class="w"> </span>-key<span class="w"> </span>ca.key<span class="w"> </span>-out<span class="w"> </span>ca.crt
-</code></pre></div>
+<pre><code class="language-shell">openssl req -new -x509 -sha256 -days 365 -key ca.key -out ca.crt
+</code></pre>
 <h4 id="2-convert-the-files-to-a-one-line-base64-decoded-string-only-works-on-linux-base64-tool">2. Convert the files to a one line base64 decoded string (only works on Linux base64 tool)</h4>
-<div class="highlight"><pre><span></span><code>cat<span class="w"> </span>ca.key<span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-w<span class="w"> </span><span class="m">0</span>
-</code></pre></div>
+<pre><code class="language-shell">cat ca.key | base64 -w 0
+</code></pre>
 <h4 id="3-create-a-new-ssl-secret-object-using-the-strings">3. Create a new ssl secret object using the strings</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Secret</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssl-issuer-secret</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># (Optional) Metadata</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># ---</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># namespace: your-namespace</span>
-<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Opaque</span>
-<span class="nt">data</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">tls.crt</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;base64-decoded-string&gt;</span>
-<span class="w">  </span><span class="nt">tls.key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">&lt;base64-decoded-string&gt;</span>
-</code></pre></div>
+<pre><code class="language-yaml">apiVersion: v1
+kind: Secret
+metadata:
+  name: ssl-issuer-secret
+  # (Optional) Metadata
+  # ---
+  # namespace: your-namespace
+type: Opaque
+data:
+  tls.crt: &lt;base64-decoded-string&gt;
+  tls.key: &lt;base64-decoded-string&gt;
+</code></pre>
 <h4 id="4-create-a-new-clusterissuer-or-issuer-object-by-using-the-ssl-secret">4. Create a new ClusterIssuer or Issuer object by using the ssl secret</h4>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cert-manager.io/v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIssuer</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="err"> </span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">selfsigned-issuer</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># (Optional) Metadata</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># ---</span>
-<span class="err"> </span><span class="w"> </span><span class="c1"># namespace: your-namespace</span>
-<span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">ca</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">secretName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssl-issuer-secret</span>
-</code></pre></div>
+<pre><code class="language-yaml">apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: selfsigned-issuer
+  # (Optional) Metadata
+  # ---
+  # namespace: your-namespace
+spec:
+  ca:
+    secretName: ssl-issuer-secret
+</code></pre>
 <h3 id="create-ca-through-cert-manager-option-2">Create CA through Cert-manager (Option 2)</h3>
 <p>Create a new ClusterIssuer or Issuer object by using the selfSigned Attribute.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cert-manager.io/v1</span>
-<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ClusterIssuer</span>
-<span class="nt">metadata</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">root-issuer</span>
-<span class="nt">spec</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">selfSigned</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
-</code></pre></div>
+<pre><code class="language-yaml">apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: root-issuer
+spec:
+  selfSigned: {}
+</code></pre>
 <hr />
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="common-errors">Common Errors</h3>
@@ -3119,7 +3119,7 @@ The error, <code>Failed to determine a valid solver configuration for the set of
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

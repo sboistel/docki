@@ -21,7 +21,7 @@
         <link rel="next" href="../windows-system/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2872,15 +2872,15 @@
 <p>Booter depuis le CD d'installation et choisir "Réparer ou récupérer une installation de Windows".
 On sélectionnera ensuite l'installation de Windows dans la liste des choix proposés et on saisira le mot de passe administrateur.</p>
 <p>Au prompt, taper :</p>
-<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="p">:\</span><span class="n">WINDOWS</span><span class="p">&gt;</span> <span class="n">fixboot</span>
-<span class="n">C</span><span class="p">:\</span><span class="n">WINDOWS</span><span class="p">&gt;</span> <span class="n">fixmbr</span>
-</code></pre></div>
+<pre><code class="language-powershell">C:\WINDOWS&gt; fixboot
+C:\WINDOWS&gt; fixmbr
+</code></pre>
 <p>La surface disque utilisée par Fedora n'est pas automatiquement ré-allouée .
 C'est l'affaire de fdsik.</p>
 <p>La réallocation consiste en un nouveau formatage, sous le format vfat ou ntfs ou autre, selon le choix - si l'on souhaite ré-allouer les partitions au profit de Windows. On pourra ainsi modifier le format de tout ou partie des partitions et notamment les fusionner. fdisk existe dans l'environnement Windows (ou un programme équivalent).
 On redémarrera par la commande :</p>
-<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="p">:\</span><span class="n">WINDOWS</span><span class="p">&gt;</span> <span class="n">exit</span>
-</code></pre></div>
+<pre><code class="language-powershell">C:\WINDOWS&gt; exit
+</code></pre>
 <div class="admonition abstract">
 <p class="admonition-title">Restauration Grub</p>
 <p>Si les partitions Linux n'ont pas été ré-allouées, il est toujours possible de restaurer GRUB (et ainsi le boot sur Fedora ou Windows)</p>
@@ -2934,7 +2934,7 @@ On redémarrera par la commande :</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

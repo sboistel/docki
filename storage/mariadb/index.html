@@ -21,7 +21,7 @@
         <link rel="next" href="../../misc/color-codes/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2895,34 +2895,34 @@
 
 <h1 id="mariadb">MariaDB</h1>
 <h2 id="install-mariadb">Install MariaDB</h2>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update
-sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mariadb-server
-sudo<span class="w"> </span>mysql_secure_installation
-</code></pre></div>
+<pre><code class="language-bash">sudo apt update
+sudo apt install mariadb-server
+sudo mysql_secure_installation
+</code></pre>
 <h2 id="access-database-from-outside">Access Database from outside</h2>
 <p>Open <code>/etc/mysql/mariadb.conf.d/50-server.cnf</code> and change the <code>bind-address</code> to:</p>
-<div class="highlight"><pre><span></span><code>...
+<pre><code>...
 
 bind-address = 0.0.0.0
 
 ...
-</code></pre></div>
+</code></pre>
 <h2 id="create-administrative-user">Create Administrative User</h2>
 <ol>
 <li>Create a new user <code>newuser</code> for the host <code>localhost</code> with a new <code>password</code>:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;newuser&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="w"> </span><span class="k">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;password&#39;</span><span class="p">;</span>
-</code></pre></div>
+<pre><code class="language-mysql">CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+</code></pre>
 <ol>
 <li>Grant all permissions to the new user</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">.</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;newuser&#39;</span><span class="nv">@&#39;localhost&#39;</span><span class="p">;</span>
-</code></pre></div>
+<pre><code class="language-mysql">GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+</code></pre>
 <ol>
 <li>Update permissions</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="k">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
-</code></pre></div>
+<pre><code class="language-mysql">FLUSH PRIVILEGES;
+</code></pre>
 
 
 
@@ -2972,7 +2972,7 @@ bind-address = 0.0.0.0
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

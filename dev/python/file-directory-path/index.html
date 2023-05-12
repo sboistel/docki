@@ -21,7 +21,7 @@
         <link rel="next" href="../functions/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3132,94 +3132,94 @@ a headache if your code needs to work on different platforms.</p>
 <p>Fortunately, Python provides easy ways to handle this. We will showcase
 how to deal with both, <code>os.path.join</code> and <code>pathlib.Path.joinpath</code></p>
 <p>Using <code>os.path.join</code> on Windows:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;usr&#39;</span><span class="p">,</span> <span class="s1">&#39;bin&#39;</span><span class="p">,</span> <span class="s1">&#39;spam&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;usr\\bin\\spam&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; os.path.join('usr', 'bin', 'spam')
+# 'usr\\bin\\spam'
+</code></pre>
 <p>And using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;usr&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s1">&#39;bin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s1">&#39;spam&#39;</span><span class="p">))</span>
-<span class="c1"># usr/bin/spam</span>
-</code></pre></div>
+&gt;&gt;&gt; print(Path('usr').joinpath('bin').joinpath('spam'))
+# usr/bin/spam
+</code></pre>
 <p><code>pathlib</code> also provides a shortcut to joinpath using the <code>/</code> operator:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;usr&#39;</span><span class="p">)</span> <span class="o">/</span> <span class="s1">&#39;bin&#39;</span> <span class="o">/</span> <span class="s1">&#39;spam&#39;</span><span class="p">)</span>
-<span class="c1"># usr/bin/spam</span>
-</code></pre></div>
+&gt;&gt;&gt; print(Path('usr') / 'bin' / 'spam')
+# usr/bin/spam
+</code></pre>
 <p>Notice the path separator is different between Windows and Unix based operating
 system, that's why you want to use one of the above methods instead of
 adding strings together to join paths together.</p>
 <p>Joining paths is helpful if you need to create different file paths under
 the same directory.</p>
 <p>Using <code>os.path.join</code> on Windows:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">my_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;accounts.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;details.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;invite.docx&#39;</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; my_files = ['accounts.txt', 'details.csv', 'invite.docx']
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">my_files</span><span class="p">:</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">asweigart&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="p">))</span>
-<span class="o">...</span>
-<span class="c1"># C:\Users\asweigart\accounts.txt</span>
-<span class="c1"># C:\Users\asweigart\details.csv</span>
-<span class="c1"># C:\Users\asweigart\invite.docx</span>
-</code></pre></div>
+&gt;&gt;&gt; for filename in my_files:
+...     print(os.path.join('C:\\Users\\asweigart', filename))
+...
+# C:\Users\asweigart\accounts.txt
+# C:\Users\asweigart\details.csv
+# C:\Users\asweigart\invite.docx
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">my_files</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;accounts.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;details.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;invite.docx&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">home</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">my_files</span><span class="p">:</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">home</span> <span class="o">/</span> <span class="n">filename</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># /home/asweigart/accounts.txt</span>
-<span class="c1"># /home/asweigart/details.csv</span>
-<span class="c1"># /home/asweigart/invite.docx</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; my_files = ['accounts.txt', 'details.csv', 'invite.docx']
+&gt;&gt;&gt; home = Path.home()
+&gt;&gt;&gt; for filename in my_files:
+...     print(home / filename)
+...
+# /home/asweigart/accounts.txt
+# /home/asweigart/details.csv
+# /home/asweigart/invite.docx
+</code></pre>
 <h2 id="the-current-working-directory">The current working directory</h2>
 <p>Using <code>os</code> on Windows:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-<span class="c1"># &#39;C:\\Python34&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Windows</span><span class="se">\\</span><span class="s1">System32&#39;</span><span class="p">)</span>
+&gt;&gt;&gt; os.getcwd()
+# 'C:\\Python34'
+&gt;&gt;&gt; os.chdir('C:\\Windows\\System32')
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-<span class="c1"># &#39;C:\\Windows\\System32&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; os.getcwd()
+# 'C:\\Windows\\System32'
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">os</span> <span class="kn">import</span> <span class="n">chdir</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
+&gt;&gt;&gt; from os import chdir
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">())</span>
-<span class="c1"># /home/asweigart</span>
+&gt;&gt;&gt; print(Path.cwd())
+# /home/asweigart
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;/usr/lib/python3.6&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">())</span>
-<span class="c1"># /usr/lib/python3.6</span>
-</code></pre></div>
+&gt;&gt;&gt; chdir('/usr/lib/python3.6')
+&gt;&gt;&gt; print(Path.cwd())
+# /usr/lib/python3.6
+</code></pre>
 <h2 id="creating-new-folders">Creating new folders</h2>
 <p>Using <code>os</code> on Windows:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">delicious</span><span class="se">\\</span><span class="s1">walnut</span><span class="se">\\</span><span class="s1">waffles&#39;</span><span class="p">)</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.makedirs('C:\\delicious\\walnut\\waffles')
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">cwd</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">cwd</span> <span class="o">/</span> <span class="s1">&#39;delicious&#39;</span> <span class="o">/</span> <span class="s1">&#39;walnut&#39;</span> <span class="o">/</span> <span class="s1">&#39;waffles&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mkdir</span><span class="p">()</span>
-<span class="c1"># Traceback (most recent call last):</span>
-<span class="c1">#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
-<span class="c1">#   File &quot;/usr/lib/python3.6/pathlib.py&quot;, line 1226, in mkdir</span>
-<span class="c1">#     self._accessor.mkdir(self, mode)</span>
-<span class="c1">#   File &quot;/usr/lib/python3.6/pathlib.py&quot;, line 387, in wrapped</span>
-<span class="c1">#     return strfunc(str(pathobj), *args)</span>
-<span class="c1"># FileNotFoundError: [Errno 2] No such file or directory: &#39;/home/asweigart/delicious/walnut/waffles&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
+&gt;&gt;&gt; cwd = Path.cwd()
+&gt;&gt;&gt; (cwd / 'delicious' / 'walnut' / 'waffles').mkdir()
+# Traceback (most recent call last):
+#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+#   File &quot;/usr/lib/python3.6/pathlib.py&quot;, line 1226, in mkdir
+#     self._accessor.mkdir(self, mode)
+#   File &quot;/usr/lib/python3.6/pathlib.py&quot;, line 387, in wrapped
+#     return strfunc(str(pathobj), *args)
+# FileNotFoundError: [Errno 2] No such file or directory: '/home/asweigart/delicious/walnut/waffles'
+</code></pre>
 <p>Oh no, we got a nasty error! The reason is that the 'delicious' directory does
 not exist, so we cannot make the 'walnut' and the 'waffles' directories under
 it. To fix this, do:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">cwd</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">cwd</span> <span class="o">/</span> <span class="s1">&#39;delicious&#39;</span> <span class="o">/</span> <span class="s1">&#39;walnut&#39;</span> <span class="o">/</span> <span class="s1">&#39;waffles&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
+&gt;&gt;&gt; cwd = Path.cwd()
+&gt;&gt;&gt; (cwd / 'delicious' / 'walnut' / 'waffles').mkdir(parents=True)
+</code></pre>
 <p>And all is good :)</p>
 <h2 id="absolute-vs-relative-paths">Absolute vs. Relative paths</h2>
 <p>There are two ways to specify a file path.</p>
@@ -3231,178 +3231,178 @@ it. To fix this, do:</p>
 <h3 id="handling-absolute-paths">Handling Absolute paths</h3>
 <p>To see if a path is an absolute path:</p>
 <p>Using <code>os.path</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isabs</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.path.isabs('/')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isabs</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; os.path.isabs('..')
+# False
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_absolute</span><span class="p">()</span>
-<span class="c1"># True</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
+&gt;&gt;&gt; Path('/').is_absolute()
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_absolute</span><span class="p">()</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; Path('..').is_absolute()
+# False
+</code></pre>
 <p>You can extract an absolute path with both <code>os.path</code> and <code>pathlib</code></p>
 <p>Using <code>os.path</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
-<span class="s1">&#39;/home/asweigart&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.getcwd()
+'/home/asweigart'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
-<span class="s1">&#39;/home&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; os.path.abspath('..')
+'/home'
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">())</span>
-<span class="c1"># /home/asweigart</span>
+<pre><code class="language-python">from pathlib import Path
+print(Path.cwd())
+# /home/asweigart
 
-<span class="nb">print</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">())</span>
-<span class="c1"># /home</span>
-</code></pre></div>
+print(Path('..').resolve())
+# /home
+</code></pre>
 <h3 id="handling-relative-paths">Handling Relative paths</h3>
 <p>You can get a relative path from a starting path to another path.</p>
 <p>Using <code>os.path</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">relpath</span><span class="p">(</span><span class="s1">&#39;/etc/passwd&#39;</span><span class="p">,</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;etc/passwd&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.path.relpath('/etc/passwd', '/')
+# 'etc/passwd'
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/etc/passwd&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">relative_to</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">))</span>
-<span class="c1"># etc/passwd</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
+&gt;&gt;&gt; print(Path('/etc/passwd').relative_to('/'))
+# etc/passwd
+</code></pre>
 <h2 id="path-and-file-validity">Path and File validity</h2>
 <h3 id="checking-if-a-filedirectory-exists">Checking if a file/directory exists</h3>
 <p>Using <code>os.path</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; os.path.exists('.')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;setup.py&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; os.path.exists('setup.py')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;/etc&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; os.path.exists('/etc')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="s1">&#39;nonexistentfile&#39;</span><span class="p">)</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; os.path.exists('nonexistentfile')
+# False
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre><code class="language-python">from pathlib import Path
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; Path('.').exists()
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;setup.py&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; Path('setup.py').exists()
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/etc&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; Path('/etc').exists()
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;nonexistentfile&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; Path('nonexistentfile').exists()
+# False
+</code></pre>
 <h3 id="checking-if-a-path-is-a-file">Checking if a path is a file</h3>
 <p>Using <code>os.path</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s1">&#39;setup.py&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; os.path.isfile('setup.py')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s1">&#39;/home&#39;</span><span class="p">)</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; os.path.isfile('/home')
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s1">&#39;nonexistentfile&#39;</span><span class="p">)</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; os.path.isfile('nonexistentfile')
+# False
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;setup.py&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_file</span><span class="p">()</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; Path('setup.py').is_file()
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/home&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_file</span><span class="p">()</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; Path('/home').is_file()
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;nonexistentfile&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_file</span><span class="p">()</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; Path('nonexistentfile').is_file()
+# False
+</code></pre>
 <h3 id="checking-if-a-path-is-a-directory">Checking if a path is a directory</h3>
 <p>Using <code>os.path</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; os.path.isdir('/')
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;setup.py&#39;</span><span class="p">)</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; os.path.isdir('setup.py')
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;/spam&#39;</span><span class="p">)</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; os.path.isdir('/spam')
+# False
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_dir</span><span class="p">()</span>
-<span class="c1"># True</span>
+&gt;&gt;&gt; Path('/').is_dir()
+# True
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;setup.py&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_dir</span><span class="p">()</span>
-<span class="c1"># False</span>
+&gt;&gt;&gt; Path('setup.py').is_dir()
+# False
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/spam&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">is_dir</span><span class="p">()</span>
-<span class="c1"># False</span>
-</code></pre></div>
+&gt;&gt;&gt; Path('/spam').is_dir()
+# False
+</code></pre>
 <h2 id="getting-a-files-size-in-bytes">Getting a file's size in bytes</h2>
 <p>Using <code>os.path</code> on Windows:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Windows</span><span class="se">\\</span><span class="s1">System32</span><span class="se">\\</span><span class="s1">calc.exe&#39;</span><span class="p">)</span>
-<span class="c1"># 776192</span>
-</code></pre></div>
+&gt;&gt;&gt; os.path.getsize('C:\\Windows\\System32\\calc.exe')
+# 776192
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">stat</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/bin/python3.6&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">stat</span><span class="p">)</span> <span class="c1"># stat contains some other information about the file as well</span>
-<span class="c1"># os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,</span>
-<span class="c1"># --snip--</span>
-<span class="c1"># st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)</span>
+&gt;&gt;&gt; stat = Path('/bin/python3.6').stat()
+&gt;&gt;&gt; print(stat) # stat contains some other information about the file as well
+# os.stat_result(st_mode=33261, st_ino=141087, st_dev=2051, st_nlink=2, st_uid=0,
+# --snip--
+# st_gid=0, st_size=10024, st_atime=1517725562, st_mtime=1515119809, st_ctime=1517261276)
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">stat</span><span class="o">.</span><span class="n">st_size</span><span class="p">)</span> <span class="c1"># size in bytes</span>
-<span class="c1"># 10024</span>
-</code></pre></div>
+&gt;&gt;&gt; print(stat.st_size) # size in bytes
+# 10024
+</code></pre>
 <h2 id="listing-directories">Listing directories</h2>
 <p>Listing directory contents using <code>os.listdir</code> on Windows:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Windows</span><span class="se">\\</span><span class="s1">System32&#39;</span><span class="p">)</span>
-<span class="c1"># [&#39;0409&#39;, &#39;12520437.cpx&#39;, &#39;12520850.cpx&#39;, &#39;5U877.ax&#39;, &#39;aaclient.dll&#39;,</span>
-<span class="c1"># --snip--</span>
-<span class="c1"># &#39;xwtpdui.dll&#39;, &#39;xwtpw32.dll&#39;, &#39;zh-CN&#39;, &#39;zh-HK&#39;, &#39;zh-TW&#39;, &#39;zipfldr.dll&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; os.listdir('C:\\Windows\\System32')
+# ['0409', '12520437.cpx', '12520850.cpx', '5U877.ax', 'aaclient.dll',
+# --snip--
+# 'xwtpdui.dll', 'xwtpw32.dll', 'zh-CN', 'zh-HK', 'zh-TW', 'zipfldr.dll']
+</code></pre>
 <p>Listing directory contents using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/usr/bin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">iterdir</span><span class="p">():</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># ...</span>
-<span class="c1"># /usr/bin/tiff2rgba</span>
-<span class="c1"># /usr/bin/iconv</span>
-<span class="c1"># /usr/bin/ldd</span>
-<span class="c1"># /usr/bin/cache_restore</span>
-<span class="c1"># /usr/bin/udiskie</span>
-<span class="c1"># /usr/bin/unix2dos</span>
-<span class="c1"># /usr/bin/t1reencode</span>
-<span class="c1"># /usr/bin/epstopdf</span>
-<span class="c1"># /usr/bin/idle3</span>
-<span class="c1"># ...</span>
-</code></pre></div>
+&gt;&gt;&gt; for f in Path('/usr/bin').iterdir():
+...     print(f)
+...
+# ...
+# /usr/bin/tiff2rgba
+# /usr/bin/iconv
+# /usr/bin/ldd
+# /usr/bin/cache_restore
+# /usr/bin/udiskie
+# /usr/bin/unix2dos
+# /usr/bin/t1reencode
+# /usr/bin/epstopdf
+# /usr/bin/idle3
+# ...
+</code></pre>
 <h2 id="directory-file-sizes">Directory file sizes</h2>
 <p><base-warning>
   <base-warning-title>
@@ -3413,57 +3413,57 @@ it. To fix this, do:</p>
   </base-warning-content>
 </base-warning></p>
 <p>Using <code>os.path.getsize()</code> and <code>os.listdir()</code> together on Windows:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">total_size</span> <span class="o">=</span> <span class="mi">0</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
+&gt;&gt;&gt; total_size = 0
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Windows</span><span class="se">\\</span><span class="s1">System32&#39;</span><span class="p">):</span>
-<span class="o">...</span>     <span class="n">total_size</span> <span class="o">=</span> <span class="n">total_size</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getsize</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Windows</span><span class="se">\\</span><span class="s1">System32&#39;</span><span class="p">,</span> <span class="n">filename</span><span class="p">))</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">total_size</span><span class="p">)</span>
-<span class="c1"># 1117846456</span>
-</code></pre></div>
+&gt;&gt;&gt; for filename in os.listdir('C:\\Windows\\System32'):
+...     total_size = total_size + os.path.getsize(os.path.join('C:\\Windows\\System32', filename))
+...
+&gt;&gt;&gt; print(total_size)
+# 1117846456
+</code></pre>
 <p>Using <code>pathlib</code> on *nix:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+<pre><code class="language-python">&gt;&gt;&gt; from pathlib import Path
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">total_size</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">sub_path</span> <span class="ow">in</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;/usr/bin&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">iterdir</span><span class="p">():</span>
-<span class="o">...</span>     <span class="n">total_size</span> <span class="o">+=</span> <span class="n">sub_path</span><span class="o">.</span><span class="n">stat</span><span class="p">()</span><span class="o">.</span><span class="n">st_size</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">total_size</span><span class="p">)</span>
-<span class="c1"># 1903178911</span>
-</code></pre></div>
+&gt;&gt;&gt; total_size = 0
+&gt;&gt;&gt; for sub_path in Path('/usr/bin').iterdir():
+...     total_size += sub_path.stat().st_size
+...
+&gt;&gt;&gt; print(total_size)
+# 1903178911
+</code></pre>
 <h2 id="copying-files-and-folders">Copying files and folders</h2>
 <p>The <code>shutil</code> module provides functions for copying files, as well as entire folders.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import shutil, os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">spam.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">delicious&#39;</span><span class="p">)</span>
-<span class="c1"># C:\\delicious\\spam.txt&#39;</span>
+&gt;&gt;&gt; os.chdir('C:\\')
+&gt;&gt;&gt; shutil.copy('C:\\spam.txt', 'C:\\delicious')
+# C:\\delicious\\spam.txt'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="s1">&#39;eggs.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">delicious</span><span class="se">\\</span><span class="s1">eggs2.txt&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;C:\\delicious\\eggs2.txt&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; shutil.copy('eggs.txt', 'C:\\delicious\\eggs2.txt')
+# 'C:\\delicious\\eggs2.txt'
+</code></pre>
 <p>While <code>shutil.copy()</code> will copy a single file, <code>shutil.copytree()</code> will copy an entire folder and every folder and file contained in it:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">os</span>
+<pre><code class="language-python">&gt;&gt;&gt; import shutil, os
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">shutil</span><span class="o">.</span><span class="n">copytree</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">bacon&#39;</span><span class="p">,</span> <span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">bacon_backup&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;C:\\bacon_backup&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; os.chdir('C:\\')
+&gt;&gt;&gt; shutil.copytree('C:\\bacon', 'C:\\bacon_backup')
+# 'C:\\bacon_backup'
+</code></pre>
 <h2 id="moving-and-renaming">Moving and Renaming</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">shutil</span>
+<pre><code class="language-python">&gt;&gt;&gt; import shutil
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">bacon.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">eggs&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;C:\\eggs\\bacon.txt&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; shutil.move('C:\\bacon.txt', 'C:\\eggs')
+# 'C:\\eggs\\bacon.txt'
+</code></pre>
 <p>The destination path can also specify a filename. In the following example, the source file is moved and renamed:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">bacon.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">eggs</span><span class="se">\\</span><span class="s1">new_bacon.txt&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;C:\\eggs\\new_bacon.txt&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; shutil.move('C:\\bacon.txt', 'C:\\eggs\\new_bacon.txt')
+# 'C:\\eggs\\new_bacon.txt'
+</code></pre>
 <p>If there is no eggs folder, then <code>move()</code> will rename bacon.txt to a file named eggs:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">shutil</span><span class="o">.</span><span class="n">move</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">bacon.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">eggs&#39;</span><span class="p">)</span>
-<span class="c1"># &#39;C:\\eggs&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; shutil.move('C:\\bacon.txt', 'C:\\eggs')
+# 'C:\\eggs'
+</code></pre>
 <h2 id="deleting-files-and-folders">Deleting files and folders</h2>
 <ul>
 <li>
@@ -3477,31 +3477,31 @@ it. To fix this, do:</p>
 </li>
 </ul>
 <h2 id="walking-a-directory-tree">Walking a Directory Tree</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">os</span>
-<span class="o">&gt;&gt;&gt;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">folder_name</span><span class="p">,</span> <span class="n">subfolders</span><span class="p">,</span> <span class="n">filenames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">delicious&#39;</span><span class="p">):</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The current folder is </span><span class="si">{</span><span class="n">folder_name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">...</span>     <span class="k">for</span> <span class="n">subfolder</span> <span class="ow">in</span> <span class="n">subfolders</span><span class="p">:</span>
-<span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;SUBFOLDER OF </span><span class="si">{folder_name}</span><span class="s1">: </span><span class="si">{subfolder}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">...</span>     <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
-<span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;FILE INSIDE </span><span class="si">{folder_name}</span><span class="s1">: filename</span><span class="si">{filename}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># The current folder is C:\delicious</span>
-<span class="c1"># SUBFOLDER OF C:\delicious: cats</span>
-<span class="c1"># SUBFOLDER OF C:\delicious: walnut</span>
-<span class="c1"># FILE INSIDE C:\delicious: spam.txt</span>
+<pre><code class="language-python">&gt;&gt;&gt; import os
+&gt;&gt;&gt;
+&gt;&gt;&gt; for folder_name, subfolders, filenames in os.walk('C:\\delicious'):
+...     print(f'The current folder is {folder_name}')
+...     for subfolder in subfolders:
+...         print('SUBFOLDER OF {folder_name}: {subfolder}')
+...     for filename in filenames:
+...         print('FILE INSIDE {folder_name}: filename{filename}')
+...     print('')
+...
+# The current folder is C:\delicious
+# SUBFOLDER OF C:\delicious: cats
+# SUBFOLDER OF C:\delicious: walnut
+# FILE INSIDE C:\delicious: spam.txt
 
-<span class="c1"># The current folder is C:\delicious\cats</span>
-<span class="c1"># FILE INSIDE C:\delicious\cats: catnames.txt</span>
-<span class="c1"># FILE INSIDE C:\delicious\cats: zophie.jpg</span>
+# The current folder is C:\delicious\cats
+# FILE INSIDE C:\delicious\cats: catnames.txt
+# FILE INSIDE C:\delicious\cats: zophie.jpg
 
-<span class="c1"># The current folder is C:\delicious\walnut</span>
-<span class="c1"># SUBFOLDER OF C:\delicious\walnut: waffles</span>
+# The current folder is C:\delicious\walnut
+# SUBFOLDER OF C:\delicious\walnut: waffles
 
-<span class="c1"># The current folder is C:\delicious\walnut\waffles</span>
-<span class="c1"># FILE INSIDE C:\delicious\walnut\waffles: butter.txt</span>
-</code></pre></div>
+# The current folder is C:\delicious\walnut\waffles
+# FILE INSIDE C:\delicious\walnut\waffles: butter.txt
+</code></pre>
 <p><base-disclaimer>
   <base-disclaimer-title>
     Pathlib vs Os Module
@@ -3559,7 +3559,7 @@ it. To fix this, do:</p>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

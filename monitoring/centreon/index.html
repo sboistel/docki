@@ -21,7 +21,7 @@
         <link rel="next" href="../nagios/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2951,16 +2951,16 @@
 <p>Here are somes Centreon tips &amp; tricks</p>
 <h2 id="analyse">Analyse</h2>
 <p>Vérifier les connexions tentées :</p>
-<div class="highlight"><pre><span></span><code>/var/log/centreon/login.log
-</code></pre></div>
+<pre><code class="language-BASH">/var/log/centreon/login.log
+</code></pre>
 <h2 id="poller">Poller</h2>
 <p>List storage from poller :</p>
-<div class="highlight"><pre><span></span><code>/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl<span class="w"> </span>--plugin<span class="o">=</span>os::linux::snmp::plugin<span class="w"> </span>--mode<span class="o">=</span>list-storages<span class="w"> </span>--hostname<span class="o">=</span><span class="nv">$HOST</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>/
-</code></pre></div>
+<pre><code class="language-BASH">/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl --plugin=os::linux::snmp::plugin --mode=list-storages --hostname=$HOST | grep /
+</code></pre>
 <h3 id="stats">Stats</h3>
 <p>Voir les stats du poller :</p>
-<div class="highlight"><pre><span></span><code>/usr/sbin/centenginestats
-</code></pre></div>
+<pre><code class="language-BASH">/usr/sbin/centenginestats
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -2980,12 +2980,12 @@ Lors d'une migration de poller, s'assurer que l'adresse du central soit bien men
 <p>Liste de commandes centreons à garder en tête</p>
 <h2 id="plugin">Plugin</h2>
 <p>Commande du plugin centreon :</p>
-<div class="highlight"><pre><span></span><code>/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl
-</code></pre></div>
+<pre><code class="language-BASH">/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl
+</code></pre>
 <p>Lister les FS :
 On va utiliser le mode <strong>list-storages</strong> :</p>
-<div class="highlight"><pre><span></span><code>/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl<span class="w"> </span>--plugin<span class="o">=</span>os::linux::snmp::plugin<span class="w"> </span>--mode<span class="o">=</span>list-storages<span class="w"> </span>--hostname<span class="o">=</span><span class="si">${</span><span class="nv">iP</span><span class="si">}</span>
-</code></pre></div>
+<pre><code class="language-BASH">/usr/lib/centreon/plugins/centreon-plugins/centreon_plugins.pl --plugin=os::linux::snmp::plugin --mode=list-storages --hostname=${iP}
+</code></pre>
 
 
 
@@ -3035,7 +3035,7 @@ On va utiliser le mode <strong>list-storages</strong> :</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

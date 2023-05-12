@@ -21,7 +21,7 @@
         <link rel="next" href="../fstab/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3008,11 +3008,11 @@
 </table>
 <hr />
 <p>The example commands below set the default zone to dmz, assign all traffic coming from the 192.168.0.0/24 network to the internal zone, and open the network ports for the mysql service on the internal zone.</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># firewall-cmd --set-default-zone=dmz</span>
-<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># firewall-cmd --permanent --zone=internal --add-source=192.168.0.0/24</span>
-<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># firewall-cmd --permanent --zone=internal --add-service=mysql</span>
-<span class="o">[</span>root@host<span class="w"> </span>~<span class="o">]</span><span class="c1"># firewall-cmd --reload</span>
-</code></pre></div>
+<pre><code class="language-shell">[root@host ~]# firewall-cmd --set-default-zone=dmz
+[root@host ~]# firewall-cmd --permanent --zone=internal --add-source=192.168.0.0/24
+[root@host ~]# firewall-cmd --permanent --zone=internal --add-service=mysql
+[root@host ~]# firewall-cmd --reload
+</code></pre>
 
 
 
@@ -3062,7 +3062,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

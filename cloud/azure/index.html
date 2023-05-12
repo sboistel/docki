@@ -21,7 +21,7 @@
         <link rel="next" href="../cgp/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2924,20 +2924,20 @@
 <p>La version actuelle d’Azure CLI ne vous permet pas de gérer la journalisation des applications dans Stockage Blob.</p>
 <h3 id="activer">Activer</h3>
 <p>Pour activer la journalisation des applications dans le système de fichiers, exécutez cette commande :</p>
-<div class="highlight"><pre><span></span><code><span class="n">az</span> <span class="n">webapp</span> <span class="n">log</span> <span class="n">config</span> <span class="p">-</span><span class="n">-application-logging</span> <span class="n">true</span> <span class="p">-</span><span class="n">-level</span> <span class="n">verbose</span> <span class="p">-</span><span class="n">-name</span> <span class="p">&lt;</span><span class="n">app-name</span><span class="p">&gt;</span> <span class="p">-</span><span class="n">-resource-group</span> <span class="p">&lt;</span><span class="n">resource-group-name</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-powershell">az webapp log config --application-logging true --level verbose --name &lt;app-name&gt; --resource-group &lt;resource-group-name&gt;
+</code></pre>
 <p>Par exemple, pour activer la journalisation dans le système de fichiers pour une application appelée contosofashions123 en capturant tous les messages, exécutez cette commande.</p>
-<div class="highlight"><pre><span></span><code><span class="n">az</span> <span class="n">webapp</span> <span class="n">log</span> <span class="n">config</span> <span class="p">-</span><span class="n">-application-logging</span> <span class="n">true</span> <span class="p">-</span><span class="n">-level</span> <span class="n">verbose</span> <span class="p">-</span><span class="n">-name</span> <span class="n">contosofashions123</span> <span class="p">-</span><span class="n">-resource-group</span> <span class="n">contosofashionsRG</span>
-</code></pre></div>
+<pre><code class="language-powershell">az webapp log config --application-logging true --level verbose --name contosofashions123 --resource-group contosofashionsRG
+</code></pre>
 <p>Il n’existe actuellement aucun moyen de désactiver la journalisation des applications à l’aide de commandes Azure CLI.</p>
 <h3 id="reset">Reset</h3>
 <p>Toutefois, la commande suivante permet de réinitialiser la journalisation dans le système de fichiers au niveau erreur simplement.</p>
-<div class="highlight"><pre><span></span><code><span class="n">az</span> <span class="n">webapp</span> <span class="n">log</span> <span class="n">config</span> <span class="p">-</span><span class="n">-application-logging</span> <span class="n">false</span> <span class="p">-</span><span class="n">-name</span> <span class="p">&lt;</span><span class="n">app-name</span><span class="p">&gt;</span> <span class="p">-</span><span class="n">-resource-group</span> <span class="p">&lt;</span><span class="n">resource-group-name</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-powershell">az webapp log config --application-logging false --name &lt;app-name&gt; --resource-group &lt;resource-group-name&gt;
+</code></pre>
 <h3 id="status">Status</h3>
 <p>Pour connaître l’état actuel de la journalisation d’une application, utilisez cette commande.</p>
-<div class="highlight"><pre><span></span><code><span class="n">az</span> <span class="n">webapp</span> <span class="n">log</span> <span class="n">show</span> <span class="p">-</span><span class="n">-name</span> <span class="p">&lt;</span><span class="n">app-name</span><span class="p">&gt;</span> <span class="p">-</span><span class="n">-resource-group</span> <span class="p">&lt;</span><span class="n">resource-group-name</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-powershell">az webapp log show --name &lt;app-name&gt; --resource-group &lt;resource-group-name&gt;
+</code></pre>
 
 
 
@@ -2987,7 +2987,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

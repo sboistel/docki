@@ -21,7 +21,7 @@
         <link rel="next" href="../package-manager/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2821,45 +2821,43 @@
 
 <h1 id="network">Network</h1>
 <p><em>Network files (depend of distro)</em></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">DEB: /etc/network/interfaces</label><label for="__tabbed_1_2">RPM: /etc/sysconfig/network-scripts/ifcfg-eth0</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="c1">## This file describes the network interfaces available on your system</span>
-<span class="c1">## and how to activate them. For more information, see interfaces(5).</span>
+<p>=== "DEB: /etc/network/interfaces"</p>
+<pre><code>``` shell
+## This file describes the network interfaces available on your system
+## and how to activate them. For more information, see interfaces(5).
 
-<span class="c1">## The loopback network interface</span>
-auto<span class="w"> </span>lo
-iface<span class="w"> </span>lo<span class="w"> </span>inet<span class="w"> </span>loopback
+## The loopback network interface
+auto lo
+iface lo inet loopback
 
-<span class="c1">## The primary network interface</span>
-auto<span class="w"> </span>eth0
-iface<span class="w"> </span>eth0<span class="w"> </span>inet<span class="w"> </span>static
-address<span class="w"> </span><span class="m">10</span>.0.0.41
-netmask<span class="w"> </span><span class="m">24</span>
-gateway<span class="w"> </span><span class="m">10</span>.0.0.0
-dns-nameservers<span class="w"> </span><span class="m">10</span>.0.0.1<span class="w"> </span><span class="m">8</span>.8.8.8
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nv">TYPE</span><span class="o">=</span>Ethernet
-<span class="nv">PROXY_METHOD</span><span class="o">=</span>none
-<span class="nv">BROWSER_ONLY</span><span class="o">=</span>no
-<span class="nv">BOOTPROTO</span><span class="o">=</span>none
-<span class="nv">DEFROUTE</span><span class="o">=</span>yes
-<span class="nv">IPV4_FAILURE_FATAL</span><span class="o">=</span>no
-<span class="nv">IPV6INIT</span><span class="o">=</span>no
-<span class="nv">NAME</span><span class="o">=</span>eth0
-<span class="nv">UUID</span><span class="o">=</span>67c4................f5d569
-<span class="nv">DEVICE</span><span class="o">=</span>eth0
-<span class="nv">ONBOOT</span><span class="o">=</span>yes
-<span class="nv">IPV6_DISABLED</span><span class="o">=</span>yes
-<span class="nv">IPADDR</span><span class="o">=</span><span class="m">0</span>.0.0.0
-<span class="nv">PREFIX</span><span class="o">=</span><span class="m">24</span>
-<span class="nv">GATEWAY</span><span class="o">=</span><span class="m">0</span>.0.0.0
-</code></pre></div>
-</div>
-</div>
-</div>
+## The primary network interface
+auto eth0
+iface eth0 inet static
+address 10.0.0.41
+netmask 24
+gateway 10.0.0.0
+dns-nameservers 10.0.0.1 8.8.8.8
+```
+</code></pre>
+<p>=== "RPM: /etc/sysconfig/network-scripts/ifcfg-eth0"</p>
+<pre><code>``` shell
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=none
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=no
+NAME=eth0
+UUID=67c4................f5d569
+DEVICE=eth0
+ONBOOT=yes
+IPV6_DISABLED=yes
+IPADDR=0.0.0.0
+PREFIX=24
+GATEWAY=0.0.0.0
+```
+</code></pre>
 
 
 
@@ -2909,7 +2907,7 @@ dns-nameservers<span class="w"> </span><span class="m">10</span>.0.0.1<span clas
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

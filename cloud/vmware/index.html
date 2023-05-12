@@ -21,7 +21,7 @@
         <link rel="next" href="../pve/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3051,24 +3051,24 @@
 <p>How to add an USB hard drive as Datastore ?</p>
 <h3 id="disabling-usb-arbitrator-service">Disabling usb arbitrator service</h3>
 <h3 id="stopping">Stopping</h3>
-<div class="highlight"><pre><span></span><code>/etc/init.d/usbarbitrator<span class="w"> </span>stop
-</code></pre></div>
+<pre><code class="language-bash">/etc/init.d/usbarbitrator stop
+</code></pre>
 <h3 id="disabling">Disabling</h3>
-<div class="highlight"><pre><span></span><code>chkconfig<span class="w"> </span>usbarbitrator<span class="w"> </span>off
-</code></pre></div>
+<pre><code class="language-bash">chkconfig usbarbitrator off
+</code></pre>
 <h3 id="labeling">Labeling</h3>
-<div class="highlight"><pre><span></span><code>partedUtil<span class="w"> </span>mklabel<span class="w"> </span>/dev/disks/mpx.vmhba32:C0:T0:L0<span class="w"> </span>gpt
-</code></pre></div>
+<pre><code class="language-bash">partedUtil mklabel /dev/disks/mpx.vmhba32:C0:T0:L0 gpt
+</code></pre>
 <h3 id="get-the-partition-table">Get the partition table</h3>
 <p>⚠️ This command will bring you a number :</p>
-<div class="highlight"><pre><span></span><code><span class="nb">eval</span><span class="w"> </span>expr<span class="w"> </span><span class="k">$(</span>partedUtil<span class="w"> </span>getptbl<span class="w"> </span>/dev/disks/mpx.vmhba32:C0:T0:L0<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-1<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1 &quot; \\* &quot; $2 &quot; \\* &quot; $3}&#39;</span><span class="k">)</span><span class="w"> </span>-<span class="w"> </span><span class="m">1</span>
-</code></pre></div>
+<pre><code class="language-bash">eval expr $(partedUtil getptbl /dev/disks/mpx.vmhba32:C0:T0:L0 | tail -1 | awk '{print $1 &quot; \\* &quot; $2 &quot; \\* &quot; $3}') - 1
+</code></pre>
 <p>Dont forget to fill the number found :</p>
-<div class="highlight"><pre><span></span><code>partedUtil<span class="w"> </span>setptbl<span class="w"> </span>/dev/disks/mpx.vmhba32:C0:T0:L0<span class="w"> </span>gpt<span class="w"> </span><span class="s2">&quot;1 2048 </span><span class="si">${</span><span class="nv">NUMBER</span><span class="si">}</span><span class="s2"> AA31E02A400F11DB9590000C2911D1B8 0&quot;</span>
-</code></pre></div>
+<pre><code class="language-bash">partedUtil setptbl /dev/disks/mpx.vmhba32:C0:T0:L0 gpt &quot;1 2048 ${NUMBER} AA31E02A400F11DB9590000C2911D1B8 0&quot;
+</code></pre>
 <h3 id="last-step">Last step</h3>
-<div class="highlight"><pre><span></span><code>vmkfstools<span class="w"> </span>-C<span class="w"> </span>vmfs6<span class="w"> </span>-S<span class="w"> </span>USB-Datastore<span class="w"> </span>/dev/disks/mpx.vmhba32:C0:T0:L0:1
-</code></pre></div>
+<pre><code class="language-bash">vmkfstools -C vmfs6 -S USB-Datastore /dev/disks/mpx.vmhba32:C0:T0:L0:1
+</code></pre>
 <h2 id="license">License</h2>
 <h3 id="removing-license">Removing License</h3>
 <blockquote>
@@ -3131,7 +3131,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

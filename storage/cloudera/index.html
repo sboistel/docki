@@ -21,7 +21,7 @@
         <link rel="next" href="../hadoop/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3091,69 +3091,69 @@
 <blockquote>
 <p>numactl --hardware</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code>available:<span class="w"> </span><span class="m">2</span><span class="w"> </span>nodes<span class="w"> </span><span class="o">(</span><span class="m">0</span>-1<span class="o">)</span>
-node<span class="w"> </span><span class="m">0</span><span class="w"> </span>cpus:<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="m">16</span><span class="w"> </span><span class="m">17</span><span class="w"> </span><span class="m">18</span><span class="w"> </span><span class="m">19</span><span class="w"> </span><span class="m">20</span><span class="w"> </span><span class="m">21</span><span class="w"> </span><span class="m">22</span><span class="w"> </span><span class="m">23</span>
-node<span class="w"> </span><span class="m">0</span><span class="w"> </span>size:<span class="w"> </span><span class="m">8157</span><span class="w"> </span>MB
-node<span class="w"> </span><span class="m">0</span><span class="w"> </span>free:<span class="w"> </span><span class="m">88</span><span class="w"> </span>MB
-node<span class="w"> </span><span class="m">1</span><span class="w"> </span>cpus:<span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">9</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">11</span><span class="w"> </span><span class="m">12</span><span class="w"> </span><span class="m">13</span><span class="w"> </span><span class="m">14</span><span class="w"> </span><span class="m">15</span><span class="w"> </span><span class="m">24</span><span class="w"> </span><span class="m">25</span><span class="w"> </span><span class="m">26</span><span class="w"> </span><span class="m">27</span><span class="w"> </span><span class="m">28</span><span class="w"> </span><span class="m">29</span><span class="w"> </span><span class="m">30</span><span class="w"> </span><span class="m">31</span>
-node<span class="w"> </span><span class="m">1</span><span class="w"> </span>size:<span class="w"> </span><span class="m">8191</span><span class="w"> </span>MB
-node<span class="w"> </span><span class="m">1</span><span class="w"> </span>free:<span class="w"> </span><span class="m">5176</span><span class="w"> </span>MB
-node<span class="w"> </span>distances:
-node<span class="w">   </span><span class="m">0</span><span class="w">   </span><span class="m">1</span><span class="w"> </span>
-<span class="w">  </span><span class="m">0</span>:<span class="w">  </span><span class="m">10</span><span class="w">  </span><span class="m">20</span><span class="w"> </span>
-<span class="w">  </span><span class="m">1</span>:<span class="w">  </span><span class="m">20</span><span class="w">  </span><span class="m">10</span>
-</code></pre></div>
+<pre><code class="language-bash">available: 2 nodes (0-1)
+node 0 cpus: 0 1 2 3 4 5 6 7 16 17 18 19 20 21 22 23
+node 0 size: 8157 MB
+node 0 free: 88 MB
+node 1 cpus: 8 9 10 11 12 13 14 15 24 25 26 27 28 29 30 31
+node 1 size: 8191 MB
+node 1 free: 5176 MB
+node distances:
+node   0   1 
+  0:  10  20 
+  1:  20  10
+</code></pre>
 <h2 id="numa-disabled-systems">NUMA Disabled Systems</h2>
 <h3 id="1-if-numa-is-disabled-on-bios-then-the-command-numactl-show-does-not-show-multiple-nodes">1. If NUMA is disabled on BIOS, then the command ‘numactl –show‘ does not show multiple nodes.</h3>
 <blockquote>
 <p>numactl --show</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code>policy:<span class="w"> </span>default
-preferred<span class="w"> </span>node:<span class="w"> </span>current
-physcpubind:<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">9</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">11</span>
-cpubind:<span class="w"> </span><span class="m">0</span>
-nodebind:<span class="w"> </span><span class="m">0</span>
-membind:<span class="w"> </span><span class="m">0</span>
-</code></pre></div>
+<pre><code class="language-bash">policy: default
+preferred node: current
+physcpubind: 0 1 2 3 4 5 6 7 8 9 10 11
+cpubind: 0
+nodebind: 0
+membind: 0
+</code></pre>
 <h3 id="2-the-command-numactl-hardware-also-does-not-list-multiple-nodes">2. The command ‘numactl –hardware‘ also does not list multiple nodes</h3>
-<div class="highlight"><pre><span></span><code>available:<span class="w"> </span><span class="m">1</span><span class="w"> </span>nodes<span class="w"> </span><span class="o">(</span><span class="m">0</span><span class="o">)</span>
-node<span class="w"> </span><span class="m">0</span><span class="w"> </span>cpus:<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="m">3</span><span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="m">6</span><span class="w"> </span><span class="m">7</span><span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="m">9</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="m">11</span>
-node<span class="w"> </span><span class="m">0</span><span class="w"> </span>size:<span class="w"> </span><span class="m">65525</span><span class="w"> </span>MB
-node<span class="w"> </span><span class="m">0</span><span class="w"> </span>free:<span class="w"> </span><span class="m">17419</span><span class="w"> </span>MB
-node<span class="w"> </span>distances:
-node<span class="w">   </span><span class="m">0</span>
-<span class="w">  </span><span class="m">0</span>:<span class="w">  </span><span class="m">10</span>
-</code></pre></div>
+<pre><code class="language-bash">available: 1 nodes (0)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11
+node 0 size: 65525 MB
+node 0 free: 17419 MB
+node distances:
+node   0
+  0:  10
+</code></pre>
 <h3 id="3-if-the-server-does-not-have-numa-support-or-if-the-bios-option-is-not-enabled-then-the-following-messages-will-be-seen-in-dmesg">3. If the server does not have NUMA support or if the BIOS option is not enabled, then the following messages will be seen in dmesg</h3>
-<div class="highlight"><pre><span></span><code>No<span class="w"> </span>NUMA<span class="w"> </span>configuration<span class="w"> </span>found
-Faking<span class="w"> </span>a<span class="w"> </span>node<span class="w"> </span>at<span class="w"> </span><span class="m">0000000000000000</span>-0000001027fff000
-</code></pre></div>
+<pre><code class="language-bash">No NUMA configuration found
+Faking a node at 0000000000000000-0000001027fff000
+</code></pre>
 <h3 id="4-if-acpi-is-disabled-that-will-also-disable-numa-verify-that-acpi-is-not-disabled-by-a-grubconf-kernel-parameter-and-remove-it-if-found">4. If ACPI is disabled, that will also disable NUMA; verify that ACPI is not disabled by a grub.conf kernel parameter and remove it if found:</h3>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>grep<span class="w"> </span><span class="nv">acpi</span><span class="o">=</span>off<span class="w"> </span>/proc/cmdline
-</code></pre></div>
+<pre><code class="language-bash">$ grep acpi=off /proc/cmdline
+</code></pre>
 <h2 id="charts-building">Charts Building</h2>
 <h3 id="health">Health</h3>
-<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w"> </span><span class="n">health_good_rate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="ss">&quot;good health&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">health_concerning_rate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="ss">&quot;concerning health&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">health_bad_rate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="ss">&quot;bad health&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">health_disabled_rate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="ss">&quot;disabled health&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">health_unknown_rate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="ss">&quot;unknown health&quot;</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">entityName</span><span class="o">=</span><span class="ss">&quot;hdfs:$node-ha&quot;</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w"> </span><span class="n">health_good_rate</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="ss">&quot;good health&quot;</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">entityName</span><span class="o">=</span><span class="ss">&quot;hdfs:$node-ha&quot;</span>
-</code></pre></div>
+<pre><code class="language-SQL">select health_good_rate * 100 as &quot;good health&quot;, health_concerning_rate * 100 as &quot;concerning health&quot;, health_bad_rate * 100 as &quot;bad health&quot;, health_disabled_rate * 100 as &quot;disabled health&quot;, health_unknown_rate * 100 as &quot;unknown health&quot; where entityName=&quot;hdfs:$node-ha&quot;
+</code></pre>
+<pre><code class="language-sql">select health_good_rate * 100 as &quot;good health&quot; where entityName=&quot;hdfs:$node-ha&quot;
+</code></pre>
 <h3 id="history">History</h3>
-<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w"> </span><span class="n">dfs_capacity</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="ss">&quot;HDFS&quot;</span><span class="p">,(</span><span class="n">dfs_capacity_used</span><span class="o">+</span><span class="n">dfs_capacity_used_non_hdfs</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="ss">&quot;Used&quot;</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">entityName</span><span class="o">=</span><span class="ss">&quot;hdfs:$node-ha&quot;</span>
-</code></pre></div>
+<pre><code class="language-SQL">select dfs_capacity as &quot;HDFS&quot;,(dfs_capacity_used+dfs_capacity_used_non_hdfs) as &quot;Used&quot; where entityName=&quot;hdfs:$node-ha&quot;
+</code></pre>
 <h2 id="system">System</h2>
 <h3 id="cpu">CPU</h3>
-<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w"> </span><span class="n">cpu_user_rate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">getHostFact</span><span class="p">(</span><span class="n">numCores</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cpu_system_rate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">getHostFact</span><span class="p">(</span><span class="n">numCores</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cpu_nice_rate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">getHostFact</span><span class="p">(</span><span class="n">numCores</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cpu_iowait_rate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">getHostFact</span><span class="p">(</span><span class="n">numCores</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cpu_irq_rate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">getHostFact</span><span class="p">(</span><span class="n">numCores</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cpu_soft_irq_rate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">getHostFact</span><span class="p">(</span><span class="n">numCores</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="n">cpu_steal_rate</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">getHostFact</span><span class="p">(</span><span class="n">numCores</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span>
-</code></pre></div>
+<pre><code class="language-sql">select cpu_user_rate / getHostFact(numCores, 1) * 100, cpu_system_rate / getHostFact(numCores, 1) * 100, cpu_nice_rate / getHostFact(numCores, 1) * 100, cpu_iowait_rate / getHostFact(numCores, 1) * 100, cpu_irq_rate / getHostFact(numCores, 1) * 100, cpu_soft_irq_rate / getHostFact(numCores, 1) * 100, cpu_steal_rate / getHostFact(numCores, 1) * 100 
+</code></pre>
 <h3 id="ram">RAM</h3>
-<div class="highlight"><pre><span></span><code><span class="k">select</span><span class="w"> </span><span class="n">swap_used</span><span class="p">,</span><span class="w"> </span><span class="n">physical_memory_used</span><span class="p">,</span><span class="w"> </span><span class="n">physical_memory_total</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">hostname</span><span class="w"> </span><span class="n">RLIKE</span><span class="w"> </span><span class="ss">&quot;.*data.*&quot;</span>
-</code></pre></div>
+<pre><code class="language-sql">select swap_used, physical_memory_used, physical_memory_total WHERE hostname RLIKE &quot;.*data.*&quot;
+</code></pre>
 <h2 id="user-repository">User Repository</h2>
 <p>List user home directories :</p>
-<div class="highlight"><pre><span></span><code>hdfs<span class="w"> </span>dfs<span class="w"> </span>-ls<span class="w"> </span>/user/
-</code></pre></div>
-<p>Get user home directory acl as example :
-<div class="highlight"><pre><span></span><code>hdfs<span class="w"> </span>dfs<span class="w"> </span>-getfacl<span class="w"> </span>/user/JohnDoe
-</code></pre></div></p>
+<pre><code class="language-bash">hdfs dfs -ls /user/
+</code></pre>
+<p>Get user home directory acl as example :</p>
+<pre><code class="language-bash">hdfs dfs -getfacl /user/JohnDoe
+</code></pre>
 <p>cf <a href="../hadoop/">Hadoop cheat-sheet</a></p>
 
 
@@ -3204,7 +3204,7 @@ Faking<span class="w"> </span>a<span class="w"> </span>node<span class="w"> </sp
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

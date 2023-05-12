@@ -21,7 +21,7 @@
         <link rel="next" href="../../storage/bareos/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3457,78 +3457,78 @@ Then use the following cmdlets to set different properties of the virtual machin
 <p>The <code>SimpleParameterSet</code> provides a convenient method to create a VM by making common VM creation arguments optional.</p>
 <p>See <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-powershell">Quickstart: Create a Windows virtual machine in Azure with PowerShell</a> for tutorial.</p>
 <p>Syntax :</p>
-<div class="highlight"><pre><span></span><code><span class="nb">New-AzVM</span>
-   <span class="p">[[</span><span class="n">-ResourceGroupName</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[[</span><span class="n">-Location</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-EdgeZone</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[[</span><span class="n">-Zone</span><span class="p">]</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">[]&gt;]</span>
-   <span class="p">[</span><span class="n">-PublicIpSku</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="n">-Name</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;</span>
-   <span class="n">-Credential</span> <span class="p">&lt;</span><span class="n">PSCredential</span><span class="p">&gt;</span>
-   <span class="p">[</span><span class="n">-NetworkInterfaceDeleteOption</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-VirtualNetworkName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-AddressPrefix</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-SubnetName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-SubnetAddressPrefix</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-PublicIpAddressName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-DomainNameLabel</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-AllocationMethod</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-SecurityGroupName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-OpenPorts</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">[]&gt;]</span>
-   <span class="p">[</span><span class="n">-Image</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-Size</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-AvailabilitySetName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-SystemAssignedIdentity</span><span class="p">]</span>
-   <span class="p">[</span><span class="n">-UserAssignedIdentity</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-AsJob</span><span class="p">]</span>
-   <span class="p">[</span><span class="n">-OSDiskDeleteOption</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-DataDiskSizeInGb</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">[]&gt;]</span>
-   <span class="p">[</span><span class="n">-DataDiskDeleteOption</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-EnableUltraSSD</span><span class="p">]</span>
-   <span class="p">[</span><span class="n">-ProximityPlacementGroupId</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-HostId</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-VmssId</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-Priority</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-EvictionPolicy</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-MaxPrice</span> <span class="p">&lt;</span><span class="n">Double</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-EncryptionAtHost</span><span class="p">]</span>
-   <span class="p">[</span><span class="n">-HostGroupId</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-SshKeyName</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-GenerateSshKey</span><span class="p">]</span>
-   <span class="p">[</span><span class="n">-CapacityReservationGroupId</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-UserData</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-ImageReferenceId</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-PlatformFaultDomain</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-HibernationEnabled</span><span class="p">]</span>
-   <span class="p">[</span><span class="n">-vCPUCountAvailable</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-vCPUCountPerCore</span> <span class="p">&lt;</span><span class="n">Int32</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-DiskControllerType</span> <span class="p">&lt;</span><span class="n">String</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-DefaultProfile</span> <span class="p">&lt;</span><span class="n">IAzureContextContainer</span><span class="p">&gt;]</span>
-   <span class="p">[</span><span class="n">-WhatIf</span><span class="p">]</span>
-   <span class="p">[</span><span class="n">-Confirm</span><span class="p">]</span>
-   <span class="p">[&lt;</span><span class="n">CommonParameters</span><span class="p">&gt;]</span>
-</code></pre></div>
+<pre><code class="language-powershell">New-AzVM
+   [[-ResourceGroupName] &lt;String&gt;]
+   [[-Location] &lt;String&gt;]
+   [-EdgeZone &lt;String&gt;]
+   [[-Zone] &lt;String[]&gt;]
+   [-PublicIpSku &lt;String&gt;]
+   -Name &lt;String&gt;
+   -Credential &lt;PSCredential&gt;
+   [-NetworkInterfaceDeleteOption &lt;String&gt;]
+   [-VirtualNetworkName &lt;String&gt;]
+   [-AddressPrefix &lt;String&gt;]
+   [-SubnetName &lt;String&gt;]
+   [-SubnetAddressPrefix &lt;String&gt;]
+   [-PublicIpAddressName &lt;String&gt;]
+   [-DomainNameLabel &lt;String&gt;]
+   [-AllocationMethod &lt;String&gt;]
+   [-SecurityGroupName &lt;String&gt;]
+   [-OpenPorts &lt;Int32[]&gt;]
+   [-Image &lt;String&gt;]
+   [-Size &lt;String&gt;]
+   [-AvailabilitySetName &lt;String&gt;]
+   [-SystemAssignedIdentity]
+   [-UserAssignedIdentity &lt;String&gt;]
+   [-AsJob]
+   [-OSDiskDeleteOption &lt;String&gt;]
+   [-DataDiskSizeInGb &lt;Int32[]&gt;]
+   [-DataDiskDeleteOption &lt;String&gt;]
+   [-EnableUltraSSD]
+   [-ProximityPlacementGroupId &lt;String&gt;]
+   [-HostId &lt;String&gt;]
+   [-VmssId &lt;String&gt;]
+   [-Priority &lt;String&gt;]
+   [-EvictionPolicy &lt;String&gt;]
+   [-MaxPrice &lt;Double&gt;]
+   [-EncryptionAtHost]
+   [-HostGroupId &lt;String&gt;]
+   [-SshKeyName &lt;String&gt;]
+   [-GenerateSshKey]
+   [-CapacityReservationGroupId &lt;String&gt;]
+   [-UserData &lt;String&gt;]
+   [-ImageReferenceId &lt;String&gt;]
+   [-PlatformFaultDomain &lt;Int32&gt;]
+   [-HibernationEnabled]
+   [-vCPUCountAvailable &lt;Int32&gt;]
+   [-vCPUCountPerCore &lt;Int32&gt;]
+   [-DiskControllerType &lt;String&gt;]
+   [-DefaultProfile &lt;IAzureContextContainer&gt;]
+   [-WhatIf]
+   [-Confirm]
+   [&lt;CommonParameters&gt;]
+</code></pre>
 <h3 id="example">Example</h3>
 <h4 id="create-a-virtual-machine">Create a virtual machine</h4>
-<div class="highlight"><pre><span></span><code><span class="nb">New-AzVM</span> <span class="n">-Name</span> <span class="n">MyVm</span> <span class="n">-Credential</span> <span class="p">(</span><span class="nb">Get-Credential</span><span class="p">)</span>
+<pre><code class="language-powershell">New-AzVM -Name MyVm -Credential (Get-Credential)
 
-<span class="n">VERBOSE</span><span class="p">:</span> <span class="n">Use</span> <span class="s1">&#39;mstsc /v:myvm-222222.eastus.cloudapp.azure.com&#39;</span> <span class="n">to</span> <span class="n">connect</span> <span class="n">to</span> <span class="n">the</span> <span class="n">VM</span><span class="p">.</span>
+VERBOSE: Use 'mstsc /v:myvm-222222.eastus.cloudapp.azure.com' to connect to the VM.
 
-<span class="n">ResourceGroupName</span>        <span class="p">:</span> <span class="n">MyVm</span>
-<span class="n">Id</span>                       <span class="p">:</span> <span class="p">/</span><span class="n">subscriptions</span><span class="p">/</span><span class="n">00000000</span><span class="p">-</span><span class="n">0000</span><span class="p">-</span><span class="n">0000</span><span class="p">-</span><span class="n">0000</span><span class="p">-</span><span class="n">000000000000</span><span class="p">/</span><span class="n">resourceGroups</span><span class="p">/</span><span class="n">MyVm</span><span class="p">/</span><span class="n">provi</span>
-<span class="n">ders</span><span class="p">/</span><span class="n">Microsoft</span><span class="p">.</span><span class="n">Compute</span><span class="p">/</span><span class="n">virtualMachines</span><span class="p">/</span><span class="n">MyVm</span>
-<span class="n">VmId</span>                     <span class="p">:</span> <span class="n">11111111</span><span class="p">-</span><span class="n">1111</span><span class="p">-</span><span class="n">1111</span><span class="p">-</span><span class="n">1111</span><span class="p">-</span><span class="n">111111111111</span>
-<span class="n">Name</span>                     <span class="p">:</span> <span class="n">MyVm</span>
-<span class="nb">Type </span>                    <span class="p">:</span> <span class="n">Microsoft</span><span class="p">.</span><span class="n">Compute</span><span class="p">/</span><span class="n">virtualMachines</span>
-<span class="n">Location</span>                 <span class="p">:</span> <span class="n">eastus</span>
-<span class="n">Tags</span>                     <span class="p">:</span> <span class="p">{}</span>
-<span class="n">HardwareProfile</span>          <span class="p">:</span> <span class="p">{</span><span class="n">VmSize</span><span class="p">}</span>
-<span class="n">NetworkProfile</span>           <span class="p">:</span> <span class="p">{</span><span class="n">NetworkInterfaces</span><span class="p">}</span>
-<span class="n">OSProfile</span>                <span class="p">:</span> <span class="p">{</span><span class="n">ComputerName</span><span class="p">,</span> <span class="n">AdminUsername</span><span class="p">,</span> <span class="n">WindowsConfiguration</span><span class="p">,</span> <span class="n">Secrets</span><span class="p">}</span>
-<span class="n">ProvisioningState</span>        <span class="p">:</span> <span class="n">Succeeded</span>
-<span class="n">StorageProfile</span>           <span class="p">:</span> <span class="p">{</span><span class="n">ImageReference</span><span class="p">,</span> <span class="n">OsDisk</span><span class="p">,</span> <span class="n">DataDisks</span><span class="p">}</span>
-<span class="n">FullyQualifiedDomainName</span> <span class="p">:</span> <span class="n">myvm</span><span class="p">-</span><span class="n">222222</span><span class="p">.</span><span class="n">eastus</span><span class="p">.</span><span class="n">cloudapp</span><span class="p">.</span><span class="n">azure</span><span class="p">.</span><span class="n">com</span>
-</code></pre></div>
+ResourceGroupName        : MyVm
+Id                       : /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/MyVm/provi
+ders/Microsoft.Compute/virtualMachines/MyVm
+VmId                     : 11111111-1111-1111-1111-111111111111
+Name                     : MyVm
+Type                     : Microsoft.Compute/virtualMachines
+Location                 : eastus
+Tags                     : {}
+HardwareProfile          : {VmSize}
+NetworkProfile           : {NetworkInterfaces}
+OSProfile                : {ComputerName, AdminUsername, WindowsConfiguration, Secrets}
+ProvisioningState        : Succeeded
+StorageProfile           : {ImageReference, OsDisk, DataDisks}
+FullyQualifiedDomainName : myvm-222222.eastus.cloudapp.azure.com
+</code></pre>
 <h2 id="utiliser-azure-resource-manager">Utiliser Azure Resource Manager</h2>
 <h3 id="terminology">Terminology</h3>
 <p>If you're new to Azure Resource Manager, there are some terms you might not be familiar with.</p>
@@ -3564,8 +3564,8 @@ Then use the following cmdlets to set different properties of the virtual machin
 <li>Les groupes de ressources peuvent avoir des ressources de types différents (services).</li>
 <li>Les groupes de ressources peuvent avoir des ressources provenant de différentes régions.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>En attribuant des autorisations d’étendue à un groupe de ressources, vous pouvez ajouter/supprimer et modifier des ressources facilement sans avoir à recréer les attributions et les étendues.
-</code></pre></div>
+<pre><code class="language-ad-note">En attribuant des autorisations d’étendue à un groupe de ressources, vous pouvez ajouter/supprimer et modifier des ressources facilement sans avoir à recréer les attributions et les étendues.
+</code></pre>
 <h2 id="verrous">Verrous</h2>
 <p>Les verrous Resource Manager permettent aux organisations de mettre en place une structure qui empêche la suppression accidentelle des ressources dans Azure.</p>
 <ul>
@@ -3579,8 +3579,8 @@ Then use the following cmdlets to set different properties of the virtual machin
 </ul>
 <h2 id="manage-groups">Manage groups</h2>
 <p>Utilisation de [[#Azure PowerShell|PowerShell]] pour supprimer des groups de ressources</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Remove-AzResourceGroup</span> <span class="n">-Name</span> <span class="s2">&quot;ContosoRG01&quot;</span>
-</code></pre></div>
+<pre><code class="language-powershell">Remove-AzResourceGroup -Name &quot;ContosoRG01&quot;
+</code></pre>
 <h2 id="conclusion">Conclusion</h2>
 <blockquote>
 <p><a href="https://learn.microsoft.com/fr-fr/azure/azure-resource-manager/management/overview">Documentation Azure Resource Manager</a></p>
@@ -3638,60 +3638,60 @@ In the template, you specify the resources to deploy and the properties for thos
 A cmdlet is a command that manipulates a single feature.</p>
 <p>The term cmdlet refers to a “small command”.
 By convention, cmdlet authors are encouraged to create simple, single-function cmdlets.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Help</span> <span class="n">-Name</span> <span class="nb">Get-ChildItem</span> <span class="n">-Detailed</span>
-</code></pre></div>
+<pre><code class="language-powershell">Get-Help -Name Get-ChildItem -Detailed
+</code></pre>
 <h3 id="modules">Modules</h3>
 <p>Cmdlets are delivered in modules.
 A PowerShell module is a DLL that includes code to process each available cmdlet.</p>
 <p>You load cmdlets into PowerShell by loading the module that contains them.</p>
 <p>You can get the list of loaded modules using the Get-Module command:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Module</span>
-</code></pre></div>
+<pre><code class="language-powershell">Get-Module
+</code></pre>
 <h2 id="az-powershell">Az PowerShell</h2>
 <p>This module is available from dthe main global repository named <strong>PowerShell Gallery</strong>.
 <code>Install-Module</code> cmdlets will be use.</p>
 <p>Install <code>Az</code> from the PSGallery (PowerShell Gallery) :</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">Az</span> <span class="n">-Scope</span> <span class="n">CurrentUser</span> <span class="n">-Repository</span> <span class="n">PSGallery</span> <span class="n">-Force</span>
-</code></pre></div>
+<pre><code class="language-powershell">Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force
+</code></pre>
 <p>Update the module :</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Update-Module</span> <span class="n">-Name</span> <span class="n">Az</span>
-</code></pre></div>
+<pre><code class="language-powershell">Update-Module -Name Az
+</code></pre>
 <h2 id="connect-to-az">Connect to Az</h2>
 <p>This command will prompt on your browser login page</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Connect-AzAccount</span>
-</code></pre></div>
+<pre><code class="language-powershell">Connect-AzAccount
+</code></pre>
 <h3 id="subscriptions">Subscriptions</h3>
 <p>Modify the subscription :</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Set-AzContext</span> <span class="n">-Subscription</span> <span class="s1">&#39;00000000-0000-0000-0000-000000000000&#39;</span>
-</code></pre></div>
+<pre><code class="language-powershell">Set-AzContext -Subscription '00000000-0000-0000-0000-000000000000'
+</code></pre>
 <h2 id="manage-ressource-group">Manage ressource group</h2>
 <p>List current ressource group</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-AzResourceGroup</span>
-</code></pre></div>
+<pre><code class="language-powershell">Get-AzResourceGroup
+</code></pre>
 <p>Formalize it by the Format-Table cmdlet</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-AzResourceGroup</span> <span class="p">|</span> <span class="nb">Format-Table</span>
-</code></pre></div>
+<pre><code class="language-powershell">Get-AzResourceGroup | Format-Table
+</code></pre>
 <p>Example :</p>
-<div class="highlight"><pre><span></span><code><span class="n">ResourceGroupName</span>                  <span class="n">Location</span>       <span class="n">ProvisioningState</span> <span class="n">Tags</span> <span class="n">TagsTable</span> <span class="n">ResourceId</span>
-<span class="p">-----------------</span>                <span class="p">--------</span>     <span class="p">-----------------</span> <span class="p">----</span> <span class="p">---------</span> <span class="p">----------</span>
-<span class="n">cloud-shell-storage-southcentralus</span> <span class="n">southcentralus</span> <span class="n">Succeeded</span>                        <span class="p">/</span><span class="n">subscriptions</span><span class="p">/</span><span class="n">00000000</span><span class="p">-</span><span class="n">0000</span><span class="p">-</span><span class="n">0000</span><span class="p">...</span>
-<span class="n">ExerciseResources</span>                  <span class="n">eastus</span>         <span class="n">Succeeded</span>                        <span class="p">/</span><span class="n">subscriptions</span><span class="p">/</span><span class="n">00000000</span><span class="p">-</span><span class="n">0000</span><span class="p">-</span><span class="n">0000</span><span class="p">...</span>
-</code></pre></div>
+<pre><code class="language-powershell">ResourceGroupName                  Location       ProvisioningState Tags TagsTable ResourceId
+-----------------                --------     ----------------- ---- --------- ----------
+cloud-shell-storage-southcentralus southcentralus Succeeded                        /subscriptions/00000000-0000-0000...
+ExerciseResources                  eastus         Succeeded                        /subscriptions/00000000-0000-0000...
+</code></pre>
 <p>Create ressource :</p>
-<div class="highlight"><pre><span></span><code><span class="nb">New-AzResourceGroup</span> <span class="n">-Name</span> <span class="p">&lt;</span><span class="n">name</span><span class="p">&gt;</span> <span class="n">-Location</span> <span class="p">&lt;</span><span class="n">location</span><span class="p">&gt;</span>
-</code></pre></div>
+<pre><code class="language-powershell">New-AzResourceGroup -Name &lt;name&gt; -Location &lt;location&gt;
+</code></pre>
 <h2 id="control-azure-services-with-the-cli">Control Azure services with the CLI</h2>
 <p>Azure CLI vous permet de contrôler presque tous les aspects de chaque ressource Azure.Vous pouvez travailler avec des groupes de ressources, du stockage, des machines virtuelles, Azure Active Directory (Azure AD), des conteneurs, l’apprentissage automatique, etc.</p>
 <p>Les commandes de l’interface CLI sont structurées en <em>groupes</em> et <em>sous-groupes</em>.Chaque groupe représente un service fourni par Azure, et les sous-groupes séparent les commandes pour ces services en regroupements logiques.Par exemple, le groupe <code>storage</code> contient des sous-groupes, dont <strong>account</strong>, <strong>blob</strong> et <strong>queue</strong>.</p>
 <h3 id="installation">Installation</h3>
 <p>Install <code>azure-cli</code> (for mac)</p>
-<div class="highlight"><pre><span></span><code>brew<span class="w"> </span>install<span class="w"> </span>azure-cli
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>az<span class="w"> </span>--version
-</code></pre></div>
+<pre><code class="language-zsh">brew install azure-cli
+</code></pre>
+<pre><code class="language-zsh">az --version
+</code></pre>
 <h2 id="create-ressource">Create ressource</h2>
 <p>1.Connection</p>
-<div class="highlight"><pre><span></span><code> az login
+<pre><code class="language-cli"> az login
  ```
 
 2.Create
@@ -3700,17 +3700,17 @@ Create ressource group first :
 
 ```cli
 az group create --name &lt;name&gt; --location &lt;location&gt;
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>You don&#39;t need to create a resource group when using the free Azure Sandbox.Instead, you&#39;ll use a previously created resource group.
-</code></pre></div>
+</code></pre>
+<pre><code class="language-ad-important">You don't need to create a resource group when using the free Azure Sandbox.Instead, you'll use a previously created resource group.
+</code></pre>
 <p>3.Check</p>
 <p>List group.s</p>
-<div class="highlight"><pre><span></span><code>az group list
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>You can use the Copy button to copy commands to the clipboard.
+<pre><code class="language-cli">az group list
+</code></pre>
+<pre><code class="language-ad-tip">You can use the Copy button to copy commands to the clipboard.
 
 To paste, right-click on a new line in the Cloud Shell terminal and select Paste or use the keyboard shortcut Shift+Insert (⌘+V on macOS).
-</code></pre></div>
+</code></pre>
 <h3 id="summary">Summary</h3>
 <p>Azure CLI is a good choice for anyone new to using the Azure command line and scripting.The simplicity of its syntax and its cross-platform compatibility help reduce the risk of errors related to the execution of regular and repetitive tasks.In this module, you used Azure CLI commands to create a resource group and deploy a web application using a small set of commands.These commands could be combined into a shell script as part of an automation solution.</p>
 <h2 id="deploy-azure-infrastructure-using-json-arm-templates">Deploy Azure Infrastructure using JSON ARM Templates</h2>
@@ -3806,7 +3806,7 @@ To paste, right-click on a new line in the Cloud Shell terminal and select Paste
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

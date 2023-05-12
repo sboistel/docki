@@ -21,7 +21,7 @@
         <link rel="next" href="../regular-expressions/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2899,49 +2899,49 @@ Reading and Writing Files
 statement, which will close the file for you after you are done, managing the available resources for you.</p>
 <h2 id="opening-and-reading-files">Opening and reading files</h2>
 <p>The <code>open</code> function opens a file and return a corresponding file object.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;C:</span><span class="se">\\</span><span class="s1">Users</span><span class="se">\\</span><span class="s1">your_home_folder</span><span class="se">\\</span><span class="s1">hi.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">hello_file</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">hello_content</span> <span class="o">=</span> <span class="n">hello_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">hello_content</span>
-<span class="s1">&#39;Hello World!&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; with open('C:\\Users\\your_home_folder\\hi.txt') as hello_file:
+...     hello_content = hello_file.read()
+...
+&gt;&gt;&gt; hello_content
+'Hello World!'
+</code></pre>
 <p>Alternatively, you can use the <em>readlines()</em> method to get a list of string values from the file, one string for each line of text:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;sonnet29.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">sonnet_file</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">sonnet_file</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
-<span class="o">...</span>
-<span class="c1"># [When, in disgrace with fortune and men&#39;s eyes,\n&#39;,</span>
-<span class="c1"># &#39; I all alone beweep my  outcast state,\n&#39;,</span>
-<span class="c1"># And trouble deaf heaven with my bootless cries,\n&#39;, And</span>
-<span class="c1"># look upon myself and curse my fate,&#39;]</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; with open('sonnet29.txt') as sonnet_file:
+...     sonnet_file.readlines()
+...
+# [When, in disgrace with fortune and men's eyes,\n',
+# ' I all alone beweep my  outcast state,\n',
+# And trouble deaf heaven with my bootless cries,\n', And
+# look upon myself and curse my fate,']
+</code></pre>
 <p>You can also iterate through the file line by line:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;sonnet29.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">sonnet_file</span><span class="p">:</span>
-<span class="o">...</span>     <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">sonnet_file</span><span class="p">:</span>
-<span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># When, in disgrace with fortune and men&#39;s eyes,</span>
-<span class="c1"># I all alone beweep my outcast state,</span>
-<span class="c1"># And trouble deaf heaven with my bootless cries,</span>
-<span class="c1"># And look upon myself and curse my fate,</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; with open('sonnet29.txt') as sonnet_file:
+...     for line in sonnet_file:
+...         print(line, end='')
+...
+# When, in disgrace with fortune and men's eyes,
+# I all alone beweep my outcast state,
+# And trouble deaf heaven with my bootless cries,
+# And look upon myself and curse my fate,
+</code></pre>
 <h2 id="writing-to-files">Writing to files</h2>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;bacon.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">bacon_file</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">bacon_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Hello world!</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># 13</span>
+<pre><code class="language-python">&gt;&gt;&gt; with open('bacon.txt', 'w') as bacon_file:
+...     bacon_file.write('Hello world!\n')
+...
+# 13
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;bacon.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">bacon_file</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">bacon_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Bacon is not a vegetable.&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># 25</span>
+&gt;&gt;&gt; with open('bacon.txt', 'a') as bacon_file:
+...     bacon_file.write('Bacon is not a vegetable.')
+...
+# 25
 
-<span class="o">&gt;&gt;&gt;</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;bacon.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">bacon_file</span><span class="p">:</span>
-<span class="o">...</span>     <span class="n">content</span> <span class="o">=</span> <span class="n">bacon_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-<span class="c1"># Hello world!</span>
-<span class="c1"># Bacon is not a vegetable.</span>
-</code></pre></div>
+&gt;&gt;&gt; with open('bacon.txt') as bacon_file:
+...     content = bacon_file.read()
+...
+&gt;&gt;&gt; print(content)
+# Hello world!
+# Bacon is not a vegetable.
+</code></pre>
 
 
 
@@ -2991,7 +2991,7 @@ statement, which will close the file for you after you are done, managing the av
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

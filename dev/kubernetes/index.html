@@ -21,7 +21,7 @@
         <link rel="next" href="../multipass/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2952,14 +2952,14 @@ Un ensemble de noeud de type linux ou windows</p>
 <p>Un cluster éxecute des pods, mais de quoi s'agit-il ?
 Il s'agit d'un ensemble de conteneurs se partageant les ressources.</p>
 <p>Lister les pods :</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods
-</code></pre></div>
+<pre><code class="language-BASH">kubectl get pods
+</code></pre>
 <p>Tester les ports :</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>POD_NAME<span class="w"> </span><span class="m">8000</span>:80
-</code></pre></div>
+<pre><code class="language-BASH">kubectl port-forward POD_NAME 8000:80
+</code></pre>
 <p>Réccupérer les élèments d'un pod :</p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>describe<span class="w"> </span>po/POD_NAME
-</code></pre></div>
+<pre><code class="language-BASH">kubectl describe po/POD_NAME
+</code></pre>
 <h2 id="service">Service</h2>
 <p>Les service exposent les ports d'un pod</p>
 <h2 id="nodes">Nodes</h2>
@@ -2977,8 +2977,8 @@ Que font les Master ?</p>
 <li>Communique avec le master (actions à exécuter ...)</li>
 </ul>
 <p>Lister les noeuds : </p>
-<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>nodes
-</code></pre></div>
+<pre><code class="language-BASH">kubectl get nodes
+</code></pre>
 
 
 
@@ -3028,7 +3028,7 @@ Que font les Master ?</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

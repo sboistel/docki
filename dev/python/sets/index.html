@@ -21,7 +21,7 @@
         <link rel="next" href="../setup-py/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2984,91 +2984,91 @@ Python Sets
     When creating set, be sure to not use empty curly braces <code>{}</code> or you will get an empty dictionary instead.
   </base-warning-content>
 </base-warning></p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<pre><code class="language-python">&gt;&gt;&gt; s = {1, 2, 3}
+&gt;&gt;&gt; s = set([1, 2, 3])
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># this will create a dictionary instead of a set</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
-<span class="c1"># &lt;class &#39;dict&#39;&gt;</span>
-</code></pre></div>
+&gt;&gt;&gt; s = {}  # this will create a dictionary instead of a set
+&gt;&gt;&gt; type(s)
+# &lt;class 'dict'&gt;
+</code></pre>
 <h2 id="unordered-collections-of-unique-elements">Unordered collections of unique elements</h2>
 <p>A set automatically remove all the duplicate values.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span>
-<span class="c1"># {1, 2, 3, 4}</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; s = {1, 2, 3, 2, 3, 4}
+&gt;&gt;&gt; s
+# {1, 2, 3, 4}
+</code></pre>
 <p>And as an unordered data type, they can't be indexed.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1"># Traceback (most recent call last):</span>
-<span class="c1">#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
-<span class="c1"># TypeError: &#39;set&#39; object does not support indexing</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; s = {1, 2, 3}
+&gt;&gt;&gt; s[0]
+# Traceback (most recent call last):
+#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+# TypeError: 'set' object does not support indexing
+</code></pre>
 <h2 id="set-add-and-update">set add() and update()</h2>
 <p>Using the <code>add()</code> method we can add a single element to the set.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span>
-<span class="c1"># {1, 2, 3, 4}</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; s = {1, 2, 3}
+&gt;&gt;&gt; s.add(4)
+&gt;&gt;&gt; s
+# {1, 2, 3, 4}
+</code></pre>
 <p>And with <code>update()</code>, multiple ones:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="o">.</span><span class="n">update</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span>
-<span class="c1"># {1, 2, 3, 4, 5, 6}</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; s = {1, 2, 3}
+&gt;&gt;&gt; s.update([2, 3, 4, 5, 6])
+&gt;&gt;&gt; s
+# {1, 2, 3, 4, 5, 6}
+</code></pre>
 <h2 id="set-remove-and-discard">set remove() and discard()</h2>
 <p>Both methods will remove an element from the set, but <code>remove()</code> will raise a <code>key error</code> if the value doesn't exist.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span>
-<span class="c1"># {1, 2}</span>
+<pre><code class="language-python">&gt;&gt;&gt; s = {1, 2, 3}
+&gt;&gt;&gt; s.remove(3)
+&gt;&gt;&gt; s
+# {1, 2}
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="c1"># Traceback (most recent call last):</span>
-<span class="c1">#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
-<span class="c1"># KeyError: 3</span>
-</code></pre></div>
+&gt;&gt;&gt; s.remove(3)
+# Traceback (most recent call last):
+#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+# KeyError: 3
+</code></pre>
 <p><code>discard()</code> won't raise any errors.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span>
-<span class="c1"># {1, 2}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; s = {1, 2, 3}
+&gt;&gt;&gt; s.discard(3)
+&gt;&gt;&gt; s
+# {1, 2}
+&gt;&gt;&gt; s.discard(3)
+</code></pre>
 <h2 id="set-union">set union()</h2>
 <p><code>union()</code> or <code>|</code> will create a new set that with all the elements from the sets provided.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s1</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>  <span class="c1"># or &#39;s1 | s2&#39;</span>
-<span class="c1"># {1, 2, 3, 4, 5}</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; s1 = {1, 2, 3}
+&gt;&gt;&gt; s2 = {3, 4, 5}
+&gt;&gt;&gt; s1.union(s2)  # or 's1 | s2'
+# {1, 2, 3, 4, 5}
+</code></pre>
 <h2 id="set-intersection">set intersection</h2>
 <p><code>intersection</code> or <code>&amp;</code> will return a set with only the elements that are common to all of them.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s3</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s1</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">s2</span><span class="p">,</span> <span class="n">s3</span><span class="p">)</span>  <span class="c1"># or &#39;s1 &amp; s2 &amp; s3&#39;</span>
-<span class="c1"># {3}</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; s1 = {1, 2, 3}
+&gt;&gt;&gt; s2 = {2, 3, 4}
+&gt;&gt;&gt; s3 = {3, 4, 5}
+&gt;&gt;&gt; s1.intersection(s2, s3)  # or 's1 &amp; s2 &amp; s3'
+# {3}
+</code></pre>
 <h2 id="set-difference">set difference</h2>
 <p><code>difference</code> or <code>-</code> will return only the elements that are unique to the first set (invoked set).</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
+<pre><code class="language-python">&gt;&gt;&gt; s1 = {1, 2, 3}
+&gt;&gt;&gt; s2 = {2, 3, 4}
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s1</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>  <span class="c1"># or &#39;s1 - s2&#39;</span>
-<span class="c1"># {1}</span>
+&gt;&gt;&gt; s1.difference(s2)  # or 's1 - s2'
+# {1}
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s2</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="c1"># or &#39;s2 - s1&#39;</span>
-<span class="c1"># {4}</span>
-</code></pre></div>
+&gt;&gt;&gt; s2.difference(s1) # or 's2 - s1'
+# {4}
+</code></pre>
 <h2 id="set-symetric_difference">set symetric_difference</h2>
 <p><code>symetric_difference</code> or <code>^</code> will return all the elements that are not common between them.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">s1</span><span class="o">.</span><span class="n">symmetric_difference</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span>  <span class="c1"># or &#39;s1 ^ s2&#39;</span>
-<span class="c1"># {1, 4}</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; s1 = {1, 2, 3}
+&gt;&gt;&gt; s2 = {2, 3, 4}
+&gt;&gt;&gt; s1.symmetric_difference(s2)  # or 's1 ^ s2'
+# {1, 4}
+</code></pre>
 
 
 
@@ -3118,7 +3118,7 @@ Python Sets
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

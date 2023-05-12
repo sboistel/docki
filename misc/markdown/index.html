@@ -21,7 +21,7 @@
         <link rel="next" href="../mkdocs/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3654,46 +3654,46 @@ RFC: <a href="https://www.rfc-editor.org/rfc/rfc7763">RFC 7763</a>
 GitHub Documentation: <a href="https://docs.github.com/en/get-started/writing-on-github">Writing Markdown on GitHub</a></p>
 <hr />
 <h2 id="headings">Headings</h2>
-<div class="highlight"><pre><span></span><code><span class="gh"># Heading 1</span>
-<span class="gu">## Heading 2</span>
-<span class="gu">### Heading 3</span>
-<span class="gu">#### Heading 4</span>
-<span class="gu">##### Heading 5</span>
-<span class="gu">###### Heading 6</span>
-</code></pre></div>
+<pre><code class="language-markdown"># Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+</code></pre>
 <p>Here is a heading: <code># Heading</code>, <strong>don't do this:</strong> <code>#Heading</code> </p>
 <h2 id="emphasis">Emphasis</h2>
-<div class="highlight"><pre><span></span><code>Emphasis, aka italics, with <span class="ge">*asterisks*</span> or <span class="ge">_underscores_</span>.
+<pre><code class="language-markdown">Emphasis, aka italics, with *asterisks* or _underscores_.
 
-Strong emphasis, aka bold, with <span class="gs">**asterisks**</span> or <span class="gs">__underscores__</span>.
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
-Combined emphasis with <span class="gs">**asterisks and _underscores_**</span>.
+Combined emphasis with **asterisks and _underscores_**.
 
-Strikethrough uses two tildes. <span class="gd">~~Scratch this.~~</span>
-</code></pre></div>
+Strikethrough uses two tildes. ~~Scratch this.~~
+</code></pre>
 <h2 id="line-breaks">Line Breaks</h2>
-<div class="highlight"><pre><span></span><code>First line with two spaces after.  
+<pre><code class="language-markdown">First line with two spaces after.  
 And the next line.
-</code></pre></div>
+</code></pre>
 <h2 id="lists">Lists</h2>
 <h2 id="ordered-lists">Ordered Lists</h2>
-<div class="highlight"><pre><span></span><code><span class="k">1.</span> First item
-<span class="k">2.</span> Second item
-<span class="k">3.</span> Third item
-</code></pre></div>
+<pre><code class="language-markdown">1. First item
+2. Second item
+3. Third item
+</code></pre>
 <h2 id="unordered-lists">Unordered Lists</h2>
-<div class="highlight"><pre><span></span><code><span class="k">-</span><span class="w"> </span>First item
-<span class="k">-</span><span class="w"> </span>Second item
-<span class="k">-</span><span class="w"> </span>Third item
-</code></pre></div>
+<pre><code class="language-markdown">- First item
+- Second item
+- Third item
+</code></pre>
 <h2 id="links">Links</h2>
-<div class="highlight"><pre><span></span><code>Link with text: [<span class="nt">link-text</span>](<span class="na">https://www.google.com</span>)
-</code></pre></div>
+<pre><code class="language-markdown">Link with text: [link-text](https://www.google.com)
+</code></pre>
 <h2 id="images">Images</h2>
-<div class="highlight"><pre><span></span><code>Image with alt text: ![<span class="nt">alt-text</span>](<span class="na">https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067</span>)
+<pre><code class="language-markdown">Image with alt text: ![alt-text](https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067)
 
 Image without alt text: ![](https://camo.githubusercontent.com/4d89cd791580bfb19080f8b0844ba7e1235aa4becc3f43dfd708a769e257d8de/68747470733a2f2f636e642d70726f642d312e73332e75732d776573742d3030342e6261636b626c617a6562322e636f6d2f6e65772d62616e6e6572342d7363616c65642d666f722d6769746875622e6a7067)
-</code></pre></div>
+</code></pre>
 <h2 id="position">Position</h2>
 <p>List of avail positions :</p>
 <table>
@@ -3722,44 +3722,50 @@ Image without alt text: ![](https://camo.githubusercontent.com/4d89cd791580bfb19
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;center&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/img&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>}
-</code></pre></div>
+<pre><code class="language-html">&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;images/img&quot;&gt;
+&lt;/p&gt;}
+</code></pre>
 <h2 id="size">Size</h2>
-<p>Use as <code>%</code> <code>width="1..100%"</code>
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;center&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/img&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;35%&quot;</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div></p>
+<p>Use as <code>%</code> <code>width="1..100%"</code></p>
+<pre><code class="language-html">&lt;p align=&quot;center&quot;&gt;
+  &lt;img src=&quot;images/img&quot; width=&quot;35%&quot;&gt;
+&lt;/p&gt;
+</code></pre>
 <h2 id="code-blocks">Code Blocks</h2>
 <h2 id="inline-code-block">Inline Code Block</h2>
-<div class="highlight"><pre><span></span><code>Inline <span class="sb">`code`</span> has <span class="sb">`back-ticks around`</span> it.
-</code></pre></div>
+<pre><code class="language-markdown">Inline `code` has `back-ticks around` it.
+</code></pre>
 <h2 id="blocks-of-code">Blocks of Code</h2>
 <pre>
-<div class="highlight"><pre><span></span><code><span class="kd">var</span><span class="w"> </span><span class="nx">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;JavaScript syntax highlighting&quot;</span><span class="p">;</span>
-<span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
-</code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;Python syntax highlighting&quot;</span>
-<span class="nb">print</span> <span class="n">s</span>
-</code></pre></div>
+<pre><code class="language-javascript">var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+</code></pre>
 
-<div class="highlight"><pre><span></span><code>No language indicated, so no syntax highlighting. 
-But let&#39;s throw in a &lt;b&gt;tag&lt;/b&gt;.
-</code></pre></div>
+
+
+<pre><code class="language-python">s = &quot;Python syntax highlighting&quot;
+print s
+</code></pre>
+
+
+
+<pre><code>No language indicated, so no syntax highlighting. 
+But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+</code></pre>
+
 </pre>
 
 <h2 id="tables">Tables</h2>
 <p>There must be at least 3 dashes separating each header cell.
 The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily.</p>
 <p>Basic table Code :</p>
-<div class="highlight"><pre><span></span><code>| Syntax      | Description | Test Text     |
+<pre><code class="language-markdown">| Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
-| Header      | Title       | Here&#39;s this   |
+| Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
-</code></pre></div>
+</code></pre>
 <p>Result :
 | Syntax      | Description | Test Text     |
 | :---        |    :----:   |          ---: |
@@ -3769,10 +3775,10 @@ The outer pipes (|) are optional, and you don't need to make the raw Markdown li
 <p>To create a task list start line with square brackets with an empty space.
 Ex: [ <space> ] and add text for task.
 To check the task replace the space between the bracket with "x".</p>
-<div class="highlight"><pre><span></span><code>[x] Write the post
+<pre><code class="language-markdown">[x] Write the post
 [ ] Update the website
 [ ] Contact the user
-</code></pre></div>
+</code></pre>
 <h2 id="rules">Rules</h2>
 <p>This document contains a description of all rules, what they are checking for,
 as well as an examples of documents that break the rule and corrected
@@ -3783,41 +3789,41 @@ versions of the examples.</p>
 <p>Aliases: header-increment</p>
 <p>This rule is triggered when you skip header levels in a markdown document, for
 example:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Header 1</span>
+<pre><code class="language-markdown">## Header 1
 
-<span class="gu">#### Header 3</span>
+#### Header 3
 
 We skipped out a 2nd level header in this document
-</code></pre></div>
+</code></pre>
 <p>When using multiple header levels, nested headers should increase by only one
 level at a time:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Header 1</span>
+<pre><code class="language-markdown">## Header 1
 
-<span class="gu">### Header 2</span>
+### Header 2
 
-<span class="gu">#### Header 3</span>
+#### Header 3
 
-<span class="gu">##### Header 4</span>
+##### Header 4
 
-<span class="gu">### Another Header 2</span>
+### Another Header 2
 
-<span class="gu">#### Another Header 3</span>
-</code></pre></div>
+#### Another Header 3
+</code></pre>
 <h3 id="md002">MD002</h3>
 <p>First header should be a top level header</p>
 <p>Tags: headers</p>
 <p>Aliases: first-header-h1</p>
 <p>Parameters: level (number; default 1)</p>
 <p>This rule is triggered when the first header in the document isn't a h1 header:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">### This isn&#39;t a H1 header</span>
+<pre><code class="language-markdown">### This isn't a H1 header
 
-<span class="gu">#### Another header</span>
-</code></pre></div>
+#### Another header
+</code></pre>
 <p>The first header in the document should be a h1 header:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Start with a H1 header</span>
+<pre><code class="language-markdown">## Start with a H1 header
 
-<span class="gu">### Then use a H2 for subsections</span>
-</code></pre></div>
+### Then use a H2 for subsections
+</code></pre>
 <h3 id="md003">MD003</h3>
 <p>Header style</p>
 <p>Tags: headers</p>
@@ -3826,28 +3832,28 @@ level at a time:</p>
 <code>:setext_with_atx</code>; default <code>:consistent</code>)</p>
 <p>This rule is triggered when different header styles (atx, setext, and 'closed'
 atx) are used in the same document:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## ATX style H1</span>
+<pre><code class="language-markdown">## ATX style H1
 
-<span class="gu">### Closed ATX style H2 ##</span>
+### Closed ATX style H2 ##
 
-<span class="gh">Setext style H1</span>
-<span class="gh">===============</span>
-</code></pre></div>
+Setext style H1
+===============
+</code></pre>
 <p>Be consistent with the style of header used in a document:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## ATX style H1</span>
+<pre><code class="language-markdown">## ATX style H1
 
-<span class="gu">### ATX style H2</span>
-</code></pre></div>
+### ATX style H2
+</code></pre>
 <p>The setext_with_atx doc style allows atx-style headers of level 3 or more in
 documents with setext style headers:</p>
-<div class="highlight"><pre><span></span><code><span class="gh">Setext style H1</span>
-<span class="gh">===============</span>
+<pre><code class="language-markdown">Setext style H1
+===============
 
-<span class="gu">Setext style H2</span>
-<span class="gu">---------------</span>
+Setext style H2
+---------------
 
-<span class="gu">#### ATX style H3</span>
-</code></pre></div>
+#### ATX style H3
+</code></pre>
 <p>Note: the configured header style can be a specific style to use (atx,
 atx_closed, setext, setext_with_atx), or simply require that the usage be
 consistent within the document.</p>
@@ -3859,81 +3865,81 @@ consistent within the document.</p>
 default <code>:consistent</code>)</p>
 <p>This rule is triggered when the symbols used in the document for unordered
 list items do not match the configured unordered list style:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Item 1
+<pre><code class="language-markdown">* Item 1
 + Item 2
-<span class="k">-</span><span class="w"> </span>Item 3
-</code></pre></div>
+- Item 3
+</code></pre>
 <p>To fix this issue, use the configured style for list items throughout the
 document:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Item 1
-<span class="k">*</span><span class="w"> </span>Item 2
-<span class="k">*</span><span class="w"> </span>Item 3
-</code></pre></div>
+<pre><code class="language-markdown">* Item 1
+* Item 2
+* Item 3
+</code></pre>
 <p>Note: the configured list style can be a specific symbol to use (asterisk,
 plus, dash), or simply require that the usage be consistent within the
 document (consistent) or within a level (sublist).</p>
 <p>For sublist, each level must be consistent within a document, even if they
 are separate lists. So this is allowed:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Item 1
-<span class="k">*</span><span class="w"> </span>Item 2
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>Item 2a
+<pre><code class="language-markdown">* Item 1
+* Item 2
+  - Item 2a
     + Item 2a1
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>Item 2b
-<span class="k">*</span><span class="w"> </span>Item 3
+  - Item 2b
+* Item 3
 
 Other stuff
 
-<span class="k">*</span><span class="w"> </span>Item 1
-<span class="k">*</span><span class="w"> </span>Item 2
-</code></pre></div>
+* Item 1
+* Item 2
+</code></pre>
 <p>But this is not allowed:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Item 1
-<span class="k">*</span><span class="w"> </span>Item 2
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>Item 2a
+<pre><code class="language-markdown">* Item 1
+* Item 2
+  - Item 2a
     + Item 2a1
-<span class="w">  </span><span class="k">-</span><span class="w"> </span>Item 2b
-<span class="k">*</span><span class="w"> </span>Item 3
+  - Item 2b
+* Item 3
 
 Other stuff
 
-<span class="k">-</span><span class="w"> </span>Item 1
-<span class="k">-</span><span class="w"> </span>Item 2
-</code></pre></div>
+- Item 1
+- Item 2
+</code></pre>
 <h3 id="md005">MD005</h3>
 <p>Inconsistent indentation for list items at the same level</p>
 <p>Tags: bullet, ul, indentation</p>
 <p>Aliases: list-indent</p>
 <p>This rule is triggered when list items are parsed as being at the same level,
 but don't have the same indentation:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Item 1
-<span class="w">    </span><span class="k">*</span><span class="w"> </span>Nested Item 1
-<span class="w">    </span><span class="k">*</span><span class="w"> </span>Nested Item 2
-<span class="w">   </span><span class="k">*</span><span class="w"> </span>A misaligned item
-</code></pre></div>
+<pre><code class="language-markdown">* Item 1
+    * Nested Item 1
+    * Nested Item 2
+   * A misaligned item
+</code></pre>
 <p>Usually this rule will be triggered because of a typo. Correct the indentation
 for the list to fix it:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Item 1
-<span class="w">  </span><span class="k">*</span><span class="w"> </span>Nested Item 1
-<span class="w">  </span><span class="k">*</span><span class="w"> </span>Nested Item 2
-<span class="w">  </span><span class="k">*</span><span class="w"> </span>Nested Item 3
-</code></pre></div>
+<pre><code class="language-markdown">* Item 1
+  * Nested Item 1
+  * Nested Item 2
+  * Nested Item 3
+</code></pre>
 <h3 id="md006">MD006</h3>
 <p>Consider starting bulleted lists at the beginning of the line</p>
 <p>Tags: bullet, ul, indentation</p>
 <p>Aliases: ul-start-left</p>
 <p>This rule is triggered when top level lists don't start at the beginning of a
 line:</p>
-<div class="highlight"><pre><span></span><code>Some text
+<pre><code class="language-markdown">Some text
 
-<span class="w">  </span><span class="k">*</span><span class="w"> </span>List item
-<span class="w">  </span><span class="k">*</span><span class="w"> </span>List item
-</code></pre></div>
+  * List item
+  * List item
+</code></pre>
 <p>To fix, ensure that top level list items are not indented:</p>
-<div class="highlight"><pre><span></span><code>Some test
+<pre><code class="language-markdown">Some test
 
-<span class="k">*</span><span class="w"> </span>List item
-<span class="k">*</span><span class="w"> </span>List item
-</code></pre></div>
+* List item
+* List item
+</code></pre>
 <p>Rationale: Starting lists at the beginning of the line means that nested list
 items can all be indented by the same amount when an editor's indent function
 or the tab key is used to indent. Starting a list 1 space in means that the
@@ -3947,13 +3953,13 @@ indent of the first nested list is less than the indent of the second level
 <p>This rule is triggered when list items are not indented by the configured
 number of spaces (default: 2).</p>
 <p>Example:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>List item
-<span class="w">   </span><span class="k">*</span><span class="w"> </span>Nested list item indented by 3 spaces
-</code></pre></div>
+<pre><code class="language-markdown">* List item
+   * Nested list item indented by 3 spaces
+</code></pre>
 <p>Corrected Example:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>List item
-<span class="w">  </span><span class="k">*</span><span class="w"> </span>Nested list item indented by 2 spaces
-</code></pre></div>
+<pre><code class="language-markdown">* List item
+  * Nested list item indented by 2 spaces
+</code></pre>
 <p>Rationale (3 space indent): This matches the minimum possible indentation
 for <em>ordered</em> lists (i.e Kramdown won't parse anything less than 3 spaces
 as a sublist on OLs), and since MD005 requires consistent indentation
@@ -3991,15 +3997,15 @@ set to the default of 0.</p>
 of using spaces for indentation. To fix this, replace any hard tab characters
 with spaces instead.</p>
 <p>Example:</p>
-<div class="highlight"><pre><span></span><code>Some text
+<pre><code class="language-markdown">Some text
 
-<span class="w">    </span><span class="k">*</span><span class="w"> </span>hard tab character used to indent the list item
-</code></pre></div>
+    * hard tab character used to indent the list item
+</code></pre>
 <p>Corrected example:</p>
-<div class="highlight"><pre><span></span><code>Some text
+<pre><code class="language-markdown">Some text
 
-<span class="w">    </span><span class="k">*</span><span class="w"> </span>Spaces used to indent the list item instead
-</code></pre></div>
+    * Spaces used to indent the list item instead
+</code></pre>
 <p>You have the option to exclude this rule for code blocks. To do this, set the
 <code>ignore_code_blocks</code> parameter to true.</p>
 <h3 id="md011">MD011</h3>
@@ -4009,27 +4015,27 @@ with spaces instead.</p>
 <p>This rule is triggered when text that appears to be a link is encountered, but
 where the syntax appears to have been reversed (the <code>[]</code> and <code>()</code> are
 reversed):</p>
-<div class="highlight"><pre><span></span><code>(Incorrect link syntax)[http://www.example.com/]
-</code></pre></div>
+<pre><code class="language-markdown">(Incorrect link syntax)[http://www.example.com/]
+</code></pre>
 <p>To fix this, swap the <code>[]</code> and <code>()</code> around:</p>
-<div class="highlight"><pre><span></span><code>[<span class="nt">Correct link syntax</span>](<span class="na">http://www.example.com/</span>)
-</code></pre></div>
+<pre><code class="language-markdown">[Correct link syntax](http://www.example.com/)
+</code></pre>
 <h3 id="md012">MD012</h3>
 <p>Multiple consecutive blank lines</p>
 <p>Tags: whitespace, blank_lines</p>
 <p>Aliases: no-multiple-blanks</p>
 <p>This rule is triggered when there are multiple consecutive blank lines in the
 document:</p>
-<div class="highlight"><pre><span></span><code>Some text here
+<pre><code class="language-markdown">Some text here
 
 
 Some more text here
-</code></pre></div>
+</code></pre>
 <p>To fix this, delete the offending lines:</p>
-<div class="highlight"><pre><span></span><code>Some text here
+<pre><code class="language-markdown">Some text here
 
 Some more text here
-</code></pre></div>
+</code></pre>
 <p>Note: this rule will not be triggered if there are multiple consecutive blank
 lines inside code blocks.</p>
 <h3 id="md013">MD013</h3>
@@ -4059,25 +4065,25 @@ rules. Still, some languages do not lend themselves to short lines.</p>
 <p>Aliases: commands-show-output</p>
 <p>This rule is triggered when there are code blocks showing shell commands to be
 typed, and the shell commands are preceded by dollar signs ($):</p>
-<div class="highlight"><pre><span></span><code>$ ls
+<pre><code class="language-markdown">$ ls
 $ cat foo
 $ less bar
-</code></pre></div>
+</code></pre>
 <p>The dollar signs are unnecessary in the above situation, and should not be
 included:</p>
-<div class="highlight"><pre><span></span><code>ls
+<pre><code class="language-markdown">ls
 cat foo
 less bar
-</code></pre></div>
+</code></pre>
 <p>However, an exception is made when there is a need to distinguish between
 typed commands and command output, as in the following example:</p>
-<div class="highlight"><pre><span></span><code>$ ls
+<pre><code class="language-markdown">$ ls
 foo bar
 $ cat foo
 Hello world
 $ cat bar
 baz
-</code></pre></div>
+</code></pre>
 <p>Rationale: it is easier to copy and paste and less noisy if the dollar signs
 are omitted when they are not needed. See
 <a href="https://cirosantilli.com/markdown-style-guide#dollar-signs-in-shell-code">https://cirosantilli.com/markdown-style-guide#dollar-signs-in-shell-code</a>
@@ -4088,48 +4094,48 @@ for more information.</p>
 <p>Aliases: no-missing-space-atx</p>
 <p>This rule is triggered when spaces are missing after the hash characters
 in an atx style header:</p>
-<div class="highlight"><pre><span></span><code><span class="gh">#Header 1</span>
+<pre><code class="language-markdown">#Header 1
 
-<span class="gu">##Header 2</span>
-</code></pre></div>
+##Header 2
+</code></pre>
 <p>To fix this, separate the header text from the hash character by a single
 space:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Header 1</span>
+<pre><code class="language-markdown">## Header 1
 
-<span class="gu">### Header 2</span>
-</code></pre></div>
+### Header 2
+</code></pre>
 <h3 id="md019">MD019</h3>
 <p>Multiple spaces after hash on atx style header</p>
 <p>Tags: headers, atx, spaces</p>
 <p>Aliases: no-multiple-space-atx</p>
 <p>This rule is triggered when more than one space is used to separate the
 header text from the hash characters in an atx style header:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">##  Header 1</span>
+<pre><code class="language-markdown">##  Header 1
 
-<span class="gu">###  Header 2</span>
-</code></pre></div>
+###  Header 2
+</code></pre>
 <p>To fix this, separate the header text from the hash character by a single
 space:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Header 1</span>
+<pre><code class="language-markdown">## Header 1
 
-<span class="gu">### Header 2</span>
-</code></pre></div>
+### Header 2
+</code></pre>
 <h3 id="md020">MD020</h3>
 <p>No space inside hashes on closed atx style header</p>
 <p>Tags: headers, atx_closed, spaces</p>
 <p>Aliases: no-missing-space-closed-atx</p>
 <p>This rule is triggered when spaces are missing inside the hash characters
 in a closed atx style header:</p>
-<div class="highlight"><pre><span></span><code><span class="gh">#Header 1#</span>
+<pre><code class="language-markdown">#Header 1#
 
-<span class="gu">##Header 2##</span>
-</code></pre></div>
+##Header 2##
+</code></pre>
 <p>To fix this, separate the header text from the hash character by a single
 space:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Header 1 #</span>
+<pre><code class="language-markdown">## Header 1 #
 
-<span class="gu">### Header 2 ##</span>
-</code></pre></div>
+### Header 2 ##
+</code></pre>
 <p>Note: this rule will fire if either side of the header is missing spaces.</p>
 <h3 id="md021">MD021</h3>
 <p>Multiple spaces inside hashes on closed atx style header</p>
@@ -4137,16 +4143,16 @@ space:</p>
 <p>Aliases: no-multiple-space-closed-atx</p>
 <p>This rule is triggered when more than one space is used to separate the
 header text from the hash characters in a closed atx style header:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">##  Header 1  #</span>
+<pre><code class="language-markdown">##  Header 1  #
 
-<span class="gu">###  Header 2  ##</span>
-</code></pre></div>
+###  Header 2  ##
+</code></pre>
 <p>To fix this, separate the header text from the hash character by a single
 space:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Header 1 #</span>
+<pre><code class="language-markdown">## Header 1 #
 
-<span class="gu">### Header 2 ##</span>
-</code></pre></div>
+### Header 2 ##
+</code></pre>
 <p>Note: this rule will fire if either side of the header contains multiple
 spaces.</p>
 <h3 id="md022">MD022</h3>
@@ -4155,22 +4161,22 @@ spaces.</p>
 <p>Aliases: blanks-around-headers</p>
 <p>This rule is triggered when headers (any style) are either not preceded or not
 followed by a blank line:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Header 1</span>
+<pre><code class="language-markdown">## Header 1
 Some text
 
 Some more text
-<span class="gu">### Header 2</span>
-</code></pre></div>
+### Header 2
+</code></pre>
 <p>To fix this, ensure that all headers have a blank line both before and after
 (except where the header is at the beginning or end of the document):</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Header 1</span>
+<pre><code class="language-markdown">## Header 1
 
 Some text
 
 Some more text
 
-<span class="gu">### Header 2</span>
-</code></pre></div>
+### Header 2
+</code></pre>
 <p>Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will
 not parse headers that don't have a blank line before, and will parse them as
 regular text.</p>
@@ -4179,15 +4185,15 @@ regular text.</p>
 <p>Tags: headers, spaces</p>
 <p>Aliases: header-start-left</p>
 <p>This rule is triggered when a header is indented by one or more spaces:</p>
-<div class="highlight"><pre><span></span><code>Some text
+<pre><code class="language-markdown">Some text
 
   # Indented header
-</code></pre></div>
+</code></pre>
 <p>To fix this, ensure that all headers start at the beginning of the line:</p>
-<div class="highlight"><pre><span></span><code>Some text
+<pre><code class="language-markdown">Some text
 
-<span class="gu">## Header</span>
-</code></pre></div>
+## Header
+</code></pre>
 <p>Rationale: Headers that don't start at the beginning of the line will not be
 parsed as headers, and will instead appear as regular text.</p>
 <h3 id="md024">MD024</h3>
@@ -4197,32 +4203,32 @@ parsed as headers, and will instead appear as regular text.</p>
 <p>Parameters: allow_different_nesting (boolean; default false)</p>
 <p>This rule is triggered if there are multiple headers in the document that have
 the same text:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Some text</span>
+<pre><code class="language-markdown">## Some text
 
-<span class="gu">### Some text</span>
-</code></pre></div>
+### Some text
+</code></pre>
 <p>To fix this, ensure that the content of each header is different:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Some text</span>
+<pre><code class="language-markdown">## Some text
 
-<span class="gu">### Some more text</span>
-</code></pre></div>
+### Some more text
+</code></pre>
 <p>Rationale: Some markdown parses generate anchors for headers based on the
 header name, and having headers with the same content can cause problems with
 this.</p>
 <p>If the parameter <code>allow_different_nesting</code> is set to <code>true</code>, header duplication
 under different nesting is allowed, like it usually happens in change logs:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Change log</span>
+<pre><code class="language-markdown">## Change log
 
-<span class="gu">### 2.0.0</span>
+### 2.0.0
 
-<span class="gu">#### Bug fixes</span>
+#### Bug fixes
 
-<span class="gu">#### Features</span>
+#### Features
 
-<span class="gu">### 1.0.0</span>
+### 1.0.0
 
-<span class="gu">#### Bug fixes</span>
-</code></pre></div>
+#### Bug fixes
+</code></pre>
 <h3 id="md025">MD025</h3>
 <p>Multiple top level headers in the same document</p>
 <p>Tags: headers</p>
@@ -4231,19 +4237,19 @@ under different nesting is allowed, like it usually happens in change logs:</p>
 <p>This rule is triggered when a top level header is in use (the first line of
 the file is a h1 header), and more than one h1 header is in use in the
 document:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Top level header</span>
+<pre><code class="language-markdown">## Top level header
 
-<span class="gu">## Another top level header</span>
-</code></pre></div>
+## Another top level header
+</code></pre>
 <p>To fix, structure your document so that there is a single h1 header that is
 the title for the document, and all later headers are h2 or lower level
 headers:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Title</span>
+<pre><code class="language-markdown">## Title
 
-<span class="gu">### Header</span>
+### Header
 
-<span class="gu">### Another header</span>
-</code></pre></div>
+### Another header
+</code></pre>
 <p>Rationale: A top level header is a h1 on the first line of the file, and
 serves as the title for the document. If this convention is in use, then there
 can not be more than one title for the document, and the entire document
@@ -4257,11 +4263,11 @@ cases where an h1 is added externally.</p>
 <p>Parameters: punctuation (string; default ".,;:!?")</p>
 <p>This rule is triggered on any header that has a punctuation character as the
 last character in the line:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## This is a header.</span>
-</code></pre></div>
+<pre><code class="language-markdown">## This is a header.
+</code></pre>
 <p>To fix this, remove any trailing punctuation:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## This is a header</span>
-</code></pre></div>
+<pre><code class="language-markdown">## This is a header
+</code></pre>
 <p>Note: The punctuation parameter can be used to specify what characters class
 as punctuation at the end of the header. For example, you can set it to
 <code>'.,;:!'</code> to allow headers with question marks in them, such as might be used
@@ -4272,39 +4278,39 @@ in an FAQ.</p>
 <p>Aliases: no-multiple-space-blockquote</p>
 <p>This rule is triggered when blockquotes have more than one space after the
 blockquote (<code>&gt;</code>) symbol:</p>
-<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge"> This is a block quote with bad indentation</span>
-<span class="k">&gt; </span><span class="ge"> there should only be one.</span>
-</code></pre></div>
+<pre><code class="language-markdown">&gt;  This is a block quote with bad indentation
+&gt;  there should only be one.
+</code></pre>
 <p>To fix, remove any extraneous space:</p>
-<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">This is a blockquote with correct</span>
-<span class="k">&gt; </span><span class="ge">indentation.</span>
-</code></pre></div>
+<pre><code class="language-markdown">&gt; This is a blockquote with correct
+&gt; indentation.
+</code></pre>
 <h3 id="md028">MD028</h3>
 <p>Blank line inside blockquote</p>
 <p>Tags: blockquote, whitespace</p>
 <p>Aliases: no-blanks-blockquote</p>
 <p>This rule is triggered when two blockquote blocks are separated by nothing
 except for a blank line:</p>
-<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">This is a blockquote</span>
-<span class="k">&gt; </span><span class="ge">which is immediately followed by</span>
+<pre><code class="language-markdown">&gt; This is a blockquote
+&gt; which is immediately followed by
 
-<span class="k">&gt; </span><span class="ge">this blockquote. Unfortunately</span>
-<span class="k">&gt; </span><span class="ge">In some parsers, these are treated as the same blockquote.</span>
-</code></pre></div>
+&gt; this blockquote. Unfortunately
+&gt; In some parsers, these are treated as the same blockquote.
+</code></pre>
 <p>To fix this, ensure that any blockquotes that are right next to each other
 have some text in between:</p>
-<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">This is a blockquote.</span>
+<pre><code class="language-markdown">&gt; This is a blockquote.
 
 And Jimmy also said:
 
-<span class="k">&gt; </span><span class="ge">This too is a blockquote.</span>
-</code></pre></div>
+&gt; This too is a blockquote.
+</code></pre>
 <p>Alternatively, if they are supposed to be the same quote, then add the
 blockquote symbol at the beginning of the blank line:</p>
-<div class="highlight"><pre><span></span><code><span class="k">&gt; </span><span class="ge">This is a blockquote.</span>
-<span class="k">&gt;</span>
-<span class="ge">&gt; This is the same blockquote.</span>
-</code></pre></div>
+<pre><code class="language-markdown">&gt; This is a blockquote.
+&gt;
+&gt; This is the same blockquote.
+</code></pre>
 <p>Rationale: Some markdown parsers will treat two blockquotes separated by one
 or more blank lines as the same blockquote, while others will treat them as
 separate blockquotes.</p>
@@ -4317,15 +4323,15 @@ separate blockquotes.</p>
 do not have a prefix that increases in numerical order (depending on the
 configured style, which defaults to 'one').</p>
 <p>Example valid list if the style is configured as 'one':</p>
-<div class="highlight"><pre><span></span><code><span class="k">1.</span> Do this.
-<span class="k">1.</span> Do that.
-<span class="k">1.</span> Done.
-</code></pre></div>
+<pre><code class="language-markdown">1. Do this.
+1. Do that.
+1. Done.
+</code></pre>
 <p>Example valid list if the style is configured as 'ordered':</p>
-<div class="highlight"><pre><span></span><code><span class="k">1.</span> Do this.
-<span class="k">2.</span> Do that.
-<span class="k">3.</span> Done.
-</code></pre></div>
+<pre><code class="language-markdown">1. Do this.
+2. Do that.
+3. Done.
+</code></pre>
 <h3 id="md030">MD030</h3>
 <p>Spaces after list markers</p>
 <p>Tags: ol, ul, whitespace</p>
@@ -4335,18 +4341,18 @@ configured style, which defaults to 'one').</p>
 '<code>*</code>', '<code>+</code>' or '<code>1.</code>') and the text of the list item.</p>
 <p>The number of spaces checked for depends on the document style in use, but the
 default is 1 space after any list marker:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Foo
-<span class="k">*</span><span class="w"> </span>Bar
-<span class="k">*</span><span class="w"> </span>Baz
+<pre><code class="language-markdown">* Foo
+* Bar
+* Baz
 
-<span class="k">1.</span> Foo
-<span class="k">1.</span> Bar
-<span class="k">1.</span> Baz
+1. Foo
+1. Bar
+1. Baz
 
-<span class="k">1.</span> Foo
-<span class="w">   </span><span class="k">*</span><span class="w"> </span>Bar
-<span class="k">1.</span> Baz
-</code></pre></div>
+1. Foo
+   * Bar
+1. Baz
+</code></pre>
 <p>A document style may change the number of spaces after unordered list items
 and ordered list items independently, as well as based on whether the content
 of every item in the list consists of a single paragraph, or multiple
@@ -4357,24 +4363,24 @@ specifies that 1 space after the list marker should be used if every item in
 the list fits within a single paragraph, but to use 2 or 3 spaces (for ordered
 and unordered lists respectively) if there are multiple paragraphs of content
 inside the list:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>Foo
-<span class="k">*</span><span class="w"> </span>Bar
-<span class="k">*</span><span class="w"> </span>Baz
-</code></pre></div>
+<pre><code class="language-markdown">* Foo
+* Bar
+* Baz
+</code></pre>
 <p>vs.</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>  Foo
+<pre><code class="language-markdown">*   Foo
 
     Second paragraph
 
-<span class="k">*</span><span class="w"> </span>  Bar
-</code></pre></div>
+*   Bar
+</code></pre>
 <p>or</p>
-<div class="highlight"><pre><span></span><code><span class="k">1.</span>  Foo
+<pre><code class="language-markdown">1.  Foo
 
     Second paragraph
 
-<span class="k">1.</span>  Bar
-</code></pre></div>
+1.  Bar
+</code></pre>
 <p>To fix this, ensure the correct number of spaces are used after list marker
 for your selected document style.</p>
 <h3 id="md031">MD031</h3>
@@ -4415,46 +4421,46 @@ not parse fenced code blocks that don't have blank lines before and after them.<
 <p>Aliases: blanks-around-lists</p>
 <p>This rule is triggered when lists (of any kind) are either not preceded or not
 followed by a blank line:</p>
-<div class="highlight"><pre><span></span><code>Some text
-<span class="k">*</span><span class="w"> </span>Some
-<span class="k">*</span><span class="w"> </span>List
+<pre><code class="language-markdown">Some text
+* Some
+* List
 
-<span class="k">1.</span> Some
-<span class="k">2.</span> List
+1. Some
+2. List
 Some text
-</code></pre></div>
+</code></pre>
 <p>To fix this, ensure that all lists have a blank line both before and after
 (except where the block is at the beginning or end of the document):</p>
-<div class="highlight"><pre><span></span><code>Some text
+<pre><code class="language-markdown">Some text
 
-<span class="k">*</span><span class="w"> </span>Some
-<span class="k">*</span><span class="w"> </span>List
+* Some
+* List
 
-<span class="k">1.</span> Some
-<span class="k">2.</span> List
+1. Some
+2. List
 
 Some text
-</code></pre></div>
+</code></pre>
 <p>Rationale: Aside from aesthetic reasons, some parsers, including kramdown, will
 not parse lists that don't have blank lines before and after them.</p>
 <p>Note: List items without hanging indents are a violation of this rule; list
 items with hanging indents are okay:</p>
-<div class="highlight"><pre><span></span><code><span class="k">*</span><span class="w"> </span>This is
+<pre><code class="language-markdown">* This is
 not okay
 
-<span class="k">*</span><span class="w"> </span>This is
+* This is
   okay
-</code></pre></div>
+</code></pre>
 <h3 id="md033">MD033</h3>
 <p>Inline HTML</p>
 <p>Tags: html</p>
 <p>Aliases: no-inline-html</p>
 <p>This rule is triggered whenever raw HTML is used in a markdown document:</p>
-<div class="highlight"><pre><span></span><code>&lt;h1&gt;Inline HTML header&lt;/h1&gt;
-</code></pre></div>
+<pre><code class="language-markdown">&lt;h1&gt;Inline HTML header&lt;/h1&gt;
+</code></pre>
 <p>To fix this, use 'pure' markdown instead of including raw HTML:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Markdown header</span>
-</code></pre></div>
+<pre><code class="language-markdown">## Markdown header
+</code></pre>
 <p>Rationale: Raw HTML is allowed in markdown, but this rule is included for
 those who want their documents to only include "pure" markdown, or for those
 who are rendering markdown documents in something other than HTML.</p>
@@ -4464,18 +4470,18 @@ who are rendering markdown documents in something other than HTML.</p>
 <p>Aliases: no-bare-urls</p>
 <p>This rule is triggered whenever a URL is given that isn't surrounded by angle
 brackets:</p>
-<div class="highlight"><pre><span></span><code>For more information, see http://www.example.com/.
-</code></pre></div>
+<pre><code class="language-markdown">For more information, see http://www.example.com/.
+</code></pre>
 <p>To fix this, add angle brackets around the URL:</p>
-<div class="highlight"><pre><span></span><code>For more information, see &lt;http://www.example.com/&gt;.
-</code></pre></div>
+<pre><code class="language-markdown">For more information, see &lt;http://www.example.com/&gt;.
+</code></pre>
 <p>Rationale: Without angle brackets, the URL isn't converted into a link in many
 markdown parsers.</p>
 <p>Note: if you do want a bare URL without it being converted into a link,
 enclose it in a code block, otherwise in some markdown parsers it <em>will</em> be
 converted:</p>
-<div class="highlight"><pre><span></span><code><span class="sb">`http://www.example.com`</span>
-</code></pre></div>
+<pre><code class="language-markdown">`http://www.example.com`
+</code></pre>
 <h3 id="md035">MD035</h3>
 <p>Horizontal rule style</p>
 <p>Tags: hr</p>
@@ -4484,22 +4490,22 @@ converted:</p>
 horizontal rule; default <code>:consistent</code>)</p>
 <p>This rule is triggered when inconsistent styles of horizontal rules are used
 in the document:</p>
-<div class="highlight"><pre><span></span><code>---
+<pre><code class="language-markdown">---
 
-<span class="k">-</span><span class="w"> </span>- -
+- - -
 
 ***
 
-<span class="k">*</span><span class="w"> </span>* *
+* * *
 
 ****
-</code></pre></div>
+</code></pre>
 <p>To fix this, ensure any horizontal rules used in the document are consistent,
 or match the given style if the rule is so configured:</p>
-<div class="highlight"><pre><span></span><code>---
+<pre><code class="language-markdown">---
 
 ---
-</code></pre></div>
+</code></pre>
 <p>Note: by default, this rule is configured to just require that all horizontal
 rules in the document are the same, and will trigger if any of the horizontal
 rules are different than the first one encountered in the document. If you
@@ -4513,24 +4519,24 @@ is allowed.</p>
 <p>Aliases: no-emphasis-as-header</p>
 <p>This check looks for instances where emphasized (i.e. bold or italic) text is
 used to separate sections, where a header should be used instead:</p>
-<div class="highlight"><pre><span></span><code><span class="gs">**My document**</span>
+<pre><code class="language-markdown">**My document**
 
 Lorem ipsum dolor sit amet...
 
-<span class="ge">_Another section_</span>
+_Another section_
 
 Consectetur adipiscing elit, sed do eiusmod.
-</code></pre></div>
+</code></pre>
 <p>To fix this, use markdown headers instead of emphasized text to denote
 sections:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## My document</span>
+<pre><code class="language-markdown">## My document
 
 Lorem ipsum dolor sit amet...
 
-<span class="gu">### Another section</span>
+### Another section
 
 Consectetur adipiscing elit, sed do eiusmod.
-</code></pre></div>
+</code></pre>
 <p>Note: this rule looks for single line paragraphs that consist entirely of
 emphasized text.  It won't fire on emphasis used within regular text,
 multi-line emphasized paragraphs, and paragraphs ending in punctuation.
@@ -4542,23 +4548,23 @@ punctuation.</p>
 <p>Aliases: no-space-in-emphasis</p>
 <p>This rule is triggered when emphasis markers (bold, italic) are used, but they
 have spaces between the markers and the text:</p>
-<div class="highlight"><pre><span></span><code>Here is some ** bold ** text.
+<pre><code class="language-markdown">Here is some ** bold ** text.
 
 Here is some * italic * text.
 
 Here is some more __ bold __ text.
 
 Here is some more _ italic _ text.
-</code></pre></div>
+</code></pre>
 <p>To fix this, remove the spaces around the emphasis markers:</p>
-<div class="highlight"><pre><span></span><code>Here is some <span class="gs">**bold**</span> text.
+<pre><code class="language-markdown">Here is some **bold** text.
 
-Here is some <span class="ge">*italic*</span> text.
+Here is some *italic* text.
 
-Here is some more <span class="gs">__bold__</span> text.
+Here is some more __bold__ text.
 
-Here is some more <span class="ge">_italic_</span> text.
-</code></pre></div>
+Here is some more _italic_ text.
+</code></pre>
 <p>Rationale: Emphasis is only parsed as such when the asterisks/underscores
 aren't completely surrounded by spaces. This rule attempts to detect where
 they were surrounded by spaces, but it appears that emphasized text was
@@ -4569,25 +4575,25 @@ intended by the author.</p>
 <p>Aliases: no-space-in-code</p>
 <p>This rule is triggered on code span elements that have spaces right inside the
 backticks:</p>
-<div class="highlight"><pre><span></span><code><span class="sb">` some text `</span>
+<pre><code class="language-markdown">` some text `
 
-<span class="sb">`some text `</span>
+`some text `
 
-<span class="sb">` some text`</span>
-</code></pre></div>
+` some text`
+</code></pre>
 <p>To fix this, remove the spaces inside the codespan markers:</p>
-<div class="highlight"><pre><span></span><code><span class="sb">`some text`</span>
-</code></pre></div>
+<pre><code class="language-markdown">`some text`
+</code></pre>
 <h3 id="md039">MD039</h3>
 <p>Spaces inside link text</p>
 <p>Tags: whitespace, links</p>
 <p>Aliases: no-space-in-links</p>
 <p>This rule is triggered on links that have spaces surrounding the link text:</p>
-<div class="highlight"><pre><span></span><code>[<span class="nt"> a link </span>](<span class="na">http://www.example.com/</span>)
-</code></pre></div>
+<pre><code class="language-markdown">[ a link ](http://www.example.com/)
+</code></pre>
 <p>To fix this, remove the spaces surrounding the link text:</p>
-<div class="highlight"><pre><span></span><code>[<span class="nt">a link</span>](<span class="na">http://www.example.com/</span>)
-</code></pre></div>
+<pre><code class="language-markdown">[a link](http://www.example.com/)
+</code></pre>
 <h3 id="md040">MD040</h3>
 <p>Fenced code blocks should have a language specified</p>
 <p>Tags: code, language</p>
@@ -4613,13 +4619,13 @@ echo Hello world
 <p>Parameters: level (number; default 1)</p>
 <p>This rule is triggered when the first line in the file isn't a top level (h1)
 header:</p>
-<div class="highlight"><pre><span></span><code>This is a file without a header
-</code></pre></div>
+<pre><code class="language-markdown">This is a file without a header
+</code></pre>
 <p>To fix this, add a header to the top of your file:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## File with header</span>
+<pre><code class="language-markdown">## File with header
 
 This is a file with a top level header
-</code></pre></div>
+</code></pre>
 <p>Note: The <code>level</code> parameter can be used to change the top level (ex: to h2) in
 cases where an h1 is added externally.</p>
 <h3 id="md046">MD046</h3>
@@ -4653,16 +4659,16 @@ Some more text.
 <p>This rule is triggered when there is not a single newline character at the end
 of a file.</p>
 <p>Example that triggers the rule:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Heading</span>
+<pre><code class="language-markdown">## Heading
 
 This file ends without a newline.[EOF]
-</code></pre></div>
+</code></pre>
 <p>To fix the violation, add a newline character to the end of the file:</p>
-<div class="highlight"><pre><span></span><code><span class="gu">## Heading</span>
+<pre><code class="language-markdown">## Heading
 
 This file ends with a newline.
 [EOF]
-</code></pre></div>
+</code></pre>
 <p>Rationale: Some programs have trouble with files that do not end with a newline.
 More information:
 <a href="https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file">https://unix.stackexchange.com/questions/18743/whats-the-point-in-adding-a-new-line-to-the-end-of-a-file</a>.</p>
@@ -4718,7 +4724,7 @@ More information:
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

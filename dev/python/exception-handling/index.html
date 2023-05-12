@@ -21,7 +21,7 @@
         <link rel="next" href="../file-directory-path/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -2905,75 +2905,75 @@ Python Exception Handling
 <p>Python has many <a href="https://docs.python.org/3/library/exceptions.html">built-in exceptions</a> that are raised when a program encounters an error, and most external libraries, like the popular <a href="https://requests.readthedocs.io/en/latest">Requests</a>, include his own <a href="https://requests.readthedocs.io/en/latest/user/quickstart/#errors-and-exceptions">custom exceptions</a> that we will need to deal to.</p>
 <h2 id="basic-exception-handling">Basic exception handling</h2>
 <p>You can't divide by zero, that is a mathematical true, and if you try to do it in Python, the interpreter will raise the built-in exception <a href="https://docs.python.org/3/library/exceptions.html#ZeroDivisionError">ZeroDivisionError</a>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">dividend</span> <span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">dividend</span> <span class="o">/</span> <span class="n">divisor</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">divide</span><span class="p">(</span><span class="n">dividend</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">divisor</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="c1"># 5</span>
+<pre><code class="language-python">&gt;&gt;&gt; def divide(dividend , divisor):
+...     print(dividend / divisor)
+...
+&gt;&gt;&gt; divide(dividend=10, divisor=5)
+# 5
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">divide</span><span class="p">(</span><span class="n">dividend</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">divisor</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="c1"># Traceback (most recent call last):</span>
-<span class="c1">#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
-<span class="c1"># ZeroDivisionError: division by zero</span>
-</code></pre></div>
+&gt;&gt;&gt; divide(dividend=10, divisor=0)
+# Traceback (most recent call last):
+#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+# ZeroDivisionError: division by zero
+</code></pre>
 <p>Let's say we don't want our program to stop its execution or show the user an output he will not understand. Say we want to print a useful and clear message, then we need to <strong><em>handle</em></strong> the exception with the <code>try</code> and <code>except</code> keywords:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">dividend</span> <span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">try</span><span class="p">:</span>
-<span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="n">dividend</span> <span class="o">/</span> <span class="n">divisor</span><span class="p">)</span>
-<span class="o">...</span>     <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
-<span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You can not divide by 0&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">divide</span><span class="p">(</span><span class="n">dividend</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">divisor</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="c1"># 5</span>
+<pre><code class="language-python">&gt;&gt;&gt; def divide(dividend , divisor):
+...     try:
+...         print(dividend / divisor)
+...     except ZeroDivisionError:
+...         print('You can not divide by 0')
+...
+&gt;&gt;&gt; divide(dividend=10, divisor=5)
+# 5
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">divide</span><span class="p">(</span><span class="n">dividend</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">divisor</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="c1"># You can not divide by 0</span>
-</code></pre></div>
+&gt;&gt;&gt; divide(dividend=10, divisor=0)
+# You can not divide by 0
+</code></pre>
 <h2 id="final-code-in-exception-handling">Final code in exception handling</h2>
 <p>The code inside the <code>finally</code> section is always executed, no matter if an exception has been raised or not:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">divide</span><span class="p">(</span><span class="n">dividend</span> <span class="p">,</span> <span class="n">divisor</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">try</span><span class="p">:</span>
-<span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="n">dividend</span> <span class="o">/</span> <span class="n">divisor</span><span class="p">)</span>
-<span class="o">...</span>     <span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
-<span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;You can not divide by 0&#39;</span><span class="p">)</span>
-<span class="o">...</span>     <span class="k">finally</span><span class="p">:</span>
-<span class="o">...</span>         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Execution finished&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">divide</span><span class="p">(</span><span class="n">dividend</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">divisor</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<span class="c1"># 5</span>
-<span class="c1"># Execution finished</span>
+<pre><code class="language-python">&gt;&gt;&gt; def divide(dividend , divisor):
+...     try:
+...         print(dividend / divisor)
+...     except ZeroDivisionError:
+...         print('You can not divide by 0')
+...     finally:
+...         print('Execution finished')
+...
+&gt;&gt;&gt; divide(dividend=10, divisor=5)
+# 5
+# Execution finished
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">divide</span><span class="p">(</span><span class="n">dividend</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">divisor</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="c1"># You can not divide by 0</span>
-<span class="c1"># Execution finished</span>
-</code></pre></div>
+&gt;&gt;&gt; divide(dividend=10, divisor=0)
+# You can not divide by 0
+# Execution finished
+</code></pre>
 <h2 id="custom-exceptions">Custom Exceptions</h2>
 <p>Custom exceptions initialize by creating a <code>class</code> that inherits from the base <code>Exception</code> class of Python, and are raised using the <code>raise</code> keyword:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">MyCustomException</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">pass</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">raise</span> <span class="n">MyCustomException</span>
-<span class="c1"># Traceback (most recent call last):</span>
-<span class="c1">#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
-<span class="c1"># __main__.MyCustomException</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; class MyCustomException(Exception):
+...     pass
+...
+&gt;&gt;&gt; raise MyCustomException
+# Traceback (most recent call last):
+#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+# __main__.MyCustomException
+</code></pre>
 <p>To declare a custom exception message, you can pass it as a parameter:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">MyCustomException</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
-<span class="o">...</span>     <span class="k">pass</span>
-<span class="o">...</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">raise</span> <span class="n">MyCustomException</span><span class="p">(</span><span class="s1">&#39;A custom message for my custom exception&#39;</span><span class="p">)</span>
-<span class="c1"># Traceback (most recent call last):</span>
-<span class="c1">#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;</span>
-<span class="c1"># __main__.MyCustomException: A custom message for my custom exception</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; class MyCustomException(Exception):
+...     pass
+...
+&gt;&gt;&gt; raise MyCustomException('A custom message for my custom exception')
+# Traceback (most recent call last):
+#   File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+# __main__.MyCustomException: A custom message for my custom exception
+</code></pre>
 <p>Handling a custom exception is the same as any other:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="k">try</span><span class="p">:</span>
-<span class="o">...</span>     <span class="k">raise</span> <span class="n">MyCustomException</span><span class="p">(</span><span class="s1">&#39;A custom message for my custom exception&#39;</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">except</span> <span class="n">MyCustomException</span><span class="p">:</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;My custom exception was raised&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># My custom exception was raised</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; try:
+...     raise MyCustomException('A custom message for my custom exception')
+&gt;&gt;&gt; except MyCustomException:
+...     print('My custom exception was raised')
+...
+# My custom exception was raised
+</code></pre>
 
 
 
@@ -3023,7 +3023,7 @@ Python Exception Handling
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

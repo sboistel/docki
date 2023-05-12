@@ -21,7 +21,7 @@
         <link rel="next" href="../built-in-functions/">
       
       <link rel="icon" href="../../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3090,24 +3090,24 @@ Python Basics
 </tbody>
 </table>
 <p>Examples of expressions:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">6</span>
-<span class="c1"># 20</span>
+<pre><code class="language-python">&gt;&gt;&gt; 2 + 3 * 6
+# 20
 
-<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">6</span>
-<span class="c1"># 30</span>
+&gt;&gt;&gt; (2 + 3) * 6
+# 30
 
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">8</span>
-<span class="c1">#256</span>
+&gt;&gt;&gt; 2 ** 8
+#256
 
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">23</span> <span class="o">//</span> <span class="mi">7</span>
-<span class="c1"># 3</span>
+&gt;&gt;&gt; 23 // 7
+# 3
 
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">23</span> <span class="o">%</span> <span class="mi">7</span>
-<span class="c1"># 2</span>
+&gt;&gt;&gt; 23 % 7
+# 2
 
-<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="mi">7</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
-<span class="c1"># 16.0</span>
-</code></pre></div>
+&gt;&gt;&gt; (5 - 1) * ((7 + 1) / (3 - 1))
+# 16.0
+</code></pre>
 <h2 id="augmented-assignment-operators">Augmented Assignment Operators</h2>
 <table>
 <thead>
@@ -3140,21 +3140,21 @@ Python Basics
 </tbody>
 </table>
 <p>Examples:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">greeting</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">greeting</span> <span class="o">+=</span> <span class="s1">&#39; world!&#39;</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">greeting</span>
-<span class="c1"># &#39;Hello world!&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; greeting = 'Hello'
+&gt;&gt;&gt; greeting += ' world!'
+&gt;&gt;&gt; greeting
+# 'Hello world!'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">number</span> <span class="o">+=</span> <span class="mi">1</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">number</span>
-<span class="c1"># 2</span>
+&gt;&gt;&gt; number = 1
+&gt;&gt;&gt; number += 1
+&gt;&gt;&gt; number
+# 2
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span> <span class="o">*=</span> <span class="mi">3</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_list</span>
-<span class="c1"># [&#39;item&#39;, &#39;item&#39;, &#39;item&#39;]</span>
-</code></pre></div>
+&gt;&gt;&gt; my_list = ['item']
+&gt;&gt;&gt; my_list *= 3
+&gt;&gt;&gt; my_list
+# ['item', 'item', 'item']
+</code></pre>
 <h2 id="data-types">Data Types</h2>
 <table>
 <thead>
@@ -3180,119 +3180,119 @@ Python Basics
 </table>
 <h2 id="concatenation-and-replication">Concatenation and Replication</h2>
 <p>String concatenation:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Alice&#39;</span> <span class="s1">&#39;Bob&#39;</span>
-<span class="c1"># &#39;AliceBob&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; 'Alice' 'Bob'
+# 'AliceBob'
+</code></pre>
 <p>String replication:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Alice&#39;</span> <span class="o">*</span> <span class="mi">5</span>
-<span class="c1"># &#39;AliceAliceAliceAliceAlice&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; 'Alice' * 5
+# 'AliceAliceAliceAliceAlice'
+</code></pre>
 <h2 id="variables">Variables</h2>
 <p>You can name a variable anything as long as it obeys the following rules:</p>
 <ol>
 <li>It can be only one word.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="c1"># bad</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my</span> <span class="n">variable</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; # bad
+&gt;&gt;&gt; my variable = 'Hello'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># good</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">var</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; # good
+&gt;&gt;&gt; var = 'Hello'
+</code></pre>
 <ol>
 <li>It can use only letters, numbers, and the underscore (<code>_</code>) character.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="c1"># bad</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="o">%</span><span class="err">$</span><span class="nd">@variable</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; # bad
+&gt;&gt;&gt; %$@variable = 'Hello'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># good</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_var</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+&gt;&gt;&gt; # good
+&gt;&gt;&gt; my_var = 'Hello'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="c1"># good</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_var_2</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; # good
+&gt;&gt;&gt; my_var_2 = 'Hello'
+</code></pre>
 <ol>
 <li>It can’t begin with a number.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="c1"># this wont work</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="mi">23</span><span class="n">_var</span> <span class="o">=</span> <span class="s1">&#39;hello&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; # this wont work
+&gt;&gt;&gt; 23_var = 'hello'
+</code></pre>
 <ol>
 <li>Variable name starting with an underscore (<code>_</code>) are considered as "unuseful".</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="c1"># _spam should not be used again in the code</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">_spam</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; # _spam should not be used again in the code
+&gt;&gt;&gt; _spam = 'Hello'
+</code></pre>
 <h2 id="comments">Comments</h2>
 <p>Inline comment:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># This is a comment</span>
-</code></pre></div>
+<pre><code class="language-python"># This is a comment
+</code></pre>
 <p>Multiline comment:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># This is a</span>
-<span class="c1"># multiline comment</span>
-</code></pre></div>
+<pre><code class="language-python"># This is a
+# multiline comment
+</code></pre>
 <p>Code with a comment:</p>
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># initialization</span>
-</code></pre></div>
+<pre><code class="language-python">a = 1  # initialization
+</code></pre>
 <p>Please note the two spaces in front of the comment.</p>
 <p>Function docstring:</p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This is a function docstring</span>
-<span class="sd">    You can also use:</span>
-<span class="sd">    &#39;&#39;&#39; Function Docstring &#39;&#39;&#39;</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-</code></pre></div>
+<pre><code class="language-python">def foo():
+    &quot;&quot;&quot;
+    This is a function docstring
+    You can also use:
+    ''' Function Docstring '''
+    &quot;&quot;&quot;
+</code></pre>
 <h2 id="the-print-function">The print() Function</h2>
 <p>The <code>print()</code> function writes the value of the argument(s) it is given. [...] it handles multiple arguments, floating point-quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
-<span class="c1"># Hello world!</span>
+<pre><code class="language-python">&gt;&gt;&gt; print('Hello world!')
+# Hello world!
 
-<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-<span class="c1"># Hello world! 1</span>
-</code></pre></div>
+&gt;&gt;&gt; a = 1
+&gt;&gt;&gt; print('Hello world!', a)
+# Hello world! 1
+</code></pre>
 <h3 id="the-end-keyword">The end keyword</h3>
 <p>The keyword argument <code>end</code> can be used to avoid the newline after the output, or end the output with a different string:</p>
-<div class="highlight"><pre><span></span><code><span class="n">phrase</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;printed&#39;</span><span class="p">,</span> <span class="s1">&#39;with&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;dash&#39;</span><span class="p">,</span> <span class="s1">&#39;in&#39;</span><span class="p">,</span> <span class="s1">&#39;between&#39;</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">phrase</span><span class="p">:</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="n">word</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># printed-with-a-dash-in-between-</span>
-</code></pre></div>
+<pre><code class="language-python">phrase = ['printed', 'with', 'a', 'dash', 'in', 'between']
+&gt;&gt;&gt; for word in phrase:
+...     print(word, end='-')
+...
+# printed-with-a-dash-in-between-
+</code></pre>
 <h3 id="the-sep-keyword">The sep keyword</h3>
 <p>The keyword <code>sep</code> specify how to separate the objects, if there is more than one:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;cats&#39;</span><span class="p">,</span> <span class="s1">&#39;dogs&#39;</span><span class="p">,</span> <span class="s1">&#39;mice&#39;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-<span class="c1"># cats,dogs,mice</span>
-</code></pre></div>
+<pre><code class="language-python">print('cats', 'dogs', 'mice', sep=',')
+# cats,dogs,mice
+</code></pre>
 <h2 id="the-input-function">The input() Function</h2>
 <p>This function takes the input from the user and converts it into a string:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;What is your name?&#39;</span><span class="p">)</span>   <span class="c1"># ask for their name</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">my_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hi, </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_name</span><span class="p">))</span>
-<span class="c1"># What is your name?</span>
-<span class="c1"># Martha</span>
-<span class="c1"># Hi, Martha</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; print('What is your name?')   # ask for their name
+&gt;&gt;&gt; my_name = input()
+&gt;&gt;&gt; print('Hi, {}'.format(my_name))
+# What is your name?
+# Martha
+# Hi, Martha
+</code></pre>
 <p><code>input()</code> can also set a default message without using <code>print()</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">my_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your name? &#39;</span><span class="p">)</span>  <span class="c1"># default message</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hi, </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">my_name</span><span class="p">))</span>
-<span class="c1"># What is your name? Martha</span>
-<span class="c1"># Hi, Martha</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; my_name = input('What is your name? ')  # default message
+&gt;&gt;&gt; print('Hi, {}'.format(my_name))
+# What is your name? Martha
+# Hi, Martha
+</code></pre>
 <p>It is also possible to use formatted strings to avoid using .format:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">my_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;What is your name? &#39;</span><span class="p">)</span>  <span class="c1"># default message</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Hi, </span><span class="si">{</span><span class="n">my_name</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="c1"># What is your name? Martha</span>
-<span class="c1"># Hi, Martha</span>
-</code></pre></div>
+<pre><code class="language-python">&gt;&gt;&gt; my_name = input('What is your name? ')  # default message
+&gt;&gt;&gt; print(f'Hi, {my_name}')
+# What is your name? Martha
+# Hi, Martha
+</code></pre>
 <h2 id="the-len-function">The len() Function</h2>
 <p>Evaluates to the integer value of the number of characters in a string, list, dictionary, etc.:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
-<span class="c1"># 5</span>
+<pre><code class="language-python">&gt;&gt;&gt; len('hello')
+# 5
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">([</span><span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">])</span>
-<span class="c1"># 3</span>
-</code></pre></div>
+&gt;&gt;&gt; len(['cat', 3, 'dog'])
+# 3
+</code></pre>
 <p><base-warning>
   <base-warning-title>Test of emptiness</base-warning-title>
   <base-warning-content>
@@ -3301,35 +3301,35 @@ Python Basics
   </base-warning-content>
 </base-warning></p>
 <p>Test of emptiness example:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<pre><code class="language-python">&gt;&gt;&gt; a = [1, 2, 3]
 
-<span class="c1"># bad</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>  <span class="c1"># evaluates to True</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the list is not empty!&quot;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># the list is not empty!</span>
+# bad
+&gt;&gt;&gt; if len(a) &gt; 0:  # evaluates to True
+...     print(&quot;the list is not empty!&quot;)
+...
+# the list is not empty!
 
-<span class="c1"># good</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">a</span><span class="p">:</span> <span class="c1"># evaluates to True</span>
-<span class="o">...</span>     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;the list is not empty!&quot;</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="c1"># the list is not empty!</span>
-</code></pre></div>
+# good
+&gt;&gt;&gt; if a: # evaluates to True
+...     print(&quot;the list is not empty!&quot;)
+...
+# the list is not empty!
+</code></pre>
 <h2 id="the-str-int-and-float-functions">The str(), int(), and float() Functions</h2>
 <p>These functions allow you to change the type of variable. For example, you can transform from an <code>integer</code> or <code>float</code> to a <code>string</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="mi">29</span><span class="p">)</span>
-<span class="c1"># &#39;29&#39;</span>
+<pre><code class="language-python">&gt;&gt;&gt; str(29)
+# '29'
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="o">-</span><span class="mf">3.14</span><span class="p">)</span>
-<span class="c1"># &#39;-3.14&#39;</span>
-</code></pre></div>
+&gt;&gt;&gt; str(-3.14)
+# '-3.14'
+</code></pre>
 <p>Or from a <code>string</code> to an <code>integer</code> or <code>float</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;11&#39;</span><span class="p">)</span>
-<span class="c1"># 11</span>
+<pre><code class="language-python">&gt;&gt;&gt; int('11')
+# 11
 
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;3.14&#39;</span><span class="p">)</span>
-<span class="c1"># 3.14</span>
-</code></pre></div>
+&gt;&gt;&gt; float('3.14')
+# 3.14
+</code></pre>
 
 
 
@@ -3379,7 +3379,7 @@ Python Basics
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       

@@ -21,7 +21,7 @@
         <link rel="next" href="../docker/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
     
     
       
@@ -3094,18 +3094,18 @@
 <h2 id="serveur">Serveur</h2>
 <h3 id="configuration">Configuration</h3>
 <p>file : <code>ansible.cgf</code></p>
-<div class="highlight"><pre><span></span><code><span class="nv">host_key_checking</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>False
-<span class="nv">inventory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>pve.inventory
-</code></pre></div>
+<pre><code class="language-shell">host_key_checking = False
+inventory = pve.inventory
+</code></pre>
 <h3 id="inventory">Inventory</h3>
 <p>file : <code>inventory</code></p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>Groups<span class="o">]</span>
-ansible<span class="w"> </span><span class="nv">ansible_hosts</span><span class="o">=</span><span class="m">0</span>.0.0.0
+<pre><code class="language-shell">[Groups]
+ansible ansible_hosts=0.0.0.0
 
-<span class="o">[</span>Groups:vars<span class="o">]</span>
-<span class="nv">ansible_user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>John<span class="w"> </span>Doe
-<span class="nv">ansible_password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>jdoe
-</code></pre></div>
+[Groups:vars]
+ansible_user = John Doe
+ansible_password = jdoe
+</code></pre>
 <h2 id="remote">Remote</h2>
 <h3 id="windows">Windows</h3>
 <h4 id="winrm">WinRM</h4>
@@ -3163,42 +3163,42 @@ Since Windows Server 2012, WinRM has been enabled by default, but in most cases 
 </table>
 <h5 id="basic">Basic</h5>
 <p>Basic authentication is one of the simplest authentication options to use, but is also the most insecure.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">ansible_user</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Username</span>
-<span class="nt">ansible_password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Password</span>
-<span class="nt">ansible_connection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">winrm</span>
-<span class="nt">ansible_winrm_transport</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">basic</span>
-</code></pre></div>
+<pre><code class="language-yaml">ansible_user: Username
+ansible_password: Password
+ansible_connection: winrm
+ansible_winrm_transport: basic
+</code></pre>
 <h5 id="credssp">CredSSP</h5>
 <p>CredSSP authentication is a newer authentication protocol that allows credential delegation. This is achieved by encrypting the username and password after authentication has succeeded and sending that to the server using the CredSSP protocol.</p>
 <p>To use CredSSP authentication, the host vars are configured like :</p>
-<div class="highlight"><pre><span></span><code><span class="nt">ansible_user</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Username</span>
-<span class="nt">ansible_password</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Password</span>
-<span class="nt">ansible_connection</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">winrm</span>
-<span class="nt">ansible_winrm_transport</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">credssp</span>
-</code></pre></div>
+<pre><code class="language-yaml">ansible_user: Username
+ansible_password: Password
+ansible_connection: winrm
+ansible_winrm_transport: credssp
+</code></pre>
 <p>There are some extra host variables that can be set as shown below</p>
-<div class="highlight"><pre><span></span><code><span class="nt">ansible_winrm_credssp_disable_tlsv1_2</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">when true, will not use TLS 1.2 in the CredSSP auth process</span>
-</code></pre></div>
+<pre><code class="language-yaml">ansible_winrm_credssp_disable_tlsv1_2: when true, will not use TLS 1.2 in the CredSSP auth process
+</code></pre>
 <p>CredSSP authentication is not enabled by default on a Windows host, but can be enabled by running the following in PowerShell</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Enable-WSManCredSSP</span> <span class="n">-Role</span> <span class="n">Server</span> <span class="n">-Force</span>
-</code></pre></div>
+<pre><code class="language-powershell">Enable-WSManCredSSP -Role Server -Force
+</code></pre>
 <h5 id="installing-credssp-library">Installing CredSSP Library</h5>
 <p>The <code>requests-credssp</code> wrapper can be installed using <code>pip</code>:</p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>pywinrm<span class="o">[</span>credssp<span class="o">]</span>
-</code></pre></div>
+<pre><code class="language-shell">pip install pywinrm[credssp]
+</code></pre>
 <h5 id="tls-12">TLS 1.2</h5>
 <p>By default the <code>requests-credssp</code> library is configured to authenticate over the TLS 1.2 protocol.
 TLS 1.2 is <strong>installed</strong> and enabled by <strong>default</strong> for <em>Windows Server 2012</em> and <em>Windows 8</em> and more recent releases.</p>
 <h5 id="certificate">Certificate</h5>
 <p>CredSSP works by encrypting the credentials through the TLS protocol and uses a self-signed certificate by default.
 The <code>CertificateThumbprint</code> option under the WinRM service configuration can be used to specify the thumbprint of another certificate.</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Note the value $certificate_thumbprint will be different in each</span>
-<span class="c1"># situation, this needs to be set based on the cert that is used.</span>
-<span class="l l-Scalar l-Scalar-Plain">$certificate_thumbprint = &quot;7C8DCBD5427AFEE6560F4AF524E325915F51172C&quot;</span>
+<pre><code class="language-yaml"># Note the value $certificate_thumbprint will be different in each
+# situation, this needs to be set based on the cert that is used.
+$certificate_thumbprint = &quot;7C8DCBD5427AFEE6560F4AF524E325915F51172C&quot;
 
-<span class="l l-Scalar l-Scalar-Plain"># Set the thumbprint value</span>
-<span class="l l-Scalar l-Scalar-Plain">Set-Item -Path WSMan:\localhost\Service\CertificateThumbprint -Value $certificate_thumbprint</span>
-</code></pre></div>
+# Set the thumbprint value
+Set-Item -Path WSMan:\localhost\Service\CertificateThumbprint -Value $certificate_thumbprint
+</code></pre>
 <p>[[https://docs.ansible.com/ansible/latest/os_guide/windows_winrm.html#id9]]</p>
 
 
@@ -3249,7 +3249,7 @@ The <code>CertificateThumbprint</code> option under the WinRM service configurat
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c2be25ad.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js"></script>
       
