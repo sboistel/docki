@@ -4,7 +4,6 @@
 - [Howto vscode custom shortcuts](https://code.visualstudio.com/docs/getstarted/keybindings)
 - [Learn vscode keyboard shortcuts](https://blog.logrocket.com/learn-these-keyboard-shortcuts-to-become-a-vs-code-ninja/)
 
-
 ## Side Menu
 | shortcut  | description          |
 | :-------- | :------------------- |
@@ -87,3 +86,27 @@
 | shortcut | description            |
 | :------- | :--------------------- |
 | F8       | navigate across errors |
+
+## Code Server
+
+> /lib/systemd/system/code-server.service
+
+```bash
+[Unit]
+Description=code-server
+After=nginx.service
+
+[Service]
+Type=simple
+User=lully
+ExecStart=/usr/local/bin/code-server serve
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### Sources
+
+- https://code.visualstudio.com/docs/remote/vscode-server
+- https://github.com/coder/code-server
