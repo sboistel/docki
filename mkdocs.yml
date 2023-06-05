@@ -11,7 +11,7 @@ repo_name: docki
 repo_url: https://github.com/sboistel/docki
 
 # Copyright
-copyright: Copyright &copy; 2022 sboistel
+copyright: Copyright &copy; 2023 sboistel
 
 markdown_extensions:
   - admonition
@@ -36,8 +36,8 @@ markdown_extensions:
   #     edge_fontcolor: 789ABC   # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
   #     priority: 75             # The priority for this Markdown Extension (DEFAULT : 75)
 
-extra_javascript:
-  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
+#extra_javascript:
+#  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
 
 
 # Theme
