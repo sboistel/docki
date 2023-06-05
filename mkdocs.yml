@@ -13,72 +13,57 @@ repo_url: https://github.com/sboistel/docki
 # Copyright
 copyright: Copyright &copy; 2023 sboistel
 
-markdown_extensions:
-  - admonition
-  # - pymdownx.details
-  # - pymdownx.tabbed:
-  #     alternate_style: true
-  # - pymdownx.superfences:
-  #     custom_fences:
-  #       - name: mermaid
-  #         class: mermaid
-  #         format: !!python/name:pymdownx.superfences.fence_code_format
-  # - mkdocs_graphviz:
-  #     light_theme: 000000      # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     dark_theme: FFFFFF       # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     color: 789ABC            # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     bgcolor: none            # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     graph_color: 789ABC      # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     graph_fontcolor: 789ABC  # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     node_color: 789ABC       # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     node_fontcolor: 789ABC   # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     edge_color: 789ABC       # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     edge_fontcolor: 789ABC   # Any HTML Color Name or any HTML Hexadecimal color code WITHOUT the `#` sign
-  #     priority: 75             # The priority for this Markdown Extension (DEFAULT : 75)
-
-#extra_javascript:
-#  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/mkdocs-graphviz.js
-
-
-# Theme
+# Customize 
 theme:
   name: material
   logo: ressources/storytelling.png
   favicon: ressources/storytelling.png
-  
   navigation_depth: 5
   style_external_links: true
-  
-  features:
-    # - content.action.edit
-    - content.action.view
-    - content.code.annotate
-    - content.code.copy
-    - content.tooltips
-    - navigation.sections
-    - navigation.tabs
-    # - navigation.tabs.sticky
-    - navigation.top
-    - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
-    - toc.follow
-    # - toc.integrate
-  
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
+# Addons
+markdown_extensions:
+  - admonition
+  - footnotes # https://python-markdown.github.io/extensions/footnotes/
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+features:
+  # - content.action.edit
+  - content.action.view
+  - content.code.annotate
+  - content.code.copy
+  - content.tooltips
+  - navigation.sections
+  - navigation.tabs
+  # - navigation.tabs.sticky
+  - navigation.top
+  - navigation.tracking
+  - search.highlight
+  - search.share
+  - search.suggest
+  - toc.follow
+  # - toc.integrate
+  
+palette:
+  # Palette toggle for light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+
+  # Palette toggle for dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
         name: Switch to light mode
 
 # Page tree
