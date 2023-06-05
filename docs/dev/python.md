@@ -146,13 +146,12 @@ int(age)
 ```
 
 !!! tip "Python Tips"
-
 	If you need to use the age var along your script convert this var to an **interger**
 
-	```python
-	age = 18 # or age = input('Tell me your age please? ')
-	age = int(age)
-	```
+```python
+age = 18 # or age = input('Tell me your age please? ')
+age = int(age)
+```
 
 ## Functions
 
@@ -167,6 +166,7 @@ Example of function code block
 def function_name():
 	# code block
 ```
+
 as
 
 ```python
@@ -326,10 +326,9 @@ Yes I know I'm mentalist
 AKA `venv` , that is better to use venv to allow using multiple versions and avoid to pollute your machine
 
 !!! info
-	
 	A virtual environement ne require privileges
 
-### Create python venv 
+### Create python venv
 
 Here name  defined is : `pyvenv`
 
@@ -360,15 +359,15 @@ pip download module_name
 	
 	This file is used to build your envirement
 	
-	```bash
-	echo "module_name" >> requirements.txt
-	```
-	
-	#### Install virtual environement 
-	
-	```shell
-	pip install --no-index --find-links module/ -r requirements.txt
-	```
+```bash
+echo "module_name" >> requirements.txt
+```
+
+#### Install virtual environement
+
+```shell
+pip install --no-index --find-links module/ -r requirements.txt
+```
 
 ## Lists
 
@@ -385,12 +384,11 @@ list = [item_1, item2, item_X]
 Items in a list can be accessed by index.
 
 !!! warning
-
 	Lists are zero based
 
 Access items from the end of the list by using negative indice
 
-The last item in a list is : 
+The last item in a list is :
 
 ```python
 list = [-1]
@@ -646,15 +644,17 @@ the dictionary is a data type that
 
 Dictionary referred to as associative arrays hases or hash tables dictionaries using comma-separated items between curly braces
 
-!!! example "Syntax"
+```nodejs title="> $ node at_inventory_hosts.js byt byt_inventory all"
+Test
+```
 
-	```python
-	dictionary_name = {key_1: value_1, key_X: value_X}
-	
-	dictionary_name = {}
-	
-	dictionary_name[key]
-	```
+```python title="Syntax"
+dictionary_name = {key_1: value_1, key_X: value_X}
+
+dictionary_name = {}
+
+dictionary_name[key]
+```
 
 Value from Key
 

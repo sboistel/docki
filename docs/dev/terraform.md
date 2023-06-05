@@ -108,13 +108,11 @@ Keys :
 
 ![](resources/terraform-aws-access_keys_03.png)
 
-![](resources/terraform-aws-access_keys_04.png)
-
 !!! WARNING
 
     Copy somewhere your keys
 
-![](resources/terraform-aws-access_keys_05.png)
+![](resources/terraform-aws-access_keys_04.png)
 
 Generate keys :
 
