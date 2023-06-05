@@ -4,7 +4,7 @@
 
 ## DEB
 
-``` shell title="/etc/network/interfaces"
+```shell title="/etc/network/interfaces"
 ## This file describes the network interfaces available on your system
 ## and how to activate them. For more information, see interfaces(5).
 
@@ -23,7 +23,7 @@ dns-nameservers 10.0.0.1 8.8.8.8
 
 ## RPM
 
-``` shell title="/etc/sysconfig/network-scripts/ifcfg-eth0"
+```shell title="/etc/sysconfig/network-scripts/ifcfg-eth0"
 TYPE=Ethernet
 PROXY_METHOD=none
 BROWSER_ONLY=no
