@@ -21,6 +21,24 @@ gateway 10.0.0.0
 dns-nameservers 10.0.0.1 8.8.8.8
 ```
 
+```shell title="/etc/netplan/00-installer-config.yaml"
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    ens18:
+      addresses:
+      - 10.0.0.107/24
+      nameservers:
+        addresses:
+        - 10.0.0.1
+        search:
+        - 10.0.0.1
+      routes:
+      - to: default
+        via: 10.0.0.1
+  version: 2
+```
+
 ## RPM
 
 ```shell title="/etc/sysconfig/network-scripts/ifcfg-eth0"
