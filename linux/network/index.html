@@ -2891,6 +2891,22 @@ netmask<span class="w"> </span><span class="m">24</span>
 gateway<span class="w"> </span><span class="m">10</span>.0.0.0
 dns-nameservers<span class="w"> </span><span class="m">10</span>.0.0.1<span class="w"> </span><span class="m">8</span>.8.8.8
 </code></pre></div>
+<div class="highlight"><span class="filename">/etc/netplan/00-installer-config.yaml</span><pre><span></span><code><span class="c1"># This is the network config written by &#39;subiquity&#39;</span>
+network:
+<span class="w">  </span>ethernets:
+<span class="w">    </span>ens18:
+<span class="w">      </span>addresses:
+<span class="w">      </span>-<span class="w"> </span><span class="m">10</span>.0.0.107/24
+<span class="w">      </span>nameservers:
+<span class="w">        </span>addresses:
+<span class="w">        </span>-<span class="w"> </span><span class="m">10</span>.0.0.1
+<span class="w">        </span>search:
+<span class="w">        </span>-<span class="w"> </span><span class="m">10</span>.0.0.1
+<span class="w">      </span>routes:
+<span class="w">      </span>-<span class="w"> </span>to:<span class="w"> </span>default
+<span class="w">        </span>via:<span class="w"> </span><span class="m">10</span>.0.0.1
+<span class="w">  </span>version:<span class="w"> </span><span class="m">2</span>
+</code></pre></div>
 <h2 id="rpm">RPM</h2>
 <div class="highlight"><span class="filename">/etc/sysconfig/network-scripts/ifcfg-eth0</span><pre><span></span><code><span class="nv">TYPE</span><span class="o">=</span>Ethernet
 <span class="nv">PROXY_METHOD</span><span class="o">=</span>none
