@@ -195,6 +195,7 @@ nav:
     - network/ssl.md
     - network/http-status.md
     - network/openvpn.md
+    - network/performance.md
     - network/ngrok.md
     - network/pi-hole.md
   - Cloud & Hypervisor:
