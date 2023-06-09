@@ -25,14 +25,14 @@ theme:
     - content.code.annotate
     - content.tabs.link
     # - header.autohide
-    # - navigation.expand
-    # - navigation.indexes
+    - navigation.indexes
     # - navigation.instant
     - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    - navigation.expand
     - search.highlight
     - search.share
     - search.suggest
@@ -56,12 +56,19 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - footnotes # https://python-markdown.github.io/extensions/footnotes/
   - pymdownx.superfences:
+      preserve_tabs: true
       custom_fences:
+        # Mermaid diagrams
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - footnotes # https://python-markdown.github.io/extensions/footnotes/
+
+extra_javascript:
+  # - optionalConfig.js
+  - https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js
+  # - extra-loader.js
 
 ##################
 
@@ -183,6 +190,7 @@ nav:
   - Web & Networking:
     - network/readme.md
     - network/certmanager.md
+    - network/homeassistant.md
     - network/mkcert.md
     - network/ssl.md
     - network/http-status.md
