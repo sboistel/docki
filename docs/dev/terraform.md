@@ -152,7 +152,7 @@ They are multiple variable levels as :
 - 2: File (terraform.tvars)
 - 3: Json File (terraform.tfvars.json)
 - 4: Auto File (\*.auto.tfvars or \*.auto.tfvars.json)
-- 5: CLI (-var or var-file)
+- 5: CLI (-var or var-file(*followed by the varfile.tfvars*)
 
 ### Environment
 
