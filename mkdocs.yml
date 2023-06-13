@@ -179,7 +179,7 @@ nav:
       - dev/python/string-formatting.md
       - dev/python/virtual-environments.md
   - Monitoring:
-    - README: monitoring/readme.md
+    - monitoring/readme.md
     - monitoring/centreon.md
     - monitoring/nagios.md
   - Tools:
