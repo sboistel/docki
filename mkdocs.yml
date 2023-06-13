@@ -150,7 +150,9 @@ nav:
         - dev/hashicorp/terraform/graph.md
         - dev/hashicorp/terraform/providers.md
         - dev/hashicorp/terraform/setup.md 
+        - dev/hashicorp/terraform/syntax.md
         - dev/hashicorp/terraform/tfstate.md
+        - dev/hashicorp/terraform/vars.md
     - Python: 
       - dev/python/python.md
       - dev/python/args-and-kwargs.md
