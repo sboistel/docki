@@ -1799,6 +1799,53 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#variable-levels" class="md-nav__link">
+    Variable level(s)
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable level(s)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+    <nav class="md-nav" aria-label="Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tfvars" class="md-nav__link">
+    tfvars
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto" class="md-nav__link">
+    Auto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3455,6 +3502,53 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#variable-levels" class="md-nav__link">
+    Variable level(s)
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable level(s)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    Environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#files" class="md-nav__link">
+    Files
+  </a>
+  
+    <nav class="md-nav" aria-label="Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tfvars" class="md-nav__link">
+    tfvars
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto" class="md-nav__link">
+    Auto
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3570,6 +3664,26 @@
 <span class="w">    </span><span class="na">Name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;test01&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
+</code></pre></div>
+<h2 id="variable-levels">Variable level(s)</h2>
+<p>They are multiple variable levels as :</p>
+<ul>
+<li>1: Environment</li>
+<li>2: File (terraform.tvars)</li>
+<li>3: Json File (terraform.tfvars.json)</li>
+<li>4: Auto File (*.auto.tfvars or *.auto.tfvars.json)</li>
+<li>5: CLI (-var or var-file)</li>
+</ul>
+<h3 id="environment">Environment</h3>
+<div class="highlight"><pre><span></span><code>EXPORT<span class="w"> </span><span class="nv">VAR_NAME_str</span><span class="o">=</span><span class="s2">&quot;value&quot;</span>
+</code></pre></div>
+<h3 id="files">Files</h3>
+<h4 id="tfvars">tfvars</h4>
+<p>File where terraform vars located</p>
+<div class="highlight"><pre><span></span><code><span class="na">VAR_NAME_str</span><span class="o">=</span><span class="s2">&quot;value&quot;</span>
+</code></pre></div>
+<h4 id="auto">Auto</h4>
+<div class="highlight"><span class="filename">File: file.auto.tfvars</span><pre><span></span><code><span class="na">str</span><span class="o">=</span><span class="s2">&quot;auto&quot;</span>
 </code></pre></div>
 
 
