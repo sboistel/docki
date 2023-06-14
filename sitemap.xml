@@ -121,12 +121,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/hashicorp/terraform/provisioner/</loc>
+         <loc>https://sboistel.github.io/docki/dev/hashicorp/terraform/readme/</loc>
          <lastmod>2023-06-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/hashicorp/terraform/readme/</loc>
+         <loc>https://sboistel.github.io/docki/dev/hashicorp/terraform/remote-exec/</loc>
          <lastmod>2023-06-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
