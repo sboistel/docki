@@ -32,7 +32,6 @@ resource "xxx" "xxx" {
 }
 ```
 
-
 ### File
 
 ```terraform
