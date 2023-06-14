@@ -1,4 +1,4 @@
-# Provisioner
+# Remote Exec
 
 ## SSH
 
@@ -14,35 +14,34 @@ resource "null_resource" "ssh_target" {
         host    =   var.ssh_host
         private_key =   file("/home/john-doe/.ssh/id_rsa")
     }
-    
-    provisioner "remote-exec" {
-        inline = [
+}
+```
+
+### remote-exec
+
+```terraform
+resource "xxx" "xxx" {
+
+  provisioner "remote-exec" {
+    inline = [
             "sudo apt update -qq > /dev/null",
             "sudo apt install nginx -qq > /dev/null"
         ]
     }
-
-    provisioner "file" {
-        source      =   "nginx.conf"
-        destination =   "/tmp/default"
-    }
+  
 }
 ```
 
+
+### File
+
 ```terraform
-resource "aws_instance" "web" {
-  # ...
+resource "xxx" "xxx" {
 
   provisioner "file" {
     source      = "script.sh"
     destination = "/tmp/script.sh"
   }
 
-  provisioner "remote-exec" {
-    inline = [
-      "chmod +x /tmp/script.sh",
-      "/tmp/script.sh args",
-    ]
-  }
 }
 ```
