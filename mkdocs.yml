@@ -148,6 +148,7 @@ nav:
       - Terraform:
         - dev/hashicorp/terraform/readme.md
         - dev/hashicorp/terraform/graph.md
+        - dev/hashicorp/terraform/modules.md
         - dev/hashicorp/terraform/providers.md
         - dev/hashicorp/terraform/remote-exec.md
         - dev/hashicorp/terraform/setup.md 
