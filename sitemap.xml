@@ -476,6 +476,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sboistel.github.io/docki/mac/sensors/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sboistel.github.io/docki/mac/shurtcuts/</loc>
          <lastmod>2023-06-15</lastmod>
          <changefreq>daily</changefreq>
