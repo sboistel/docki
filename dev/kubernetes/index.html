@@ -21,7 +21,7 @@
         <link rel="next" href="../multipass/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
     
     
       
@@ -1645,6 +1645,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#volumes" class="md-nav__link">
+    Volumes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployments" class="md-nav__link">
+    Deployments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1687,10 +1708,52 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_8" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+          Red Hat
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_8">
+          <span class="md-nav__icon md-icon"></span>
+          Red Hat
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../tower-cli/" class="md-nav__link">
+      <a href="../redhat/tower-cli/" class="md-nav__link">
         Tower-CLI
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3493,6 +3556,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#volumes" class="md-nav__link">
+    Volumes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployments" class="md-nav__link">
+    Deployments
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3512,13 +3596,14 @@
 
 
 <h1 id="kubernetes">Kubernetes</h1>
-<p>Created Tuesday 25 January 2022</p>
 <p>Kubernetes ou K8s (8 étant le nombre de lettre dans Kubernetes)</p>
 <p>Kubernetes est un <strong>Orchestrateur</strong> (gère des clusters)</p>
-<p>Il aura plusieurs notions :
-- Gestion des configurations
-- Gestion des mots de passe (secrets)
-- RBAC (Role base acces controler) "IAM"</p>
+<p>Il aura plusieurs notions :</p>
+<ul>
+<li>Gestion des configurations</li>
+<li>Gestion des mots de passe (secrets)</li>
+<li>RBAC (Role base acces controler) "IAM"</li>
+</ul>
 <h2 id="lexique">Lexique</h2>
 <ul>
 <li>Kubelet : Deamond s'éxécutant dans les workers</li>
@@ -3527,6 +3612,10 @@
 <p>Un cluster c'est quoi ?
 Un ensemble de noeud de type linux ou windows</p>
 <h3 id="pods">Pods</h3>
+<p>Pierre centrale de K8S
+    - ensemble cohérent de conteneurs
+    - un ou plusieurs conteneurs
+    - une instance de K8S</p>
 <p>Un cluster éxecute des pods, mais de quoi s'agit-il ?
 Il s'agit d'un ensemble de conteneurs se partageant les ressources.</p>
 <p>Lister les pods :</p>
@@ -3539,10 +3628,14 @@ Il s'agit d'un ensemble de conteneurs se partageant les ressources.</p>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>describe<span class="w"> </span>po/POD_NAME
 </code></pre></div>
 <h2 id="service">Service</h2>
+<p>Service : abstraction des pods
+    - permet d'éviter la communication par ip (changeante car on est en conteneurs)
+    - service &gt; ip/port &gt; pods
+    - service = ip et port fixe</p>
 <p>Les service exposent les ports d'un pod</p>
 <h2 id="nodes">Nodes</h2>
-<p>Deux types de noeud :
-Que font les Master ?</p>
+<p>Noeuds (serveurs) : physiques ou virtuels
+    - master ou simple noeud d'exécution</p>
 <ul>
 <li>Gestion du cluster</li>
 <li>Orchestre l'éxécution des pods sur les noeuds</li>
@@ -3557,6 +3650,18 @@ Que font les Master ?</p>
 <p>Lister les noeuds : </p>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>nodes
 </code></pre></div>
+<h2 id="volumes">Volumes</h2>
+<p>Persistents ou non
+    - lieux d'échanges entre pods
+    - intérieur de pods = non persistent
+    - extérieur = persistent</p>
+<h2 id="deployments">Deployments</h2>
+<p>Objets de gestion des déploiments
+    - création/suppression
+    - scaling : gestion de paramètres pour la montée en charge (ou réduction)</p>
+<h2 id="namespaces">Namespaces</h2>
+<p>Cluster virtuel (ensemble de services)
+    - sous ensemble pour cloisonner dans K8S</p>
 
 
 
@@ -3608,9 +3713,11 @@ Que font les Master ?</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "navigation.expand", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b4d07000.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a51614de.min.js"></script>
       
-        <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
+        
+          <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
+        
       
     
   </body>
