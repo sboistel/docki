@@ -141,7 +141,8 @@ nav:
     - dev/kubernetes.md
     - dev/multipass.md
     - dev/perl.md
-    - dev/tower-cli.md
+    - Red Hat:
+      - dev/redhat/tower-cli.md
     - Hashicorp:
       - dev/hashicorp/ansible.md
       - dev/hashicorp/packer.md
