@@ -135,7 +135,7 @@ nav:
     - mac/keybinds.md
   - DevOPS:
     - dev/readme.md
-    - dev/elastik.md
+    - ELK: dev/elastik.md
     - dev/docker.md
     - dev/git.md
     - dev/python.md
