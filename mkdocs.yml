@@ -135,14 +135,16 @@ nav:
     - mac/keybinds.md
   - DevOPS:
     - dev/readme.md
-    - dev/docker.md
     - dev/elastik.md
+    - dev/docker.md
     - dev/git.md
+    - dev/python.md
     - dev/kubernetes.md
     - dev/multipass.md
     - dev/perl.md
     - Red Hat:
       - dev/redhat/tower-cli.md
+      - dev/redhat/awx.md
     - Hashicorp:
       - dev/hashicorp/ansible.md
       - dev/hashicorp/packer.md
@@ -157,31 +159,6 @@ nav:
         - dev/hashicorp/terraform/syntax.md
         - dev/hashicorp/terraform/tfstate.md
         - dev/hashicorp/terraform/vars.md
-    - Python: 
-      - dev/python/python.md
-      - dev/python/args-and-kwargs.md
-      - dev/python/basics.md
-      - dev/python/built-in-functions.md
-      - dev/python/comprehensions.md
-      - dev/python/context-manager.md
-      - dev/python/control-flow.md
-      - dev/python/dataclasses.md
-      - dev/python/debugging.md
-      - dev/python/dictionaries.md
-      - dev/python/exception-handling.md
-      - dev/python/file-directory-path.md
-      - dev/python/functions.md
-      - dev/python/json-yaml.md
-      - dev/python/lists-and-tuples.md
-      - dev/python/main.md
-      - dev/python/manipulating-strings.md
-      - dev/python/oop-basics.md
-      - dev/python/reading-and-writing-files.md
-      - dev/python/regular-expressions.md
-      - dev/python/sets.md
-      - dev/python/setup-py.md
-      - dev/python/string-formatting.md
-      - dev/python/virtual-environments.md
   - Monitoring:
     - monitoring/readme.md
     - monitoring/centreon.md
