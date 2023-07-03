@@ -138,7 +138,6 @@ nav:
     - ELK: dev/elastik.md
     - dev/docker.md
     - dev/git.md
-    - dev/python.md
     - dev/kubernetes.md
     - dev/multipass.md
     - dev/perl.md
@@ -159,6 +158,14 @@ nav:
         - dev/hashicorp/terraform/syntax.md
         - dev/hashicorp/terraform/tfstate.md
         - dev/hashicorp/terraform/vars.md
+    - Python: 
+        - dev/python/python.md
+        - dev/python/dict.md
+        - dev/python/comparators.md
+        - dev/python/lists.md
+        - dev/python/loop.md
+        - dev/python/venv.md
+        - dev/python/tkinter.md
   - Monitoring:
     - monitoring/readme.md
     - monitoring/centreon.md
