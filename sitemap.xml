@@ -86,11 +86,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/</loc>
-         <lastmod>2023-07-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sboistel.github.io/docki/dev/readme/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
@@ -156,117 +151,152 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/args-and-kwargs/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/comparators/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/basics/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/dict/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/built-in-functions/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/lists/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/comprehensions/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/loop/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/context-manager/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/python/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/control-flow/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/tkinter/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/dataclasses/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/venv/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/debugging/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/args-and-kwargs/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/dictionaries/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/basics/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/exception-handling/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/built-in-functions/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/file-directory-path/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/comprehensions/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/functions/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/context-manager/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/json-yaml/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/control-flow/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/lists-and-tuples/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/dataclasses/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/main/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/debugging/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/manipulating-strings/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/dictionaries/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/oop-basics/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/exception-handling/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/reading-and-writing-files/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/file-directory-path/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/regular-expressions/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/functions/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/sets/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/json-yaml/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/setup-py/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/lists-and-tuples/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/string-formatting/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/main/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/python/virtual-environments/</loc>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/manipulating-strings/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/oop-basics/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/reading-and-writing-files/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/regular-expressions/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/sets/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/setup-py/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/string-formatting/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/python/archive/virtual-environments/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
