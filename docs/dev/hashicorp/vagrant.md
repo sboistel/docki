@@ -1,18 +1,42 @@
 # Vagrant
 
-## Install from source
+## Install
 
-* Add hashicorp repository
+From source
 
-```shell
-dnf config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
-```
+=== "Realese"
 
-* Installing package
+    * Add hashicorp repository
 
-```shell
-dnf install vagrant
-```
+    ```shell
+    dnf config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+    ```
+    
+    * Installing package
+
+    ```shell
+    dnf install vagrant
+    ```
+
+=== "Old way"
+
+    ```shell
+    sudo yum install -y yum-utils
+    ```
+
+    * Add hashicorp repository
+
+    ```shell
+    sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+    ```
+
+    * Installing package
+    
+    ```shell
+    sudo yum -y install vagrant
+    ```
+
+Source : (Install Vagrant)[https://developer.hashicorp.com/vagrant/downloads?product_intent=vagrant]
 
 # Init project
 

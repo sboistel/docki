@@ -155,7 +155,9 @@ nav:
     - dev/git.md
     - Container:
       - dev/docker.md
-      - dev/kubernetes.md
+      - Kubernetes: 
+        - dev/kubernetes/index.md
+        - dev/kubernetes/minikube.md
       - dev/multipass.md
     - Red Hat:
       - dev/redhat/tower-cli.md
@@ -213,7 +215,15 @@ nav:
     - monitoring/index.md
     - monitoring/centreon.md
     - monitoring/nagios.md
-    - dev/elastik.md
+    - Elasticsearch / Logstash / Kibana: 
+      - dev/elk/index.md
+      - dev/elk/beat.md
+      - dev/elk/elasticsearch.md
+      - dev/elk/filebeat.md
+      - dev/elk/kibana.md
+      - dev/elk/logstash.md
+      - dev/elk/metricbeat.md
+      - dev/elk/xpack.md
 
   - Apps:
     - app/index.md
