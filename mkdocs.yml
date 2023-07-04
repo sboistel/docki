@@ -23,7 +23,7 @@ theme:
 
   features:
     - content.code.annotate
-    - content.tabs.link
+    # - content.tabs.link
     # - header.autohide
     - navigation.indexes
     # - navigation.instant
@@ -57,8 +57,9 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - footnotes # https://python-markdown.github.io/extensions/footnotes/
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.superfences:
-      preserve_tabs: true
       custom_fences:
         # Mermaid diagrams
         - name: mermaid
@@ -75,39 +76,46 @@ extra_javascript:
 # Page tree
 nav:
   - Linux:
-    - linux/readme.md
-    - linux/account.md
-    - linux/apps.md
-    - linux/cron.md
-    - linux/desktop.md
-    - linux/disk.md
+    - linux/index.md
     - linux/exit-codes.md
-    - linux/firewalld.md
-    - linux/fstab.md
-    - linux/gawk.md
-    - linux/getops.md
-    - linux/keymaps.md
-    - linux/kickstart.md
-    - linux/logfile.md
-    - linux/memory.md
-    - linux/network.md
-    - linux/package-manager.md
-    - linux/proc.md
     - linux/regular-expressions.md
-    - linux/root-rescue.md
-    - linux/sar.md
-    - linux/screen.md
-    - linux/selinux.md
-    - linux/service.md
-    - linux/smtp.md
-    - linux/stratis.md
-    - linux/time.md
-    - linux/vim.md
-    - linux/web.md
-    - Certification: 
+    - ACL:
+        - linux/account.md
+    - System:
+      - linux/cron.md
+      - linux/disk.md
+      - linux/fstab.md
+      - linux/memory.md
+      - linux/proc.md
+      - linux/logfile.md
+    - Environment:
+      - linux/desktop.md
+      - linux/keymaps.md
+    - App & Services:
+      - linux/apps.md
+      - linux/package-manager.md
+      - linux/time.md
+      - linux/web.md
+      - linux/service.md
+      - linux/smtp.md
+    - Net & Sec:
+      - linux/network.md
+      - linux/firewalld.md
+      - linux/selinux.md
+    - Toolkit:
+      - linux/kickstart.md
+      - linux/vim.md
+      - linux/gawk.md
+      - linux/getops.md
+      - linux/stratis.md
+      - linux/screen.md
+    - Rescue:
+      - linux/root-rescue.md
+      - linux/sar.md
+    - Certification:
       - linux/rhel-sysadmin-II.md
   - Windows:
-    - windows/readme.md
+    - windows/index.md
     - windows/account.md
     - windows/apps.md
     - windows/kms.md
@@ -119,7 +127,7 @@ nav:
     - windows/windows-system.md
     - windows/wsl.md
   - MacOS:
-    - mac/readme.md
+    - mac/index.md
     - mac/cheatsheet.md
     - mac/clipboard-manager.md
     - mac/dock.md
@@ -134,7 +142,7 @@ nav:
     - mac/windows-tilling.md
     - mac/keybinds.md
   - DevOPS:
-    - dev/readme.md
+    - dev/index.md
     - ELK: dev/elastik.md
     - dev/docker.md
     - dev/git.md
@@ -149,7 +157,7 @@ nav:
       - dev/hashicorp/packer.md
       - dev/hashicorp/vagrant.md
       - Terraform:
-        - dev/hashicorp/terraform/readme.md
+        - dev/hashicorp/terraform/index.md
         - dev/hashicorp/terraform/graph.md
         - dev/hashicorp/terraform/modules.md
         - dev/hashicorp/terraform/providers.md
@@ -159,7 +167,7 @@ nav:
         - dev/hashicorp/terraform/tfstate.md
         - dev/hashicorp/terraform/vars.md
     - Python: 
-        - dev/python/python.md
+        - dev/python/index.md
         - dev/python/dict.md
         - dev/python/comparators.md
         - dev/python/lists.md
@@ -167,9 +175,9 @@ nav:
         - dev/python/venv.md
         - dev/python/tkinter.md
         - More:
+            - dev/python/more/index.md
             - dev/python/more/dictionaries.md
             - dev/python/more/reading-and-writing-files.md
-            - dev/python/more/basics.md
             - dev/python/more/built-in-functions.md
             - dev/python/more/exception-handling.md
             - dev/python/more/string-formatting.md
@@ -191,11 +199,11 @@ nav:
             - dev/python/more/lists-and-tuples.md
             - dev/python/more/setup-py.md
   - Monitoring:
-    - monitoring/readme.md
+    - monitoring/index.md
     - monitoring/centreon.md
     - monitoring/nagios.md
   - Tools:
-    - tool/readme.md
+    - tool/index.md
     - tool/freeipa.md
     - tool/guacamole.md
     - tool/netbox.md
@@ -208,7 +216,7 @@ nav:
     - tool/vscode.md
     - tool/wikijs.md
   - Web & Networking:
-    - network/readme.md
+    - network/index.md
     - network/certmanager.md
     - network/homeassistant.md
     - network/mkcert.md
@@ -219,7 +227,7 @@ nav:
     - network/ngrok.md
     - network/pi-hole.md
   - Cloud & Hypervisor:
-    - cloud/readme.md
+    - cloud/index.md
     - cloud/aws.md
     - cloud/awx.md
     - cloud/azure.md
