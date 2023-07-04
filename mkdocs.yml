@@ -166,6 +166,30 @@ nav:
         - dev/python/loop.md
         - dev/python/venv.md
         - dev/python/tkinter.md
+        - More:
+            - dev/python/more/dictionaries.md
+            - dev/python/more/reading-and-writing-files.md
+            - dev/python/more/basics.md
+            - dev/python/more/built-in-functions.md
+            - dev/python/more/exception-handling.md
+            - dev/python/more/string-formatting.md
+            - dev/python/more/args-and-kwargs.md
+            - dev/python/more/virtual-environments.md
+            - dev/python/more/dataclasses.md
+            - dev/python/more/file-directory-path.md
+            - dev/python/more/sets.md
+            - dev/python/more/main.md
+            - dev/python/more/context-manager.md
+            - dev/python/more/json-yaml.md
+            - dev/python/more/manipulating-strings.md
+            - dev/python/more/oop-basics.md
+            - dev/python/more/functions.md
+            - dev/python/more/control-flow.md
+            - dev/python/more/comprehensions.md
+            - dev/python/more/debugging.md
+            - dev/python/more/regular-expressions.md
+            - dev/python/more/lists-and-tuples.md
+            - dev/python/more/setup-py.md
   - Monitoring:
     - monitoring/readme.md
     - monitoring/centreon.md
