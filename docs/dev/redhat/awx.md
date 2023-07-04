@@ -121,6 +121,59 @@ kubectl logs -f deployments/awx-operator-controller-manager -n awx
 
 ---
 
+=== "C"
+  
+  ``` c
+  #include <stdio.h>
+
+  int main(void) {
+    printf("Hello world!\n");
+    return 0;
+  }
+  ```
+
+=== "C++"
+  
+  ``` c++
+  #include <iostream>
+
+  int main(void) {
+    std::cout << "Hello world!" << std::endl;
+    return 0;
+  }
+  ```
+---
+=== "Unordered list"
+
+    * Sed sagittis eleifend rutrum
+    * Donec vitae suscipit est
+    * Nulla tempor lobortis orci
+
+=== "Ordered list"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+---
+!!! example
+
+    === "Unordered List"
+
+        ``` markdown
+        * Sed sagittis eleifend rutrum
+        * Donec vitae suscipit est
+        * Nulla tempor lobortis orci
+        ```
+
+    === "Ordered List"
+
+        ``` markdown
+        1. Sed sagittis eleifend rutrum
+        2. Donec vitae suscipit est
+        3. Nulla tempor lobortis orci
+        ```
+---
+
 AWX install by docker
 
 sudo apt update -y && sudo apt upgrade -y
