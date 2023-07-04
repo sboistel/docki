@@ -12,27 +12,27 @@
         <meta name="author" content="BOISTEL Samuel">
       
       
-        <link rel="canonical" href="https://sboistel.github.io/docki/dev/elastik/">
+        <link rel="canonical" href="https://sboistel.github.io/docki/dev/elk/kibana/">
       
       
-        <link rel="prev" href="../../monitoring/nagios/">
+        <link rel="prev" href="../filebeat/">
       
       
-        <link rel="next" href="../../app/">
+        <link rel="next" href="../logstash/">
       
-      <link rel="icon" href="../../ressources/storytelling.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
+      <link rel="icon" href="../../../ressources/storytelling.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
-        <title>Elasticsearch / Logstash / Kibana - Dockimentation</title>
+        <title>Kibana - Dockimentation</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -48,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#elasticsearch-logstash-kibana" class="md-skip">
+        <a href="#kibana" class="md-skip">
           Skip to content
         </a>
       
@@ -93,9 +93,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Dockimentation" class="md-header__button md-logo" aria-label="Dockimentation" data-md-component="logo">
+    <a href="../../.." title="Dockimentation" class="md-header__button md-logo" aria-label="Dockimentation" data-md-component="logo">
       
-  <img src="../../ressources/storytelling.png" alt="logo">
+  <img src="../../../ressources/storytelling.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Elasticsearch / Logstash / Kibana
+              Kibana
             
           </span>
         </div>
@@ -215,7 +215,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../linux/" class="md-tabs__link">
+      <a href="../../../linux/" class="md-tabs__link">
         Linux
       </a>
     </li>
@@ -231,7 +231,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../windows/" class="md-tabs__link">
+      <a href="../../../windows/" class="md-tabs__link">
         Windows
       </a>
     </li>
@@ -247,7 +247,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../mac/" class="md-tabs__link">
+      <a href="../../../mac/" class="md-tabs__link">
         MacOS
       </a>
     </li>
@@ -263,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../" class="md-tabs__link">
+      <a href="../../" class="md-tabs__link">
         DevOPS
       </a>
     </li>
@@ -281,7 +281,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../monitoring/" class="md-tabs__link md-tabs__link--active">
+      <a href="../../../monitoring/" class="md-tabs__link md-tabs__link--active">
         Monitoring
       </a>
     </li>
@@ -297,7 +297,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../app/" class="md-tabs__link">
+      <a href="../../../app/" class="md-tabs__link">
         Apps
       </a>
     </li>
@@ -313,7 +313,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../cloud/" class="md-tabs__link">
+      <a href="../../../cloud/" class="md-tabs__link">
         Cloud & Hypervisor
       </a>
     </li>
@@ -329,7 +329,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../storage/bareos/" class="md-tabs__link">
+      <a href="../../../storage/bareos/" class="md-tabs__link">
         Storage & BDD
       </a>
     </li>
@@ -345,7 +345,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../misc/color-codes/" class="md-tabs__link">
+      <a href="../../../misc/color-codes/" class="md-tabs__link">
         Miscellaneous
       </a>
     </li>
@@ -379,9 +379,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Dockimentation" class="md-nav__button md-logo" aria-label="Dockimentation" data-md-component="logo">
+    <a href="../../.." title="Dockimentation" class="md-nav__button md-logo" aria-label="Dockimentation" data-md-component="logo">
       
-  <img src="../../ressources/storytelling.png" alt="logo">
+  <img src="../../../ressources/storytelling.png" alt="logo">
 
     </a>
     Dockimentation
@@ -447,7 +447,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../linux/">Linux</a>
+          <a href="../../../linux/">Linux</a>
           
             <label for="__nav_1">
               <span class="md-nav__icon md-icon"></span>
@@ -470,7 +470,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/exit-codes/" class="md-nav__link">
+      <a href="../../../linux/exit-codes/" class="md-nav__link">
         Exit codes
       </a>
     </li>
@@ -484,7 +484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/regular-expressions/" class="md-nav__link">
+      <a href="../../../linux/regular-expressions/" class="md-nav__link">
         Regular Expression
       </a>
     </li>
@@ -531,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/account/" class="md-nav__link">
+      <a href="../../../linux/account/" class="md-nav__link">
         Account
       </a>
     </li>
@@ -595,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/cron/" class="md-nav__link">
+      <a href="../../../linux/cron/" class="md-nav__link">
         cron
       </a>
     </li>
@@ -609,7 +609,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/disk/" class="md-nav__link">
+      <a href="../../../linux/disk/" class="md-nav__link">
         Storage
       </a>
     </li>
@@ -623,7 +623,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/fstab/" class="md-nav__link">
+      <a href="../../../linux/fstab/" class="md-nav__link">
         Filesystem table AKA fstab
       </a>
     </li>
@@ -637,7 +637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/memory/" class="md-nav__link">
+      <a href="../../../linux/memory/" class="md-nav__link">
         RAM
       </a>
     </li>
@@ -651,7 +651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/proc/" class="md-nav__link">
+      <a href="../../../linux/proc/" class="md-nav__link">
         Process
       </a>
     </li>
@@ -665,7 +665,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/logfile/" class="md-nav__link">
+      <a href="../../../linux/logfile/" class="md-nav__link">
         Logfile
       </a>
     </li>
@@ -721,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/desktop/" class="md-nav__link">
+      <a href="../../../linux/desktop/" class="md-nav__link">
         Desktop
       </a>
     </li>
@@ -735,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/keymaps/" class="md-nav__link">
+      <a href="../../../linux/keymaps/" class="md-nav__link">
         Keymap
       </a>
     </li>
@@ -799,7 +799,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/apps/" class="md-nav__link">
+      <a href="../../../linux/apps/" class="md-nav__link">
         Apps
       </a>
     </li>
@@ -813,7 +813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/package-manager/" class="md-nav__link">
+      <a href="../../../linux/package-manager/" class="md-nav__link">
         Package manager
       </a>
     </li>
@@ -827,7 +827,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/time/" class="md-nav__link">
+      <a href="../../../linux/time/" class="md-nav__link">
         Clock
       </a>
     </li>
@@ -841,7 +841,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/web/" class="md-nav__link">
+      <a href="../../../linux/web/" class="md-nav__link">
         Web
       </a>
     </li>
@@ -855,7 +855,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/service/" class="md-nav__link">
+      <a href="../../../linux/service/" class="md-nav__link">
         Service
       </a>
     </li>
@@ -869,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/smtp/" class="md-nav__link">
+      <a href="../../../linux/smtp/" class="md-nav__link">
         SMTP
       </a>
     </li>
@@ -927,7 +927,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/network/" class="md-nav__link">
+      <a href="../../../linux/network/" class="md-nav__link">
         Network
       </a>
     </li>
@@ -941,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/firewalld/" class="md-nav__link">
+      <a href="../../../linux/firewalld/" class="md-nav__link">
         Firewall
       </a>
     </li>
@@ -955,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/selinux/" class="md-nav__link">
+      <a href="../../../linux/selinux/" class="md-nav__link">
         Selinux
       </a>
     </li>
@@ -1019,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/kickstart/" class="md-nav__link">
+      <a href="../../../linux/kickstart/" class="md-nav__link">
         Kickstart File Commands
       </a>
     </li>
@@ -1033,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/vim/" class="md-nav__link">
+      <a href="../../../linux/vim/" class="md-nav__link">
         VIM
       </a>
     </li>
@@ -1047,7 +1047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/gawk/" class="md-nav__link">
+      <a href="../../../linux/gawk/" class="md-nav__link">
         GWAK
       </a>
     </li>
@@ -1061,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/getops/" class="md-nav__link">
+      <a href="../../../linux/getops/" class="md-nav__link">
         Getops
       </a>
     </li>
@@ -1075,7 +1075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/stratis/" class="md-nav__link">
+      <a href="../../../linux/stratis/" class="md-nav__link">
         Describing the Architecture of Stratis
       </a>
     </li>
@@ -1089,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/screen/" class="md-nav__link">
+      <a href="../../../linux/screen/" class="md-nav__link">
         Touchscreen
       </a>
     </li>
@@ -1145,7 +1145,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/root-rescue/" class="md-nav__link">
+      <a href="../../../linux/root-rescue/" class="md-nav__link">
         Emergency
       </a>
     </li>
@@ -1159,7 +1159,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/sar/" class="md-nav__link">
+      <a href="../../../linux/sar/" class="md-nav__link">
         SAR
       </a>
     </li>
@@ -1213,7 +1213,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/rhel-sysadmin-II/" class="md-nav__link">
+      <a href="../../../linux/rhel-sysadmin-II/" class="md-nav__link">
         Red Hat System Administration II
       </a>
     </li>
@@ -1272,7 +1272,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../windows/">Windows</a>
+          <a href="../../../windows/">Windows</a>
           
             <label for="__nav_2">
               <span class="md-nav__icon md-icon"></span>
@@ -1295,7 +1295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/terminal/" class="md-nav__link">
+      <a href="../../../windows/terminal/" class="md-nav__link">
         Windows Terminal
       </a>
     </li>
@@ -1309,7 +1309,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/powershell/" class="md-nav__link">
+      <a href="../../../windows/powershell/" class="md-nav__link">
         Powershell
       </a>
     </li>
@@ -1356,7 +1356,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/account/" class="md-nav__link">
+      <a href="../../../windows/account/" class="md-nav__link">
         Account
       </a>
     </li>
@@ -1412,7 +1412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/apps/" class="md-nav__link">
+      <a href="../../../windows/apps/" class="md-nav__link">
         Software
       </a>
     </li>
@@ -1426,7 +1426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/wsl/" class="md-nav__link">
+      <a href="../../../windows/wsl/" class="md-nav__link">
         WSL
       </a>
     </li>
@@ -1484,7 +1484,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/kms/" class="md-nav__link">
+      <a href="../../../windows/kms/" class="md-nav__link">
         Key Management Services (KMS)
       </a>
     </li>
@@ -1498,7 +1498,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/storage/" class="md-nav__link">
+      <a href="../../../windows/storage/" class="md-nav__link">
         Storage
       </a>
     </li>
@@ -1512,7 +1512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/vars-env/" class="md-nav__link">
+      <a href="../../../windows/vars-env/" class="md-nav__link">
         Environment Variables in Windows
       </a>
     </li>
@@ -1568,7 +1568,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/windows-boot/" class="md-nav__link">
+      <a href="../../../windows/windows-boot/" class="md-nav__link">
         Windows Boot
       </a>
     </li>
@@ -1582,7 +1582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../windows/windows-system/" class="md-nav__link">
+      <a href="../../../windows/windows-system/" class="md-nav__link">
         System
       </a>
     </li>
@@ -1637,7 +1637,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../mac/">MacOS</a>
+          <a href="../../../mac/">MacOS</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1697,7 +1697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/cheatsheet/" class="md-nav__link">
+      <a href="../../../mac/cheatsheet/" class="md-nav__link">
         CheatSheet
       </a>
     </li>
@@ -1711,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/shurtcuts/" class="md-nav__link">
+      <a href="../../../mac/shurtcuts/" class="md-nav__link">
         MacOS keyboard shortcuts
       </a>
     </li>
@@ -1725,7 +1725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/keybinds/" class="md-nav__link">
+      <a href="../../../mac/keybinds/" class="md-nav__link">
         Keybinds
       </a>
     </li>
@@ -1793,7 +1793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/package-manager/" class="md-nav__link">
+      <a href="../../../mac/package-manager/" class="md-nav__link">
         Package Manager
       </a>
     </li>
@@ -1807,7 +1807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/clipboard-manager/" class="md-nav__link">
+      <a href="../../../mac/clipboard-manager/" class="md-nav__link">
         Clipboard Manager
       </a>
     </li>
@@ -1821,7 +1821,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/iterm2/" class="md-nav__link">
+      <a href="../../../mac/iterm2/" class="md-nav__link">
         iTerm2
       </a>
     </li>
@@ -1835,7 +1835,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/remote-session/" class="md-nav__link">
+      <a href="../../../mac/remote-session/" class="md-nav__link">
         Remote Connection
       </a>
     </li>
@@ -1849,7 +1849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/screenshots/" class="md-nav__link">
+      <a href="../../../mac/screenshots/" class="md-nav__link">
         ScreenShots
       </a>
     </li>
@@ -1863,7 +1863,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/sensors/" class="md-nav__link">
+      <a href="../../../mac/sensors/" class="md-nav__link">
         Sensors
       </a>
     </li>
@@ -1877,7 +1877,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/vmachines/" class="md-nav__link">
+      <a href="../../../mac/vmachines/" class="md-nav__link">
         Virtual Machines (M1)
       </a>
     </li>
@@ -1891,7 +1891,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/windows-tilling/" class="md-nav__link">
+      <a href="../../../mac/windows-tilling/" class="md-nav__link">
         Windows tilling
       </a>
     </li>
@@ -1945,7 +1945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/dock/" class="md-nav__link">
+      <a href="../../../mac/dock/" class="md-nav__link">
         Dock
       </a>
     </li>
@@ -1999,7 +1999,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../mac/ds_store/" class="md-nav__link">
+      <a href="../../../mac/ds_store/" class="md-nav__link">
         What is a .DS_Store file?
       </a>
     </li>
@@ -2056,7 +2056,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../">DevOPS</a>
+          <a href="../../">DevOPS</a>
           
             <label for="__nav_4">
               <span class="md-nav__icon md-icon"></span>
@@ -2079,7 +2079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git/" class="md-nav__link">
+      <a href="../../git/" class="md-nav__link">
         Git
       </a>
     </li>
@@ -2130,7 +2130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docker/" class="md-nav__link">
+      <a href="../../docker/" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -2143,10 +2143,60 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../kubernetes/">Kubernetes</a>
+          
+            <label for="__nav_4_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Kubernetes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../kubernetes/" class="md-nav__link">
-        Kubernetes
+      <a href="../../kubernetes/minikube/" class="md-nav__link">
+        Minikube
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2158,7 +2208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../multipass/" class="md-nav__link">
+      <a href="../../multipass/" class="md-nav__link">
         Multipass
       </a>
     </li>
@@ -2214,7 +2264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redhat/tower-cli/" class="md-nav__link">
+      <a href="../../redhat/tower-cli/" class="md-nav__link">
         Tower-CLI
       </a>
     </li>
@@ -2228,7 +2278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../redhat/awx/" class="md-nav__link">
+      <a href="../../redhat/awx/" class="md-nav__link">
         AWX
       </a>
     </li>
@@ -2288,7 +2338,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/ansible/" class="md-nav__link">
+      <a href="../../hashicorp/ansible/" class="md-nav__link">
         Ansible Engine
       </a>
     </li>
@@ -2302,7 +2352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/packer/" class="md-nav__link">
+      <a href="../../hashicorp/packer/" class="md-nav__link">
         Packer
       </a>
     </li>
@@ -2316,7 +2366,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/vagrant/" class="md-nav__link">
+      <a href="../../hashicorp/vagrant/" class="md-nav__link">
         Vagrant
       </a>
     </li>
@@ -2364,7 +2414,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../hashicorp/terraform/">Terraform</a>
+          <a href="../../hashicorp/terraform/">Terraform</a>
           
             <label for="__nav_4_5_4">
               <span class="md-nav__icon md-icon"></span>
@@ -2387,7 +2437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/terraform/graph/" class="md-nav__link">
+      <a href="../../hashicorp/terraform/graph/" class="md-nav__link">
         Graph
       </a>
     </li>
@@ -2401,7 +2451,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/terraform/modules/" class="md-nav__link">
+      <a href="../../hashicorp/terraform/modules/" class="md-nav__link">
         Modules
       </a>
     </li>
@@ -2415,7 +2465,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/terraform/providers/" class="md-nav__link">
+      <a href="../../hashicorp/terraform/providers/" class="md-nav__link">
         Providers
       </a>
     </li>
@@ -2429,7 +2479,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/terraform/remote-exec/" class="md-nav__link">
+      <a href="../../hashicorp/terraform/remote-exec/" class="md-nav__link">
         Remote Exec
       </a>
     </li>
@@ -2443,7 +2493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/terraform/setup/" class="md-nav__link">
+      <a href="../../hashicorp/terraform/setup/" class="md-nav__link">
         Setup
       </a>
     </li>
@@ -2457,7 +2507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/terraform/syntax/" class="md-nav__link">
+      <a href="../../hashicorp/terraform/syntax/" class="md-nav__link">
         Syntaxe
       </a>
     </li>
@@ -2471,7 +2521,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/terraform/tfstate/" class="md-nav__link">
+      <a href="../../hashicorp/terraform/tfstate/" class="md-nav__link">
         tfstate
       </a>
     </li>
@@ -2485,7 +2535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../hashicorp/terraform/vars/" class="md-nav__link">
+      <a href="../../hashicorp/terraform/vars/" class="md-nav__link">
         Variable level(s)
       </a>
     </li>
@@ -2548,7 +2598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../perl/" class="md-nav__link">
+      <a href="../../perl/" class="md-nav__link">
         Perl
       </a>
     </li>
@@ -2594,7 +2644,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../python/">Python</a>
+          <a href="../../python/">Python</a>
           
             <label for="__nav_4_6_2">
               <span class="md-nav__icon md-icon"></span>
@@ -2617,7 +2667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/dict/" class="md-nav__link">
+      <a href="../../python/dict/" class="md-nav__link">
         Dictionaries
       </a>
     </li>
@@ -2631,7 +2681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/comparators/" class="md-nav__link">
+      <a href="../../python/comparators/" class="md-nav__link">
         Comparators
       </a>
     </li>
@@ -2645,7 +2695,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/lists/" class="md-nav__link">
+      <a href="../../python/lists/" class="md-nav__link">
         Lists
       </a>
     </li>
@@ -2659,7 +2709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/loop/" class="md-nav__link">
+      <a href="../../python/loop/" class="md-nav__link">
         Loop
       </a>
     </li>
@@ -2673,7 +2723,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/venv/" class="md-nav__link">
+      <a href="../../python/venv/" class="md-nav__link">
         Virtual Environment (VENV)
       </a>
     </li>
@@ -2687,7 +2737,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/tkinter/" class="md-nav__link">
+      <a href="../../python/tkinter/" class="md-nav__link">
         TKinter
       </a>
     </li>
@@ -2763,7 +2813,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../python/more/">More</a>
+          <a href="../../python/more/">More</a>
           
             <label for="__nav_4_6_2_8">
               <span class="md-nav__icon md-icon"></span>
@@ -2786,7 +2836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/dictionaries/" class="md-nav__link">
+      <a href="../../python/more/dictionaries/" class="md-nav__link">
         Python Dictionaries
       </a>
     </li>
@@ -2800,7 +2850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/reading-and-writing-files/" class="md-nav__link">
+      <a href="../../python/more/reading-and-writing-files/" class="md-nav__link">
         Reading and writing files
       </a>
     </li>
@@ -2814,7 +2864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/built-in-functions/" class="md-nav__link">
+      <a href="../../python/more/built-in-functions/" class="md-nav__link">
         Python built-in functions
       </a>
     </li>
@@ -2828,7 +2878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/exception-handling/" class="md-nav__link">
+      <a href="../../python/more/exception-handling/" class="md-nav__link">
         Python Exception Handling
       </a>
     </li>
@@ -2842,7 +2892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/string-formatting/" class="md-nav__link">
+      <a href="../../python/more/string-formatting/" class="md-nav__link">
         Python String Formatting
       </a>
     </li>
@@ -2856,7 +2906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/args-and-kwargs/" class="md-nav__link">
+      <a href="../../python/more/args-and-kwargs/" class="md-nav__link">
         Python Args and Kwargs
       </a>
     </li>
@@ -2870,7 +2920,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/virtual-environments/" class="md-nav__link">
+      <a href="../../python/more/virtual-environments/" class="md-nav__link">
         Python Virtual environments
       </a>
     </li>
@@ -2884,7 +2934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/dataclasses/" class="md-nav__link">
+      <a href="../../python/more/dataclasses/" class="md-nav__link">
         Python Dataclasses
       </a>
     </li>
@@ -2898,7 +2948,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/file-directory-path/" class="md-nav__link">
+      <a href="../../python/more/file-directory-path/" class="md-nav__link">
         File and directory Paths
       </a>
     </li>
@@ -2912,7 +2962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/sets/" class="md-nav__link">
+      <a href="../../python/more/sets/" class="md-nav__link">
         Python Sets
       </a>
     </li>
@@ -2926,7 +2976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/main/" class="md-nav__link">
+      <a href="../../python/more/main/" class="md-nav__link">
         Python Main function
       </a>
     </li>
@@ -2940,7 +2990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/context-manager/" class="md-nav__link">
+      <a href="../../python/more/context-manager/" class="md-nav__link">
         Python Context Manager
       </a>
     </li>
@@ -2954,7 +3004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/json-yaml/" class="md-nav__link">
+      <a href="../../python/more/json-yaml/" class="md-nav__link">
         Python Json and YAML
       </a>
     </li>
@@ -2968,7 +3018,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/manipulating-strings/" class="md-nav__link">
+      <a href="../../python/more/manipulating-strings/" class="md-nav__link">
         Manipulating strings
       </a>
     </li>
@@ -2982,7 +3032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/oop-basics/" class="md-nav__link">
+      <a href="../../python/more/oop-basics/" class="md-nav__link">
         Oop basics
       </a>
     </li>
@@ -2996,7 +3046,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/functions/" class="md-nav__link">
+      <a href="../../python/more/functions/" class="md-nav__link">
         Python Functions
       </a>
     </li>
@@ -3010,7 +3060,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/control-flow/" class="md-nav__link">
+      <a href="../../python/more/control-flow/" class="md-nav__link">
         Python Control Flow
       </a>
     </li>
@@ -3024,7 +3074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/comprehensions/" class="md-nav__link">
+      <a href="../../python/more/comprehensions/" class="md-nav__link">
         Python Comprehensions
       </a>
     </li>
@@ -3038,7 +3088,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/debugging/" class="md-nav__link">
+      <a href="../../python/more/debugging/" class="md-nav__link">
         Python Debugging
       </a>
     </li>
@@ -3052,7 +3102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/regular-expressions/" class="md-nav__link">
+      <a href="../../python/more/regular-expressions/" class="md-nav__link">
         Python Regular Expressions
       </a>
     </li>
@@ -3066,7 +3116,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/lists-and-tuples/" class="md-nav__link">
+      <a href="../../python/more/lists-and-tuples/" class="md-nav__link">
         Python Lists and Tuples
       </a>
     </li>
@@ -3080,7 +3130,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python/more/setup-py/" class="md-nav__link">
+      <a href="../../python/more/setup-py/" class="md-nav__link">
         Python Setup.py
       </a>
     </li>
@@ -3149,7 +3199,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../monitoring/">Monitoring</a>
+          <a href="../../../monitoring/">Monitoring</a>
           
             <label for="__nav_5">
               <span class="md-nav__icon md-icon"></span>
@@ -3172,7 +3222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../monitoring/centreon/" class="md-nav__link">
+      <a href="../../../monitoring/centreon/" class="md-nav__link">
         Centreon Central
       </a>
     </li>
@@ -3186,8 +3236,109 @@
   
   
     <li class="md-nav__item">
-      <a href="../../monitoring/nagios/" class="md-nav__link">
+      <a href="../../../monitoring/nagios/" class="md-nav__link">
         Nagios
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../">Elasticsearch / Logstash / Kibana</a>
+          
+            <label for="__nav_5_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5_4">
+          <span class="md-nav__icon md-icon"></span>
+          Elasticsearch / Logstash / Kibana
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beat/" class="md-nav__link">
+        Beats
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elasticsearch/" class="md-nav__link">
+        Elasticsearch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filebeat/" class="md-nav__link">
+        FileBeat
       </a>
     </li>
   
@@ -3206,16 +3357,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Elasticsearch / Logstash / Kibana
+          Kibana
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Elasticsearch / Logstash / Kibana
+        Kibana
       </a>
       
         
@@ -3223,8 +3372,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -3234,77 +3381,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    Présentation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequis" class="md-nav__link">
-    Prerequis :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ssh-port-forward-list" class="md-nav__link">
-    SSH Port Forward list :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filebeat" class="md-nav__link">
-    FileBeat :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metricbeat" class="md-nav__link">
-    MetricBeat :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#elasticsearch" class="md-nav__link">
-    Elasticsearch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#logstash" class="md-nav__link">
-    LOGSTASH
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#kibana" class="md-nav__link">
-    KIBANA
-  </a>
-  
-    <nav class="md-nav" aria-label="KIBANA">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#x-pack" class="md-nav__link">
-    X-PACK
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#beats" class="md-nav__link">
-    BEATS
+    Kibana
   </a>
   
 </li>
@@ -3313,6 +3391,55 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logstash/" class="md-nav__link">
+        Logstash
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metricbeat/" class="md-nav__link">
+        MetricBeat
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xpack/" class="md-nav__link">
+        X-PACK
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -3382,7 +3509,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../app/">Apps</a>
+          <a href="../../../app/">Apps</a>
           
             <label for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
@@ -3405,7 +3532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/freeipa/" class="md-nav__link">
+      <a href="../../../app/freeipa/" class="md-nav__link">
         Free IPA
       </a>
     </li>
@@ -3419,7 +3546,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/guacamole/" class="md-nav__link">
+      <a href="../../../app/guacamole/" class="md-nav__link">
         Guacamole
       </a>
     </li>
@@ -3433,7 +3560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/netbox/" class="md-nav__link">
+      <a href="../../../app/netbox/" class="md-nav__link">
         IPAM - Netbox
       </a>
     </li>
@@ -3447,7 +3574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/pi-hole/" class="md-nav__link">
+      <a href="../../../app/pi-hole/" class="md-nav__link">
         None
       </a>
     </li>
@@ -3461,7 +3588,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/rhel_idm/" class="md-nav__link">
+      <a href="../../../app/rhel_idm/" class="md-nav__link">
         Red Hat Identity Management (IdM)
       </a>
     </li>
@@ -3475,7 +3602,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/rundeck/" class="md-nav__link">
+      <a href="../../../app/rundeck/" class="md-nav__link">
         Rundeck
       </a>
     </li>
@@ -3489,7 +3616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/sshs/" class="md-nav__link">
+      <a href="../../../app/sshs/" class="md-nav__link">
         sshs
       </a>
     </li>
@@ -3503,7 +3630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/ui-path/" class="md-nav__link">
+      <a href="../../../app/ui-path/" class="md-nav__link">
         UI-path
       </a>
     </li>
@@ -3517,7 +3644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/vnc-tiger/" class="md-nav__link">
+      <a href="../../../app/vnc-tiger/" class="md-nav__link">
         VNC Tiger
       </a>
     </li>
@@ -3531,7 +3658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/vscode/" class="md-nav__link">
+      <a href="../../../app/vscode/" class="md-nav__link">
         VSCode
       </a>
     </li>
@@ -3545,7 +3672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/wikijs/" class="md-nav__link">
+      <a href="../../../app/wikijs/" class="md-nav__link">
         Wiki JS
       </a>
     </li>
@@ -3559,7 +3686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/homeassistant/" class="md-nav__link">
+      <a href="../../../app/homeassistant/" class="md-nav__link">
         HomeAssistant
       </a>
     </li>
@@ -3573,7 +3700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/openvpn/" class="md-nav__link">
+      <a href="../../../app/openvpn/" class="md-nav__link">
         OpenVPN
       </a>
     </li>
@@ -3587,7 +3714,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/ngrok/" class="md-nav__link">
+      <a href="../../../app/ngrok/" class="md-nav__link">
         ngrok
       </a>
     </li>
@@ -3601,7 +3728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/pi-hole/" class="md-nav__link">
+      <a href="../../../app/pi-hole/" class="md-nav__link">
         Pi-Hole
       </a>
     </li>
@@ -3641,7 +3768,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../app/">NSEC</a>
+          <a href="../../../app/">NSEC</a>
           
             <label for="__nav_6_17">
               <span class="md-nav__icon md-icon"></span>
@@ -3699,7 +3826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/mkcert/" class="md-nav__link">
+      <a href="../../../app/mkcert/" class="md-nav__link">
         Certificate Generator
       </a>
     </li>
@@ -3713,7 +3840,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/certmanager/" class="md-nav__link">
+      <a href="../../../app/certmanager/" class="md-nav__link">
         Cert-Manager
       </a>
     </li>
@@ -3727,7 +3854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/ssl/" class="md-nav__link">
+      <a href="../../../app/ssl/" class="md-nav__link">
         SSL Certificates
       </a>
     </li>
@@ -3748,7 +3875,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/http-status/" class="md-nav__link">
+      <a href="../../../app/http-status/" class="md-nav__link">
         HTTP Status Codes
       </a>
     </li>
@@ -3762,7 +3889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../app/performance/" class="md-nav__link">
+      <a href="../../../app/performance/" class="md-nav__link">
         Newtork performances
       </a>
     </li>
@@ -3827,7 +3954,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../../cloud/">Cloud & Hypervisor</a>
+          <a href="../../../cloud/">Cloud & Hypervisor</a>
           
             <label for="__nav_7">
               <span class="md-nav__icon md-icon"></span>
@@ -3850,7 +3977,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/aws/" class="md-nav__link">
+      <a href="../../../cloud/aws/" class="md-nav__link">
         Amazon Web Services
       </a>
     </li>
@@ -3864,7 +3991,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/awx/" class="md-nav__link">
+      <a href="../../../cloud/awx/" class="md-nav__link">
         Installing AWX
       </a>
     </li>
@@ -3878,7 +4005,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/azure/" class="md-nav__link">
+      <a href="../../../cloud/azure/" class="md-nav__link">
         Microsoft Azure
       </a>
     </li>
@@ -3892,7 +4019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/cgp/" class="md-nav__link">
+      <a href="../../../cloud/cgp/" class="md-nav__link">
         Google Cloud Platforme
       </a>
     </li>
@@ -3906,7 +4033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/oci/" class="md-nav__link">
+      <a href="../../../cloud/oci/" class="md-nav__link">
         Oracle Cloud Infrastructure
       </a>
     </li>
@@ -3920,7 +4047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/vmware/" class="md-nav__link">
+      <a href="../../../cloud/vmware/" class="md-nav__link">
         VMware
       </a>
     </li>
@@ -3934,7 +4061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/pve/" class="md-nav__link">
+      <a href="../../../cloud/pve/" class="md-nav__link">
         Proxmox Virtual Environment
       </a>
     </li>
@@ -3948,7 +4075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/kvm/" class="md-nav__link">
+      <a href="../../../cloud/kvm/" class="md-nav__link">
         QEMU-KVM
       </a>
     </li>
@@ -3995,7 +4122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../cloud/az-104/" class="md-nav__link">
+      <a href="../../../cloud/az-104/" class="md-nav__link">
         Microsoft Azure Administrator
       </a>
     </li>
@@ -4067,7 +4194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../storage/bareos/" class="md-nav__link">
+      <a href="../../../storage/bareos/" class="md-nav__link">
         Bareos
       </a>
     </li>
@@ -4081,7 +4208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../storage/cloudera/" class="md-nav__link">
+      <a href="../../../storage/cloudera/" class="md-nav__link">
         Cloudera
       </a>
     </li>
@@ -4095,7 +4222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../storage/hadoop/" class="md-nav__link">
+      <a href="../../../storage/hadoop/" class="md-nav__link">
         Hadoop
       </a>
     </li>
@@ -4109,7 +4236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../storage/oracle/" class="md-nav__link">
+      <a href="../../../storage/oracle/" class="md-nav__link">
         Oracle
       </a>
     </li>
@@ -4123,7 +4250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../storage/mysql/" class="md-nav__link">
+      <a href="../../../storage/mysql/" class="md-nav__link">
         MySQL
       </a>
     </li>
@@ -4137,7 +4264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../storage/db2/" class="md-nav__link">
+      <a href="../../../storage/db2/" class="md-nav__link">
         IBM DB2
       </a>
     </li>
@@ -4151,7 +4278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../storage/mariadb/" class="md-nav__link">
+      <a href="../../../storage/mariadb/" class="md-nav__link">
         MariaDB
       </a>
     </li>
@@ -4212,7 +4339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/color-codes/" class="md-nav__link">
+      <a href="../../../misc/color-codes/" class="md-nav__link">
         256 Color Codes Cheat-Sheet
       </a>
     </li>
@@ -4226,7 +4353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/markdown/" class="md-nav__link">
+      <a href="../../../misc/markdown/" class="md-nav__link">
         Markdown
       </a>
     </li>
@@ -4240,7 +4367,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/mkdocs/" class="md-nav__link">
+      <a href="../../../misc/mkdocs/" class="md-nav__link">
         MKDocs
       </a>
     </li>
@@ -4254,7 +4381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/mermaid/" class="md-nav__link">
+      <a href="../../../misc/mermaid/" class="md-nav__link">
         Mermaid
       </a>
     </li>
@@ -4268,7 +4395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../misc/obsidian/" class="md-nav__link">
+      <a href="../../../misc/obsidian/" class="md-nav__link">
         Obsidian
       </a>
     </li>
@@ -4299,8 +4426,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -4309,77 +4434,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#presentation" class="md-nav__link">
-    Présentation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequis" class="md-nav__link">
-    Prerequis :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ssh-port-forward-list" class="md-nav__link">
-    SSH Port Forward list :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filebeat" class="md-nav__link">
-    FileBeat :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metricbeat" class="md-nav__link">
-    MetricBeat :
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#elasticsearch" class="md-nav__link">
-    Elasticsearch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#logstash" class="md-nav__link">
-    LOGSTASH
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#kibana" class="md-nav__link">
-    KIBANA
-  </a>
-  
-    <nav class="md-nav" aria-label="KIBANA">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#x-pack" class="md-nav__link">
-    X-PACK
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#beats" class="md-nav__link">
-    BEATS
+    Kibana
   </a>
   
 </li>
@@ -4402,69 +4458,11 @@
   
 
 
-<h1 id="elasticsearch-logstash-kibana">Elasticsearch / Logstash / Kibana</h1>
-<h2 id="presentation">Présentation</h2>
-<p>Description de stack ELK
-Déploiement et savoir faire</p>
-<p>Mise en place de réccupération des métrics ?
-    -&gt; Audite</p>
-<h2 id="prerequis">Prerequis :</h2>
-<ul>
-<li>Centos 7</li>
-<li>4G RAM</li>
-<li>2 CPU</li>
-</ul>
-<p>https://www.elastic.co/guide/en/cloud-enterprise/2.1/ece-prereqs.html</p>
-<p>https://grokdebug.herokuapp.com/</p>
-<hr />
-<blockquote>
-<p>/usr/share/elasticsearch/bin/elasticsearch-setup-passwords interactive</p>
-<p>curl -X PUT "localhost:9200/elk-001?pretty"</p>
-</blockquote>
-<h2 id="ssh-port-forward-list">SSH Port Forward list :</h2>
-<blockquote>
-<p>ssh -L 127.0.0.1:8080:local_ip:80 user@ip # centreon
-ssh -L 127.0.0.1:5601:local_ip:5601 user@ip # kibana
-ssh -L 127.0.0.1:9200:local_ip:9200 user@ip # elasticsearch</p>
-</blockquote>
-<h2 id="filebeat">FileBeat :</h2>
-<blockquote>
-<p>curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.11.1-x86_64.rpm
-rpm -vi filebeat-7.11.1-x86_64.rpm</p>
-</blockquote>
-<h2 id="metricbeat">MetricBeat :</h2>
-<blockquote>
-<p>curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.11.1-x86_64.rpm
-rpm -vi metricbeat-7.11.1-x86_64.rpm</p>
-</blockquote>
-<h2 id="elasticsearch">Elasticsearch</h2>
-<p>Elasticsearch is composed by :</p>
-<ul>
-<li>LOGSTASH</li>
-<li>KIBANA</li>
-<li>X-PACK</li>
-<li>BEATS</li>
-</ul>
-<h2 id="logstash">LOGSTASH</h2>
-<p>Logstash is an event processing pipeline</p>
-<h2 id="kibana">KIBANA</h2>
+  <h1>Kibana</h1>
+
+<h2 id="kibana">Kibana</h2>
 <p>Kibana is a monitoring analyse platforme which allow human to easly read elasticsearch datas
 We can call Kibana as the elasticsearch's dashboard</p>
-<h3 id="x-pack">X-PACK</h3>
-<p>Is a packe of features for Kibana</p>
-<ul>
-<li>Security</li>
-<li>Monitoring</li>
-<li>Alerting</li>
-<li>Reporting</li>
-<li>Machine Learning</li>
-<li>Abnormality Detection</li>
-<li>Forcasting</li>
-<li>Graph</li>
-<li>Elasticsearch SQL</li>
-</ul>
-<h2 id="beats">BEATS</h2>
-<p>Beats farm data for logstash</p>
 
 
 
@@ -4511,10 +4509,10 @@ We can call Kibana as the elasticsearch's dashboard</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.annotate", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest"], "search": "../../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a51614de.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
         
           <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>

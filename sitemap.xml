@@ -166,17 +166,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/dev/elastik/</loc>
-         <lastmod>2023-07-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sboistel.github.io/docki/dev/git/</loc>
-         <lastmod>2023-07-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://sboistel.github.io/docki/dev/kubernetes/</loc>
          <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -187,6 +177,46 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/perl/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/elk/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/elk/beat/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/elk/elasticsearch/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/elk/filebeat/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/elk/kibana/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/elk/logstash/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/elk/metricbeat/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/elk/xpack/</loc>
          <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -247,6 +277,16 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/dev/hashicorp/terraform/vars/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/kubernetes/</loc>
+         <lastmod>2023-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/dev/kubernetes/minikube/</loc>
          <lastmod>2023-07-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
