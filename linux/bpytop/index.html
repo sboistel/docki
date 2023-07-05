@@ -12,20 +12,20 @@
         <meta name="author" content="BOISTEL Samuel">
       
       
-        <link rel="canonical" href="https://sboistel.github.io/docki/linux/keymaps/">
+        <link rel="canonical" href="https://sboistel.github.io/docki/linux/bpytop/">
       
       
         <link rel="prev" href="../desktop/">
       
       
-        <link rel="next" href="../apps/">
+        <link rel="next" href="../package-manager/">
       
       <link rel="icon" href="../../ressources/storytelling.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
     
     
       
-        <title>Keymap - Dockimentation</title>
+        <title>bpytop - Dockimentation</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#keymap" class="md-skip">
+        <a href="#bpytop" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Keymap
+              bpytop
             
           </span>
         </div>
@@ -686,22 +686,18 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
       
       
-        
-          
         
           
         
@@ -712,7 +708,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_1_6">
           <span class="md-nav__icon md-icon"></span>
           Environment
@@ -733,30 +729,6 @@
 
             
           
-            
-              
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Keymap
-      </a>
-      
-    </li>
-  
-
-            
-          
         </ul>
       </nav>
     </li>
@@ -768,16 +740,18 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_7" checked>
       
       
         
@@ -800,7 +774,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_7_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_1_7">
           <span class="md-nav__icon md-icon"></span>
           App & Services
@@ -811,11 +785,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../apps/" class="md-nav__link">
-        Apps
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        bpytop
       </a>
+      
     </li>
   
 
@@ -4418,21 +4402,12 @@
   
 
 
-<h1 id="keymap">Keymap</h1>
-<p>Liste:</p>
-<ul>
-<li>Début du mot : <code>b</code></li>
-<li>Début du dexième mot en partant du mot d'origin : <code>3B</code></li>
-<li>Fin du mot suivant : <code>e</code></li>
-<li>Mot suivant : <code>w</code></li>
-<li>Replace : <code>r</code></li>
-<li>Supprimer carractère par carractère : <code>x</code></li>
-<li>Supprimer à reculon carractère par carractère : <code>c</code></li>
-<li>Changer (ce -&gt; changer jusqu'à la fin du mot ) : <code>c</code></li>
-<li>Enregister les modifications : <code>ZZ</code></li>
-<li>Enregistrer les modifications et quiter le fichier : <code>ZQ</code></li>
-</ul>
-<p>Répeter la dernière actions effectuée : <code>.</code></p>
+<h1 id="bpytop">bpytop</h1>
+<p>How to isntall bpytop based on APT :</p>
+<div class="highlight"><pre><span></span><code>apt<span class="w"> </span>install<span class="w"> </span>python3-pip
+pip3<span class="w"> </span>install<span class="w"> </span>psutil
+pip3<span class="w"> </span>install<span class="w"> </span>bpytop
+</code></pre></div>
 
 
 
