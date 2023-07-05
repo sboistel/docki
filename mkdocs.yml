@@ -88,9 +88,8 @@ nav:
       - linux/logfile.md
     - Environment:
       - linux/desktop.md
-      - linux/keymaps.md
     - App & Services:
-      - linux/apps.md
+      - linux/bpytop.md
       - linux/package-manager.md
       - linux/time.md
       - linux/web.md

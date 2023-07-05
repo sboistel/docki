@@ -1,6 +1,4 @@
-# Apps
-
-## bpytop
+# bpytop
 
 How to isntall bpytop based on APT :
 
