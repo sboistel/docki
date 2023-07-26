@@ -253,7 +253,6 @@ nav:
   - Cloud & Hypervisor:
     - cloud/index.md
     - cloud/aws.md
-    - cloud/awx.md
     - cloud/azure.md
     - cloud/cgp.md
     - cloud/oci.md
