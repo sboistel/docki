@@ -241,6 +241,7 @@ nav:
     - app/openvpn.md
     - app/ngrok.md
     - app/pi-hole.md
+    - app/sublime-text.md
     - NSEC:
       - app/index.md
       - Certificats:
