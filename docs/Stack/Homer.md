@@ -1,0 +1,18 @@
+```yaml
+---
+version: "2"
+services:
+  homer:
+    image: b4bz/homer
+    #To build from source, comment previous line and uncomment below
+    #build: .
+    container_name: homer
+    volumes:
+      - /portainer/homer/assets:/www/assets
+    ports:
+      - 5005:8080
+      # - 8080:8080 # default
+    user: 1000:1000 # default
+    environment:
+      - INIT_ASSETS=1 # default
+```
