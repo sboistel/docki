@@ -88,3 +88,25 @@ Clear la liste stash
 
 Commiter un stash 
 > git stash pop
+
+## Rebase branch
+Go to main/master branch
+> git checkout main
+
+Pull changes
+> git pull
+
+Go back to your branch
+> git checkout yourbranchname
+
+Let rebase it
+> Git rebase main
+
+Then open your file and solve the conflict.
+
+Finaly, continue the rebase
+> git rebase --continue
+
+Upload
+> git push --force
+
