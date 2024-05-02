@@ -2,10 +2,9 @@
 
 Getting started with a Wiki.js installation on Linux
 
+Before going any further, make sure your system meets all the requirements.
 
-Before going any further, make sure your system meets all the [requirements](/install/requirements).
-
-> Looking for a complete, easy step-by-step installation guide, including all dependencies and an auto-updater? Check out the [Ubuntu-based](/install/ubuntu) installation guide.
+> Looking for a complete, easy step-by-step installation guide, including all dependencies and an auto-updater? Check out the Ubuntu-based installation guide.
 {.is-info}
 
 ## Install
@@ -30,7 +29,7 @@ cd ./wiki
 mv config.sample.yml config.yml
 ```
 
-4. Edit the config file and fill in your database and port settings ([Configuration Reference](/install/config))
+4. Edit the config file and fill in your database and port settings Configuration Reference
 
 ```bash
 nano config.yml
@@ -57,9 +56,10 @@ node server
 There are several solutions to run Wiki.js as a background service. We'll focus on **systemd** in this guide as it's available in nearly all linux distributions.
 
 1. Create a new file named `wiki.service` inside directory `/etc/systemd/system`.
-  ```bash
-  nano /etc/systemd/system/wiki.service
-  ```
+
+```bash
+nano /etc/systemd/system/wiki.service
+```
 
 2. Paste the following contents (assuming your wiki is installed at `/var/wiki`):
 

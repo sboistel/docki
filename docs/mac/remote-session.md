@@ -37,7 +37,7 @@ Repository link : [https://github.com/quantumsheep/sshs](https://github.com/quan
 
 How to let easier your life
 
-* First, install-it with [homebrew](#homebrew) if it dont installed yet.
+* First, install-it with homebrew if it dont installed yet.
 
 ```zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"

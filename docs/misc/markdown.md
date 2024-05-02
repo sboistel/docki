@@ -34,9 +34,18 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 
 ## Line Breaks
+
 ```markdown
 First line with two spaces after.  
 And the next line.
+```
+
+## Break page
+
+Insert this block where you want to create a page break.
+
+```html
+<div style="page-break-after: always; break-after: page;"></div>
 ```
 
 ## Lists

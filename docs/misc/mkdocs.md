@@ -19,7 +19,7 @@ the default type, and thus fallback for unknown type qualifiers, is `note`[^1]:
   [^1]:
     Previously, some of the supported types defined more than one qualifier.
     For example, authors could use `summary` or `tldr` as alternative qualifiers
-    to render an ##### [`abstract`](abstract) admonition. As this increased the
+    to render an ##### abstract admonition. As this increased the
     size of the CSS that is shipped with Material for MkDocs, the additional
     type qualifiers are now all deprecated and will be removed in the next major
     version. This will also be mentioned in the upgrade guide.
@@ -34,7 +34,7 @@ Use the type belong `!!!` as :
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor massa, nec semper lorem quam in massa.
 ```
 
-##### [`note`](note)
+##### note
 
 !!! note
 
@@ -42,7 +42,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`abstract`](abstract)
+##### abstract
 
 !!! abstract
 
@@ -50,7 +50,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`info`](info)
+##### info
 
 !!! info
 
@@ -58,7 +58,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`tip`](tip)
+##### tip
 
 !!! tip
 
@@ -66,7 +66,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`success`](success)
+##### success
 
 !!! success
 
@@ -74,7 +74,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`question`](question)
+##### question
 
 !!! question
 
@@ -82,7 +82,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`warning`](warning)
+##### warning
 
 !!! warning
 
@@ -90,7 +90,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`failure`](failure)
+##### failure
 
 !!! failure
 
@@ -98,7 +98,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`danger`](danger)
+##### danger
 
 !!! danger
 
@@ -106,7 +106,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`bug`](bug)
+##### bug
 
 !!! bug
 
@@ -114,7 +114,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`example`](example)
+##### example
 
 !!! example
 
@@ -122,7 +122,7 @@ Use the type belong `!!!` as :
         euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
         purus auctor massa, nec semper lorem quam in massa.
 
-##### [`quote`](quote)
+##### quote
 
 !!! quote
 

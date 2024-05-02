@@ -86,7 +86,7 @@ animals.sort() # .sort() = to globaly sort animals var
 print('Animals after sort method: {}'.format(animals))
 ```
 
-Concatenate two list 
+Concatenate two list
 
 ```python
 animals = ['man', 'bear', 'pig']
@@ -137,8 +137,6 @@ for number in range(0, len(animals), 2): # from 0 to animals item numbers steped
 
 ### Conclusion
 
-Example of code with sections of [Lists](#lists) merged
-
 ```python
 #!/usr/bin/env python
 
@@ -163,4 +161,3 @@ print('-' * 16)
 for task in todo_index: # From index, get items
     print(task)
 ```
-

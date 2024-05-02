@@ -66,7 +66,7 @@ Typically, it’s the code that calls the function, not the function itself, tha
 # An exception happened: Symbol must be a single character string.
 ```
 
-Read more about [Exception Handling](/cheatsheet/exception-handling).
+Read more about Exception Handling.
 
 ## Getting the Traceback as a string
 
