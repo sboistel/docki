@@ -1,4 +1,4 @@
-name: publish-site
+name: Build and Serve Mkdocs
 on:
   push:
     branches:
