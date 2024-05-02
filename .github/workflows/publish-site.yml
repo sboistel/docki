@@ -6,7 +6,7 @@ on:
 
 jobs:
   # Lints markdown content
-  lint-code:
+  readthedocs-cooking:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -18,12 +18,12 @@ jobs:
       - name: Lint Markdown
         run: mkdocs build --strict
 
-  publish-site:
-    needs: [lint-code]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get latest changes
-        uses: actions/checkout@v3
+  # publish-site:
+  #   needs: [lint-code]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Get latest changes
+  #       uses: actions/checkout@v3
 
       - name: Deploy site
         run: mkdocs gh-deploy
