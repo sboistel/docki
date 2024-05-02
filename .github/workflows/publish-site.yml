@@ -11,23 +11,19 @@ jobs:
    # Lightweight linter
    
     steps:
-    
-    - name: markdownlint-cli
-    # doc : https://github.com/marketplace/actions/markdownlint-cli
-      uses: nosborn/github-action-markdown-cli@v3.2.0
-      with:
-        files: docs/
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Mkdocs
+        run: pip install mkdocs mkdocs-material pymdown-extensions py-dot 
+
+      - name: Lint Markdown
+        run: mkdocs build --strict
 
   publish-site:
     needs: [lint-code]
     runs-on: ubuntu-latest
     steps:
-      - name: Install Mkdocs
-        run: pip install mkdocs mkdocs-material pymdown-extensions py-dot 
-
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
       - name: Get latest changes
         # pull latest changes from main branch
         run: git pull origin main
