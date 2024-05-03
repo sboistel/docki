@@ -1,26 +1,28 @@
-name: Build and Serve GoHugo
+name: Build and Serve Mkdocs
 on:
-    push:
-        branches:
-            - gohugo
+  push:
+    branches:
+    - gohugo
 
 jobs:
-    build-and-serve:
-        runs-on: ubuntu-latest
+  publish-gohugo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
-        steps:
-            - name: Checkout code
-                uses: actions/checkout@v2
+      - name: Pull Changes
+        run: git pull
 
-            - name: Set up Go
-                uses: actions/setup-go@v2
-                with:
-                    go-version: 1.17
-
-            - name: Build GoHugo site
-                run: |
-                    go install github.com/gohugoio/hugo@latest
-                    hugo
-
-            - name: Serve GoHugo site
-                run: hugo serve
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+            go-version: 1.17
+  
+      - name: Build GoHugo site
+        run: |
+            go install github.com/gohugoio/hugo@latest
+            hugo
+  
+      - name: Serve GoHugo site
+        run: hugo serve
