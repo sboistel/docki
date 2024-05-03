@@ -1,5 +1,6 @@
 name: Build and Serve Mkdocs
 on:
+  workflow_dispatch:
   push:
     branches:
     - gohugo
