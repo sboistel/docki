@@ -1,5 +1,51 @@
 # Obsidian
 
+## Metadata
+
+```yaml
+---
+type:
+aliases:
+tags:
+animal:
+---
+
+hiver:: 2018
+```
+
+## Community Plugins
+
+- Templater
+- Dataview
+- Admonition
+- Calendar
+- Kanban
+
+### Calendar
+
+- Daily
+- weekly
+
+### Templater
+
+Format tp.file.creation_date("YYY-MM-DD")
+Template per directories
+
+### Admonition
+
+[Docki - Admonition](#admonitions)
+
+### Dataview
+
+- List
+- Tasks
+- Table
+
+### Kanban & Canvas
+
+- Trello like ?
+- Mind map
+
 ## Admonitions
 
 ### Types

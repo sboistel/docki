@@ -252,7 +252,7 @@ nav:
       - app/http-status.md
       - app/performance.md
     - Tools:
-      - Tools/yubikey.md
+      - tools/yubikey.md
 
   - Cloud & Hypervisor:
     - cloud/index.md
