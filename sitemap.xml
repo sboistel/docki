@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://sboistel.github.io/docki/Tools/yubikey/</loc>
-         <lastmod>2024-05-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://sboistel.github.io/docki/app/</loc>
          <lastmod>2024-05-03</lastmod>
          <changefreq>daily</changefreq>
@@ -747,6 +742,11 @@
     </url>
     <url>
          <loc>https://sboistel.github.io/docki/storage/oracle/</loc>
+         <lastmod>2024-05-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sboistel.github.io/docki/tools/yubikey/</loc>
          <lastmod>2024-05-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
