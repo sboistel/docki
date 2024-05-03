@@ -1,29 +1,24 @@
-name: publish-site
+name: Build and Serve Mkdocs
 on:
   push:
     branches:
-    - main
+    - readthedocs
 
 jobs:
-  # Lints markdown content
-  readthedocs-cooking:
+  publish-readthedocs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+
+      - name: Pull Changes
+        run: git pull
 
       - name: Install Mkdocs
         run: pip install mkdocs mkdocs-material pymdown-extensions py-dot 
 
       - name: Lint Markdown
         run: mkdocs build --strict
-
-  # publish-site:
-  #   needs: [lint-code]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Get latest changes
-  #       uses: actions/checkout@v3
 
       - name: Deploy site
         run: mkdocs gh-deploy
