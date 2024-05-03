@@ -1,4 +1,4 @@
-name: Build and Serve Mkdocs
+name: Build and Serve GoHugo
 on:
   workflow_dispatch:
   push:
