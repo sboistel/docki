@@ -251,6 +251,8 @@ nav:
         - app/ssl.md
       - app/http-status.md
       - app/performance.md
+    - Tools:
+      - Tools/yubikey.md
 
   - Cloud & Hypervisor:
     - cloud/index.md
@@ -279,3 +281,4 @@ nav:
     - misc/mkdocs.md
     - misc/mermaid.md
     - misc/obsidian.md
+    - misc/gohugo.md

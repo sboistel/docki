@@ -17,7 +17,7 @@ _- On Windows keyboards use the Alt key instead of ⌥ + , and the Windows logo 
 
 | keys          | description                                                                                                   |
 | :------------ | :------------------------------------------------------------------------------------------------------------ |
-| ⌘ + x         | Cut the selected item and copy it to the Clipboard                                                            |
+| ⌘ + ⌥ + v     | Cut the selected item and copy it to the Clipboard                                                            |
 | ⌘ + c         | Copy the selected item to the Clipboard. This also works for files in the Finder                              |
 | ⌘ + v         | Paste the contents of the Clipboard into the current document or app. This also works for files in the Finder |
 | ⌘ + z         | Undo the previous comamnd                                                                                     |
