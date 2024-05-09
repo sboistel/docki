@@ -1,7 +1,7 @@
 # Project information
 site_name: Dockimentation
 site_url: https://sboistel.github.io/docki/
-site_author: BOISTEL Samuel
+site_author: sboistel
 site_description: >-
   Collection of documentations wrote arround metted topics
   from my begening
@@ -11,7 +11,7 @@ repo_name: docki
 repo_url: https://github.com/sboistel/docki
 
 # Copyright
-copyright: Copyright &copy; 2023 sboistel
+copyright: Copyright &copy; 2024 sboistel
 
 # Customisation
 theme:
