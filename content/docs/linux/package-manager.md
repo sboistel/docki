@@ -1,0 +1,30 @@
+---
+title: "Package manager"
+description: "Managing software packages in Linux"
+tags: ["linux", "package manager"]
+---
+
+## RPM
+
+How to force installation without depedency.
+
+```bash
+rpm -Uvh 
+```
+
+## Debian
+
+### Repository
+
+* bullseye 11 sources.list
+
+```bash
+deb http://deb.debian.org/debian bullseye main
+deb-src http://deb.debian.org/debian bullseye main
+
+deb http://deb.debian.org/debian-security/ bullseye-security main
+deb-src http://deb.debian.org/debian-security/ bullseye-security main
+
+deb http://deb.debian.org/debian bullseye-updates main
+deb-src http://deb.debian.org/debian bullseye-updates main
+```

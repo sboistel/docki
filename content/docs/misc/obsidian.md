@@ -1,0 +1,97 @@
+---
+title: "Obsidian"
+description: "Obsidian is a powerful knowledge base that works on top of a local folder of plain text Markdown files."
+tags: ["obsidian", "knowledge base", "markdown"]
+---
+
+## Metadata
+
+```yaml
+---
+type:
+aliases:
+tags:
+animal:
+---
+
+hiver:: 2018
+```
+
+## Community Plugins
+
+- Templater
+- Dataview
+- Admonition
+- Calendar
+- Kanban
+
+### Calendar
+
+- Daily
+- weekly
+
+### Templater
+
+Format tp.file.creation_date("YYY-MM-DD")
+Template per directories
+
+### Admonition
+
+[Docki - Admonition](#admonitions)
+
+### Dataview
+
+- List
+- Tasks
+- Table
+
+### Kanban & Canvas
+
+- Trello like ?
+- Mind map
+
+## Admonitions
+
+### Types
+
+The following admonition types are currently supported:
+
+| Type     | Aliases                     |
+| -------- | --------------------------- |
+| note     | note, seealso               |
+| abstract | abstract, summary, tldr     |
+| info     | info, todo                  |
+| tip      | tip, hint, important        |
+| success  | success, check, done        |
+| question | question, help, faq         |
+| warning  | warning, caution, attention |
+| failure  | failure, fail, missing      |
+| danger   | danger, error               |
+| bug      | bug                         |
+| example  | example                     |
+| quote    | quote, cite                 |
+
+### Parameters
+
+```note
+```ad- # Admonition type. See below for a list of available types.
+title: # Admonition title.
+collapse: # Create a collapsible admonition.
+icon: # Override the icon.
+color: # Override the color.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod nulla.
+```
+
+#### Example
+
+Note : (`ad-note`)
+
+```obsidian
+```ad-note
+title: This is a note
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+purus auctor massa, nec semper lorem quam in massa.
+```
