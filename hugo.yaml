@@ -24,7 +24,7 @@ menu:
       pageRef: /docs
       weight: 1
     - name: About Me
-      pageRef: /about
+      pageRef: /cv
       weight: 2
     - name: Search
       weight: 3
