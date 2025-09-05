@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Automation</title>
-    <link>//localhost:1313/tags/automation/</link>
+    <link>/tags/automation/</link>
     <description>Recent content in Automation on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Ansible Engine</title>
-      <link>//localhost:1313/docs/dev/hashicorp/ansible/</link>
+      <link>/docs/dev/hashicorp/ansible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/ansible/</guid>
+      <guid>/docs/dev/hashicorp/ansible/</guid>
       <description>
         
         
@@ -227,10 +227,10 @@ The &lt;code&gt;CertificateThumbprint&lt;/code&gt; option under the WinRM servic
     
     <item>
       <title>AWX</title>
-      <link>//localhost:1313/docs/dev/redhat/awx/</link>
+      <link>/docs/dev/redhat/awx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/redhat/awx/</guid>
+      <guid>/docs/dev/redhat/awx/</guid>
       <description>
         
         
@@ -374,10 +374,10 @@ secret_key=CkuLOxvgiCzpeLrBLW5UZFkkEiG7NR&lt;/p&gt;
     
     <item>
       <title>Packer</title>
-      <link>//localhost:1313/docs/dev/hashicorp/packer/</link>
+      <link>/docs/dev/hashicorp/packer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/packer/</guid>
+      <guid>/docs/dev/hashicorp/packer/</guid>
       <description>
         
         
@@ -539,10 +539,10 @@ The build command provides the core functionality of Packer.&lt;/p&gt;
     
     <item>
       <title>Tower-CLI</title>
-      <link>//localhost:1313/docs/dev/redhat/tower-cli/</link>
+      <link>/docs/dev/redhat/tower-cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/redhat/tower-cli/</guid>
+      <guid>/docs/dev/redhat/tower-cli/</guid>
       <description>
         
         

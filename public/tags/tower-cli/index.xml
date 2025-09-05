@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Tower-Cli</title>
-    <link>//localhost:1313/tags/tower-cli/</link>
+    <link>/tags/tower-cli/</link>
     <description>Recent content in Tower-Cli on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/tags/tower-cli/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/tags/tower-cli/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Tower-CLI</title>
-      <link>//localhost:1313/docs/dev/redhat/tower-cli/</link>
+      <link>/docs/dev/redhat/tower-cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/redhat/tower-cli/</guid>
+      <guid>/docs/dev/redhat/tower-cli/</guid>
       <description>
         
         

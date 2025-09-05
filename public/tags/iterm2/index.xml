@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Iterm2</title>
-    <link>//localhost:1313/tags/iterm2/</link>
+    <link>/tags/iterm2/</link>
     <description>Recent content in Iterm2 on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/tags/iterm2/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>iTerm2</title>
-      <link>//localhost:1313/docs/mac/iterm2/</link>
+      <link>/docs/mac/iterm2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/iterm2/</guid>
+      <guid>/docs/mac/iterm2/</guid>
       <description>
         
         

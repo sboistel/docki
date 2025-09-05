@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Remote</title>
-    <link>//localhost:1313/tags/remote/</link>
+    <link>/tags/remote/</link>
     <description>Recent content in Remote on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/tags/remote/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/tags/remote/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Remote Connection</title>
-      <link>//localhost:1313/docs/mac/remote-session/</link>
+      <link>/docs/mac/remote-session/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/remote-session/</guid>
+      <guid>/docs/mac/remote-session/</guid>
       <description>
         
         

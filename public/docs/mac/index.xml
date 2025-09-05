@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Mac</title>
-    <link>//localhost:1313/docs/mac/</link>
+    <link>/docs/mac/</link>
     <description>Recent content in Mac on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/docs/mac/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>CheatSheet</title>
-      <link>//localhost:1313/docs/mac/cheatsheet/</link>
+      <link>/docs/mac/cheatsheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/cheatsheet/</guid>
+      <guid>/docs/mac/cheatsheet/</guid>
       <description>
         
         
@@ -36,10 +36,10 @@
     
     <item>
       <title>Clipboard Manager</title>
-      <link>//localhost:1313/docs/mac/clipboard-manager/</link>
+      <link>/docs/mac/clipboard-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/clipboard-manager/</guid>
+      <guid>/docs/mac/clipboard-manager/</guid>
       <description>
         
         
@@ -124,10 +124,10 @@
     
     <item>
       <title>Dock</title>
-      <link>//localhost:1313/docs/mac/dock/</link>
+      <link>/docs/mac/dock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/dock/</guid>
+      <guid>/docs/mac/dock/</guid>
       <description>
         
         
@@ -222,10 +222,10 @@
     
     <item>
       <title>iTerm2</title>
-      <link>//localhost:1313/docs/mac/iterm2/</link>
+      <link>/docs/mac/iterm2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/iterm2/</guid>
+      <guid>/docs/mac/iterm2/</guid>
       <description>
         
         
@@ -325,10 +325,10 @@
     
     <item>
       <title>MacOS keyboard shortcuts</title>
-      <link>//localhost:1313/docs/mac/shurtcuts/</link>
+      <link>/docs/mac/shurtcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/shurtcuts/</guid>
+      <guid>/docs/mac/shurtcuts/</guid>
       <description>
         
         
@@ -1143,10 +1143,10 @@
     
     <item>
       <title>Package Manager</title>
-      <link>//localhost:1313/docs/mac/package-manager/</link>
+      <link>/docs/mac/package-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/package-manager/</guid>
+      <guid>/docs/mac/package-manager/</guid>
       <description>
         
         
@@ -1170,10 +1170,10 @@
     
     <item>
       <title>Remote Connection</title>
-      <link>//localhost:1313/docs/mac/remote-session/</link>
+      <link>/docs/mac/remote-session/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/remote-session/</guid>
+      <guid>/docs/mac/remote-session/</guid>
       <description>
         
         
@@ -1290,10 +1290,10 @@
     
     <item>
       <title>ScreenShots</title>
-      <link>//localhost:1313/docs/mac/screenshots/</link>
+      <link>/docs/mac/screenshots/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/screenshots/</guid>
+      <guid>/docs/mac/screenshots/</guid>
       <description>
         
         
@@ -1325,10 +1325,10 @@
     
     <item>
       <title>Sensors</title>
-      <link>//localhost:1313/docs/mac/sensors/</link>
+      <link>/docs/mac/sensors/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/sensors/</guid>
+      <guid>/docs/mac/sensors/</guid>
       <description>
         
         
@@ -1352,10 +1352,10 @@
     
     <item>
       <title>Virtual Machines (M Chips)</title>
-      <link>//localhost:1313/docs/mac/vmachines/</link>
+      <link>/docs/mac/vmachines/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/vmachines/</guid>
+      <guid>/docs/mac/vmachines/</guid>
       <description>
         
         
@@ -1375,10 +1375,10 @@
     
     <item>
       <title>What is a .DS_Store file?</title>
-      <link>//localhost:1313/docs/mac/ds_store/</link>
+      <link>/docs/mac/ds_store/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/ds_store/</guid>
+      <guid>/docs/mac/ds_store/</guid>
       <description>
         
         
@@ -1446,10 +1446,10 @@ You’re set up &amp;amp; secure!&lt;/p&gt;&lt;/div&gt;
     
     <item>
       <title>Windows tilling</title>
-      <link>//localhost:1313/docs/mac/windows-tilling/</link>
+      <link>/docs/mac/windows-tilling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/windows-tilling/</guid>
+      <guid>/docs/mac/windows-tilling/</guid>
       <description>
         
         

@@ -30,11 +30,11 @@ menu:
       weight: 3
       params:
         type: search
-    # - name: GitHub
-    #   weight: 5
-    #   url: "https://github.com/sboistel/graphs"
-    #   params:
-    #     icon: github
+    - name: GitHub
+      weight: 4
+      url: "https://github.com/sboistel"
+      params:
+        icon: github
 
   # sidebar:
   #   - identifier: more

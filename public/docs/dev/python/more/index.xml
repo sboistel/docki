@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Math Operators</title>
-    <link>//localhost:1313/docs/dev/python/more/</link>
+    <link>/docs/dev/python/more/</link>
     <description>Recent content in Math Operators on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/docs/dev/python/more/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/dev/python/more/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>% operator</title>
-      <link>//localhost:1313/docs/dev/python/more/string-formatting/</link>
+      <link>/docs/dev/python/more/string-formatting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/string-formatting/</guid>
+      <guid>/docs/dev/python/more/string-formatting/</guid>
       <description>
         
         
@@ -338,10 +338,10 @@ Python String Formatting
     
     <item>
       <title>Args and Kwargs</title>
-      <link>//localhost:1313/docs/dev/python/more/args-and-kwargs/</link>
+      <link>/docs/dev/python/more/args-and-kwargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/args-and-kwargs/</guid>
+      <guid>/docs/dev/python/more/args-and-kwargs/</guid>
       <description>
         
         
@@ -435,10 +435,10 @@ Python Args and Kwargs
     
     <item>
       <title>Basic exception handling</title>
-      <link>//localhost:1313/docs/dev/python/more/exception-handling/</link>
+      <link>/docs/dev/python/more/exception-handling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/exception-handling/</guid>
+      <guid>/docs/dev/python/more/exception-handling/</guid>
       <description>
         
         
@@ -585,10 +585,10 @@ Python Exception Handling
     
     <item>
       <title>Comparison Operators</title>
-      <link>//localhost:1313/docs/dev/python/more/control-flow/</link>
+      <link>/docs/dev/python/more/control-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/control-flow/</guid>
+      <guid>/docs/dev/python/more/control-flow/</guid>
       <description>
         
         
@@ -1257,10 +1257,10 @@ useful when a &lt;code&gt;break&lt;/code&gt; condition can occur in the loop:&lt
     
     <item>
       <title>Encapsulation</title>
-      <link>//localhost:1313/docs/dev/python/more/oop-basics/</link>
+      <link>/docs/dev/python/more/oop-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/oop-basics/</guid>
+      <guid>/docs/dev/python/more/oop-basics/</guid>
       <description>
         
         
@@ -1460,10 +1460,10 @@ detailed examples and explanations will be coming soon.&lt;/p&gt;
     
     <item>
       <title>Escape characters</title>
-      <link>//localhost:1313/docs/dev/python/more/manipulating-strings/</link>
+      <link>/docs/dev/python/more/manipulating-strings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/manipulating-strings/</guid>
+      <guid>/docs/dev/python/more/manipulating-strings/</guid>
       <description>
         
         
@@ -1854,10 +1854,10 @@ Manipulating Strings
     
     <item>
       <title>Features</title>
-      <link>//localhost:1313/docs/dev/python/more/dataclasses/</link>
+      <link>/docs/dev/python/more/dataclasses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/dataclasses/</guid>
+      <guid>/docs/dev/python/more/dataclasses/</guid>
       <description>
         
         
@@ -1965,10 +1965,10 @@ This module provides a decorator and functions for automatically adding generate
     
     <item>
       <title>Function Arguments</title>
-      <link>//localhost:1313/docs/dev/python/more/functions/</link>
+      <link>/docs/dev/python/more/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/functions/</guid>
+      <guid>/docs/dev/python/more/functions/</guid>
       <description>
         
         
@@ -2203,10 +2203,10 @@ Python Functions
     
     <item>
       <title>Getting values with indexes</title>
-      <link>//localhost:1313/docs/dev/python/more/lists-and-tuples/</link>
+      <link>/docs/dev/python/more/lists-and-tuples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/lists-and-tuples/</guid>
+      <guid>/docs/dev/python/more/lists-and-tuples/</guid>
       <description>
         
         
@@ -2723,10 +2723,10 @@ Python Lists
     
     <item>
       <title>Initializing a set</title>
-      <link>//localhost:1313/docs/dev/python/more/sets/</link>
+      <link>/docs/dev/python/more/sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/sets/</guid>
+      <guid>/docs/dev/python/more/sets/</guid>
       <description>
         
         
@@ -2940,10 +2940,10 @@ Python Sets
     
     <item>
       <title>Introduction</title>
-      <link>//localhost:1313/docs/dev/python/more/setup-py/</link>
+      <link>/docs/dev/python/more/setup-py/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/setup-py/</guid>
+      <guid>/docs/dev/python/more/setup-py/</guid>
       <description>
         
         
@@ -3014,10 +3014,10 @@ Python setup.py
     
     <item>
       <title>JSON</title>
-      <link>//localhost:1313/docs/dev/python/more/json-yaml/</link>
+      <link>/docs/dev/python/more/json-yaml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/json-yaml/</guid>
+      <guid>/docs/dev/python/more/json-yaml/</guid>
       <description>
         
         
@@ -3128,10 +3128,10 @@ specification, and allow for example to modify a YAML content without altering c
     
     <item>
       <title>Linux and Windows Paths</title>
-      <link>//localhost:1313/docs/dev/python/more/file-directory-path/</link>
+      <link>/docs/dev/python/more/file-directory-path/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/file-directory-path/</guid>
+      <guid>/docs/dev/python/more/file-directory-path/</guid>
       <description>
         
         
@@ -3786,10 +3786,10 @@ it. To fix this, do:&lt;/p&gt;
     
     <item>
       <title>List comprehension</title>
-      <link>//localhost:1313/docs/dev/python/more/comprehensions/</link>
+      <link>/docs/dev/python/more/comprehensions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/comprehensions/</guid>
+      <guid>/docs/dev/python/more/comprehensions/</guid>
       <description>
         
         
@@ -3968,10 +3968,10 @@ Python Comprehensions
     
     <item>
       <title>Python built-in Functions</title>
-      <link>//localhost:1313/docs/dev/python/more/built-in-functions/</link>
+      <link>/docs/dev/python/more/built-in-functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/built-in-functions/</guid>
+      <guid>/docs/dev/python/more/built-in-functions/</guid>
       <description>
         
         
@@ -4271,10 +4271,10 @@ Python Built-in Functions
     
     <item>
       <title>Raising Exceptions</title>
-      <link>//localhost:1313/docs/dev/python/more/debugging/</link>
+      <link>/docs/dev/python/more/debugging/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/debugging/</guid>
+      <guid>/docs/dev/python/more/debugging/</guid>
       <description>
         
         
@@ -4518,10 +4518,10 @@ Exception: This is the error message.
     
     <item>
       <title>Regex symbols</title>
-      <link>//localhost:1313/docs/dev/python/more/regular-expressions/</link>
+      <link>/docs/dev/python/more/regular-expressions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/regular-expressions/</guid>
+      <guid>/docs/dev/python/more/regular-expressions/</guid>
       <description>
         
         
@@ -5106,10 +5106,10 @@ Regular Expressions
     
     <item>
       <title>Set key, value using subscript operator `[]`</title>
-      <link>//localhost:1313/docs/dev/python/more/dictionaries/</link>
+      <link>/docs/dev/python/more/dictionaries/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/dictionaries/</guid>
+      <guid>/docs/dev/python/more/dictionaries/</guid>
       <description>
         
         
@@ -5475,10 +5475,10 @@ Python Dictionaries
     
     <item>
       <title>The file Reading/Writing process</title>
-      <link>//localhost:1313/docs/dev/python/more/reading-and-writing-files/</link>
+      <link>/docs/dev/python/more/reading-and-writing-files/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/reading-and-writing-files/</guid>
+      <guid>/docs/dev/python/more/reading-and-writing-files/</guid>
       <description>
         
         
@@ -5574,10 +5574,10 @@ statement, which will close the file for you after you are done, managing the av
     
     <item>
       <title>The with statement</title>
-      <link>//localhost:1313/docs/dev/python/more/context-manager/</link>
+      <link>/docs/dev/python/more/context-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/context-manager/</guid>
+      <guid>/docs/dev/python/more/context-manager/</guid>
       <description>
         
         
@@ -5665,10 +5665,10 @@ Python Context Manager
     
     <item>
       <title>virtualenv</title>
-      <link>//localhost:1313/docs/dev/python/more/virtual-environments/</link>
+      <link>/docs/dev/python/more/virtual-environments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/virtual-environments/</guid>
+      <guid>/docs/dev/python/more/virtual-environments/</guid>
       <description>
         
         
@@ -5863,10 +5863,10 @@ pipenv install &amp;lt;package&amp;gt;
     
     <item>
       <title>What is it</title>
-      <link>//localhost:1313/docs/dev/python/more/main/</link>
+      <link>/docs/dev/python/more/main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/main/</guid>
+      <guid>/docs/dev/python/more/main/</guid>
       <description>
         
         

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Miscellaneous</title>
-    <link>//localhost:1313/docs/misc/</link>
+    <link>/docs/misc/</link>
     <description>Recent content in Miscellaneous on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/docs/misc/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/misc/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>256 Color Codes Cheat-Sheet</title>
-      <link>//localhost:1313/docs/misc/color-codes/</link>
+      <link>/docs/misc/color-codes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/misc/color-codes/</guid>
+      <guid>/docs/misc/color-codes/</guid>
       <description>
         
         
@@ -1835,10 +1835,10 @@
     
     <item>
       <title>Go Hugo Template</title>
-      <link>//localhost:1313/docs/misc/gohugo/</link>
+      <link>/docs/misc/gohugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/misc/gohugo/</guid>
+      <guid>/docs/misc/gohugo/</guid>
       <description>
         
         
@@ -2253,10 +2253,10 @@ For more options, check out &lt;a href=&#34;../guide/deploy-site&#34;&gt;Deploy 
     
     <item>
       <title>Markdown</title>
-      <link>//localhost:1313/docs/misc/markdown/</link>
+      <link>/docs/misc/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/misc/markdown/</guid>
+      <guid>/docs/misc/markdown/</guid>
       <description>
         
         
@@ -2579,10 +2579,10 @@ versions of the examples.&lt;/p&gt;
     
     <item>
       <title>Mermaid</title>
-      <link>//localhost:1313/docs/misc/mermaid/</link>
+      <link>/docs/misc/mermaid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/misc/mermaid/</guid>
+      <guid>/docs/misc/mermaid/</guid>
       <description>
         
         
@@ -2599,10 +2599,10 @@ versions of the examples.&lt;/p&gt;
     
     <item>
       <title>MKDocs</title>
-      <link>//localhost:1313/docs/misc/mkdocs/</link>
+      <link>/docs/misc/mkdocs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/misc/mkdocs/</guid>
+      <guid>/docs/misc/mkdocs/</guid>
       <description>
         
         
@@ -2676,10 +2676,10 @@ version. This will also be mentioned in the upgrade guide.&amp;#160;&lt;a href=&
     
     <item>
       <title>Obsidian</title>
-      <link>//localhost:1313/docs/misc/obsidian/</link>
+      <link>/docs/misc/obsidian/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/misc/obsidian/</guid>
+      <guid>/docs/misc/obsidian/</guid>
       <description>
         
         

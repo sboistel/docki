@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Dev</title>
-    <link>//localhost:1313/docs/dev/</link>
+    <link>/docs/dev/</link>
     <description>Recent content in Dev on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/docs/dev/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/dev/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Docker</title>
-      <link>//localhost:1313/docs/dev/docker/</link>
+      <link>/docs/dev/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/docker/</guid>
+      <guid>/docs/dev/docker/</guid>
       <description>
         
         
@@ -515,10 +515,10 @@ Dotcloud plus connu sous le nom de Docker sera de moins en moins utilisé car ta
     
     <item>
       <title>Elasticsearch / Logstash / Kibana</title>
-      <link>//localhost:1313/docs/dev/elk/</link>
+      <link>/docs/dev/elk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/elk/</guid>
+      <guid>/docs/dev/elk/</guid>
       <description>
         
         
@@ -559,10 +559,10 @@ ssh -L 127.0.0.1:9200:local_ip:9200 user@ip # elasticsearch&lt;/p&gt;
     
     <item>
       <title>Git</title>
-      <link>//localhost:1313/docs/dev/git/</link>
+      <link>/docs/dev/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/git/</guid>
+      <guid>/docs/dev/git/</guid>
       <description>
         
         
@@ -923,10 +923,10 @@ a &lt;code&gt;git-flow&lt;/code&gt; command as regular &lt;code&gt;git&lt;/code&
     
     <item>
       <title>HashiCorp</title>
-      <link>//localhost:1313/docs/dev/hashicorp/</link>
+      <link>/docs/dev/hashicorp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/</guid>
+      <guid>/docs/dev/hashicorp/</guid>
       <description>
         
         
@@ -938,10 +938,10 @@ a &lt;code&gt;git-flow&lt;/code&gt; command as regular &lt;code&gt;git&lt;/code&
     
     <item>
       <title>Kubernetes</title>
-      <link>//localhost:1313/docs/dev/kubernetes/</link>
+      <link>/docs/dev/kubernetes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/kubernetes/</guid>
+      <guid>/docs/dev/kubernetes/</guid>
       <description>
         
         
@@ -1063,10 +1063,10 @@ Il s&amp;rsquo;agit d&amp;rsquo;un ensemble de conteneurs se partageant les ress
     
     <item>
       <title>Multipass</title>
-      <link>//localhost:1313/docs/dev/multipass/</link>
+      <link>/docs/dev/multipass/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/multipass/</guid>
+      <guid>/docs/dev/multipass/</guid>
       <description>
         
         
@@ -1327,10 +1327,10 @@ Il s&amp;rsquo;agit d&amp;rsquo;un ensemble de conteneurs se partageant les ress
     
     <item>
       <title>Perl</title>
-      <link>//localhost:1313/docs/dev/perl/</link>
+      <link>/docs/dev/perl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/perl/</guid>
+      <guid>/docs/dev/perl/</guid>
       <description>
         
         
@@ -1605,10 +1605,10 @@ Noté &lt;code&gt;STDIN&lt;/code&gt;, il sert à poser une question à l&amp;rsq
     
     <item>
       <title>Python</title>
-      <link>//localhost:1313/docs/dev/python/</link>
+      <link>/docs/dev/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/</guid>
+      <guid>/docs/dev/python/</guid>
       <description>
         
         
@@ -1860,10 +1860,10 @@ Noté &lt;code&gt;STDIN&lt;/code&gt;, il sert à poser une question à l&amp;rsq
     
     <item>
       <title>Red Hat</title>
-      <link>//localhost:1313/docs/dev/redhat/</link>
+      <link>/docs/dev/redhat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/redhat/</guid>
+      <guid>/docs/dev/redhat/</guid>
       <description>
         
         

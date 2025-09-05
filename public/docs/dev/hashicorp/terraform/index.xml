@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Terraform</title>
-    <link>//localhost:1313/docs/dev/hashicorp/terraform/</link>
+    <link>/docs/dev/hashicorp/terraform/</link>
     <description>Recent content in Terraform on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/docs/dev/hashicorp/terraform/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/dev/hashicorp/terraform/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Graph</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/graph/</link>
+      <link>/docs/dev/hashicorp/terraform/graph/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/graph/</guid>
+      <guid>/docs/dev/hashicorp/terraform/graph/</guid>
       <description>
         
         
@@ -64,10 +64,10 @@
     
     <item>
       <title>Modules</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/modules/</link>
+      <link>/docs/dev/hashicorp/terraform/modules/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/modules/</guid>
+      <guid>/docs/dev/hashicorp/terraform/modules/</guid>
       <description>
         
         
@@ -177,10 +177,10 @@
     
     <item>
       <title>Providers</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/providers/</link>
+      <link>/docs/dev/hashicorp/terraform/providers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/providers/</guid>
+      <guid>/docs/dev/hashicorp/terraform/providers/</guid>
       <description>
         
         
@@ -241,10 +241,10 @@
     
     <item>
       <title>Remote Exec</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/remote-exec/</link>
+      <link>/docs/dev/hashicorp/terraform/remote-exec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/remote-exec/</guid>
+      <guid>/docs/dev/hashicorp/terraform/remote-exec/</guid>
       <description>
         
         
@@ -320,10 +320,10 @@
     
     <item>
       <title>Setup</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/setup/</link>
+      <link>/docs/dev/hashicorp/terraform/setup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/setup/</guid>
+      <guid>/docs/dev/hashicorp/terraform/setup/</guid>
       <description>
         
         
@@ -373,10 +373,10 @@
     
     <item>
       <title>Syntaxe</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/syntax/</link>
+      <link>/docs/dev/hashicorp/terraform/syntax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/syntax/</guid>
+      <guid>/docs/dev/hashicorp/terraform/syntax/</guid>
       <description>
         
         
@@ -415,10 +415,10 @@
     
     <item>
       <title>tfstate</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/tfstate/</link>
+      <link>/docs/dev/hashicorp/terraform/tfstate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/tfstate/</guid>
+      <guid>/docs/dev/hashicorp/terraform/tfstate/</guid>
       <description>
         
         
@@ -443,10 +443,10 @@
     
     <item>
       <title>Variable level(s)</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/vars/</link>
+      <link>/docs/dev/hashicorp/terraform/vars/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/vars/</guid>
+      <guid>/docs/dev/hashicorp/terraform/vars/</guid>
       <description>
         
         

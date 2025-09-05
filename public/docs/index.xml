@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Welcome</title>
-    <link>//localhost:1313/docs/</link>
+    <link>/docs/</link>
     <description>Recent content in Welcome on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>% operator</title>
-      <link>//localhost:1313/docs/dev/python/more/string-formatting/</link>
+      <link>/docs/dev/python/more/string-formatting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/string-formatting/</guid>
+      <guid>/docs/dev/python/more/string-formatting/</guid>
       <description>
         
         
@@ -338,10 +338,10 @@ Python String Formatting
     
     <item>
       <title>256 Color Codes Cheat-Sheet</title>
-      <link>//localhost:1313/docs/misc/color-codes/</link>
+      <link>/docs/misc/color-codes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/misc/color-codes/</guid>
+      <guid>/docs/misc/color-codes/</guid>
       <description>
         
         
@@ -2157,10 +2157,10 @@ Python String Formatting
     
     <item>
       <title>Account</title>
-      <link>//localhost:1313/docs/linux/account/</link>
+      <link>/docs/linux/account/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/account/</guid>
+      <guid>/docs/linux/account/</guid>
       <description>
         
         
@@ -2327,10 +2327,10 @@ Python String Formatting
     
     <item>
       <title>Amazon Web Services</title>
-      <link>//localhost:1313/docs/cloud/aws/</link>
+      <link>/docs/cloud/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/cloud/aws/</guid>
+      <guid>/docs/cloud/aws/</guid>
       <description>
         
         
@@ -2389,10 +2389,10 @@ Python String Formatting
     
     <item>
       <title>Ansible Engine</title>
-      <link>//localhost:1313/docs/dev/hashicorp/ansible/</link>
+      <link>/docs/dev/hashicorp/ansible/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/ansible/</guid>
+      <guid>/docs/dev/hashicorp/ansible/</guid>
       <description>
         
         
@@ -2600,10 +2600,10 @@ The &lt;code&gt;CertificateThumbprint&lt;/code&gt; option under the WinRM servic
     
     <item>
       <title>Args and Kwargs</title>
-      <link>//localhost:1313/docs/dev/python/more/args-and-kwargs/</link>
+      <link>/docs/dev/python/more/args-and-kwargs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/args-and-kwargs/</guid>
+      <guid>/docs/dev/python/more/args-and-kwargs/</guid>
       <description>
         
         
@@ -2697,10 +2697,10 @@ Python Args and Kwargs
     
     <item>
       <title>AWX</title>
-      <link>//localhost:1313/docs/dev/redhat/awx/</link>
+      <link>/docs/dev/redhat/awx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/redhat/awx/</guid>
+      <guid>/docs/dev/redhat/awx/</guid>
       <description>
         
         
@@ -2844,10 +2844,10 @@ secret_key=CkuLOxvgiCzpeLrBLW5UZFkkEiG7NR&lt;/p&gt;
     
     <item>
       <title>Bareos</title>
-      <link>//localhost:1313/docs/storage/bareos/</link>
+      <link>/docs/storage/bareos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/storage/bareos/</guid>
+      <guid>/docs/storage/bareos/</guid>
       <description>
         
         
@@ -3024,10 +3024,10 @@ secret_key=CkuLOxvgiCzpeLrBLW5UZFkkEiG7NR&lt;/p&gt;
     
     <item>
       <title>Basic exception handling</title>
-      <link>//localhost:1313/docs/dev/python/more/exception-handling/</link>
+      <link>/docs/dev/python/more/exception-handling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/exception-handling/</guid>
+      <guid>/docs/dev/python/more/exception-handling/</guid>
       <description>
         
         
@@ -3174,10 +3174,10 @@ Python Exception Handling
     
     <item>
       <title>bpytop</title>
-      <link>//localhost:1313/docs/linux/bpytop/</link>
+      <link>/docs/linux/bpytop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/bpytop/</guid>
+      <guid>/docs/linux/bpytop/</guid>
       <description>
         
         
@@ -3202,10 +3202,10 @@ Python Exception Handling
     
     <item>
       <title>Centreon Central</title>
-      <link>//localhost:1313/docs/monitoring/centreon/</link>
+      <link>/docs/monitoring/centreon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/monitoring/centreon/</guid>
+      <guid>/docs/monitoring/centreon/</guid>
       <description>
         
         
@@ -3303,10 +3303,10 @@ On va utiliser le mode &lt;strong&gt;list-storages&lt;/strong&gt; :&lt;/p&gt;
     
     <item>
       <title>Cert-Manager</title>
-      <link>//localhost:1313/docs/app/certmanager/</link>
+      <link>/docs/app/certmanager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/app/certmanager/</guid>
+      <guid>/docs/app/certmanager/</guid>
       <description>
         
         
@@ -3434,10 +3434,10 @@ The error, &lt;code&gt;Failed to determine a valid solver configuration for the 
     
     <item>
       <title>Certificate Generator</title>
-      <link>//localhost:1313/docs/app/mkcert/</link>
+      <link>/docs/app/mkcert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/app/mkcert/</guid>
+      <guid>/docs/app/mkcert/</guid>
       <description>
         
         
@@ -3611,10 +3611,10 @@ The error, &lt;code&gt;Failed to determine a valid solver configuration for the 
     
     <item>
       <title>CheatSheet</title>
-      <link>//localhost:1313/docs/mac/cheatsheet/</link>
+      <link>/docs/mac/cheatsheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/cheatsheet/</guid>
+      <guid>/docs/mac/cheatsheet/</guid>
       <description>
         
         
@@ -3631,10 +3631,10 @@ The error, &lt;code&gt;Failed to determine a valid solver configuration for the 
     
     <item>
       <title>Clipboard Manager</title>
-      <link>//localhost:1313/docs/mac/clipboard-manager/</link>
+      <link>/docs/mac/clipboard-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/clipboard-manager/</guid>
+      <guid>/docs/mac/clipboard-manager/</guid>
       <description>
         
         
@@ -3719,10 +3719,10 @@ The error, &lt;code&gt;Failed to determine a valid solver configuration for the 
     
     <item>
       <title>Clock</title>
-      <link>//localhost:1313/docs/linux/time/</link>
+      <link>/docs/linux/time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/time/</guid>
+      <guid>/docs/linux/time/</guid>
       <description>
         
         
@@ -3760,10 +3760,10 @@ The error, &lt;code&gt;Failed to determine a valid solver configuration for the 
     
     <item>
       <title>Cloudera</title>
-      <link>//localhost:1313/docs/storage/cloudera/</link>
+      <link>/docs/storage/cloudera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/storage/cloudera/</guid>
+      <guid>/docs/storage/cloudera/</guid>
       <description>
         
         
@@ -3964,10 +3964,10 @@ The error, &lt;code&gt;Failed to determine a valid solver configuration for the 
     
     <item>
       <title>Comparators</title>
-      <link>//localhost:1313/docs/dev/python/comparators/</link>
+      <link>/docs/dev/python/comparators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/comparators/</guid>
+      <guid>/docs/dev/python/comparators/</guid>
       <description>
         
         
@@ -4372,10 +4372,10 @@ Keep inmind that any function must be &lt;strong&gt;defined&lt;/strong&gt; befor
     
     <item>
       <title>Comparison Operators</title>
-      <link>//localhost:1313/docs/dev/python/more/control-flow/</link>
+      <link>/docs/dev/python/more/control-flow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/control-flow/</guid>
+      <guid>/docs/dev/python/more/control-flow/</guid>
       <description>
         
         
@@ -5044,10 +5044,10 @@ useful when a &lt;code&gt;break&lt;/code&gt; condition can occur in the loop:&lt
     
     <item>
       <title>Cron</title>
-      <link>//localhost:1313/docs/linux/cron/</link>
+      <link>/docs/linux/cron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/cron/</guid>
+      <guid>/docs/linux/cron/</guid>
       <description>
         
         
@@ -5192,10 +5192,10 @@ useful when a &lt;code&gt;break&lt;/code&gt; condition can occur in the loop:&lt
     
     <item>
       <title>Desktop Environment</title>
-      <link>//localhost:1313/docs/linux/desktop/</link>
+      <link>/docs/linux/desktop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/desktop/</guid>
+      <guid>/docs/linux/desktop/</guid>
       <description>
         
         
@@ -5263,10 +5263,10 @@ Fill in the required information:&lt;/p&gt;
     
     <item>
       <title>Dictionaries</title>
-      <link>//localhost:1313/docs/dev/python/dict/</link>
+      <link>/docs/dev/python/dict/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/dict/</guid>
+      <guid>/docs/dev/python/dict/</guid>
       <description>
         
         
@@ -5638,10 +5638,10 @@ Fill in the required information:&lt;/p&gt;
     
     <item>
       <title>Dock</title>
-      <link>//localhost:1313/docs/mac/dock/</link>
+      <link>/docs/mac/dock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/dock/</guid>
+      <guid>/docs/mac/dock/</guid>
       <description>
         
         
@@ -5736,10 +5736,10 @@ Fill in the required information:&lt;/p&gt;
     
     <item>
       <title>Docker</title>
-      <link>//localhost:1313/docs/dev/docker/</link>
+      <link>/docs/dev/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/docker/</guid>
+      <guid>/docs/dev/docker/</guid>
       <description>
         
         
@@ -6235,10 +6235,10 @@ Dotcloud plus connu sous le nom de Docker sera de moins en moins utilisé car ta
     
     <item>
       <title>Elasticsearch</title>
-      <link>//localhost:1313/docs/dev/elk/elasticsearch/</link>
+      <link>/docs/dev/elk/elasticsearch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/elk/elasticsearch/</guid>
+      <guid>/docs/dev/elk/elasticsearch/</guid>
       <description>
         
         
@@ -6256,10 +6256,10 @@ Dotcloud plus connu sous le nom de Docker sera de moins en moins utilisé car ta
     
     <item>
       <title>Emergency</title>
-      <link>//localhost:1313/docs/linux/root-rescue/</link>
+      <link>/docs/linux/root-rescue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/root-rescue/</guid>
+      <guid>/docs/linux/root-rescue/</guid>
       <description>
         
         
@@ -6347,10 +6347,10 @@ Dotcloud plus connu sous le nom de Docker sera de moins en moins utilisé car ta
     
     <item>
       <title>Encapsulation</title>
-      <link>//localhost:1313/docs/dev/python/more/oop-basics/</link>
+      <link>/docs/dev/python/more/oop-basics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/oop-basics/</guid>
+      <guid>/docs/dev/python/more/oop-basics/</guid>
       <description>
         
         
@@ -6550,10 +6550,10 @@ detailed examples and explanations will be coming soon.&lt;/p&gt;
     
     <item>
       <title>Escape characters</title>
-      <link>//localhost:1313/docs/dev/python/more/manipulating-strings/</link>
+      <link>/docs/dev/python/more/manipulating-strings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/manipulating-strings/</guid>
+      <guid>/docs/dev/python/more/manipulating-strings/</guid>
       <description>
         
         
@@ -6944,10 +6944,10 @@ Manipulating Strings
     
     <item>
       <title>Exit codes</title>
-      <link>//localhost:1313/docs/linux/exit-codes/</link>
+      <link>/docs/linux/exit-codes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/exit-codes/</guid>
+      <guid>/docs/linux/exit-codes/</guid>
       <description>
         
         
@@ -6994,10 +6994,10 @@ Manipulating Strings
     
     <item>
       <title>Features</title>
-      <link>//localhost:1313/docs/dev/python/more/dataclasses/</link>
+      <link>/docs/dev/python/more/dataclasses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/dataclasses/</guid>
+      <guid>/docs/dev/python/more/dataclasses/</guid>
       <description>
         
         
@@ -7105,10 +7105,10 @@ This module provides a decorator and functions for automatically adding generate
     
     <item>
       <title>FileBeat</title>
-      <link>//localhost:1313/docs/dev/elk/filebeat/</link>
+      <link>/docs/dev/elk/filebeat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/elk/filebeat/</guid>
+      <guid>/docs/dev/elk/filebeat/</guid>
       <description>
         
         
@@ -7145,10 +7145,10 @@ This module provides a decorator and functions for automatically adding generate
     
     <item>
       <title>Filesystem table AKA fstab</title>
-      <link>//localhost:1313/docs/linux/fstab/</link>
+      <link>/docs/linux/fstab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/fstab/</guid>
+      <guid>/docs/linux/fstab/</guid>
       <description>
         
         
@@ -7181,10 +7181,10 @@ Mount Point: designates the directory where the device is/will be mounted.&lt;/p
     
     <item>
       <title>Firewall</title>
-      <link>//localhost:1313/docs/linux/firewalld/</link>
+      <link>/docs/linux/firewalld/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/firewalld/</guid>
+      <guid>/docs/linux/firewalld/</guid>
       <description>
         
         
@@ -7337,10 +7337,10 @@ Mount Point: designates the directory where the device is/will be mounted.&lt;/p
     
     <item>
       <title>Free IPA</title>
-      <link>//localhost:1313/docs/app/freeipa/</link>
+      <link>/docs/app/freeipa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/app/freeipa/</guid>
+      <guid>/docs/app/freeipa/</guid>
       <description>
         
         
@@ -7425,10 +7425,10 @@ ipa-server-install &amp;ndash;setup-dns&lt;/p&gt;
     
     <item>
       <title>Function Arguments</title>
-      <link>//localhost:1313/docs/dev/python/more/functions/</link>
+      <link>/docs/dev/python/more/functions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/functions/</guid>
+      <guid>/docs/dev/python/more/functions/</guid>
       <description>
         
         
@@ -7663,10 +7663,10 @@ Python Functions
     
     <item>
       <title>Getops</title>
-      <link>//localhost:1313/docs/linux/getops/</link>
+      <link>/docs/linux/getops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/getops/</guid>
+      <guid>/docs/linux/getops/</guid>
       <description>
         
         
@@ -7730,10 +7730,10 @@ Python Functions
     
     <item>
       <title>Getting values with indexes</title>
-      <link>//localhost:1313/docs/dev/python/more/lists-and-tuples/</link>
+      <link>/docs/dev/python/more/lists-and-tuples/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/lists-and-tuples/</guid>
+      <guid>/docs/dev/python/more/lists-and-tuples/</guid>
       <description>
         
         
@@ -8250,10 +8250,10 @@ Python Lists
     
     <item>
       <title>Git</title>
-      <link>//localhost:1313/docs/dev/git/</link>
+      <link>/docs/dev/git/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/git/</guid>
+      <guid>/docs/dev/git/</guid>
       <description>
         
         
@@ -8614,10 +8614,10 @@ a &lt;code&gt;git-flow&lt;/code&gt; command as regular &lt;code&gt;git&lt;/code&
     
     <item>
       <title>Go Hugo Template</title>
-      <link>//localhost:1313/docs/misc/gohugo/</link>
+      <link>/docs/misc/gohugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/misc/gohugo/</guid>
+      <guid>/docs/misc/gohugo/</guid>
       <description>
         
         
@@ -9032,10 +9032,10 @@ For more options, check out &lt;a href=&#34;../guide/deploy-site&#34;&gt;Deploy 
     
     <item>
       <title>Google Cloud Platforme</title>
-      <link>//localhost:1313/docs/cloud/cgp/</link>
+      <link>/docs/cloud/cgp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/cloud/cgp/</guid>
+      <guid>/docs/cloud/cgp/</guid>
       <description>
         
         
@@ -9047,10 +9047,10 @@ For more options, check out &lt;a href=&#34;../guide/deploy-site&#34;&gt;Deploy 
     
     <item>
       <title>Graph</title>
-      <link>//localhost:1313/docs/dev/hashicorp/terraform/graph/</link>
+      <link>/docs/dev/hashicorp/terraform/graph/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/hashicorp/terraform/graph/</guid>
+      <guid>/docs/dev/hashicorp/terraform/graph/</guid>
       <description>
         
         
@@ -9095,10 +9095,10 @@ For more options, check out &lt;a href=&#34;../guide/deploy-site&#34;&gt;Deploy 
     
     <item>
       <title>Guacamole</title>
-      <link>//localhost:1313/docs/app/guacamole/</link>
+      <link>/docs/app/guacamole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/app/guacamole/</guid>
+      <guid>/docs/app/guacamole/</guid>
       <description>
         
         
@@ -9323,10 +9323,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>GWAK</title>
-      <link>//localhost:1313/docs/linux/gawk/</link>
+      <link>/docs/linux/gawk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/linux/gawk/</guid>
+      <guid>/docs/linux/gawk/</guid>
       <description>
         
         
@@ -9494,10 +9494,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>Hadoop</title>
-      <link>//localhost:1313/docs/storage/hadoop/</link>
+      <link>/docs/storage/hadoop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/storage/hadoop/</guid>
+      <guid>/docs/storage/hadoop/</guid>
       <description>
         
         
@@ -9534,10 +9534,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>HomeAssistant</title>
-      <link>//localhost:1313/docs/app/homeassistant/</link>
+      <link>/docs/app/homeassistant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/app/homeassistant/</guid>
+      <guid>/docs/app/homeassistant/</guid>
       <description>
         
         
@@ -9675,10 +9675,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>HTTP Status Codes</title>
-      <link>//localhost:1313/docs/app/http-status/</link>
+      <link>/docs/app/http-status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/app/http-status/</guid>
+      <guid>/docs/app/http-status/</guid>
       <description>
         
         
@@ -10028,10 +10028,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>IBM DB2</title>
-      <link>//localhost:1313/docs/storage/db2/</link>
+      <link>/docs/storage/db2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/storage/db2/</guid>
+      <guid>/docs/storage/db2/</guid>
       <description>
         
         
@@ -10113,10 +10113,10 @@ list node directory&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextr
     
     <item>
       <title>Initializing a set</title>
-      <link>//localhost:1313/docs/dev/python/more/sets/</link>
+      <link>/docs/dev/python/more/sets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/sets/</guid>
+      <guid>/docs/dev/python/more/sets/</guid>
       <description>
         
         
@@ -10330,10 +10330,10 @@ Python Sets
     
     <item>
       <title>Introduction</title>
-      <link>//localhost:1313/docs/dev/python/more/setup-py/</link>
+      <link>/docs/dev/python/more/setup-py/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/python/more/setup-py/</guid>
+      <guid>/docs/dev/python/more/setup-py/</guid>
       <description>
         
         
@@ -10404,10 +10404,10 @@ Python setup.py
     
     <item>
       <title>IPAM - Netbox</title>
-      <link>//localhost:1313/docs/app/netbox/</link>
+      <link>/docs/app/netbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/app/netbox/</guid>
+      <guid>/docs/app/netbox/</guid>
       <description>
         
         

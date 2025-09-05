@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Shortcuts</title>
-    <link>//localhost:1313/tags/shortcuts/</link>
+    <link>/tags/shortcuts/</link>
     <description>Recent content in Shortcuts on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>MacOS keyboard shortcuts</title>
-      <link>//localhost:1313/docs/mac/shurtcuts/</link>
+      <link>/docs/mac/shurtcuts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/mac/shurtcuts/</guid>
+      <guid>/docs/mac/shurtcuts/</guid>
       <description>
         
         

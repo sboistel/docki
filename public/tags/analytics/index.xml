@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Analytics</title>
-    <link>//localhost:1313/tags/analytics/</link>
+    <link>/tags/analytics/</link>
     <description>Recent content in Analytics on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="//localhost:1313/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Cloudera</title>
-      <link>//localhost:1313/docs/storage/cloudera/</link>
+      <link>/docs/storage/cloudera/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/storage/cloudera/</guid>
+      <guid>/docs/storage/cloudera/</guid>
       <description>
         
         
@@ -220,10 +220,10 @@
     
     <item>
       <title>Elasticsearch</title>
-      <link>//localhost:1313/docs/dev/elk/elasticsearch/</link>
+      <link>/docs/dev/elk/elasticsearch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//localhost:1313/docs/dev/elk/elasticsearch/</guid>
+      <guid>/docs/dev/elk/elasticsearch/</guid>
       <description>
         
         
