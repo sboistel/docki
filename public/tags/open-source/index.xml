@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Open-Source</title>
-    <link>/tags/open-source/</link>
+    <link>//localhost:1313/tags/open-source/</link>
     <description>Recent content in Open-Source on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>MariaDB</title>
-      <link>/docs/storage/mariadb/</link>
+      <link>//localhost:1313/docs/storage/mariadb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/storage/mariadb/</guid>
+      <guid>//localhost:1313/docs/storage/mariadb/</guid>
       <description>
         
         
@@ -108,10 +108,10 @@ bind-address = 0.0.0.0
     
     <item>
       <title>MySQL</title>
-      <link>/docs/storage/mysql/</link>
+      <link>//localhost:1313/docs/storage/mysql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/storage/mysql/</guid>
+      <guid>//localhost:1313/docs/storage/mysql/</guid>
       <description>
         
         

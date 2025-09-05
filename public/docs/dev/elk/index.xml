@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Elasticsearch / Logstash / Kibana</title>
-    <link>/docs/dev/elk/</link>
+    <link>//localhost:1313/docs/dev/elk/</link>
     <description>Recent content in Elasticsearch / Logstash / Kibana on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/docs/dev/elk/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/docs/dev/elk/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Elasticsearch</title>
-      <link>/docs/dev/elk/elasticsearch/</link>
+      <link>//localhost:1313/docs/dev/elk/elasticsearch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/elk/elasticsearch/</guid>
+      <guid>//localhost:1313/docs/dev/elk/elasticsearch/</guid>
       <description>
         
         
@@ -37,10 +37,10 @@
     
     <item>
       <title>FileBeat</title>
-      <link>/docs/dev/elk/filebeat/</link>
+      <link>//localhost:1313/docs/dev/elk/filebeat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/elk/filebeat/</guid>
+      <guid>//localhost:1313/docs/dev/elk/filebeat/</guid>
       <description>
         
         
@@ -77,10 +77,10 @@
     
     <item>
       <title>Kibana</title>
-      <link>/docs/dev/elk/kibana/</link>
+      <link>//localhost:1313/docs/dev/elk/kibana/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/elk/kibana/</guid>
+      <guid>//localhost:1313/docs/dev/elk/kibana/</guid>
       <description>
         
         
@@ -94,10 +94,10 @@ It provides a user-friendly interface for exploring and interacting with data, m
     
     <item>
       <title>Logstash</title>
-      <link>/docs/dev/elk/logstash/</link>
+      <link>//localhost:1313/docs/dev/elk/logstash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/elk/logstash/</guid>
+      <guid>//localhost:1313/docs/dev/elk/logstash/</guid>
       <description>
         
         
@@ -109,10 +109,10 @@ It provides a user-friendly interface for exploring and interacting with data, m
     
     <item>
       <title>MetricBeat</title>
-      <link>/docs/dev/elk/metricbeat/</link>
+      <link>//localhost:1313/docs/dev/elk/metricbeat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/elk/metricbeat/</guid>
+      <guid>//localhost:1313/docs/dev/elk/metricbeat/</guid>
       <description>
         
         
@@ -148,10 +148,10 @@ It provides a user-friendly interface for exploring and interacting with data, m
     
     <item>
       <title>X-PACK</title>
-      <link>/docs/dev/elk/xpack/</link>
+      <link>//localhost:1313/docs/dev/elk/xpack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/elk/xpack/</guid>
+      <guid>//localhost:1313/docs/dev/elk/xpack/</guid>
       <description>
         
         

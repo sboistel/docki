@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Enterprise</title>
-    <link>/tags/enterprise/</link>
+    <link>//localhost:1313/tags/enterprise/</link>
     <description>Recent content in Enterprise on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/tags/enterprise/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/tags/enterprise/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Red Hat</title>
-      <link>/docs/dev/redhat/</link>
+      <link>//localhost:1313/docs/dev/redhat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/redhat/</guid>
+      <guid>//localhost:1313/docs/dev/redhat/</guid>
       <description>
         
         

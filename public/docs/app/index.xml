@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Networking</title>
-    <link>/docs/app/</link>
+    <link>//localhost:1313/docs/app/</link>
     <description>Recent content in Networking on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/docs/app/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/docs/app/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Cert-Manager</title>
-      <link>/docs/app/certmanager/</link>
+      <link>//localhost:1313/docs/app/certmanager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/certmanager/</guid>
+      <guid>//localhost:1313/docs/app/certmanager/</guid>
       <description>
         
         
@@ -147,10 +147,10 @@ The error, &lt;code&gt;Failed to determine a valid solver configuration for the 
     
     <item>
       <title>Certificate Generator</title>
-      <link>/docs/app/mkcert/</link>
+      <link>//localhost:1313/docs/app/mkcert/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/mkcert/</guid>
+      <guid>//localhost:1313/docs/app/mkcert/</guid>
       <description>
         
         
@@ -324,10 +324,10 @@ The error, &lt;code&gt;Failed to determine a valid solver configuration for the 
     
     <item>
       <title>Free IPA</title>
-      <link>/docs/app/freeipa/</link>
+      <link>//localhost:1313/docs/app/freeipa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/freeipa/</guid>
+      <guid>//localhost:1313/docs/app/freeipa/</guid>
       <description>
         
         
@@ -412,10 +412,10 @@ ipa-server-install &amp;ndash;setup-dns&lt;/p&gt;
     
     <item>
       <title>Guacamole</title>
-      <link>/docs/app/guacamole/</link>
+      <link>//localhost:1313/docs/app/guacamole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/guacamole/</guid>
+      <guid>//localhost:1313/docs/app/guacamole/</guid>
       <description>
         
         
@@ -640,10 +640,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>HomeAssistant</title>
-      <link>/docs/app/homeassistant/</link>
+      <link>//localhost:1313/docs/app/homeassistant/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/homeassistant/</guid>
+      <guid>//localhost:1313/docs/app/homeassistant/</guid>
       <description>
         
         
@@ -781,10 +781,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>HTTP Status Codes</title>
-      <link>/docs/app/http-status/</link>
+      <link>//localhost:1313/docs/app/http-status/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/http-status/</guid>
+      <guid>//localhost:1313/docs/app/http-status/</guid>
       <description>
         
         
@@ -1134,10 +1134,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>IPAM - Netbox</title>
-      <link>/docs/app/netbox/</link>
+      <link>//localhost:1313/docs/app/netbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/netbox/</guid>
+      <guid>//localhost:1313/docs/app/netbox/</guid>
       <description>
         
         
@@ -1162,10 +1162,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>Newtork performances</title>
-      <link>/docs/app/performance/</link>
+      <link>//localhost:1313/docs/app/performance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/performance/</guid>
+      <guid>//localhost:1313/docs/app/performance/</guid>
       <description>
         
         
@@ -1201,10 +1201,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>ngrok</title>
-      <link>/docs/app/ngrok/</link>
+      <link>//localhost:1313/docs/app/ngrok/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/ngrok/</guid>
+      <guid>//localhost:1313/docs/app/ngrok/</guid>
       <description>
         
         
@@ -1250,10 +1250,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>OpenVPN</title>
-      <link>/docs/app/openvpn/</link>
+      <link>//localhost:1313/docs/app/openvpn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/openvpn/</guid>
+      <guid>//localhost:1313/docs/app/openvpn/</guid>
       <description>
         
         
@@ -1289,10 +1289,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>Pi-Hole</title>
-      <link>/docs/app/pi-hole/</link>
+      <link>//localhost:1313/docs/app/pi-hole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/pi-hole/</guid>
+      <guid>//localhost:1313/docs/app/pi-hole/</guid>
       <description>
         
         
@@ -1345,10 +1345,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>Red Hat Identity Management (IdM)</title>
-      <link>/docs/app/rhel_idm/</link>
+      <link>//localhost:1313/docs/app/rhel_idm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/rhel_idm/</guid>
+      <guid>//localhost:1313/docs/app/rhel_idm/</guid>
       <description>
         
         
@@ -1386,10 +1386,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>Rundeck</title>
-      <link>/docs/app/rundeck/</link>
+      <link>//localhost:1313/docs/app/rundeck/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/rundeck/</guid>
+      <guid>//localhost:1313/docs/app/rundeck/</guid>
       <description>
         
         
@@ -1557,10 +1557,10 @@ Thanks to HTML5, once Guacamole is installed on a server, &lt;strong&gt;all you 
     
     <item>
       <title>sshs</title>
-      <link>/docs/app/sshs/</link>
+      <link>//localhost:1313/docs/app/sshs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/sshs/</guid>
+      <guid>//localhost:1313/docs/app/sshs/</guid>
       <description>
         
         
@@ -1630,10 +1630,10 @@ It uses &lt;code&gt;~/.ssh/config&lt;/code&gt; to list and connect to hosts.&lt;
     
     <item>
       <title>SSL Certificates</title>
-      <link>/docs/app/ssl/</link>
+      <link>//localhost:1313/docs/app/ssl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/ssl/</guid>
+      <guid>//localhost:1313/docs/app/ssl/</guid>
       <description>
         
         
@@ -1860,10 +1860,10 @@ It uses &lt;code&gt;~/.ssh/config&lt;/code&gt; to list and connect to hosts.&lt;
     
     <item>
       <title>Sublime Text</title>
-      <link>/docs/app/sublime-text/</link>
+      <link>//localhost:1313/docs/app/sublime-text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/sublime-text/</guid>
+      <guid>//localhost:1313/docs/app/sublime-text/</guid>
       <description>
         
         
@@ -1889,10 +1889,10 @@ It uses &lt;code&gt;~/.ssh/config&lt;/code&gt; to list and connect to hosts.&lt;
     
     <item>
       <title>UI-path</title>
-      <link>/docs/app/ui-path/</link>
+      <link>//localhost:1313/docs/app/ui-path/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/ui-path/</guid>
+      <guid>//localhost:1313/docs/app/ui-path/</guid>
       <description>
         
         
@@ -1931,10 +1931,10 @@ It uses &lt;code&gt;~/.ssh/config&lt;/code&gt; to list and connect to hosts.&lt;
     
     <item>
       <title>VNC Tiger</title>
-      <link>/docs/app/vnc-tiger/</link>
+      <link>//localhost:1313/docs/app/vnc-tiger/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/vnc-tiger/</guid>
+      <guid>//localhost:1313/docs/app/vnc-tiger/</guid>
       <description>
         
         
@@ -2014,10 +2014,10 @@ It uses &lt;code&gt;~/.ssh/config&lt;/code&gt; to list and connect to hosts.&lt;
     
     <item>
       <title>VSCode</title>
-      <link>/docs/app/vscode/</link>
+      <link>//localhost:1313/docs/app/vscode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/vscode/</guid>
+      <guid>//localhost:1313/docs/app/vscode/</guid>
       <description>
         
         
@@ -2351,10 +2351,10 @@ It uses &lt;code&gt;~/.ssh/config&lt;/code&gt; to list and connect to hosts.&lt;
     
     <item>
       <title>Wiki JS</title>
-      <link>/docs/app/wikijs/</link>
+      <link>//localhost:1313/docs/app/wikijs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/app/wikijs/</guid>
+      <guid>//localhost:1313/docs/app/wikijs/</guid>
       <description>
         
         

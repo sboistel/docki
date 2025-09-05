@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Cloud Infrastructure</title>
-    <link>/docs/cloud/</link>
+    <link>//localhost:1313/docs/cloud/</link>
     <description>Recent content in Cloud Infrastructure on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/docs/cloud/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/docs/cloud/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Amazon Web Services</title>
-      <link>/docs/cloud/aws/</link>
+      <link>//localhost:1313/docs/cloud/aws/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cloud/aws/</guid>
+      <guid>//localhost:1313/docs/cloud/aws/</guid>
       <description>
         
         
@@ -78,10 +78,10 @@
     
     <item>
       <title>Google Cloud Platforme</title>
-      <link>/docs/cloud/cgp/</link>
+      <link>//localhost:1313/docs/cloud/cgp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cloud/cgp/</guid>
+      <guid>//localhost:1313/docs/cloud/cgp/</guid>
       <description>
         
         
@@ -93,10 +93,10 @@
     
     <item>
       <title>Microsoft Azure</title>
-      <link>/docs/cloud/azure/</link>
+      <link>//localhost:1313/docs/cloud/azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cloud/azure/</guid>
+      <guid>//localhost:1313/docs/cloud/azure/</guid>
       <description>
         
         
@@ -164,10 +164,10 @@
     
     <item>
       <title>Microsoft Azure Administrator</title>
-      <link>/docs/cloud/az-104/</link>
+      <link>//localhost:1313/docs/cloud/az-104/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cloud/az-104/</guid>
+      <guid>//localhost:1313/docs/cloud/az-104/</guid>
       <description>
         
         
@@ -761,10 +761,10 @@ To paste, right-click on a new line in the Cloud Shell terminal and select Paste
     
     <item>
       <title>Oracle Cloud Infrastructure</title>
-      <link>/docs/cloud/oci/</link>
+      <link>//localhost:1313/docs/cloud/oci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cloud/oci/</guid>
+      <guid>//localhost:1313/docs/cloud/oci/</guid>
       <description>
         
         
@@ -776,10 +776,10 @@ To paste, right-click on a new line in the Cloud Shell terminal and select Paste
     
     <item>
       <title>Proxmox Virtual Environment</title>
-      <link>/docs/cloud/pve/</link>
+      <link>//localhost:1313/docs/cloud/pve/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cloud/pve/</guid>
+      <guid>//localhost:1313/docs/cloud/pve/</guid>
       <description>
         
         
@@ -944,10 +944,10 @@ Change the status to &lt;code&gt;Active&lt;/code&gt; :&lt;/p&gt;
     
     <item>
       <title>QEMU-KVM</title>
-      <link>/docs/cloud/kvm/</link>
+      <link>//localhost:1313/docs/cloud/kvm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cloud/kvm/</guid>
+      <guid>//localhost:1313/docs/cloud/kvm/</guid>
       <description>
         
         
@@ -985,10 +985,10 @@ Change the status to &lt;code&gt;Active&lt;/code&gt; :&lt;/p&gt;
     
     <item>
       <title>VMware</title>
-      <link>/docs/cloud/vmware/</link>
+      <link>//localhost:1313/docs/cloud/vmware/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/cloud/vmware/</guid>
+      <guid>//localhost:1313/docs/cloud/vmware/</guid>
       <description>
         
         

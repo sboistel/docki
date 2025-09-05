@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Mysql</title>
-    <link>/tags/mysql/</link>
+    <link>//localhost:1313/tags/mysql/</link>
     <description>Recent content in Mysql on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>MySQL</title>
-      <link>/docs/storage/mysql/</link>
+      <link>//localhost:1313/docs/storage/mysql/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/storage/mysql/</guid>
+      <guid>//localhost:1313/docs/storage/mysql/</guid>
       <description>
         
         

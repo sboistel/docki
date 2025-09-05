@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Nagios</title>
-    <link>/tags/nagios/</link>
+    <link>//localhost:1313/tags/nagios/</link>
     <description>Recent content in Nagios on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/tags/nagios/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/tags/nagios/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Nagios</title>
-      <link>/docs/monitoring/nagios/</link>
+      <link>//localhost:1313/docs/monitoring/nagios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/monitoring/nagios/</guid>
+      <guid>//localhost:1313/docs/monitoring/nagios/</guid>
       <description>
         
         

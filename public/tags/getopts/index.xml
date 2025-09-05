@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Getopts</title>
-    <link>/tags/getopts/</link>
+    <link>//localhost:1313/tags/getopts/</link>
     <description>Recent content in Getopts on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/tags/getopts/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/tags/getopts/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Getops</title>
-      <link>/docs/linux/getops/</link>
+      <link>//localhost:1313/docs/linux/getops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/getops/</guid>
+      <guid>//localhost:1313/docs/linux/getops/</guid>
       <description>
         
         

@@ -2,560 +2,834 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/cv/</loc>
-    <lastmod>2025-08-25T00:00:00+00:00</lastmod>
+    <loc>//localhost:1313/cv/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/string-formatting/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/string-formatting/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/misc/color-codes/</loc>
+    <loc>//localhost:1313/docs/misc/color-codes/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/account/</loc>
+    <loc>//localhost:1313/docs/linux/account/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/account/</loc>
+    <loc>//localhost:1313/tags/account/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/aws/</loc>
+    <loc>//localhost:1313/docs/cloud/aws/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/analytics/</loc>
+    <loc>//localhost:1313/tags/analytics/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/ansible/</loc>
+    <loc>//localhost:1313/tags/ansible/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/ansible/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/ansible/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/args-and-kwargs/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/args-and-kwargs/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/automation/</loc>
+    <loc>//localhost:1313/tags/automation/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/awx/</loc>
+    <loc>//localhost:1313/tags/awx/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/redhat/awx/</loc>
+    <loc>//localhost:1313/docs/dev/redhat/awx/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/backup/</loc>
+    <loc>//localhost:1313/tags/backup/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/storage/bareos/</loc>
+    <loc>//localhost:1313/docs/storage/bareos/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/bareos/</loc>
+    <loc>//localhost:1313/tags/bareos/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/exception-handling/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/exception-handling/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/big-data/</loc>
+    <loc>//localhost:1313/tags/big-data/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/bpytop/</loc>
+    <loc>//localhost:1313/docs/linux/bpytop/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/bpytop/</loc>
+    <loc>//localhost:1313/tags/bpytop/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/tags/centreon/</loc>
+    <loc>//localhost:1313/tags/centreon/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/monitoring/centreon/</loc>
+    <loc>//localhost:1313/docs/monitoring/centreon/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/certmanager/</loc>
+    <loc>//localhost:1313/docs/app/certmanager/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/mkcert/</loc>
+    <loc>//localhost:1313/docs/app/mkcert/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/charts/</loc>
+    <loc>//localhost:1313/tags/charts/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/cheat-sheet/</loc>
+    <loc>//localhost:1313/tags/cheat-sheet/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/cheatsheet/</loc>
+    <loc>//localhost:1313/tags/cheatsheet/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/cheatsheet/</loc>
+    <loc>//localhost:1313/docs/mac/cheatsheet/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/clipboard/</loc>
+    <loc>//localhost:1313/tags/clipboard/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/clipboard-manager/</loc>
+    <loc>//localhost:1313/docs/mac/clipboard-manager/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/time/</loc>
+    <loc>//localhost:1313/docs/linux/time/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/</loc>
+    <loc>//localhost:1313/docs/cloud/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/storage/cloudera/</loc>
+    <loc>//localhost:1313/docs/storage/cloudera/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/cloudera/</loc>
+    <loc>//localhost:1313/tags/cloudera/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/collaboration/</loc>
+    <loc>//localhost:1313/tags/collaboration/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/comparators/</loc>
+    <loc>//localhost:1313/docs/dev/python/comparators/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/control-flow/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/control-flow/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/configuration/</loc>
+    <loc>//localhost:1313/tags/configuration/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/container/</loc>
+    <loc>//localhost:1313/tags/container/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/containers/</loc>
+    <loc>//localhost:1313/tags/containers/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/cron/</loc>
+    <loc>//localhost:1313/docs/linux/cron/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/cron/</loc>
+    <loc>//localhost:1313/tags/cron/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/data/</loc>
+    <loc>//localhost:1313/tags/data/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/data-processing/</loc>
+    <loc>//localhost:1313/tags/data-processing/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/data-visualization/</loc>
+    <loc>//localhost:1313/tags/data-visualization/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/storage/</loc>
+    <loc>//localhost:1313/docs/storage/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/database/</loc>
+    <loc>//localhost:1313/tags/database/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/db2/</loc>
+    <loc>//localhost:1313/tags/db2/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/desktop/</loc>
+    <loc>//localhost:1313/tags/desktop/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/desktop/</loc>
+    <loc>//localhost:1313/docs/linux/desktop/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/</loc>
+    <loc>//localhost:1313/docs/dev/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/development/</loc>
+    <loc>//localhost:1313/tags/development/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/dict/</loc>
+    <loc>//localhost:1313/docs/dev/python/dict/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/distributed-computing/</loc>
+    <loc>//localhost:1313/tags/distributed-computing/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/dock/</loc>
+    <loc>//localhost:1313/docs/mac/dock/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/dock/</loc>
+    <loc>//localhost:1313/tags/dock/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/docker/</loc>
+    <loc>//localhost:1313/docs/dev/docker/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/docker/</loc>
+    <loc>//localhost:1313/tags/docker/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/documentation/</loc>
+    <loc>//localhost:1313/tags/documentation/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/elk/elasticsearch/</loc>
+    <loc>//localhost:1313/docs/dev/elk/elasticsearch/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/elasticsearch/</loc>
+    <loc>//localhost:1313/tags/elasticsearch/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/elk/</loc>
+    <loc>//localhost:1313/docs/dev/elk/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/elk/</loc>
+    <loc>//localhost:1313/tags/elk/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/root-rescue/</loc>
+    <loc>//localhost:1313/docs/linux/root-rescue/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/oop-basics/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/oop-basics/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/enterprise/</loc>
+    <loc>//localhost:1313/tags/enterprise/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/manipulating-strings/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/manipulating-strings/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/exit-codes/</loc>
+    <loc>//localhost:1313/docs/linux/exit-codes/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/exit-codes/</loc>
+    <loc>//localhost:1313/tags/exit-codes/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/dataclasses/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/dataclasses/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/file/</loc>
+    <loc>//localhost:1313/tags/file/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/filebeat/</loc>
+    <loc>//localhost:1313/tags/filebeat/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/elk/filebeat/</loc>
+    <loc>//localhost:1313/docs/dev/elk/filebeat/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/files/</loc>
+    <loc>//localhost:1313/tags/files/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/fstab/</loc>
+    <loc>//localhost:1313/docs/linux/fstab/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/firewalld/</loc>
+    <loc>//localhost:1313/docs/linux/firewalld/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/firewall/</loc>
+    <loc>//localhost:1313/tags/firewall/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/formatting/</loc>
+    <loc>//localhost:1313/tags/formatting/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/freeipa/</loc>
+    <loc>//localhost:1313/docs/app/freeipa/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/fstab/</loc>
+    <loc>//localhost:1313/tags/fstab/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/functions/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/functions/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/gawk/</loc>
+    <loc>//localhost:1313/tags/gawk/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/getops/</loc>
+    <loc>//localhost:1313/docs/linux/getops/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/getopts/</loc>
+    <loc>//localhost:1313/tags/getopts/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/lists-and-tuples/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/lists-and-tuples/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/git/</loc>
+    <loc>//localhost:1313/docs/dev/git/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/git/</loc>
+    <loc>//localhost:1313/tags/git/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/gnome/</loc>
+    <loc>//localhost:1313/tags/gnome/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/misc/gohugo/</loc>
+    <loc>//localhost:1313/docs/misc/gohugo/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/cgp/</loc>
+    <loc>//localhost:1313/docs/cloud/cgp/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/graph/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/graph/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/guacamole/</loc>
+    <loc>//localhost:1313/docs/app/guacamole/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/gawk/</loc>
+    <loc>//localhost:1313/docs/linux/gawk/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/storage/hadoop/</loc>
+    <loc>//localhost:1313/docs/storage/hadoop/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/hadoop/</loc>
+    <loc>//localhost:1313/tags/hadoop/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/hashicorp/</loc>
+    <loc>//localhost:1313/tags/hashicorp/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2024-05-03T17:01:59+02:00</lastmod>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/homeassistant/</loc>
+    <loc>//localhost:1313/docs/app/homeassistant/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/http-status/</loc>
+    <loc>//localhost:1313/docs/app/http-status/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/hugo/</loc>
+    <loc>//localhost:1313/tags/hugo/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/ibm/</loc>
+    <loc>//localhost:1313/tags/ibm/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/storage/db2/</loc>
+    <loc>//localhost:1313/docs/storage/db2/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/images/</loc>
+    <loc>//localhost:1313/tags/images/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/infrastructure-as-code/</loc>
+    <loc>//localhost:1313/tags/infrastructure-as-code/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/sets/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/sets/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/setup-py/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/setup-py/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/netbox/</loc>
+    <loc>//localhost:1313/docs/app/netbox/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/iterm2/</loc>
+    <loc>//localhost:1313/docs/mac/iterm2/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/iterm2/</loc>
+    <loc>//localhost:1313/tags/iterm2/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/json-yaml/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/json-yaml/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/elk/kibana/</loc>
+    <loc>//localhost:1313/docs/dev/elk/kibana/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/kibana/</loc>
+    <loc>//localhost:1313/tags/kibana/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/kickstart/</loc>
+    <loc>//localhost:1313/tags/kickstart/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/kickstart/</loc>
+    <loc>//localhost:1313/docs/linux/kickstart/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/knowledge-base/</loc>
+    <loc>//localhost:1313/tags/knowledge-base/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/kubernetes/</loc>
+    <loc>//localhost:1313/docs/dev/kubernetes/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/kubernetes/</loc>
+    <loc>//localhost:1313/tags/kubernetes/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/</loc>
+    <loc>//localhost:1313/docs/linux/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/linux/</loc>
+    <loc>//localhost:1313/tags/linux/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/file-directory-path/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/file-directory-path/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/comprehensions/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/comprehensions/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/lists/</loc>
+    <loc>//localhost:1313/docs/dev/python/lists/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/local/</loc>
+    <loc>//localhost:1313/tags/local/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/logfile/</loc>
+    <loc>//localhost:1313/docs/linux/logfile/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/logrotate/</loc>
+    <loc>//localhost:1313/tags/logrotate/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/elk/logstash/</loc>
+    <loc>//localhost:1313/docs/dev/elk/logstash/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/logstash/</loc>
+    <loc>//localhost:1313/tags/logstash/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/loop/</loc>
+    <loc>//localhost:1313/docs/dev/python/loop/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/</loc>
+    <loc>//localhost:1313/docs/mac/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/mac/</loc>
+    <loc>//localhost:1313/tags/mac/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/shurtcuts/</loc>
+    <loc>//localhost:1313/docs/mac/shurtcuts/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/management/</loc>
+    <loc>//localhost:1313/tags/management/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/mariadb/</loc>
+    <loc>//localhost:1313/tags/mariadb/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/storage/mariadb/</loc>
+    <loc>//localhost:1313/docs/storage/mariadb/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/misc/markdown/</loc>
+    <loc>//localhost:1313/docs/misc/markdown/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/markdown/</loc>
+    <loc>//localhost:1313/tags/markdown/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/misc/mermaid/</loc>
+    <loc>//localhost:1313/docs/misc/mermaid/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/mermaid/</loc>
+    <loc>//localhost:1313/tags/mermaid/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/metricbeat/</loc>
+    <loc>//localhost:1313/tags/metricbeat/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/elk/metricbeat/</loc>
+    <loc>//localhost:1313/docs/dev/elk/metricbeat/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/azure/</loc>
+    <loc>//localhost:1313/docs/cloud/azure/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/az-104/</loc>
+    <loc>//localhost:1313/docs/cloud/az-104/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/kubernetes/minikube/</loc>
+    <loc>//localhost:1313/docs/dev/kubernetes/minikube/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/minikube/</loc>
+    <loc>//localhost:1313/tags/minikube/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/misc/</loc>
+    <loc>//localhost:1313/docs/misc/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/mkdocs/</loc>
+    <loc>//localhost:1313/tags/mkdocs/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/misc/mkdocs/</loc>
+    <loc>//localhost:1313/docs/misc/mkdocs/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/modules/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/modules/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/monitor/</loc>
+    <loc>//localhost:1313/tags/monitor/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/monitoring/</loc>
+    <loc>//localhost:1313/docs/monitoring/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/monitoring/</loc>
+    <loc>//localhost:1313/tags/monitoring/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/multi-model/</loc>
+    <loc>//localhost:1313/tags/multi-model/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/multipass/</loc>
+    <loc>//localhost:1313/docs/dev/multipass/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/multipass/</loc>
+    <loc>//localhost:1313/tags/multipass/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/mysql/</loc>
+    <loc>//localhost:1313/tags/mysql/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/storage/mysql/</loc>
+    <loc>//localhost:1313/docs/storage/mysql/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/monitoring/nagios/</loc>
+    <loc>//localhost:1313/docs/monitoring/nagios/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/nagios/</loc>
+    <loc>//localhost:1313/tags/nagios/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/network/</loc>
+    <loc>//localhost:1313/docs/linux/network/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/network/</loc>
+    <loc>//localhost:1313/tags/network/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/</loc>
+    <loc>//localhost:1313/docs/app/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/performance/</loc>
+    <loc>//localhost:1313/docs/app/performance/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/ngrok/</loc>
+    <loc>//localhost:1313/docs/app/ngrok/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/misc/obsidian/</loc>
+    <loc>//localhost:1313/docs/misc/obsidian/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/obsidian/</loc>
+    <loc>//localhost:1313/tags/obsidian/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/open-source/</loc>
+    <loc>//localhost:1313/tags/open-source/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/openvpn/</loc>
+    <loc>//localhost:1313/docs/app/openvpn/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/storage/oracle/</loc>
+    <loc>//localhost:1313/docs/storage/oracle/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/oracle/</loc>
+    <loc>//localhost:1313/tags/oracle/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/oci/</loc>
+    <loc>//localhost:1313/docs/cloud/oci/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/orchestration/</loc>
+    <loc>//localhost:1313/tags/orchestration/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/os/</loc>
+    <loc>//localhost:1313/tags/os/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/package-manager/</loc>
+    <loc>//localhost:1313/docs/linux/package-manager/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/package-manager/</loc>
+    <loc>//localhost:1313/docs/mac/package-manager/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/package-manager/</loc>
+    <loc>//localhost:1313/tags/package-manager/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/packer/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/packer/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/packer/</loc>
+    <loc>//localhost:1313/tags/packer/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/perl/</loc>
+    <loc>//localhost:1313/docs/dev/perl/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/perl/</loc>
+    <loc>//localhost:1313/tags/perl/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/pi-hole/</loc>
+    <loc>//localhost:1313/docs/app/pi-hole/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/proc/</loc>
+    <loc>//localhost:1313/docs/linux/proc/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/process/</loc>
+    <loc>//localhost:1313/tags/process/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/programming/</loc>
+    <loc>//localhost:1313/tags/programming/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/providers/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/providers/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/pve/</loc>
+    <loc>//localhost:1313/docs/cloud/pve/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/</loc>
+    <loc>//localhost:1313/docs/dev/python/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/python/</loc>
+    <loc>//localhost:1313/tags/python/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/built-in-functions/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/built-in-functions/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/kvm/</loc>
+    <loc>//localhost:1313/docs/cloud/kvm/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/debugging/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/debugging/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/ram/</loc>
+    <loc>//localhost:1313/tags/ram/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/memory/</loc>
+    <loc>//localhost:1313/docs/linux/memory/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/recovery/</loc>
+    <loc>//localhost:1313/tags/recovery/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/redhat/</loc>
+    <loc>//localhost:1313/docs/dev/redhat/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/rhel_idm/</loc>
+    <loc>//localhost:1313/docs/app/rhel_idm/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/rhel-sysadmin-ii/</loc>
+    <loc>//localhost:1313/docs/linux/rhel-sysadmin-ii/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/redhat/</loc>
+    <loc>//localhost:1313/tags/redhat/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/regex/</loc>
+    <loc>//localhost:1313/tags/regex/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/regular-expressions/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/regular-expressions/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/regular-expressions/</loc>
+    <loc>//localhost:1313/docs/linux/regular-expressions/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/remote/</loc>
+    <loc>//localhost:1313/tags/remote/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/remote-session/</loc>
+    <loc>//localhost:1313/docs/mac/remote-session/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/remote-exec/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/remote-exec/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/rhel/</loc>
+    <loc>//localhost:1313/tags/rhel/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/rundeck/</loc>
+    <loc>//localhost:1313/docs/app/rundeck/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/sar/</loc>
+    <loc>//localhost:1313/tags/sar/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/sar/</loc>
+    <loc>//localhost:1313/docs/linux/sar/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/screenshots/</loc>
+    <loc>//localhost:1313/tags/screenshots/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/screenshots/</loc>
+    <loc>//localhost:1313/docs/mac/screenshots/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/scripting/</loc>
+    <loc>//localhost:1313/tags/scripting/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/search/</loc>
+    <loc>//localhost:1313/tags/search/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/selinux/</loc>
+    <loc>//localhost:1313/docs/linux/selinux/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/selinux/</loc>
+    <loc>//localhost:1313/tags/selinux/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/sensors/</loc>
+    <loc>//localhost:1313/docs/mac/sensors/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/sensors/</loc>
+    <loc>//localhost:1313/tags/sensors/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/service/</loc>
+    <loc>//localhost:1313/docs/linux/service/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/service/</loc>
+    <loc>//localhost:1313/tags/service/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/dictionaries/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/dictionaries/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/setup/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/setup/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/shortcuts/</loc>
+    <loc>//localhost:1313/tags/shortcuts/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/smtp/</loc>
+    <loc>//localhost:1313/tags/smtp/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/smtp/</loc>
+    <loc>//localhost:1313/docs/linux/smtp/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/ssh/</loc>
+    <loc>//localhost:1313/tags/ssh/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/sshs/</loc>
+    <loc>//localhost:1313/docs/app/sshs/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/ssl/</loc>
+    <loc>//localhost:1313/docs/app/ssl/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/disk/</loc>
+    <loc>//localhost:1313/docs/linux/disk/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/storage/</loc>
+    <loc>//localhost:1313/tags/storage/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/stratis/</loc>
+    <loc>//localhost:1313/docs/linux/stratis/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/stratis/</loc>
+    <loc>//localhost:1313/tags/stratis/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/sublime-text/</loc>
+    <loc>//localhost:1313/docs/app/sublime-text/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/syntax/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/syntax/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/system-administration/</loc>
+    <loc>//localhost:1313/tags/system-administration/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/template/</loc>
+    <loc>//localhost:1313/tags/template/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/terraform/</loc>
+    <loc>//localhost:1313/tags/terraform/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/tfstate/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/tfstate/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/reading-and-writing-files/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/reading-and-writing-files/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/context-manager/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/context-manager/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/time/</loc>
+    <loc>//localhost:1313/tags/time/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/tips/</loc>
+    <loc>//localhost:1313/tags/tips/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/tkinter/</loc>
+    <loc>//localhost:1313/docs/dev/python/tkinter/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/screen/</loc>
+    <loc>//localhost:1313/docs/linux/screen/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/touchscreen/</loc>
+    <loc>//localhost:1313/tags/touchscreen/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/tower-cli/</loc>
+    <loc>//localhost:1313/tags/tower-cli/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/redhat/tower-cli/</loc>
+    <loc>//localhost:1313/docs/dev/redhat/tower-cli/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/tricks/</loc>
+    <loc>//localhost:1313/tags/tricks/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/ubuntu/</loc>
+    <loc>//localhost:1313/tags/ubuntu/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/ui-path/</loc>
+    <loc>//localhost:1313/docs/app/ui-path/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/vagrant/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/vagrant/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/vagrant/</loc>
+    <loc>//localhost:1313/tags/vagrant/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/hashicorp/terraform/vars/</loc>
+    <loc>//localhost:1313/docs/dev/hashicorp/terraform/vars/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/vault/</loc>
+    <loc>//localhost:1313/tags/vault/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/version-control/</loc>
+    <loc>//localhost:1313/tags/version-control/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/vim/</loc>
+    <loc>//localhost:1313/tags/vim/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/vim/</loc>
+    <loc>//localhost:1313/docs/linux/vim/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/venv/</loc>
+    <loc>//localhost:1313/docs/dev/python/venv/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/virtual-machines/</loc>
+    <loc>//localhost:1313/tags/virtual-machines/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/vmachines/</loc>
+    <loc>//localhost:1313/docs/mac/vmachines/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/virtual-environments/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/virtual-environments/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/virtualization/</loc>
+    <loc>//localhost:1313/tags/virtualization/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/cloud/vmware/</loc>
+    <loc>//localhost:1313/docs/cloud/vmware/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/vnc-tiger/</loc>
+    <loc>//localhost:1313/docs/app/vnc-tiger/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/vscode/</loc>
+    <loc>//localhost:1313/docs/app/vscode/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/linux/web/</loc>
+    <loc>//localhost:1313/docs/linux/web/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/web/</loc>
+    <loc>//localhost:1313/tags/web/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/</loc>
+    <loc>//localhost:1313/docs/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/ds_store/</loc>
+    <loc>//localhost:1313/docs/mac/ds_store/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/python/more/main/</loc>
+    <loc>//localhost:1313/docs/dev/python/more/main/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/app/wikijs/</loc>
+    <loc>//localhost:1313/docs/app/wikijs/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/window-management/</loc>
+    <loc>//localhost:1313/tags/window-management/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/mac/windows-tilling/</loc>
+    <loc>//localhost:1313/docs/mac/windows-tilling/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/tags/x-pack/</loc>
+    <loc>//localhost:1313/tags/x-pack/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url><url>
-    <loc>/docs/dev/elk/xpack/</loc>
+    <loc>//localhost:1313/docs/dev/elk/xpack/</loc>
+    <lastmod>2025-09-05T14:26:03+02:00</lastmod>
   </url>
 </urlset>

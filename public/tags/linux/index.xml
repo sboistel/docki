@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Linux</title>
-    <link>/tags/linux/</link>
+    <link>//localhost:1313/tags/linux/</link>
     <description>Recent content in Linux on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Account</title>
-      <link>/docs/linux/account/</link>
+      <link>//localhost:1313/docs/linux/account/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/account/</guid>
+      <guid>//localhost:1313/docs/linux/account/</guid>
       <description>
         
         
@@ -186,10 +186,10 @@
     
     <item>
       <title>bpytop</title>
-      <link>/docs/linux/bpytop/</link>
+      <link>//localhost:1313/docs/linux/bpytop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/bpytop/</guid>
+      <guid>//localhost:1313/docs/linux/bpytop/</guid>
       <description>
         
         
@@ -214,10 +214,10 @@
     
     <item>
       <title>Clock</title>
-      <link>/docs/linux/time/</link>
+      <link>//localhost:1313/docs/linux/time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/time/</guid>
+      <guid>//localhost:1313/docs/linux/time/</guid>
       <description>
         
         
@@ -255,10 +255,10 @@
     
     <item>
       <title>Cron</title>
-      <link>/docs/linux/cron/</link>
+      <link>//localhost:1313/docs/linux/cron/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/cron/</guid>
+      <guid>//localhost:1313/docs/linux/cron/</guid>
       <description>
         
         
@@ -403,10 +403,10 @@
     
     <item>
       <title>Desktop Environment</title>
-      <link>/docs/linux/desktop/</link>
+      <link>//localhost:1313/docs/linux/desktop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/desktop/</guid>
+      <guid>//localhost:1313/docs/linux/desktop/</guid>
       <description>
         
         
@@ -474,10 +474,10 @@ Fill in the required information:&lt;/p&gt;
     
     <item>
       <title>Emergency</title>
-      <link>/docs/linux/root-rescue/</link>
+      <link>//localhost:1313/docs/linux/root-rescue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/root-rescue/</guid>
+      <guid>//localhost:1313/docs/linux/root-rescue/</guid>
       <description>
         
         
@@ -565,10 +565,10 @@ Fill in the required information:&lt;/p&gt;
     
     <item>
       <title>Exit codes</title>
-      <link>/docs/linux/exit-codes/</link>
+      <link>//localhost:1313/docs/linux/exit-codes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/exit-codes/</guid>
+      <guid>//localhost:1313/docs/linux/exit-codes/</guid>
       <description>
         
         
@@ -615,10 +615,10 @@ Fill in the required information:&lt;/p&gt;
     
     <item>
       <title>Filesystem table AKA fstab</title>
-      <link>/docs/linux/fstab/</link>
+      <link>//localhost:1313/docs/linux/fstab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/fstab/</guid>
+      <guid>//localhost:1313/docs/linux/fstab/</guid>
       <description>
         
         
@@ -651,10 +651,10 @@ Mount Point: designates the directory where the device is/will be mounted.&lt;/p
     
     <item>
       <title>Firewall</title>
-      <link>/docs/linux/firewalld/</link>
+      <link>//localhost:1313/docs/linux/firewalld/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/firewalld/</guid>
+      <guid>//localhost:1313/docs/linux/firewalld/</guid>
       <description>
         
         
@@ -807,10 +807,10 @@ Mount Point: designates the directory where the device is/will be mounted.&lt;/p
     
     <item>
       <title>Getops</title>
-      <link>/docs/linux/getops/</link>
+      <link>//localhost:1313/docs/linux/getops/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/getops/</guid>
+      <guid>//localhost:1313/docs/linux/getops/</guid>
       <description>
         
         
@@ -874,10 +874,10 @@ Mount Point: designates the directory where the device is/will be mounted.&lt;/p
     
     <item>
       <title>GWAK</title>
-      <link>/docs/linux/gawk/</link>
+      <link>//localhost:1313/docs/linux/gawk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/gawk/</guid>
+      <guid>//localhost:1313/docs/linux/gawk/</guid>
       <description>
         
         
@@ -1045,10 +1045,10 @@ Mount Point: designates the directory where the device is/will be mounted.&lt;/p
     
     <item>
       <title>Kickstart File Commands</title>
-      <link>/docs/linux/kickstart/</link>
+      <link>//localhost:1313/docs/linux/kickstart/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/kickstart/</guid>
+      <guid>//localhost:1313/docs/linux/kickstart/</guid>
       <description>
         
         
@@ -1527,10 +1527,10 @@ Boot Anaconda and Point it to the Kickstart File&lt;/p&gt;
     
     <item>
       <title>Logrotate</title>
-      <link>/docs/linux/logfile/</link>
+      <link>//localhost:1313/docs/linux/logfile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/logfile/</guid>
+      <guid>//localhost:1313/docs/linux/logfile/</guid>
       <description>
         
         
@@ -1566,10 +1566,10 @@ Boot Anaconda and Point it to the Kickstart File&lt;/p&gt;
     
     <item>
       <title>Network</title>
-      <link>/docs/linux/network/</link>
+      <link>//localhost:1313/docs/linux/network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/network/</guid>
+      <guid>//localhost:1313/docs/linux/network/</guid>
       <description>
         
         
@@ -1644,10 +1644,10 @@ Boot Anaconda and Point it to the Kickstart File&lt;/p&gt;
     
     <item>
       <title>Package manager</title>
-      <link>/docs/linux/package-manager/</link>
+      <link>//localhost:1313/docs/linux/package-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/package-manager/</guid>
+      <guid>//localhost:1313/docs/linux/package-manager/</guid>
       <description>
         
         
@@ -1695,10 +1695,10 @@ Boot Anaconda and Point it to the Kickstart File&lt;/p&gt;
     
     <item>
       <title>Process</title>
-      <link>/docs/linux/proc/</link>
+      <link>//localhost:1313/docs/linux/proc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/proc/</guid>
+      <guid>//localhost:1313/docs/linux/proc/</guid>
       <description>
         
         
@@ -1785,10 +1785,10 @@ Boot Anaconda and Point it to the Kickstart File&lt;/p&gt;
     
     <item>
       <title>Random Access Memory</title>
-      <link>/docs/linux/memory/</link>
+      <link>//localhost:1313/docs/linux/memory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/memory/</guid>
+      <guid>//localhost:1313/docs/linux/memory/</guid>
       <description>
         
         
@@ -1811,10 +1811,10 @@ Boot Anaconda and Point it to the Kickstart File&lt;/p&gt;
     
     <item>
       <title>Red Hat</title>
-      <link>/docs/dev/redhat/</link>
+      <link>//localhost:1313/docs/dev/redhat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/redhat/</guid>
+      <guid>//localhost:1313/docs/dev/redhat/</guid>
       <description>
         
         
@@ -1826,10 +1826,10 @@ Boot Anaconda and Point it to the Kickstart File&lt;/p&gt;
     
     <item>
       <title>Regular Expression</title>
-      <link>/docs/linux/regular-expressions/</link>
+      <link>//localhost:1313/docs/linux/regular-expressions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/regular-expressions/</guid>
+      <guid>//localhost:1313/docs/linux/regular-expressions/</guid>
       <description>
         
         
@@ -1961,10 +1961,10 @@ Boot Anaconda and Point it to the Kickstart File&lt;/p&gt;
     
     <item>
       <title>SAR</title>
-      <link>/docs/linux/sar/</link>
+      <link>//localhost:1313/docs/linux/sar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/sar/</guid>
+      <guid>//localhost:1313/docs/linux/sar/</guid>
       <description>
         
         
@@ -1983,10 +1983,10 @@ Chacun des fichiers dans ce dossier sera normé par &lt;code&gt;sa$JOUR_DU_MOIS&
     
     <item>
       <title>Selinux</title>
-      <link>/docs/linux/selinux/</link>
+      <link>//localhost:1313/docs/linux/selinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/selinux/</guid>
+      <guid>//localhost:1313/docs/linux/selinux/</guid>
       <description>
         
         
@@ -2140,10 +2140,10 @@ You can also disable SELinux completely by passing on the kernel parameter selin
     
     <item>
       <title>Service</title>
-      <link>/docs/linux/service/</link>
+      <link>//localhost:1313/docs/linux/service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/service/</guid>
+      <guid>//localhost:1313/docs/linux/service/</guid>
       <description>
         
         
@@ -2167,10 +2167,10 @@ You can also disable SELinux completely by passing on the kernel parameter selin
     
     <item>
       <title>SMTP</title>
-      <link>/docs/linux/smtp/</link>
+      <link>//localhost:1313/docs/linux/smtp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/smtp/</guid>
+      <guid>//localhost:1313/docs/linux/smtp/</guid>
       <description>
         
         
@@ -2245,10 +2245,10 @@ You can also disable SELinux completely by passing on the kernel parameter selin
     
     <item>
       <title>Storage</title>
-      <link>/docs/linux/disk/</link>
+      <link>//localhost:1313/docs/linux/disk/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/disk/</guid>
+      <guid>//localhost:1313/docs/linux/disk/</guid>
       <description>
         
         
@@ -2506,10 +2506,10 @@ You can also disable SELinux completely by passing on the kernel parameter selin
     
     <item>
       <title>Stratis</title>
-      <link>/docs/linux/stratis/</link>
+      <link>//localhost:1313/docs/linux/stratis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/stratis/</guid>
+      <guid>//localhost:1313/docs/linux/stratis/</guid>
       <description>
         
         
@@ -2736,10 +2736,10 @@ If a pool runs out of storage, further data written to file systems belonging to
     
     <item>
       <title>Touchscreen</title>
-      <link>/docs/linux/screen/</link>
+      <link>//localhost:1313/docs/linux/screen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/screen/</guid>
+      <guid>//localhost:1313/docs/linux/screen/</guid>
       <description>
         
         
@@ -2865,10 +2865,10 @@ If a pool runs out of storage, further data written to file systems belonging to
     
     <item>
       <title>VIM</title>
-      <link>/docs/linux/vim/</link>
+      <link>//localhost:1313/docs/linux/vim/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/vim/</guid>
+      <guid>//localhost:1313/docs/linux/vim/</guid>
       <description>
         
         
@@ -2929,10 +2929,10 @@ If a pool runs out of storage, further data written to file systems belonging to
     
     <item>
       <title>Web</title>
-      <link>/docs/linux/web/</link>
+      <link>//localhost:1313/docs/linux/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/linux/web/</guid>
+      <guid>//localhost:1313/docs/linux/web/</guid>
       <description>
         
         

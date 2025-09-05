@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Clipboard</title>
-    <link>/tags/clipboard/</link>
+    <link>//localhost:1313/tags/clipboard/</link>
     <description>Recent content in Clipboard on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/tags/clipboard/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/tags/clipboard/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Clipboard Manager</title>
-      <link>/docs/mac/clipboard-manager/</link>
+      <link>//localhost:1313/docs/mac/clipboard-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/mac/clipboard-manager/</guid>
+      <guid>//localhost:1313/docs/mac/clipboard-manager/</guid>
       <description>
         
         

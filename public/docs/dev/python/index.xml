@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sam&#39;s Portfolio – Python</title>
-    <link>/docs/dev/python/</link>
+    <link>//localhost:1313/docs/dev/python/</link>
     <description>Recent content in Python on Sam&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="/docs/dev/python/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="//localhost:1313/docs/dev/python/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Comparators</title>
-      <link>/docs/dev/python/comparators/</link>
+      <link>//localhost:1313/docs/dev/python/comparators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/python/comparators/</guid>
+      <guid>//localhost:1313/docs/dev/python/comparators/</guid>
       <description>
         
         
@@ -424,10 +424,10 @@ Keep inmind that any function must be &lt;strong&gt;defined&lt;/strong&gt; befor
     
     <item>
       <title>Dictionaries</title>
-      <link>/docs/dev/python/dict/</link>
+      <link>//localhost:1313/docs/dev/python/dict/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/python/dict/</guid>
+      <guid>//localhost:1313/docs/dev/python/dict/</guid>
       <description>
         
         
@@ -799,10 +799,10 @@ Keep inmind that any function must be &lt;strong&gt;defined&lt;/strong&gt; befor
     
     <item>
       <title>Lists</title>
-      <link>/docs/dev/python/lists/</link>
+      <link>//localhost:1313/docs/dev/python/lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/python/lists/</guid>
+      <guid>//localhost:1313/docs/dev/python/lists/</guid>
       <description>
         
         
@@ -1007,10 +1007,10 @@ Lists are zero based&lt;/p&gt;
     
     <item>
       <title>Loop</title>
-      <link>/docs/dev/python/loop/</link>
+      <link>//localhost:1313/docs/dev/python/loop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/python/loop/</guid>
+      <guid>//localhost:1313/docs/dev/python/loop/</guid>
       <description>
         
         
@@ -1098,10 +1098,10 @@ Lists are zero based&lt;/p&gt;
     
     <item>
       <title>Math Operators</title>
-      <link>/docs/dev/python/more/</link>
+      <link>//localhost:1313/docs/dev/python/more/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/python/more/</guid>
+      <guid>//localhost:1313/docs/dev/python/more/</guid>
       <description>
         
         
@@ -1600,10 +1600,10 @@ Python Basics
     
     <item>
       <title>TKinter</title>
-      <link>/docs/dev/python/tkinter/</link>
+      <link>//localhost:1313/docs/dev/python/tkinter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/python/tkinter/</guid>
+      <guid>//localhost:1313/docs/dev/python/tkinter/</guid>
       <description>
         
         
@@ -1690,10 +1690,10 @@ Python Basics
     
     <item>
       <title>Virtual Environment (VENV)</title>
-      <link>/docs/dev/python/venv/</link>
+      <link>//localhost:1313/docs/dev/python/venv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/docs/dev/python/venv/</guid>
+      <guid>//localhost:1313/docs/dev/python/venv/</guid>
       <description>
         
         
