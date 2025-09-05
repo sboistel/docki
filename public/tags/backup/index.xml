@@ -1,0 +1,198 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam&#39;s Portfolio – Backup</title>
+    <link>/tags/backup/</link>
+    <description>Recent content in Backup on Sam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Bareos</title>
+      <link>/docs/storage/bareos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/storage/bareos/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Job&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;job&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#job&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;How do job command works ?&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Mean&lt;/th&gt;
+          &lt;th&gt;Command&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Which files shall be backed up?&lt;/td&gt;
+          &lt;td&gt;show filesets (I=Included, E=Excluded)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;What’s the server doing?&lt;/td&gt;
+          &lt;td&gt;status dir&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;What’s the status of a certain job?&lt;/td&gt;
+          &lt;td&gt;status jobid=xx&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;What’s the client doing?&lt;/td&gt;
+          &lt;td&gt;status client&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;What’s the streamer doing?&lt;/td&gt;
+          &lt;td&gt;status storage&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Anything new?&lt;/td&gt;
+          &lt;td&gt;messages&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Means&lt;/th&gt;
+          &lt;th&gt;Command&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Last jobs&lt;/td&gt;
+          &lt;td&gt;list jobs&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Specifique Job&lt;/td&gt;
+          &lt;td&gt;list jobid=xx&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Statistics about last jobs&lt;/td&gt;
+          &lt;td&gt;list jobtotal&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Which files were backed up?&lt;/td&gt;
+          &lt;td&gt;list files jobid=xx&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;Level list&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;level-list&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#level-list&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Base&lt;/li&gt;
+&lt;li&gt;Catalog&lt;/li&gt;
+&lt;li&gt;Data&lt;/li&gt;
+&lt;li&gt;Differential&lt;/li&gt;
+&lt;li&gt;DiskToCatalog&lt;/li&gt;
+&lt;li&gt;Full&lt;/li&gt;
+&lt;li&gt;Incremental&lt;/li&gt;
+&lt;li&gt;InitCatalog&lt;/li&gt;
+&lt;li&gt;Since&lt;/li&gt;
+&lt;li&gt;VirtualFull&lt;/li&gt;
+&lt;li&gt;VolumeToCatalog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Status table view&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;status-table-view&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#status-table-view&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Status&lt;/th&gt;
+          &lt;th&gt;means&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;T&lt;/td&gt;
+          &lt;td&gt;Terminated normally&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;C&lt;/td&gt;
+          &lt;td&gt;Created but not yet running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;R&lt;/td&gt;
+          &lt;td&gt;Running&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;B&lt;/td&gt;
+          &lt;td&gt;Blocked&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;E&lt;/td&gt;
+          &lt;td&gt;Terminated in Error&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;e&lt;/td&gt;
+          &lt;td&gt;Non-fatal error&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;f&lt;/td&gt;
+          &lt;td&gt;Fatal error&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;D&lt;/td&gt;
+          &lt;td&gt;Verify Differences&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;A&lt;/td&gt;
+          &lt;td&gt;Canceled by the user&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;F&lt;/td&gt;
+          &lt;td&gt;Waiting on the File daemon&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;S&lt;/td&gt;
+          &lt;td&gt;Waiting on the Storage daemon&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;m&lt;/td&gt;
+          &lt;td&gt;Waiting for a new Volume to be mounted&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;M&lt;/td&gt;
+          &lt;td&gt;Waiting for a Mount&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;s&lt;/td&gt;
+          &lt;td&gt;Waiting for Storage resource&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;j&lt;/td&gt;
+          &lt;td&gt;Waiting for Job resource&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;c&lt;/td&gt;
+          &lt;td&gt;Waiting for Client resource&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;d&lt;/td&gt;
+          &lt;td&gt;Wating for Maximum jobs&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;t&lt;/td&gt;
+          &lt;td&gt;Waiting for Start Time&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;p&lt;/td&gt;
+          &lt;td&gt;Waiting for higher priority job to finish&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;W&lt;/td&gt;
+          &lt;td&gt;Terminated with warnings&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

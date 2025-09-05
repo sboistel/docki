@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam&#39;s Portfolio – X-Pack</title>
+    <link>/tags/x-pack/</link>
+    <description>Recent content in X-Pack on Sam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/x-pack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>X-PACK</title>
+      <link>/docs/dev/elk/xpack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/dev/elk/xpack/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Is a package of features for Kibana&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Security&lt;/li&gt;
+&lt;li&gt;Monitoring&lt;/li&gt;
+&lt;li&gt;Alerting&lt;/li&gt;
+&lt;li&gt;Reporting&lt;/li&gt;
+&lt;li&gt;Machine Learning&lt;/li&gt;
+&lt;li&gt;Abnormality Detection&lt;/li&gt;
+&lt;li&gt;Forcasting&lt;/li&gt;
+&lt;li&gt;Graph&lt;/li&gt;
+&lt;li&gt;Elasticsearch SQL&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

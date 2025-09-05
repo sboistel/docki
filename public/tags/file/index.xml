@@ -1,0 +1,89 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam&#39;s Portfolio – File</title>
+    <link>/tags/file/</link>
+    <description>Recent content in File on Sam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/file/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>What is a .DS_Store file?</title>
+      <link>/docs/mac/ds_store/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/mac/ds_store/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A .DS_Store, short for Desktop Services Store, is an &lt;strong&gt;invisible&lt;/strong&gt; file on the macOS operating system that gets &lt;strong&gt;automatically created anytime you look into a folder with ‘Finder.’&lt;/strong&gt; &lt;br&gt;
+This file will then follow the folder everywhere it goes, including when archived, like in ‘&lt;em&gt;ZIP&lt;/em&gt;.’&lt;/p&gt;
+&lt;p&gt;If you’re a developer or system administrator and still transferring files from your computer to your server or don’t take the necessary precautions with your automated deployment process, you could be putting these files on the server where your site or application lives unconsciously.&lt;/p&gt;
+&lt;h2&gt;Why should you know about them?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;why-should-you-know-about-them&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-should-you-know-about-them&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This file stores custom &lt;em&gt;attributes/metadata&lt;/em&gt; of its containing folder and the names of other files around it. &lt;br&gt;
+Exposing this information could potentially allow hackers to act maliciously and let them see private files.&lt;/p&gt;
+&lt;p&gt;Back in 2015, a .DS_Store file was exploited and used to gain access to an admin portal of the TCL Corporation, a multinational Chinese electronics company. The entire backend and database of the application were exposed to anyone that accessed the .DS_Store file.&lt;/p&gt;
+&lt;p&gt;See Bug Report (Translation needed): &lt;a href=&#34;https://web.archive.org/web/20190105043001/https://bugs.shuimugan.com/bug/view?bug_no=91869&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://web.archive.org/web/20190105043001/https://bugs.shuimugan.com/bug/view?bug_no=91869&lt;svg class=&#34;hx:inline hx:rtl:rotate-270 hx:align-baseline&#34; height=&#34;1em&#34; fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; viewBox=&#34;0 0 24 24&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+ &lt;path d=&#34;m9.1716 7.7574h7.0711m0 0v7.0711m0-7.0711-8.4853 8.4853&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34;/&gt;
+&lt;/svg&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;How to prevent this?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-to-prevent-this&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-to-prevent-this&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The people who want to prevent security breaches through .DS_Store files are developers and system administrators. &lt;br&gt;
+Finding .DS_Store files in random folders in your server is not fun. You could be leaking information you don’t intend to. &lt;br&gt;
+If you do find one, simply delete the file with the command  ‘rm .DS_Store’ and it will be resolved.&lt;/p&gt;
+&lt;p&gt;The easiest way to prevent this problem from happening is to completely turn off the automatic creation of these files.&lt;/p&gt;
+&lt;p&gt;Follow the steps below to do so:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open Terminal&lt;/li&gt;
+&lt;li&gt;Then copy/paste this command and press enter:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;defaults write com.apple.desktopservices DSDontWriteNetworkStores true&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;To reverse this if ever needed in the future, just change true to false:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-zsh&#34; data-lang=&#34;zsh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;defaults write com.apple.desktopservices DSDontWriteNetworkStores false&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:flex-col hx:rounded-lg hx:border hx:py-4 hx:px-4 hx:border-gray-200 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-green-200 hx:bg-green-100 hx:text-green-900 hx:dark:border-green-200/30 hx:dark:bg-green-900/30 hx:dark:text-green-200&#34;&gt;
+  &lt;p class=&#34;hx:flex hx:items-center hx:font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx:inline-block hx:align-middle hx:mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z&#34;/&gt;&lt;/svg&gt;Info&lt;/p&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;&lt;p&gt;After running one of these commands, reboot your machine.
+You’re set up &amp;amp; secure!&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;For developers, you can use Git to solve this problem by doing the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Place &amp;lsquo;&lt;code&gt;.DS_Store&lt;/code&gt;&amp;rsquo; in your &amp;lsquo;&lt;code&gt;.gitignore&lt;/code&gt;&amp;rsquo; file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That way, any .DS_Store file will be ignored and not be pushed with the rest of your code.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

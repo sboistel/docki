@@ -1,0 +1,40 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam&#39;s Portfolio – Sar</title>
+    <link>/tags/sar/</link>
+    <description>Recent content in Sar on Sam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/sar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>SAR</title>
+      <link>/docs/linux/sar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/linux/sar/</guid>
+      <description>
+        
+        
+        &lt;p&gt;On trouvera les fichiers de log de l&amp;rsquo;outil &lt;strong&gt;sysstat&lt;/strong&gt; dans : &lt;code&gt;/var/log/sysstat/&lt;/code&gt; &lt;br&gt;
+Chacun des fichiers dans ce dossier sera normé par &lt;code&gt;sa$JOUR_DU_MOIS&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Liste des paramètres :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;S&lt;/strong&gt; : swap&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;r&lt;/strong&gt; : RAM&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R&lt;/strong&gt; : Caches&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;u&lt;/strong&gt; : Utilisateur&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

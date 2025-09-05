@@ -1,0 +1,63 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam&#39;s Portfolio – Hashicorp</title>
+    <link>/tags/hashicorp/</link>
+    <description>Recent content in Hashicorp on Sam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/hashicorp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>HashiCorp</title>
+      <link>/docs/dev/hashicorp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/dev/hashicorp/</guid>
+      <description>
+        
+        
+        &lt;p&gt;HashiCorp is a technology company specializing in infrastructure automation for cloud environments. Their suite of open-source tools, such as Terraform, Vault, Consul, and Packer, enables organizations to provision, secure, connect, and run infrastructure efficiently. HashiCorp&amp;rsquo;s solutions support multi-cloud and hybrid cloud strategies, helping teams manage infrastructure as code and automate workflows.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://imageio.forbes.com/specials-images/imageserve/653ad2e3ead3e46e41269878/Image-showing-HashiCorp-s-portfolio-/960x0.png?format=png&amp;amp;width=960&#34; alt=&#34;HashiCorp Shows That Its Far More Than Just Terraform&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Terraform</title>
+      <link>/docs/dev/hashicorp/terraform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/dev/hashicorp/terraform/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;What is Terraform ?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;what-is-terraform-&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#what-is-terraform-&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Terraform is an infrastructure as code tool that lets you build, change, and version cloud and on-prem resources safely and efficiently.&lt;/p&gt;
+&lt;h3&gt;How does it works ?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;how-does-it-works-&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#how-does-it-works-&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Terraform creates and manages resources on cloud platforms and other services through their application programming interfaces (APIs). Providers enable Terraform to work with virtually any platform or service with an accessible API.&lt;/p&gt;
+&lt;p&gt;The core Terraform workflow consists of three stages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Write: You define resources, which may be across multiple cloud providers and services. For example, you might create a configuration to deploy an application on virtual machines in a Virtual Private Cloud (VPC) network with security groups and a load balancer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Plan: Terraform creates an execution plan describing the infrastructure it will create, update, or destroy based on the existing infrastructure and your configuration.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Apply: On approval, Terraform performs the proposed operations in the correct order, respecting any resource dependencies. For example, if you update the properties of a VPC and change the number of virtual machines in that VPC, Terraform will recreate the VPC before scaling the virtual machines.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;./resources//terraform-processe.png&#34; alt=&#34;Workflow&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

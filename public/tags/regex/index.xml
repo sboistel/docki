@@ -1,0 +1,153 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam&#39;s Portfolio – Regex</title>
+    <link>/tags/regex/</link>
+    <description>Recent content in Regex on Sam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Regular Expression</title>
+      <link>/docs/linux/regular-expressions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/linux/regular-expressions/</guid>
+      <description>
+        
+        
+        &lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Option&lt;/th&gt;
+          &lt;th&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;.&lt;/td&gt;
+          &lt;td&gt;The period (.) matches any single character.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;?&lt;/td&gt;
+          &lt;td&gt;The preceding item is optional and will be matched at most once.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;*&lt;/td&gt;
+          &lt;td&gt;The preceding item will be matched zero or more times.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;+&lt;/td&gt;
+          &lt;td&gt;The preceding item will be matched one or more times.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;{n}&lt;/td&gt;
+          &lt;td&gt;The preceding item is matched exactly n times.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;{n,}&lt;/td&gt;
+          &lt;td&gt;The preceding item is matched n or more times.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;{,m}&lt;/td&gt;
+          &lt;td&gt;The preceding item is matched at most m times.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;{n,m}&lt;/td&gt;
+          &lt;td&gt;The preceding item is matched at least n times, but not more than m times.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:alnum:]&lt;/td&gt;
+          &lt;td&gt;Alphanumeric characters: &amp;lsquo;[:alpha:]&amp;rsquo; and &amp;lsquo;[:digit:]&amp;rsquo;; in the &amp;lsquo;C&amp;rsquo; locale and ASCII character encoding, this is the same as &amp;lsquo;[0-9A-Za-z]&amp;rsquo;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:alpha:]&lt;/td&gt;
+          &lt;td&gt;Alphabetic characters: &amp;lsquo;[:lower:]&amp;rsquo; and &amp;lsquo;[:upper:]&amp;rsquo;; in the &amp;lsquo;C&amp;rsquo; locale and ASCII character encoding, this is the same as &amp;lsquo;[A-Za-z]&amp;rsquo;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:blank:]&lt;/td&gt;
+          &lt;td&gt;Blank characters: space and tab.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:cntrl:]&lt;/td&gt;
+          &lt;td&gt;Control characters. In ASCII, these characters have octal codes 000 through 037, and 177 (DEL). In other character sets, these are the equivalent characters, if any.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:digit:]&lt;/td&gt;
+          &lt;td&gt;Digits: 0 1 2 3 4 5 6 7 8 9.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:graph:]&lt;/td&gt;
+          &lt;td&gt;Graphical characters: &amp;lsquo;[:alnum:]&amp;rsquo; and &amp;lsquo;[:punct:]&amp;rsquo;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:lower:]&lt;/td&gt;
+          &lt;td&gt;Lower-case letters; in the &amp;lsquo;C&amp;rsquo; locale and ASCII character encoding, this is a b c d e f g h i j k l m n o p q r s t u v w x y z.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:print:]&lt;/td&gt;
+          &lt;td&gt;Printable characters: &amp;lsquo;[:alnum:]&amp;rsquo;, &amp;lsquo;[:punct:]&amp;rsquo;, and space.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:punct:]&lt;/td&gt;
+          &lt;td&gt;Punctuation characters; in the &amp;lsquo;C&amp;rsquo; locale and ASCII character encoding, this is! &amp;quot; # $ % &amp;amp; &amp;rsquo; ( ) * + , - . / : ; &amp;lt; = &amp;gt; ? @ [ \ ] ^ _ &amp;rsquo; {&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:space:]&lt;/td&gt;
+          &lt;td&gt;Space characters: in the &amp;lsquo;C&amp;rsquo; locale, this is tab, newline, vertical tab, form feed,carriage return, and space.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:upper:]&lt;/td&gt;
+          &lt;td&gt;Upper-case letters: in the &amp;lsquo;C&amp;rsquo; locale and ASCII character encoding, this is A B C D E F G H I J K L M N O P Q R S T U V W X Y Z.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;[:xdigit:]&lt;/td&gt;
+          &lt;td&gt;Hexadecimal digits: 0 1 2 3 4 5 6 7 8 9 A B C D E F a b c d e f.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;Match the empty string at the edge of a word.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;\B&lt;/td&gt;
+          &lt;td&gt;Match the empty string provided it is not at the edge of a word.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&amp;lt;&lt;/td&gt;
+          &lt;td&gt;Match the empty string at the beginning of word.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&amp;gt;&lt;/td&gt;
+          &lt;td&gt;Match the empty string at the end of word.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;\w&lt;/td&gt;
+          &lt;td&gt;Match word constituent. Synonym for &amp;lsquo;[_[:alnum:]]&amp;rsquo;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;\W&lt;/td&gt;
+          &lt;td&gt;Match non-word constituent. Synonym for &amp;lsquo;[^_[:alnum:]]&amp;rsquo;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;\s&lt;/td&gt;
+          &lt;td&gt;Match white space. Synonym for &amp;lsquo;[[:space:]]&amp;rsquo;.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;\S&lt;/td&gt;
+          &lt;td&gt;Match non-whitespace. Synonym for &amp;lsquo;[^[:space:]]&amp;rsquo;.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

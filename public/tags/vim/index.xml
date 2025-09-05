@@ -1,0 +1,82 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam&#39;s Portfolio – Vim</title>
+    <link>/tags/vim/</link>
+    <description>Recent content in Vim on Sam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>VIM</title>
+      <link>/docs/linux/vim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/linux/vim/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Début ou fin de fichier :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the top : &lt;code&gt;gg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Go to the buttom : &lt;code&gt;G&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Descendre à la ligne 34 : &lt;code&gt;34 G&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Début du mot : &lt;code&gt;b&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Début du dexième mot en partant du mot d&amp;rsquo;origin : &lt;code&gt;3B&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fin du mot suivant : &lt;code&gt;e&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Mot suivant : &lt;code&gt;w&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Replace : &lt;code&gt;r&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Supprimer carractère par carractère : &lt;code&gt;x&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Supprimer à reculon carractère par carractère : &lt;code&gt;c&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Changer (ce -&amp;gt; changer jusqu&amp;rsquo;à la fin du mot ) : &lt;code&gt;c&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enregister les modifications : &lt;code&gt;ZZ&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Enregistrer les modifications et quiter le fichier : &lt;code&gt;ZQ&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Début ou fin de ligne :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fin de la ligne où se trouve le dernier carractère : &lt;code&gt;$&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Début de la ligne où se trouve le premier carractère : &lt;code&gt;0&lt;/code&gt; &lt;em&gt;(shift+à)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dans vim : &lt;code&gt;:%s /foo/newfoo/g&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;Tooling&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tooling&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tooling&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Sed&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sed&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sed&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Faire du sed dans vim&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:%s /foo/newfoo/g&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;Highlithing Word&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;highlithing-word&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#highlithing-word&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Retirer le surlignage :&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:noh&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

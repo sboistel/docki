@@ -1,0 +1,39 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sam&#39;s Portfolio – Search</title>
+    <link>/tags/search/</link>
+    <description>Recent content in Search on Sam&#39;s Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>/docs/dev/elk/elasticsearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/dev/elk/elasticsearch/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;Elasticsearch&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;elasticsearch&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#elasticsearch&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Elasticsearch is composed by :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;LOGSTASH&lt;/li&gt;
+&lt;li&gt;KIBANA&lt;/li&gt;
+&lt;li&gt;X-PACK&lt;/li&gt;
+&lt;li&gt;BEATS&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

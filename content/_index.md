@@ -1,27 +1,17 @@
 ---
-title: Home
-description: "Welcome to the docki Github page"
-date: 2024-05-03T16:13:45+02:00
-tags: []
-categories: []
-draft: true
-slug: "home"
+title: Hey there!
+toc: false
 ---
 
-## HOME
+## Welcome
 
-Welcome to the [**docki Github**](https://github.com/sboistel/docki) page
+What about **knowledge transfert** sharing ?
 
-Go back to [**docki.io**](https://sboistel.github.io/docki/) page
+![culture think gif](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG1vcDdra2gzbXZod3EzYm9pYWp2OWRqY2V4d2RyaGo4cG5zaG91ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d3mlE7uhX8KFgEmY/giphy.gif)
 
-What do U mean about **knowledge transfert** ?
+## Explore
 
-Let's having fun, and ``#RTFM`` !
-
-You should get plaisir into the nav bar on the left
-
-{{% notice tip %}}
-
-Add the search section as your search engine
-
-{{% /notice %}}
+{{< cards >}}
+  {{< card link="docs" title="Docs" icon="book-open" >}}
+  {{< card link="cv" title="About Sam" icon="user" >}}
+{{< /cards >}}
