@@ -23,15 +23,18 @@ menu:
     - name: Docs
       pageRef: /docs
       weight: 1
+    - name: Stacks
+      pageRef: /stacks
+      weight: 2
     - name: About Me
       pageRef: /cv
-      weight: 2
-    - name: Search
       weight: 3
+    - name: Search
+      weight: 4
       params:
         type: search
     - name: GitHub
-      weight: 4
+      weight: 5
       url: "https://github.com/sboistel"
       params:
         icon: github
