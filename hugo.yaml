@@ -38,6 +38,11 @@ menu:
       url: "https://github.com/sboistel"
       params:
         icon: github
+    - name: LinkedIn
+      weight: 6
+      url: "https://www.linkedin.com/in/boistel-sam"
+      params:
+        icon: linkedin
 
   # sidebar:
   #   - identifier: more
@@ -65,8 +70,7 @@ params:
     width: wide
   
     theme:
-      # light | dark | system
-      default: system
+      default: system # light | dark | system
       displayToggle: true
 
   footer:
@@ -82,8 +86,7 @@ params:
   highlight:
     copy:
       enable: true
-      # hover | always
-      display: hover
+      display: hover # hover | always
 
   editURL:
     enable: true
