@@ -70,16 +70,23 @@ Passionné du pingouin et de l'OpenSource, j'aime partager mes connaissances et 
 
 ### Ingénieur Consultant [@Extia](https://www.extia-group.com/) **06/2023 – Aujourd'hui**
 
-**Consultant DevOps/SRE en environnement SCRUM**
+**Ops Engineer**
 
 * **Automation Platform** : Déploiement et administration d'AWX (Docker/Kubernetes), gestion de jobs; templates; projets, configuration des ACL utilisateurs
+* **Orchestration** : Gestion de workflows ArgoWorkflow
 * **CI/CD** : Implémentation de pipelines GitHub Actions, gestion des branches et PR au sein d'organisations
 * **Gestion des secrets** : Administration HashiCorp Vault, configuration des entités et politiques d'accès
 * **Observabilité** : Configuration Datadog (monitors, synthetics, logs), monitoring de services
 * **Cloud Management** : Administration Aiven (metrics, logs, credentials), gestion multi-tenant
 * **ITSM** : Intégration ServiceNow, Jira, PagerDuty pour l'automatisation des incidents
 
-**Technologies** : AWX, GitHub Actions, HashiCorp Vault, Datadog, Aiven, ServiceNow
+**Technologies** : ArgoWorkflow, AWX, GitHub Actions, HashiCorp Vault, Datadog, Aiven, ServiceNow
+
+**Projets** :
+
+* Gestion de la plateforme AWX
+* Migration de AWX vers ArgoWorkflow
+* Animation de formations internes sur AWX / Gestion de wiki technique
 
 ---
 
