@@ -3,6 +3,10 @@ title: Nextcloud
 description: A suite of client-server software for creating and using file hosting services
 ---
 
+## Description
+
+Nextcloud is a suite of client-server software for creating and using file hosting services. It is free and open-source, which allows anyone to install and operate it on a private server. Functionality includes file storage, sharing, calendar, contacts, mail, and more. Nextcloud is often used as an alternative to proprietary services like Dropbox, Google Drive, or iCloud, providing users with greater control over their data and privacy.
+
 ## Docker compose
 
 ```yml
@@ -13,11 +17,6 @@ services:
     container_name: ncloud_db
     restart: unless-stopped
     command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
-    # command: >
-    #   --skip-grant-tables 
-    #   --transaction-isolation=READ-COMMITTED 
-    #   --binlog-format=ROW
-    #   --ssl=false
     env_file: .env
     volumes:
       - ./db:/var/lib/mysql
@@ -26,6 +25,8 @@ services:
     image: nextcloud
     container_name: ncloud_app
     restart: unless-stopped
+    ports:
+      - 8080:80
     depends_on:
       - db
     links:
@@ -34,9 +35,4 @@ services:
     volumes:
       - ./app:/var/www/html
       - ./data:/var/www/html/data
-
-networks:
-  default:
-    external: true
-    name: external
 ```

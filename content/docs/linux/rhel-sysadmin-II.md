@@ -55,7 +55,7 @@ Available profiles:
 
 * The **getenforce** and **setenforce** commands are used to manage the SELinux mode of a system.
 * The **semanage** command is used to manage SELinux policy rules. The **restorecon** command applies the context defined by the policy.
-* Booleans are switches that change the behavior of the SELinux policy. They can be enabled or disabled and are used to tune the policy.  
+* Booleans are switches that change the behavior of the SELinux policy. They can be enabled or disabled and are used to tune the policy.
 * The **sealert** displays useful information to help with SELinux troubleshooting.
 
 ## Managing Storage

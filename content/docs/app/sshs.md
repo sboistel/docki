@@ -4,7 +4,7 @@ description: ""
 tags: [""]
 ---
 
-Terminal user interface for SSH.  
+Terminal user interface for SSH.
 It uses `~/.ssh/config` to list and connect to hosts.
 
 [![example](https://i.imgur.com/iPmiEVU.gif)](https://asciinema.org/a/465800)

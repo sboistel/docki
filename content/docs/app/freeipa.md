@@ -52,7 +52,7 @@ ipa-server-install -U -p user -a password --ip-address=ip -n fqdn -r FQDN --host
 ###5
 > ipa-server-install
 
-### 6 
+### 6
 > kinit admin
 > ipa user-add
 > ipa passwrd

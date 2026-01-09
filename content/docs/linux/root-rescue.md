@@ -53,7 +53,7 @@ Configure the system to automatically perform a full SELinux relabel after boot.
 sh-4.4# touch /.autorelabel
 ```
 
-Type exit twice to continue booting your system. The system fails to boot because of an issue you resolve in the next step. 
+Type exit twice to continue booting your system. The system fails to boot because of an issue you resolve in the next step.
 
 ### Selinux
 

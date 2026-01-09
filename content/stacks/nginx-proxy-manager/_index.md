@@ -3,6 +3,10 @@ title: Nginx Proxy Manager
 description: A simple, powerful, and full-featured web proxy management tool
 ---
 
+## Description
+
+Nginx Proxy Manager is a web-based interface for managing Nginx proxy hosts, allowing users to easily set up and manage reverse proxies, SSL certificates, and other related configurations. It is built on top of Nginx and provides a user-friendly way to handle complex proxy setups without needing to manually edit configuration files.
+
 ## Docker compose
 
 ```yml
@@ -33,6 +37,6 @@ services:
 
 networks:
   default:
-    external: true
-    name: external
+    external:
+      name: <my-preferred-network>
 ```

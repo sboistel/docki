@@ -9,7 +9,7 @@ tags: ["linux", "package manager"]
 How to force installation without depedency.
 
 ```bash
-rpm -Uvh 
+rpm -Uvh
 ```
 
 ## Debian

@@ -3,6 +3,10 @@ title: Landing Page
 description: A simple static landing page using Nginx
 ---
 
+## Description
+
+This stack sets up a simple static landing page using Nginx as the web server. The HTML files for the landing page are served from a specified directory on the host machine.
+
 ## Docker compose
 
 ```yml
@@ -14,10 +18,6 @@ services:
     restart: unless-stopped
     volumes:
       - ./data/html:/usr/share/nginx/html:ro
-    # ports:
-    #   - '8880:80'
-networks:
-  default:
-    external: true
-    name: external
+    ports:
+      - '8880:80'
 ```

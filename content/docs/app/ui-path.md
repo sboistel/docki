@@ -10,16 +10,16 @@ Briève liste de software :
  - Blue prism
  - Microsoft Power automate
 
-RPA (Robotic Process Automation) : 
+RPA (Robotic Process Automation) :
 
  - Bot (logiciel, digital worker)
  - Soft/wrokflow/processus
-- Piloté via un orchestrator 
+- Piloté via un orchestrator
 (Fournit par le prestataire. Ex UIPath)
 
 Deux type d'automation :
 
- - Attended 
+ - Attended
  - Unattended
 
 ## IDE

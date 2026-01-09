@@ -84,7 +84,7 @@ trust anchor --store myCA.crt
 - If you get "no configured writable location" or a similar error, import the CA manually:
 - Copy the certificate to the /etc/ca-certificates/trust-source/anchors directory.
 - and then
-```bash 
+```bash
 update-ca-trust
 ```
 wiki page  [here](https://wiki.archlinux.org/title/User:Grawity/Adding_a_trusted_CA_certificate)

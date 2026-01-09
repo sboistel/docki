@@ -32,7 +32,7 @@ resource "xxx" "xxx" {
             "sudo apt install nginx -qq > /dev/null"
         ]
     }
-  
+
 }
 ```
 

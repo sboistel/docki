@@ -3,6 +3,10 @@ title: iTunz
 description: A web interface to manage your iTunes library
 ---
 
+## Description
+
+iTunz is a simple web application that allows users to download audio from various online sources and organize them into an iTunes-compatible folder structure. It leverages `yt-dlp` for downloading and converting media files to MP3 format. The application provides a user-friendly interface where users can input URLs, initiate downloads, and receive notifications upon completion.
+
 ## Docker compose
 
 ```yml
@@ -10,7 +14,7 @@ description: A web interface to manage your iTunes library
 services:
   itunz:
     container_name: itunz
-    build: 
+    build:
       context: src/
       dockerfile: Dockerfile
     restart: unless-stopped
@@ -20,9 +24,11 @@ services:
       - PUID=0
       - PGID=100
     volumes:
-      - /dl:/app/downloads
+      - dl:/app/downloads
     labels:
       - "com.centurylinklabs.watchtower.enable=false"
+volumes:
+    dl:
 ```
 
 ## Dockerfile

@@ -35,11 +35,11 @@ pip download module_name
 !!! info "Requirements.txt"
 
 	#### Requierements
-	
-	You have to fill the module name wished to the `requierements.txt` file. 
-	
+
+	You have to fill the module name wished to the `requierements.txt` file.
+
 	This file is used to build your envirement
-	
+
 ```bash
 echo "module_name" >> requirements.txt
 ```

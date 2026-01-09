@@ -22,39 +22,53 @@ Passionné du pingouin et de l'OpenSource, j'aime partager mes connaissances et 
 ### Cloud & Infrastructure
 
 * **Cloud Platforms** : Azure, IBM Cloud, Oracle Cloud Infrastructure (OCI)
-* **Conteneurisation** : Docker, Kubernetes
+* **Conteneurisation** : Docker, Docker Compose, Kubernetes
 * **Virtualisation** : VMware, KVM, Proxmox
 
 ### DevOps & Automation
 
-* **Configuration Management** : Ansible, AWX, RedHat Automation Platform
+* **Automation Platform** : Ansible, AWX, RedHat Automation Platform, ArgoWorkflow
 * **CI/CD** : GitHub Actions, GitLab CI, Azure DevOps
 * **Infrastructure as Code** : Terraform, Ansible
 * **Version Control** : Git, GitHub, GitLab
+* **Container Orchestration** : Kubernetes
 
 ### Monitoring & Observabilité
 
-* **APM** : Datadog (monitors, synthetics, logs)
+* **APM & Synthetics** : Datadog (monitors, synthetics, logs)
 * **Metrics & Dashboards** : Grafana, Prometheus
-* **Infrastructure Monitoring** : Centreon, Nagios
-* **Log Management** : ELK Stack, Splunk
+* **Infrastructure Monitoring** : Centreon, Nagios, Beszel
+* **Uptime Monitoring** : Kuma (Uptime Kuma)
+* **Log Management** : ELK Stack, Splunk, Dozzle
+* **Container Updates** : Watchtower, WUD (What's Up Docker)
 
 ### Systèmes & Sécurité
 
-* **OS** : Linux (RHEL, CentOS, Ubuntu), Windows Server
-* **Sécurité** : HashiCorp Vault, gestion des secrets, PKI
-* **Networking** : Firewalld, iptables, VPN, Load Balancing
+* **OS** : Linux (RHEL, CentOS, Ubuntu, Debian), Windows Server
+* **Sécurité** : HashiCorp Vault, Vaultwarden, Authelia, gestion des secrets, PKI
+* **Network Security** : Firewalld, iptables, VPN (WireGuard, OpenVPN)
+* **SSL/TLS** : Let's Encrypt, certificats automatisés, reverse proxy SSL
 
-### ITSM & Collaboration
+### Self-Hosting & Services
 
-* **ITIL** : ServiceNow, Jira, PagerDuty
-* **Documentation** : Confluence, Hugo, MkDocs, Wiki.js
+* **Media** : Jellyfin, Immich, Navidrome
+* **Productivity** : Nextcloud, FileBrowser, Stirling PDF
+* **Home Automation** : Home Assistant, IoT
+* **Networking** : AdGuard, Pi-hole, Nginx Proxy Manager
 
-### Centres d'intérêt
+### ITSM & Documentation
+
+* **ITIL & Ticketing** : ServiceNow, Jira, PagerDuty
+* **Documentation** : Hugo, MkDocs, Wiki.js, Confluence, Obsidian
+* **Static Site Generators** : Hugo, mkdocs[readthedocs], GitHub Pages
+
+## 🎯 Centres d'intérêt
 
 * 🎵 Hautbois
 * 🎹 Piano
-* 🐧 Linux
+* 🐧 Linux & Open Source
+* 🏠 Home Lab & Self-hosting
+* 📚 Veille technologique
 
 ## 🎓 Formation
 

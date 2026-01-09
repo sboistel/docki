@@ -3,7 +3,7 @@ title: "Guacamole"
 description: ""
 tags: [""]
 ---
-Apache Guacamole is a clientless remote desktop gateway. 
+Apache Guacamole is a clientless remote desktop gateway.
 It supports standard protocols like VNC, RDP, and SSH.
 
 
@@ -68,14 +68,14 @@ Guest agent
 * APT:DEB/Ubuntu
 
 ```bash
-apt install git maven 
+apt install git maven
 ```
 
 
 * RPM:Fedora/Centos/Rhel:
 
 ```bash
-yum install git maven 
+yum install git maven
 ```
 
 Donwload the guacamole client repository

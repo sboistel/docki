@@ -23,8 +23,8 @@ node 1 cpus: 8 9 10 11 12 13 14 15 24 25 26 27 28 29 30 31
 node 1 size: 8191 MB
 node 1 free: 5176 MB
 node distances:
-node   0   1 
-  0:  10  20 
+node   0   1
+  0:  10  20
   1:  20  10
 ```
 
@@ -91,7 +91,7 @@ select dfs_capacity as "HDFS",(dfs_capacity_used+dfs_capacity_used_non_hdfs) as 
 ### CPU
 
 ```sql
-select cpu_user_rate / getHostFact(numCores, 1) * 100, cpu_system_rate / getHostFact(numCores, 1) * 100, cpu_nice_rate / getHostFact(numCores, 1) * 100, cpu_iowait_rate / getHostFact(numCores, 1) * 100, cpu_irq_rate / getHostFact(numCores, 1) * 100, cpu_soft_irq_rate / getHostFact(numCores, 1) * 100, cpu_steal_rate / getHostFact(numCores, 1) * 100 
+select cpu_user_rate / getHostFact(numCores, 1) * 100, cpu_system_rate / getHostFact(numCores, 1) * 100, cpu_nice_rate / getHostFact(numCores, 1) * 100, cpu_iowait_rate / getHostFact(numCores, 1) * 100, cpu_irq_rate / getHostFact(numCores, 1) * 100, cpu_soft_irq_rate / getHostFact(numCores, 1) * 100, cpu_steal_rate / getHostFact(numCores, 1) * 100
 ```
 
 ### RAM

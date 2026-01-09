@@ -37,7 +37,7 @@ Code | Name | Description
 307|Temporary Redirect|The server sends this response to direct the client to get the requested resource at another URI with same method that was used in the prior request.
 308|Permanent Redirect|This means that the resource is now permanently located at another URI, specified by the Location: HTTP Response header.
 400|Bad Request|The server could not understand the request
-401|Unauthorized|The client didn't authenticate himself. 
+401|Unauthorized|The client didn't authenticate himself.
 402|Payment Required|This response code is reserved for future use. The initial aim for creating this code was using it for digital payment systems, however this status code is used very rarely and no standard convention exists.
 403|Forbidden|The client does not have access rights to the content
 404|Not Found|The server can not find the requested resource

@@ -68,7 +68,7 @@ params:
       height: 20
       link: /
     width: wide
-  
+
     theme:
       default: system # light | dark | system
       displayToggle: true

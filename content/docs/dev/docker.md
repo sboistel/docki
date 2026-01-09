@@ -92,7 +92,7 @@ Liste des différents champs complétable :
 * FROM : Pour les images vierge seuelement !
 * LABEL version : Donner une version
 * LABEL description : Décrire la version
-* ENV : Variable d'environnement : Example 
+* ENV : Variable d'environnement : Example
   * JAVA_HOME [/usr/bin/java](file:///home/sboistel/Documents/Cliford/Zbook/usr/bin/java)
   * ORACLE_HOME /u01/app/oracle/$ORACLE_SID/
 * RUN : Commande à effectuer "yum install .."
@@ -146,7 +146,7 @@ docker logs ID_DU_CONTAINER
 Rappel pour avoir l'id du conteneur :
 
 ```bash
-docker ps 
+docker ps
 ```
 
 Afin de réccupérer la main sur la session du conteneur détaché :

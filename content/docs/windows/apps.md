@@ -16,7 +16,7 @@ taskkill /F /IM OpenWith.exe /T
 
 ### kiosk mode
 
-Ouvrir une page web avec Google Chrome dans une page détachée: 
+Ouvrir une page web avec Google Chrome dans une page détachée:
 
 ```powershell
 Chrome.exe --app=http://

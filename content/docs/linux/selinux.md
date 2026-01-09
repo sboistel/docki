@@ -72,14 +72,14 @@ In the following example, note the file context of each file before and after th
 
 ```bash
 [root@host ~]# ls -Z /var/www/html/file*
-unconfined_u:object_r:user_tmp_t:s0 /var/www/html/file1  unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/file2  
+unconfined_u:object_r:user_tmp_t:s0 /var/www/html/file1  unconfined_u:object_r:httpd_sys_content_t:s0 /var/www/html/file2
 ```
 
 ```bash
 [root@host ~]# semanage fcontext -l
 ...output omitted...
 /var/www(/.*)?       all files    system_u:object_r:httpd_sys_content_t:s0
-...output omitted... 
+...output omitted...
 ```
 
 ```bash
@@ -95,7 +95,7 @@ The following example shows how to use semanage to add a context for a new direc
 [root@host ~]# mkdir /virtual
 [root@host ~]# touch /virtual/index.html
 [root@host ~]# ls -Zd /virtual/
-drwxr-xr-x. root root unconfined_u:object_r:default_t:s0 /virtual/ 
+drwxr-xr-x. root root unconfined_u:object_r:default_t:s0 /virtual/
 ```
 
 ```bash

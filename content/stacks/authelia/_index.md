@@ -3,6 +3,10 @@ title: Authelia
 description: Authelia is an open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.
 ---
 
+## Description
+
+[Authelia](https://www.authelia.com/) is an open-source authentication and authorization server that provides 2-factor authentication and single sign-on (SSO) capabilities for your applications through a web portal. It acts as a gatekeeper, ensuring that only authorized users can access protected resources.
+
 ## Docker Compose
 
 ```yml
@@ -28,23 +32,23 @@ networks:
 
 ### Configuration
 
-Template
+Template configuration file for Authelia (`data/config/configuration.yml`) :
 
-```conf
+```yml
 location /authelia {
     internal;
     set $upstream_authelia http://authelia:9091/api/verify;
     proxy_pass_request_body off;
-    proxy_pass $upstream_authelia;    
+    proxy_pass $upstream_authelia;
     proxy_set_header Content-Length "";
- 
+
     # Timeout if the real server is dead
     proxy_next_upstream error timeout invalid_header http_500 http_502 http_503;
     client_body_buffer_size 128k;
     proxy_set_header Host $host;
     proxy_set_header X-Original-URL $scheme://$http_host$request_uri;
     proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-For $remote_addr; 
+    proxy_set_header X-Forwarded-For $remote_addr;
     proxy_set_header X-Forwarded-Proto $scheme;
     proxy_set_header X-Forwarded-Host $http_host;
     proxy_set_header X-Forwarded-Uri $request_uri;
@@ -55,13 +59,13 @@ location /authelia {
     proxy_cache_bypass $cookie_session;
     proxy_no_cache $cookie_session;
     proxy_buffers 4 32k;
- 
+
     send_timeout 5m;
     proxy_read_timeout 240;
     proxy_send_timeout 240;
     proxy_connect_timeout 240;
 }
- 
+
     location / {
         set $upstream_SUBDOMAIN_NAME http://TARGET:PORT;
         proxy_pass $upstream_SUBDOMAIN_NAME;
@@ -73,16 +77,16 @@ location /authelia {
 		proxy_set_header Remote-User $user;
 		proxy_set_header Remote-Groups $groups;
 		error_page 401 =302 https://auth.sboistel.fr/?rd=$target_url;
- 
+
 		client_body_buffer_size 128k;
- 
+
 		proxy_next_upstream error timeout invalid_header http_500 http_502 http_503;
- 
+
 		send_timeout 5m;
 		proxy_read_timeout 360;
 		proxy_send_timeout 360;
 		proxy_connect_timeout 360;
- 
+
 		proxy_set_header Host $host;
 		proxy_set_header X-Real-IP $remote_addr;
 		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
@@ -96,16 +100,16 @@ location /authelia {
 		proxy_cache_bypass $cookie_session;
 		proxy_no_cache $cookie_session;
 		proxy_buffers 64 256k;
- 
+
 		set_real_ip_from 192.168.100.0/24;#IP VPN
 		set_real_ip_from 192.168.10.254;#IP RESEAU LOCAL
 		real_ip_header X-Forwarded-For;
 		real_ip_recursive on;
- 
+
     }
 ```
 
-## Scripts
+## Own Scripts
 
 ### Secrets
 

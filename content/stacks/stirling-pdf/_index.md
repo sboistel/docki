@@ -3,6 +3,10 @@ title: Stirling-PDF
 description: A self-hosted PDF generation and OCR service
 ---
 
+## Description
+
+Stirling-PDF is a self-hosted service that provides PDF generation and OCR capabilities. It leverages Tesseract OCR for text recognition and can be customized with additional language data and configurations.
+
 ## Docker compose
 
 ```yml
@@ -12,8 +16,8 @@ services:
     image: frooodle/s-pdf:latest
     container_name: stirling-pdf
     restart: unless-stopped
-    # ports:
-    #   - '8003:8080'
+    ports:
+      - '8003:8080'
     volumes:
       - ./data/trainingData:/usr/share/tesseract-ocr/5/tessdata
       - ./data/extraConfigs:/configs
@@ -23,9 +27,4 @@ services:
 #      - /location/of/customFiles:/customFiles/
     environment:
       - DOCKER_ENABLE_SECURITY=false
-
-networks:
-  default:
-    external: true
-    name: external
 ```

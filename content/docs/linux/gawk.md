@@ -4,9 +4,9 @@ description: "A guide to using gawk for text processing"
 tags: ["linux", "gawk"]
 ---
 
-**Arnold Robbins**, an Atlanta native, is a professional programmer and technical author. 
+**Arnold Robbins**, an Atlanta native, is a professional programmer and technical author.
 
-He has been a heavy **AWK** user since 1987, when he became involved with **gawk**, the GNU project's version of AWK. 
+He has been a heavy **AWK** user since 1987, when he became involved with **gawk**, the GNU project's version of AWK.
 
 ## Sed
 

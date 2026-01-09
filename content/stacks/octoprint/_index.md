@@ -3,6 +3,10 @@ title: OctoPrint
 description: The snappy web interface for your 3D printer.
 ---
 
+## Description
+
+[OctoPrint](https://octoprint.org/) is a powerful open-source web interface for controlling and monitoring 3D printers. It allows users to manage print jobs, monitor printer status, and control various aspects of the printing process remotely. OctoPrint supports a wide range of 3D printers and offers features such as webcam streaming, G-code visualization, and plugin support for extended functionality.
+
 ## Docker Compose
 
 ```yml

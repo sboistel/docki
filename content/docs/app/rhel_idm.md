@@ -6,7 +6,7 @@ tags: [""]
 
 ## Commandes
 
-Show $USER 
+Show $USER
 ```bash
 ipa user-show monuser --all
 ```

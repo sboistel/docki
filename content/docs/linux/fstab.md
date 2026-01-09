@@ -31,7 +31,7 @@ This is a binary system where 1 = dump utility backup of a partition. 0 = no bac
 
 ### File System Check Order (second digit)
 
-Here we can see three possible outcomes.  
+Here we can see three possible outcomes.
 
 - 0 means that fsck will not check the filesystem.
     > Numbers higher than this represent the check order.

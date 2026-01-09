@@ -16,7 +16,7 @@ Il est modifié manuellement par le DBA.
 Son nom par défaut est : init<`SID`>.ora et il est situé dans $ORACLE_HOME/dbs.
 Les modifications prennent effet qu’après le redémarrage de l’instance.
 CRÉER UN SPFILE A PARTIR D’UN PFILE
-Vous pouvez créer un fichier SPFILE à partir d’un fichier PFILE via la commande suivante (instance démarrée ou non) et ou le nom d’instance est DBA01 : 
+Vous pouvez créer un fichier SPFILE à partir d’un fichier PFILE via la commande suivante (instance démarrée ou non) et ou le nom d’instance est DBA01 :
 
 ```SQL
 CREATE SPFILE = ‘$ORACLE_HOME/dbs/spfileDBA01.ora’ FROM PFILE = ‘$ORACLE_HOME/dbs/initDBA01.ora‘
@@ -226,7 +226,7 @@ odacli describe-network -i $identifiants_réseau
 ## OSWBBA
 
 ```bash
-java -jar /opt/oracle/oak/oswbb/oswbba.jar -i /opt/oracle/oak/oswbb/archive -b Mar 18 00:00:00 2019 -e Mar 19 00:00:00 
+java -jar /opt/oracle/oak/oswbb/oswbba.jar -i /opt/oracle/oak/oswbb/archive -b Mar 18 00:00:00 2019 -e Mar 19 00:00:00
 ```
 
 ### Ressources
@@ -389,10 +389,10 @@ Voici un exemple de configuration :
 ```SQL
 (DESCRIPTION =
 (ADDRESS = (PROTOCOL = TCP)(HOST = ``iP de la machine``)(PORT = 1521))
-    
+
 (CONNECT_DATA =
 (SERVER = DEDICATED)
-(SERVICE_NAME = ``Nom de la base``)  
+(SERVICE_NAME = ``Nom de la base``)
 )
 
 )
@@ -418,12 +418,12 @@ round(100 * ( (df.totalspace - tu.totalusedspace)/ df.totalspace))"Pct. Free",
 df.MAX_SIZE/1024/1024/1024 "Max Size Go"
 FROM
 (SELECT tablespace_name,
-round(SUM(bytes) / 1048576) TotalSpace, 
+round(SUM(bytes) / 1048576) TotalSpace,
 sum(decode(AUTOEXTENSIBLE, 'YES', MAXBYTES, BYTES)) MAX_SIZE
-FROM dba_data_files 
+FROM dba_data_files
 GROUP BY tablespace_name) df,
 (SELECT round(SUM(bytes)/(1024*1024)) totalusedspace, tablespace_name
-FROM dba_segments 
+FROM dba_segments
 GROUP BY tablespace_name) tu
 WHERE df.tablespace_name = tu.tablespace_name;
 ```

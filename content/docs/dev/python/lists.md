@@ -9,7 +9,7 @@ tags: [""]
 How to use keys from list ?
 
 ```python
-print("My name is %s !" % liste_nom['name']) 
+print("My name is %s !" % liste_nom['name'])
 print("My name is %(name)s !" % d)
 print("My name is {0} !".format(d['name']))
 ```
@@ -96,10 +96,10 @@ print('Some animals:    {}'.format(first_two_again))
 last_two = animals[-2:] # display the two last items
 print('Some animals:    {}'.format(last_two))
 
-part_of_horse = 'horse'[1:3] # display from the first excluded to the third included 
+part_of_horse = 'horse'[1:3] # display from the first excluded to the third included
 print(part_of_horse)
 
-prepart_of_horse = 'horse'[:3] # display from the first included to the third included 
+prepart_of_horse = 'horse'[:3] # display from the first included to the third included
 print(prepart_of_horse)
 ```
 

@@ -3,6 +3,10 @@ title: Immich
 description: A self-hosted photo and video backup solution for your mobile devices
 ---
 
+## Description
+
+[Immich](https://immich.app/) is a self-hosted photo and video backup solution for your mobile devices. It offers automatic backup, AI-powered search, and sharing features, making it easy to manage and access your media files securely.
+
 ## Docker compose
 
 ```yml
@@ -38,7 +42,7 @@ services:
     #   file: hwaccel.ml.yml
     #   service: cpu # set to one of [armnn, cuda, rocm, openvino, openvino-wsl, rknn] for accelerated inference - use the `-wsl` version for WSL2 where applicable
     volumes:
-      - ./model-cache:/cache
+      - model-cache:/cache
     env_file:
       - .env
     restart: always
@@ -47,14 +51,14 @@ services:
 
   redis:
     container_name: immich_redis
-    image: docker.io/valkey/valkey:8-bookworm@sha256:fea8b3e67b15729d4bb70589eb03367bab9ad1ee89c876f54327fc7c6e618571
+    image: docker.io/valkey/valkey:9@sha256:fb8d272e529ea567b9bf1302245796f21a2672b8368ca3fcb938ac334e613c8f
     healthcheck:
       test: redis-cli ping || exit 1
     restart: always
 
   database:
     container_name: immich_postgres
-    image: ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0@sha256:41eacbe83eca995561fe43814fd4891e16e39632806253848efaf04d3c8a8b84
+    image: ghcr.io/immich-app/postgres:14-vectorchord0.4.3-pgvectors0.2.0@sha256:bcf63357191b76a916ae5eb93464d65c07511da41e3bf7a8416db519b40b1c23
     environment:
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_USER: ${DB_USERNAME}
@@ -67,7 +71,14 @@ services:
       - ${DB_DATA_LOCATION}:/var/lib/postgresql/data
     shm_size: 128mb
     restart: always
+
+volumes:
+  model-cache:
 ```
+
+### Env file
+
+Env file `.env` example:
 
 ```env
 # You can find documentation for all the supported env variables at https://docs.immich.app/install/environment-variables

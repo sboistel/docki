@@ -15,7 +15,7 @@ tags: [""]
 | <= | **Less** then *or* **equal** |
 | != | **Not** equal |
 
-### Example 
+### Example
 
 ```python
 #!/usr/bin/env python3
@@ -192,7 +192,7 @@ def true_or_false(number):
 
 	if number % 2 == 0:
 		return True
-	else: 
+	else:
 		return False
 
 print(true_or_false(7))
@@ -223,7 +223,7 @@ def get_and_say_name():
 	"""Get and display name"""
 	Identity = get_name()
 	say_name(Identity)
-	
+
 get_and_say_name()
 ```
 
@@ -231,7 +231,7 @@ Result :
 
 ```python
 What's U'r firstname ? Sam
-What's U'r lastname ? 
+What's U'r lastname ?
 U'r name is Toto Doe.
 Yes I know I'm mentalist
 ```

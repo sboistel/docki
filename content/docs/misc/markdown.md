@@ -22,7 +22,7 @@ GitHub Documentation: [Writing Markdown on GitHub](https://docs.github.com/en/ge
 ###### Heading 6
 ```
 
-Here is a heading: `# Heading`, **don't do this:** `#Heading` 
+Here is a heading: `# Heading`, **don't do this:** `#Heading`
 
 ## Emphasis
 
@@ -39,7 +39,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 ## Line Breaks
 
 ```markdown
-First line with two spaces after.  
+First line with two spaces after.
 And the next line.
 ```
 

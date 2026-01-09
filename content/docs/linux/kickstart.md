@@ -48,7 +48,7 @@ clearpart --all --drives=sda,sdb --initlabel
 part /home --fstype=ext4 --label=homes --size=4096 --maxsize=8192 --grow
 ```
 
-* autopart: Automatically creates a **root** partition, a swap partition, and an appropriate boot partition for the architecture. 
+* autopart: Automatically creates a **root** partition, a swap partition, and an appropriate boot partition for the architecture.
 
 On large enough drives, this also creates a **/home** partition.
 
@@ -250,7 +250,7 @@ Creating a Kickstart file from scratch is typically too complex, but editing an 
 
 This file makes a good starting point when creating Kickstart file manually.
 
-**ksvalidator** is a utility that checks for syntax errors in a Kickstart file. It ensures that keywords and options are properly used, but it does not validate that URL paths, individual packages, or groups, nor any part of %post or %pre scripts will succeed. 
+**ksvalidator** is a utility that checks for syntax errors in a Kickstart file. It ensures that keywords and options are properly used, but it does not validate that URL paths, individual packages, or groups, nor any part of %post or %pre scripts will succeed.
 
 For instance, if the firewall **--disabled** directive is misspelled, ksvalidator could produce one of the following errors:
 
@@ -274,7 +274,7 @@ Make the Kickstart file available to the installer by placing it in one of these
 
 * A network server available at install time using FTP, HTTP, or NFS.
 * An available USB disk or CD-ROM.
-* A local hard disk on the system to be installed. 
+* A local hard disk on the system to be installed.
 
 The installer must access the Kickstart file to begin an automated installation. The most common automation method uses a network server such as an FTP, web, or NFS server. Network servers facilitate Kickstart file maintenance because changes can be made once, and then immediately used for multiple future installations.
 

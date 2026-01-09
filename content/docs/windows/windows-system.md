@@ -10,7 +10,7 @@ Trouver la date d’installation Windows.
 systeminfo | find "installation"
 ```
 
-Se rendre rapidement sur la page de gestion des software: 
+Se rendre rapidement sur la page de gestion des software:
 Éxécuter la commande suivante (dans invite de commande ou executer ou menu démarré)
 
 ```powershell
