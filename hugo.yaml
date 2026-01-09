@@ -61,6 +61,12 @@ params:
   page:
     # full (100%), wide (90rem), normal (1280px)
     width: normal
+  search:
+    enable: true
+    type: flexsearch
+    flexsearch:
+      # Options de flexsearch
+      index: content
   navbar:
     displayTitle: false
     displayLogo: true
