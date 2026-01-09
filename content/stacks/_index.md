@@ -3,10 +3,6 @@ title: Docker Stacks
 toc: false
 ---
 
-Let's have fun, and ``#RTFM`` !
-
-Here you will find all the docker stacks I use.
-
 ## My Own Services
 
 I host my own services on a Raspberry Pi 5 using Docker and Docker Compose. The main services I use are:

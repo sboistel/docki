@@ -1,10 +1,14 @@
 ---
 title: "About Me"
-date: 2025-08-25
 type: about
 ---
 
 ## Samuel BOISTEL
+
+**Site Reliability Engineer (SRE)**<br>
+Passionné du pingouin et de l'OpenSource, j'aime partager mes connaissances et mon expérience au travers la rédaction de documentations.<br>
+**J'applique des pratiques DevOps tout en assurant la fiabilité et la performance des systèmes.**
+<div align=right><p><i>Keep it Simple, Stupid</i></p></div>
 
 * 💍 Marié, Papa de 3 enfants
 * 📍 Lille / Haubourdin
@@ -12,10 +16,23 @@ type: about
 * 🚗 Permis B, Véhiculé
 * 🔗 [GitHub](https://github.com/sboistel)
 
-**Site Reliability Engineer (SRE)**<br>
-Passionné du pingouin et de l'OpenSource, j'aime partager mes connaissances et mon expérience au travers la rédaction de documentations.<br>
-**J'applique des pratiques DevOps tout en assurant la fiabilité et la performance des systèmes.**
-<div align=right><p><i>Keep it Simple, Stupid</i></p></div>
+## 🎯 Centres d'intérêt
+
+* 🎵 Hautbois
+* 🎹 Piano
+* 🐧 Linux & Open Source
+* 🏠 Home Lab & Self-hosting
+* 📚 Veille technologique
+
+## 🎓 Formation
+
+* **2016 – 2018** : BTS SIO option SISR [@Lycée Gaston Berger](https://www.gastonberger.fr/)
+* **2013 – 2016** : Bac Pro SEN [@Lycée Gustave Eiffel](https://lycee-gustave-eiffel.fr/) Armentières
+
+## 🌐 Langues
+
+* **Français** : Langue maternelle
+* **Anglais** : Niveau professionnel (B2)
 
 ## 🛠️ Compétences techniques
 
@@ -61,24 +78,6 @@ Passionné du pingouin et de l'OpenSource, j'aime partager mes connaissances et 
 * **ITIL & Ticketing** : ServiceNow, Jira, PagerDuty
 * **Documentation** : Hugo, MkDocs, Wiki.js, Confluence, Obsidian
 * **Static Site Generators** : Hugo, mkdocs[readthedocs], GitHub Pages
-
-## 🎯 Centres d'intérêt
-
-* 🎵 Hautbois
-* 🎹 Piano
-* 🐧 Linux & Open Source
-* 🏠 Home Lab & Self-hosting
-* 📚 Veille technologique
-
-## 🎓 Formation
-
-* **2016 – 2018** : BTS SIO option SISR [@Lycée Gaston Berger](https://www.gastonberger.fr/)
-* **2013 – 2016** : Bac Pro SEN [@Lycée Gustave Eiffel](https://lycee-gustave-eiffel.fr/) Armentières
-
-## 🌐 Langues
-
-* **Français** : Langue maternelle
-* **Anglais** : Niveau professionnel (B2)
 
 ## 💼 Expériences professionnelles
 

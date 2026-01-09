@@ -58,6 +58,9 @@ menu:
 params:
   description: "Sam's Portfolio"
   externalLinkDecoration: true
+  page:
+    # full (100%), wide (90rem), normal (1280px)
+    width: normal
   navbar:
     displayTitle: false
     displayLogo: true
@@ -90,4 +93,4 @@ params:
 
   editURL:
     enable: true
-    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+    base: "https://github.com/sboistel/docki/edit/gohugo/content"
