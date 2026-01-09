@@ -7,6 +7,8 @@ description: A self-hosted PDF generation and OCR service
 
 Stirling-PDF is a self-hosted service that provides PDF generation and OCR capabilities. It leverages Tesseract OCR for text recognition and can be customized with additional language data and configurations.
 
+![Overview](https://raw.githubusercontent.com/Stirling-Tools/Stirling-PDF/refs/heads/main/images/home-light.png)
+
 ## Docker compose
 
 ```yml

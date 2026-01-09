@@ -8,6 +8,8 @@ description:  A fancy, easy-to-use and reactive self-hosted docker compose.yaml 
 Dockge is a web application designed to simplify the management of Docker Compose stacks. <br>
 It provides a user-friendly interface to **create**, **edit**, and **manage** your Docker Compose files, making it easier to deploy and maintain your containerized applications.
 
+![Dockge Interface](https://private-user-images.githubusercontent.com/1336778/280767691-26a583e1-ecb1-4a8d-aedf-76157d714ad7.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Njc5NDkwMDIsIm5iZiI6MTc2Nzk0ODcwMiwicGF0aCI6Ii8xMzM2Nzc4LzI4MDc2NzY5MS0yNmE1ODNlMS1lY2IxLTRhOGQtYWVkZi03NjE1N2Q3MTRhZDcucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDEwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjAxMDlUMDg1MTQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YWYwMTJiYTMyNzYyMDQ5OTI4NzljZTkyNTAwOGE5NTc2YjMwOWIxY2I0ZjE0ZmI2ZjUxMTgzYWM0MDRmYmY4NCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.QBlTaXqwF3cztCO6y5SUlh97WySmfxiMnAZM9nr50YA)
+
 ## Docker Compose
 
 ```yml

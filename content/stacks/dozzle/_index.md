@@ -7,6 +7,8 @@ description: Dozzle is a lightweight log viewer for Docker containers. It provid
 
 Dozzle is a lightweight log viewer for Docker containers. It provides a simple web interface to view and search through container logs in real-time. Dozzle connects directly to the Docker socket, allowing it to access logs from all running containers on the host machine. It is designed to be easy to use and deploy, making it a popular choice for developers and system administrators who need to monitor container logs.
 
+· Demo https://github.com/user-attachments/assets/66a7b4b2-d6c9-4fca-ab04-aef6cd7c0c31
+
 ## Docker Compose
 
 ```yml

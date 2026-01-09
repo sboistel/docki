@@ -7,6 +7,8 @@ description: Authelia is an open-source authentication and authorization server 
 
 [Authelia](https://www.authelia.com/) is an open-source authentication and authorization server that provides 2-factor authentication and single sign-on (SSO) capabilities for your applications through a web portal. It acts as a gatekeeper, ensuring that only authorized users can access protected resources.
 
+![Authelia architecture](https://camo.githubusercontent.com/7d47979f65dade24f62faf668ffaccd8611552c7e98ee5ba27adc57d1f5ce354/68747470733a2f2f7777772e61757468656c69612e636f6d2f696d616765732f61726368692e706e67)
+
 ## Docker Compose
 
 ```yml

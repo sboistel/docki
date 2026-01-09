@@ -7,6 +7,8 @@ description: A fast, easy, and free BitTorrent client
 
 [Transmission](https://transmissionbt.com/) is a lightweight, open-source BitTorrent client that is known for its simplicity and ease of use. It offers a clean and intuitive interface, making it accessible for both beginners and experienced users. Transmission supports a wide range of features, including encryption, peer exchange, and web seeding, while maintaining a low resource footprint. It is available on multiple platforms, including Windows, macOS, and Linux.
 
+![Overview](https://transmissionbt.com/assets/images/homepage/carousel_homepage/screenshot_apple_light.png)
+
 ## Docker compose
 
 ```yml

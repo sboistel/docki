@@ -7,6 +7,8 @@ description: A self-hosted password manager
 
 Vaultwarden (formerly known as Bitwarden_RS) is an unofficial implementation of the Bitwarden server API written in Rust. It is a lightweight and efficient password manager that can be self-hosted, providing users with a secure way to store and manage their passwords and other sensitive information.
 
+![Overview](https://bitwarden.com/assets/5Mfud6suR4cxrCb0s6W5kL/f94ba88c8f364537ca4ab456f1300751/Home_Hero_-_Dark.png?w=1200&fm=avif)
+
 ## Docker compose
 
 ```yml

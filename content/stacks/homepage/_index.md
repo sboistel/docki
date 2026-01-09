@@ -7,6 +7,8 @@ description: A fast, modular, and privacy-focused dashboard for your server
 
 [Homepage](https://github.com/gethomepage/homepage) is a fast, modular, and privacy-focused dashboard for your server. It provides a clean and customizable interface to monitor and manage your services, applications, and system status. Homepage is designed to be lightweight and easy to deploy, making it an excellent choice for users who want a simple yet powerful dashboard solution.
 
+![Homepage Overview](https://raw.githubusercontent.com/gethomepage/homepage/refs/heads/dev/images/1.png)
+
 ## Docker compose
 
 ```yml

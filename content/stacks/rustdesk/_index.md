@@ -7,6 +7,8 @@ description: An open-source remote desktop application designed for self-hosting
 
 [RustDesk](https://rustdesk.com/) is an open-source remote desktop application that allows users to access and control their computers remotely. It is designed to be a self-hosted alternative to proprietary remote desktop solutions like TeamViewer and AnyDesk.
 
+![Overview](https://rustdesk.com/main.png)
+
 ## Requirements
 
 - A server or VPS with a public IP address to host the RustDesk server components (hbbs and hbbr).

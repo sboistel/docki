@@ -7,6 +7,8 @@ description: "A self-hosted RSS feed aggregator"
 
 FreshRSS is a self-hosted RSS feed aggregator that allows you to read and manage your RSS feeds in one place. It is designed to be lightweight, easy to use, and highly customizable. FreshRSS supports multiple users, themes, and extensions, making it a versatile choice for personal or shared use.
 
+![FreshRSS Owerview](https://raw.githubusercontent.com/FreshRSS/FreshRSS/edge/docs/img/FreshRSS-screenshot.png)
+
 ## Docker Compose
 
 ```yml

@@ -7,6 +7,8 @@ description: Secure Web Application Gateway (SWAG) is a Docker container that pr
 
 Secure Web Application Gateway (SWAG) is a Docker container that provides a reverse proxy, SSL termination, and web application firewall capabilities. It is designed to simplify the deployment and management of web applications by handling tasks such as SSL certificate management, traffic routing, and security enhancements.
 
+![Overview](https://static.cachem.fr/uploads/2022/03/dashboard.webp)
+
 ## Docker Compose
 
 ```yml

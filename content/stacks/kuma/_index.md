@@ -7,6 +7,8 @@ description: A self-hosted monitoring tool like "Uptime Robot"
 
 Uptime Kuma is a self-hosted monitoring tool that allows you to monitor the uptime of your websites, services, and applications. It provides a user-friendly interface and supports various notification methods to alert you when your services go down.
 
+![Uptime Kuma Overview](https://uptimekuma.org/wp-content/uploads/2025/01/Uptime-Kuma-Overview.png)
+
 ## Docker compose
 
 ```yml

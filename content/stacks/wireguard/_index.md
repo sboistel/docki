@@ -7,6 +7,8 @@ description: A fast, modern, and secure VPN tunnel
 
 [WireGuard](https://www.wireguard.com/) is a fast, modern, and secure VPN tunnel that utilizes state-of-the-art cryptography. It aims to be simpler, faster, and more secure than traditional VPN protocols.
 
+![Overview](https://belginux.com/content/images/size/w1200/2025/02/wireguardeasy-1.webp)
+
 ## Docker compose
 
 ```yml

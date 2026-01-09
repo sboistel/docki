@@ -7,6 +7,8 @@ description: A curated collection of Docker resources, tutorials, and best pract
 
 "What's Up Docker?" is your go-to resource for all things Docker. Whether you're a beginner looking to get started with containerization or an experienced developer seeking advanced tips and best practices, this collection has something for you. Explore tutorials, guides, and curated resources to enhance your Docker skills and streamline your development workflow.
 
+![Overview](https://getwud.github.io/wud/assets/wud-arch.png)
+
 ## Docker Compose
 
 ```yml

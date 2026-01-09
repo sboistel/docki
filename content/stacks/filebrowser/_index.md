@@ -7,6 +7,8 @@ description: "File Browser is a web-based file manager that allows you to manage
 
 File Browser is a web-based file manager that allows you to manage your files and directories through a user-friendly interface. It provides features such as file upload, download, preview, and organization, making it easy to handle files on a server without needing direct access via FTP or SSH.
 
+![File Browser Interface](https://filebrowser.org/static/example.gif)
+
 ## Docker Compose
 
 ```yml

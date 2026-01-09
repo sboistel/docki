@@ -7,6 +7,8 @@ description: "Home Assistant is an open-source home automation platform that foc
 
 Home Assistant is an open-source home automation platform that prioritizes privacy and local control. It enables users to integrate and automate a wide range of smart home devices and services, providing a centralized system for managing home automation tasks.
 
+![Home Assistant Screenshot](https://www.home-assistant.io/images/getting-started/lovelace.png)
+
 ## Docker Compose
 
 ```yml

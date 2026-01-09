@@ -7,6 +7,8 @@ description: A self-hosted photo and video backup solution for your mobile devic
 
 [Immich](https://immich.app/) is a self-hosted photo and video backup solution for your mobile devices. It offers automatic backup, AI-powered search, and sharing features, making it easy to manage and access your media files securely.
 
+![immich overview](https://raw.githubusercontent.com/immich-app/immich/main/design/immich-screenshots.png)
+
 ## Docker compose
 
 ```yml

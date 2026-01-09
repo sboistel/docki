@@ -7,6 +7,8 @@ description: A process for automating Docker container base image updates
 
 Watchtower is a process for automating Docker container base image updates. It monitors running containers and automatically updates them whenever a new image is available, helping to keep your Docker environment up-to-date and secure.
 
+![Overview](https://media.licdn.com/dms/image/v2/D5612AQFz2r_LODFJWw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1700195983497?e=2147483647&v=beta&t=rQ0m3_GQB7VnzT2opa6yDEhlau7-0U1Aid5iFm41AGQ)
+
 ## Docker compose
 
 ```yml

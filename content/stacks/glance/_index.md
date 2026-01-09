@@ -7,6 +7,8 @@ description: A simple and modern dashboard to manage your services
 
 Glance is a simple and modern dashboard application that allows you to manage and monitor your self-hosted services. It provides an easy-to-use interface to view the status of your applications, access their dashboards, and organize them in a visually appealing way. Glance supports various authentication methods and can be customized to fit your needs.
 
+![Glance Screenshot](https://raw.githubusercontent.com/glanceapp/glance/main/.github/assets/screenshot.png)
+
 ## Docker compose
 
 ```yml
