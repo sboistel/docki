@@ -14,21 +14,55 @@ description: A curated collection of Docker resources, tutorials, and best pract
 ```yml
 ---
 # https://getwud.github.io/wud
+---
 services:
   whatsupdocker:
     image: getwud/wud
     container_name: wud
-    restart: unless-stopped
-    env_file: .env
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /etc/localtime:/etc/localtime:ro
     ports:
-      - 3002:3000
-    environment:
-      - WUD_LOG_LEVEL=info
-      - WUD_WATCHER_LOCAL_CRON=0 3 * * *
-      - WUD_WATCHER_LOCAL_WATCHBYDEFAULT=true
-      - WUD_TRIGGER_LOCAL_PRUNE=true
-      - WUD_TRIGGER_APPRISE_BODY={{json .}}
+      - 3000:3000
+    env_file: .env
+    restart: unless-stopped
+    healthcheck:
+      test: curl --fail http://localhost:${WUD_SERVER_PORT:-3000}/health || exit 1
+      interval: 10s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+```
+
+## Environment Variables
+
+```env
+WUD_WATCHER_LOCAL_CRON=0 5 * * *
+WUD_TRIGGER_DOCKER_LOCAL_PRUNE=true
+# WUD_TRIGGER_DOCKER_LOCAL_DRYRUN=true
+
+# https://getwud.github.io/wud/#/configuration/authentications/
+# docker run --rm backplane/htpasswd -nib "jdoe" "joepassword"
+WUD_AUTH_BASIC_JDOE_USER=jdoe
+WUD_AUTH_BASIC_JDOE_HASH=$apr1$TtYH0/EL$wwnc0CbHzfkzNzBfqy3es0
+
+
+# https://getwud.github.io/wud/#/configuration/logs/
+WUD_LOG_LEVEL=info
+WUD_LOG_FORMAT=json
+
+# https://getwud.github.io/wud/#/configuration/timezone/
+TZ=Europe/Paris
+
+## https://getwud.github.io/wud/#/configuration/triggers/ntfy/
+WUD_TRIGGER_NTFY_LOCAL_URL=https://<YourDomain>/wud
+WUD_TRIGGER_NTFY_LOCAL_TOPIC="What's Up Docker - Updates"
+WUD_TRIGGER_NTFY_LOCAL_AUTH_TOKEN="tk_yourtokenhere" # if needed
+
+# https://getwud.github.io/wud/#/configuration/watchers/
+WUD_WATCHER_LOCAL_WATCHALL=true
+
+# https://getwud.github.io/wud/#/configuration/watchers/?id=labels
+# INTO COMPOSE.YML TO DISABLE A CONTAINER FROM BEING WATCHED:
+# labels:
+#   - "wud.watch=false"
 ```
