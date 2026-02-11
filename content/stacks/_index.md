@@ -13,6 +13,7 @@ This section provides a curated collection of Docker stacks for various self-hos
 Each stack includes a brief description, and a sample Docker Compose configuration to help you get started quickly.
 
 - **[AdGuard](/stacks/adguard/)**: Network-wide ad blocking
+- **[Arcane](/stacks/arcane/)**: Modern Docker Management, Designed for Everyone.
 - **[Authelia](/stacks/authelia/)**: Authentication and authorization
 - **[BentoPDF](/stacks/bentopdf/)**: PDF management tool
 - **[Beszel](/stacks/beszel/)**: Custom service (details not specified) / Companion agent
@@ -33,7 +34,7 @@ Each stack includes a brief description, and a sample Docker Compose configurati
 - **[Kuma](/stacks/kuma/)**: Uptime monitoring
 - **[Landing Page](/stacks/land/)**: Main entry page
 - **[Linkding](/stacks/linkding/)**: Bookmark manager
-- **[Loglify](/stacks/Loglify/)**: Log aggregation and management
+- **[Loglify](/stacks/loglify/)**: Log aggregation and management
 - **[Navidrom](/stacks/navidrom/)**: Music server
 - **[Nextcloud](/stacks/ncloud/)**: Personal cloud storage
 - **[Nginx Proxy Manager](/stacks/nginx-proxy-manager/)**: Reverse proxy and SSL management
