@@ -4,10 +4,10 @@ description: "Linux account management"
 tags: ["linux", "account", "management"]
 ---
 
-List account :
+List user account :
 
 ```bash
-find /home -maxdepth 1 -type d -group users | cut -d '/' -f3
+awk -F: '$3 >= 1000 {print}' /etc/passwd
 ```
 
 ## Useradd
