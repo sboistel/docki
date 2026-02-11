@@ -11,3 +11,5 @@ apt install python3-pip
 pip3 install psutil
 pip3 install bpytop
 ```
+
+![main screen](https://raw.githubusercontent.com/aristocratos/bpytop/master/Imgs/main.png)
