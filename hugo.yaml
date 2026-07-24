@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: Sam's Portfolio
+title: "SBTL"
 
 # import hextra as module
 module:
@@ -7,6 +7,14 @@ module:
     - path: github.com/imfing/hextra
 
 enableGitInfo: true
+
+# While using `lastmod: 2026-03-13` metadata in .md files
+# frontmatter:
+#   lastmod:
+#     - lastmod
+#     - :git
+#     - date
+#     - publishDate
 
 markup:
   # allow raw html
@@ -56,6 +64,8 @@ menu:
   #     weight: 2
 
 params:
+  author: 
+    name: "sboistel"
   description: "Sam's Portfolio"
   externalLinkDecoration: true
   page:

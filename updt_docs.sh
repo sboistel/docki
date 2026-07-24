@@ -13,18 +13,19 @@ NC='\033[0m' # No Color
 
 # Build the site
 echo -e "\n${GREEN}Building the documentation site...${NC}"
-hugo build
-
-if [ $? -eq 1 ]; then
+if ! hugo; then
     echo -e "\n${RED}Hugo build failed${NC}"
     exit 1
 fi
 
 # Sync the site to the server
 echo -e "${GREEN}Updating the documentation site...${NC}"
-rsync -rvz public/* draxpi:/opt/docker/land/data/html
-
-[[ $? -eq 1 ]] && echo -e "${RED}Rsync failed${NC}" && exit 1 || rm -rf public
+if ! rsync -rvz public/* draxpi:/opt/docker/land/data/html; then
+    echo -e "${RED}Rsync failed${NC}"
+    exit 1
+else
+    rm -rf public
+fi
 
 echo -e "\n${GREEN}Site updated successfully${NC}\n"
 

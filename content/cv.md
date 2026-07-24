@@ -1,9 +1,7 @@
 ---
-title: "About Me"
+title: "Curriculum vitæ"
 type: about
 ---
-
-## Samuel BOISTEL
 
 **Site Reliability Engineer (SRE)**<br>
 Passionné du pingouin et de l'OpenSource, j'aime partager mes connaissances et mon expérience au travers la rédaction de documentations.<br>
@@ -44,7 +42,7 @@ Passionné du pingouin et de l'OpenSource, j'aime partager mes connaissances et 
 
 ### DevOps & Automation
 
-* **Automation Platform** : Ansible, AWX, RedHat Automation Platform, ArgoWorkflow
+* **Automation Platform** : Ansible, AWX, RedHat Automation Platform, Argo Workflows
 * **CI/CD** : GitHub Actions, GitLab CI, Azure DevOps
 * **Infrastructure as Code** : Terraform, Ansible
 * **Version Control** : Git, GitHub, GitLab
@@ -86,19 +84,19 @@ Passionné du pingouin et de l'OpenSource, j'aime partager mes connaissances et 
 **Ops Engineer**
 
 * **Automation Platform** : Déploiement et administration d'AWX (Docker/Kubernetes), gestion de jobs; templates; projets, configuration des ACL utilisateurs
-* **Orchestration** : Gestion de workflows ArgoWorkflow
+* **Orchestration** : Gestion de Argo Workflows
 * **CI/CD** : Implémentation de pipelines GitHub Actions, gestion des branches et PR au sein d'organisations
 * **Gestion des secrets** : Administration HashiCorp Vault, configuration des entités et politiques d'accès
 * **Observabilité** : Configuration Datadog (monitors, synthetics, logs), monitoring de services
 * **Cloud Management** : Administration Aiven (metrics, logs, credentials), gestion multi-tenant
 * **ITSM** : Intégration ServiceNow, Jira, PagerDuty pour l'automatisation des incidents
 
-**Technologies** : ArgoWorkflow, AWX, GitHub Actions, HashiCorp Vault, Datadog, Aiven, ServiceNow
+**Technologies** : Argo Workflows, AWX, GitHub Actions, HashiCorp Vault, Datadog, Aiven, ServiceNow
 
 **Projets** :
 
 * Gestion de la plateforme AWX
-* Migration de AWX vers ArgoWorkflow
+* Migration de AWX vers Argo Workflows
 * Animation de formations internes sur AWX / Gestion de wiki technique
 
 ---

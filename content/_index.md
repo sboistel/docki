@@ -13,5 +13,5 @@ What about **knowledge transfert** ?
 
 {{< cards >}}
   {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="cv" title="About Sam" icon="user" >}}
+  {{< card link="/cv/" title="About Sam" icon="user" >}}
 {{< /cards >}}

@@ -51,3 +51,18 @@ WATCHTOWER_SCHEDULE=0 0 5 * * * # Daily at 5am
 # Notification
 WATCHTOWER_NOTIFICATIONS_HOSTNAME=draxpi # Hostname to use in notifications
 ```
+
+
+## Issues
+
+```error
+Error response from daemon: client version 1.25 is too old. Minimum supported API version is 1.44, please upgrade your client to a newer version
+```
+
+`Minimum supported API version is 1.44` so we gonna set the `DOCKER_API_VERSION` to `1.41` which is the latest version supported by watchtower as of this writing. This will allow watchtower to communicate with the Docker daemon without encountering the version mismatch error.
+
+To fix it, add the following environment variable to the watchtower service:
+
+```env
+DOCKER_API_VERSION=1.41
+```
